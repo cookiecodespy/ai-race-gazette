@@ -1,0 +1,53 @@
+name: Validate AI Race Gazette Content
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/news.json'
+      - 'feed.xml'
+      - 'source/public/data/news.json'
+      - 'source/public/feed.xml'
+      - 'source/docs/history-coverage.json'
+      - 'source/research/coverage-audit.json'
+      - 'source/ops/backlog.json'
+      - 'source/docs/master-checklist.md'
+      - 'source/scripts/check_publication_integrity.py'
+      - '.github/workflows/validate-ai-race-gazette-content.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'data/news.json'
+      - 'feed.xml'
+      - 'source/public/data/news.json'
+      - 'source/public/feed.xml'
+      - 'source/docs/history-coverage.json'
+      - 'source/research/coverage-audit.json'
+      - 'source/ops/backlog.json'
+      - 'source/docs/master-checklist.md'
+      - 'source/scripts/check_publication_integrity.py'
+      - '.github/workflows/validate-ai-race-gazette-content.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ai-race-gazette-content
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: source
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Public mirrors, RSS and calendar
+        run: python3 scripts/check_publication_integrity.py
+      - name: Test RSS article semantics
+        run: python3 -m unittest tests/publication_integrity_test.py
+      - name: Structured editorial validation
+        run: |
+          python3 scripts/editorial.py --validate-only
+          python3 scripts/validate_coverage_audit.py
+          python3 scripts/validate_backlog.py
+          python3 scripts/validate_visual_desk.py
