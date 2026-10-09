@@ -47,8 +47,9 @@ await page.getByRole('heading',{name:'No hay noticias con esos filtros'}).waitFo
 await page.locator('.empty').getByRole('button',{name:'Limpiar filtros'}).click();
 
 const filterTarget=data.articles.find(a=>a.company==='Google'&&a.tags.includes('Modelos'))||data.articles[0];
-await page.getByRole('button',{name:filterTarget.company,exact:true}).click();
-await page.getByRole('button',{name:filterTarget.tags[0],exact:true}).click();
+// Company chips are rendered before topic chips; labels may overlap (e.g. Google).
+await page.getByRole('button',{name:filterTarget.company,exact:true}).first().click();
+await page.getByRole('button',{name:filterTarget.tags[0],exact:true}).last().click();
 let expected=data.articles.filter(a=>a.company===filterTarget.company&&a.tags.includes(filterTarget.tags[0])).length;
 assert.equal(await page.locator('.news-list-item').count(),Math.min(12,expected));
 
