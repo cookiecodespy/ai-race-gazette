@@ -38,8 +38,8 @@ jobs:
         run: |
           set -euo pipefail
           cp -a "$RUNNER_TEMP/gazette-source/ai-race-gazette/." "$GITHUB_WORKSPACE/"
-          mkdir -p .github/workflows
-          cp -a "$RUNNER_TEMP/gazette-source/.github/workflows/." .github/workflows/
+          # GitHub Actions token may not write workflow files. Install these separately
+          # with the connected GitHub app after importing all project content.
           touch .nojekyll
 
       - name: Adapt CI workflows and canonical repository references
@@ -100,8 +100,6 @@ jobs:
           test -f source/package-lock.json
           test -f assets/reference-look.jpg
           test -f source/public/assets/reference-look.jpg
-          test -f .github/workflows/build-ai-race-gazette.yml
-          test -f .github/workflows/validate-ai-race-gazette-content.yml
           python3 -m json.tool data/news.json >/dev/null
           python3 -m json.tool source/visual/asset-manifest.json >/dev/null
           cmp assets/reference-look.jpg source/public/assets/reference-look.jpg
