@@ -1,0 +1,37 @@
+name: Verify Gazette dedicated GitHub Pages origin
+on:
+  push:
+    paths:
+      - 'gazette-deployment.txt'
+      - '.github/workflows/verify-gazette-pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check Pages API status
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          status=$(curl -sS -o /tmp/gazette-pages.json -w '%{http_code}' \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/cookiecodespy/ai-race-gazette/pages")
+          echo "GitHub Pages configuration API HTTP: $status"
+          if [ "$status" = "200" ]; then
+            python3 -m json.tool /tmp/gazette-pages.json | head -50
+          else
+            echo "Pages may still require enabling under Settings > Pages."
+          fi
+      - name: Verify public URL is truly served from dedicated repository
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 2 --retry-delay 2 \
+            "https://cookiecodespy.github.io/ai-race-gazette/gazette-deployment.txt" \
+            -o /tmp/gazette-live-marker.txt
+          grep -Fxq 'source_repository=cookiecodespy/ai-race-gazette' /tmp/gazette-live-marker.txt
+          echo "Dedicated Gazette repository is live at the original public URL"
