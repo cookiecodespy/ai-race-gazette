@@ -1,0 +1,3 @@
+AI Race Gazette — dedicated repository deployment marker
+source_repository=cookiecodespy/ai-race-gazette
+migrated=2026-10-09
