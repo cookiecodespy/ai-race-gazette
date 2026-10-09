@@ -51,3 +51,5 @@ jobs:
           python3 scripts/validate_coverage_audit.py
           python3 scripts/validate_backlog.py
           python3 scripts/validate_visual_desk.py
+
+# Re-run after migration RSS synchronization (2026-10-09).
