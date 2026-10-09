@@ -1,5 +1,9 @@
 # AI Race Gazette
 
+**Repositorio independiente:** `cookiecodespy/ai-race-gazette`. El sitio público mantiene la URL `https://cookiecodespy.github.io/ai-race-gazette/`. El código fuente está en `source/`, y los archivos publicados están en la raíz del repositorio.
+
+Para desarrollar y comprobar localmente: `cd source && npm ci && npm test && npm run build`. GitHub Pages utiliza `main` / `/(root)`.
+
 AI Race Gazette es una hemeroteca pública en español sobre la carrera de la inteligencia artificial y la tecnología. Combina una interfaz inspirada en prensa impresa con un archivo verificable, artículos enlazables, fuentes primarias y análisis editorial separado de los hechos.
 
 Sitio: https://cookiecodespy.github.io/ai-race-gazette/
