@@ -9,11 +9,13 @@ Operar y mejorar la automatización que mantiene AI Race Gazette al día sin usa
 
 ## Fuente de verdad
 
-Repositorio:
-`cookiecodespy/cookiecodespy.github.io`
+Repositorio canónico (desde el 9 de octubre de 2026):
+`cookiecodespy/ai-race-gazette`
 
-Carpeta:
-`ai-race-gazette/`
+Carpeta del proyecto:
+`/` (raíz del repositorio dedicado; código reproducible en `source/`).
+
+Nota de migración: los enlaces de commits y PR antiguos hacia `cookiecodespy/cookiecodespy.github.io` se conservan únicamente como evidencia histórica. Las nuevas publicaciones deben ir exclusivamente al repositorio canónico.
 
 Leer antes de actuar:
 - `source/docs/gazette-v1-standard.md`
