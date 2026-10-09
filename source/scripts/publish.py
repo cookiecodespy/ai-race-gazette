@@ -7,8 +7,8 @@ import tempfile
 from pathlib import Path
 from editorial import ROOT, NEWS, validate
 
-REPO='repos/cookiecodespy/cookiecodespy.github.io'
-PREFIX='ai-race-gazette/'
+REPO='repos/cookiecodespy/ai-race-gazette'
+PREFIX=''
 def api(path,payload=None):
     args=['gh','api',REPO+'/'+path]
     if payload is None:
@@ -45,13 +45,13 @@ def publish(message):
         if existing.get(remote)==sha:continue
         blob=api('git/blobs',{'content':base64.b64encode(raw).decode(),'encoding':'base64'})
         entries.append({'path':remote,'mode':'100644','type':'blob','sha':blob['sha']})
-    # Delete obsolete build hashes only; never remove original references or other projects.
+    # Delete obsolete compiled asset hashes only; the personal portfolio is a separate repo.
     for remote in existing:
         if remote.startswith(PREFIX+'assets/') and re_build_asset(remote) and remote not in paths:
             entries.append({'path':remote,'mode':'100644','type':'blob','sha':None})
     if not entries:
         print('No changes to publish');return
-    assert all(e['path'].startswith(PREFIX) for e in entries)
+    assert all(not e['path'].startswith(('/', '../')) for e in entries)
     tree=api('git/trees',{'base_tree':base,'tree':entries})['sha']
     commit=api('git/commits',{'message':message,'tree':tree,'parents':[ref]})['sha']
     # Non-force update: a concurrent change aborts safely instead of overwriting it.
@@ -61,7 +61,7 @@ def publish(message):
     finally:Path(name).unlink(missing_ok=True)
     print('Published commit:',commit)
     print('https://cookiecodespy.github.io/ai-race-gazette/')
-    api('pages/builds',{})
+    # GitHub Pages rebuilds from its configured branch automatically.
 
 def re_build_asset(path):
     import re
