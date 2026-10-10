@@ -1,0 +1,311 @@
+{
+  "capturedAt": "2026-10-10T06:20:08.462394+00:00",
+  "originalMain": "1a723ef80459c1dca97ce20fcbe3500525b89cb3",
+  "implementationCommit": "6866299ac132743ca2a10e35525475f70aa2ec9e",
+  "compiledCommit": "8e31e8bdb480a05f6b8414d545252ef02525c0df",
+  "articles": 112,
+  "updatedAt": "2026-10-10T04:21:12.000Z",
+  "jsonSha256": "8aa304e82ddbac245ad9b9c7ea9467f58cf9766ad0aec6cb9e882987322b064d",
+  "rssSha256": "d82d966701c5549e2ab057f1db4a57d5b19fb26c41140c41e7e821e2dd6eeed7",
+  "publicResources": [
+    {
+      "path": "data/news.json",
+      "http": 200,
+      "matches": true,
+      "sha256": "8aa304e82ddbac245ad9b9c7ea9467f58cf9766ad0aec6cb9e882987322b064d"
+    },
+    {
+      "path": "source/public/data/news.json",
+      "http": 200,
+      "matches": true,
+      "sha256": "8aa304e82ddbac245ad9b9c7ea9467f58cf9766ad0aec6cb9e882987322b064d"
+    },
+    {
+      "path": "feed.xml",
+      "http": 200,
+      "matches": true,
+      "sha256": "d82d966701c5549e2ab057f1db4a57d5b19fb26c41140c41e7e821e2dd6eeed7"
+    },
+    {
+      "path": "source/public/feed.xml",
+      "http": 200,
+      "matches": true,
+      "sha256": "d82d966701c5549e2ab057f1db4a57d5b19fb26c41140c41e7e821e2dd6eeed7"
+    },
+    {
+      "path": "gazette-deployment.txt",
+      "http": 200,
+      "matches": true,
+      "sha256": "d29dedd37a3406e2980b1df58a459e1571bdfec5bf83bcb265c1d95c306c39dd"
+    },
+    {
+      "path": "index.html",
+      "http": 200,
+      "matches": true,
+      "sha256": "0e083301021ba174ef4e9668961fadf65da2acdbe67579d19b3ffe5607632d92"
+    },
+    {
+      "path": "assets/editorial-CCVVNp6i.woff2",
+      "http": 200,
+      "matches": true,
+      "sha256": "62981321d9a3cc7a61a73792729043703fd6112da86e8ec848bb57f088578757"
+    },
+    {
+      "path": "assets/editorial-OFL.txt",
+      "http": 200,
+      "matches": true,
+      "sha256": "26028ec4e13b650065fa525a09532176f8a668b76ff849ea01c564a7480f91e7"
+    },
+    {
+      "path": "assets/editorial.woff2",
+      "http": 200,
+      "matches": true,
+      "sha256": "62981321d9a3cc7a61a73792729043703fd6112da86e8ec848bb57f088578757"
+    },
+    {
+      "path": "assets/globe.webp",
+      "http": 200,
+      "matches": true,
+      "sha256": "58859cb0bacbfda0a463028c09af52e9617e330d60ca5eaf860f9837fcb3776a"
+    },
+    {
+      "path": "assets/google.webp",
+      "http": 200,
+      "matches": true,
+      "sha256": "301a56ea371aaac27826d7c5bcda598889f99bc5c8baf801f052621ff38f4291"
+    },
+    {
+      "path": "assets/headline-BIFT5Qnz.woff2",
+      "http": 200,
+      "matches": true,
+      "sha256": "192ae876c21d9258d096a526dad5bddf37f0daa69cfe943cae5f6be5a52adda2"
+    },
+    {
+      "path": "assets/headline-OFL.txt",
+      "http": 200,
+      "matches": true,
+      "sha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2"
+    },
+    {
+      "path": "assets/headline.woff2",
+      "http": 200,
+      "matches": true,
+      "sha256": "192ae876c21d9258d096a526dad5bddf37f0daa69cfe943cae5f6be5a52adda2"
+    },
+    {
+      "path": "assets/hero.webp",
+      "http": 200,
+      "matches": true,
+      "sha256": "6bf0e4b0455652cc5bed6d1c8d34fc87fb4641648ae6b4d077e9396c9d56acab"
+    },
+    {
+      "path": "assets/mistral.webp",
+      "http": 200,
+      "matches": true,
+      "sha256": "75c10922eef9f827f1c5b47fb73c61fc0404b396c9a61cbf9db45536d2e31517"
+    },
+    {
+      "path": "assets/paper-YKtbLEYF.webp",
+      "http": 200,
+      "matches": true,
+      "sha256": "216ea746c855b1cae493f368f9a091e440935bf28735a0dd6d0a92e0f88f68c9"
+    },
+    {
+      "path": "assets/paper.webp",
+      "http": 200,
+      "matches": true,
+      "sha256": "216ea746c855b1cae493f368f9a091e440935bf28735a0dd6d0a92e0f88f68c9"
+    },
+    {
+      "path": "assets/reference-look.jpg",
+      "http": 200,
+      "matches": true,
+      "sha256": "42077bbc658234f8a62945713aaf7bccf47c82ed577d6416e5a67bff7469cc0d"
+    },
+    {
+      "path": "assets/index-B3BvlBPN.js",
+      "http": 200,
+      "matches": true,
+      "sha256": "83002ba35afd9916e6d730c7ad88036edfa89efd5ad66f426933abb0a65656ef"
+    },
+    {
+      "path": "assets/index-DWyFGLLf.css",
+      "http": 200,
+      "matches": true,
+      "sha256": "e53c37552d7d62e32510ec506fe3d94fba1a3ab946f911a80b9c8dd1b5efbadd"
+    },
+    {
+      "path": "assets/news/2026-10-07/claude-haiku-5-5.webp",
+      "http": 200,
+      "matches": true,
+      "sha256": "b9b8b6c6287fea7a0749893dfba2e83d6896da4c21f1c49c463dc941d57e10eb"
+    }
+  ],
+  "preservedBinaryFiles": [
+    {
+      "path": "assets/editorial-CCVVNp6i.woff2",
+      "sha256": "62981321d9a3cc7a61a73792729043703fd6112da86e8ec848bb57f088578757",
+      "bytes": 58084
+    },
+    {
+      "path": "assets/editorial.woff2",
+      "sha256": "62981321d9a3cc7a61a73792729043703fd6112da86e8ec848bb57f088578757",
+      "bytes": 58084
+    },
+    {
+      "path": "assets/globe.webp",
+      "sha256": "58859cb0bacbfda0a463028c09af52e9617e330d60ca5eaf860f9837fcb3776a",
+      "bytes": 12602
+    },
+    {
+      "path": "assets/google.webp",
+      "sha256": "301a56ea371aaac27826d7c5bcda598889f99bc5c8baf801f052621ff38f4291",
+      "bytes": 222268
+    },
+    {
+      "path": "assets/headline-BIFT5Qnz.woff2",
+      "sha256": "192ae876c21d9258d096a526dad5bddf37f0daa69cfe943cae5f6be5a52adda2",
+      "bytes": 25884
+    },
+    {
+      "path": "assets/headline.woff2",
+      "sha256": "192ae876c21d9258d096a526dad5bddf37f0daa69cfe943cae5f6be5a52adda2",
+      "bytes": 25884
+    },
+    {
+      "path": "assets/hero.webp",
+      "sha256": "6bf0e4b0455652cc5bed6d1c8d34fc87fb4641648ae6b4d077e9396c9d56acab",
+      "bytes": 188512
+    },
+    {
+      "path": "assets/mistral.webp",
+      "sha256": "75c10922eef9f827f1c5b47fb73c61fc0404b396c9a61cbf9db45536d2e31517",
+      "bytes": 194418
+    },
+    {
+      "path": "assets/paper-YKtbLEYF.webp",
+      "sha256": "216ea746c855b1cae493f368f9a091e440935bf28735a0dd6d0a92e0f88f68c9",
+      "bytes": 191186
+    },
+    {
+      "path": "assets/paper.webp",
+      "sha256": "216ea746c855b1cae493f368f9a091e440935bf28735a0dd6d0a92e0f88f68c9",
+      "bytes": 191186
+    },
+    {
+      "path": "assets/reference-look.jpg",
+      "sha256": "42077bbc658234f8a62945713aaf7bccf47c82ed577d6416e5a67bff7469cc0d",
+      "bytes": 728646
+    },
+    {
+      "path": "source/public/assets/editorial.woff2",
+      "sha256": "62981321d9a3cc7a61a73792729043703fd6112da86e8ec848bb57f088578757",
+      "bytes": 58084
+    },
+    {
+      "path": "source/public/assets/globe.webp",
+      "sha256": "58859cb0bacbfda0a463028c09af52e9617e330d60ca5eaf860f9837fcb3776a",
+      "bytes": 12602
+    },
+    {
+      "path": "source/public/assets/google.webp",
+      "sha256": "301a56ea371aaac27826d7c5bcda598889f99bc5c8baf801f052621ff38f4291",
+      "bytes": 222268
+    },
+    {
+      "path": "source/public/assets/headline.woff2",
+      "sha256": "192ae876c21d9258d096a526dad5bddf37f0daa69cfe943cae5f6be5a52adda2",
+      "bytes": 25884
+    },
+    {
+      "path": "source/public/assets/hero.webp",
+      "sha256": "6bf0e4b0455652cc5bed6d1c8d34fc87fb4641648ae6b4d077e9396c9d56acab",
+      "bytes": 188512
+    },
+    {
+      "path": "source/public/assets/mistral.webp",
+      "sha256": "75c10922eef9f827f1c5b47fb73c61fc0404b396c9a61cbf9db45536d2e31517",
+      "bytes": 194418
+    },
+    {
+      "path": "source/public/assets/paper.webp",
+      "sha256": "216ea746c855b1cae493f368f9a091e440935bf28735a0dd6d0a92e0f88f68c9",
+      "bytes": 191186
+    },
+    {
+      "path": "source/public/assets/reference-look.jpg",
+      "sha256": "42077bbc658234f8a62945713aaf7bccf47c82ed577d6416e5a67bff7469cc0d",
+      "bytes": 728646
+    },
+    {
+      "path": "source/public/assets/news/2026-10-07/claude-haiku-5-5.webp",
+      "sha256": "b9b8b6c6287fea7a0749893dfba2e83d6896da4c21f1c49c463dc941d57e10eb",
+      "bytes": 89248
+    },
+    {
+      "path": "assets/news/2026-10-07/claude-haiku-5-5.webp",
+      "sha256": "b9b8b6c6287fea7a0749893dfba2e83d6896da4c21f1c49c463dc941d57e10eb",
+      "bytes": 89248
+    }
+  ],
+  "history": {
+    "sourceCommit": "5298a9141a9066a814ff881b6024a62f27658906",
+    "archiveHead": "75f0c79505e23796add1fc88b9930b6286cace41",
+    "identicalTrees": true,
+    "files": 114
+  },
+  "portfolio": {
+    "http": 200,
+    "identical": true,
+    "sha256": "1d514a1a86d544d4e606ea87e08b09c904ef371ea46397ca03cacf6747225876",
+    "gitBlob": "4ce9eaa66cefeded9599c76aa1b27e647bdf3ed4"
+  },
+  "browser": {
+    "passed": true,
+    "articles": 112,
+    "reporterV2": "ultra-operator-62m-physical-intelligence-2026",
+    "errors": [],
+    "checks": [
+      "layout order",
+      "coverage calendar",
+      "empty daily edition route",
+      "pagination",
+      "search",
+      "dynamic filters",
+      "filter reload",
+      "pending day",
+      "Reporter V2 blocks",
+      "share/reload",
+      "320/390/768/1280 reflow",
+      "skip keyboard",
+      "60 simultaneous launches"
+    ],
+    "capturedAt": "2026-10-10T06:18:27.126Z"
+  },
+  "live": {
+    "passed": true,
+    "site": "https://cookiecodespy.github.io/ai-race-gazette/",
+    "sourceRepository": "cookiecodespy/ai-race-gazette",
+    "mirrorsIdentical": true,
+    "publicArticles": 112,
+    "rssItems": 112,
+    "visibleCovers": 12,
+    "desktopURL": "https://cookiecodespy.github.io/ai-race-gazette/#articulo/anthropic-claude-unintended-actions-real-websites-2026",
+    "hasImage": true,
+    "mobileHorizontalOverflow": 0,
+    "errors": []
+  },
+  "portfolioBrowser": {
+    "desktop": {
+      "title": "Tomas Sotz — AI & Automation Builder",
+      "h1": [
+        "I build AI systems that actually run."
+      ],
+      "status": 200
+    },
+    "mobileOverflow": 0,
+    "errors": []
+  },
+  "chatgptTask": "BLOCKED: effective task configuration and next scheduled run not accessible here",
+  "cleanupPR": "OPEN/DRAFT/DIRTY; not merged"
+}
