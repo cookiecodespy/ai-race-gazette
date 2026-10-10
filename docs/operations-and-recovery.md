@@ -12,24 +12,24 @@
 
 Referencia técnica: [GitHub Pages y GITHUB_TOKEN](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) y [solicitar build de Pages](https://docs.github.com/en/rest/pages/pages#request-a-github-pages-build).
 
-## Bloqueo de coordinación
+## Estado de separación — 10 de octubre de 2026
 
-La tarea horaria pertenece a ChatGPT. Esta intervención no la actualizó ni creó una sustituta. El PR de limpieza [#9](https://github.com/cookiecodespy/cookiecodespy.github.io/pull/9) debe seguir en borrador mientras no exista evidencia del cambio de destino.
+**Completado:** La única Scheduled Task activa de Gazette fue modificada EN ChatGPT, no duplicada, conservando el ID `6ac671bed2e8819184ed6fce0a20e531`, frecuencia horaria al minuto 21 y destino único `cookiecodespy/ai-race-gazette/main`. La tarea antigua `Actualizar AI Race Gazette` permanece desactivada.
 
-Mientras la tarea siga escribiendo en el original, el sitio independiente puede quedar atrasado después de esta conciliación. No iniciar otro redactor horario ni considerar cerrado el cutover. Conservar el original completo y reconciliar nuevamente al cambiar la tarea.
+**Completado:** conciliación final: ambos repositorios compartían los mismos blobs Git para `data/news.json`, su espejo, `feed.xml`, su espejo y `source/docs/history-coverage.json` antes de retirar el proyecto antiguo. Se verificaron 112 artículos e igual número de entradas RSS, sin ids ni eventKeys duplicados.
 
-Instrucción para el chat principal de ChatGPT:
+**Completado:** el PR [#9](https://github.com/cookiecodespy/cookiecodespy.github.io/pull/9) se actualizó sobre el último `main` usando un commit de conciliación, y se fusionó como `7cc3743d0251ca9e14b809c36d15dc1631085921`. Ahora el repositorio original contiene solo `index.html` (blob `4ce9eaa66cefeded9599c76aa1b27e647bdf3ed4`) y `.gitignore` (blob `7ab523525cf0b347807f1777294f0c7088670761`), exactamente los mismos archivos y hashes que en junio de 2026. Backups: también `backup/portfolio-final-cutover-2026-10-10`.
 
-> Actualiza la Scheduled Task existente «AI Race Gazette Newsroom», sin crear otra y conservando su ID y cadencia horaria. Su único destino de lectura/escritura operativa debe ser cookiecodespy/ai-race-gazette, rama main. Retira el prefijo ai-race-gazette/ de las rutas internas: data/news.json, source/public/data/news.json, feed.xml, source/public/feed.xml y source/docs/history-coverage.json. Conserva Reporter V2, investigación de las últimas 48 horas, fuentes verificadas, deduplicación por id/eventKey, cobertura histórica, no-op sin novedades y publicaciones atómicas sin skip-ci. Antes de cambiar el destino, verifica que no quede una ejecución anterior escribiendo en el portafolio. Confirma el ID, prompt efectivo, horario, próxima ejecución y que existe una sola tarea horaria activa. No fusiones el PR #9 todavía: devuelve esa evidencia para conciliar ambos main por última vez y cerrar la separación con verificación posterior.
+**Completado:** prueba [GitHub Actions post-cutover](https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38032993104): éxito; comprobó ambos sitios HTTP, marcador de origen, HTML byte por byte del portafolio original, HTML del nuevo Gazette, JSON y RSS públicos/canónicos/espejos y 112 artículos.
 
-## Última conciliación y limpieza
+**Pendiente de observación:** verificar el primer run de la Scheduled Task posterior a la actualización; un no-op verificable no produce commit, y eso es correcto. Si hay noticia material, comprobar que se publica solo en el nuevo repositorio y que el CI valida. El servicio NO debe escribir jamás al repositorio del portafolio.
 
-1. Confirmar el cambio de la tarea y que ninguna ejecución antigua sigue escribiendo. No cambiar la política editorial.
-2. Refetch de ambos `main`. Comparar artículos por `id` y `eventKey` contra la última conciliación documentada; preservar novedades de ambos lados. Resolver cambios incompatibles del mismo evento manualmente.
-3. Actualizar en un commit atómico ambos JSON, ambos RSS, el ledger diario y datos visuales que correspondan. No copiar un archivo antiguo encima del nuevo. Rechazar un push si cambió el padre; volver a conciliar.
-4. Ejecutar validators, CI, build, smoke público y confirmar el marcador.
-5. Crear un respaldo del último `main` del original. Actualizar el PR #9 contra ese `main` y revisar que elimine únicamente Gazette y sus cuatro workflows. Conservar el `index.html` original (blob `4ce9eaa66cefeded9599c76aa1b27e647bdf3ed4`) y `.gitignore`.
-6. Fusionar solo tras satisfacer todos los gates. Verificar ambas URLs y ausencia de escrituras posteriores de Gazette en el portafolio. Una ejecución horaria real debe probar continuidad; un no-op válido no exige commit.
+### Diagnóstico y recuperación tras el corte
+
+1. Comprobar que la tarea ID `6ac671bed2e8819184ed6fce0a20e531` sigue activa, es la única tarea horaria de Gazette y apunta solo al nuevo repositorio.
+2. Comprobar `main` de Gazette, `data/news.json` y espejo, RSS y espejo, `source/docs/history-coverage.json`, CI y Pages. Comparar id/eventKey, ledger y hashes; un no-op horario no requiere commit.
+3. Comprobar que `cookiecodespy/cookiecodespy.github.io/main` mantiene solamente el portafolio y no recibe publicaciones de Gazette.
+4. Ante conflicto de noticias, volver a consultar `main`, conciliar por id/eventKey y nunca forzar pushes. Mantener backups y recuperar mediante commits nuevos de reversión si fuera necesario.
 
 ## Verificación reproducible
 
