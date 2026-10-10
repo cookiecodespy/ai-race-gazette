@@ -4,7 +4,7 @@
 
 Para desarrollar y comprobar localmente: `cd source && npm ci && npm test && npm run build`. GitHub Pages utiliza `main` / `/(root)`.
 
-Operación, recuperación y coordinación pendiente con ChatGPT: [runbook de separación](docs/operations-and-recovery.md). La migración no se considera cerrada hasta confirmar el destino de la tarea horaria y retirar Gazette del repositorio del portafolio.
+Operación y recuperación: [runbook actualizado](docs/operations-and-recovery.md). La separación de repositorios se completó el 10 de octubre de 2026; la primera ejecución posterior al cambio de destino de la tarea horaria sigue pendiente de observación.
 
 AI Race Gazette es una hemeroteca pública en español sobre la carrera de la inteligencia artificial y la tecnología. Combina una interfaz inspirada en prensa impresa con un archivo verificable, artículos enlazables, fuentes primarias y análisis editorial separado de los hechos.
 
@@ -41,7 +41,7 @@ El workflow `.github/workflows/build-ai-race-gazette.yml` ejecuta tests Node/Pyt
 
 ## Automatización
 
-La tarea **AI Race Gazette Newsroom** se administra en ChatGPT y debe conservar una única ejecución horaria. El destino operativo de la tarea aún requiere confirmación allí; cambiar esta documentación no cambia la Scheduled Task. No usa Codex, Work ni una API de pago como parte del ciclo editorial rutinario.
+La tarea **AI Race Gazette Newsroom** se administra en ChatGPT. ID verificado: `6ac671bed2e8819184ed6fce0a20e531`, activa cada hora al minuto 21 (zona `America/Santiago`) y actualizada el 10 de octubre de 2026 con destino exclusivo `cookiecodespy/ai-race-gazette/main`. La primera ejecución posterior a la migración aún debe observarse; un no-op válido no genera commits. No usa Codex, Work ni una API de pago como parte del ciclo editorial rutinario.
 
 Reglas principales:
 - ventana móvil de al menos 48 horas;
