@@ -1,8 +1,595 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T09:23:14.000Z",
+  "updatedAt": "2026-10-10T12:27:02.298Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "openai-codex-composer-predictions-2026",
+      "eventKey": "openai-codex-composer-predictions-pro-beta-2026-10-09",
+      "articleVersion": 2,
+      "date": "2026-10-09",
+      "announcedAt": "2026-10-09",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "OpenAI",
+      "product": "Codex Composer predictions",
+      "title": "Codex empieza a sugerir el siguiente mensaje: OpenAI estrena Composer predictions en beta para Pro",
+      "summary": "OpenAI activó una beta de predicciones de mensajes en Codex Desktop para cuentas personales Pro de adultos. La sugerencia usa el hilo actual y exige aceptación y envío manual; generarla no consume créditos durante la beta.",
+      "tags": [
+        "Agentes",
+        "Herramientas de desarrollo",
+        "Codex",
+        "Beta",
+        "Productividad"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de un escritorio de programación y un borrador de instrucciones; no es una captura de Codex.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "library",
+      "source": {
+        "name": "OpenAI · Composer predictions in Codex",
+        "url": "https://help.openai.com/en/articles/20001601-composer-predictions-in-codex",
+        "publishedAt": "2026-10-09"
+      },
+      "relatedSources": [
+        {
+          "name": "OpenAI · ChatGPT release notes",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "name": "OpenAI Developer Community · anuncio de beta",
+          "url": "https://community.openai.com/t/codex-can-now-suggest-your-next-message-composer-predictions-beta/1404842",
+          "publishedAt": "2026-10-09"
+        }
+      ],
+      "body": [
+        "El 9 de octubre de 2026 OpenAI presentó Composer predictions para Codex. Después de que el asistente responda, el cuadro de redacción puede mostrar un posible mensaje de seguimiento derivado del hilo actual. Es una función en beta y no aparece necesariamente tras todas las respuestas. Su objetivo inmediato es reducir fricción al formular instrucciones adicionales durante el trabajo con código.",
+        "La distinción fundamental es que la sugerencia no ejecuta acciones. Pulsar Tab la coloca en el editor; el usuario puede revisarla, corregirla, copiarla o descartarla y debe enviarla de manera explícita. Tampoco es autocompletado palabra por palabra mientras se escribe: propone un mensaje completo a partir del intercambio anterior.",
+        "La documentación oficial limita la beta a cuentas personales ChatGPT Pro de personas de 18 años o más en las regiones admitidas. Se necesita una versión reciente de Codex Desktop, una conversación local o SSH y seleccionar GPT-6 Astra o GPT-6.1 Sol. No se anunció acceso general para Plus, Free, Business o Enterprise.",
+        "La función no aparece en Chat normal de web o escritorio. La documentación distingue además las experiencias de Work, por lo que no debe interpretarse esta beta como una capacidad disponible de manera uniforme en todos los productos de OpenAI. Una persona elegible puede desactivarla en Settings, General, Composer, Show predictions.",
+        "La predicción aprovecha la conversación del hilo en curso. Si esa conversación ya contiene información traída de una herramienta o de trabajos previos, el texto puede influir en el resultado; la predicción no consulta por su cuenta otras aplicaciones conectadas ni recupera recuerdos independientes. Esta limitación importa al evaluar si la sugerencia realmente conoce el estado del proyecto.",
+        "En conversaciones largas la aparición puede tardar varios segundos, y algunas respuestas no generan ninguna propuesta. Una ausencia ocasional no implica fallo del servicio. El usuario puede seguir escribiendo inmediatamente, sin esperar a que el sistema proponga algo. También puede trabajar con la función de memoria desactivada.",
+        "OpenAI indica que generar estas predicciones está incluido sin coste adicional para los usuarios Pro elegibles durante la beta. Ese cálculo tampoco consume los créditos ni los límites de uso de Codex. Es importante separar el coste de la sugerencia del coste del trabajo solicitado después.",
+        "Si el usuario acepta y envía el texto sugerido, ese mensaje sí queda sujeto a las condiciones normales de uso y facturación de Codex. La compañía no anunció aquí un precio futuro para predicciones, ni una fecha de disponibilidad general. Por tanto, no corresponde prometer gratuidad permanente ni equiparar la función con un nuevo plan.",
+        "Para un desarrollador, la ventaja potencial es ahorrar unos segundos al redactar peticiones habituales como ampliar pruebas, inspeccionar un error o pedir un resumen. No obstante, una propuesta plausible puede estar mal alineada con el objetivo actual. En repositorios grandes conviene revisar si el texto delimita correctamente archivos, riesgos y criterio de aceptación antes de enviarlo.",
+        "En equipos que trabajan por SSH, el límite humano sigue siendo esencial: una sugerencia que pide cambios amplios no adquiere legitimidad por haber aparecido en la interfaz. El control de permisos, las pruebas y la revisión de diferencias siguen siendo necesarios. Esta beta no modifica por sí sola el nivel de acceso del agente al sistema.",
+        "Análisis Gazette: los agentes de programación suelen evaluarse por su capacidad para modificar código, pero también importa cuánto esfuerzo exige guiarlos. Aquí OpenAI experimenta con anticipar la siguiente instrucción, una forma distinta de reducir el trabajo de coordinación. No es evidencia de que el modelo comprenda las prioridades de negocio mejor que la persona.",
+        "El riesgo de experiencia es convertir una recomendación cómoda en una cadena de pedidos aceptados sin reflexión. Para medir valor habría que comparar tareas completas, tiempo de supervisión y tasa de correcciones, no contar simplemente cuántas sugerencias aparecen. Un seguimiento innecesario puede aumentar el consumo y el ruido de una conversación.",
+        "Quien tenga acceso puede probar la beta en un hilo de bajo riesgo, observar qué parte de la propuesta es correcta y modificarla antes de enviarla. También puede desactivar la opción para comparar su flujo habitual. Si no aparece, primero debe revisar versión de la aplicación, plan, tipo de hilo, modelo seleccionado y configuración.",
+        "Quedan por aclarar la expansión a otros planes, la precisión en proyectos prolongados y las condiciones comerciales al finalizar la beta. Tampoco hay una evaluación pública independiente que demuestre ahorros de tiempo. El anuncio establece disponibilidad y comportamiento de interfaz, no un benchmark universal de productividad."
+      ],
+      "keyPoints": [
+        "Beta desde el 9 de octubre para cuentas personales ChatGPT Pro de mayores de 18 años, en regiones compatibles.",
+        "Solo hilos locales o SSH de Codex Desktop con GPT-6 Astra o GPT-6.1 Sol; no es una función general de ChatGPT.",
+        "Tab acepta una propuesta editable, pero nunca la envía; generar sugerencias no consume créditos durante la beta."
+      ],
+      "quickTakeaways": [
+        "Beta desde el 9 de octubre para cuentas personales ChatGPT Pro de mayores de 18 años, en regiones compatibles.",
+        "Solo hilos locales o SSH de Codex Desktop con GPT-6 Astra o GPT-6.1 Sol; no es una función general de ChatGPT.",
+        "Tab acepta una propuesta editable, pero nunca la envía; generar sugerencias no consume créditos durante la beta."
+      ],
+      "sections": [
+        {
+          "heading": "Qué se anunció y qué no",
+          "kind": "report",
+          "paragraphs": [
+            "El 9 de octubre de 2026 OpenAI presentó Composer predictions para Codex. Después de que el asistente responda, el cuadro de redacción puede mostrar un posible mensaje de seguimiento derivado del hilo actual. Es una función en beta y no aparece necesariamente tras todas las respuestas. Su objetivo inmediato es reducir fricción al formular instrucciones adicionales durante el trabajo con código.",
+            "La distinción fundamental es que la sugerencia no ejecuta acciones. Pulsar Tab la coloca en el editor; el usuario puede revisarla, corregirla, copiarla o descartarla y debe enviarla de manera explícita. Tampoco es autocompletado palabra por palabra mientras se escribe: propone un mensaje completo a partir del intercambio anterior."
+          ]
+        },
+        {
+          "heading": "Acceso, dispositivos y modelos",
+          "kind": "technical",
+          "paragraphs": [
+            "La documentación oficial limita la beta a cuentas personales ChatGPT Pro de personas de 18 años o más en las regiones admitidas. Se necesita una versión reciente de Codex Desktop, una conversación local o SSH y seleccionar GPT-6 Astra o GPT-6.1 Sol. No se anunció acceso general para Plus, Free, Business o Enterprise.",
+            "La función no aparece en Chat normal de web o escritorio. La documentación distingue además las experiencias de Work, por lo que no debe interpretarse esta beta como una capacidad disponible de manera uniforme en todos los productos de OpenAI. Una persona elegible puede desactivarla en Settings, General, Composer, Show predictions."
+          ]
+        },
+        {
+          "heading": "Cómo se genera una propuesta",
+          "kind": "technical",
+          "paragraphs": [
+            "La predicción aprovecha la conversación del hilo en curso. Si esa conversación ya contiene información traída de una herramienta o de trabajos previos, el texto puede influir en el resultado; la predicción no consulta por su cuenta otras aplicaciones conectadas ni recupera recuerdos independientes. Esta limitación importa al evaluar si la sugerencia realmente conoce el estado del proyecto.",
+            "En conversaciones largas la aparición puede tardar varios segundos, y algunas respuestas no generan ninguna propuesta. Una ausencia ocasional no implica fallo del servicio. El usuario puede seguir escribiendo inmediatamente, sin esperar a que el sistema proponga algo. También puede trabajar con la función de memoria desactivada."
+          ]
+        },
+        {
+          "heading": "Coste durante la beta",
+          "kind": "report",
+          "paragraphs": [
+            "OpenAI indica que generar estas predicciones está incluido sin coste adicional para los usuarios Pro elegibles durante la beta. Ese cálculo tampoco consume los créditos ni los límites de uso de Codex. Es importante separar el coste de la sugerencia del coste del trabajo solicitado después.",
+            "Si el usuario acepta y envía el texto sugerido, ese mensaje sí queda sujeto a las condiciones normales de uso y facturación de Codex. La compañía no anunció aquí un precio futuro para predicciones, ni una fecha de disponibilidad general. Por tanto, no corresponde prometer gratuidad permanente ni equiparar la función con un nuevo plan."
+          ]
+        },
+        {
+          "heading": "Implicaciones para quienes programan",
+          "kind": "practical",
+          "paragraphs": [
+            "Para un desarrollador, la ventaja potencial es ahorrar unos segundos al redactar peticiones habituales como ampliar pruebas, inspeccionar un error o pedir un resumen. No obstante, una propuesta plausible puede estar mal alineada con el objetivo actual. En repositorios grandes conviene revisar si el texto delimita correctamente archivos, riesgos y criterio de aceptación antes de enviarlo.",
+            "En equipos que trabajan por SSH, el límite humano sigue siendo esencial: una sugerencia que pide cambios amplios no adquiere legitimidad por haber aparecido en la interfaz. El control de permisos, las pruebas y la revisión de diferencias siguen siendo necesarios. Esta beta no modifica por sí sola el nivel de acceso del agente al sistema."
+          ]
+        },
+        {
+          "heading": "Qué cambia frente a la automatización autónoma",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: los agentes de programación suelen evaluarse por su capacidad para modificar código, pero también importa cuánto esfuerzo exige guiarlos. Aquí OpenAI experimenta con anticipar la siguiente instrucción, una forma distinta de reducir el trabajo de coordinación. No es evidencia de que el modelo comprenda las prioridades de negocio mejor que la persona.",
+            "El riesgo de experiencia es convertir una recomendación cómoda en una cadena de pedidos aceptados sin reflexión. Para medir valor habría que comparar tareas completas, tiempo de supervisión y tasa de correcciones, no contar simplemente cuántas sugerencias aparecen. Un seguimiento innecesario puede aumentar el consumo y el ruido de una conversación."
+          ]
+        },
+        {
+          "heading": "Consejos y preguntas abiertas",
+          "kind": "practical",
+          "paragraphs": [
+            "Quien tenga acceso puede probar la beta en un hilo de bajo riesgo, observar qué parte de la propuesta es correcta y modificarla antes de enviarla. También puede desactivar la opción para comparar su flujo habitual. Si no aparece, primero debe revisar versión de la aplicación, plan, tipo de hilo, modelo seleccionado y configuración.",
+            "Quedan por aclarar la expansión a otros planes, la precisión en proyectos prolongados y las condiciones comerciales al finalizar la beta. Tampoco hay una evaluación pública independiente que demuestre ahorros de tiempo. El anuncio establece disponibilidad y comportamiento de interfaz, no un benchmark universal de productividad."
+          ]
+        }
+      ],
+      "executiveSummary": "OpenAI incorpora a Codex una capa de asistencia para formular el próximo pedido, no una nueva capacidad de ejecución autónoma. La beta se limita a usuarios Pro personales elegibles y a conversaciones locales o por SSH con dos modelos determinados. Su utilidad real dependerá de si anticipa intenciones sin desplazar la revisión humana.",
+      "finalSummary": "Composer predictions reduce el trabajo de escribir un seguimiento posible, pero la responsabilidad de decidir, editar y enviar permanece en el usuario. Es una beta de interacción, no un agente que continúe proyectos por iniciativa propia. Habrá que observar acceso más amplio, precisión de las sugerencias y condiciones tras la beta.",
+      "analysis": "Análisis Gazette: esta función mueve parte de la asistencia desde la respuesta hacia la composición de la próxima instrucción. El avance de experiencia puede ser tangible en tareas repetitivas, pero no resuelve memoria persistente, planificación ni validación de resultados. La métrica relevante sería el tiempo ahorrado sin aumentar mensajes innecesarios.",
+      "watch": "Extensión a otros planes, modelos y clientes; datos públicos de aceptación de sugerencias; cambios de precio o límites después de la beta.",
+      "technicalDetails": [
+        {
+          "label": "Estado",
+          "value": "Beta desde el 9 de octubre de 2026"
+        },
+        {
+          "label": "Modelos",
+          "value": "GPT-6 Astra y GPT-6.1 Sol"
+        },
+        {
+          "label": "Interacción",
+          "value": "Tab acepta texto editable; envío manual"
+        }
+      ],
+      "availability": {
+        "status": "Beta para cuentas personales Pro elegibles",
+        "platforms": [
+          "Codex Desktop; hilos locales y SSH"
+        ],
+        "regions": [
+          "Todas las regiones donde la beta y Codex son compatibles"
+        ],
+        "requirements": [
+          "Mayor de 18 años",
+          "ChatGPT Pro personal",
+          "Última versión de Codex Desktop",
+          "Modelo admitido"
+        ],
+        "notes": [
+          "No aparece necesariamente tras cada respuesta",
+          "No disponible en Chat normal"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Generación de sugerencias",
+          "value": "Sin coste adicional ni consumo de créditos durante la beta"
+        },
+        {
+          "label": "Mensaje enviado",
+          "value": "Aplican límites y facturación habituales de Codex"
+        }
+      ],
+      "limitations": [
+        "No envía ni ejecuta mensajes automáticamente.",
+        "No consulta memorias ni aplicaciones conectadas por iniciativa propia.",
+        "No se anunció fecha de acceso general ni precio posterior a la beta."
+      ],
+      "practicalAdvice": [
+        "Revisar cada propuesta antes de enviarla.",
+        "Comparar con la función desactivada en tareas equivalentes.",
+        "Mantener permisos y pruebas de código independientes de la sugerencia."
+      ],
+      "usefulFacts": [
+        "La opción se desactiva en Settings > General > Composer > Show predictions.",
+        "El sistema puede omitir sugerencias o tardar varios segundos."
+      ]
+    },
+    {
+      "id": "caixabank-gemini-enterprise-google-cloud-2033-2026",
+      "eventKey": "caixabank-google-cloud-gemini-enterprise-agents-2033-2026-10-09",
+      "articleVersion": 2,
+      "date": "2026-10-09",
+      "announcedAt": "2026-10-09",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "CaixaBank",
+      "product": "Gemini Enterprise / Google Cloud",
+      "title": "CaixaBank amplía su alianza con Google Cloud hasta 2033 y prepara agentes de Gemini Enterprise",
+      "summary": "CaixaBank amplió hasta 2033 su acuerdo con Google Cloud, iniciado en 2023, para desplegar agentes empresariales, analítica de datos e infraestructura híbrida. No se divulgaron importes ni un calendario de despliegue completo.",
+      "tags": [
+        "Agentes",
+        "Empresas",
+        "Banca",
+        "Google Cloud",
+        "Gemini Enterprise"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual de infraestructura financiera y redes; no representa oficinas, servidores ni sistemas reales de CaixaBank.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Ilustración 3:2 en grabado sepia de un banco abstracto conectado a infraestructura híbrida y agentes de análisis documental. Mostrar documentos, conexiones seguras y servidores simbólicos, sin logos inventados, pantallas ficticias ni representación documental.",
+      "source": {
+        "name": "CaixaBank · acuerdo estratégico con Google Cloud",
+        "url": "https://www.caixabank.com/es/actualidad/noticias/caixabank-amplia-su-colaboracion-estrategica-con-google-cloud-para-acelerar-sus-capacidades-de-ia-y-datos",
+        "publishedAt": "2026-10-09"
+      },
+      "relatedSources": [
+        {
+          "name": "CaixaBank · versión en inglés",
+          "url": "https://www.caixabank.com/en/headlines/news/caixabank-expands-strategic-collaboration-with-google-cloud-to-accelerate-ai-and-data-capabilities",
+          "publishedAt": "2026-10-09"
+        }
+      ],
+      "body": [
+        "El 9 de octubre de 2026 CaixaBank comunicó la ampliación de su colaboración estratégica con Google Cloud hasta 2033. El acuerdo original comenzó en 2023. La entidad lo presenta como una vía para fortalecer inteligencia artificial, analítica, gestión de datos y capacidades de infraestructura, con énfasis en herramientas que apoyen decisiones y operaciones de sus empleados.",
+        "La noticia no es el lanzamiento de un nuevo modelo Gemini ni una función ya disponible para todos los clientes del banco. Se trata de un compromiso de adopción tecnológica. La nota corporativa no ofrece una fecha única de encendido de los agentes, el número final de despliegues ni resultados operativos medidos.",
+        "El eje de IA contempla incorporar Gemini Enterprise, plataforma de Google Cloud para construir, administrar y desplegar agentes. CaixaBank describe usos como organizar documentos, clasificar información y sintetizar materiales financieros complejos. Esas tareas pueden reducir pasos manuales, pero su utilidad depende de que las respuestas se apoyen en información vigente y autorizada.",
+        "Un resumen financiero puede parecer correcto y omitir una excepción importante. Por ello, cualquier implementación responsable necesita controles sobre procedencia documental, versiones, permisos y revisión de decisiones sensibles. El comunicado expresa objetivos de transformación; no identifica modelos concretos, parámetros técnicos, precisión de extracción ni tasas de error en producción.",
+        "El banco prevé combinar su entorno privado con infraestructura de Google Cloud. El planteamiento híbrido permite diseñar ubicaciones distintas para datos y cargas de trabajo, pero no implica automáticamente que toda información sensible permanezca fuera de la nube pública. Esa distinción debe verificarse en la arquitectura efectiva y en los acuerdos de tratamiento de datos.",
+        "El anuncio también menciona detección de amenazas, monitorización y marcos de seguridad, privacidad y uso responsable. Son compromisos y líneas de trabajo declarados por CaixaBank, no resultados de una auditoría técnica independiente. El detalle sobre claves, retención, controles de residencia y segregación de funciones no se hizo público.",
+        "La tercera línea del acuerdo incluye servicios profesionales, iniciativas conjuntas y formación. Es una parte relevante porque automatizar un proceso bancario no consiste únicamente en conectar un modelo a documentos: exige decidir quién puede solicitar acciones, quién valida resultados y cómo se registran las excepciones para su revisión posterior.",
+        "En organizaciones con equipos amplios, los agentes pueden cambiar la manera de repartir tareas. Si un sistema acelera la clasificación pero traslada errores al área de cumplimiento, el ahorro aparente no equivale a una mejora real. La adopción debería medirse con indicadores de calidad, tiempo completo por expediente y esfuerzo de supervisión.",
+        "La fuente oficial confirma la intención de desplegar Gemini Enterprise en CaixaBank, no una fecha pública de disponibilidad general de las soluciones internas. Tampoco detalla qué sucursales, países, departamentos o perfiles de empleado tendrán acceso primero. El hecho de que Google Cloud comercialice la plataforma no significa que esta implementación bancaria ya esté terminada.",
+        "No se publicó el importe del contrato, un precio por agente ni las condiciones de licencias. Tampoco hay cifras públicas de ahorro o retorno de inversión vinculadas a esta ampliación. Atribuir un coste a partir de tarifas generales de nube sería engañoso, porque un acuerdo empresarial puede incluir servicios, infraestructura y compromisos específicos.",
+        "Para los equipos de desarrollo, el caso ilustra un patrón de integración de IA con repositorios documentales, identidad corporativa y supervisión. Antes de automatizar una tarea conviene separar consulta, recomendación y acción: cada nivel necesita permisos y mecanismos de recuperación distintos. Los agentes de clasificación no deberían adquirir por defecto facultades para aprobar operaciones.",
+        "Para empresas fuera del sector bancario, la lección no es copiar un contrato de larga duración, sino exigir una línea base medible antes del piloto. Resulta útil comparar tiempo por caso, tasa de errores, necesidad de escalamiento humano y coste de operación. También deben evaluarse alternativas y un plan de salida tecnológica.",
+        "El anuncio se inscribe en la competencia de proveedores de nube por convertirse en plataforma de agentes corporativos. Sin datos comparables de costes, seguridad o resultados no se puede concluir que Gemini Enterprise sea superior a otras soluciones. La elección de un socio puede responder a integraciones existentes, gobernanza, capacidades comerciales y necesidades de cada organización.",
+        "CaixaBank afirma tener más de trece millones de clientes digitales, dato corporativo que contextualiza la escala potencial del negocio, pero no debe confundirse con usuarios de los agentes. No se informó cuántas personas los utilizarán ni cuántos procesos serán automatizados. Una implantación gradual podría tardar años sin contradecir el anuncio.",
+        "El siguiente hito relevante será una implementación descrita con alcance preciso: departamento, volumen de expedientes, fuentes autorizadas, criterios de calidad y revisión humana. También interesará conocer si los agentes actúan sobre sistemas transaccionales o se limitan a asistir con información. Son niveles de riesgo y responsabilidad distintos.",
+        "Análisis Gazette: el acuerdo apunta a la consolidación de IA empresarial dentro de infraestructuras críticas, pero la prueba decisiva será la calidad de la operación cotidiana. Hasta que existan métricas y documentación de despliegue, debe hablarse de objetivos anunciados y no de ganancias comprobadas."
+      ],
+      "keyPoints": [
+        "El acuerdo de CaixaBank con Google Cloud se prolonga hasta 2033; la relación original comenzó en 2023.",
+        "El banco planea usar Gemini Enterprise para agentes de clasificación, síntesis documental y apoyo a tareas internas.",
+        "No se comunicaron importe contractual, fecha de despliegue general ni métricas verificadas de impacto."
+      ],
+      "quickTakeaways": [
+        "El acuerdo de CaixaBank con Google Cloud se prolonga hasta 2033; la relación original comenzó en 2023.",
+        "El banco planea usar Gemini Enterprise para agentes de clasificación, síntesis documental y apoyo a tareas internas.",
+        "No se comunicaron importe contractual, fecha de despliegue general ni métricas verificadas de impacto."
+      ],
+      "sections": [
+        {
+          "heading": "Qué anunció el banco",
+          "kind": "report",
+          "paragraphs": [
+            "El 9 de octubre de 2026 CaixaBank comunicó la ampliación de su colaboración estratégica con Google Cloud hasta 2033. El acuerdo original comenzó en 2023. La entidad lo presenta como una vía para fortalecer inteligencia artificial, analítica, gestión de datos y capacidades de infraestructura, con énfasis en herramientas que apoyen decisiones y operaciones de sus empleados.",
+            "La noticia no es el lanzamiento de un nuevo modelo Gemini ni una función ya disponible para todos los clientes del banco. Se trata de un compromiso de adopción tecnológica. La nota corporativa no ofrece una fecha única de encendido de los agentes, el número final de despliegues ni resultados operativos medidos."
+          ]
+        },
+        {
+          "heading": "Agentes para documentos y trabajo interno",
+          "kind": "technical",
+          "paragraphs": [
+            "El eje de IA contempla incorporar Gemini Enterprise, plataforma de Google Cloud para construir, administrar y desplegar agentes. CaixaBank describe usos como organizar documentos, clasificar información y sintetizar materiales financieros complejos. Esas tareas pueden reducir pasos manuales, pero su utilidad depende de que las respuestas se apoyen en información vigente y autorizada.",
+            "Un resumen financiero puede parecer correcto y omitir una excepción importante. Por ello, cualquier implementación responsable necesita controles sobre procedencia documental, versiones, permisos y revisión de decisiones sensibles. El comunicado expresa objetivos de transformación; no identifica modelos concretos, parámetros técnicos, precisión de extracción ni tasas de error en producción."
+          ]
+        },
+        {
+          "heading": "Infraestructura híbrida y seguridad",
+          "kind": "technical",
+          "paragraphs": [
+            "El banco prevé combinar su entorno privado con infraestructura de Google Cloud. El planteamiento híbrido permite diseñar ubicaciones distintas para datos y cargas de trabajo, pero no implica automáticamente que toda información sensible permanezca fuera de la nube pública. Esa distinción debe verificarse en la arquitectura efectiva y en los acuerdos de tratamiento de datos.",
+            "El anuncio también menciona detección de amenazas, monitorización y marcos de seguridad, privacidad y uso responsable. Son compromisos y líneas de trabajo declarados por CaixaBank, no resultados de una auditoría técnica independiente. El detalle sobre claves, retención, controles de residencia y segregación de funciones no se hizo público."
+          ]
+        },
+        {
+          "heading": "Capacitación y gestión del cambio",
+          "kind": "context",
+          "paragraphs": [
+            "La tercera línea del acuerdo incluye servicios profesionales, iniciativas conjuntas y formación. Es una parte relevante porque automatizar un proceso bancario no consiste únicamente en conectar un modelo a documentos: exige decidir quién puede solicitar acciones, quién valida resultados y cómo se registran las excepciones para su revisión posterior.",
+            "En organizaciones con equipos amplios, los agentes pueden cambiar la manera de repartir tareas. Si un sistema acelera la clasificación pero traslada errores al área de cumplimiento, el ahorro aparente no equivale a una mejora real. La adopción debería medirse con indicadores de calidad, tiempo completo por expediente y esfuerzo de supervisión."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, regiones y coste",
+          "kind": "report",
+          "paragraphs": [
+            "La fuente oficial confirma la intención de desplegar Gemini Enterprise en CaixaBank, no una fecha pública de disponibilidad general de las soluciones internas. Tampoco detalla qué sucursales, países, departamentos o perfiles de empleado tendrán acceso primero. El hecho de que Google Cloud comercialice la plataforma no significa que esta implementación bancaria ya esté terminada.",
+            "No se publicó el importe del contrato, un precio por agente ni las condiciones de licencias. Tampoco hay cifras públicas de ahorro o retorno de inversión vinculadas a esta ampliación. Atribuir un coste a partir de tarifas generales de nube sería engañoso, porque un acuerdo empresarial puede incluir servicios, infraestructura y compromisos específicos."
+          ]
+        },
+        {
+          "heading": "Qué significa para desarrolladores y empresas",
+          "kind": "analysis",
+          "paragraphs": [
+            "Para los equipos de desarrollo, el caso ilustra un patrón de integración de IA con repositorios documentales, identidad corporativa y supervisión. Antes de automatizar una tarea conviene separar consulta, recomendación y acción: cada nivel necesita permisos y mecanismos de recuperación distintos. Los agentes de clasificación no deberían adquirir por defecto facultades para aprobar operaciones.",
+            "Para empresas fuera del sector bancario, la lección no es copiar un contrato de larga duración, sino exigir una línea base medible antes del piloto. Resulta útil comparar tiempo por caso, tasa de errores, necesidad de escalamiento humano y coste de operación. También deben evaluarse alternativas y un plan de salida tecnológica."
+          ]
+        },
+        {
+          "heading": "Competencia y límites de interpretación",
+          "kind": "competition",
+          "paragraphs": [
+            "El anuncio se inscribe en la competencia de proveedores de nube por convertirse en plataforma de agentes corporativos. Sin datos comparables de costes, seguridad o resultados no se puede concluir que Gemini Enterprise sea superior a otras soluciones. La elección de un socio puede responder a integraciones existentes, gobernanza, capacidades comerciales y necesidades de cada organización.",
+            "CaixaBank afirma tener más de trece millones de clientes digitales, dato corporativo que contextualiza la escala potencial del negocio, pero no debe confundirse con usuarios de los agentes. No se informó cuántas personas los utilizarán ni cuántos procesos serán automatizados. Una implantación gradual podría tardar años sin contradecir el anuncio."
+          ]
+        },
+        {
+          "heading": "Qué seguir",
+          "kind": "practical",
+          "paragraphs": [
+            "El siguiente hito relevante será una implementación descrita con alcance preciso: departamento, volumen de expedientes, fuentes autorizadas, criterios de calidad y revisión humana. También interesará conocer si los agentes actúan sobre sistemas transaccionales o se limitan a asistir con información. Son niveles de riesgo y responsabilidad distintos.",
+            "Análisis Gazette: el acuerdo apunta a la consolidación de IA empresarial dentro de infraestructuras críticas, pero la prueba decisiva será la calidad de la operación cotidiana. Hasta que existan métricas y documentación de despliegue, debe hablarse de objetivos anunciados y no de ganancias comprobadas."
+          ]
+        }
+      ],
+      "executiveSummary": "CaixaBank anunció el 9 de octubre una ampliación de su alianza tecnológica con Google Cloud hasta 2033. El plan incorpora agentes de Gemini Enterprise para procesos internos y una combinación de infraestructura privada y servicios de nube. Es una decisión de adopción empresarial anunciada, no una confirmación de que todos los agentes ya operen en producción.",
+      "finalSummary": "La novedad muestra cómo Gemini Enterprise busca entrar en flujos de trabajo regulados y de gran escala. El valor del acuerdo dependerá de implantaciones auditables, protección de datos y mejoras medidas, no del número de agentes prometidos. El importe y el calendario detallado siguen sin divulgarse.",
+      "analysis": "Análisis Gazette: una alianza de larga duración puede facilitar inversiones en datos, formación y seguridad, pero también exige gestionar dependencia tecnológica y portabilidad. Para una institución financiera, un agente útil debe ofrecer trazabilidad, controles de acceso y supervisión, no solo producir resúmenes convincentes.",
+      "watch": "Primeras implementaciones verificables, métricas de error y productividad, requisitos regulatorios, controles de privacidad y coste contractual.",
+      "technicalDetails": [
+        {
+          "label": "Horizonte del acuerdo",
+          "value": "Hasta 2033"
+        },
+        {
+          "label": "Alianza inicial",
+          "value": "2023"
+        },
+        {
+          "label": "Plataforma prevista",
+          "value": "Gemini Enterprise"
+        },
+        {
+          "label": "Clientes digitales",
+          "value": "Más de 13 millones, según CaixaBank"
+        }
+      ],
+      "availability": {
+        "status": "Despliegue corporativo anunciado; calendario detallado no publicado",
+        "platforms": [
+          "Gemini Enterprise",
+          "Infraestructura híbrida CaixaBank / Google Cloud"
+        ],
+        "regions": [
+          "Operación de CaixaBank; alcance geográfico concreto no especificado"
+        ],
+        "requirements": [
+          "Gobernanza de datos",
+          "Integración con sistemas internos",
+          "Capacitación de equipos"
+        ],
+        "notes": [
+          "No es una función anunciada para clientes minoristas del banco"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Valor contractual y licencias",
+          "value": "No divulgado"
+        }
+      ],
+      "limitations": [
+        "No se detallaron modelos, fechas por departamento ni controles técnicos concretos.",
+        "No hay métricas independientes de productividad o errores.",
+        "Los objetivos de personalización no equivalen a funciones ya lanzadas."
+      ],
+      "practicalAdvice": [
+        "Exigir pruebas piloto con trazabilidad y tasas de error.",
+        "Separar permisos de consulta, recomendación y ejecución.",
+        "Revisar residencia de datos, portabilidad y costes completos."
+      ],
+      "usefulFacts": [
+        "El comunicado agrupa el acuerdo en tres pilares: agentes/analítica, infraestructura/seguridad y formación.",
+        "La cifra de clientes digitales es un dato corporativo, no el número de usuarios de Gemini Enterprise."
+      ]
+    },
+    {
+      "id": "allenai-gpu-budget-fair-share-scheduler-2026",
+      "eventKey": "allenai-gpu-budget-fair-share-scheduler-74pct-repairs-2026-10-09",
+      "articleVersion": 2,
+      "date": "2026-10-09",
+      "announcedAt": "2026-10-09",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "Allen Institute for AI",
+      "product": "GPU budget scheduler",
+      "title": "Ai2 reemplaza las prioridades de su clúster de GPU por presupuestos y reduce un 74% las reparaciones con intervención humana",
+      "summary": "El Allen Institute for AI explicó un nuevo planificador interno basado en presupuestos de tiempo GPU, reparto justo jerárquico y ventanas de ejecución protegidas. En sus mediciones internas reportó menos esperas y un 74% menos reparaciones que requerían intervención humana.",
+      "tags": [
+        "Infraestructura",
+        "GPU",
+        "Investigación",
+        "Open source",
+        "Operaciones"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual de racks de cómputo y un reloj de reparto de recursos; no es fotografía de los clústeres de Ai2.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado sepia 3:2 de una sala abstracta de GPU con relojes y fichas que representan presupuestos de cómputo, ingenieros supervisando una cola de tareas. Sin marcas falsas ni apariencia de fotografía real, mantener centro seguro para recorte.",
+      "source": {
+        "name": "Allen Institute for AI · Impactful scheduling for GPU clusters",
+        "url": "https://huggingface.co/blog/allenai/impactful-scheduling",
+        "publishedAt": "2026-10-09"
+      },
+      "relatedSources": [],
+      "body": [
+        "El 9 de octubre de 2026 el Allen Institute for AI, conocido como Ai2, explicó cómo reemplazó su planificador de clústeres basado en prioridades por un sistema de presupuestos de tiempo GPU, reparto justo jerárquico y contratos de duración mínima. El cambio ya había empezado a desplegarse gradualmente a finales de julio; la novedad editorial es la publicación de resultados y detalles operativos.",
+        "El instituto administra miles de aceleradores NVIDIA H100, B200 y B300 en clústeres de 88 a 1.024 GPU para aproximadamente 150 investigadores. Según Ai2, la demanda simultánea suele duplicar o triplicar la capacidad disponible. En ese contexto, elegir quién recibe recursos influye directamente en qué experimentos pueden avanzar.",
+        "El esquema anterior permitía declarar prioridades altas y proteger trabajos frente a interrupciones. Con el tiempo, todos los trabajos tendían a presentarse como urgentes y algunos usuarios mantenían sesiones inactivas para no perder su lugar. La consecuencia era una cola menos informativa y discusiones manuales cada vez que un servidor necesitaba mantenimiento.",
+        "Este patrón no es exclusivo de la IA: cuando una etiqueta de prioridad no tiene coste, pierde capacidad para distinguir necesidades. Reservar máquinas de manera permanente tampoco resuelve todo, porque la demanda de los equipos fluctúa. Un laboratorio puede tener capacidad ociosa en un proyecto y largas esperas en otro.",
+        "La solución de Ai2 reparte derechos sobre tiempo de GPU, no sobre servidores concretos. Los responsables asignan presupuestos a programas, equipos y proyectos. Un trabajo que solicita protección consume la parte correspondiente de esa asignación. Si alguien mantiene una carga sin utilidad, también gasta su propio presupuesto, lo que reduce el incentivo a ocupar recursos sin necesidad.",
+        "El reparto justo jerárquico observa el uso de una ventana móvil, configurada por defecto en siete días, y favorece a grupos que han recibido menos de lo que les corresponde. Ai2 aclara que fair-share no es un algoritmo nuevo; lo distintivo de su implantación son las reglas presupuestarias y la estructura organizativa que alimenta las decisiones.",
+        "Cada carga declara un tiempo mínimo necesario para producir progreso y si puede reanudarse. Durante esa ventana tiene protección; después puede ser retirada y encolada de nuevo para dar paso a otros trabajos. Ai2 configuró un máximo de ocho horas para la duración protegida. Las cargas con mínimo cero pueden usar capacidad libre, pero son interrumpibles desde el comienzo.",
+        "Este mecanismo intenta conciliar dos necesidades enfrentadas: dar a un entrenamiento tiempo suficiente para avanzar y evitar que una sola ejecución retenga GPU durante días. Para que funcione, el software debe tolerar interrupciones o guardar estado. De lo contrario, el ahorro del planificador puede convertirse en tiempo perdido al reiniciar.",
+        "Ai2 reporta una ocupación del 98% antes y después del cambio. En una evaluación de treinta días, los equipos recibieron el 98% de las horas GPU que se les debían según sus asignaciones y demanda; trece de quince asignaciones recibieron al menos el 95%. El instituto también indica que el 18% del tiempo entregado fue capacidad no asignada formalmente.",
+        "Para tareas cortas de depuración, el percentil 90 de espera cayó de unas dos horas a treinta segundos en las observaciones internas. En el clúster H100 más grande, la mediana de espera pasó de cinco minutos a veinticuatro segundos. Ai2 atribuye al nuevo mecanismo una reducción del 74% en reparaciones que necesitaban intervención humana. Son resultados del operador, no una evaluación independiente.",
+        "Un clúster puede registrar una ocupación excelente y aun así retrasar los experimentos más valiosos. Por eso conviene distinguir disponibilidad de hardware, ocupación asignada, utilización efectiva y utilidad científica del trabajo. Las métricas de Ai2 apuntan a una mejora de acceso y mantenimiento sin sacrificar ocupación, pero no permiten calcular directamente cuántos descubrimientos adicionales produjo el instituto.",
+        "Para otras organizaciones, una comparación justa exigiría controlar tamaño de trabajos, demanda, checkpointing y topología de red. Un entrenamiento distribuido que requiere cientos de GPU simultáneas no se comporta como una prueba breve de dos GPU. Copiar la política sin analizar esa diferencia puede trasladar el problema a las cargas más grandes.",
+        "Ai2 reconoce que algunas sesiones interactivas perdieron comodidad. Antes podían mantenerse durante largos períodos; con el límite de protección, una sesión puede interrumpirse y exigir reconstruir el entorno. El equipo trabaja en separar tareas de desarrollo hacia recursos CPU y en sesiones restaurables. Estas capacidades aparecen como trabajo futuro, no como soluciones ya terminadas.",
+        "También investiga fragmentación de capacidad: si muchas cargas pequeñas están temporalmente protegidas, reunir un conjunto grande de GPU para un entrenamiento nuevo puede resultar difícil. El informe describe simulaciones para estudiar el problema. No existe una afirmación de que todos los escenarios hayan mejorado ni una fecha de disponibilidad pública del sistema.",
+        "Quien administre infraestructura de IA puede extraer tres prácticas: cobrar presupuestariamente la protección, hacer explícitas las condiciones de preempción y mostrar al usuario por qué espera. Una cola transparente permite distinguir una política deliberada de un error del sistema. También facilita discutir prioridades con responsables de investigación, en lugar de negociar cada conflicto durante una incidencia.",
+        "Para desarrolladores de entrenamiento, el aprendizaje práctico es diseñar trabajos reanudables, medir el coste de guardar checkpoints y reservar sesiones interactivas para tareas que realmente necesitan persistencia. Las mejoras deben evaluarse con percentiles de espera, trabajo útil completado y tiempo de intervención humana, no solo con porcentaje de GPU ocupadas.",
+        "Análisis Gazette: en la carrera de la IA, comprar más aceleradores no garantiza aprovecharlos mejor. La política de reparto puede liberar capacidad efectiva y reducir trabajo operativo sin cambiar un chip. El caso es relevante para laboratorios, universidades y proveedores de cómputo que comparten clústeres entre equipos con objetivos distintos.",
+        "El próximo paso será observar si Ai2 publica implementaciones reutilizables, si las sesiones restaurables reducen los inconvenientes y si la fragmentación afecta a entrenamientos masivos. También sería valioso un estudio independiente en otra infraestructura. Por ahora, el informe es una experiencia de producción descrita por su propio operador, no una especificación universal."
+      ],
+      "keyPoints": [
+        "Ai2 sustituyó prioridades sin coste por presupuestos de tiempo GPU, reparto jerárquico y contratos de ejecución.",
+        "En su despliegue interno reporta 98% de ocupación y un 74% menos reparaciones que requieren intervención humana.",
+        "El p90 de espera para tareas cortas de depuración cayó de dos horas a 30 segundos según datos internos; persisten riesgos de fragmentación y sesiones interrumpidas."
+      ],
+      "quickTakeaways": [
+        "Ai2 sustituyó prioridades sin coste por presupuestos de tiempo GPU, reparto jerárquico y contratos de ejecución.",
+        "En su despliegue interno reporta 98% de ocupación y un 74% menos reparaciones que requieren intervención humana.",
+        "El p90 de espera para tareas cortas de depuración cayó de dos horas a 30 segundos según datos internos; persisten riesgos de fragmentación y sesiones interrumpidas."
+      ],
+      "sections": [
+        {
+          "heading": "Una nueva manera de repartir cómputo escaso",
+          "kind": "report",
+          "paragraphs": [
+            "El 9 de octubre de 2026 el Allen Institute for AI, conocido como Ai2, explicó cómo reemplazó su planificador de clústeres basado en prioridades por un sistema de presupuestos de tiempo GPU, reparto justo jerárquico y contratos de duración mínima. El cambio ya había empezado a desplegarse gradualmente a finales de julio; la novedad editorial es la publicación de resultados y detalles operativos.",
+            "El instituto administra miles de aceleradores NVIDIA H100, B200 y B300 en clústeres de 88 a 1.024 GPU para aproximadamente 150 investigadores. Según Ai2, la demanda simultánea suele duplicar o triplicar la capacidad disponible. En ese contexto, elegir quién recibe recursos influye directamente en qué experimentos pueden avanzar."
+          ]
+        },
+        {
+          "heading": "El problema de prioridades gratuitas",
+          "kind": "context",
+          "paragraphs": [
+            "El esquema anterior permitía declarar prioridades altas y proteger trabajos frente a interrupciones. Con el tiempo, todos los trabajos tendían a presentarse como urgentes y algunos usuarios mantenían sesiones inactivas para no perder su lugar. La consecuencia era una cola menos informativa y discusiones manuales cada vez que un servidor necesitaba mantenimiento.",
+            "Este patrón no es exclusivo de la IA: cuando una etiqueta de prioridad no tiene coste, pierde capacidad para distinguir necesidades. Reservar máquinas de manera permanente tampoco resuelve todo, porque la demanda de los equipos fluctúa. Un laboratorio puede tener capacidad ociosa en un proyecto y largas esperas en otro."
+          ]
+        },
+        {
+          "heading": "Presupuestos en lugar de monopolios",
+          "kind": "technical",
+          "paragraphs": [
+            "La solución de Ai2 reparte derechos sobre tiempo de GPU, no sobre servidores concretos. Los responsables asignan presupuestos a programas, equipos y proyectos. Un trabajo que solicita protección consume la parte correspondiente de esa asignación. Si alguien mantiene una carga sin utilidad, también gasta su propio presupuesto, lo que reduce el incentivo a ocupar recursos sin necesidad.",
+            "El reparto justo jerárquico observa el uso de una ventana móvil, configurada por defecto en siete días, y favorece a grupos que han recibido menos de lo que les corresponde. Ai2 aclara que fair-share no es un algoritmo nuevo; lo distintivo de su implantación son las reglas presupuestarias y la estructura organizativa que alimenta las decisiones."
+          ]
+        },
+        {
+          "heading": "Contratos de ejecución y preempción",
+          "kind": "technical",
+          "paragraphs": [
+            "Cada carga declara un tiempo mínimo necesario para producir progreso y si puede reanudarse. Durante esa ventana tiene protección; después puede ser retirada y encolada de nuevo para dar paso a otros trabajos. Ai2 configuró un máximo de ocho horas para la duración protegida. Las cargas con mínimo cero pueden usar capacidad libre, pero son interrumpibles desde el comienzo.",
+            "Este mecanismo intenta conciliar dos necesidades enfrentadas: dar a un entrenamiento tiempo suficiente para avanzar y evitar que una sola ejecución retenga GPU durante días. Para que funcione, el software debe tolerar interrupciones o guardar estado. De lo contrario, el ahorro del planificador puede convertirse en tiempo perdido al reiniciar."
+          ]
+        },
+        {
+          "heading": "Qué muestran las mediciones internas",
+          "kind": "report",
+          "paragraphs": [
+            "Ai2 reporta una ocupación del 98% antes y después del cambio. En una evaluación de treinta días, los equipos recibieron el 98% de las horas GPU que se les debían según sus asignaciones y demanda; trece de quince asignaciones recibieron al menos el 95%. El instituto también indica que el 18% del tiempo entregado fue capacidad no asignada formalmente.",
+            "Para tareas cortas de depuración, el percentil 90 de espera cayó de unas dos horas a treinta segundos en las observaciones internas. En el clúster H100 más grande, la mediana de espera pasó de cinco minutos a veinticuatro segundos. Ai2 atribuye al nuevo mecanismo una reducción del 74% en reparaciones que necesitaban intervención humana. Son resultados del operador, no una evaluación independiente."
+          ]
+        },
+        {
+          "heading": "Por qué la ocupación no cuenta toda la historia",
+          "kind": "analysis",
+          "paragraphs": [
+            "Un clúster puede registrar una ocupación excelente y aun así retrasar los experimentos más valiosos. Por eso conviene distinguir disponibilidad de hardware, ocupación asignada, utilización efectiva y utilidad científica del trabajo. Las métricas de Ai2 apuntan a una mejora de acceso y mantenimiento sin sacrificar ocupación, pero no permiten calcular directamente cuántos descubrimientos adicionales produjo el instituto.",
+            "Para otras organizaciones, una comparación justa exigiría controlar tamaño de trabajos, demanda, checkpointing y topología de red. Un entrenamiento distribuido que requiere cientos de GPU simultáneas no se comporta como una prueba breve de dos GPU. Copiar la política sin analizar esa diferencia puede trasladar el problema a las cargas más grandes."
+          ]
+        },
+        {
+          "heading": "Límites reconocidos por el propio instituto",
+          "kind": "report",
+          "paragraphs": [
+            "Ai2 reconoce que algunas sesiones interactivas perdieron comodidad. Antes podían mantenerse durante largos períodos; con el límite de protección, una sesión puede interrumpirse y exigir reconstruir el entorno. El equipo trabaja en separar tareas de desarrollo hacia recursos CPU y en sesiones restaurables. Estas capacidades aparecen como trabajo futuro, no como soluciones ya terminadas.",
+            "También investiga fragmentación de capacidad: si muchas cargas pequeñas están temporalmente protegidas, reunir un conjunto grande de GPU para un entrenamiento nuevo puede resultar difícil. El informe describe simulaciones para estudiar el problema. No existe una afirmación de que todos los escenarios hayan mejorado ni una fecha de disponibilidad pública del sistema."
+          ]
+        },
+        {
+          "heading": "Implicaciones para operadores y desarrolladores",
+          "kind": "practical",
+          "paragraphs": [
+            "Quien administre infraestructura de IA puede extraer tres prácticas: cobrar presupuestariamente la protección, hacer explícitas las condiciones de preempción y mostrar al usuario por qué espera. Una cola transparente permite distinguir una política deliberada de un error del sistema. También facilita discutir prioridades con responsables de investigación, en lugar de negociar cada conflicto durante una incidencia.",
+            "Para desarrolladores de entrenamiento, el aprendizaje práctico es diseñar trabajos reanudables, medir el coste de guardar checkpoints y reservar sesiones interactivas para tareas que realmente necesitan persistencia. Las mejoras deben evaluarse con percentiles de espera, trabajo útil completado y tiempo de intervención humana, no solo con porcentaje de GPU ocupadas."
+          ]
+        },
+        {
+          "heading": "Lectura competitiva y qué observar",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: en la carrera de la IA, comprar más aceleradores no garantiza aprovecharlos mejor. La política de reparto puede liberar capacidad efectiva y reducir trabajo operativo sin cambiar un chip. El caso es relevante para laboratorios, universidades y proveedores de cómputo que comparten clústeres entre equipos con objetivos distintos.",
+            "El próximo paso será observar si Ai2 publica implementaciones reutilizables, si las sesiones restaurables reducen los inconvenientes y si la fragmentación afecta a entrenamientos masivos. También sería valioso un estudio independiente en otra infraestructura. Por ahora, el informe es una experiencia de producción descrita por su propio operador, no una especificación universal."
+          ]
+        }
+      ],
+      "executiveSummary": "Ai2 describió el 9 de octubre un cambio operativo en sus clústeres de entrenamiento: asignar tiempo GPU como presupuesto y permitir reequilibrios tras ventanas mínimas de trabajo. El instituto publica métricas internas favorables, pero también reconoce efectos secundarios para sesiones interactivas y cargas de gran tamaño. No anunció un servicio comercial ni la liberación de un planificador como producto.",
+      "finalSummary": "El caso de Ai2 muestra que la capacidad útil de IA depende tanto de reglas de asignación como del número de aceleradores. Presupuestos, trazabilidad y ventanas de preempción pueden reducir esperas y trabajo manual; su éxito fuera del instituto requiere adaptar políticas y verificar efectos en cada clúster.",
+      "analysis": "Análisis Gazette: el recurso escaso no es solo una GPU, sino una hora de GPU asignada a una tarea que produce valor. Convertir prioridades en presupuestos obliga a transparentar decisiones y reduce incentivos a reservar capacidad inútil. No es una prueba de superioridad universal del algoritmo, que reutiliza conceptos conocidos de fair-share.",
+      "watch": "Publicación de código o especificaciones reutilizables, comportamiento ante trabajos de entrenamiento gigantes, sesiones restaurables y validaciones en otras organizaciones.",
+      "technicalDetails": [
+        {
+          "label": "Hardware",
+          "value": "NVIDIA H100, B200 y B300; clústeres de 88–1.024 GPU",
+          "note": "Infraestructura declarada por Ai2."
+        },
+        {
+          "label": "Ventana de fair-share",
+          "value": "7 días por defecto"
+        },
+        {
+          "label": "Máximo de ejecución protegida",
+          "value": "8 horas"
+        },
+        {
+          "label": "Ocupación",
+          "value": "98% antes y después",
+          "note": "Medición interna de Ai2."
+        },
+        {
+          "label": "Reducción de reparaciones con intervención humana",
+          "value": "74%",
+          "note": "Resultado interno, no auditado externamente."
+        },
+        {
+          "label": "Espera p90 para depuración",
+          "value": "2 horas → 30 segundos",
+          "note": "Comparación de mediciones internas; muestra inicial limitada."
+        }
+      ],
+      "availability": {
+        "status": "Sistema interno desplegado progresivamente desde finales de julio de 2026",
+        "platforms": [
+          "Clústeres de investigación de Ai2"
+        ],
+        "regions": [
+          "Infraestructura operada por Ai2; no es servicio comercial anunciado"
+        ],
+        "requirements": [
+          "Presupuestos por equipo",
+          "Cargas con mínimos de ejecución",
+          "Reanudación/checkpointing para preempción"
+        ],
+        "notes": [
+          "No se anunció liberación de código ni API pública del planificador"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio comercial",
+          "value": "No aplica: sistema interno sin oferta pública anunciada"
+        }
+      ],
+      "limitations": [
+        "Resultados comunicados por Ai2, sin reproducción independiente.",
+        "Sesiones interactivas pueden perder estado tras preempción.",
+        "Posible fragmentación que perjudique trabajos distribuidos muy grandes."
+      ],
+      "practicalAdvice": [
+        "Medir p50/p90 de cola y trabajo útil, no solo ocupación.",
+        "Exigir checkpoints antes de habilitar preempción agresiva.",
+        "Dar a usuarios visualizaciones de asignaciones y razones de espera."
+      ],
+      "usefulFacts": [
+        "Ai2 informa que la demanda simultánea alcanza 2–3 veces la capacidad.",
+        "La ocupación no asignada formalmente puede aprovechar GPU libres sin protección.",
+        "El informe distingue simulaciones de observaciones reales."
+      ]
+    },
     {
       "id": "typesafe-ai-jev-870m-series-a-2026",
       "eventKey": "typesafe-ai-jev-870m-series-a-7point5b-valuation-2026-10-09",
@@ -14320,7 +14907,7 @@
     {
       "date": "2026-10-09",
       "status": "partial",
-      "verifiedArticles": 9
+      "verifiedArticles": 12
     }
   ]
 }
