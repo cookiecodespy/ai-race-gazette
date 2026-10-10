@@ -1,8 +1,541 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T04:21:12.000Z",
+  "updatedAt": "2026-10-10T09:23:14.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "typesafe-ai-jev-870m-series-a-2026",
+      "eventKey": "typesafe-ai-jev-870m-series-a-7point5b-valuation-2026-10-09",
+      "articleVersion": 2,
+      "date": "2026-10-09",
+      "announcedAt": "2026-10-09",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "TypeSafe AI",
+      "product": "Jev · Serie A",
+      "title": "TypeSafe AI recauda US$870 millones para Jev, su modelo de decisiones estructuradas",
+      "summary": "TypeSafe AI confirmó una Serie A de US$870 millones liderada por Andreessen Horowitz, con valoración de US$7.500 millones. Su producto Jev devuelve decisiones estructuradas en lugar de texto libre; las cifras de adopción y ahorro proceden de la propia empresa.",
+      "tags": [
+        "Financiación",
+        "Modelos",
+        "Startups",
+        "APIs",
+        "Agentes"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial genérico sobre inteligencia artificial; no representa oficinas ni productos reales de TypeSafe AI.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial horizontal 3:2 en sepia sobre papel envejecido: máquina de cálculo que convierte documentos y señales en tres indicadores abstractos de elección, puntuación y probabilidad; al fondo, una ronda de financiación simbolizada por engranajes. Sin logotipos falsos, cifras incrustadas, interfaces inventadas ni aspecto de fotografía documental.",
+      "source": {
+        "name": "TypeSafe AI · TypeSafe A raises Series AI",
+        "url": "https://typesafe.ai/blog/series-ai",
+        "publishedAt": "2026-10-09"
+      },
+      "relatedSources": [
+        {
+          "name": "TypeSafe AI · documentación de Jev",
+          "url": "https://docs.typesafe.ai/introduction",
+          "publishedAt": null
+        },
+        {
+          "name": "TechCrunch · Jev maker valued at $7.5B",
+          "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+          "publishedAt": "2026-10-09"
+        }
+      ],
+      "body": [
+        "TypeSafe AI anunció el 9 de octubre de 2026 una Serie A de 870 millones de dólares estadounidenses a una valoración de 7.500 millones. La empresa identificó a Andreessen Horowitz como inversor principal, junto con Sequoia Capital y su inversor previo DCVC. La nota oficial también indica que Martin Casado se incorporará al consejo. La cifra corresponde a capital obtenido en una ronda de financiación, no a ventas, ingresos recurrentes ni valor de mercado de una acción cotizada.",
+        "La magnitud resulta especialmente llamativa porque Jev, el producto que ha atraído la atención, se presentó pocas semanas antes. TechCrunch informó de que el modelo se lanzó el 15 de septiembre y recogió el interés de inversores y usuarios. La velocidad de la ronda no permite inferir por sí sola la retención de clientes, la calidad del modelo ni su rentabilidad: esas dimensiones requieren datos operativos que el anuncio no proporciona.",
+        "La documentación oficial define Jev como el primer modelo System One de TypeSafe. Su propósito no es redactar respuestas largas en lenguaje natural, sino recibir un estado y preguntas tipadas para devolver resultados estructurados que una aplicación pueda consumir directamente. La distinción importa en automatizaciones: muchas tareas necesitan elegir una ruta, asignar una puntuación o decidir si se cumple una condición, y no necesitan generar párrafos para que otro programa los interprete.",
+        "TypeSafe documenta tres primitivas. Choice elige una opción y devuelve probabilidades y confianza; Score evalúa un estado conforme a una rúbrica y también devuelve probabilidades; Noul responde a una afirmación con un valor de cero a uno. Varias preguntas pueden enviarse en una llamada y, según el proveedor, se evalúan en paralelo e independientemente sobre el mismo estado. Estas son características de la interfaz documentada, no pruebas externas de precisión o calibración.",
+        "Un desarrollador podría utilizar Choice para seleccionar entre rutas de atención, Score para priorizar solicitudes o Noul para comprobar si una descripción cumple una condición. El proveedor recomienda formular preguntas atómicas y combinar sus resultados mediante reglas explícitas de aplicación. Así, la lógica de negocio puede conservar umbrales, auditorías y decisiones humanas en vez de delegar todo el flujo a una salida de texto generativo difícil de validar.",
+        "Las probabilidades que entrega un sistema no son automáticamente probabilidades bien calibradas. Para aplicaciones con consecuencias económicas o personales se necesita comparar predicciones con resultados reales, examinar errores por grupo y verificar cómo se comporta el modelo cuando faltan datos o cambia la distribución de entradas. La documentación describe el contrato de salida, pero la ronda de financiación no incluye una evaluación independiente que demuestre superioridad frente a modelos generativos o clasificadores especializados.",
+        "TypeSafe mantiene documentación pública, una consola de API y canales de contacto comercial. Eso permite estudiar su integración y solicitar acceso, pero el anuncio de financiación no establece una nueva fecha de disponibilidad general, regiones admitidas, límites de uso ni un calendario contractual universal. Tampoco anuncia un cambio de precio por petición, suscripción o empresa. Sería incorrecto convertir la valoración de la compañía en una tarifa de Jev.",
+        "La empresa anticipa más modelos orientados a máquinas y nuevas funciones empresariales, sin enumerar un calendario verificable para cada entrega. La promesa de construir infraestructura para software inteligente describe una intención futura. Para una adopción de producción conviene confirmar términos de servicio, residencia de datos, cuotas, versiones de modelo, políticas de retención y mecanismos de reversión antes de comprometer una aplicación crítica.",
+        "En su blog, TypeSafe afirma que un tercio de las compañías Fortune 500 ya utiliza Jev y que sus clientes han ahorrado millones de dólares en producción. Son afirmaciones comerciales del proveedor: no se publica una lista completa de clientes, auditoría independiente, metodología de cálculo del ahorro ni distinción entre pruebas gratuitas y despliegues de producción. TechCrunch recoge el reclamo de adopción y advierte que el interés se produjo muy pronto tras el lanzamiento.",
+        "El respaldo financiero es un hecho distinto de esas métricas de producto. Una empresa puede reunir capital porque sus inversores anticipan demanda futura, incluso cuando los datos de uso son todavía parciales. Para entender el impacto real de Jev habrá que seguir casos de estudio reproducibles, tasas de acierto, costes medidos sobre tareas equivalentes y la proporción de organizaciones que continúa pagando después de un piloto.",
+        "Análisis Gazette: Jev representa una apuesta por modelos que resuelven decisiones acotadas y devuelven datos tipados, en contraste con la costumbre de utilizar un LLM de propósito general para cada paso de una automatización. Esa especialización puede simplificar integraciones y reducir salidas difíciles de interpretar, pero no prueba que una única arquitectura sea la mejor para todos los problemas. Un sistema puede combinar extracción de información con un LLM, una decisión estructurada y reglas deterministas.",
+        "Para evaluarlo, el equipo técnico debería diseñar un conjunto de casos reales con respuestas esperadas, medir latencia y coste extremo a extremo, y comparar Jev con alternativas bajo el mismo umbral de error. También conviene comprobar comportamiento ante datos adversariales, registrar la versión del modelo y mantener revisión humana cuando la decisión sea irreversible. La pregunta futura no es solo cuánto capital recibió TypeSafe, sino cuánto valor medible genera por decisión correcta."
+      ],
+      "keyPoints": [
+        "La Serie A fue de US$870 millones y la valoración anunciada de US$7.500 millones; no son ingresos comerciales.",
+        "Jev entrega Choice, Score y Noul como respuestas estructuradas para software, según su documentación.",
+        "La adopción en un tercio de Fortune 500 y los ahorros multimillonarios son claims de TypeSafe sin auditoría pública."
+      ],
+      "quickTakeaways": [
+        "La Serie A fue de US$870 millones y la valoración anunciada de US$7.500 millones; no son ingresos comerciales.",
+        "Jev entrega Choice, Score y Noul como respuestas estructuradas para software, según su documentación.",
+        "La adopción en un tercio de Fortune 500 y los ahorros multimillonarios son claims de TypeSafe sin auditoría pública."
+      ],
+      "sections": [
+        {
+          "heading": "Qué se anunció y qué está confirmado",
+          "kind": "report",
+          "paragraphs": [
+            "TypeSafe AI anunció el 9 de octubre de 2026 una Serie A de 870 millones de dólares estadounidenses a una valoración de 7.500 millones. La empresa identificó a Andreessen Horowitz como inversor principal, junto con Sequoia Capital y su inversor previo DCVC. La nota oficial también indica que Martin Casado se incorporará al consejo. La cifra corresponde a capital obtenido en una ronda de financiación, no a ventas, ingresos recurrentes ni valor de mercado de una acción cotizada.",
+            "La magnitud resulta especialmente llamativa porque Jev, el producto que ha atraído la atención, se presentó pocas semanas antes. TechCrunch informó de que el modelo se lanzó el 15 de septiembre y recogió el interés de inversores y usuarios. La velocidad de la ronda no permite inferir por sí sola la retención de clientes, la calidad del modelo ni su rentabilidad: esas dimensiones requieren datos operativos que el anuncio no proporciona."
+          ]
+        },
+        {
+          "heading": "Qué es Jev y por qué no es otro chatbot",
+          "kind": "technical",
+          "paragraphs": [
+            "La documentación oficial define Jev como el primer modelo System One de TypeSafe. Su propósito no es redactar respuestas largas en lenguaje natural, sino recibir un estado y preguntas tipadas para devolver resultados estructurados que una aplicación pueda consumir directamente. La distinción importa en automatizaciones: muchas tareas necesitan elegir una ruta, asignar una puntuación o decidir si se cumple una condición, y no necesitan generar párrafos para que otro programa los interprete.",
+            "TypeSafe documenta tres primitivas. Choice elige una opción y devuelve probabilidades y confianza; Score evalúa un estado conforme a una rúbrica y también devuelve probabilidades; Noul responde a una afirmación con un valor de cero a uno. Varias preguntas pueden enviarse en una llamada y, según el proveedor, se evalúan en paralelo e independientemente sobre el mismo estado. Estas son características de la interfaz documentada, no pruebas externas de precisión o calibración."
+          ]
+        },
+        {
+          "heading": "Casos de uso y límites técnicos",
+          "kind": "technical",
+          "paragraphs": [
+            "Un desarrollador podría utilizar Choice para seleccionar entre rutas de atención, Score para priorizar solicitudes o Noul para comprobar si una descripción cumple una condición. El proveedor recomienda formular preguntas atómicas y combinar sus resultados mediante reglas explícitas de aplicación. Así, la lógica de negocio puede conservar umbrales, auditorías y decisiones humanas en vez de delegar todo el flujo a una salida de texto generativo difícil de validar.",
+            "Las probabilidades que entrega un sistema no son automáticamente probabilidades bien calibradas. Para aplicaciones con consecuencias económicas o personales se necesita comparar predicciones con resultados reales, examinar errores por grupo y verificar cómo se comporta el modelo cuando faltan datos o cambia la distribución de entradas. La documentación describe el contrato de salida, pero la ronda de financiación no incluye una evaluación independiente que demuestre superioridad frente a modelos generativos o clasificadores especializados."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, precios y hoja de ruta",
+          "kind": "report",
+          "paragraphs": [
+            "TypeSafe mantiene documentación pública, una consola de API y canales de contacto comercial. Eso permite estudiar su integración y solicitar acceso, pero el anuncio de financiación no establece una nueva fecha de disponibilidad general, regiones admitidas, límites de uso ni un calendario contractual universal. Tampoco anuncia un cambio de precio por petición, suscripción o empresa. Sería incorrecto convertir la valoración de la compañía en una tarifa de Jev.",
+            "La empresa anticipa más modelos orientados a máquinas y nuevas funciones empresariales, sin enumerar un calendario verificable para cada entrega. La promesa de construir infraestructura para software inteligente describe una intención futura. Para una adopción de producción conviene confirmar términos de servicio, residencia de datos, cuotas, versiones de modelo, políticas de retención y mecanismos de reversión antes de comprometer una aplicación crítica."
+          ]
+        },
+        {
+          "heading": "Adopción anunciada y evidencia que falta",
+          "kind": "context",
+          "paragraphs": [
+            "En su blog, TypeSafe afirma que un tercio de las compañías Fortune 500 ya utiliza Jev y que sus clientes han ahorrado millones de dólares en producción. Son afirmaciones comerciales del proveedor: no se publica una lista completa de clientes, auditoría independiente, metodología de cálculo del ahorro ni distinción entre pruebas gratuitas y despliegues de producción. TechCrunch recoge el reclamo de adopción y advierte que el interés se produjo muy pronto tras el lanzamiento.",
+            "El respaldo financiero es un hecho distinto de esas métricas de producto. Una empresa puede reunir capital porque sus inversores anticipan demanda futura, incluso cuando los datos de uso son todavía parciales. Para entender el impacto real de Jev habrá que seguir casos de estudio reproducibles, tasas de acierto, costes medidos sobre tareas equivalentes y la proporción de organizaciones que continúa pagando después de un piloto."
+          ]
+        },
+        {
+          "heading": "Competencia, análisis Gazette y recomendaciones",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: Jev representa una apuesta por modelos que resuelven decisiones acotadas y devuelven datos tipados, en contraste con la costumbre de utilizar un LLM de propósito general para cada paso de una automatización. Esa especialización puede simplificar integraciones y reducir salidas difíciles de interpretar, pero no prueba que una única arquitectura sea la mejor para todos los problemas. Un sistema puede combinar extracción de información con un LLM, una decisión estructurada y reglas deterministas.",
+            "Para evaluarlo, el equipo técnico debería diseñar un conjunto de casos reales con respuestas esperadas, medir latencia y coste extremo a extremo, y comparar Jev con alternativas bajo el mismo umbral de error. También conviene comprobar comportamiento ante datos adversariales, registrar la versión del modelo y mantener revisión humana cuando la decisión sea irreversible. La pregunta futura no es solo cuánto capital recibió TypeSafe, sino cuánto valor medible genera por decisión correcta."
+          ]
+        }
+      ],
+      "executiveSummary": "TypeSafe AI anunció el 9 de octubre de 2026 una Serie A de 870 millones de dólares estadounidenses a una valoración de 7.500 millones. La empresa identificó a Andreessen Horowitz como inversor principal, junto con Sequoia Capital y su inversor previo DCVC. La nota oficial también indica que Martin Casado se incorporará al consejo. La cifra corresponde a capital obtenido en una ronda de financiación, no a ventas, ingresos recurrentes ni valor de mercado de una acción cotizada. La magnitud resulta especialmente llamativa porque Jev, el producto que ha atraído la atención, se presentó pocas semanas antes. TechCrunch informó de que el modelo se lanzó el 15 de septiembre y recogió el interés de inversores y usuarios. La velocidad de la ronda no permite inferir por sí sola la retención de clientes, la calidad del modelo ni su rentabilidad: esas dimensiones requieren datos operativos que el anuncio no proporciona.",
+      "finalSummary": "Para evaluarlo, el equipo técnico debería diseñar un conjunto de casos reales con respuestas esperadas, medir latencia y coste extremo a extremo, y comparar Jev con alternativas bajo el mismo umbral de error. También conviene comprobar comportamiento ante datos adversariales, registrar la versión del modelo y mantener revisión humana cuando la decisión sea irreversible. La pregunta futura no es solo cuánto capital recibió TypeSafe, sino cuánto valor medible genera por decisión correcta.",
+      "analysis": "Análisis Gazette: Jev representa una apuesta por modelos que resuelven decisiones acotadas y devuelven datos tipados, en contraste con la costumbre de utilizar un LLM de propósito general para cada paso de una automatización. Esa especialización puede simplificar integraciones y reducir salidas difíciles de interpretar, pero no prueba que una única arquitectura sea la mejor para todos los problemas. Un sistema puede combinar extracción de información con un LLM, una decisión estructurada y reglas deterministas.",
+      "watch": "Seguir pruebas de calibración, precios, funciones empresariales y adopción verificable.",
+      "technicalDetails": [
+        {
+          "label": "Financiación",
+          "value": "US$870 millones",
+          "note": "Serie A anunciada por TypeSafe AI el 9 de octubre."
+        },
+        {
+          "label": "Valoración",
+          "value": "US$7.500 millones",
+          "note": "Valoración anunciada, no cotización bursátil."
+        },
+        {
+          "label": "Primitivas",
+          "value": "Choice, Score, Noul",
+          "note": "Interfaz documentada de Jev; salida estructurada."
+        }
+      ],
+      "availability": {
+        "status": "Documentación y consola API públicas; condiciones comerciales por verificar",
+        "platforms": [
+          "API Jev"
+        ],
+        "regions": [
+          "Regiones no detalladas en el anuncio"
+        ],
+        "requirements": [
+          "Validar acceso y términos de API",
+          "Evaluar tareas tipadas y calibración"
+        ],
+        "notes": [
+          "Funciones empresariales futuras sin fecha oficial concreta."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precios de Jev",
+          "value": "Sin cambios anunciados",
+          "note": "La financiación no incluye una nueva tabla de tarifas."
+        }
+      ],
+      "limitations": [
+        "No se publicaron métricas independientes de calibración, latencia o ahorro.",
+        "Las cifras de adopción en Fortune 500 proceden de TypeSafe.",
+        "No se especificaron plazos de entrega de las nuevas funciones empresariales."
+      ],
+      "practicalAdvice": [
+        "Comparar precisión y coste en un conjunto de decisiones propias antes de migrar.",
+        "Registrar versiones, umbrales de confianza y decisiones humanas de respaldo.",
+        "Verificar condiciones de datos, disponibilidad y precio contractual."
+      ],
+      "usefulFacts": [
+        "Choice devuelve opción, probabilidades y confianza.",
+        "Score devuelve puntuación, probabilidades y confianza.",
+        "Noul produce un valor entre cero y uno para una afirmación."
+      ]
+    },
+    {
+      "id": "astera-labs-aries7-pcie7-optical-copper-2026",
+      "eventKey": "astera-labs-aries-7-pcie7-copper-optical-ai-interconnect-2026-10-08",
+      "articleVersion": 2,
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "Astera Labs",
+      "product": "Aries 7 · PCIe 7",
+      "title": "Astera Labs anuncia Aries 7 para enlaces PCIe 7 de cobre y óptica en centros de datos de IA",
+      "summary": "Astera Labs presentó la familia Aries 7 de retimers, redrivers, cables y componentes ópticos para PCIe 7. Promete enlaces desde placas hasta más de 50 metros entre racks; las primeras muestras se esperan para clientes seleccionados en el cuarto trimestre de 2026.",
+      "tags": [
+        "Chips",
+        "Infraestructura",
+        "PCIe",
+        "Centros de datos",
+        "Hardware"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial de infraestructura tecnológica global; no representa un rack ni un producto real de Astera Labs.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia horizontal 3:2 de racks de aceleradores conectados mediante trazas de cobre dentro de un gabinete y fibras ópticas que atraviesan varios racks. Incluir módulos y conectores como metáfora, sin inventar marcas ni representar un centro de datos existente; sin cifras o texto en la imagen.",
+      "source": {
+        "name": "Astera Labs · anuncio oficial Aries 7",
+        "url": "https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-announces-aries-7-industrys-first-pcie-7-signal",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "Astera Labs · explicación técnica de Aries PCIe 7",
+          "url": "https://www.asteralabs.com/resources/blog/nothing-out-of-reach-the-aries-pcie-7-family-delivers-copper-and-optical-signal-conditioning-for-ais-next-chapter/",
+          "publishedAt": "2026-10-08"
+        }
+      ],
+      "body": [
+        "Astera Labs anunció el 8 de octubre de 2026 una expansión de su familia Aries hacia la séptima generación de PCI Express. La oferta combina retimers, redrivers, módulos de cable, drivers ópticos y amplificadores de transimpedancia óptica, conocidos como TIA. La compañía la presenta como una cartera capaz de cubrir enlaces cortos sobre placas y conexiones ópticas que superan los 50 metros entre racks de cómputo de inteligencia artificial.",
+        "Es un anuncio de producto y de calendario de muestras, no una confirmación de despliegue masivo. Astera espera iniciar el muestreo para clientes seleccionados durante el cuarto trimestre de 2026, con disponibilidad más amplia sujeta a la calificación de las plataformas. No publicó precios por componente, volúmenes de fabricación, fechas de entrega global ni resultados independientes de interoperabilidad para toda la familia.",
+        "PCIe conecta procesadores, aceleradores, almacenamiento y otros dispositivos. Cada salto de velocidad aumenta la dificultad de mantener una señal legible a través de pistas, conectores y cables. La explicación técnica de Astera recuerda que PCIe 6 empleó modulación PAM4 y que PCIe 7 mantiene esa modulación mientras duplica la frecuencia de Nyquist hasta 32 GHz. La capacidad teórica por enlace crece, pero también las pérdidas eléctricas y el coste de recuperar márgenes de señal.",
+        "Según la empresa, el presupuesto de pérdidas de canal pasa de 32 a 36 dB mientras se duplica la frecuencia relevante. El estándar también permite hasta cuatro retimers en un canal, frente a dos en la generación previa. Eso abre alternativas de diseño, aunque cada dispositivo adicional puede implicar energía, complejidad y latencia. La cifra nominal de 128 GT/s por carril describe la tasa de transferencia de señal, no 128 gigabytes por segundo ni el rendimiento útil medido de una aplicación.",
+        "Los retimers regeneran señales y ayudan a recuperar integridad cuando la distancia o los conectores complican el enlace. Los redrivers amplifican o ecualizan con menor complejidad y, en determinadas condiciones, menor consumo. Astera propone que ambos utilicen la huella común OCP Signal Conditioner Standard Footprint para facilitar cambios de componente sin rediseñar toda la placa. La compatibilidad de huella es una característica de diseño anunciada, no una garantía universal para cualquier equipo existente.",
+        "En cobre, la documentación describe módulos para tramos activos de hasta tres metros y cables eléctricos activos de hasta seis metros, según configuración. Para superar esas distancias, Aries 7 incorpora drivers ópticos y TIA destinados a óptica lineal enchufable y cercana al encapsulado, LPO y NPO. La compañía anuncia conexiones superiores a 50 metros, pero no acompaña la nota con una tabla pública completa de consumo, tasa de error, temperatura y latencia validada por terceros.",
+        "La familia se integra con COSMOS, la suite de Astera para telemetría, diagnóstico y ajuste de enlaces. En un centro de datos con miles de aceleradores, un enlace intermitente puede ralentizar trabajos completos y encarecer el tiempo de GPU. Una visión común de errores y condiciones de señal puede reducir el tiempo de diagnóstico, siempre que la instrumentación funcione con las configuraciones de hardware reales y no solo con demostraciones controladas.",
+        "Astera afirma que AMD e Intel validaron generaciones anteriores de retimers Aries en plataformas de PCIe 4 a 6 y colaboran en la transición a PCIe 7. Esa experiencia aporta contexto, pero no significa que todas las placas PCIe 7 ya estén certificadas. También aparecen socios del ecosistema óptico, cuyas declaraciones muestran interés y trabajo conjunto; ninguna sustituye una prueba de compatibilidad en producción.",
+        "El anuncio apunta a grandes proveedores de nube, fabricantes de servidores y diseñadores de centros de datos que necesitan conectar aceleradores a varias escalas. La empresa anunció demostraciones en el OCP Global Summit del 12 al 15 de octubre de 2026 en San José. Una demostración de feria y un programa de muestras permiten iniciar pruebas, pero no equivalen a poder comprar cualquier SKU en todos los países. La fecha de disponibilidad general sigue sin concretarse.",
+        "Los diseñadores deben comparar el coste total del canal: potencia de retimers, óptica, refrigeración, conectores, firmware, mantenimiento y capacidad de recuperación ante fallos. Frente a soluciones de red o interconexiones propietarias, PCIe ofrece una base estandarizada, aunque no reemplaza automáticamente a Ethernet, InfiniBand o enlaces específicos de aceleradores. Elegir una tecnología depende de topología, carga de trabajo y latencia, no solo de la tasa nominal de señal.",
+        "Análisis Gazette: la importancia de Aries 7 es que trata la conectividad como una combinación de cobre y óptica administrada bajo una misma familia de herramientas. El anuncio confirma una dirección de producto y socios de diseño, no una ventaja demostrada en coste por token ni un aumento medido de rendimiento de entrenamiento. La promesa de conectar más lejos a velocidades elevadas merece seguimiento precisamente porque las redes pueden convertirse en cuellos de botella de sistemas de IA caros.",
+        "Antes de incorporar componentes a un diseño, conviene solicitar hojas técnicas, matrices de compatibilidad, límites de potencia, condiciones de prueba y planes de soporte. Las próximas señales verificables serán las muestras del cuarto trimestre, resultados de calificación, demostraciones con errores de bit medidos, contratos de suministro y precios. Solo con esas evidencias podrá evaluarse si la integración de óptica y cobre simplifica realmente los sistemas frente a alternativas."
+      ],
+      "keyPoints": [
+        "Aries 7 cubre retimers, redrivers, módulos de cable, drivers ópticos y TIA para PCIe 7.",
+        "Astera anuncia hasta 128 GT/s por carril y conexiones ópticas de más de 50 metros; son especificaciones del proveedor.",
+        "Muestras previstas en Q4 2026 para clientes seleccionados; precios y disponibilidad general sin confirmar."
+      ],
+      "quickTakeaways": [
+        "Aries 7 cubre retimers, redrivers, módulos de cable, drivers ópticos y TIA para PCIe 7.",
+        "Astera anuncia hasta 128 GT/s por carril y conexiones ópticas de más de 50 metros; son especificaciones del proveedor.",
+        "Muestras previstas en Q4 2026 para clientes seleccionados; precios y disponibilidad general sin confirmar."
+      ],
+      "sections": [
+        {
+          "heading": "El anuncio y su etapa comercial",
+          "kind": "report",
+          "paragraphs": [
+            "Astera Labs anunció el 8 de octubre de 2026 una expansión de su familia Aries hacia la séptima generación de PCI Express. La oferta combina retimers, redrivers, módulos de cable, drivers ópticos y amplificadores de transimpedancia óptica, conocidos como TIA. La compañía la presenta como una cartera capaz de cubrir enlaces cortos sobre placas y conexiones ópticas que superan los 50 metros entre racks de cómputo de inteligencia artificial.",
+            "Es un anuncio de producto y de calendario de muestras, no una confirmación de despliegue masivo. Astera espera iniciar el muestreo para clientes seleccionados durante el cuarto trimestre de 2026, con disponibilidad más amplia sujeta a la calificación de las plataformas. No publicó precios por componente, volúmenes de fabricación, fechas de entrega global ni resultados independientes de interoperabilidad para toda la familia."
+          ]
+        },
+        {
+          "heading": "Por qué PCIe 7 necesita acondicionamiento de señal",
+          "kind": "technical",
+          "paragraphs": [
+            "PCIe conecta procesadores, aceleradores, almacenamiento y otros dispositivos. Cada salto de velocidad aumenta la dificultad de mantener una señal legible a través de pistas, conectores y cables. La explicación técnica de Astera recuerda que PCIe 6 empleó modulación PAM4 y que PCIe 7 mantiene esa modulación mientras duplica la frecuencia de Nyquist hasta 32 GHz. La capacidad teórica por enlace crece, pero también las pérdidas eléctricas y el coste de recuperar márgenes de señal.",
+            "Según la empresa, el presupuesto de pérdidas de canal pasa de 32 a 36 dB mientras se duplica la frecuencia relevante. El estándar también permite hasta cuatro retimers en un canal, frente a dos en la generación previa. Eso abre alternativas de diseño, aunque cada dispositivo adicional puede implicar energía, complejidad y latencia. La cifra nominal de 128 GT/s por carril describe la tasa de transferencia de señal, no 128 gigabytes por segundo ni el rendimiento útil medido de una aplicación."
+          ]
+        },
+        {
+          "heading": "Cobre dentro del rack, óptica entre racks",
+          "kind": "technical",
+          "paragraphs": [
+            "Los retimers regeneran señales y ayudan a recuperar integridad cuando la distancia o los conectores complican el enlace. Los redrivers amplifican o ecualizan con menor complejidad y, en determinadas condiciones, menor consumo. Astera propone que ambos utilicen la huella común OCP Signal Conditioner Standard Footprint para facilitar cambios de componente sin rediseñar toda la placa. La compatibilidad de huella es una característica de diseño anunciada, no una garantía universal para cualquier equipo existente.",
+            "En cobre, la documentación describe módulos para tramos activos de hasta tres metros y cables eléctricos activos de hasta seis metros, según configuración. Para superar esas distancias, Aries 7 incorpora drivers ópticos y TIA destinados a óptica lineal enchufable y cercana al encapsulado, LPO y NPO. La compañía anuncia conexiones superiores a 50 metros, pero no acompaña la nota con una tabla pública completa de consumo, tasa de error, temperatura y latencia validada por terceros."
+          ]
+        },
+        {
+          "heading": "COSMOS y el reto de administrar enlaces",
+          "kind": "technical",
+          "paragraphs": [
+            "La familia se integra con COSMOS, la suite de Astera para telemetría, diagnóstico y ajuste de enlaces. En un centro de datos con miles de aceleradores, un enlace intermitente puede ralentizar trabajos completos y encarecer el tiempo de GPU. Una visión común de errores y condiciones de señal puede reducir el tiempo de diagnóstico, siempre que la instrumentación funcione con las configuraciones de hardware reales y no solo con demostraciones controladas.",
+            "Astera afirma que AMD e Intel validaron generaciones anteriores de retimers Aries en plataformas de PCIe 4 a 6 y colaboran en la transición a PCIe 7. Esa experiencia aporta contexto, pero no significa que todas las placas PCIe 7 ya estén certificadas. También aparecen socios del ecosistema óptico, cuyas declaraciones muestran interés y trabajo conjunto; ninguna sustituye una prueba de compatibilidad en producción."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, compradores y competencia",
+          "kind": "context",
+          "paragraphs": [
+            "El anuncio apunta a grandes proveedores de nube, fabricantes de servidores y diseñadores de centros de datos que necesitan conectar aceleradores a varias escalas. La empresa anunció demostraciones en el OCP Global Summit del 12 al 15 de octubre de 2026 en San José. Una demostración de feria y un programa de muestras permiten iniciar pruebas, pero no equivalen a poder comprar cualquier SKU en todos los países. La fecha de disponibilidad general sigue sin concretarse.",
+            "Los diseñadores deben comparar el coste total del canal: potencia de retimers, óptica, refrigeración, conectores, firmware, mantenimiento y capacidad de recuperación ante fallos. Frente a soluciones de red o interconexiones propietarias, PCIe ofrece una base estandarizada, aunque no reemplaza automáticamente a Ethernet, InfiniBand o enlaces específicos de aceleradores. Elegir una tecnología depende de topología, carga de trabajo y latencia, no solo de la tasa nominal de señal."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette, límites y qué seguir",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la importancia de Aries 7 es que trata la conectividad como una combinación de cobre y óptica administrada bajo una misma familia de herramientas. El anuncio confirma una dirección de producto y socios de diseño, no una ventaja demostrada en coste por token ni un aumento medido de rendimiento de entrenamiento. La promesa de conectar más lejos a velocidades elevadas merece seguimiento precisamente porque las redes pueden convertirse en cuellos de botella de sistemas de IA caros.",
+            "Antes de incorporar componentes a un diseño, conviene solicitar hojas técnicas, matrices de compatibilidad, límites de potencia, condiciones de prueba y planes de soporte. Las próximas señales verificables serán las muestras del cuarto trimestre, resultados de calificación, demostraciones con errores de bit medidos, contratos de suministro y precios. Solo con esas evidencias podrá evaluarse si la integración de óptica y cobre simplifica realmente los sistemas frente a alternativas."
+          ]
+        }
+      ],
+      "executiveSummary": "Astera Labs anunció el 8 de octubre de 2026 una expansión de su familia Aries hacia la séptima generación de PCI Express. La oferta combina retimers, redrivers, módulos de cable, drivers ópticos y amplificadores de transimpedancia óptica, conocidos como TIA. La compañía la presenta como una cartera capaz de cubrir enlaces cortos sobre placas y conexiones ópticas que superan los 50 metros entre racks de cómputo de inteligencia artificial. Es un anuncio de producto y de calendario de muestras, no una confirmación de despliegue masivo. Astera espera iniciar el muestreo para clientes seleccionados durante el cuarto trimestre de 2026, con disponibilidad más amplia sujeta a la calificación de las plataformas. No publicó precios por componente, volúmenes de fabricación, fechas de entrega global ni resultados independientes de interoperabilidad para toda la familia.",
+      "finalSummary": "Antes de incorporar componentes a un diseño, conviene solicitar hojas técnicas, matrices de compatibilidad, límites de potencia, condiciones de prueba y planes de soporte. Las próximas señales verificables serán las muestras del cuarto trimestre, resultados de calificación, demostraciones con errores de bit medidos, contratos de suministro y precios. Solo con esas evidencias podrá evaluarse si la integración de óptica y cobre simplifica realmente los sistemas frente a alternativas.",
+      "analysis": "Análisis Gazette: la importancia de Aries 7 es que trata la conectividad como una combinación de cobre y óptica administrada bajo una misma familia de herramientas. El anuncio confirma una dirección de producto y socios de diseño, no una ventaja demostrada en coste por token ni un aumento medido de rendimiento de entrenamiento. La promesa de conectar más lejos a velocidades elevadas merece seguimiento precisamente porque las redes pueden convertirse en cuellos de botella de sistemas de IA caros.",
+      "watch": "Seguir muestras Q4 2026, certificaciones, precios y pruebas independientes.",
+      "technicalDetails": [
+        {
+          "label": "Tasa PCIe 7",
+          "value": "Hasta 128 GT/s por carril",
+          "note": "Tasa de transferencias nominal; no es GB/s útiles."
+        },
+        {
+          "label": "Alcance óptico",
+          "value": "Más de 50 metros",
+          "note": "Objetivo y capacidad anunciada por Astera."
+        },
+        {
+          "label": "Cobre activo",
+          "value": "Hasta 3 m; cable eléctrico activo hasta 6 m",
+          "note": "Según explicación técnica de Astera."
+        },
+        {
+          "label": "Software",
+          "value": "COSMOS",
+          "note": "Diagnóstico y telemetría de enlaces."
+        }
+      ],
+      "availability": {
+        "status": "Anunciado; muestras previstas para Q4 2026 a clientes seleccionados",
+        "platforms": [
+          "Diseños PCIe 7 para servidores y clusters de IA"
+        ],
+        "regions": [
+          "Sin lista pública de regiones de distribución"
+        ],
+        "requirements": [
+          "Calificación de plataforma y pruebas de interoperabilidad"
+        ],
+        "notes": [
+          "Demostraciones previstas para OCP Global Summit, 12–15 de octubre de 2026.",
+          "Disponibilidad amplia posterior a calificación."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Componentes Aries 7",
+          "value": "Precio no anunciado",
+          "note": "No existe tarifa pública verificada en el comunicado."
+        }
+      ],
+      "limitations": [
+        "No hay benchmarks independientes publicados para toda la cartera.",
+        "El calendario de muestras está sujeto a desarrollo y calificación.",
+        "Faltan precios, disponibilidad por región y matrices completas de compatibilidad."
+      ],
+      "practicalAdvice": [
+        "Distinguir GT/s nominales de ancho de banda útil en la carga real.",
+        "Pedir resultados de integridad de señal, latencia, potencia y fallos por topología.",
+        "No considerar el muestreo selectivo equivalente a disponibilidad general."
+      ],
+      "usefulFacts": [
+        "PCIe 7 conserva PAM4 y aumenta la frecuencia de Nyquist a 32 GHz, según Astera.",
+        "Astera anuncia huella OCP compartida para algunos retimers y redrivers.",
+        "LPO y NPO son aproximaciones ópticas diferentes para extender enlaces."
+      ]
+    },
+    {
+      "id": "asana-stackai-browser-agent-76x-2026",
+      "eventKey": "asana-stackai-browser-agent-76x-cost-5x-speed-gpt61-sol-2026-10-08",
+      "articleVersion": 2,
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "Asana",
+      "product": "StackAI Browser Agent · optimización de caché",
+      "title": "Asana documenta un agente de navegador 76 veces más barato y cinco veces más rápido en pruebas",
+      "summary": "Asana publicó un estudio de 144 ejecuciones y doce pruebas adicionales sobre el agente de navegador de StackAI. Al conservar la caché y reducir cambios del historial, el flujo optimizado con GPT-6.1 Sol promedió US$0,47 de coste estimado del modelo y unos cuatro minutos por tarea; no es una tarifa comercial.",
+      "tags": [
+        "Agentes",
+        "Ingeniería",
+        "Evaluaciones",
+        "Costes",
+        "Automatización"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial genérico sobre automatización e inteligencia artificial; no muestra la interfaz real de StackAI.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial horizontal 3:2 en tinta sepia de un autómata que navega un catálogo de libros mientras conserva un archivo ordenado de memoria y captura pantallas por lotes. Representar eficiencia como engranajes y papel, sin números, logotipos, pantallas reales inventadas ni aspecto documental.",
+      "source": {
+        "name": "Asana · How we cut a browser agent's cost 76x",
+        "url": "https://asana.com/inside-asana/cut-browsers-agent-cost",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "OpenAI · Asana cuts model costs 76x in browser tests",
+          "url": "https://openai.com/index/asana-browser-agent/",
+          "publishedAt": "2026-10-09"
+        }
+      ],
+      "body": [
+        "Asana publicó el 8 de octubre de 2026 un estudio sobre cómo optimizó el agente de navegador de StackAI, plataforma incorporada a su negocio. El resultado principal fue una reducción de 76 veces en el coste estimado del modelo y una ejecución cinco veces más rápida frente a la configuración de producción original utilizada como referencia. OpenAI difundió un caso relacionado el 9 de octubre. Se trata de un cambio de arquitectura y configuración del flujo, no de un recorte de precios de la API de GPT-6.1 Sol.",
+        "El flujo optimizado sobre GPT-6.1 Sol promedió 0,47 dólares estadounidenses de coste estimado del modelo y aproximadamente cuatro minutos por ejecución en la tarea ensayada. Las cifras son resultados comunicados por Asana y OpenAI, no un benchmark universal de agentes ni una tarifa que pague un cliente de StackAI. No incluyen necesariamente desarrollo, operación de herramientas, supervisión humana o todos los costes de producción.",
+        "Un agente que navega por páginas envía al modelo instrucciones, definiciones de herramientas y un historial creciente de textos y capturas. La caché de prompts permite reutilizar un prefijo de entrada que permanece idéntico entre llamadas. El agente estudiado ya almacenaba en caché sus instrucciones fijas, pero no el historial. Además, eliminaba capturas anteriores y recortaba texto casi en cada paso, de modo que modificaba continuamente el prefijo que podría haberse reutilizado.",
+        "El equipo identificó que activar caché sin cambiar el manejo de memoria no bastaba: cada edición temprana invalidaba gran parte de lo almacenado. La solución consistió en extender la caché al historial, ampliar el presupuesto de texto y podar capturas por lotes. En una configuración ensayada se acumulaban hasta veinte capturas y luego se conservaba la más reciente, en vez de eliminar una después de cada llamada.",
+        "Según Asana, el equipo evaluó seis políticas de caché e historial, dos presupuestos de texto —120.000 y 480.000 caracteres— y cuatro modelos, con tres ejecuciones por condición: 144 corridas. Posteriormente realizó doce pruebas adicionales. La tarea consistía en obtener seis campos para cada uno de 32 libros de un catálogo de demostración público. Los resultados se compararon con una referencia preparada por separado, y el coste se calculó con contadores de tokens de los proveedores.",
+        "El estudio identifica los otros tres modelos como A, B y C sin revelar sus nombres. B era el modelo original de producción y tenía un precio nominal comparable al de Sol. Esa anonimización impide atribuir el resultado a un rival concreto. Tampoco permite extrapolar automáticamente los tiempos a navegación en sitios autenticados, procesos empresariales largos, tareas con documentos sensibles o portales que cambian constantemente.",
+        "En el modelo B, la optimización del mismo agente redujo el coste estimado desde al menos US$36,21 hasta US$1,24 por ejecución, una mejora de 29 veces. El flujo optimizado sobre GPT-6.1 Sol costó US$0,47, unas 2,6 veces menos que B optimizado. La comparación total de 76 veces combina mejoras del agente y elección del modelo; no sería correcto adjudicar toda la reducción a la superioridad intrínseca de Sol.",
+        "Asana informa que el 89% de la entrada del flujo optimizado con Sol procedió de caché. En esa configuración, cada llamada costaba aproximadamente un tercio que antes, y los tiempos bajaron de al menos 22,5 minutos en la referencia original a unos cuatro minutos. Parte de las corridas iniciales terminó por límite de pasos, por lo que las medias originales son cotas inferiores y no medidas exactas de finalización.",
+        "La ampliación del historial también afectó a la finalización de tareas: con 120.000 caracteres, Sol produjo respuesta en tres de dieciocho ejecuciones; con 480.000, respondió correctamente en las dieciocho, según el estudio. Asana explica que los cambios de navegación pasaron por revisión y llegaron a StackAI. Esto no significa que todas las automatizaciones de clientes ya utilicen el mismo modelo ni que se ofrezca una nueva tarifa comercial basada en US$0,47.",
+        "Las pruebas adicionales encontraron que, en esa tarea concreta, conservar todas las capturas podía resultar todavía algo más barato que podar por lotes. El equipo advierte que eso no elimina la necesidad de límites en procesos largos. Un historial ilimitado puede alcanzar la ventana de contexto y, si la caché deja de funcionar, cada llamada vuelve a pagar el coste completo. También deben vigilarse errores y desviaciones del agente, no solo tokens.",
+        "Análisis Gazette: la noticia muestra que parte del coste de los agentes proviene de decisiones de ingeniería sobre memoria, no exclusivamente del precio o capacidad del modelo. Un sistema que altera su historial en cada paso puede desperdiciar caché incluso cuando el proveedor ofrece descuentos importantes. La mejora puede tener más impacto operativo que cambiar de modelo sin revisar cómo se construyen las peticiones.",
+        "Para reproducir la idea con rigor, conviene instrumentar coste y tiempo por llamada, porcentaje de tokens en caché, número de pasos, tasa de tareas correctas y abandonos por límite. Después se pueden probar presupuestos de historial y políticas de poda por lotes con la misma carga. Deben mantenerse topes de gasto, pasos y tiempo, además de registros revisables. La próxima señal importante será evidencia de ahorro en tareas diversas y facturas reales, no solo una demostración de catálogo."
+      ],
+      "keyPoints": [
+        "Asana midió 144 ejecuciones más doce pruebas adicionales; la tarea consistía en extraer datos de 32 libros.",
+        "El resultado de 76× menos coste combina caché/historial y cambio de modelo; no es una rebaja de precios de OpenAI.",
+        "US$0,47 es coste medio estimado del modelo en una prueba concreta, no precio de StackAI."
+      ],
+      "quickTakeaways": [
+        "Asana midió 144 ejecuciones más doce pruebas adicionales; la tarea consistía en extraer datos de 32 libros.",
+        "El resultado de 76× menos coste combina caché/historial y cambio de modelo; no es una rebaja de precios de OpenAI.",
+        "US$0,47 es coste medio estimado del modelo en una prueba concreta, no precio de StackAI."
+      ],
+      "sections": [
+        {
+          "heading": "Un estudio sobre el coste de operar agentes, no una rebaja de API",
+          "kind": "report",
+          "paragraphs": [
+            "Asana publicó el 8 de octubre de 2026 un estudio sobre cómo optimizó el agente de navegador de StackAI, plataforma incorporada a su negocio. El resultado principal fue una reducción de 76 veces en el coste estimado del modelo y una ejecución cinco veces más rápida frente a la configuración de producción original utilizada como referencia. OpenAI difundió un caso relacionado el 9 de octubre. Se trata de un cambio de arquitectura y configuración del flujo, no de un recorte de precios de la API de GPT-6.1 Sol.",
+            "El flujo optimizado sobre GPT-6.1 Sol promedió 0,47 dólares estadounidenses de coste estimado del modelo y aproximadamente cuatro minutos por ejecución en la tarea ensayada. Las cifras son resultados comunicados por Asana y OpenAI, no un benchmark universal de agentes ni una tarifa que pague un cliente de StackAI. No incluyen necesariamente desarrollo, operación de herramientas, supervisión humana o todos los costes de producción."
+          ]
+        },
+        {
+          "heading": "El problema: un historial que rompe su propia caché",
+          "kind": "technical",
+          "paragraphs": [
+            "Un agente que navega por páginas envía al modelo instrucciones, definiciones de herramientas y un historial creciente de textos y capturas. La caché de prompts permite reutilizar un prefijo de entrada que permanece idéntico entre llamadas. El agente estudiado ya almacenaba en caché sus instrucciones fijas, pero no el historial. Además, eliminaba capturas anteriores y recortaba texto casi en cada paso, de modo que modificaba continuamente el prefijo que podría haberse reutilizado.",
+            "El equipo identificó que activar caché sin cambiar el manejo de memoria no bastaba: cada edición temprana invalidaba gran parte de lo almacenado. La solución consistió en extender la caché al historial, ampliar el presupuesto de texto y podar capturas por lotes. En una configuración ensayada se acumulaban hasta veinte capturas y luego se conservaba la más reciente, en vez de eliminar una después de cada llamada."
+          ]
+        },
+        {
+          "heading": "Método: 144 ejecuciones y una tarea definida",
+          "kind": "technical",
+          "paragraphs": [
+            "Según Asana, el equipo evaluó seis políticas de caché e historial, dos presupuestos de texto —120.000 y 480.000 caracteres— y cuatro modelos, con tres ejecuciones por condición: 144 corridas. Posteriormente realizó doce pruebas adicionales. La tarea consistía en obtener seis campos para cada uno de 32 libros de un catálogo de demostración público. Los resultados se compararon con una referencia preparada por separado, y el coste se calculó con contadores de tokens de los proveedores.",
+            "El estudio identifica los otros tres modelos como A, B y C sin revelar sus nombres. B era el modelo original de producción y tenía un precio nominal comparable al de Sol. Esa anonimización impide atribuir el resultado a un rival concreto. Tampoco permite extrapolar automáticamente los tiempos a navegación en sitios autenticados, procesos empresariales largos, tareas con documentos sensibles o portales que cambian constantemente."
+          ]
+        },
+        {
+          "heading": "Resultados: distinguir mejora de flujo y cambio de modelo",
+          "kind": "technical",
+          "paragraphs": [
+            "En el modelo B, la optimización del mismo agente redujo el coste estimado desde al menos US$36,21 hasta US$1,24 por ejecución, una mejora de 29 veces. El flujo optimizado sobre GPT-6.1 Sol costó US$0,47, unas 2,6 veces menos que B optimizado. La comparación total de 76 veces combina mejoras del agente y elección del modelo; no sería correcto adjudicar toda la reducción a la superioridad intrínseca de Sol.",
+            "Asana informa que el 89% de la entrada del flujo optimizado con Sol procedió de caché. En esa configuración, cada llamada costaba aproximadamente un tercio que antes, y los tiempos bajaron de al menos 22,5 minutos en la referencia original a unos cuatro minutos. Parte de las corridas iniciales terminó por límite de pasos, por lo que las medias originales son cotas inferiores y no medidas exactas de finalización."
+          ]
+        },
+        {
+          "heading": "Calidad, despliegue y límites",
+          "kind": "context",
+          "paragraphs": [
+            "La ampliación del historial también afectó a la finalización de tareas: con 120.000 caracteres, Sol produjo respuesta en tres de dieciocho ejecuciones; con 480.000, respondió correctamente en las dieciocho, según el estudio. Asana explica que los cambios de navegación pasaron por revisión y llegaron a StackAI. Esto no significa que todas las automatizaciones de clientes ya utilicen el mismo modelo ni que se ofrezca una nueva tarifa comercial basada en US$0,47.",
+            "Las pruebas adicionales encontraron que, en esa tarea concreta, conservar todas las capturas podía resultar todavía algo más barato que podar por lotes. El equipo advierte que eso no elimina la necesidad de límites en procesos largos. Un historial ilimitado puede alcanzar la ventana de contexto y, si la caché deja de funcionar, cada llamada vuelve a pagar el coste completo. También deben vigilarse errores y desviaciones del agente, no solo tokens."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y consejos para equipos técnicos",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la noticia muestra que parte del coste de los agentes proviene de decisiones de ingeniería sobre memoria, no exclusivamente del precio o capacidad del modelo. Un sistema que altera su historial en cada paso puede desperdiciar caché incluso cuando el proveedor ofrece descuentos importantes. La mejora puede tener más impacto operativo que cambiar de modelo sin revisar cómo se construyen las peticiones.",
+            "Para reproducir la idea con rigor, conviene instrumentar coste y tiempo por llamada, porcentaje de tokens en caché, número de pasos, tasa de tareas correctas y abandonos por límite. Después se pueden probar presupuestos de historial y políticas de poda por lotes con la misma carga. Deben mantenerse topes de gasto, pasos y tiempo, además de registros revisables. La próxima señal importante será evidencia de ahorro en tareas diversas y facturas reales, no solo una demostración de catálogo."
+          ]
+        }
+      ],
+      "executiveSummary": "Asana publicó el 8 de octubre de 2026 un estudio sobre cómo optimizó el agente de navegador de StackAI, plataforma incorporada a su negocio. El resultado principal fue una reducción de 76 veces en el coste estimado del modelo y una ejecución cinco veces más rápida frente a la configuración de producción original utilizada como referencia. OpenAI difundió un caso relacionado el 9 de octubre. Se trata de un cambio de arquitectura y configuración del flujo, no de un recorte de precios de la API de GPT-6.1 Sol. El flujo optimizado sobre GPT-6.1 Sol promedió 0,47 dólares estadounidenses de coste estimado del modelo y aproximadamente cuatro minutos por ejecución en la tarea ensayada. Las cifras son resultados comunicados por Asana y OpenAI, no un benchmark universal de agentes ni una tarifa que pague un cliente de StackAI. No incluyen necesariamente desarrollo, operación de herramientas, supervisión humana o todos los costes de producción.",
+      "finalSummary": "Para reproducir la idea con rigor, conviene instrumentar coste y tiempo por llamada, porcentaje de tokens en caché, número de pasos, tasa de tareas correctas y abandonos por límite. Después se pueden probar presupuestos de historial y políticas de poda por lotes con la misma carga. Deben mantenerse topes de gasto, pasos y tiempo, además de registros revisables. La próxima señal importante será evidencia de ahorro en tareas diversas y facturas reales, no solo una demostración de catálogo.",
+      "analysis": "Análisis Gazette: la noticia muestra que parte del coste de los agentes proviene de decisiones de ingeniería sobre memoria, no exclusivamente del precio o capacidad del modelo. Un sistema que altera su historial en cada paso puede desperdiciar caché incluso cuando el proveedor ofrece descuentos importantes. La mejora puede tener más impacto operativo que cambiar de modelo sin revisar cómo se construyen las peticiones.",
+      "watch": "Seguir estudios en otras tareas, costes reales de producción y calidad sostenida.",
+      "technicalDetails": [
+        {
+          "label": "Diseño experimental",
+          "value": "144 corridas + 12 adicionales",
+          "note": "Seis políticas, dos presupuestos y cuatro modelos; según Asana."
+        },
+        {
+          "label": "Presupuesto de historial",
+          "value": "120.000 y 480.000 caracteres",
+          "note": "Configuraciones comparadas."
+        },
+        {
+          "label": "Coste medio optimizado",
+          "value": "US$0,47 por tarea",
+          "note": "Solo coste estimado del modelo con GPT-6.1 Sol."
+        },
+        {
+          "label": "Tiempo optimizado",
+          "value": "~4 minutos",
+          "note": "Tarea de catálogo ensayada; no benchmark universal."
+        },
+        {
+          "label": "Entrada desde caché",
+          "value": "89%",
+          "note": "Según resultados de Asana para el flujo optimizado."
+        }
+      ],
+      "availability": {
+        "status": "Mejoras de navegación incorporadas a StackAI según Asana",
+        "platforms": [
+          "StackAI Browser Agent"
+        ],
+        "regions": [
+          "Sin detalle regional específico para este cambio"
+        ],
+        "requirements": [
+          "Configurar flujo y acceso a la plataforma según contrato"
+        ],
+        "notes": [
+          "No se confirmó una tarifa nueva ni un despliegue idéntico a todas las cuentas."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "US$0,47",
+          "value": "Coste estimado del modelo por ejecución de prueba",
+          "note": "No es tarifa comercial ni coste total de operación."
+        }
+      ],
+      "limitations": [
+        "Tarea experimental centrada en un catálogo de 32 libros.",
+        "Modelos comparadores A, B y C no identificados públicamente.",
+        "Parte de la referencia original alcanzó el límite de pasos.",
+        "Costes no incluyen necesariamente todas las partidas de operación y desarrollo."
+      ],
+      "practicalAdvice": [
+        "Medir el porcentaje real de lecturas de caché por llamada.",
+        "Mantener historial estable y probar poda por lotes antes de aumentar límites.",
+        "Conservar topes de pasos, tiempo y coste; medir exactitud y recuperación de errores."
+      ],
+      "usefulFacts": [
+        "Cada corrida recogía 192 datos: seis campos de 32 libros.",
+        "El equipo comparó presupuestos de 120.000 y 480.000 caracteres.",
+        "Asana informa que los cambios revisados se incorporaron a StackAI."
+      ]
+    },
     {
       "id": "ultra-operator-62m-physical-intelligence-2026",
       "eventKey": "ultra-62m-robotics-series-a-physical-intelligence-operator-2026-10-09",
@@ -13782,12 +14315,12 @@
     {
       "date": "2026-10-08",
       "status": "partial",
-      "verifiedArticles": 24
+      "verifiedArticles": 26
     },
     {
       "date": "2026-10-09",
       "status": "partial",
-      "verifiedArticles": 8
+      "verifiedArticles": 9
     }
   ]
 }
