@@ -35,3 +35,48 @@ jobs:
             -o /tmp/gazette-live-marker.txt
           grep -Fxq 'source_repository=cookiecodespy/ai-race-gazette' /tmp/gazette-live-marker.txt
           echo "Dedicated Gazette repository is live at the original public URL"
+      - name: Post-cutover public integrity - Gazette and original portfolio
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, time, urllib.request, xml.etree.ElementTree as ET
+          BASE = "https://cookiecodespy.github.io/"
+          RAW = "https://raw.githubusercontent.com/cookiecodespy/"
+          def get(url):
+              last=None
+              for i in range(4):
+                  try:
+                      req=urllib.request.Request(url,headers={"Cache-Control":"no-cache","User-Agent":"Gazette-cutover-integrity/1.0"})
+                      with urllib.request.urlopen(req,timeout=30) as f: return f.read()
+                  except Exception as e:
+                      last=e
+                      if i<3: time.sleep(5)
+              raise RuntimeError(f"GET {url}: {last}")
+          def gitblob(raw):
+              return hashlib.sha1(b"blob "+str(len(raw)).encode()+b"\\0"+raw).hexdigest()
+          portfolio=get(BASE)
+          portfolio_git=get(RAW+"cookiecodespy.github.io/main/index.html")
+          assert portfolio==portfolio_git, "Portfolio HTTP does not match main index"
+          assert gitblob(portfolio)== "4ce9eaa66cefeded9599c76aa1b27e647bdf3ed4", "Portfolio HTML differs from its pre-Gazette baseline"
+          marker=get(BASE+"ai-race-gazette/gazette-deployment.txt").decode()
+          assert "source_repository=cookiecodespy/ai-race-gazette" in marker, "Gazette served from wrong repository"
+          canonical=get(RAW+"ai-race-gazette/main/data/news.json")
+          public=get(BASE+"ai-race-gazette/data/news.json")
+          mirror=get(RAW+"ai-race-gazette/main/source/public/data/news.json")
+          assert public==canonical==mirror, "Gazette public JSON differs from canonical repository or mirror"
+          rss=get(BASE+"ai-race-gazette/feed.xml")
+          rss_git=get(RAW+"ai-race-gazette/main/feed.xml")
+          rss_mirror=get(RAW+"ai-race-gazette/main/source/public/feed.xml")
+          assert rss==rss_git==rss_mirror, "Gazette public RSS differs from repository or mirror"
+          page=get(BASE+"ai-race-gazette/")
+          new_page=get(RAW+"ai-race-gazette/main/index.html")
+          assert page==new_page, "Gazette public frontend differs from deployed branch"
+          data=json.loads(canonical)
+          articles=data["articles"]
+          ids=[a["id"] for a in articles]
+          keys=[a.get("eventKey",a["id"]) for a in articles]
+          assert len(ids)==len(set(ids)) and len(keys)==len(set(keys)), "Duplicate Gazette article id/eventKey"
+          rss_count=len(ET.fromstring(rss).findall("./channel/item"))
+          assert len(articles)==rss_count, "Gazette RSS count mismatch"
+          print(f"POST-CUTOVER PASS: portfolio baseline SHA, Gazette marker, 2x JSON, 2x RSS, homepage, {len(articles)} articles")
+          PY
