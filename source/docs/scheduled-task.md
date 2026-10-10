@@ -8,7 +8,7 @@ Estado: activada el 7 de octubre de 2026 como tarea horaria de ChatGPT con conex
 
 Cadencia: una revisión cada hora.
 
-**Separación de repositorios (10 de octubre de 2026):** este documento define el destino deseado, no demuestra que la Scheduled Task haya sido actualizada. La confirmación del destino exclusivo, ID de tarea y próxima ejecución debe obtenerse desde ChatGPT. Hasta entonces no fusionar el PR #9 del portafolio. Consultar `../../docs/operations-and-recovery.md`.
+**Separación de repositorios (10 de octubre de 2026):** la Scheduled Task real `AI Race Gazette Newsroom` fue actualizada desde ChatGPT conservando el ID `6ac671bed2e8819184ed6fce0a20e531`, la cadencia horaria (minuto 21, hora de Santiago) y el estado activo. Su destino es exclusivamente `cookiecodespy/ai-race-gazette/main`, sin prefijos `ai-race-gazette/`. El PR #9 ya está fusionado; los dos sitios y sus datos pasaron auditoría HTTP post-cutover. Pendiente de observar la primera ejecución horaria en el nuevo destino y validar un no-op o publicación. Ver `../../docs/operations-and-recovery.md`.
 
 Objetivo: estar muy actualizado sin generar commits vacíos ni tocar el frontend durante una actualización editorial.
 
