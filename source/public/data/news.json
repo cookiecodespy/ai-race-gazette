@@ -1,8 +1,242 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T12:27:02.298Z",
+  "updatedAt": "2026-10-10T14:23:23.587Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "microsoft-decision-1-foundry-structured-scoring-2026",
+      "eventKey": "microsoft-decision-1-qwen35-9b-foundry-decision-scoring-2026-10-09",
+      "articleVersion": 2,
+      "date": "2026-10-09",
+      "announcedAt": "2026-10-09",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "Microsoft",
+      "product": "Microsoft-Decision-1 · Microsoft Foundry",
+      "title": "Microsoft lanza Decision-1: puntuaciones para agentes a US$0,042 por millón de tokens",
+      "summary": "Microsoft estrenó Decision-1, un modelo derivado de Qwen3.5-9B que puntúa opciones en lugar de generar texto. Está disponible en Foundry y OpenRouter; Microsoft atribuye a sus pruebas mejoras de velocidad y precisión, aún sin evaluación independiente generalizable.",
+      "tags": [
+        "Modelos",
+        "Agentes",
+        "Microsoft Foundry",
+        "Herramientas de desarrollo",
+        "Inferencia"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de una máquina que distribuye decisiones entre rutas; no representa una interfaz ni hardware real de Microsoft.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Ilustración editorial 3:2 sepia/tinta, estética de periódico antiguo: una máquina abstracta de decisión recibe documentos y bifurca caminos con fichas de probabilidad y agentes mecánicos. Sin logotipos falsos, texto integrado, interfaces inventadas ni aspecto fotográfico documental; composición centrada.",
+      "source": {
+        "name": "Microsoft · Introducing Microsoft-Decision-1, our model for fast decision-making",
+        "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
+        "publishedAt": "2026-10-09"
+      },
+      "relatedSources": [
+        {
+          "name": "Microsoft Foundry · ficha Microsoft-Decision-1",
+          "url": "https://ai.azure.com/catalog/models/Microsoft-Decision-1",
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "name": "OpenRouter · Microsoft-Decision-1",
+          "url": "https://openrouter.ai/microsoft/microsoft-decision-1",
+          "publishedAt": "2026-10-09"
+        }
+      ],
+      "body": [
+        "Microsoft presentó el 9 de octubre de 2026 Microsoft-Decision-1, un modelo destinado a evaluar opciones y devolver probabilidades estructuradas, en vez de redactar respuestas conversacionales. La compañía lo ofrece en Microsoft Foundry y el catálogo de OpenRouter también muestra una ficha activa. El lanzamiento apunta a una función concreta dentro de los sistemas de agentes: decidir qué hacer a continuación cuando las alternativas están definidas.",
+        "El producto no pretende sustituir a un asistente general. Su entrada es una situación acompañada de una pregunta y un conjunto cerrado de respuestas posibles; la salida asigna una puntuación probabilística a cada opción. Así, una aplicación puede comparar continuar, detenerse, solicitar revisión o derivar a otra herramienta sin generar una explicación larga cada vez.",
+        "Esta distinción importa porque muchas aplicaciones utilizan modelos generativos costosos para clasificar una incidencia, priorizar un documento o decidir si una respuesta cumple una regla. Si la decisión está bien acotada, un modelo especializado podría reducir latencia y gasto. No obstante, una puntuación alta no constituye por sí sola una autorización para ejecutar acciones sensibles.",
+        "Microsoft explica que el modelo parte de Qwen3.5-9B, de Alibaba, y fue sometido a entrenamiento posterior para producir puntuaciones en una sola pasada. La ficha oficial de Foundry identifica una ventana de contexto de 32.768 tokens, entradas de texto y salida JSON. No se anuncia una liberación pública de los pesos específicos de Microsoft-Decision-1.",
+        "Entre los formatos admitidos figuran preguntas binarias, elección múltiple, escalas de valoración y evaluaciones mediante rúbricas. El catálogo menciona además clasificación, relevancia, controles de seguridad, valoración de acciones propuestas por agentes y una opción explícita de abstenerse cuando los datos no bastan. La aplicación integradora debe proporcionar alternativas pertinentes y umbrales de confianza adecuados.",
+        "Una decisión de este tipo es diferente de pedir al modelo que investigue libremente una cuestión. Microsoft aclara que Decision-1 no está diseñado para conversación, traducción, resumen, respuestas abiertas ni tareas que requieren conocimiento ausente de la entrada. Tampoco genera explicaciones o justificaciones; el diseño de auditoría debe resolverlo la aplicación que lo utiliza.",
+        "El anuncio incluye una evaluación de 36 benchmarks y cerca de 150.000 preguntas que Microsoft describe como separadas del entrenamiento. Según sus propias mediciones, Decision-1 alcanzó la mayor precisión dentro del conjunto comparado y fue 2,5 veces más rápido que H2O-Lightning-4B v1.1, el segundo más veloz, y unas 35 veces más rápido que GPT-6 Sol en latencia mediana.",
+        "Estas cifras son afirmaciones del fabricante y dependen del conjunto de pruebas, las alternativas presentadas y las condiciones de ejecución. No equivalen a una clasificación independiente de todos los modelos. Microsoft señala que actualizó su artículo original para incorporar comparaciones adicionales con Jev sobre precisión y calibración; por ello conviene comprobar la versión vigente antes de citar un puesto o una ventaja numérica.",
+        "La robustez también se evaluó mediante ocho perturbaciones de una misma petición, como reordenar opciones, parafrasear descripciones o cambiar claves. Microsoft informa que la decisión cambió en promedio en el 1,3% de las perturbaciones y que ciertos cambios de orden o paráfrasis no produjeron cambios en su prueba. Eso no garantiza estabilidad en otros idiomas, dominios o datos adversariales.",
+        "En seguridad, el proveedor informa de 5.250 peticiones distribuidas entre once benchmarks que abarcan contenido dañino, jailbreaks e inyección de instrucciones. Afirma que el modelo rechazó comportamientos perjudiciales sin perder demasiada utilidad. No se publica en esa nota una auditoría independiente que permita trasladar directamente ese resultado a cualquier flujo de producción.",
+        "Microsoft aporta ejemplos internos de uso, pero deben leerse como experiencias de sus equipos. Xbox Research procesó más de 10.000 comentarios abiertos para agruparlos en categorías y declaró una calidad competitiva con GPT-6 Sol a más velocidad y menor coste. Copilot lo probó para evaluar respuestas; otros equipos lo usaron para recuperar información de incidentes y para replanificación de experimentos.",
+        "Los ejemplos ilustran dónde puede encajar un evaluador ligero: enrutamiento de modelos, priorización de tickets, clasificación de solicitudes, filtros de seguridad, validación de datos y selección de próximos pasos. La precisión necesaria cambia según el caso. Equivocarse en una etiqueta editorial no tiene las mismas consecuencias que aprobar una transferencia o rechazar una solicitud de crédito.",
+        "En su catálogo, Microsoft clasifica Decision-1 como generalmente disponible en Foundry. La página del proveedor indica que los desarrolladores pueden comenzar allí y también ofrece una ruta mediante OpenRouter, cuyo catálogo identifica el modelo y el precio. No se enumeran en las fuentes consultadas todas las regiones habilitadas, cuotas ni posibles requisitos contractuales por cuenta.",
+        "El precio publicado es de US$0,042 por millón de tokens de entrada y cero cargo por tokens de salida. Es un precio de inferencia declarado para el modelo, no el coste total de construir una aplicación. Infraestructura, almacenamiento, observabilidad, llamadas a otros modelos y revisión humana pueden añadir gastos. Antes de presupuestar una carga grande conviene verificar facturación, límites y condiciones del proveedor elegido.",
+        "El bajo precio unitario abre la posibilidad de insertar varias comprobaciones en una cadena de agentes. Sin embargo, veinte decisiones consecutivas acumulan latencia, y un error temprano puede afectar a todo el flujo. Para comparar alternativas hay que medir el tiempo extremo a extremo y los falsos positivos, no solo el coste de una llamada aislada.",
+        "Un punto delicado es la calibración. Si una API devuelve una probabilidad de 0,9, el integrador debería comprobar si ese nivel coincide aproximadamente con la frecuencia real de acierto en su propio conjunto de casos. Las probabilidades no reemplazan una política de riesgos, y umbrales adecuados para un equipo pueden resultar inseguros para otro.",
+        "La documentación de Foundry prohíbe usar este modelo como único decisor automático en asuntos trascendentes para personas, como empleo, crédito, vivienda, seguros, educación, salud o derechos legales. También desaconseja vigilancia y perfiles de individuos. Para decisiones de alto impacto se necesitan controles externos, revisión humana y trazabilidad de la evidencia.",
+        "Para un desarrollador, una prueba responsable puede empezar con una tarea de clasificación reversible y un conjunto de respuestas cerrado. Conviene conservar ejemplos etiquetados, medir calibración por categoría, introducir entradas ambiguas, invertir el orden de las opciones y comprobar que el sistema sabe abstenerse. Después se puede evaluar cuánto ahorro real produce frente a un modelo general.",
+        "Para una empresa, el valor potencial no reside solo en abaratar tokens. Un modelo pequeño que decide cuándo escalar una tarea puede mejorar tiempos de respuesta, pero también introducir una nueva dependencia operativa. Es necesario registrar qué opciones recibió, qué puntuaciones devolvió y qué regla autorizó la acción posterior, sin confundir la probabilidad del modelo con una justificación verificable.",
+        "Análisis Gazette: este lanzamiento refuerza una tendencia hacia sistemas compuestos, donde un modelo generativo propone y otros componentes verifican, enrutan o deciden si continuar. La competencia ya no se limita al mejor chatbot. El punto crítico será demostrar que una cadena con evaluadores especializados es más confiable y económica en condiciones reales, no solo en tablas del proveedor.",
+        "Queda por observar la evaluación independiente de calibración, la estabilidad bajo cambios de dominio, el coste completo de integración y la evolución del catálogo regional. Microsoft anticipa futuras variantes basadas en otros modelos, pero no anunció fechas concretas. El hito verificable de hoy es la disponibilidad de un evaluador de opciones con API y precio públicos."
+      ],
+      "keyPoints": [
+        "Modelo especializado en puntuar opciones cerradas y devolver probabilidades, basado en Qwen3.5-9B.",
+        "Disponible en Microsoft Foundry y listado en OpenRouter; US$0,042 por millón de tokens de entrada y salida sin cargo.",
+        "Microsoft afirma ventaja de velocidad en benchmarks propios; no sirve como decisor único en asuntos de alto impacto."
+      ],
+      "quickTakeaways": [
+        "Decision-1 evalúa alternativas estructuradas; no es un chatbot ni un modelo de generación abierta.",
+        "Deriva de Qwen3.5-9B, admite 32.768 tokens de contexto y devuelve JSON con probabilidades.",
+        "Microsoft Foundry lo cataloga como generalmente disponible; OpenRouter también lo lista.",
+        "La tarifa publicada es US$0,042 por millón de tokens de entrada y US$0 por salida.",
+        "Los benchmarks y cifras de ahorro son pruebas del proveedor, no garantías universales."
+      ],
+      "sections": [
+        {
+          "heading": "Qué lanzó Microsoft y por qué importa",
+          "kind": "report",
+          "paragraphs": [
+            "Microsoft presentó el 9 de octubre de 2026 Microsoft-Decision-1, un modelo destinado a evaluar opciones y devolver probabilidades estructuradas, en vez de redactar respuestas conversacionales. La compañía lo ofrece en Microsoft Foundry y el catálogo de OpenRouter también muestra una ficha activa. El lanzamiento apunta a una función concreta dentro de los sistemas de agentes: decidir qué hacer a continuación cuando las alternativas están definidas.",
+            "El producto no pretende sustituir a un asistente general. Su entrada es una situación acompañada de una pregunta y un conjunto cerrado de respuestas posibles; la salida asigna una puntuación probabilística a cada opción. Así, una aplicación puede comparar continuar, detenerse, solicitar revisión o derivar a otra herramienta sin generar una explicación larga cada vez.",
+            "Esta distinción importa porque muchas aplicaciones utilizan modelos generativos costosos para clasificar una incidencia, priorizar un documento o decidir si una respuesta cumple una regla. Si la decisión está bien acotada, un modelo especializado podría reducir latencia y gasto. No obstante, una puntuación alta no constituye por sí sola una autorización para ejecutar acciones sensibles."
+          ]
+        },
+        {
+          "heading": "Arquitectura y alcance técnico",
+          "kind": "technical",
+          "paragraphs": [
+            "Microsoft explica que el modelo parte de Qwen3.5-9B, de Alibaba, y fue sometido a entrenamiento posterior para producir puntuaciones en una sola pasada. La ficha oficial de Foundry identifica una ventana de contexto de 32.768 tokens, entradas de texto y salida JSON. No se anuncia una liberación pública de los pesos específicos de Microsoft-Decision-1.",
+            "Entre los formatos admitidos figuran preguntas binarias, elección múltiple, escalas de valoración y evaluaciones mediante rúbricas. El catálogo menciona además clasificación, relevancia, controles de seguridad, valoración de acciones propuestas por agentes y una opción explícita de abstenerse cuando los datos no bastan. La aplicación integradora debe proporcionar alternativas pertinentes y umbrales de confianza adecuados.",
+            "Una decisión de este tipo es diferente de pedir al modelo que investigue libremente una cuestión. Microsoft aclara que Decision-1 no está diseñado para conversación, traducción, resumen, respuestas abiertas ni tareas que requieren conocimiento ausente de la entrada. Tampoco genera explicaciones o justificaciones; el diseño de auditoría debe resolverlo la aplicación que lo utiliza."
+          ]
+        },
+        {
+          "heading": "Benchmarks: resultados y límites de la evidencia",
+          "kind": "technical",
+          "paragraphs": [
+            "El anuncio incluye una evaluación de 36 benchmarks y cerca de 150.000 preguntas que Microsoft describe como separadas del entrenamiento. Según sus propias mediciones, Decision-1 alcanzó la mayor precisión dentro del conjunto comparado y fue 2,5 veces más rápido que H2O-Lightning-4B v1.1, el segundo más veloz, y unas 35 veces más rápido que GPT-6 Sol en latencia mediana.",
+            "Estas cifras son afirmaciones del fabricante y dependen del conjunto de pruebas, las alternativas presentadas y las condiciones de ejecución. No equivalen a una clasificación independiente de todos los modelos. Microsoft señala que actualizó su artículo original para incorporar comparaciones adicionales con Jev sobre precisión y calibración; por ello conviene comprobar la versión vigente antes de citar un puesto o una ventaja numérica.",
+            "La robustez también se evaluó mediante ocho perturbaciones de una misma petición, como reordenar opciones, parafrasear descripciones o cambiar claves. Microsoft informa que la decisión cambió en promedio en el 1,3% de las perturbaciones y que ciertos cambios de orden o paráfrasis no produjeron cambios en su prueba. Eso no garantiza estabilidad en otros idiomas, dominios o datos adversariales.",
+            "En seguridad, el proveedor informa de 5.250 peticiones distribuidas entre once benchmarks que abarcan contenido dañino, jailbreaks e inyección de instrucciones. Afirma que el modelo rechazó comportamientos perjudiciales sin perder demasiada utilidad. No se publica en esa nota una auditoría independiente que permita trasladar directamente ese resultado a cualquier flujo de producción."
+          ]
+        },
+        {
+          "heading": "Pruebas internas y casos de uso",
+          "kind": "context",
+          "paragraphs": [
+            "Microsoft aporta ejemplos internos de uso, pero deben leerse como experiencias de sus equipos. Xbox Research procesó más de 10.000 comentarios abiertos para agruparlos en categorías y declaró una calidad competitiva con GPT-6 Sol a más velocidad y menor coste. Copilot lo probó para evaluar respuestas; otros equipos lo usaron para recuperar información de incidentes y para replanificación de experimentos.",
+            "Los ejemplos ilustran dónde puede encajar un evaluador ligero: enrutamiento de modelos, priorización de tickets, clasificación de solicitudes, filtros de seguridad, validación de datos y selección de próximos pasos. La precisión necesaria cambia según el caso. Equivocarse en una etiqueta editorial no tiene las mismas consecuencias que aprobar una transferencia o rechazar una solicitud de crédito.",
+            "En su catálogo, Microsoft clasifica Decision-1 como generalmente disponible en Foundry. La página del proveedor indica que los desarrolladores pueden comenzar allí y también ofrece una ruta mediante OpenRouter, cuyo catálogo identifica el modelo y el precio. No se enumeran en las fuentes consultadas todas las regiones habilitadas, cuotas ni posibles requisitos contractuales por cuenta."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, precio y coste real",
+          "kind": "report",
+          "paragraphs": [
+            "El precio publicado es de US$0,042 por millón de tokens de entrada y cero cargo por tokens de salida. Es un precio de inferencia declarado para el modelo, no el coste total de construir una aplicación. Infraestructura, almacenamiento, observabilidad, llamadas a otros modelos y revisión humana pueden añadir gastos. Antes de presupuestar una carga grande conviene verificar facturación, límites y condiciones del proveedor elegido.",
+            "El bajo precio unitario abre la posibilidad de insertar varias comprobaciones en una cadena de agentes. Sin embargo, veinte decisiones consecutivas acumulan latencia, y un error temprano puede afectar a todo el flujo. Para comparar alternativas hay que medir el tiempo extremo a extremo y los falsos positivos, no solo el coste de una llamada aislada.",
+            "Un punto delicado es la calibración. Si una API devuelve una probabilidad de 0,9, el integrador debería comprobar si ese nivel coincide aproximadamente con la frecuencia real de acierto en su propio conjunto de casos. Las probabilidades no reemplazan una política de riesgos, y umbrales adecuados para un equipo pueden resultar inseguros para otro."
+          ]
+        },
+        {
+          "heading": "Seguridad, calibración y decisiones sensibles",
+          "kind": "technical",
+          "paragraphs": [
+            "La documentación de Foundry prohíbe usar este modelo como único decisor automático en asuntos trascendentes para personas, como empleo, crédito, vivienda, seguros, educación, salud o derechos legales. También desaconseja vigilancia y perfiles de individuos. Para decisiones de alto impacto se necesitan controles externos, revisión humana y trazabilidad de la evidencia.",
+            "Para un desarrollador, una prueba responsable puede empezar con una tarea de clasificación reversible y un conjunto de respuestas cerrado. Conviene conservar ejemplos etiquetados, medir calibración por categoría, introducir entradas ambiguas, invertir el orden de las opciones y comprobar que el sistema sabe abstenerse. Después se puede evaluar cuánto ahorro real produce frente a un modelo general."
+          ]
+        },
+        {
+          "heading": "Aplicación práctica y lectura competitiva",
+          "kind": "analysis",
+          "paragraphs": [
+            "Para una empresa, el valor potencial no reside solo en abaratar tokens. Un modelo pequeño que decide cuándo escalar una tarea puede mejorar tiempos de respuesta, pero también introducir una nueva dependencia operativa. Es necesario registrar qué opciones recibió, qué puntuaciones devolvió y qué regla autorizó la acción posterior, sin confundir la probabilidad del modelo con una justificación verificable.",
+            "Análisis Gazette: este lanzamiento refuerza una tendencia hacia sistemas compuestos, donde un modelo generativo propone y otros componentes verifican, enrutan o deciden si continuar. La competencia ya no se limita al mejor chatbot. El punto crítico será demostrar que una cadena con evaluadores especializados es más confiable y económica en condiciones reales, no solo en tablas del proveedor.",
+            "Queda por observar la evaluación independiente de calibración, la estabilidad bajo cambios de dominio, el coste completo de integración y la evolución del catálogo regional. Microsoft anticipa futuras variantes basadas en otros modelos, pero no anunció fechas concretas. El hito verificable de hoy es la disponibilidad de un evaluador de opciones con API y precio públicos."
+          ]
+        }
+      ],
+      "executiveSummary": "Microsoft-Decision-1 llega como un evaluador de opciones diseñado para integrarse en flujos de agentes, clasificación y control. Su salida probabilística permite decidir si una tarea continúa, se deriva o necesita revisión, siempre que la aplicación defina alternativas y límites. El modelo está disponible en Foundry y figura en OpenRouter, con precio por token público; las ventajas de precisión y velocidad comunicadas proceden de evaluaciones internas de Microsoft.",
+      "finalSummary": "La novedad del 9 de octubre no es otro asistente conversacional, sino un componente de decisión de bajo coste que puede complementar modelos generativos. El interés técnico está en la calibración, los umbrales y la supervisión. Para medir su valor hacen falta pruebas independientes y métricas de flujo completo; la disponibilidad comercial ya está documentada.",
+      "analysis": "Análisis Gazette: Decision-1 ilustra la transición desde un único modelo que hace todo hacia arquitecturas que separan generación, verificación y enrutamiento. El precio invita a experimentar, pero una puntuación no equivale a una decisión responsable sin controles, evidencia y capacidad de abstenerse.",
+      "watch": "Benchmarks independientes, precisión por idioma y dominio, regiones efectivamente disponibles, estabilidad de precios, condiciones de integración y futuras variantes del modelo.",
+      "technicalDetails": [
+        {
+          "label": "Modelo base",
+          "value": "Qwen3.5-9B, post-entrenado por Microsoft"
+        },
+        {
+          "label": "Contexto",
+          "value": "32.768 tokens"
+        },
+        {
+          "label": "Modalidad",
+          "value": "Texto de entrada; JSON con probabilidades por opción"
+        },
+        {
+          "label": "Evaluación del proveedor",
+          "value": "36 benchmarks y cerca de 150.000 preguntas",
+          "note": "Mediciones internas; Microsoft actualizó las comparaciones con Jev."
+        },
+        {
+          "label": "Velocidad declarada",
+          "value": "2,5× respecto de H2O-Lightning-4B v1.1; ~35× respecto de GPT-6 Sol",
+          "note": "Comparaciones del fabricante, dependientes del benchmark."
+        },
+        {
+          "label": "Robustez declarada",
+          "value": "1,3% de cambios de decisión bajo ocho perturbaciones",
+          "note": "Resultados internos, no garantía en producción."
+        }
+      ],
+      "availability": {
+        "status": "Generally available en Microsoft Foundry; listado activo en OpenRouter",
+        "platforms": [
+          "Microsoft Foundry",
+          "OpenRouter"
+        ],
+        "regions": [],
+        "requirements": [
+          "Cuenta y acceso a la plataforma de inferencia elegida"
+        ],
+        "notes": [
+          "No se detalló una lista exhaustiva de regiones y cuotas.",
+          "El catálogo de Foundry identifica versión 1 y ciclo de vida GA."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Entrada",
+          "value": "US$0,042 / millón de tokens",
+          "note": "Precio publicado por Microsoft y OpenRouter."
+        },
+        {
+          "label": "Salida",
+          "value": "US$0 / millón de tokens",
+          "note": "No incluye gastos de otros componentes del flujo."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-09",
+          "label": "Anuncio y disponibilidad en Foundry"
+        },
+        {
+          "date": "2026-10-09",
+          "label": "Ficha comercial publicada en OpenRouter"
+        }
+      ],
+      "limitations": [
+        "No diseñado para generación libre, conversación, resumen ni traducción.",
+        "No produce explicaciones o racionales de sus decisiones.",
+        "Microsoft desaconseja su uso como único decisor en asuntos de alto impacto sobre personas.",
+        "Los resultados de benchmarks y casos internos no son auditorías independientes.",
+        "Regiones, cuotas y costes integrales de aplicaciones no están completamente especificados."
+      ],
+      "practicalAdvice": [
+        "Empezar con decisiones reversibles y opciones cerradas, manteniendo una vía de abstención.",
+        "Medir calibración, falsos positivos y latencia extremo a extremo sobre datos representativos.",
+        "No permitir acciones sensibles únicamente por una puntuación alta; registrar contexto y aplicar revisión humana."
+      ],
+      "usefulFacts": [
+        "Microsoft Foundry identifica el modelo como GA, versión 1.",
+        "La ficha técnica describe salida JSON y ventana de 32.768 tokens.",
+        "La fuente primaria fue actualizada para añadir comparaciones con Jev."
+      ],
+      "curiosities": [
+        "La tecnología subyacente usa entrenamiento posterior de Qwen3.5-9B, no un modelo conversacional creado desde cero.",
+        "Microsoft cita pruebas internas de clasificación de más de 10.000 comentarios de jugadores en Xbox Research."
+      ]
+    },
     {
       "id": "openai-codex-composer-predictions-2026",
       "eventKey": "openai-codex-composer-predictions-pro-beta-2026-10-09",
@@ -14907,7 +15141,7 @@
     {
       "date": "2026-10-09",
       "status": "partial",
-      "verifiedArticles": 12
+      "verifiedArticles": 13
     }
   ]
 }
