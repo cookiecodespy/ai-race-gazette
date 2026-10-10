@@ -811,6 +811,19 @@
       "verifiedEvidence": [
         "https://darioamodei.com/post/we-must-pace-the-frontier"
       ]
+    },
+    {
+      "id": "OPS-GAZETTE-CUTOVER",
+      "phase": "P10",
+      "title": "Confirmar tarea ChatGPT y cerrar separación del portafolio",
+      "priority": "P0",
+      "status": "blocked",
+      "lane": "Arquitectura / QA + ChatGPT Newsroom",
+      "acceptance": "Una sola tarea horaria con destino exclusivo ai-race-gazette, última conciliación de ambos main, Pages/CI verificados y PR #9 fusionado sin cambiar el portafolio.",
+      "evidence": [
+        "docs/operations-and-recovery.md",
+        "https://github.com/cookiecodespy/cookiecodespy.github.io/pull/9"
+      ]
     }
   ]
 }

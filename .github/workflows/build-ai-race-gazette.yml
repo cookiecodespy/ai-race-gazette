@@ -20,6 +20,7 @@ on:
 
 permissions:
   contents: write
+  pages: write
 
 concurrency:
   group: ai-race-gazette-build
@@ -55,6 +56,8 @@ jobs:
           python3 -m unittest tests/publication_integrity_test.py
           python3 -m unittest tests/visual_publish_test.py
           python3 -m unittest tests/visual_queue_test.py
+          python3 -m unittest tests/publish_test.py
+          python3 scripts/check_publication_integrity.py
           python3 scripts/editorial.py --validate-only
           python3 scripts/quality-audit.py
           python3 scripts/validate_source_registry.py
@@ -125,5 +128,11 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git commit -m "build: publish AI Race Gazette frontend [skip ci]"
           git push
+
+      - name: Request Pages publication of latest main
+        working-directory: .
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
 
 # Re-run after migration RSS synchronization (2026-10-09).

@@ -1,4 +1,4 @@
-"""Publish only the Gazette subtree using GitHub's atomic Git tree API and gh auth."""
+"""Publish the dedicated Gazette repository from a current local checkout."""
 import argparse
 import base64
 import json
@@ -20,13 +20,23 @@ def api(path,payload=None):
     finally:
         Path(name).unlink(missing_ok=True)
 
+def checked_base_ref():
+    """Reject stale local snapshots before uploading any blobs."""
+    local=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
+    remote=api('git/ref/heads/main')['object']['sha']
+    if local != remote:
+        raise RuntimeError('Local HEAD differs from Gazette main; fetch and reconcile before publishing')
+    return remote
+
 def publish(message):
+    ref=checked_base_ref()
     validate(json.loads(NEWS.read_text(encoding='utf-8')))
+    subprocess.run(['python3',str(ROOT/'scripts/check_publication_integrity.py')],cwd=ROOT,check=True)
     dist=ROOT/'dist/client'
     assert (dist/'index.html').is_file(),'Run npm run build first'
     assert (dist/'data/news.json').read_bytes()==NEWS.read_bytes(),'Stale build; run npm run build again'
     paths={PREFIX+p.relative_to(dist).as_posix():p for p in dist.rglob('*') if p.is_file()}
-    for folder in ['src','scripts','tests','docs','public','worker','.openai']:
+    for folder in ['src','scripts','tests','docs','public','worker','.openai','research','visual','ops']:
         for p in (ROOT/folder).rglob('*'):
             if p.is_file() and '__pycache__' not in p.parts and not p.name.endswith('.pyc'):
                 paths[PREFIX+'source/'+p.relative_to(ROOT).as_posix()]=p
@@ -35,7 +45,6 @@ def publish(message):
     for name in ['README.md','design-qa.md','DESIGN-BRIEF.md']:
         p=ROOT/name
         if p.exists():paths[PREFIX+name]=p
-    ref=api('git/ref/heads/main')['object']['sha']
     base=api('git/commits/'+ref)['tree']['sha']
     existing={e['path']:e['sha'] for e in api('git/trees/'+base+'?recursive=1')['tree'] if e['type']=='blob'}
     entries=[]

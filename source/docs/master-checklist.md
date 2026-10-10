@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 61 tareas; 23 completadas; 5 en curso; 32 pendientes o bloqueadas; 1 descartadas con razón.
+- 6 fases; 62 tareas; 23 completadas; 5 en curso; 33 pendientes o bloqueadas; 1 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -209,6 +209,8 @@
 - [x] **QA-RSS-SEMANTICS** · P1 · done — Validar coherencia semántica RSS con cada artículo
   - Criterio: RSS principal y espejo coinciden en títulos, resúmenes, URL de origen, fecha y enlaces de todas las noticias; pruebas de regresión que rechazan cambios desincronizados.
   - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798463907
+- [ ] **OPS-GAZETTE-CUTOVER** · P0 · blocked — Confirmar tarea ChatGPT y cerrar separación del portafolio
+  - Criterio: Una sola tarea horaria con destino exclusivo ai-race-gazette, última conciliación de ambos main, Pages/CI verificados y PR #9 fusionado sin cambiar el portafolio.
 
 ## Reglas para nuevas tareas
 

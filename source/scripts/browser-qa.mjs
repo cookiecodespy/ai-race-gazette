@@ -104,6 +104,7 @@ await page.screenshot({path:'qa/polished/04-articulo-v2.png',fullPage:true});
 await page.reload();
 await page.getByRole('heading',{name:'Consulta la evidencia original'}).waitFor();
 await page.getByRole('link',{name:'Volver a la portada',exact:true}).click();
+await page.locator('.news-cover').first().waitFor();
 
 for(const width of [320,390,768,1280]){
   await page.setViewportSize({width,height:844});

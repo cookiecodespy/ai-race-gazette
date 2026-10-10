@@ -4,6 +4,8 @@
 
 Para desarrollar y comprobar localmente: `cd source && npm ci && npm test && npm run build`. GitHub Pages utiliza `main` / `/(root)`.
 
+Operación, recuperación y coordinación pendiente con ChatGPT: [runbook de separación](docs/operations-and-recovery.md). La migración no se considera cerrada hasta confirmar el destino de la tarea horaria y retirar Gazette del repositorio del portafolio.
+
 AI Race Gazette es una hemeroteca pública en español sobre la carrera de la inteligencia artificial y la tecnología. Combina una interfaz inspirada en prensa impresa con un archivo verificable, artículos enlazables, fuentes primarias y análisis editorial separado de los hechos.
 
 Sitio: https://cookiecodespy.github.io/ai-race-gazette/
@@ -25,6 +27,7 @@ El sitio publicado es estático en GitHub Pages. El código reproducible vive en
 Comprobaciones locales:
 
 ```bash
+cd source
 npm ci
 npm test
 python3 -m unittest tests/editorial_test.py
@@ -38,7 +41,7 @@ El workflow `.github/workflows/build-ai-race-gazette.yml` ejecuta tests Node/Pyt
 
 ## Automatización
 
-La tarea **AI Race Gazette Newsroom** se ejecuta cada hora mediante ChatGPT + GitHub. No usa Codex, Work ni una API de pago como parte del ciclo editorial rutinario.
+La tarea **AI Race Gazette Newsroom** se administra en ChatGPT y debe conservar una única ejecución horaria. El destino operativo de la tarea aún requiere confirmación allí; cambiar esta documentación no cambia la Scheduled Task. No usa Codex, Work ni una API de pago como parte del ciclo editorial rutinario.
 
 Reglas principales:
 - ventana móvil de al menos 48 horas;
@@ -61,15 +64,15 @@ Fuentes de verdad:
 
 ## Histórico
 
-Al corte del 7 de octubre de 2026:
-- 49 artículos verificados;
-- 36 corresponden al bloque auditado del 1–7 de septiembre;
-- el 1–7 de septiembre está marcado `complete`;
-- el resto de septiembre y octubre sigue en reconstrucción;
+Al corte de conciliación del 10 de octubre de 2026:
+- 112 artículos, de los cuales 65 son Reporter V2 y 47 legacy;
+- 39 jornadas registradas entre el 1 de septiembre y el 9 de octubre;
+- el ledger actual conserva 23 jornadas `partial` y 16 `pending`, ninguna cerrada;
+- el histórico sigue en reconstrucción; las cifras y cierres de auditorías antiguas son evidencia histórica, no el estado actual;
 - las jornadas sin una historia material pueden cerrarse como `reviewed-no-material-news` después de una auditoría real;
 - los titulares de prototipos antiguos son pistas, no hechos.
 
-El workflow de reconstrucción se documenta en `source/docs/historical-backfill.md`.
+El workflow de reconstrucción se documenta en `source/docs/roadmap.md` y `source/docs/coverage-audit.md`.
 
 ## Estado de Reporter V2
 

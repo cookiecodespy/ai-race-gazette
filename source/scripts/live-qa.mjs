@@ -9,15 +9,25 @@ let stats={passed:false,site:BASE};
 try {
   const page=await browser.newPage({viewport:{width:1280,height:900}});
   page.on('pageerror',e=>errors.push(e.message));
+  const markerResponse=await page.request.get(BASE+'gazette-deployment.txt');
+  assert.equal(markerResponse.status(),200,'Dedicated deployment marker HTTP');
+  assert((await markerResponse.text()).split(/\r?\n/).includes('source_repository=cookiecodespy/ai-race-gazette'),'Wrong deployment repository');
   const newsResponse=await page.request.get(BASE+'data/news.json',{timeout:30000});
   assert.equal(newsResponse.status(),200,'Published news.json HTTP');
   const news=await newsResponse.json();
   assert(news.articles?.length>0,'Public archive is empty');
   const ids=new Set(news.articles.map(a=>a.id));
   assert.equal(ids.size,news.articles.length,'Duplicate public article IDs');
+  assert.equal(new Set(news.articles.map(a=>a.eventKey)).size,news.articles.length,'Duplicate public event keys');
+  const newsMirror=await page.request.get(BASE+'source/public/data/news.json');
+  assert.equal(newsMirror.status(),200,'Public JSON mirror HTTP');
+  assert.deepEqual(await newsMirror.body(),await newsResponse.body(),'Public JSON mirrors differ');
   const rssResponse=await page.request.get(BASE+'feed.xml',{timeout:30000});
   assert.equal(rssResponse.status(),200,'Public RSS HTTP');
   const rssText=await rssResponse.text();
+  const rssMirror=await page.request.get(BASE+'source/public/feed.xml');
+  assert.equal(rssMirror.status(),200,'Public RSS mirror HTTP');
+  assert.equal(await rssMirror.text(),rssText,'Public RSS mirrors differ');
   const rssItems=(rssText.match(/<item>/g)||[]).length;
   assert.equal(rssItems,news.articles.length,'Public RSS count differs from published JSON');
 
@@ -48,7 +58,7 @@ try {
   await mobile.screenshot({path:'qa/live-mobile.png',fullPage:true});
 
   assert.deepEqual(errors,[],'Browser JavaScript errors');
-  stats={passed:true,site:BASE,publicArticles:news.articles.length,rssItems,visibleCovers:cards,desktopURL,hasImage,mobileHorizontalOverflow:overflow,errors};
+  stats={passed:true,site:BASE,sourceRepository:'cookiecodespy/ai-race-gazette',mirrorsIdentical:true,publicArticles:news.articles.length,rssItems,visibleCovers:cards,desktopURL,hasImage,mobileHorizontalOverflow:overflow,errors};
   console.log('Live Gazette OK: '+news.articles.length+' articles, RSS, images, mobile, no page errors');
 } finally {
   await mkdir('qa',{recursive:true});
