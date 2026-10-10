@@ -1,8 +1,225 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T14:23:23.587Z",
+  "updatedAt": "2026-10-10T15:26:24.837Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "openai-dots-mobile-codex-delegation-2026",
+      "eventKey": "openai-dots-mobile-creation-codex-delegation-2026-10-09",
+      "articleVersion": 2,
+      "date": "2026-10-09",
+      "announcedAt": "2026-10-09",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "OpenAI",
+      "product": "Dots",
+      "title": "OpenAI lleva la creación de Dots al móvil y conecta sus agentes con Codex y tareas programadas",
+      "summary": "La actualización del 9 de octubre permite crear dots desde iOS y Android, iniciar o continuar trabajo en Codex y revisar automatizaciones de ChatGPT Work. El acceso sigue sujeto a los planes y mercados habilitados; la ayuda general aún contiene instrucciones anteriores al cambio.",
+      "tags": [
+        "Agentes",
+        "ChatGPT",
+        "Codex",
+        "Móvil",
+        "Automatización"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Ilustración conceptual en grabado de un agente digital que coordina teléfono y estación de programación; no representa una interfaz real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "OpenAI Dots, creación móvil y delegación a Codex. Grabado editorial sepia de un teléfono conectado por líneas de trabajo a un escritorio de programación y un calendario mecánico; estética de periódico antiguo, formato horizontal 3:2, centro seguro para recorte. Sin logos falsos, pantallas legibles inventadas, texto ni apariencia de fotografía documental.",
+      "source": {
+        "name": "OpenAI · Create your dot in the ChatGPT mobile app",
+        "url": "https://learn.chatgpt.com/docs/whats-new/dots-october-9-2026",
+        "publishedAt": "2026-10-09"
+      },
+      "relatedSources": [
+        {
+          "name": "OpenAI Developer Community · Fresh dots updates",
+          "url": "https://community.openai.com/t/fresh-dots-updates-create-in-the-mobile-app-delegate-to-codex/1404834",
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "name": "OpenAI Help Center · Getting started with your dot (ayuda general; puede estar desactualizada)",
+          "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot"
+        }
+      ],
+      "body": [
+        "El 9 de octubre de 2026 OpenAI detalló una ampliación de Dots, su experiencia de agentes persistentes. El cambio reúne tres capacidades relacionadas: crear un dot desde el teléfono, encargarle trabajo en Codex y permitirle revisar tareas programadas en ChatGPT Work. Son funciones de producto y orquestación, no el anuncio de un nuevo modelo fundacional. La publicación oficial agrupa también mejoras de rendimiento y correcciones de interfaz.",
+        "La diferencia frente al lanzamiento inicial de septiembre es operativa. Antes, la documentación de inicio exigía crear el agente desde el escritorio y continuar la conversación en el móvil. La nota de novedades del 9 de octubre indica expresamente que ahora es posible completar la creación desde la aplicación de ChatGPT para iOS o Android. Es una nueva puerta de entrada, no una promesa de disponibilidad para todas las cuentas.",
+        "Desde el teléfono, la persona elegible puede dar nombre a su dot, personalizar su apariencia y conectar plugins compatibles. La nota oficial añade una preferencia para abrir ChatGPT directamente en la conversación con ese agente. La utilidad de esa opción es reducir pasos cuando el trabajo se retoma muchas veces durante el día, pero no implica que el agente obtenga permisos adicionales por estar en un dispositivo móvil.",
+        "El anuncio cubre aplicaciones móviles nativas, no navegadores móviles. No especifica números mínimos de versión de iOS, Android o ChatGPT ni promete que la función aparezca simultáneamente en todas las regiones. La página general de ayuda todavía afirma que crear un dot desde móvil no es posible; ese texto parece anterior a la novedad más reciente. Esta discrepancia documental debe leerse como una advertencia sobre el despliegue y no como prueba de acceso universal.",
+        "El segundo cambio es que el dot puede iniciar trabajo en Codex y continuar conversaciones de Codex ya existentes. La descripción oficial indica que puede buscar contexto en conversaciones de ChatGPT y utilizar información de hilos de Codex y automatizaciones. También afirma que el agente mejora su decisión sobre cuándo retomar un hilo previo y cuándo abrir uno nuevo. No se publicaron métricas independientes que permitan medir esa mejora.",
+        "Para un proyecto de software, la diferencia conceptual es relevante: una conversación con un asistente puede transformarse en una tarea de implementación dentro de un entorno de programación, sin exigir que el usuario reconstruya a mano todo el contexto en cada paso. Pero tener acceso a conversaciones previas no equivale a recordar perfectamente requisitos, pruebas, ramas o decisiones. El equipo debe verificar el objetivo, el repositorio y los criterios de aceptación antes de confiar en una continuación.",
+        "OpenAI señala que los dots pueden leer y editar tareas programadas de ChatGPT Work. Eso permite revisar qué está agendado y ajustar una recurrencia mediante una conversación. La función no debe confundirse con una autorización ilimitada para cambiar automatizaciones ajenas ni con la ejecución automática de todas las tareas. Los controles de permisos y aprobaciones siguen siendo una parte separada de la experiencia del agente.",
+        "La documentación de Dots describe un computador en la nube propio y conexiones opcionales a aplicaciones y, cuando se autoriza expresamente, a un computador local. La conexión local comienza desactivada. El acceso a herramientas, archivos y entornos de Codex depende de la configuración y de las autorizaciones correspondientes. El anuncio del 9 de octubre no declara que esos límites se hayan eliminado.",
+        "El material de lanzamiento de Dots indica un despliegue gradual para ChatGPT Pro en mercados admitidos, Business Premium y determinadas organizaciones Enterprise habilitadas por sus administradores. También señala exclusiones regionales iniciales para Pro, incluidas el Espacio Económico Europeo, Suiza y Reino Unido. La actualización móvil no anuncia una ampliación global de elegibilidad, por lo que sería incorrecto atribuir el acceso a todos los usuarios de ChatGPT.",
+        "Según la documentación de producto, el primer dot está incluido en Pro o Business Premium sin un cargo adicional separado, mientras que el trabajo profundo utiliza las asignaciones del plan. No se anunció una tarifa independiente para crear el dot desde el móvil ni un precio nuevo por la integración con Codex. Tampoco hay una tabla pública de consumo atribuible exclusivamente a estas novedades. Los límites de las tareas de Codex y de los planes deben consultarse antes de delegar trabajo intensivo.",
+        "El mismo comunicado enumera una navegación en la nube más rápida, menor espera al cargar la barra lateral, desplazamiento más fluido y una corrección de consumo excesivo de red. También menciona menos notificaciones redundantes cuando ChatGPT ya está abierto, mejoras en bloques de código y adjuntos, y correcciones de caracteres en Safari y Firefox. Son cambios anunciados por el proveedor, no resultados de una prueba comparativa publicada.",
+        "Para las conexiones empresariales se citan correcciones en la configuración de Outlook, autocompletado de códigos de verificación por correo y mayor fiabilidad del acceso Enterprise desde web y voz. También se mejoraron la revisión de planes, la recuperación de actividades que no cargan y la visibilidad de botones de aprobación. Ninguno de esos arreglos demuestra por sí solo que una tarea de extremo a extremo haya terminado correctamente.",
+        "Análisis Gazette: el avance más importante no es la personalización visual del agente, sino la conexión entre tres momentos del trabajo: capturar una intención desde el teléfono, continuar su ejecución en un entorno de desarrollo y mantener una rutina que pueda revisarse. Esa continuidad puede reducir la fricción de coordinación en proyectos prolongados, aunque también aumenta la importancia de saber qué hilo, cuenta y permisos están activos.",
+        "Para desarrolladores, la prueba decisiva es comprobar si un dot retoma la tarea correcta sin mezclar repositorios o repetir cambios. Para usuarios generales, importa que el estado sea comprensible y que exista una forma clara de corregir o detener una acción. Para empresas, pesan la gobernanza de plugins, el acceso a datos conectados y el registro de aprobaciones. La nueva interfaz no sustituye ninguna de esas verificaciones.",
+        "Una prueba prudente consiste en crear un dot desde una cuenta elegible y una versión reciente de la app, conectarle únicamente las herramientas necesarias y pedirle que continúe un hilo de Codex de bajo riesgo. Conviene comprobar que identifica el proyecto correcto, propone pasos verificables y solicita las autorizaciones correspondientes. Si no aparece la opción móvil, revisar primero elegibilidad, región y despliegue, sin asumir un fallo general.",
+        "Para tareas programadas, antes de editar una recurrencia se recomienda leer su frecuencia, objetivo y efectos externos; después, confirmar que el cambio realmente quedó guardado. En programación, una respuesta convincente no equivale a una modificación comprobada: las diferencias de código, pruebas y estado del repositorio siguen siendo la evidencia decisiva. Son recomendaciones editoriales, no garantías del fabricante.",
+        "OpenAI no publicó una medición independiente de ahorro de tiempo, tasa de continuidad correcta entre hilos ni porcentaje de tareas completadas sin supervisión. Tampoco precisó en este anuncio una fecha de disponibilidad universal, una matriz de compatibilidad por sistema operativo o nuevas tarifas de Codex. La ayuda general y la nota de novedades todavía discrepan sobre la creación móvil, por lo que conviene privilegiar el anuncio fechado y verificar la disponibilidad real por cuenta.",
+        "Lo siguiente que merece seguimiento es la extensión a más planes y mercados, la claridad del historial de acciones delegadas, los controles sobre automatizaciones y la fiabilidad de la transferencia de contexto a Codex. El cambio marca un avance concreto hacia agentes utilizables en distintos dispositivos, pero su valor definitivo depende de resultados observables, no solo de la existencia de nuevas opciones en la interfaz."
+      ],
+      "keyPoints": [
+        "La creación y personalización de un dot ya se anuncia desde la app de ChatGPT en iOS y Android.",
+        "Dots puede iniciar y retomar hilos de Codex y utilizar contexto de conversaciones y automatizaciones.",
+        "El agente puede revisar y editar tareas programadas de ChatGPT Work, sujeto a permisos y elegibilidad."
+      ],
+      "quickTakeaways": [
+        "OpenAI anunció el 9 de octubre la creación de Dots desde aplicaciones móviles nativas.",
+        "Los dots pueden iniciar o continuar trabajo en Codex y consultar contexto de conversaciones previas.",
+        "La actualización permite revisar y editar tareas programadas, pero no elimina controles de permisos.",
+        "La ayuda general aún dice que la creación móvil no está disponible; el despliegue debe verificarse por cuenta."
+      ],
+      "sections": [
+        {
+          "heading": "Una ampliación real del producto, no un nuevo modelo",
+          "kind": "report",
+          "paragraphs": [
+            "El 9 de octubre de 2026 OpenAI detalló una ampliación de Dots, su experiencia de agentes persistentes. El cambio reúne tres capacidades relacionadas: crear un dot desde el teléfono, encargarle trabajo en Codex y permitirle revisar tareas programadas en ChatGPT Work. Son funciones de producto y orquestación, no el anuncio de un nuevo modelo fundacional. La publicación oficial agrupa también mejoras de rendimiento y correcciones de interfaz.",
+            "La diferencia frente al lanzamiento inicial de septiembre es operativa. Antes, la documentación de inicio exigía crear el agente desde el escritorio y continuar la conversación en el móvil. La nota de novedades del 9 de octubre indica expresamente que ahora es posible completar la creación desde la aplicación de ChatGPT para iOS o Android. Es una nueva puerta de entrada, no una promesa de disponibilidad para todas las cuentas."
+          ]
+        },
+        {
+          "heading": "Configuración móvil y experiencia cotidiana",
+          "kind": "technical",
+          "paragraphs": [
+            "Desde el teléfono, la persona elegible puede dar nombre a su dot, personalizar su apariencia y conectar plugins compatibles. La nota oficial añade una preferencia para abrir ChatGPT directamente en la conversación con ese agente. La utilidad de esa opción es reducir pasos cuando el trabajo se retoma muchas veces durante el día, pero no implica que el agente obtenga permisos adicionales por estar en un dispositivo móvil.",
+            "El anuncio cubre aplicaciones móviles nativas, no navegadores móviles. No especifica números mínimos de versión de iOS, Android o ChatGPT ni promete que la función aparezca simultáneamente en todas las regiones. La página general de ayuda todavía afirma que crear un dot desde móvil no es posible; ese texto parece anterior a la novedad más reciente. Esta discrepancia documental debe leerse como una advertencia sobre el despliegue y no como prueba de acceso universal."
+          ]
+        },
+        {
+          "heading": "Qué significa delegar en Codex",
+          "kind": "technical",
+          "paragraphs": [
+            "El segundo cambio es que el dot puede iniciar trabajo en Codex y continuar conversaciones de Codex ya existentes. La descripción oficial indica que puede buscar contexto en conversaciones de ChatGPT y utilizar información de hilos de Codex y automatizaciones. También afirma que el agente mejora su decisión sobre cuándo retomar un hilo previo y cuándo abrir uno nuevo. No se publicaron métricas independientes que permitan medir esa mejora.",
+            "Para un proyecto de software, la diferencia conceptual es relevante: una conversación con un asistente puede transformarse en una tarea de implementación dentro de un entorno de programación, sin exigir que el usuario reconstruya a mano todo el contexto en cada paso. Pero tener acceso a conversaciones previas no equivale a recordar perfectamente requisitos, pruebas, ramas o decisiones. El equipo debe verificar el objetivo, el repositorio y los criterios de aceptación antes de confiar en una continuación."
+          ]
+        },
+        {
+          "heading": "Automatizaciones y permisos",
+          "kind": "technical",
+          "paragraphs": [
+            "OpenAI señala que los dots pueden leer y editar tareas programadas de ChatGPT Work. Eso permite revisar qué está agendado y ajustar una recurrencia mediante una conversación. La función no debe confundirse con una autorización ilimitada para cambiar automatizaciones ajenas ni con la ejecución automática de todas las tareas. Los controles de permisos y aprobaciones siguen siendo una parte separada de la experiencia del agente.",
+            "La documentación de Dots describe un computador en la nube propio y conexiones opcionales a aplicaciones y, cuando se autoriza expresamente, a un computador local. La conexión local comienza desactivada. El acceso a herramientas, archivos y entornos de Codex depende de la configuración y de las autorizaciones correspondientes. El anuncio del 9 de octubre no declara que esos límites se hayan eliminado."
+          ]
+        },
+        {
+          "heading": "Planes, regiones y coste",
+          "kind": "report",
+          "paragraphs": [
+            "El material de lanzamiento de Dots indica un despliegue gradual para ChatGPT Pro en mercados admitidos, Business Premium y determinadas organizaciones Enterprise habilitadas por sus administradores. También señala exclusiones regionales iniciales para Pro, incluidas el Espacio Económico Europeo, Suiza y Reino Unido. La actualización móvil no anuncia una ampliación global de elegibilidad, por lo que sería incorrecto atribuir el acceso a todos los usuarios de ChatGPT.",
+            "Según la documentación de producto, el primer dot está incluido en Pro o Business Premium sin un cargo adicional separado, mientras que el trabajo profundo utiliza las asignaciones del plan. No se anunció una tarifa independiente para crear el dot desde el móvil ni un precio nuevo por la integración con Codex. Tampoco hay una tabla pública de consumo atribuible exclusivamente a estas novedades. Los límites de las tareas de Codex y de los planes deben consultarse antes de delegar trabajo intensivo."
+          ]
+        },
+        {
+          "heading": "Mejoras de calidad de vida y sus límites",
+          "kind": "context",
+          "paragraphs": [
+            "El mismo comunicado enumera una navegación en la nube más rápida, menor espera al cargar la barra lateral, desplazamiento más fluido y una corrección de consumo excesivo de red. También menciona menos notificaciones redundantes cuando ChatGPT ya está abierto, mejoras en bloques de código y adjuntos, y correcciones de caracteres en Safari y Firefox. Son cambios anunciados por el proveedor, no resultados de una prueba comparativa publicada.",
+            "Para las conexiones empresariales se citan correcciones en la configuración de Outlook, autocompletado de códigos de verificación por correo y mayor fiabilidad del acceso Enterprise desde web y voz. También se mejoraron la revisión de planes, la recuperación de actividades que no cargan y la visibilidad de botones de aprobación. Ninguno de esos arreglos demuestra por sí solo que una tarea de extremo a extremo haya terminado correctamente."
+          ]
+        },
+        {
+          "heading": "Impacto para desarrolladores, usuarios y empresas",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: el avance más importante no es la personalización visual del agente, sino la conexión entre tres momentos del trabajo: capturar una intención desde el teléfono, continuar su ejecución en un entorno de desarrollo y mantener una rutina que pueda revisarse. Esa continuidad puede reducir la fricción de coordinación en proyectos prolongados, aunque también aumenta la importancia de saber qué hilo, cuenta y permisos están activos.",
+            "Para desarrolladores, la prueba decisiva es comprobar si un dot retoma la tarea correcta sin mezclar repositorios o repetir cambios. Para usuarios generales, importa que el estado sea comprensible y que exista una forma clara de corregir o detener una acción. Para empresas, pesan la gobernanza de plugins, el acceso a datos conectados y el registro de aprobaciones. La nueva interfaz no sustituye ninguna de esas verificaciones."
+          ]
+        },
+        {
+          "heading": "Cómo probarlo sin confundir anuncio y resultado",
+          "kind": "practical",
+          "paragraphs": [
+            "Una prueba prudente consiste en crear un dot desde una cuenta elegible y una versión reciente de la app, conectarle únicamente las herramientas necesarias y pedirle que continúe un hilo de Codex de bajo riesgo. Conviene comprobar que identifica el proyecto correcto, propone pasos verificables y solicita las autorizaciones correspondientes. Si no aparece la opción móvil, revisar primero elegibilidad, región y despliegue, sin asumir un fallo general.",
+            "Para tareas programadas, antes de editar una recurrencia se recomienda leer su frecuencia, objetivo y efectos externos; después, confirmar que el cambio realmente quedó guardado. En programación, una respuesta convincente no equivale a una modificación comprobada: las diferencias de código, pruebas y estado del repositorio siguen siendo la evidencia decisiva. Son recomendaciones editoriales, no garantías del fabricante."
+          ]
+        },
+        {
+          "heading": "Qué sigue abierto",
+          "kind": "report",
+          "paragraphs": [
+            "OpenAI no publicó una medición independiente de ahorro de tiempo, tasa de continuidad correcta entre hilos ni porcentaje de tareas completadas sin supervisión. Tampoco precisó en este anuncio una fecha de disponibilidad universal, una matriz de compatibilidad por sistema operativo o nuevas tarifas de Codex. La ayuda general y la nota de novedades todavía discrepan sobre la creación móvil, por lo que conviene privilegiar el anuncio fechado y verificar la disponibilidad real por cuenta.",
+            "Lo siguiente que merece seguimiento es la extensión a más planes y mercados, la claridad del historial de acciones delegadas, los controles sobre automatizaciones y la fiabilidad de la transferencia de contexto a Codex. El cambio marca un avance concreto hacia agentes utilizables en distintos dispositivos, pero su valor definitivo depende de resultados observables, no solo de la existencia de nuevas opciones en la interfaz."
+          ]
+        }
+      ],
+      "executiveSummary": "La actualización del 9 de octubre amplía Dots desde un agente persistente principalmente configurado en escritorio hacia una experiencia de creación móvil y delegación de programación. OpenAI también habilita revisión de tareas programadas en ChatGPT Work. Son nuevas capacidades de orquestación, no un modelo nuevo ni una apertura universal a todos los planes.",
+      "finalSummary": "Dots suma creación móvil, continuidad con Codex y gestión conversacional de tareas programadas. El potencial está en reducir pasos entre intención y ejecución, pero el acceso es gradual y los permisos, pruebas y resultados verificables siguen siendo indispensables.",
+      "analysis": "Análisis Gazette: la continuidad entre móvil, conversaciones, Codex y automatizaciones puede importar más que una mejora aislada de modelo. La prueba de valor será la capacidad de terminar trabajo verificable sin confundir contexto ni autorización.",
+      "watch": "Expansión regional y por planes, actualización de la ayuda general, precisión de la continuidad de hilos de Codex, observabilidad de acciones y condiciones de uso.",
+      "technicalDetails": [
+        {
+          "label": "Anuncio",
+          "value": "9 de octubre de 2026"
+        },
+        {
+          "label": "Creación",
+          "value": "Aplicaciones ChatGPT para iOS y Android, según la nota de novedades"
+        },
+        {
+          "label": "Delegación",
+          "value": "Inicio y continuación de hilos de Codex"
+        },
+        {
+          "label": "Automatización",
+          "value": "Revisión y edición de tareas programadas de ChatGPT Work"
+        }
+      ],
+      "availability": {
+        "status": "Despliegue gradual para cuentas elegibles de Dots",
+        "platforms": [
+          "ChatGPT iOS",
+          "ChatGPT Android",
+          "Codex mediante dot",
+          "ChatGPT Work para tareas programadas"
+        ],
+        "regions": [
+          "Mercados admitidos por el plan; la nota no anuncia expansión universal"
+        ],
+        "requirements": [
+          "Cuenta y plan con acceso a Dots",
+          "Permisos de aplicaciones y herramientas conectadas según corresponda"
+        ],
+        "notes": [
+          "La nota del 9 de octubre anuncia creación móvil; la ayuda general todavía contiene una instrucción anterior",
+          "No se indican versiones mínimas de la aplicación"
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Primer dot",
+          "value": "Incluido sin coste adicional separado en planes elegibles Pro y Business Premium, según documentación general",
+          "note": "El trabajo profundo consume asignaciones del plan; la nota del 9 de octubre no publica nuevas tarifas."
+        },
+        {
+          "label": "Integración con Codex",
+          "value": "Sin precio independiente nuevo anunciado",
+          "note": "Se aplican condiciones y límites de las herramientas y planes correspondientes."
+        }
+      ],
+      "limitations": [
+        "Acceso gradual, no universal.",
+        "La documentación general aún contradice el anuncio reciente sobre creación móvil.",
+        "No se publicaron benchmarks independientes de productividad o continuidad de hilos.",
+        "La actualización no elimina permisos ni verificaciones de cambios."
+      ],
+      "practicalAdvice": [
+        "Verificar elegibilidad y versión de la aplicación antes de asumir disponibilidad.",
+        "Probar delegación de Codex en un proyecto de bajo riesgo y revisar diffs y pruebas.",
+        "Confirmar frecuencia y efectos de cualquier tarea programada antes y después de editarla."
+      ],
+      "usefulFacts": [
+        "La nota oficial está fechada en el intervalo 5–9 de octubre de 2026.",
+        "La conexión a computador local es opcional y empieza desactivada, según la ayuda de Dots.",
+        "Los cambios también incluyen correcciones de notificaciones, Outlook, interfaz web y Enterprise."
+      ]
+    },
     {
       "id": "microsoft-decision-1-foundry-structured-scoring-2026",
       "eventKey": "microsoft-decision-1-qwen35-9b-foundry-decision-scoring-2026-10-09",
@@ -15141,7 +15358,7 @@
     {
       "date": "2026-10-09",
       "status": "partial",
-      "verifiedArticles": 13
+      "verifiedArticles": 14
     }
   ]
 }
