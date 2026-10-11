@@ -52,12 +52,14 @@ No es fuente factual y no sustituye `news.json`.
 
 ## Prioridades
 
-- **P0**: el artículo declara `needs-specific-art`.
-- **P1**: usa un fallback excesivamente reutilizado (20+ usos).
-- **P2**: usa un asset reutilizado en 5+ artículos.
-- **P3**: deuda visual menor.
+- **P0**: reportaje prioritario explicitamente seleccionado en `visual/editorial-priority.json`, todavía sin arte específico. Es una selección editorial trazable, no una etiqueta automática de todas las noticias.
+- **P1**: otros reportajes con `needs-specific-art`, o fallback con 20+ reutilizaciones. **P1 no significa descartado**: sigue en cola de producción.
+- **P2**: uso de fallback compartido por al menos 5 artículos, sin solicitud explícita de arte específico.
+- **P3**: arte específico ya publicado o reutilización menor.
 
-Dentro de cada prioridad, el Editor visual puede adelantar grandes lanzamientos.
+Criterios de selección P0: impacto material, diversidad de actores y temas, importancia histórica y singularidad visual. Los leads se curan de forma explícita; la automatización horaria no puede autoascender los 150+ artículos a P0. El archivo `editorial-priority.json` conserva IDs estables. Cada ítem sigue en la cola y se puede promover con una decisión editorial documentada.
+
+**Segundo gate visual v1.0:** además de P0 vacío, la imagen de mayor uso no debe acumular más de un 30 % de copias repetidas sobre el archivo total. La métrica distingue el primer uso válido del exceso de reutilización y se calcula en `release_readiness.py`. Esta restricción impide declarar listo un archivo ilustrado con apenas unas pocas imágenes compartidas.
 
 ## Flujo por imagen
 

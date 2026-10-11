@@ -21,6 +21,14 @@ class ReadinessTests(unittest.TestCase):
         self.assertFalse(result['v1Ready'])
         self.assertIn('4/4',markdown(result))
 
+    def test_visual_gate_cannot_pass_with_one_dominant_hero_even_if_p0_empty(self):
+        self.news['articles']=[{**self.news['articles'][0], 'image':'assets/hero.webp',
+                                'date':'2026-10-10'} for _ in range(10)]
+        self.news['dailyCoverage'][0]['verifiedArticles']=10
+        self.days[0]['verifiedArticles']=10
+        result=assess(self.news,self.days,self.queue,self.backlog)
+        self.assertFalse(result['gates'][2]['passed'])
+        self.assertIn('imagen dominante reutilizada',result['gates'][2]['detail'])
     def test_legacy_partial_and_art_p0_remain_visible(self):
         self.days[0]['status']='partial'
         self.news['articles'][0].pop('articleVersion')

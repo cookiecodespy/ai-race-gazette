@@ -20,7 +20,20 @@ class RefreshVisualQueueTests(unittest.TestCase):
         m,q=refresh(news,self.manifest,{'schemaVersion':1,'items':[]})
         self.assertEqual(len(q['items']),2)
         self.assertEqual(m['assets'][0]['currentUsage'],2)
-        self.assertEqual(q['items'][0]['queuePriority'],'P0')
+        self.assertEqual(q['items'][0]['queuePriority'],'P1')
+    def test_curated_lead_is_p0_other_requested_art_is_p1(self):
+        news={'updatedAt':'2026-10-08T12:00:00Z','articles':[article('a'),article('b')]}
+        _,q=refresh(news,self.manifest,{'schemaVersion':1,'items':[]},lead_ids={'a'})
+        indexed={i['articleId']:i for i in q['items']}
+        self.assertEqual(indexed['a']['queuePriority'],'P0')
+        self.assertEqual(indexed['b']['queuePriority'],'P1')
+        self.assertEqual(indexed['b']['productionStatus'],'brief-ready')
+    def test_finished_curated_lead_is_no_longer_p0(self):
+        news={'updatedAt':'2026-10-08T12:00:00Z',
+              'articles':[article('a','assets/news/2026-09-08/a.webp','specific')]}
+        _,q=refresh(news,self.manifest,{'schemaVersion':1,'items':[]},lead_ids={'a'})
+        self.assertEqual(q['items'][0]['queuePriority'],'P3')
+        self.assertEqual(q['items'][0]['productionStatus'],'complete')
     def test_refresh_idempotence(self):
         news={'updatedAt':'2026-10-08T12:00:00Z','articles':[article('a')]}
         m,q=refresh(news,self.manifest,{'schemaVersion':1,'items':[]})

@@ -18,6 +18,11 @@ def assess(news, days, queue, backlog):
     short_v2 = sum(a.get('articleVersion') == 2 and _article_words(a) < 500 for a in articles)
     p0 = sum(x.get('queuePriority') == 'P0' and x.get('productionStatus') != 'complete'
              for x in queue.get('items', []))
+    # Only repeat copies count toward dominant-art overuse. One picture used once is not reuse.
+    usage = Counter(a.get('image') for a in articles)
+    repeats = max(0, max(usage.values(), default=0) - 1)
+    reuse_pct = (100 * repeats / len(articles)) if articles else 0
+    visual_reuse_limit_pct = 30
     fresh = queue.get('generatedFromNewsUpdatedAt') == news.get('updatedAt')
     unfinished = sum(t['status'] not in ('done','cancelled') for t in backlog['items'])
     gates = [
@@ -25,8 +30,8 @@ def assess(news, days, queue, backlog):
          'detail':f"{closed}/{len(days)} días cerrados; {statuses['partial']} parciales; {statuses['pending']} pendientes"},
         {'name':'Reporter V2', 'passed':legacy == 0 and short_v2 == 0,
          'detail':f"{len(articles)-legacy} V2, {legacy} legacy, {short_v2} V2 cortos"},
-        {'name':'Visual Desk', 'passed':p0 == 0 and fresh,
-         'detail':f"{p0} prioridades P0 pendientes; cola {'vigente' if fresh else 'atrasada'}"},
+        {'name':'Visual Desk', 'passed':p0 == 0 and fresh and reuse_pct <= visual_reuse_limit_pct,
+         'detail':f"{p0} prioridades P0 pendientes; imagen dominante reutilizada {reuse_pct:.1f}% (meta <= {visual_reuse_limit_pct}%); cola {'vigente' if fresh else 'atrasada'}"},
         {'name':'Backlog', 'passed':unfinished == 0,
          'detail':f"{len(backlog['items'])-unfinished}/{len(backlog['items'])} tareas resueltas"}
     ]

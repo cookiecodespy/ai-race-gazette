@@ -12,19 +12,23 @@ ROOT=Path(__file__).resolve().parents[1]
 NEWS=ROOT/'public/data/news.json'
 MANIFEST=ROOT/'visual/asset-manifest.json'
 QUEUE=ROOT/'visual/image-queue.json'
+LEADS=ROOT/'visual/editorial-priority.json'
 ART_DIRECTION=("Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, "
                "composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, "
                "sin interfaz inventada presentada como real, sin apariencia de fotografía documental.")
 
-def priority(article,reuse):
-    if article.get('imageStatus')=='needs-specific-art': return 'P0'
+def priority(article,reuse,lead_ids=None):
+    if article.get('imageStatus')=='specific': return 'P3'
+    if article.get('id') in (lead_ids or set()): return 'P0'
+    if article.get('imageStatus')=='needs-specific-art': return 'P1'
     if reuse>=20: return 'P1'
     if reuse>=5: return 'P2'
     return 'P3'
 
-def refresh(news,manifest,old_queue):
+def refresh(news,manifest,old_queue,lead_ids=None):
     manifest=deepcopy(manifest)
     old_queue=deepcopy(old_queue)
+    lead_ids=set(lead_ids or [])
     old={i['articleId']:i for i in old_queue.get('items',[])}
     usage=Counter(a['image'] for a in news['articles'])
     by_src={a['src']:a for a in manifest['assets']}
@@ -55,7 +59,7 @@ def refresh(news,manifest,old_queue):
           'currentAssetId':asset['id'],
           'currentReuseCount':usage[image],
           'articleImageStatus':article.get('imageStatus','legacy-unclassified'),
-          'queuePriority':priority(article,usage[image]),
+          'queuePriority':priority(article,usage[image],lead_ids),
           'productionStatus':status,
           'desiredType':previous.get('desiredType','editorial-illustration'),
           'desiredOutput':previous.get('desiredOutput') if previous.get('date')==article['date'] else None,
@@ -101,7 +105,13 @@ def main():
     news=json.loads(NEWS.read_text(encoding='utf-8'))
     manifest=json.loads(MANIFEST.read_text(encoding='utf-8'))
     old=json.loads(QUEUE.read_text(encoding='utf-8')) if QUEUE.exists() else {'items':[]}
-    manifest,queue=refresh(news,manifest,old)
+    policy=json.loads(LEADS.read_text(encoding='utf-8'))
+    assert policy['schemaVersion']==1, 'Invalid visual priority policy schema'
+    lead_ids=policy['leadArticleIds']
+    assert len(lead_ids)==len(set(lead_ids)), 'Duplicated visual lead ID'
+    missing=set(lead_ids)-{a['id'] for a in news['articles']}
+    assert not missing, f'Visual priority contains missing articles: {sorted(missing)}'
+    manifest,queue=refresh(news,manifest,old,lead_ids=lead_ids)
     changed=save_if_changed(MANIFEST,manifest)|save_if_changed(QUEUE,queue)
     print(f"Visual queue {'updated' if changed else 'already current'}: {len(queue['items'])} articles")
 
