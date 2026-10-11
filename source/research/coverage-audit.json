@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "periodStart": "2026-09-01",
-  "periodEnd": "2026-10-08",
+  "periodEnd": "2026-10-10",
   "sourceRegistry": "research/source-registry.json",
   "categories": [
     "models",
@@ -17,7 +17,7 @@
     "open-source",
     "deals-financing"
   ],
-  "description": "Machine-readable audit ledger for historical coverage. Empty source/category lists mean not yet audited under Research Backbone v1, not that nothing existed.",
+  "description": "Machine-readable audit ledger for historical coverage. Empty source/category lists mean not yet audited under Research Backbone v1, not that nothing existed. 'verifiedArticles' y 'candidateStats.published' son una instantánea reconciliada con el archivo en 2026-10-10; la publicación horaria posterior puede volver a aumentar el recuento y requiere nueva conciliación. El estado 'partial' NO certifica revisión inversa ni de fuentes.",
   "days": [
     {
       "date": "2026-09-01",
@@ -162,7 +162,7 @@
     {
       "date": "2026-09-08",
       "archiveStatus": "partial",
-      "verifiedArticles": 4,
+      "verifiedArticles": 5,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [
         "openai-research",
@@ -181,15 +181,15 @@
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
-        "found": 4,
-        "published": 4,
+        "found": null,
+        "published": 5,
         "discarded": 0,
         "unresolved": 0
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "OpenAI Images, Mistral financiación y GTIG Threat Tracker publicados para 8 Sep. No se cierra: faltan Google y resto de actores por día. Google DeepMind AlphaGenome Atlas: lanzamiento de plataforma científica 8 Sep verificado en dos anuncios oficiales; no confundir con AlphaGenome modelo previo. Día sigue partial, reverse pass pendiente."
+      "notes": "OpenAI Images, Mistral financiación y GTIG Threat Tracker publicados para 8 Sep. No se cierra: faltan Google y resto de actores por día. Google DeepMind AlphaGenome Atlas: lanzamiento de plataforma científica 8 Sep verificado en dos anuncios oficiales; no confundir con AlphaGenome modelo previo. Día sigue partial, reverse pass pendiente. Recuento anterior de descubrimientos no cubría todas las publicaciones posteriores; total de candidatos encontrados por doble investigación aún no certificado. Reconciliación de conteos con archivo publicado: 2026-10-10. No implica doble auditoría por fuentes ni categorías."
     },
     {
       "date": "2026-09-09",
@@ -250,7 +250,7 @@
     {
       "date": "2026-09-11",
       "archiveStatus": "partial",
-      "verifiedArticles": 2,
+      "verifiedArticles": 3,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [
         "openai-research"
@@ -263,19 +263,19 @@
       "reversePassPerformed": false,
       "candidateStats": {
         "found": 3,
-        "published": 2,
+        "published": 3,
         "discarded": 0,
         "unresolved": 2
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "OpenAI Habitat y Rosalind publicados. El plan de migración de custom GPTs sigue candidato sin publicar; falta el resto de actores y segunda auditoría."
+      "notes": "OpenAI Habitat y Rosalind publicados. El plan de migración de custom GPTs sigue candidato sin publicar; falta el resto de actores y segunda auditoría. Reconciliación de conteos con archivo publicado: 2026-10-10. No implica doble auditoría por fuentes ni categorías."
     },
     {
       "date": "2026-09-12",
       "archiveStatus": "partial",
-      "verifiedArticles": 1,
+      "verifiedArticles": 2,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [
         "anthropic-news-engineering"
@@ -287,15 +287,15 @@
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
-        "found": 1,
-        "published": 1,
+        "found": null,
+        "published": 2,
         "discarded": 0,
         "unresolved": 0
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "12 Sep: Amodei publica propuesta de coordinación y compromiso unilateral inicial de evaluación externa; noticia basada en ensayo original y medios Reuters/Guardian del mismo día. Jornada parcial, revisión completa y pasada inversa pendientes."
+      "notes": "12 Sep: Amodei publica propuesta de coordinación y compromiso unilateral inicial de evaluación externa; noticia basada en ensayo original y medios Reuters/Guardian del mismo día. Jornada parcial, revisión completa y pasada inversa pendientes. Recuento anterior de descubrimientos no cubría todas las publicaciones posteriores; total de candidatos encontrados por doble investigación aún no certificado. Reconciliación de conteos con archivo publicado: 2026-10-10. No implica doble auditoría por fuentes ni categorías."
     },
     {
       "date": "2026-09-13",
@@ -326,7 +326,7 @@
     {
       "date": "2026-09-14",
       "archiveStatus": "partial",
-      "verifiedArticles": 2,
+      "verifiedArticles": 5,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [
         "google-ai-cloud"
@@ -338,20 +338,20 @@
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
-        "found": 1,
-        "published": 2,
+        "found": null,
+        "published": 5,
         "discarded": 0,
         "unresolved": 1
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Dataflow y BigQuery publicadas en Reporter V2; otras fuentes y segunda revisión pendientes. Fecha parcial."
+      "notes": "Dataflow y BigQuery publicadas en Reporter V2; otras fuentes y segunda revisión pendientes. Fecha parcial. Recuento anterior de descubrimientos no cubría todas las publicaciones posteriores; total de candidatos encontrados por doble investigación aún no certificado. Reconciliación de conteos con archivo publicado: 2026-10-10. No implica doble auditoría por fuentes ni categorías."
     },
     {
       "date": "2026-09-15",
-      "archiveStatus": "pending",
-      "verifiedArticles": 0,
+      "archiveStatus": "partial",
+      "verifiedArticles": 2,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [],
       "reviewedCategories": [],
@@ -359,19 +359,19 @@
       "reversePassPerformed": false,
       "candidateStats": {
         "found": null,
-        "published": 0,
+        "published": 2,
         "discarded": null,
         "unresolved": null
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa. Reconciliación de conteos con archivo publicado: 2026-10-10. No implica doble auditoría por fuentes ni categorías."
     },
     {
       "date": "2026-09-16",
-      "archiveStatus": "pending",
-      "verifiedArticles": 0,
+      "archiveStatus": "partial",
+      "verifiedArticles": 2,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [],
       "reviewedCategories": [],
@@ -379,19 +379,19 @@
       "reversePassPerformed": false,
       "candidateStats": {
         "found": null,
-        "published": 0,
+        "published": 2,
         "discarded": null,
         "unresolved": null
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa. Reconciliación de conteos con archivo publicado: 2026-10-10. No implica doble auditoría por fuentes ni categorías."
     },
     {
       "date": "2026-09-17",
-      "archiveStatus": "pending",
-      "verifiedArticles": 0,
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [],
       "reviewedCategories": [],
@@ -399,19 +399,19 @@
       "reversePassPerformed": false,
       "candidateStats": {
         "found": null,
-        "published": 0,
+        "published": 1,
         "discarded": null,
         "unresolved": null
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa. Reconciliación de conteos con archivo publicado: 2026-10-10. No implica doble auditoría por fuentes ni categorías."
     },
     {
       "date": "2026-09-18",
-      "archiveStatus": "pending",
-      "verifiedArticles": 0,
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [],
       "reviewedCategories": [],
@@ -419,14 +419,14 @@
       "reversePassPerformed": false,
       "candidateStats": {
         "found": null,
-        "published": 0,
+        "published": 1,
         "discarded": null,
         "unresolved": null
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa. Reconciliación de conteos con archivo publicado: 2026-10-10. No implica doble auditoría por fuentes ni categorías."
     },
     {
       "date": "2026-09-19",
@@ -470,8 +470,8 @@
     },
     {
       "date": "2026-09-21",
-      "archiveStatus": "pending",
-      "verifiedArticles": 0,
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [],
       "reviewedCategories": [],
@@ -479,14 +479,14 @@
       "reversePassPerformed": false,
       "candidateStats": {
         "found": null,
-        "published": 0,
+        "published": 1,
         "discarded": null,
         "unresolved": null
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa. Reconciliación de conteos con archivo publicado: 2026-10-10. No implica doble auditoría por fuentes ni categorías."
     },
     {
       "date": "2026-09-22",
@@ -530,8 +530,8 @@
     },
     {
       "date": "2026-09-24",
-      "archiveStatus": "pending",
-      "verifiedArticles": 0,
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [],
       "reviewedCategories": [],
@@ -539,19 +539,19 @@
       "reversePassPerformed": false,
       "candidateStats": {
         "found": null,
-        "published": 0,
+        "published": 1,
         "discarded": null,
         "unresolved": null
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa. Reconciliación de conteos con archivo publicado: 2026-10-10. No implica doble auditoría por fuentes ni categorías."
     },
     {
       "date": "2026-09-25",
-      "archiveStatus": "pending",
-      "verifiedArticles": 0,
+      "archiveStatus": "partial",
+      "verifiedArticles": 2,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [],
       "reviewedCategories": [],
@@ -559,14 +559,14 @@
       "reversePassPerformed": false,
       "candidateStats": {
         "found": null,
-        "published": 0,
+        "published": 2,
         "discarded": null,
         "unresolved": null
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa. Reconciliación de conteos con archivo publicado: 2026-10-10. No implica doble auditoría por fuentes ni categorías."
     },
     {
       "date": "2026-09-26",
@@ -590,8 +590,8 @@
     },
     {
       "date": "2026-09-27",
-      "archiveStatus": "pending",
-      "verifiedArticles": 0,
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [],
       "reviewedCategories": [],
@@ -599,14 +599,14 @@
       "reversePassPerformed": false,
       "candidateStats": {
         "found": null,
-        "published": 0,
+        "published": 1,
         "discarded": null,
         "unresolved": null
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa. Reconciliación de conteos con archivo publicado: 2026-10-10. No implica doble auditoría por fuentes ni categorías."
     },
     {
       "date": "2026-09-28",
@@ -771,7 +771,7 @@
     {
       "date": "2026-10-06",
       "archiveStatus": "partial",
-      "verifiedArticles": 4,
+      "verifiedArticles": 6,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [],
       "reviewedCategories": [],
@@ -779,17 +779,79 @@
       "reversePassPerformed": false,
       "candidateStats": {
         "found": null,
-        "published": 4,
+        "published": 6,
         "discarded": null,
         "unresolved": null
       },
       "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa. Reconciliación de conteos con archivo publicado: 2026-10-10. No implica doble auditoría por fuentes ni categorías."
     },
     {
       "date": "2026-10-07",
+      "archiveStatus": "partial",
+      "verifiedArticles": 12,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 12,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": "2026-10-07",
+      "backboneReauditRequired": false,
+      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa. Reconciliación de conteos con archivo publicado: 2026-10-10. No implica doble auditoría por fuentes ni categorías."
+    },
+    {
+      "date": "2026-10-08",
+      "archiveStatus": "partial",
+      "verifiedArticles": 27,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [
+        "datacenters-infrastructure"
+      ],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 27,
+        "discarded": 0,
+        "unresolved": 0
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Noticias verificadas en el archivo, incluida Upscale Token Fabric, reconciliada manualmente desde commit autónomo 87d682f62e divergente. Día en curso y segunda pasada pendiente. Recuento anterior de descubrimientos no cubría todas las publicaciones posteriores; total de candidatos encontrados por doble investigación aún no certificado. Reconciliación de conteos con archivo publicado: 2026-10-10. No implica doble auditoría por fuentes ni categorías."
+    },
+    {
+      "date": "2026-10-09",
+      "archiveStatus": "partial",
+      "verifiedArticles": 15,
+      "auditMode": "pending-backbone-audit",
+      "reviewedSourceIds": [],
+      "reviewedCategories": [],
+      "openDiscoveryPerformed": false,
+      "reversePassPerformed": false,
+      "candidateStats": {
+        "found": null,
+        "published": 15,
+        "discarded": null,
+        "unresolved": null
+      },
+      "auditDocument": null,
+      "reviewedAt": null,
+      "backboneReauditRequired": false,
+      "notes": "Registro generado a partir del archivo publicado; fuentes oficiales, descubrimiento abierto y revisión inversa pendientes."
+    },
+    {
+      "date": "2026-10-10",
       "archiveStatus": "partial",
       "verifiedArticles": 1,
       "auditMode": "pending-backbone-audit",
@@ -804,31 +866,10 @@
         "unresolved": null
       },
       "auditDocument": null,
-      "reviewedAt": "2026-10-07",
-      "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
-    },
-    {
-      "date": "2026-10-08",
-      "archiveStatus": "partial",
-      "verifiedArticles": 2,
-      "auditMode": "pending-backbone-audit",
-      "reviewedSourceIds": [],
-      "reviewedCategories": [
-        "datacenters-infrastructure"
-      ],
-      "openDiscoveryPerformed": false,
-      "reversePassPerformed": false,
-      "candidateStats": {
-        "found": 2,
-        "published": 2,
-        "discarded": 0,
-        "unresolved": 0
-      },
-      "auditDocument": null,
       "reviewedAt": null,
       "backboneReauditRequired": false,
-      "notes": "Noticias verificadas en el archivo, incluida Upscale Token Fabric, reconciliada manualmente desde commit autónomo 87d682f62e divergente. Día en curso y segunda pasada pendiente."
+      "notes": "Registro generado a partir del archivo publicado; fuentes oficiales, descubrimiento abierto y revisión inversa pendientes."
     }
-  ]
+  ],
+  "lastArchiveReconciliation": "2026-10-10"
 }
