@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T04:23:01.930Z",
+  "updatedAt": "2026-10-11T06:25:03.941Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -203,6 +203,141 @@
         "Reuters fechó el reporte de conversaciones el 10 de octubre de 2026.",
         "Reflection anunció Beam el 5 de octubre de 2026."
       ]
+    },
+    {
+      "id": "github-copilot-jetbrains-managed-models-mcp-controls-2026",
+      "eventKey": "github-copilot-jetbrains-managed-default-models-mcp-startup-ide-2025-1-deprecation-2026-10-10",
+      "articleVersion": 2,
+      "date": "2026-10-10",
+      "announcedAt": "2026-10-10",
+      "coveredAt": "2026-10-11",
+      "verifiedAt": "2026-10-11",
+      "company": "GitHub",
+      "product": "GitHub Copilot para JetBrains",
+      "title": "GitHub Copilot para JetBrains añade control de modelos y MCP, y deja de admitir IDE 2025.1",
+      "summary": "GitHub actualizó Copilot para JetBrains con modelos predeterminados administrables por empresas, opción de desactivar el arranque automático de MCP y reparaciones desde diagnósticos. El complemento exige JetBrains IDE 2025.2 o posterior; no se anunciaron nuevos precios ni modelos.",
+      "tags": [
+        "GitHub",
+        "Copilot",
+        "Agentes",
+        "Desarrollo",
+        "MCP",
+        "Empresas"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial genérico sobre asistentes de programación; no representa una captura real del complemento Copilot.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "library",
+      "source": {
+        "name": "GitHub Changelog · New controls and chat improvements in Copilot for JetBrains",
+        "url": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains/",
+        "publishedAt": "2026-10-10"
+      },
+      "relatedSources": [],
+      "body": [
+        "GitHub anunció el 10 de octubre de 2026 una actualización de Copilot para los entornos de desarrollo JetBrains. La versión incorpora administración empresarial de modelos predeterminados, un ajuste para controlar el inicio de servidores MCP, asistencia más directa desde diagnósticos y un cambio de compatibilidad. No se presentó un modelo de inteligencia artificial nuevo: las modificaciones afectan a la forma en que los desarrolladores utilizan agentes de programación dentro de sus herramientas habituales.",
+        "Los administradores empresariales pueden seleccionar mediante ajustes gestionados cualquiera de los modelos de agente Copilot disponibles como opción inicial de nuevas conversaciones. GitHub aclara que el selector manual de modelos sigue existiendo. Esto significa que definir un valor predeterminado no equivale necesariamente a imponer un único modelo para todas las tareas. En equipos con varios modelos, la política puede establecer un punto de partida sin eliminar las decisiones explícitas de cada desarrollador.",
+        "La segunda novedad afecta a Model Context Protocol, MCP, que conecta asistentes con herramientas y servicios. Un nuevo ajuste permite desactivar el inicio automático de servidores MCP tanto para Copilot como para Claude. Se trata de un control sobre cuándo se activan herramientas configuradas, no de una garantía de aislamiento total. El anuncio no dice que sustituya los permisos, las aprobaciones de acciones sensibles ni la revisión de qué servicios externos pueden acceder al proyecto.",
+        "GitHub añadió una acción Fix en los menús de intención de diagnósticos del IDE. Al utilizarla, se abre el chat en línea y se solicita a Copilot una reparación. Si el modo agente está disponible, se emplea; en caso contrario, el sistema usa el modo de consulta. La función reduce los pasos entre identificar un problema y proponer un cambio, pero el comunicado no garantiza que el parche sea correcto ni que supere las pruebas del repositorio.",
+        "El complemento también mejora la identificación y el cambio de cuentas, agrupa mensajes por turnos, permite copiar o editar mensajes del usuario y ajusta la navegación de inicio de sesión. GitHub enumera correcciones de fiabilidad en servidores de lenguaje, cambios de proveedor o modelo, configuración MCP, personalizaciones, archivos y worktrees. Son mejoras comunicadas por el proveedor: no se publicaron métricas comparables de velocidad, errores evitados o productividad que permitan cuantificar sus resultados.",
+        "El cambio operativo más importante para instalaciones antiguas es que GitHub Copilot deja de admitir JetBrains IDE 2025.1. El requisito mínimo pasa a ser JetBrains IDE 2025.2 o posterior. No significa que el propio IDE antiguo deje de funcionar; el anuncio se refiere al soporte del complemento Copilot. Antes de desplegar una actualización en equipos corporativos, conviene comprobar qué versión de cada IDE se utiliza y si existe un procedimiento de migración adecuado.",
+        "La publicación remite al complemento actualizado en el catálogo de JetBrains, pero no identifica un precio nuevo, una modificación de suscripciones ni regiones adicionales. Tampoco proporciona una cifra universal de versión del plugin para todas las variantes de IDE. Por ello, no corresponde afirmar que el coste de Copilot haya cambiado o que una función concreta esté disponible en cualquier cuenta sin revisar la suscripción, la configuración administrada y la versión instalada.",
+        "Para desarrolladores, el procedimiento práctico consiste en verificar primero la versión del IDE, revisar el modelo predeterminado y comprobar cómo se inician los servidores MCP. Si se conectan herramientas con acceso a repositorios, archivos o credenciales, desactivar su arranque automático puede evitar activaciones innecesarias, aunque no reemplaza una política de permisos. Las reparaciones propuestas desde Fix deben inspeccionarse, probarse y someterse a revisión antes de incorporarlas a producción.",
+        "Para responsables de plataforma, las novedades permiten combinar una configuración inicial común con selección explícita de modelo y mayor control del ciclo de vida de herramientas. Conviene documentar qué servidores MCP están autorizados, quién puede activarlos y cómo se auditan sus acciones. El control anunciado no equivale a un sistema completo de gobierno empresarial: su efectividad dependerá de las políticas complementarias y de la configuración real de cada organización.",
+        "Análisis Gazette: la competencia entre asistentes de código también se está trasladando a la administración, observabilidad y compatibilidad del entorno, no solo a los benchmarks de modelos. La mejora será tangible si reduce confusiones sobre cuentas, herramientas y flujos de reparación. Queda por observar el alcance de los ajustes gestionados, el comportamiento de MCP en despliegues empresariales y la evolución de requisitos de versiones de JetBrains."
+      ],
+      "keyPoints": [
+        "Las empresas pueden elegir el modelo inicial de Copilot sin eliminar el selector manual.",
+        "Un ajuste permite desactivar el arranque automático de servidores MCP para Copilot y Claude.",
+        "JetBrains IDE 2025.1 pierde soporte para el complemento: se requiere 2025.2 o posterior."
+      ],
+      "quickTakeaways": [
+        "Actualización oficial publicada el 10 de octubre de 2026; no es un nuevo modelo de IA.",
+        "Modelos iniciales administrados y control de arranque de MCP.",
+        "Fix abre el chat desde diagnósticos y usa modo agente cuando está disponible.",
+        "JetBrains IDE 2025.2 o posterior es ahora el mínimo admitido.",
+        "No se comunicaron precios nuevos ni métricas de productividad."
+      ],
+      "executiveSummary": "La actualización de Copilot para JetBrains incorpora controles empresariales sobre el modelo inicial y el inicio de servidores MCP, facilita solicitar reparaciones desde diagnósticos y termina el soporte para JetBrains IDE 2025.1. Su valor está en la gobernanza y compatibilidad del asistente, no en un nuevo modelo o tarifa.",
+      "sections": [
+        {
+          "heading": "Controles de modelos y herramientas",
+          "kind": "technical",
+          "paragraphs": [
+            "GitHub anunció el 10 de octubre de 2026 una actualización de Copilot para los entornos de desarrollo JetBrains. La versión incorpora administración empresarial de modelos predeterminados, un ajuste para controlar el inicio de servidores MCP, asistencia más directa desde diagnósticos y un cambio de compatibilidad. No se presentó un modelo de inteligencia artificial nuevo: las modificaciones afectan a la forma en que los desarrolladores utilizan agentes de programación dentro de sus herramientas habituales.",
+            "Los administradores empresariales pueden seleccionar mediante ajustes gestionados cualquiera de los modelos de agente Copilot disponibles como opción inicial de nuevas conversaciones. GitHub aclara que el selector manual de modelos sigue existiendo. Esto significa que definir un valor predeterminado no equivale necesariamente a imponer un único modelo para todas las tareas. En equipos con varios modelos, la política puede establecer un punto de partida sin eliminar las decisiones explícitas de cada desarrollador.",
+            "La segunda novedad afecta a Model Context Protocol, MCP, que conecta asistentes con herramientas y servicios. Un nuevo ajuste permite desactivar el inicio automático de servidores MCP tanto para Copilot como para Claude. Se trata de un control sobre cuándo se activan herramientas configuradas, no de una garantía de aislamiento total. El anuncio no dice que sustituya los permisos, las aprobaciones de acciones sensibles ni la revisión de qué servicios externos pueden acceder al proyecto."
+          ]
+        },
+        {
+          "heading": "Reparaciones y compatibilidad",
+          "kind": "report",
+          "paragraphs": [
+            "GitHub añadió una acción Fix en los menús de intención de diagnósticos del IDE. Al utilizarla, se abre el chat en línea y se solicita a Copilot una reparación. Si el modo agente está disponible, se emplea; en caso contrario, el sistema usa el modo de consulta. La función reduce los pasos entre identificar un problema y proponer un cambio, pero el comunicado no garantiza que el parche sea correcto ni que supere las pruebas del repositorio.",
+            "El complemento también mejora la identificación y el cambio de cuentas, agrupa mensajes por turnos, permite copiar o editar mensajes del usuario y ajusta la navegación de inicio de sesión. GitHub enumera correcciones de fiabilidad en servidores de lenguaje, cambios de proveedor o modelo, configuración MCP, personalizaciones, archivos y worktrees. Son mejoras comunicadas por el proveedor: no se publicaron métricas comparables de velocidad, errores evitados o productividad que permitan cuantificar sus resultados.",
+            "El cambio operativo más importante para instalaciones antiguas es que GitHub Copilot deja de admitir JetBrains IDE 2025.1. El requisito mínimo pasa a ser JetBrains IDE 2025.2 o posterior. No significa que el propio IDE antiguo deje de funcionar; el anuncio se refiere al soporte del complemento Copilot. Antes de desplegar una actualización en equipos corporativos, conviene comprobar qué versión de cada IDE se utiliza y si existe un procedimiento de migración adecuado."
+          ]
+        },
+        {
+          "heading": "Disponibilidad y recomendaciones",
+          "kind": "practical",
+          "paragraphs": [
+            "La publicación remite al complemento actualizado en el catálogo de JetBrains, pero no identifica un precio nuevo, una modificación de suscripciones ni regiones adicionales. Tampoco proporciona una cifra universal de versión del plugin para todas las variantes de IDE. Por ello, no corresponde afirmar que el coste de Copilot haya cambiado o que una función concreta esté disponible en cualquier cuenta sin revisar la suscripción, la configuración administrada y la versión instalada.",
+            "Para desarrolladores, el procedimiento práctico consiste en verificar primero la versión del IDE, revisar el modelo predeterminado y comprobar cómo se inician los servidores MCP. Si se conectan herramientas con acceso a repositorios, archivos o credenciales, desactivar su arranque automático puede evitar activaciones innecesarias, aunque no reemplaza una política de permisos. Las reparaciones propuestas desde Fix deben inspeccionarse, probarse y someterse a revisión antes de incorporarlas a producción.",
+            "Para responsables de plataforma, las novedades permiten combinar una configuración inicial común con selección explícita de modelo y mayor control del ciclo de vida de herramientas. Conviene documentar qué servidores MCP están autorizados, quién puede activarlos y cómo se auditan sus acciones. El control anunciado no equivale a un sistema completo de gobierno empresarial: su efectividad dependerá de las políticas complementarias y de la configuración real de cada organización."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la competencia entre asistentes de código también se está trasladando a la administración, observabilidad y compatibilidad del entorno, no solo a los benchmarks de modelos. La mejora será tangible si reduce confusiones sobre cuentas, herramientas y flujos de reparación. Queda por observar el alcance de los ajustes gestionados, el comportamiento de MCP en despliegues empresariales y la evolución de requisitos de versiones de JetBrains."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Modelo predeterminado",
+          "value": "Ajustes empresariales gestionados entre modelos de agente Copilot disponibles; selector manual conservado."
+        },
+        {
+          "label": "Servidores MCP",
+          "value": "Se puede desactivar el inicio automático para Copilot y Claude."
+        },
+        {
+          "label": "IDE mínimo",
+          "value": "JetBrains IDE 2025.2 o posterior."
+        }
+      ],
+      "availability": {
+        "status": "Actualización del complemento anunciada el 10 de octubre de 2026",
+        "platforms": [
+          "JetBrains IDE 2025.2 o posterior"
+        ],
+        "regions": [],
+        "requirements": [
+          "Complemento GitHub Copilot compatible",
+          "Suscripción y configuración vigentes"
+        ],
+        "notes": [
+          "No se comunicaron nuevas regiones ni un número único de versión del complemento."
+        ]
+      },
+      "limitations": [
+        "Sin benchmarks independientes ni mejora de productividad cuantificada.",
+        "Un modelo inicial gestionado no impide necesariamente elegir otro.",
+        "Controlar el inicio de MCP no sustituye permisos y aprobaciones.",
+        "Sin nuevos precios anunciados."
+      ],
+      "practicalAdvice": [
+        "Verificar la versión del IDE antes de actualizar Copilot.",
+        "Auditar herramientas MCP y revisar el inicio automático.",
+        "Validar con pruebas cualquier reparación sugerida por Fix."
+      ],
+      "analysis": "Análisis Gazette: la gobernanza y visibilidad de herramientas se vuelven tan importantes como el modelo subyacente en asistentes de programación, especialmente para equipos empresariales.",
+      "watch": "Compatibilidad con versiones de JetBrains, alcance de los ajustes empresariales, controles de herramientas MCP y futuras notas de versión.",
+      "finalSummary": "GitHub Copilot para JetBrains suma ajustes de modelo inicial, control del arranque MCP y reparación desde diagnósticos. El cambio de compatibilidad a JetBrains IDE 2025.2 o posterior es el requisito operativo más inmediato."
     },
     {
       "id": "ultra-operator-62m-physical-intelligence-2026",
@@ -23456,7 +23591,7 @@
     {
       "date": "2026-10-10",
       "status": "partial",
-      "verifiedArticles": 1
+      "verifiedArticles": 2
     },
     {
       "date": "2026-10-11",
