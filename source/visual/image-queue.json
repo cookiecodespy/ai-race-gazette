@@ -8,7 +8,7 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
-  "generatedFromNewsUpdatedAt": "2026-10-11T08:27:01.483Z",
+  "generatedFromNewsUpdatedAt": "2026-10-11T11:25:45.992Z",
   "generatedAt": "2026-10-11",
   "items": [
     {
@@ -1806,6 +1806,32 @@
       "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
     },
     {
+      "articleId": "gemini-4-argon",
+      "eventKey": "gemini-4-argon",
+      "date": "2026-09-30",
+      "company": "Google",
+      "product": "Gemini 4 Argon",
+      "title": "Gemini 4 Argon se estrena con acceso gradual para defensores",
+      "currentImage": "assets/google.webp",
+      "currentAssetId": "gazette-google-architecture-v1",
+      "currentReuseCount": 29,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-30/gemini-4-argon.webp",
+      "brief": "Grabado editorial original de prensa antigua: una biblioteca de ingeniería y un laboratorio defensivo de ciberseguridad conectados por una máquina simbólica de razonamiento, con revisores humanos examinando planos y código abstracto; representar investigación y control responsable, no un hackeo real. Tinta negra y sepia, papel envejecido, formato horizontal 3:2; sin texto, logos inventados ni falsa fotografía documental.",
+      "sourceSummary": "Google anuncia su nuevo modelo y comienza con un grupo de usuarios de confianza.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
       "articleId": "anthropic-barclays-claude-enterprise-2026",
       "eventKey": "anthropic-barclays-claude-enterprise-2026",
       "date": "2026-10-01",
@@ -2030,6 +2056,32 @@
       "desiredOutput": "assets/news/2026-10-06/mistral-large-4.webp",
       "brief": "Grabado editorial sepia de un gran laboratorio europeo con una máquina de múltiples compartimentos especializados y observadores revisando planos, papeles y gráficos, sin textos, logos ni afirmaciones visuales documentales.",
       "sourceSummary": "La compañía francesa presenta su nuevo modelo en vista previa pública y anuncia una apertura posterior de sus pesos.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
+      "articleId": "nano-banana-2-1",
+      "eventKey": "nano-banana-2-1",
+      "date": "2026-10-06",
+      "company": "Google",
+      "product": "Nano Banana 2.1",
+      "title": "Nano Banana 2.1: una nueva etapa para crear y editar imágenes",
+      "currentImage": "assets/google.webp",
+      "currentAssetId": "gazette-google-architecture-v1",
+      "currentReuseCount": 29,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-10-06/nano-banana-2-1.webp",
+      "brief": "Ilustración editorial original de prensa antigua: un taller de grabado y fotografía con láminas de diferentes tamaños, un mismo personaje conservando rasgos en varias composiciones y una mano corrigiendo imágenes sobre el papel; tecnología sugerida sin interfaces, marcas ni textos ficticios. Tinta negra y sepia sobre pergamino envejecido, formato horizontal 3:2, sin aspecto de captura o fotografía documental. Rotular como arte generado.",
+      "sourceSummary": "Google documenta su modelo de generación de imágenes y edición conversacional en la API de Gemini.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
@@ -3876,58 +3928,6 @@
       "desiredOutput": "assets/news/2026-09-29/decisions-api.webp",
       "brief": "Crear una ilustración específica para “Decisions API lleva las respuestas tipadas al centro de las aplicaciones”. El foco visual debe representar Decisions API de OpenAI y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "sourceSummary": "La beta pública usa gpt-6-luna para clasificar, elegir entre opciones y evaluar contenido con respuestas estructuradas.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "gemini-4-argon",
-      "eventKey": "gemini-4-argon",
-      "date": "2026-09-30",
-      "company": "Google",
-      "product": "Gemini 4 Argon",
-      "title": "Gemini 4 Argon se estrena con acceso gradual para defensores",
-      "currentImage": "assets/google.webp",
-      "currentAssetId": "gazette-google-architecture-v1",
-      "currentReuseCount": 29,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-30/gemini-4-argon.webp",
-      "brief": "Crear una ilustración específica para “Gemini 4 Argon se estrena con acceso gradual para defensores”. El foco visual debe representar Gemini 4 Argon de Google y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "Google anuncia su nuevo modelo y comienza con un grupo de usuarios de confianza.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "nano-banana-2-1",
-      "eventKey": "nano-banana-2-1",
-      "date": "2026-10-06",
-      "company": "Google",
-      "product": "Nano Banana 2.1",
-      "title": "Nano Banana 2.1: una nueva etapa para crear y editar imágenes",
-      "currentImage": "assets/google.webp",
-      "currentAssetId": "gazette-google-architecture-v1",
-      "currentReuseCount": 29,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-10-06/nano-banana-2-1.webp",
-      "brief": "Crear una ilustración específica para “Nano Banana 2.1: una nueva etapa para crear y editar imágenes”. El foco visual debe representar Nano Banana 2.1 de Google y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "Google documenta su modelo de generación de imágenes y edición conversacional en la API de Gemini.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
