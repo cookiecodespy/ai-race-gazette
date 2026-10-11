@@ -40,7 +40,7 @@
         "Ilustración editorial generada con IA.",
         "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía del lanzamiento."
       ],
-      "currentUsage": 81,
+      "currentUsage": 83,
       "notes": "Fallback general. Su alta reutilización es deuda visual prioritaria."
     },
     {
@@ -63,7 +63,7 @@
         "Ilustración editorial generada con IA; no es una fotografía de Google.",
         "Ilustración editorial generada con IA; no es una fotografía del anuncio."
       ],
-      "currentUsage": 23,
+      "currentUsage": 24,
       "notes": "Fallback orientado a Google/arquitectura tecnológica; no asumir que representa instalaciones reales."
     },
     {
