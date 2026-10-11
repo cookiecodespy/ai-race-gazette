@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T00:30:32.689Z",
+  "updatedAt": "2026-10-11T00:37:39.324Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -15511,7 +15511,7 @@
       "image": "assets/globe.webp",
       "imageAlt": "Grabado editorial de un globo terrestre",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-10",
       "coveredAt": "2026-10-07",
       "source": {
         "name": "Waymo · anuncio oficial",
@@ -15528,7 +15528,119 @@
         "Expansión comercial de conducción autónoma."
       ],
       "analysis": "La robótica se valida en operación repetida, no sólo en benchmarks; cada nueva ciudad añade condiciones reales al sistema completo.",
-      "watch": "Ritmo de ampliación, área de servicio y métricas públicas de seguridad."
+      "watch": "Ritmo de ampliación, área de servicio y métricas públicas de seguridad.",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "Waymo comenzó a recibir pasajeros públicos el 1 de septiembre de 2026 en Denver, San Diego y Tampa.",
+        "El acceso inicial era gradual mediante registros e invitaciones, no cobertura universal inmediata.",
+        "La expansión elevó a catorce las ciudades en que Waymo informaba ofrecer viajes completamente autónomos.",
+        "Las comparaciones de seguridad anunciadas corresponden a estudios y metodología de Waymo y requieren interpretación contextual."
+      ],
+      "executiveSummary": "Waymo abrió los primeros viajes públicos sin conductor en Denver, San Diego y Tampa el 1 de septiembre de 2026. La apertura incorpora más condiciones urbanas a un servicio comercial autónomo, pero su llegada inicial se produjo por invitaciones y áreas delimitadas. La disponibilidad y los datos de seguridad necesitan leerse con esas condiciones.",
+      "sections": [
+        {
+          "heading": "La apertura del 1 de septiembre",
+          "kind": "report",
+          "paragraphs": [
+            "El anuncio de Waymo marca una ampliación comercial concreta: la empresa comenzó a dar acceso a los primeros pasajeros del público en tres ciudades estadounidenses. No se trata del inicio de simples pruebas cerradas con empleados, aunque tampoco significa que cualquier persona en esos mercados pudiera pedir un vehículo de inmediato. Waymo señaló que decenas de miles de personas se habían inscrito en cada ciudad y que iría invitando progresivamente a nuevos usuarios.",
+            "Waymo cifró en catorce las ciudades en las que ya ofrecía trayectos completamente autónomos al comunicar la apertura. Esa cifra describe el alcance de su propia red comercial en aquella fecha, no la cobertura geográfica completa de las ciudades mencionadas. Una plataforma puede operar en una ciudad y restringir la zona de recogida, los horarios o el acceso de una parte de los pasajeros durante su despliegue inicial."
+          ]
+        },
+        {
+          "heading": "Qué implica desplegar robótica en tres ciudades distintas",
+          "kind": "technical",
+          "paragraphs": [
+            "Un servicio de robotaxis no depende exclusivamente del modelo que decide conducir. Requiere vehículos preparados, cartografía y percepción del entorno, gestión de flotas, seguimiento de incidencias, asistencia a pasajeros y coordinación con servicios de emergencia. Al abrir en lugares con patrones de calles y movilidad diferentes, Waymo necesita demostrar que esos componentes operativos pueden sostener una experiencia consistente sin conductor humano al volante.",
+            "Waymo explicó que había validado previamente el desempeño de Waymo Driver sobre vías locales durante meses. El comunicado menciona colaboración con autoridades y primeros respondedores, además de trabajo con organizaciones de la comunidad. Estos factores son importantes porque el éxito de la movilidad autónoma no se mide solamente por un trayecto exitoso: incluye cómo se resuelve una detención inesperada y cómo interactúa la empresa con el sistema de transporte existente."
+          ]
+        },
+        {
+          "heading": "Disponibilidad: lista de espera frente a acceso efectivo",
+          "kind": "report",
+          "paragraphs": [
+            "El mecanismo descrito por Waymo consistía en descargar su aplicación, inscribirse y esperar una notificación cuando se habilitara el acceso. El hecho de que hubiera decenas de miles de interesados en cada ciudad muestra demanda inicial expresada, pero no equivale a decenas de miles de usuarios activos ni a viajes completados. No puede deducirse del comunicado una tasa de conversión de inscritos a pasajeros.",
+            "Para un lector que visitara Denver, San Diego o Tampa en septiembre, la acción práctica era comprobar el área de servicio dentro de la aplicación y no asumir cobertura por aparecer la ciudad en una nota de prensa. Las zonas se expanden por etapas y la disponibilidad depende de condiciones comerciales y operativas. Tampoco se publicaron en esa fuente tarifas generales comparables para los tres mercados."
+          ]
+        },
+        {
+          "heading": "Seguridad: qué afirma Waymo y qué no se puede concluir",
+          "kind": "analysis",
+          "paragraphs": [
+            "El anuncio reiteró un resultado corporativo: Waymo sostiene que su sistema estuvo involucrado en un 94 % menos de colisiones con lesiones graves o peores que conductores humanos en comparaciones normalizadas por distancia. Es una afirmación sustentada en el marco de medición de Waymo y no debe presentarse como una promesa de cero accidentes. Comparar resultados de conducción exige evaluar exposición, zonas geográficas, periodos observados y metodología de clasificación de incidentes.",
+            "Una red que amplía ciudades necesita actualizar continuamente sus indicadores a medida que acumula kilómetros, cambia de flota y atiende contextos nuevos. La comparación histórica de una empresa no determina automáticamente el riesgo de cada viaje particular. El seguimiento externo debería considerar datos regulatorios, información de seguridad publicada y respuesta ante situaciones inusuales, en lugar de usar una cifra como sustituto de una evaluación completa."
+          ]
+        },
+        {
+          "heading": "Impacto urbano y accesibilidad",
+          "kind": "context",
+          "paragraphs": [
+            "En el comunicado, representantes de ciudades y organizaciones comunitarias destacaron nuevas alternativas de movilidad. Se mencionan casos de personas mayores y pasajeros con discapacidad visual que pueden valorar un servicio sin interacción con un conductor humano. Esas declaraciones ilustran necesidades reales, pero no demuestran que todas las barreras de accesibilidad estén resueltas en la práctica.",
+            "Una opción de transporte debe comprobar aspectos como facilidad para localizar el vehículo, asistencia remota, compatibilidad con animales de servicio, puntos de recogida seguros y manejo de incidencias. En una expansión comercial, estas dimensiones afectan la adopción tanto como la autonomía técnica. El efecto sobre tráfico, emisiones y transporte público tampoco puede cuantificarse a partir de un solo anuncio de lanzamiento."
+          ]
+        },
+        {
+          "heading": "Por qué importa en la carrera de la IA",
+          "kind": "competition",
+          "paragraphs": [
+            "La robótica autónoma compite en un terreno diferente del chatbot: cada decisión interactúa con personas y objetos físicos. Llegar a tres mercados adicionales señala capacidad de despliegue, pero también expone la operación a escenarios más variados. La pregunta industrial es si el sistema puede escalar manteniendo seguridad, coste de mantenimiento, calidad de servicio y colaboración con autoridades.",
+            "Análisis Gazette: lo relevante del 1 de septiembre no es que se haya demostrado una conducción perfecta, sino que Waymo amplió la prestación pública de una tecnología compleja. Los próximos hitos deberán evaluarse con evidencia sobre usuarios efectivamente habilitados, áreas y horas de operación, incidencias, tarifas y resultados de seguridad publicados de forma comparable."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Fecha",
+          "value": "1 septiembre 2026"
+        },
+        {
+          "label": "Nuevas ciudades",
+          "value": "Denver, San Diego y Tampa"
+        },
+        {
+          "label": "Cobertura declarada",
+          "value": "14 ciudades con viajes plenamente autónomos según Waymo"
+        },
+        {
+          "label": "Acceso inicial",
+          "value": "Gradual tras registro en aplicación"
+        }
+      ],
+      "availability": {
+        "status": "Primeros pasajeros públicos; ampliación escalonada",
+        "platforms": [
+          "Aplicación Waymo"
+        ],
+        "regions": [
+          "Denver",
+          "San Diego",
+          "Tampa"
+        ],
+        "requirements": [
+          "Zona de servicio habilitada",
+          "Registro y acceso según despliegue"
+        ],
+        "notes": [
+          "No se anunció apertura universal inmediata ni tarifa única en el comunicado."
+        ]
+      },
+      "limitations": [
+        "El anuncio no cuantifica pasajeros activos en cada nuevo mercado.",
+        "Las cifras de seguridad son atribuidas al proveedor y no certifican ausencia de accidentes.",
+        "No se puede deducir la cobertura total de una ciudad de su inclusión en la red."
+      ],
+      "practicalAdvice": [
+        "Comprobar en la app zona, horario y elegibilidad antes de planificar un desplazamiento.",
+        "Consultar comunicaciones oficiales ante ampliaciones del servicio.",
+        "Valorar accesibilidad y alternativas de transporte para rutas todavía fuera de cobertura."
+      ],
+      "usefulFacts": [
+        "Waymo informó de decenas de miles de inscritos interesados en cada nueva ciudad.",
+        "El anuncio destacó trabajo previo con servicios de emergencia y organizaciones comunitarias.",
+        "El servicio comenzó con invitaciones sucesivas."
+      ],
+      "finalSummary": "Waymo añadió tres mercados con viajes públicos autónomos a comienzos de septiembre. El logro fue comercial y operativo; su verdadero alcance debe medirse con acceso real, seguridad y expansión de las zonas, sin confundir un lanzamiento gradual con disponibilidad para toda la población.",
+      "imageBrief": "Grabado editorial de periódico antiguo con tres escenas urbanas diferenciadas, un taxi autónomo sin conductor por las calles de Denver, San Diego y Tampa. Estilo grabado sepia, sin letras ni logos, no fotografía.",
+      "imageStatus": "needs-specific-art"
     },
     {
       "id": "perplexity-hybrid-compute",
@@ -15617,7 +15729,7 @@
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-10",
       "coveredAt": "2026-10-07",
       "source": {
         "name": "Meta AI · anuncio oficial",
@@ -15634,7 +15746,130 @@
         "Meta informa entrenamiento multilingüe."
       ],
       "analysis": "La voz se está convirtiendo en una interfaz nativa para agentes y concentrar varias funciones en un modelo simplifica la arquitectura.",
-      "watch": "Latencia real, precisión por idioma y disponibilidad fuera de productos de Meta."
+      "watch": "Latencia real, precisión por idioma y disponibilidad fuera de productos de Meta.",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "Meta anunció Muse Voice Transcribe el 1 de septiembre de 2026 para transcripción de voz en streaming.",
+        "El sistema combina reconocimiento automático del habla, diferenciación de hablantes y detección de turnos.",
+        "Meta declaró entrenamiento en más de setenta idiomas y verificación extensa en veinticinco.",
+        "La compañía presentó rankings favorables, pero son afirmaciones atribuidas a la evaluación y fecha indicadas.",
+        "La disponibilidad anunciada incluía Meta Model API, Meta AI para Mac y Muse Code."
+      ],
+      "executiveSummary": "Muse Voice Transcribe fue presentado como un modelo de percepción acústica para aplicaciones que necesitan escuchar mientras una persona habla. Meta detalló su funcionamiento por fragmentos de audio, su adaptación del retardo y la diferenciación de múltiples voces. Es un componente de entrada para agentes de voz, no una garantía de comprensión semántica o transcripción perfecta.",
+      "sections": [
+        {
+          "heading": "La diferencia entre grabar y comprender una conversación en directo",
+          "kind": "report",
+          "paragraphs": [
+            "Meta presentó Muse Voice Transcribe el 1 de septiembre dentro del trabajo de Meta Superintelligence Labs. El objetivo declarado consiste en transformar una señal de audio continua en texto utilizable, a la vez que identifica cambios de hablante y determina cuándo terminó una intervención. En una interfaz conversacional, estas tres tareas suelen condicionarse entre sí y afectan a cuánto espera el sistema antes de responder.",
+            "Un dictado convencional puede enviar un archivo completo para transcribirlo después. Muse Voice Transcribe está diseñado para procesar fragmentos mientras llega el sonido. Esa diferencia importa cuando un asistente necesita responder durante una conversación, adaptarse a interrupciones y mantener una asociación útil entre la frase reconocida y quien la pronunció."
+          ]
+        },
+        {
+          "heading": "Cómo procesa audio en streaming",
+          "kind": "technical",
+          "paragraphs": [
+            "Meta describió una arquitectura autorregresiva multimodal de la familia Muse Spark. La señal llega en fragmentos de aproximadamente ochenta milisegundos, equivalentes a 12,5 segmentos por segundo, y se representa mediante tokens de audio. A partir de cada fragmento, el modelo decide si necesita escuchar más o si ya tiene suficiente información para emitir el siguiente token de texto.",
+            "El mecanismo introduce un equilibrio entre latencia y exactitud. Emitir una palabra demasiado pronto puede aumentar los errores, mientras que acumular demasiado contexto hace que el asistente parezca lento. Meta denomina retardo adaptativo a la estrategia de variar esa espera según la dificultad de reconocer el contenido. La empresa indicó que entrenó el comportamiento combinando señales de error de transcripción y demora, mediante aprendizaje por refuerzo."
+          ]
+        },
+        {
+          "heading": "Quién habló y cuándo se acabó su turno",
+          "kind": "technical",
+          "paragraphs": [
+            "Además de transcribir palabras, Muse Voice Transcribe puede marcar dónde parece cambiar la persona que habla. Esa operación se conoce como diarización y no debe confundirse con identificar legalmente o por nombre real a un individuo. Los marcadores mantienen etiquetas de hablante a través de segmentos de una conversación, incluso cuando las frases aparecen en intervalos sucesivos.",
+            "El modelo incorpora señales para inicio y fin de intervenciones. Una pausa breve no siempre significa que la persona terminó de hablar; por eso la detección de fin de turno requiere contexto acústico y lingüístico. En aplicaciones con varios participantes estas funciones facilitan el manejo de interrupciones, pero la atribución puede fallar con voces solapadas, micrófonos deficientes o escenas ruidosas."
+          ]
+        },
+        {
+          "heading": "Idiomas y mezcla de lenguas",
+          "kind": "report",
+          "paragraphs": [
+            "Meta informó entrenamiento con más de setenta idiomas y una validación más profunda en veinticinco. Esa distinción es esencial: que un idioma aparezca durante entrenamiento no significa que tenga el mismo nivel de precisión o soporte documentado que los idiomas evaluados extensamente. La compañía recomienda comenzar con el conjunto validado al desplegar la versión inicial.",
+            "El modelo está concebido para admitir cambios de idioma dentro de la misma oración, práctica frecuente entre personas bilingües. También ofrece sesgo contextual a partir de palabras clave o términos relevantes, que puede facilitar el reconocimiento de nombres propios. Esa ayuda no elimina errores de transcripción ni autoriza suponer que todos los nombres o dialectos se reconocerán correctamente."
+          ]
+        },
+        {
+          "heading": "Qué dicen sus evaluaciones",
+          "kind": "analysis",
+          "paragraphs": [
+            "Meta afirmó ocupar posiciones destacadas en clasificaciones de transcripción de voz en streaming y diarización, con corte del 1 de septiembre de 2026. La clasificación citada depende del conjunto de modelos incluidos, de las tareas y del protocolo de medición en aquella fecha. No equivale a afirmar que el sistema supera siempre a cualquier alternativa ni que la experiencia del usuario será idéntica en todos los entornos.",
+            "Para evaluar un motor de voz conviene medir porcentaje de palabras incorrectas, latencia hasta obtener una versión definitiva, calidad de separación de voces y robustez ante ruido. Un modelo puede ofrecer excelente transcripción de un único hablante y rendir peor cuando hay conversaciones cruzadas. Esa evaluación debe realizarse con muestras representativas y autorización para procesar el audio."
+          ]
+        },
+        {
+          "heading": "Dónde podía usarse",
+          "kind": "report",
+          "paragraphs": [
+            "En el lanzamiento Meta mencionó Meta Model API, Meta AI para Mac y Muse Code, además de una demostración interactiva de dictado. La empresa señaló que podía impulsar escritura por voz e interacción con aplicaciones de escritorio. La presencia de una demostración pública no significa que todas las interfaces permitan integrar el modelo sin condiciones ni que exista licencia de pesos descargables para ejecución local.",
+            "Al desarrollar un producto que procesa conversaciones, importa distinguir el motor de reconocimiento de la aplicación que lo rodea. El tratamiento del audio, la retención de registros y la autorización de los hablantes dependen del servicio concreto. Meta señaló que el audio de la demostración se procesa para producir transcripción y no se almacena en esa experiencia, una declaración sobre ese flujo y no sobre cualquier aplicación de terceros."
+          ]
+        },
+        {
+          "heading": "Implicaciones para asistentes y desarrolladores",
+          "kind": "practical",
+          "paragraphs": [
+            "Un agente con capacidad de escuchar necesita gestionar texto parcial, correcciones posteriores, cambios de turno y silencios. Para reducir errores conviene no ejecutar acciones irreversibles solamente porque aparecieron unas palabras parciales en la pantalla. Un diseño robusto confirma intención cuando hay ambigüedad y permite corregir la transcripción antes de guardar información sensible o enviar una orden.",
+            "Análisis Gazette: la innovación más relevante de este anuncio no es crear una nueva voz sintética, sino proporcionar al asistente una percepción más útil de la conversación. Si el sistema diferencia participantes y comprende cuándo intervenir, mejora la experiencia de herramientas vocales. Su valor deberá comprobarse por precisión, latencia y condiciones de privacidad reales, no por la impresión de una demo aislada."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Modelo",
+          "value": "Muse Voice Transcribe"
+        },
+        {
+          "label": "Fragmentación",
+          "value": "80 ms por fragmento de audio, según Meta"
+        },
+        {
+          "label": "Funciones",
+          "value": "ASR streaming, diarización, endpointing"
+        },
+        {
+          "label": "Cobertura idiomática",
+          "value": "70+ idiomas de entrenamiento; 25 extensamente verificados según Meta"
+        },
+        {
+          "label": "Participantes",
+          "value": "Meta describe soporte para 20+ hablantes"
+        }
+      ],
+      "availability": {
+        "status": "Modelo anunciado por Meta con interfaces y API específicas",
+        "platforms": [
+          "Meta Model API",
+          "Meta AI para Mac",
+          "Muse Code"
+        ],
+        "requirements": [
+          "Consultar disponibilidad y términos de la plataforma"
+        ],
+        "notes": [
+          "No consta disponibilidad universal como modelo de pesos abiertos en la fuente del anuncio."
+        ]
+      },
+      "limitations": [
+        "Errores posibles con ruido, superposiciones y variantes lingüísticas.",
+        "Los rankings del proveedor dependen de benchmark y fecha.",
+        "Una transcripción correcta no equivale a interpretación o autorización de acciones.",
+        "La política de tratamiento de audio depende de cada producto integrador."
+      ],
+      "practicalAdvice": [
+        "Evaluar precisión y retardo con voces reales de la audiencia objetivo.",
+        "Mostrar texto parcial como provisional y permitir correcciones.",
+        "Obtener consentimiento antes de registrar o transcribir conversaciones ajenas.",
+        "Separar detección de hablante de verificación de identidad."
+      ],
+      "usefulFacts": [
+        "Meta explicó el uso de tokens especiales para escuchar, atribuir hablantes y detectar fin de turno.",
+        "La demostración oficial permite probar dictado en tiempo real.",
+        "El comunicado enfatiza cambio de idioma dentro de una oración."
+      ],
+      "finalSummary": "Muse Voice Transcribe refleja el paso desde reconocimiento aislado hacia percepción de conversaciones en tiempo real. Es un avance de infraestructura para agentes vocales, con prestaciones técnicas concretas y límites que deben evaluarse por idioma, privacidad y condiciones de uso.",
+      "imageBrief": "Grabado del siglo XIX con máquina de transcripción, ondas acústicas provenientes de varias personas, engranajes diferenciando turnos de habla y manuscrito sin letras legibles; estilo antiguo, no UI ficticia, no fotografía.",
+      "imageStatus": "needs-specific-art"
     },
     {
       "id": "google-mapl-emit-methane-satellite-2026-09-01",
