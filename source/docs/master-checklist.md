@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 71 tareas; 33 completadas; 6 en curso; 30 pendientes o bloqueadas; 2 descartadas con razón.
+- 6 fases; 78 tareas; 38 completadas; 6 en curso; 32 pendientes o bloqueadas; 2 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -110,6 +110,10 @@
   - Criterio: Meta seguridad Muse; Waymo Las Vegas y Tokio; Perplexity Portable Computer Windows. Reporter V2, fuentes oficiales, RSS/JSON consistentes y CI.
   - Commit: `aaa447688749545f26c247fb04ddd1a53536e6fa`
   - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38099318855
+- [x] **H-P05-GOOGLE-TOOLGRAD** · P1 · done — Reportaje ToolGrad Google 10 septiembre
+  - Criterio: Publicación o validación realizada con evidencia, sin cerrar las fechas históricas por sí sola.
+  - Commit: `e4fb631024dc887c16d80f89323368e65953b298`
+  - Evidencia: https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/
 
 ## P06 — 15–21 septiembre: reconstrucción Reporter V2
 
@@ -130,6 +134,10 @@
   - Fecha investigada: 2026-09-16
   - Commit: `56014e74533dfb16844e6a045540cd297f3e8833`
   - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38101568267
+- [x] **H-P06-LEARNING-INTERACTIVES** · P1 · done — Reportaje Google Learning Interactives 17 septiembre
+  - Criterio: Publicación o validación realizada con evidencia, sin cerrar las fechas históricas por sí sola.
+  - Commit: `e4fb631024dc887c16d80f89323368e65953b298`
+  - Evidencia: https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/
 
 ## P07 — 22–30 septiembre: reconstrucción y legacy
 
@@ -146,6 +154,16 @@
   - Fecha investigada: 2026-09-27
   - Commit: `95f58ba9d6dc355c9a7fd01f72858e854f118678`
   - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38101856248
+- [x] **H-P07-MICROSOFT-EVILTOKENS** · P1 · done — Reportaje Microsoft EvilTokens 22 septiembre
+  - Criterio: Publicación o validación realizada con evidencia, sin cerrar las fechas históricas por sí sola.
+  - Commit: `e4fb631024dc887c16d80f89323368e65953b298`
+  - Evidencia: https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/
+- [ ] **H-P07-MENTALHEALTHBENCH-SEP23** · P1 · queued — MentalHealthBench de OpenAI 23 septiembre
+  - Criterio: Verificar el trabajo original, escribir Reporter V2 y actualizar archivos y registro de investigación de forma atómica antes de marcar como publicado.
+  - Fecha investigada: 2026-09-23
+- [ ] **H-P07-DIFFUSION-CONTROLLER-SEP29** · P1 · queued — Diffusion Controller de Google Research 29 septiembre
+  - Criterio: Verificar el trabajo original, escribir Reporter V2 y actualizar archivos y registro de investigación de forma atómica antes de marcar como publicado.
+  - Fecha investigada: 2026-09-29
 
 ## P08 — Octubre hasta la fecha y Newsroom continua
 
@@ -175,13 +193,17 @@
 - [x] **OPS-STALE-BUILD-GUARD** · P0 · done — Evitar despliegues de bundles obsoletos por carreras de GitHub
   - Criterio: CI impide publicar dist si fuentes React, scripts de compilación o assets cambiaron desde checkout.
   - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798281532
+- [x] **OPS-RESEARCH-LEDGER-RECONCILE** · P1 · done — Conciliar registro de investigación y comprobarlo con CI
+  - Criterio: Publicación o validación realizada con evidencia, sin cerrar las fechas históricas por sí sola.
+  - Commit: `0030af86d257ef568abfbcf90529575470063f92`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38102880261
 
 ## P09 — Enriquecimiento de legacy y Visual Desk
 
 **Estado:** queued. **Gate:** Artículos legacy enriquecidos o exceptuados con evidencia; ilustraciones específicas de titulares importantes y estándares visuales.
 
 - [ ] **ED-LEGACY48** · P0 · in_progress — Migrar todos los artículos legacy restantes a Reporter V2
-  - Criterio: Cero artículos legacy sin excepción editorial justificada; conservar IDs, contrastar fuentes originales, enriquecer Reporter V2 y comprobar la integridad del archivo.
+  - Criterio: Cero legacy sin excepciones justificadas y fuentes comprobadas; quedan 37 de 143 artículos al corte. Conservar IDs y validar cada migración.
 - [ ] **VIS-PREMIUM** · P1 · queued — Crear lote visual periódico de grabados específicos
   - Criterio: Disminuir el fallback repetido, resolver P0 de imagen y mantener créditos
 - [ ] **VIS-GENERATION** · P1 · queued — Explorar generación automática por noticia con QA
@@ -204,6 +226,10 @@
   - Fecha investigada: 2026-09-01
   - Commit: `e4dacc14b1692092add71ab294b40605da2c9be6`
   - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38101653220
+- [x] **ED-P09-FOUR-LAUNCHES-V2** · P1 · done — Ampliar Claude 5.5 y OpenAI DevDay a Reporter V2
+  - Criterio: Publicación o validación realizada con evidencia, sin cerrar las fechas históricas por sí sola.
+  - Commit: `ba928730edbfad01c3fa1bfc8331577dfd311d94`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38103011095
 
 ## P10 — Segunda auditoría y lanzamiento v1.0
 

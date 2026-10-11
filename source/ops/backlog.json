@@ -261,8 +261,8 @@
       "priority": "P0",
       "status": "in_progress",
       "lane": "Editor-in-Chief / Historical Backfill",
-      "acceptance": "Cero artículos legacy sin excepción editorial justificada; conservar IDs, contrastar fuentes originales, enriquecer Reporter V2 y comprobar la integridad del archivo.",
-      "notes": "Conteo vivo a 10 octubre: 41 artículos legacy tras seis migraciones de la serie V3. Recalcular cada vez desde news.json, preservar IDs y auditar fuentes."
+      "acceptance": "Cero legacy sin excepciones justificadas y fuentes comprobadas; quedan 37 de 143 artículos al corte. Conservar IDs y validar cada migración.",
+      "notes": "En pasada de octubre: Claude Opus 5.5, Sonnet 5.5, GPT-6.1 Sol y Dots migrados a Reporter V2. Reparación de RSS en cc4402b04ac31c576500de33b70b41aa5de9ead2."
     },
     {
       "id": "VIS-PREMIUM",
@@ -980,6 +980,97 @@
         "https://lambda.ai/blog/new-lambda-data-center-in-oklahoma"
       ],
       "notes": "La jornada 27 Sep ahora cuenta con una noticia material original; su segunda auditoría abierta sigue pendiente."
+    },
+    {
+      "id": "OPS-RESEARCH-LEDGER-RECONCILE",
+      "phase": "P08",
+      "title": "Conciliar registro de investigación y comprobarlo con CI",
+      "priority": "P1",
+      "status": "done",
+      "lane": "Historical Backfill / QA",
+      "acceptance": "Publicación o validación realizada con evidencia, sin cerrar las fechas históricas por sí sola.",
+      "evidenceCommit": "0030af86d257ef568abfbcf90529575470063f92",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38102880261"
+      ]
+    },
+    {
+      "id": "H-P05-GOOGLE-TOOLGRAD",
+      "phase": "P05",
+      "title": "Reportaje ToolGrad Google 10 septiembre",
+      "priority": "P1",
+      "status": "done",
+      "lane": "Historical Backfill / QA",
+      "acceptance": "Publicación o validación realizada con evidencia, sin cerrar las fechas históricas por sí sola.",
+      "evidenceCommit": "e4fb631024dc887c16d80f89323368e65953b298",
+      "verifiedEvidence": [
+        "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/"
+      ]
+    },
+    {
+      "id": "H-P06-LEARNING-INTERACTIVES",
+      "phase": "P06",
+      "title": "Reportaje Google Learning Interactives 17 septiembre",
+      "priority": "P1",
+      "status": "done",
+      "lane": "Historical Backfill / QA",
+      "acceptance": "Publicación o validación realizada con evidencia, sin cerrar las fechas históricas por sí sola.",
+      "evidenceCommit": "e4fb631024dc887c16d80f89323368e65953b298",
+      "verifiedEvidence": [
+        "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/"
+      ]
+    },
+    {
+      "id": "H-P07-MICROSOFT-EVILTOKENS",
+      "phase": "P07",
+      "title": "Reportaje Microsoft EvilTokens 22 septiembre",
+      "priority": "P1",
+      "status": "done",
+      "lane": "Historical Backfill / QA",
+      "acceptance": "Publicación o validación realizada con evidencia, sin cerrar las fechas históricas por sí sola.",
+      "evidenceCommit": "e4fb631024dc887c16d80f89323368e65953b298",
+      "verifiedEvidence": [
+        "https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/"
+      ]
+    },
+    {
+      "id": "ED-P09-FOUR-LAUNCHES-V2",
+      "phase": "P09",
+      "title": "Ampliar Claude 5.5 y OpenAI DevDay a Reporter V2",
+      "priority": "P1",
+      "status": "done",
+      "lane": "Historical Backfill / QA",
+      "acceptance": "Publicación o validación realizada con evidencia, sin cerrar las fechas históricas por sí sola.",
+      "evidenceCommit": "ba928730edbfad01c3fa1bfc8331577dfd311d94",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38103011095"
+      ]
+    },
+    {
+      "id": "H-P07-MENTALHEALTHBENCH-SEP23",
+      "phase": "P07",
+      "title": "MentalHealthBench de OpenAI 23 septiembre",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "date": "2026-09-23",
+      "acceptance": "Verificar el trabajo original, escribir Reporter V2 y actualizar archivos y registro de investigación de forma atómica antes de marcar como publicado.",
+      "evidence": [
+        "https://openai.com/index/introducing-mentalhealthbench/"
+      ]
+    },
+    {
+      "id": "H-P07-DIFFUSION-CONTROLLER-SEP29",
+      "phase": "P07",
+      "title": "Diffusion Controller de Google Research 29 septiembre",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "date": "2026-09-29",
+      "acceptance": "Verificar el trabajo original, escribir Reporter V2 y actualizar archivos y registro de investigación de forma atómica antes de marcar como publicado.",
+      "evidence": [
+        "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/"
+      ]
     }
   ]
 }
