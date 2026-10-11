@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T18:19:08.935Z",
+  "updatedAt": "2026-10-11T18:20:42.669Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -14995,7 +14995,12 @@
           "APIs Pro y Turbo: evolución posterior documentada el 9 de octubre, no modalidad original del 20 de septiembre."
         ]
       },
-      "finalSummary": "La apertura de Qwen-Image-2.1 el 20 de septiembre agrega una referencia importante a la historia de IA visual: un modelo descargable que unifica creación y edición, con transparencias y hasta diez referencias. El impacto concreto requiere medir resultados y coste de operación, y la licencia Qwen Research impide suponer permisos irrestrictos. Esta incorporación reabre la fecha histórica del Gazette como cobertura parcial hasta completar el resto de la auditoría por actores y categorías."
+      "finalSummary": "La apertura de Qwen-Image-2.1 el 20 de septiembre agrega una referencia importante a la historia de IA visual: un modelo descargable que unifica creación y edición, con transparencias y hasta diez referencias. El impacto concreto requiere medir resultados y coste de operación, y la licencia Qwen Research impide suponer permisos irrestrictos. Esta incorporación reabre la fecha histórica del Gazette como cobertura parcial hasta completar el resto de la auditoría por actores y categorías.",
+      "keyPoints": [
+        "Lanzamiento de pesos anunciado el 20 de septiembre; la ficha de Qwen describe un componente generativo de 7B parámetros y 32 capas DiT.",
+        "El sistema combina texto a imagen, edición localizada, salida RGBA transparente y uso de hasta diez referencias.",
+        "Los archivos se distribuyen bajo Qwen Research License. Disponibilidad de pesos no equivale a libertad comercial irrestricta; revisar la licencia antes de incorporar el modelo a un producto."
+      ]
     },
     {
       "id": "anthropic-new-model-ipo-talks-reuters-sep19",
