@@ -27,6 +27,8 @@ Las ilustraciones generadas se identifican como arte editorial. No se presentan 
 
 Consulta la [política editorial](source/docs/editorial-policy.md) y el [estándar de artículos](source/docs/gazette-v1-standard.md).
 
+La [arquitectura V4 y sus gates de lanzamiento](source/docs/architecture-v4.md) explican los cuatro carriles, la publicación segura, el refactor de componentes y los riesgos todavía abiertos.
+
 ## Tecnología
 
 El sitio se publica en GitHub Pages. La interfaz se desarrolla con React y Vite; la validación de contenido y la preparación del archivo utilizan scripts en Python y Node.js.
@@ -38,7 +40,8 @@ El sitio se publica en GitHub Pages. La interfaz se desarrolla con React y Vite;
 ├── data/news.json     # Archivo editorial publicado
 ├── feed.xml           # Feed RSS
 ├── source/            # Aplicación, pruebas y herramientas
-│   ├── src/
+│   ├── src/components/    # Artículos, calendario y portadas
+│   ├── src/lib/           # Utilidades del frontend
 │   ├── scripts/
 │   ├── tests/
 │   ├── docs/
@@ -55,6 +58,7 @@ npm test
 python3 -m unittest discover -s tests -p '*_test.py'
 python3 scripts/editorial.py --validate-only
 python3 scripts/quality-audit.py
+python3 scripts/release_readiness.py  # estado real, sin bloquear builds
 npm run build
 ```
 
