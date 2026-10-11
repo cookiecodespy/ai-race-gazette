@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 70 tareas; 32 completadas; 6 en curso; 30 pendientes o bloqueadas; 2 descartadas con razón.
+- 6 fases; 71 tareas; 33 completadas; 6 en curso; 30 pendientes o bloqueadas; 2 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -141,6 +141,11 @@
   - Criterio: Reportajes separados para investigación Google 24 Sep y Microsoft Copilot Code y Autopilot 25 Sep, con preview y acceso distinguidos, sin declarar cierre diario.
   - Commit: `2f1d4dcbb5ea30c066644ca44453d32f643af3a0`
   - Evidencia: https://research.google/blog/coherent-long-form-video-generation/
+- [x] **H-SEP27-LAMBDA-MAYES-DC** · P1 · done — Recuperar anuncio Lambda del 27 Sep sobre nuevo centro de datos Oklahoma
+  - Criterio: Fuente primaria, fecha de anuncio separada de operación real, Reporter V2, pares JSON/RSS íntegros, ledger y CI verde.
+  - Fecha investigada: 2026-09-27
+  - Commit: `95f58ba9d6dc355c9a7fd01f72858e854f118678`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38101856248
 
 ## P08 — Octubre hasta la fecha y Newsroom continua
 

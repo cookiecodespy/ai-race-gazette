@@ -225,7 +225,7 @@
       "status": "queued",
       "lane": "Historical Backfill",
       "acceptance": "Nueve fechas cerradas y artículos previos enriquecidos",
-      "notes": "El 24 y 25 Sep ahora tienen reportajes nuevos, pero faltan otras fechas, otras compañías y auditoría de doble pasada. No cerrar el gate por publicaciones parciales."
+      "notes": "27 Sep: primer reportaje original publicado (Lambda Mayes County), aún partial. La cobertura inversa 22–30 y las fechas 26 Sep pendientes siguen abiertas."
     },
     {
       "id": "H-OCT-GATE",
@@ -964,6 +964,22 @@
         "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-unveils-falcon-guardian-ai-agent-security/"
       ],
       "notes": "La deuda legacy pasó de 43 a 41 sin duplicar noticias."
+    },
+    {
+      "id": "H-SEP27-LAMBDA-MAYES-DC",
+      "phase": "P07",
+      "title": "Recuperar anuncio Lambda del 27 Sep sobre nuevo centro de datos Oklahoma",
+      "priority": "P1",
+      "status": "done",
+      "lane": "Historical Backfill",
+      "date": "2026-09-27",
+      "acceptance": "Fuente primaria, fecha de anuncio separada de operación real, Reporter V2, pares JSON/RSS íntegros, ledger y CI verde.",
+      "evidenceCommit": "95f58ba9d6dc355c9a7fd01f72858e854f118678",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38101856248",
+        "https://lambda.ai/blog/new-lambda-data-center-in-oklahoma"
+      ],
+      "notes": "La jornada 27 Sep ahora cuenta con una noticia material original; su segunda auditoría abierta sigue pendiente."
     }
   ]
 }
