@@ -8,7 +8,7 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
-  "generatedFromNewsUpdatedAt": "2026-10-11T01:40:44.126Z",
+  "generatedFromNewsUpdatedAt": "2026-10-11T01:42:49.841Z",
   "generatedAt": "2026-10-11",
   "items": [
     {
@@ -1052,6 +1052,32 @@
       "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
     },
     {
+      "articleId": "claude-opus-5-5",
+      "eventKey": "claude-opus-5-5",
+      "date": "2026-09-22",
+      "company": "Anthropic",
+      "product": "Claude Opus 5.5",
+      "title": "Claude Opus 5.5: más capacidad agentiva, mejores controles y menor coste por trabajo",
+      "currentImage": "assets/hero.webp",
+      "currentAssetId": "gazette-generic-ai-hero-v1",
+      "currentReuseCount": 84,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "brief-ready",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-22/claude-opus-5-5.webp",
+      "brief": "Grabado de periódico antiguo de gran máquina de cálculo mecánica con diversos talleres de programación supervisados, tinta y papel sepia, sin logos ni texto ficticio.",
+      "sourceSummary": "Anthropic presentó el 22 de septiembre Opus 5.5, primer modelo de la familia Claude 5.5. Ofrece mejor desempeño en tareas complejas, una reducción anunciada del 40 % en coste por tarea típica frente a Opus 5 y salvaguardas para usos sensibles. Su precio API base es US$4 por millón de tokens de entrada y US$20 por millón de salida.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
       "articleId": "microsoft-eviltokens-ai-cybercrime-disruption-sep22-2026",
       "eventKey": "microsoft-dcu-eviltokens-infrastructure-seizure-disclosure-2026-09-22",
       "date": "2026-09-22",
@@ -1172,6 +1198,32 @@
       "desiredOutput": "assets/news/2026-09-27/lambda-mayes-county-oklahoma-ai-datacenter-plan-2026-09-27.webp",
       "brief": "Grabado periodístico del siglo XIX de edificios industriales de servidores en la pradera de Oklahoma, subestación eléctrica y circuito cerrado de agua; escena conceptual en tinta negra y sepia, sin texto ni arquitectura afirmada como exacta.",
       "sourceSummary": "Lambda comunicó el 27 de septiembre de 2026 planes para construir un centro de datos de inteligencia artificial en MidAmerica Industrial Park, condado de Mayes (Oklahoma). La empresa estima hasta 1.000 empleos de construcción, 100 puestos permanentes y unos US$500 millones de impuestos en diez años, cifras proyectadas que dependen de la ejecución del proyecto.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
+      "articleId": "claude-sonnet-5-5",
+      "eventKey": "claude-sonnet-5-5",
+      "date": "2026-09-28",
+      "company": "Anthropic",
+      "product": "Claude Sonnet 5.5",
+      "title": "Claude Sonnet 5.5 acelera el trabajo cotidiano con agentes y mantiene el precio base de Sonnet 5",
+      "currentImage": "assets/hero.webp",
+      "currentAssetId": "gazette-generic-ai-hero-v1",
+      "currentReuseCount": 84,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "brief-ready",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-28/claude-sonnet-5-5.webp",
+      "brief": "Grabado editorial antiguo de calculadora mecánica más veloz, pluma que prepara documentos y máquina que edita código con múltiples engranajes, papel sepia y sin marcas.",
+      "sourceSummary": "Anthropic lanzó Sonnet 5.5 el 28 de septiembre como modelo más rápido y eficiente para programación, documentos y herramientas. Según la compañía, genera respuestas más de un 30 % más rápido, conserva tarifas base de US$2 por millón de tokens de entrada y US$10 de salida y puede gastar hasta 30 % menos por tarea que Sonnet 5, dependiendo del trabajo.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
@@ -3392,32 +3444,6 @@
       "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
     },
     {
-      "articleId": "claude-opus-5-5",
-      "eventKey": "claude-opus-5-5",
-      "date": "2026-09-22",
-      "company": "Anthropic",
-      "product": "Claude Opus 5.5",
-      "title": "Opus 5.5 renueva la propuesta de Claude para tareas complejas",
-      "currentImage": "assets/hero.webp",
-      "currentAssetId": "gazette-generic-ai-hero-v1",
-      "currentReuseCount": 84,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "brief-ready",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-22/claude-opus-5-5.webp",
-      "brief": "Ilustración editorial de Claude Opus 5.5 como una gran máquina analítica resolviendo manuscritos técnicos, planos y código complejo en una mesa de ingeniería; composición densa y deliberada que comunique trabajo difícil y razonamiento profundo, no una instalación real. Grabado antiguo, tinta/sepia, sin texto, logos ni UI ficticia.",
-      "sourceSummary": "Anthropic estrena la familia 5.5 y destaca mejoras de rendimiento y costo.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
       "articleId": "gemini-connected-apps",
       "eventKey": "gemini-connected-apps",
       "date": "2026-09-23",
@@ -3434,32 +3460,6 @@
       "desiredOutput": "assets/news/2026-09-23/gemini-connected-apps.webp",
       "brief": "Crear una ilustración específica para “Gemini incorpora una nueva ola de aplicaciones conectadas”. El foco visual debe representar Connected Apps de Google y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "sourceSummary": "Google comienza a desplegar conexiones con herramientas de productividad y creación.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "claude-sonnet-5-5",
-      "eventKey": "claude-sonnet-5-5",
-      "date": "2026-09-28",
-      "company": "Anthropic",
-      "product": "Claude Sonnet 5.5",
-      "title": "Sonnet 5.5 apuesta por tareas cotidianas y una respuesta más rápida",
-      "currentImage": "assets/hero.webp",
-      "currentAssetId": "gazette-generic-ai-hero-v1",
-      "currentReuseCount": 84,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "brief-ready",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-28/claude-sonnet-5-5.webp",
-      "brief": "Ilustración editorial de Claude Sonnet 5.5 como una máquina de trabajo ágil en una redacción/laboratorio, coordinando documentos, código y varias tareas cotidianas a la vez; sensación de equilibrio entre velocidad y capacidad, no de supercomputadora monumental. Grabado antiguo, tinta negra y sepia, papel envejecido, sin texto ni logos, sin interfaces falsas ni apariencia fotográfica.",
-      "sourceSummary": "Anthropic presenta el segundo modelo de la familia Claude 5.5.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
