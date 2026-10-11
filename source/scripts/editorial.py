@@ -150,6 +150,10 @@ def validate(data):
         _asset(a['image'])
         for source in [a['source'], *a.get('relatedSources',[])]:
             _source(source)
+        # Existing legacy reports can be upgraded gradually. New content cannot
+        # quietly recreate the short-form backlog after the migration cutoff.
+        if a['date'] >= '2026-10-11' or a.get('coveredAt','') >= '2026-10-11':
+            assert a.get('articleVersion') == 2, 'New publications must use Reporter V2'
         if a.get('coveredAt'):
             assert date.fromisoformat(a['date']) <= date.fromisoformat(a['coveredAt']) <= date.today(), 'Invalid coverage timestamp'
         if a.get('announcedAt'):
