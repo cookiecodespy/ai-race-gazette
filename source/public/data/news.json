@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T00:39:49.853Z",
+  "updatedAt": "2026-10-11T00:41:42.771Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -11110,6 +11110,152 @@
       "watch": "Nuevos permisos, zona efectiva, flota, resultados de seguridad y plazos contrastados con la operación real."
     },
     {
+      "id": "perplexity-portable-computer-windows-local-agents-2026-09-14",
+      "eventKey": "perplexity-portable-computer-windows-rtx-launch-2026-09-14",
+      "articleVersion": 2,
+      "date": "2026-09-14",
+      "announcedAt": "2026-09-14",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "Perplexity",
+      "product": "Portable Computer para Windows",
+      "title": "Perplexity lleva Portable Computer a Windows: agentes locales con GPU RTX y tareas programadas",
+      "summary": "Perplexity anunció el 14 de septiembre Portable Computer para PC Windows compatibles con GPU NVIDIA RTX. El sistema ejecuta localmente modelo, arnés, orquestador y programador; el trabajo local no consume créditos de Computer, mientras consultas a la nube requieren autorización y condiciones diferentes.",
+      "tags": [
+        "Agentes",
+        "Modelos locales",
+        "Windows",
+        "Productos"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de computación y sistemas de inteligencia artificial; no fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado periodístico de ordenador Windows genérico con GPU de gran tamaño, cuadernos y archivos que permanecen dentro de un taller, conexión externa optativa a nubes representadas como engranajes separados; sin logos ni texto.",
+      "source": {
+        "name": "Perplexity · Portable Computer for Windows is here",
+        "url": "https://www.perplexity.ai/hub/blog/portable-computer-for-windows-is-here",
+        "publishedAt": "2026-09-14"
+      },
+      "body": [
+        "Perplexity extendió Portable Computer a la aplicación para Windows el 14 de septiembre de 2026. Hasta entonces el producto local había sido presentado para sistemas Linux vinculados al ecosistema NVIDIA DGX Spark. La novedad material consiste en poner el arnés de agentes, la coordinación de tareas y un modelo local sobre PC con GPU RTX compatibles, en lugar de depender permanentemente de un agente que opere en servidores remotos.",
+        "Portable Computer combina un modelo de IA ejecutado en el dispositivo, herramientas, un arnés de agente, orquestación y programación de tareas. Esta combinación es diferente de instalar un chatbot local que solo responde preguntas: puede recorrer documentos permitidos, emplear herramientas del escritorio y encadenar operaciones para producir un resultado. La utilidad depende de los permisos concedidos y de que la integración con aplicaciones esté configurada correctamente."
+      ],
+      "keyPoints": [
+        "Perplexity anunció el 14 de septiembre Portable Computer para PC Windows compatibles con GPU NVIDIA RTX. El sistema ejecuta localmente modelo, arnés, orquestador y programador; el trabajo local no consume créditos de Computer, mientras consultas a la nube requieren autorización y condiciones diferentes.",
+        "Windows con NVIDIA RTX elegibles",
+        "Una GPU RTX cualquiera no implica soporte garantizado."
+      ],
+      "quickTakeaways": [
+        "Perplexity anunció el 14 de septiembre Portable Computer para PC Windows compatibles con GPU NVIDIA RTX. El sistema ejecuta localmente modelo, arnés, orquestador y programador; el trabajo local no consume créditos de Computer, mientras consultas a la nube requieren autorización y condiciones diferentes.",
+        "Portable Computer combina un modelo de IA ejecutado en el dispositivo, herramientas, un arnés de agente, orquestación y programación de tareas.",
+        "Una GPU RTX cualquiera no implica soporte garantizado.",
+        "Confirmar compatibilidad de GPU y memoria antes de adquirir hardware."
+      ],
+      "sections": [
+        {
+          "heading": "El lanzamiento concreto del 14 de septiembre",
+          "kind": "report",
+          "paragraphs": [
+            "Perplexity extendió Portable Computer a la aplicación para Windows el 14 de septiembre de 2026. Hasta entonces el producto local había sido presentado para sistemas Linux vinculados al ecosistema NVIDIA DGX Spark. La novedad material consiste en poner el arnés de agentes, la coordinación de tareas y un modelo local sobre PC con GPU RTX compatibles, en lugar de depender permanentemente de un agente que opere en servidores remotos.",
+            "La empresa describe Portable Computer como una manera de trabajar con archivos privados y herramientas locales sin enviar cada paso del flujo a la nube. Eso no significa que cualquier uso del producto carezca de conexiones externas: la propia propuesta permite optar por búsqueda o modelos frontier remotos cuando la tarea necesita información actualizada o más capacidad. La distinción local/remoto debe ser explícita para interpretar su privacidad."
+          ]
+        },
+        {
+          "heading": "Qué hace el sistema completo en el equipo",
+          "kind": "technical",
+          "paragraphs": [
+            "Portable Computer combina un modelo de IA ejecutado en el dispositivo, herramientas, un arnés de agente, orquestación y programación de tareas. Esta combinación es diferente de instalar un chatbot local que solo responde preguntas: puede recorrer documentos permitidos, emplear herramientas del escritorio y encadenar operaciones para producir un resultado. La utilidad depende de los permisos concedidos y de que la integración con aplicaciones esté configurada correctamente.",
+            "La empresa puso como ejemplos procesamiento de archivos y flujos recurrentes. Una tarea programada podría reconciliar datos o preparar un resumen sin que el usuario deba repetir las mismas instrucciones manuales cada día. Sin embargo, que el flujo pueda ejecutarse automáticamente no convierte sus resultados en correctos por definición. En procesos financieros o con datos sensibles, deben existir controles de validación y límites sobre acciones externas."
+          ]
+        },
+        {
+          "heading": "Requisitos de GPU y memoria",
+          "kind": "report",
+          "paragraphs": [
+            "El anuncio menciona PC con GPU NVIDIA GeForce RTX o NVIDIA RTX PRO de modelos compatibles. La información de producto sitúa el umbral anunciado alrededor de 24 GB de memoria de vídeo para la configuración de agentes locales. Se debe comprobar el soporte específico antes de comprar hardware: tener una tarjeta RTX de cualquier generación o memoria inferior no garantiza que el modelo completo funcione dentro de las condiciones recomendadas.",
+            "El consumo real de memoria, la disponibilidad de controladores y la carga simultánea de otras aplicaciones afectan la experiencia. Un agente local largo puede mantener modelo, contexto y herramientas activos durante una operación. Por eso conviene distinguir requisito mínimo, rendimiento aceptable y capacidad para varios agentes concurrentes. El anuncio no ofrece una garantía universal de velocidad para todos los equipos que llevan una etiqueta RTX."
+          ]
+        },
+        {
+          "heading": "Privacidad, crédito y límites de la nube",
+          "kind": "practical",
+          "paragraphs": [
+            "Perplexity indicó que el trabajo realizado íntegramente en el equipo no consume créditos de Computer. Esto puede hacer más prácticos los flujos prolongados en archivos del usuario, aunque tampoco significa coste cero: siguen existiendo hardware, electricidad y mantenimiento local. Cuando se seleccionan servicios externos, modelos de terceros o una búsqueda web, cambian las condiciones y puede circular información conforme al servicio usado.",
+            "La afirmación de que los documentos permanecen locales debe evaluarse por operación y permiso. La aplicación puede integrar herramientas de escritorio y conectores con otros servicios; un archivo consultado localmente puede terminar resumido en un correo si el usuario autorizó ese flujo. Para datos comerciales es prudente comprobar qué paso se ejecuta en el PC, cuál utiliza una API remota y dónde quedan almacenados registros o resultados."
+          ]
+        },
+        {
+          "heading": "Diferencia frente a Perplexity Computer en la nube",
+          "kind": "report",
+          "paragraphs": [
+            "Computer ya permitía delegar tareas a modelos y herramientas remotas. Portable mantiene un patrón de trabajo agentivo pero sitúa el modelo y la coordinación básica dentro del ordenador. Esa ubicación importa porque una empresa puede necesitar analizar material confidencial sin transferirlo de forma predeterminada. También introduce restricciones de hardware y administración que una solución puramente web evita a costa de depender más de infraestructura ajena.",
+            "La empresa anunció la posibilidad de complementar Portable con Perplexity Search y más de quince modelos de frontera. Este modo híbrido permite reservar tareas acotadas para el modelo local y solicitar recursos externos cuando conviene. No hay que confundir esa flexibilidad con asegurar que el sistema nunca suba información ni con prometer que un modelo local pueda sustituir todas las capacidades de uno avanzado en la nube."
+          ]
+        },
+        {
+          "heading": "Adopción y evaluación práctica",
+          "kind": "analysis",
+          "paragraphs": [
+            "Antes de poner Portable Computer sobre tareas de trabajo, conviene probar un conjunto pequeño de documentos autorizados, tareas repetibles y criterios de calidad claros. Por ejemplo, comparar resultados de conciliación de archivos con referencias conocidas, revisar errores y medir memoria ocupada, duración y consumo. Las acciones que cambien archivos importantes deberían contar con copia y una forma de revertirlas.",
+            "Análisis Gazette: el anuncio acerca los agentes autónomos al ordenador personal, un movimiento distinto de aumentar el tamaño de los modelos ofrecidos como servicio. El atractivo no depende únicamente del rendimiento de inferencia; también importan aislamiento, visibilidad de las conexiones, mantenimiento y confiabilidad en trabajos de horas. La continuidad del producto deberá evaluarse con experiencia real de usuarios y compatibilidad documentada."
+          ]
+        }
+      ],
+      "executiveSummary": "Perplexity anunció el 14 de septiembre Portable Computer para PC Windows compatibles con GPU NVIDIA RTX. El sistema ejecuta localmente modelo, arnés, orquestador y programador; el trabajo local no consume créditos de Computer, mientras consultas a la nube requieren autorización y condiciones diferentes. El hito está documentado en la fuente original; las capacidades y cifras deben atribuirse al proveedor.",
+      "finalSummary": "Análisis Gazette: el anuncio acerca los agentes autónomos al ordenador personal, un movimiento distinto de aumentar el tamaño de los modelos ofrecidos como servicio. El atractivo no depende únicamente del rendimiento de inferencia; también importan aislamiento, visibilidad de las conexiones, mantenimiento y confiabilidad en trabajos de horas. La continuidad del producto deberá evaluarse con experiencia real de usuarios y compatibilidad documentada.",
+      "analysis": "Análisis Gazette: el resultado práctico de una arquitectura de agentes depende de límites de autorización, calidad verificable y condiciones reales de operación, no solo de una demostración.",
+      "watch": "Disponibilidad por plataforma, condiciones de uso, evaluaciones independientes, cambios técnicos y resultados operativos.",
+      "technicalDetails": [
+        {
+          "label": "Fecha",
+          "value": "14 septiembre 2026"
+        },
+        {
+          "label": "Plataforma",
+          "value": "Windows con NVIDIA RTX elegibles"
+        },
+        {
+          "label": "Ejecución",
+          "value": "Modelo, agente, orquestador y programador locales"
+        },
+        {
+          "label": "Créditos",
+          "value": "Trabajo enteramente local no consume créditos de Computer, según Perplexity"
+        }
+      ],
+      "availability": {
+        "status": "Disponible para equipos y planes compatibles según Perplexity",
+        "platforms": [
+          "Aplicación de Perplexity para Windows"
+        ],
+        "requirements": [
+          "GPU GeForce RTX o RTX PRO admitida",
+          "Comprobar memoria de vídeo y plan aplicable"
+        ],
+        "notes": [
+          "Los servicios cloud son optativos y poseen condiciones distintas; verificar documentación actual."
+        ]
+      },
+      "limitations": [
+        "Una GPU RTX cualquiera no implica soporte garantizado.",
+        "El procesamiento local no elimina el consumo eléctrico ni el coste del equipo.",
+        "El uso de conectores y servicios cloud puede transferir datos.",
+        "La automatización requiere supervisión en tareas sensibles."
+      ],
+      "practicalAdvice": [
+        "Confirmar compatibilidad de GPU y memoria antes de adquirir hardware.",
+        "Empezar con procesos reversibles y archivos de prueba.",
+        "Revisar permisos de cada conector y si hay inferencia externa.",
+        "Medir tiempo, calidad y coste completo en vez de solo créditos."
+      ],
+      "usefulFacts": [
+        "La versión anterior de Portable Computer se presentó para NVIDIA DGX Spark.",
+        "Portable incluye un programador de tareas local.",
+        "La empresa anunció acceso opcional a Perplexity Search y modelos remotos."
+      ]
+    },
+    {
       "id": "google-cloud-dataflow-blackwell-pause-resume-2026-09-14",
       "eventKey": "google-cloud-dataflow-blackwell-pause-resume-2026-09-14",
       "articleVersion": 2,
@@ -14659,6 +14805,154 @@
       ]
     },
     {
+      "id": "meta-muse-secure-vm-sentinel-agent-security-2026-09-08",
+      "eventKey": "meta-muse-secure-vm-sentinel-open-bug-bounty-security-architecture-2026-09-08",
+      "articleVersion": 2,
+      "date": "2026-09-08",
+      "announcedAt": "2026-09-08",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "Meta",
+      "product": "Muse Secure VM / Sentinel",
+      "title": "Meta revela la arquitectura de seguridad de Muse: máquina virtual aislada, Sentinel y permisos por acción",
+      "summary": "Meta detalló el 8 de septiembre su diseño para proteger el agente personal Muse: una máquina virtual por usuario, aislamiento del entorno del agente, credenciales fuera de su alcance y una autoridad independiente para conexiones externas. También abrió un programa de recompensas por fallos, con máximos comunicados de US$300.000.",
+      "tags": [
+        "Agentes",
+        "Seguridad",
+        "Infraestructura",
+        "Investigación"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de computación y sistemas de inteligencia artificial; no fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado industrial antiguo de un ordenador de agentes dentro de una jaula virtual, vigilante Sentinel externo, puertas y llaves que nunca entran en la jaula, tonos negros sepia, sin letras ni fotografías falsas.",
+      "source": {
+        "name": "Meta AI Research · How We Built Safety Into Muse",
+        "url": "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse",
+        "publishedAt": "2026-09-08"
+      },
+      "body": [
+        "El 8 de septiembre Meta publicó una explicación técnica de la seguridad de Muse, su agente personal capaz de navegar, ejecutar herramientas y trabajar sobre recursos conectados. No es simplemente una nota de disponibilidad del producto ni un nuevo modelo. El acontecimiento es la documentación pública de una arquitectura de privilegios, acompañada por la apertura de un programa de recompensas para reportar vulnerabilidades.",
+        "Meta describió que cada usuario comparte con su agente una máquina virtual dedicada en la nube. En ella existen un entorno de trabajo, navegador, archivos y procesos que permiten desarrollar tareas largas, herramientas y subagentes. La compañía explicó que el núcleo del agente, llamado internamente Hatch, se ejecuta dentro de una celda de aislamiento Linux y no obtiene el mismo acceso que los servicios sensibles del host."
+      ],
+      "keyPoints": [
+        "Meta detalló el 8 de septiembre su diseño para proteger el agente personal Muse: una máquina virtual por usuario, aislamiento del entorno del agente, credenciales fuera de su alcance y una autoridad independiente para conexiones externas. También abrió un programa de recompensas por fallos, con máximos comunicados de US$300.000.",
+        "Máquina virtual por usuario y celda systemd-nspawn",
+        "La arquitectura anunciada no equivale a una certificación de seguridad absoluta."
+      ],
+      "quickTakeaways": [
+        "Meta detalló el 8 de septiembre su diseño para proteger el agente personal Muse: una máquina virtual por usuario, aislamiento del entorno del agente, credenciales fuera de su alcance y una autoridad independiente para conexiones externas. También abrió un programa de recompensas por fallos, con máximos comunicados de US$300.000.",
+        "Meta describió que cada usuario comparte con su agente una máquina virtual dedicada en la nube.",
+        "La arquitectura anunciada no equivale a una certificación de seguridad absoluta.",
+        "Evitar dar a un agente permisos amplios sobre correo, archivos y pagos sin controles."
+      ],
+      "sections": [
+        {
+          "heading": "Por qué esta publicación merece una noticia independiente",
+          "kind": "report",
+          "paragraphs": [
+            "El 8 de septiembre Meta publicó una explicación técnica de la seguridad de Muse, su agente personal capaz de navegar, ejecutar herramientas y trabajar sobre recursos conectados. No es simplemente una nota de disponibilidad del producto ni un nuevo modelo. El acontecimiento es la documentación pública de una arquitectura de privilegios, acompañada por la apertura de un programa de recompensas para reportar vulnerabilidades.",
+            "Una aplicación que puede leer correo, manejar archivos y utilizar servicios externos reúne información privada con instrucciones procedentes de internet. Ese escenario introduce un riesgo particular: un documento o página maliciosos podrían intentar inducir al agente a actuar fuera de la intención del usuario. Meta señaló explícitamente que incluso modelos potentes pueden equivocarse y que el diseño debe reducir el daño cuando eso sucede."
+          ]
+        },
+        {
+          "heading": "La computadora aislada que ejecuta Muse",
+          "kind": "technical",
+          "paragraphs": [
+            "Meta describió que cada usuario comparte con su agente una máquina virtual dedicada en la nube. En ella existen un entorno de trabajo, navegador, archivos y procesos que permiten desarrollar tareas largas, herramientas y subagentes. La compañía explicó que el núcleo del agente, llamado internamente Hatch, se ejecuta dentro de una celda de aislamiento Linux y no obtiene el mismo acceso que los servicios sensibles del host.",
+            "El aislamiento emplea contenedores del tipo systemd-nspawn y controles del sistema operativo para limitar interfaces, capacidades y llamadas disponibles. Ser root dentro de la celda no equivale a ser administrador del host. El valor de esta separación es reducir las consecuencias de un error del modelo o de una orden maliciosa obtenida de contenido no confiable; no asegura que todas las clases de ataque sean imposibles."
+          ]
+        },
+        {
+          "heading": "Autenticación, conectores y política independiente",
+          "kind": "report",
+          "paragraphs": [
+            "Los servicios capaces de acceder a credenciales permanecen fuera de la celda principal. Meta distingue un almacén de secretos administrado por authd, trabajadores privsep para conectores y una autoridad Sentinel que aprueba acciones y solicitudes de red. El agente utiliza credenciales sustitutas o referencias controladas, mientras los tokens reales se insertan en un límite autorizado. Así, una instrucción maliciosa dentro del contexto no debería poder leer directamente las claves originales.",
+            "Sentinel examina qué conector se usará, qué método quiere ejecutar, el destino de una solicitud y el contexto de autorización. Puede permitir, bloquear o solicitar permiso explícito al usuario. Meta también explicó barreras contra solicitudes a infraestructura interna y validación del destino tras resolver DNS. Son decisiones de arquitectura anunciadas; su eficacia real necesita pruebas y auditorías independientes continuas."
+          ]
+        },
+        {
+          "heading": "Una aprobación no es solo un mensaje del chatbot",
+          "kind": "practical",
+          "paragraphs": [
+            "Cuando una acción requiere autorización, Meta dice que detiene la ejecución y presenta el detalle al usuario a través de la interfaz del cliente, no como una pregunta cuya respuesta pueda falsificarse fácilmente en la conversación del modelo. Las concesiones de permiso están vinculadas a un ámbito concreto: acción, conector, destino y, según el caso, sesión o plazo. La intención es que permitir leer una fuente no implique por defecto enviar información privada a cualquier tercero.",
+            "Esta separación resulta crucial para agentes que efectúan compras, administran aplicaciones o interactúan con datos de trabajo. Meta enfatizó controles de acceso de privilegios mínimos y un tratamiento especial de correos con enlaces para restablecer contraseñas o códigos de un solo uso. El artículo no permite concluir que el producto esté exento de errores, solo que la arquitectura añade límites por debajo del modelo."
+          ]
+        },
+        {
+          "heading": "Defensas frente a inyección de instrucciones",
+          "kind": "report",
+          "paragraphs": [
+            "Meta combina entrenamiento del modelo, etiquetado de datos externos como información no confiable, clasificadores de ataques y red teaming. El punto central es que un texto encontrado en una página web puede ser relevante para completar una tarea sin transformarse en una orden con autoridad. La empresa colocó parte de sus detectores y barreras fuera del proceso principal del agente, buscando que este no pueda desactivarlos mediante una respuesta generada.",
+            "El navegador introduce una frontera adicional. La compañía detalló un broker separado y controles para evitar que el agente maneje directamente credenciales o interfaces privilegiadas del navegador. También expuso una política de permisos para transferir datos o completar operaciones sensibles. Son afirmaciones de implementación de Meta; un auditor externo debería validar su resistencia ante ataques complejos y variantes nuevas."
+          ]
+        },
+        {
+          "heading": "Recompensas, privacidad y límites abiertos",
+          "kind": "analysis",
+          "paragraphs": [
+            "El 8 de septiembre Meta anunció un programa abierto de divulgación responsable con recompensas de hasta US$300.000 por fallos válidos, incluyendo un límite específico de US$130.000 para ciertas inyecciones de instrucciones que afectan a un usuario. Estos son máximos condicionados por las reglas del programa, no pagos garantizados. La empresa presentó además trabajo en una futura VM confidencial como línea de investigación, sin afirmar que el modo estuviera disponible para todo público ese día.",
+            "Análisis Gazette: el cambio estratégico es tratar al asistente autónomo como software que procesa contenido adversarial, no como un modelo al que se pide ser cuidadoso. El aislamiento, los permisos externos y el manejo restringido de secretos pueden ser tan importantes como el entrenamiento. La evaluación futura debe observar incidentes reales, transparencia de auditorías, usabilidad de permisos y el coste operativo de estas defensas."
+          ]
+        }
+      ],
+      "executiveSummary": "Meta detalló el 8 de septiembre su diseño para proteger el agente personal Muse: una máquina virtual por usuario, aislamiento del entorno del agente, credenciales fuera de su alcance y una autoridad independiente para conexiones externas. También abrió un programa de recompensas por fallos, con máximos comunicados de US$300.000. El hito está documentado en la fuente original; las capacidades y cifras deben atribuirse al proveedor.",
+      "finalSummary": "Análisis Gazette: el cambio estratégico es tratar al asistente autónomo como software que procesa contenido adversarial, no como un modelo al que se pide ser cuidadoso. El aislamiento, los permisos externos y el manejo restringido de secretos pueden ser tan importantes como el entrenamiento. La evaluación futura debe observar incidentes reales, transparencia de auditorías, usabilidad de permisos y el coste operativo de estas defensas.",
+      "analysis": "Análisis Gazette: el resultado práctico de una arquitectura de agentes depende de límites de autorización, calidad verificable y condiciones reales de operación, no solo de una demostración.",
+      "watch": "Disponibilidad por plataforma, condiciones de uso, evaluaciones independientes, cambios técnicos y resultados operativos.",
+      "technicalDetails": [
+        {
+          "label": "Anuncio",
+          "value": "8 septiembre 2026"
+        },
+        {
+          "label": "Aislamiento",
+          "value": "Máquina virtual por usuario y celda systemd-nspawn"
+        },
+        {
+          "label": "Credenciales",
+          "value": "Authd y trabajadores privsep separados del agente"
+        },
+        {
+          "label": "Autorización",
+          "value": "Sentinel para conectores y salida de red"
+        },
+        {
+          "label": "Recompensas",
+          "value": "Hasta US$300.000, según condiciones de Meta"
+        }
+      ],
+      "availability": {
+        "status": "Arquitectura descrita para Muse en su lanzamiento; límites según producto y cuenta",
+        "platforms": [
+          "Muse, clientes móviles y web"
+        ],
+        "requirements": [
+          "Conexiones autorizadas y permisos específicos"
+        ],
+        "notes": [
+          "Muse Confidential VM se describió como trabajo futuro, no disponibilidad general."
+        ]
+      },
+      "limitations": [
+        "La arquitectura anunciada no equivale a una certificación de seguridad absoluta.",
+        "El informe es una descripción técnica del proveedor.",
+        "El programa de recompensas paga según vulnerabilidad y criterios.",
+        "Meta reconoce que el agente puede cometer errores."
+      ],
+      "practicalAdvice": [
+        "Evitar dar a un agente permisos amplios sobre correo, archivos y pagos sin controles.",
+        "Comprobar cómo se almacenan secretos y quién autoriza salidas de red.",
+        "Usar entornos de prueba y datos limitados al evaluar conectores."
+      ],
+      "usefulFacts": [
+        "Meta declaró que el agente principal no recibe las credenciales originales.",
+        "Sentinel puede bloquear o pedir confirmación para acciones externas.",
+        "Los controles del navegador se administran fuera de la celda principal."
+      ]
+    },
+    {
       "id": "google-gtig-ai-threat-tracker-agents-2026-09-08",
       "eventKey": "google-gtig-ai-threat-tracker-agents-2026-09-08",
       "articleVersion": 2,
@@ -16862,7 +17156,7 @@
     {
       "date": "2026-09-08",
       "status": "partial",
-      "verifiedArticles": 4
+      "verifiedArticles": 5
     },
     {
       "date": "2026-09-09",
@@ -16892,7 +17186,7 @@
     {
       "date": "2026-09-14",
       "status": "partial",
-      "verifiedArticles": 4
+      "verifiedArticles": 5
     },
     {
       "date": "2026-09-15",
