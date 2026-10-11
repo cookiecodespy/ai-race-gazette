@@ -47,7 +47,7 @@
     {
       "id": "P07",
       "title": "22–30 septiembre: reconstrucción y legacy",
-      "status": "queued",
+      "status": "in_progress",
       "gate": "Nueve fechas cerradas con fuentes y piezas antiguas enriquecidas"
     },
     {
@@ -215,7 +215,7 @@
       "status": "queued",
       "lane": "Historical Backfill",
       "acceptance": "Siete fechas complete/reviewed-no-material-news con evidencia y Reporter V2",
-      "notes": "El 15,17,21 septiembre ahora contienen notas verificadas; 16,18,19,20 sin cobertura, auditarlas antes de cerrar P06."
+      "notes": "15 Sep contiene Waymo-Allianz y Google Retrieve-for-Train; 17 Sep Waymo Singapur, 18 Sep Google MilleMiglia y 21 Sep Microsoft difusión. Falta 16,19,20 Sep y auditoría inversa de todos los días."
     },
     {
       "id": "H-2230-GATE",
@@ -224,7 +224,8 @@
       "priority": "P0",
       "status": "queued",
       "lane": "Historical Backfill",
-      "acceptance": "Nueve fechas cerradas y artículos previos enriquecidos"
+      "acceptance": "Nueve fechas cerradas y artículos previos enriquecidos",
+      "notes": "El 24 y 25 Sep ahora tienen reportajes nuevos, pero faltan otras fechas, otras compañías y auditoría de doble pasada. No cerrar el gate por publicaciones parciales."
     },
     {
       "id": "H-OCT-GATE",
@@ -900,6 +901,35 @@
         "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38099084180"
       ],
       "notes": "Primera mitad commit 725ee9941dc0bf78a022d3fca1629bc506eed8f7. Legacy disminuye de 47 a 43."
+    },
+    {
+      "id": "H-P06-GOOGLE-RESEARCH-SEP15-18",
+      "phase": "P06",
+      "title": "Recuperar investigaciones Google sobre búsqueda rápida y logística",
+      "priority": "P0",
+      "status": "done",
+      "lane": "Historical Backfill",
+      "acceptance": "Retrieve-for-Train (15 Sep) y MilleMiglia (18 Sep), Reporter V2, fuente primaria y publicación CI validada.",
+      "evidenceCommit": "5c5e00d8da126c378fe638a49d304db648df7e96",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38099838309"
+      ],
+      "notes": "Días 15 y 18 aún partial hasta doble investigación completa."
+    },
+    {
+      "id": "H-P07-GOOGLE-MICROSOFT-SEP24-25",
+      "phase": "P07",
+      "title": "Recuperar Google vídeo largo y Microsoft Code/Autopilot",
+      "priority": "P0",
+      "status": "done",
+      "lane": "Historical Backfill",
+      "acceptance": "Reportajes separados para investigación Google 24 Sep y Microsoft Copilot Code y Autopilot 25 Sep, con preview y acceso distinguidos, sin declarar cierre diario.",
+      "evidenceCommit": "2f1d4dcbb5ea30c066644ca44453d32f643af3a0",
+      "verifiedEvidence": [
+        "https://research.google/blog/coherent-long-form-video-generation/",
+        "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
+      ],
+      "notes": "La infraestructura CI de la publicación se revisa tras el commit. Fechas siguen partial hasta auditoría inversa."
     }
   ]
 }

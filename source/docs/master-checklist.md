@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 66 tareas; 28 completadas; 6 en curso; 30 pendientes o bloqueadas; 2 descartadas con razón.
+- 6 fases; 68 tareas; 30 completadas; 6 en curso; 30 pendientes o bloqueadas; 2 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -121,13 +121,21 @@
   - Criterio: Waymo y Allianz, Waymo Singapur y Microsoft Global AI Diffusion publicados con evidencia y ledger parcial, sin declarar semana completa.
   - Commit: `d66d323c6be623252bdbba6f64a122ef0b2ceb95`
   - Evidencia: https://blogs.microsoft.com/on-the-issues/2026/09/21/the-continued-state-of-global-ai-diffusion-in-2026/
+- [x] **H-P06-GOOGLE-RESEARCH-SEP15-18** · P0 · done — Recuperar investigaciones Google sobre búsqueda rápida y logística
+  - Criterio: Retrieve-for-Train (15 Sep) y MilleMiglia (18 Sep), Reporter V2, fuente primaria y publicación CI validada.
+  - Commit: `5c5e00d8da126c378fe638a49d304db648df7e96`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38099838309
 
 ## P07 — 22–30 septiembre: reconstrucción y legacy
 
-**Estado:** queued. **Gate:** Nueve fechas cerradas con fuentes y piezas antiguas enriquecidas
+**Estado:** in_progress. **Gate:** Nueve fechas cerradas con fuentes y piezas antiguas enriquecidas
 
 - [ ] **H-2230-GATE** · P0 · queued — Reconstruir 22–30 septiembre
   - Criterio: Nueve fechas cerradas y artículos previos enriquecidos
+- [x] **H-P07-GOOGLE-MICROSOFT-SEP24-25** · P0 · done — Recuperar Google vídeo largo y Microsoft Code/Autopilot
+  - Criterio: Reportajes separados para investigación Google 24 Sep y Microsoft Copilot Code y Autopilot 25 Sep, con preview y acceso distinguidos, sin declarar cierre diario.
+  - Commit: `2f1d4dcbb5ea30c066644ca44453d32f643af3a0`
+  - Evidencia: https://research.google/blog/coherent-long-form-video-generation/
 
 ## P08 — Octubre hasta la fecha y Newsroom continua
 
