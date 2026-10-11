@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 82 tareas; 46 completadas; 9 en curso; 25 pendientes o bloqueadas; 2 descartadas con razón.
+- 6 fases; 82 tareas; 50 completadas; 8 en curso; 22 pendientes o bloqueadas; 2 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -217,14 +217,17 @@
   - Criterio: Pipeline de imágenes, permisos y costes probados antes de activar
 - [ ] **VIS-P0-ORIGINALS** · P0 · queued — Lote de grabados específicos para reportajes prioritarios
   - Criterio: Resolver briefs P0 con WebP originales, credit/alt y prueba visual; reducir las 46 reutilizaciones hero.
-- [ ] **VIS-REUSE-RULES** · P1 · queued — Política cuantificada de reutilización visual
+- [x] **VIS-REUSE-RULES** · P1 · done — Política cuantificada de reutilización visual
   - Criterio: Definir presupuesto visual, tipos de grabado, niveles de especificidad y umbral de repetición con QA.
+  - Commit: `a6f4c5f888b9f8242aaa0b00169cd3644ed9a7f8`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38162466356
 - [x] **ED-LEGACY-BATCH** · P0 · done — Migración Reporter V2 por lotes de artículos antiguos
   - Criterio: Cerrar historias legacy por semana/actor, revisar fuentes y no alterar identificadores ni inventar contenido.
   - Commit: `91ce03e3bf82a26736cce566f8626ab0946f291c`
-- [ ] **VIS-AUTO-QUEUE-REFRESH** · P1 · in_progress — Sincronizar cola visual tras publicaciones Newsroom
+- [x] **VIS-AUTO-QUEUE-REFRESH** · P1 · done — Sincronizar cola visual tras publicaciones Newsroom
   - Criterio: Refrescar image-queue y asset-manifest automáticamente, sin pisar noticias ni commits vacíos y con tres ejecuciones validadas.
-  - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798603043
+  - Commit: `be7147f4864941b631c42709e260faf6d1f9cfb1`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38162504254
 - [x] **ED-P09-V3-FOUR-LEGACY** · P0 · done — Migrar cuatro artículos cortos originales del 1–2 septiembre
   - Criterio: Waymo, Meta Muse Voice, Perplexity Hybrid Mac y Meta Muse Spark migrados a Reporter V2 conservando IDs y fuentes originales.
   - Commit: `96f2141a2f6084dc41833f5ccd111af7b220616a`
@@ -260,8 +263,10 @@
   - Criterio: Registrar fuentes, categorías, discovery y pasada inversa por fecha; cerrar solo con evidencias verificadas.
 - [ ] **QA-CLAIMS-SAMPLING** · P0 · queued — Auditoría cruzada de fechas, precios, disponibilidad y fuentes
   - Criterio: Reabrir las fuentes del archivo completo, contrastar claims del proveedor, registrar errores y correcciones.
-- [ ] **QA-EVENT-DEDUP** · P1 · queued — Revisar eventos distintos con una misma URL
+- [x] **QA-EVENT-DEDUP** · P1 · done — Revisar eventos distintos con una misma URL
   - Criterio: Evaluar duplicados semánticos en historias con fuente principal común sin fusionar eventos verdaderamente independientes.
+  - Commit: `812c245cc217705297ef1e1cb2f5adfc8f9ee72a`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/blob/main/source/docs/dedup-audit-v5-2026-10-11.md
 - [x] **QA-HTTP-SMOKE** · P0 · done — Smoke tests públicos de artículos, RSS e imágenes
   - Criterio: Comprobar HTTP 200, assets, navegación móvil y RSS desplegado tras publicación; incluir URLs concretas.
   - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798281530
@@ -290,8 +295,10 @@
 - [x] **QA-RSS-SEMANTICS** · P1 · done — Validar coherencia semántica RSS con cada artículo
   - Criterio: RSS principal y espejo coinciden en títulos, resúmenes, URL de origen, fecha y enlaces de todas las noticias; pruebas de regresión que rechazan cambios desincronizados.
   - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798463907
-- [ ] **OPS-GAZETTE-CUTOVER** · P0 · blocked — Confirmar tarea ChatGPT y cerrar separación del portafolio
+- [x] **OPS-GAZETTE-CUTOVER** · P0 · done — Confirmar tarea ChatGPT y cerrar separación del portafolio
   - Criterio: Una sola tarea horaria con destino exclusivo ai-race-gazette, última conciliación de ambos main, Pages/CI verificados y PR #9 fusionado sin cambiar el portafolio.
+  - Commit: `9573096bf596ab37b0a4eab8a4bb836d47eaaa3f`
+  - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/commit/7cc3743d0251ca9e14b809c36d15dc1631085921
 - [x] **ARCH-UI-MODULES-V4** · P1 · done — Separar la interfaz en componentes autónomos sin regresiones
   - Criterio: App.jsx, Article, Coverage y ArchivePieces desacoplados; pruebas React/Playwright responsive y publicación build aprobadas.
   - Commit: `fe224f6ae097fd19acd4315d879e52151ba9218c`

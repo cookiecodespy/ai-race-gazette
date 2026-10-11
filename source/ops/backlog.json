@@ -605,9 +605,14 @@
       "phase": "P10",
       "title": "Revisar eventos distintos con una misma URL",
       "priority": "P1",
-      "status": "queued",
+      "status": "done",
       "lane": "Editor-in-Chief",
-      "acceptance": "Evaluar duplicados semánticos en historias con fuente principal común sin fusionar eventos verdaderamente independientes."
+      "acceptance": "Evaluar duplicados semánticos en historias con fuente principal común sin fusionar eventos verdaderamente independientes.",
+      "evidenceCommit": "812c245cc217705297ef1e1cb2f5adfc8f9ee72a",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/blob/main/source/docs/dedup-audit-v5-2026-10-11.md"
+      ],
+      "notes": "V5: 156 IDs y eventKeys únicos. Cuatro URLs compartidas por nueve piezas, productos o vías de acceso distintos, verificadas con la fuente oficial. Otras URLs y claims continúan en tareas separadas."
     },
     {
       "id": "QA-HTTP-SMOKE",
@@ -666,9 +671,14 @@
       "phase": "P09",
       "title": "Política cuantificada de reutilización visual",
       "priority": "P1",
-      "status": "queued",
+      "status": "done",
       "lane": "Visual Desk",
-      "acceptance": "Definir presupuesto visual, tipos de grabado, niveles de especificidad y umbral de repetición con QA."
+      "acceptance": "Definir presupuesto visual, tipos de grabado, niveles de especificidad y umbral de repetición con QA.",
+      "evidenceCommit": "a6f4c5f888b9f8242aaa0b00169cd3644ed9a7f8",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38162466356"
+      ],
+      "notes": "Lead shortlist estable: 29 elegidos, uno ya terminado y 28 P0. Restantes P1 siguen pendientes, no se eliminaron. Guardrail real de <=30% de reutilizaciones de imagen dominante. Build y tests PASS. Producción artística sigue bloqueando v1.0."
     },
     {
       "id": "ED-LEGACY-BATCH",
@@ -712,13 +722,16 @@
       "phase": "P09",
       "title": "Sincronizar cola visual tras publicaciones Newsroom",
       "priority": "P1",
-      "status": "in_progress",
+      "status": "done",
       "lane": "Visual Desk / CI",
       "acceptance": "Refrescar image-queue y asset-manifest automáticamente, sin pisar noticias ni commits vacíos y con tres ejecuciones validadas.",
-      "notes": "Workflow successfully refreshed 71 stories in production (commit ae56c124); no subsequent Newsroom-triggered publish observed yet. Keep in_progress until live news event confirms auto-trigger and no-op.",
+      "notes": "Tres Sync Visual Queue PASS, incluido refresco en cambios de editorial-priority. Al cierre de control: 156 artículos, 28 P0, 127 P1 y 1 completo, cola sincronizada con news.updatedAt.",
       "verifiedEvidence": [
-        "https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798603043"
-      ]
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38162504254",
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38147025108",
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38138912845"
+      ],
+      "evidenceCommit": "be7147f4864941b631c42709e260faf6d1f9cfb1"
     },
     {
       "id": "QA-MAJOR-STORY-CORROBORATION",
@@ -846,13 +859,18 @@
       "phase": "P10",
       "title": "Confirmar tarea ChatGPT y cerrar separación del portafolio",
       "priority": "P0",
-      "status": "blocked",
+      "status": "done",
       "lane": "Arquitectura / QA + ChatGPT Newsroom",
       "acceptance": "Una sola tarea horaria con destino exclusivo ai-race-gazette, última conciliación de ambos main, Pages/CI verificados y PR #9 fusionado sin cambiar el portafolio.",
       "evidence": [
         "docs/operations-and-recovery.md",
         "https://github.com/cookiecodespy/cookiecodespy.github.io/pull/9"
-      ]
+      ],
+      "evidenceCommit": "9573096bf596ab37b0a4eab8a4bb836d47eaaa3f",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/cookiecodespy.github.io/commit/7cc3743d0251ca9e14b809c36d15dc1631085921"
+      ],
+      "notes": "Tarea horaria única AI Race Gazette Newsroom ID 6ac671bed2e8819184ed6fce0a20e531 activa con repositorio exclusivo cookiecodespy/ai-race-gazette/main; última ejecución comprobada 2026-10-11T17:17:52Z. Tarea vieja desactivada. Portafolio preservado, raíz solo index.html SHA 4ce9eaa66cefeded9599c76aa1b27e647bdf3ed4 y .gitignore. Autonomía/no-op sigue en OPS-RUN-PROOF."
     },
     {
       "id": "H-SEP12-JUMPSTART",
