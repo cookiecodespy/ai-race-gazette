@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {filterArticles,groupEditions,sortArticles,monthLabel,articleWordCount,estimatedReadingMinutes} from '../src/news.js';
+import {filterArticles,groupEditions,sortArticles,monthLabel,articleWordCount,estimatedReadingMinutes,rankFacets} from '../src/news.js';
 const articles=[{date:'2026-10-07',company:'Google',title:'Edición de imágenes',summary:'Modelo nuevo',tags:['Imágenes']},{date:'2026-09-06',company:'OpenAI',title:'API para agentes',summary:'Desarrollo',tags:['Agentes']}];
 test('Search handles accents and requires every query word',()=>{assert.equal(filterArticles(articles,{query:'edicion imagenes'}).length,1);assert.equal(filterArticles(articles,{query:'google agentes'}).length,0);});
 test('Company, month and topic filters combine',()=>{assert.equal(filterArticles(articles,{company:'Google',month:'2026-09'}).length,0);assert.equal(filterArticles(articles,{topic:'Agentes',month:'2026-09'}).length,1);});
@@ -37,4 +37,16 @@ test('Edition grouping stays stable for many articles without modifying the orig
   assert.ok(edition.articles.every(a=>a.date===edition.date));
  }
  assert.deepEqual(grouped.map(e=>e.date),[...grouped.map(e=>e.date)].sort().reverse());
+});
+
+test('facet ranking keeps every company and topic but ranks popular ones first',()=>{
+ const data=[
+ {company:'Minor',tags:['Rare','Modelos']},
+ {company:'Google',tags:['Modelos']},
+ {company:'Google',tags:['Agentes','Modelos']},
+ {company:'Anthropic',tags:['Agentes']}];
+ assert.deepEqual(rankFacets(data,'company').map(x=>x.value),['Google','Anthropic','Minor']);
+ assert.deepEqual(rankFacets(data,'tags').map(x=>x.value),['Modelos','Agentes','Rare']);
+ assert.equal(rankFacets(data,'tags').find(x=>x.value==='Rare').count,1);
+ assert.equal(filterArticles(data.map(a=>({...a,date:'2026-10-11',title:'',summary:''})),{company:'Minor',topic:'Rare'}).length,1);
 });
