@@ -8,9 +8,61 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
-  "generatedFromNewsUpdatedAt": "2026-10-11T01:20:57.286Z",
+  "generatedFromNewsUpdatedAt": "2026-10-11T01:22:43.811Z",
   "generatedAt": "2026-10-11",
   "items": [
+    {
+      "articleId": "crowdstrike-falcon-guardian",
+      "eventKey": "crowdstrike-falcon-guardian",
+      "date": "2026-09-01",
+      "company": "CrowdStrike",
+      "product": "Falcon Guardian",
+      "title": "Falcon Guardian lleva detección y respuesta al comportamiento de agentes",
+      "currentImage": "assets/hero.webp",
+      "currentAssetId": "gazette-generic-ai-hero-v1",
+      "currentReuseCount": 84,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-01/crowdstrike-falcon-guardian.webp",
+      "brief": "Grabado de gabinete de vigilancia del siglo XIX con agentes mecánicos trabajando en escritorios y centinelas que monitorean llaves y acciones, estilo prensa antigua sepia, sin logos ni diagramas engañosos.",
+      "sourceSummary": "CrowdStrike presenta una capa de observabilidad y control para agentes de IA que actúan sobre sistemas empresariales.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
+      "articleId": "gemini-agentic-video",
+      "eventKey": "gemini-agentic-video",
+      "date": "2026-09-01",
+      "company": "Google",
+      "product": "Agentic video understanding",
+      "title": "Gemini empieza a explorar videos de forma agentiva",
+      "currentImage": "assets/google.webp",
+      "currentAssetId": "gazette-google-architecture-v1",
+      "currentReuseCount": 24,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-01/gemini-agentic-video.webp",
+      "brief": "Grabado en cobre decimonónico de un autómata con lupa que observa selectivamente fotogramas de una película enrollada, partes temporales y ondas sonoras en escritorio, sin texto ni marcas.",
+      "sourceSummary": "Google incorpora una estrategia que decide qué segmentos inspeccionar con mayor detalle en vez de procesar cada video de forma uniforme.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
     {
       "articleId": "google-mapl-emit-methane-satellite-2026-09-01",
       "eventKey": "google-mapl-emit-methane-satellite-2026-09-01",
@@ -2586,32 +2638,6 @@
       "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
     },
     {
-      "articleId": "crowdstrike-falcon-guardian",
-      "eventKey": "crowdstrike-falcon-guardian",
-      "date": "2026-09-01",
-      "company": "CrowdStrike",
-      "product": "Falcon Guardian",
-      "title": "Falcon Guardian lleva detección y respuesta al comportamiento de agentes",
-      "currentImage": "assets/hero.webp",
-      "currentAssetId": "gazette-generic-ai-hero-v1",
-      "currentReuseCount": 84,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-01/crowdstrike-falcon-guardian.webp",
-      "brief": "Crear una ilustración específica para “Falcon Guardian lleva detección y respuesta al comportamiento de agentes”. El foco visual debe representar Falcon Guardian de CrowdStrike y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "CrowdStrike presenta una capa de observabilidad y control para agentes de IA que actúan sobre sistemas empresariales.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
       "articleId": "crowdstrike-safemind",
       "eventKey": "crowdstrike-safemind",
       "date": "2026-09-01",
@@ -2628,32 +2654,6 @@
       "desiredOutput": "assets/news/2026-09-01/crowdstrike-safemind.webp",
       "brief": "Crear una ilustración específica para “CrowdStrike presenta SafeMind, modelos especializados en ciberseguridad”. El foco visual debe representar SafeMind de CrowdStrike y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "sourceSummary": "La familia combina modelos y harnesses orientados a tareas defensivas y ofensivas bajo controles de acceso.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "gemini-agentic-video",
-      "eventKey": "gemini-agentic-video",
-      "date": "2026-09-01",
-      "company": "Google",
-      "product": "Agentic video understanding",
-      "title": "Gemini empieza a explorar videos de forma agentiva",
-      "currentImage": "assets/google.webp",
-      "currentAssetId": "gazette-google-architecture-v1",
-      "currentReuseCount": 24,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-01/gemini-agentic-video.webp",
-      "brief": "Crear una ilustración específica para “Gemini empieza a explorar videos de forma agentiva”. El foco visual debe representar Agentic video understanding de Google y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "Google incorpora una estrategia que decide qué segmentos inspeccionar con mayor detalle en vez de procesar cada video de forma uniforme.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
