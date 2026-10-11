@@ -8,7 +8,7 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
-  "generatedFromNewsUpdatedAt": "2026-10-11T11:39:32.611Z",
+  "generatedFromNewsUpdatedAt": "2026-10-11T11:41:31.341Z",
   "generatedAt": "2026-10-11",
   "items": [
     {
@@ -454,6 +454,32 @@
       "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
     },
     {
+      "articleId": "qwen3-8-max-0902",
+      "eventKey": "qwen3-8-max-0902",
+      "date": "2026-09-02",
+      "company": "Alibaba",
+      "product": "Qwen3.8-Max-0902",
+      "title": "Alibaba actualiza Qwen3.8-Max para código y agentes de largo horizonte",
+      "currentImage": "assets/hero.webp",
+      "currentAssetId": "gazette-generic-ai-hero-v1",
+      "currentReuseCount": 87,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "brief-ready",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-02/qwen3-8-max-0902.webp",
+      "brief": "Grabado editorial de ingeniería antigua: una máquina de cálculo rodeada de desarrolladores que conectan varias herramientas, planos y gráficos, con un archivador de versiones fechado simbólicamente pero sin texto legible. Papel de diario gastado, tinta negra sepia, 3:2, sin marcas, interfaces falsas ni benchmark inventado.",
+      "sourceSummary": "El snapshot del 2 de septiembre amplía la propuesta de Qwen para programación, contexto largo y colaboración entre herramientas.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
       "articleId": "wonderful-series-c-2026",
       "eventKey": "wonderful-series-c-2026",
       "date": "2026-09-02",
@@ -522,6 +548,32 @@
       "desiredOutput": "assets/news/2026-09-03/grok-bot-enterprise.webp",
       "brief": "Ilustración tipo xilografía de periódico antiguo: varias figuras de asistentes mecánicos trabajan en mesas separadas de oficina, cada una con tareas distintas, mientras una persona supervisa mediante cerraduras y un libro de registro simbólico. Tinta negra y sepia, papel envejecido, sin marca corporativa o interfaz inventada, sin texto incrustado, formato 3:2.",
       "sourceSummary": "La oferta añade agentes con computadoras en la nube, controles organizacionales y acceso administrado para equipos.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
+      "articleId": "ifm-k2-horizon",
+      "eventKey": "ifm-k2-horizon",
+      "date": "2026-09-03",
+      "company": "IFM",
+      "product": "K2 Horizon",
+      "title": "IFM publica K2 Horizon como familia abierta de modelos",
+      "currentImage": "assets/hero.webp",
+      "currentAssetId": "gazette-generic-ai-hero-v1",
+      "currentReuseCount": 87,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-03/ifm-k2-horizon.webp",
+      "brief": "Grabado antiguo científico: una fila de seis máquinas de tamaños crecientes alrededor de una biblioteca de planos, cuadernos y engranajes abiertos a investigadores; resaltar ciencia abierta y familia escalable, no representar supuestas máquinas reales. Tinta negra y sepia, papel envejecido, 3:2, sin cifras o textos incrustados.",
+      "sourceSummary": "La colección cubre varios tamaños y acompaña los modelos con código y materiales de entrenamiento para facilitar reproducción e investigación.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
@@ -3798,58 +3850,6 @@
       "desiredOutput": "assets/news/2026-09-01/crowdstrike-safemind.webp",
       "brief": "Crear una ilustración específica para “CrowdStrike presenta SafeMind, modelos especializados en ciberseguridad”. El foco visual debe representar SafeMind de CrowdStrike y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "sourceSummary": "La familia combina modelos y harnesses orientados a tareas defensivas y ofensivas bajo controles de acceso.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "qwen3-8-max-0902",
-      "eventKey": "qwen3-8-max-0902",
-      "date": "2026-09-02",
-      "company": "Alibaba",
-      "product": "Qwen3.8-Max-0902",
-      "title": "Alibaba actualiza Qwen3.8-Max para código y agentes de largo horizonte",
-      "currentImage": "assets/hero.webp",
-      "currentAssetId": "gazette-generic-ai-hero-v1",
-      "currentReuseCount": 87,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "brief-ready",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-02/qwen3-8-max-0902.webp",
-      "brief": "Ilustración editorial para Qwen3.8-Max-0902: un largo manuscrito de código atraviesa varias herramientas y brazos mecánicos especializados antes de llegar a una salida final, simbolizando contexto largo, programación y colaboración entre herramientas/agentes. Grabado periodístico antiguo, tinta/sepia, sin caricaturas culturales, logos ni texto incrustado.",
-      "sourceSummary": "El snapshot del 2 de septiembre amplía la propuesta de Qwen para programación, contexto largo y colaboración entre herramientas.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "ifm-k2-horizon",
-      "eventKey": "ifm-k2-horizon",
-      "date": "2026-09-03",
-      "company": "IFM",
-      "product": "K2 Horizon",
-      "title": "IFM publica K2 Horizon como familia abierta de modelos",
-      "currentImage": "assets/hero.webp",
-      "currentAssetId": "gazette-generic-ai-hero-v1",
-      "currentReuseCount": 87,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-03/ifm-k2-horizon.webp",
-      "brief": "Crear una ilustración específica para “IFM publica K2 Horizon como familia abierta de modelos”. El foco visual debe representar K2 Horizon de IFM y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "La colección cubre varios tamaños y acompaña los modelos con código y materiales de entrenamiento para facilitar reproducción e investigación.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
