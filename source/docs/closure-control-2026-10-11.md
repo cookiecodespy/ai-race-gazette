@@ -26,7 +26,7 @@
 ## Brechas que impiden cerrar v1.0
 
 1. **Histórico P05–P08 — P0:** doble auditoría real de cada fecha: fuentes primarias, discovery abierto, categorías, candidatos descartados y revisión inversa. No marcar fechas `complete` sin evidencia; primero 8–14 Sep, luego 15–21, 22–30 y octubre. Reabrir 1–7 según Research Backbone v1.
-2. **Reporter V2 — P0:** determinar en el JSON vigente cuántos artículos mantienen formato legacy y migrarlos sin cambiar IDs/eventKeys, con citas suficientes y sin párrafos de relleno. El contador de artículos no verifica profundidad.
+2. **Reporter V2 — QA factual P1:** 159/159 artículos constan como V2, 0 legacy, 0 bajo 900 palabras (auditoría del CI 11-oct; mediana 1.534 palabras). Permanecen por corroborar fechas y afirmaciones: 76 piezas tienen solo una fuente primaria enlazada (no implica falsedad). La longitud no prueba por sí sola calidad.
 3. **Visual Desk — P0:** producir, revisar y publicar arte específico para las 28 prioridades P0; cumplir regla de reutilización dominante <=30% y atribución correcta. No marcar briefs como arte completado.
 4. **Continuidad operativa — P0:** documentar al menos 3 corridas desatendidas reales de Newsroom con publicaciones o no-op comprobable, integridad atómica, ausencia de sobrescritura por carreras y recuperación; no inferirlo de la última hora ejecutada.
 5. **QA y lanzamiento P10 — P0:** inspección factual de fechas/claims, SEO social real, accesibilidad, móvil, tiempo de carga y ejercicio de rollback; usar el release gate estricto al final.
@@ -46,3 +46,13 @@
 El siguiente chat no pregunta por el último resumen: lee HEAD y `source/docs/recovery-after-interruption.md`, corre `source/scripts/release_readiness.py`, compara cinco archivos editoriales, consulta checklist/ledger/Visual Desk, y continúa la primera tarea bloqueante de P05–P10. Nunca crea una segunda Newsroom ni escribe en `cookiecodespy/cookiecodespy.github.io`.
 
 **Definición de terminado:** 4/4 gates medibles de `release_readiness.py` PASS más gates independientes de autonomía/rollback, SEO, accesibilidad y firma editorial. CI verde por sí solo no cierra el lanzamiento.
+
+
+## Cierre técnico verificado posteriormente — 11 octubre 2026
+
+- PR de rendimiento [#2](https://github.com/cookiecodespy/ai-race-gazette/pull/2) integrado a `main` en `cb5de8bf28885d273ca91e14e4993fc6ab1900fc` después de [CI PR PASS](https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38166547065).
+- [Build main PASS](https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38166668611), bundle `75ac5ab92fad92cf9c50a364726ff800cec25e64`, [Pages PASS](https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38166740122).
+- La publicación contiene 159 archivos JSON por reportaje y `data/news-index.json` de **162.395 bytes** (objetivo <500 KB) frente a 2.561.682 bytes del archivo editorial completo. Los dos `news.json` conservan su SHA idéntico `0b5c393e194f8824c720d9203b2e31d97a446d66`.
+- Tarea `PERF-ARCHIVE-LAZY-DELIVERY` cerrada con CI, navegador y Pages comprobados. La auditoría manual integral `QA-WEB` continúa pendiente.
+- El informe automático de calidad de la compilación arrojó **159 V2, 0 legacy, 0 artículos inferiores a 900 palabras, mediana de 1.534 palabras**, sin certificar factualmente todos los claims.
+- No interpretar estos números como datos en tiempo real para futuras sesiones: siempre actualizar desde main.

@@ -1150,11 +1150,13 @@
       "phase": "P10",
       "title": "Separar índice liviano y cuerpo de reportajes para acelerar móvil",
       "priority": "P1",
-      "status": "queued",
+      "status": "done",
       "lane": "Arquitectura / QA",
       "acceptance": "La portada descarga menos de 500 KB JSON sin comprimido y carga reportajes completos bajo demanda; la automatización horaria conserva escritura de cinco archivos y el build nunca sirve índices obsoletos. Comparar con tamaño anterior y pruebas de navegación.",
-      "dependsOn": [
-        "QA-WEB"
+      "evidenceCommit": "75ac5ab92fad92cf9c50a364726ff800cec25e64",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38166668611",
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38166740122"
       ]
     }
   ]

@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 82 tareas; 50 completadas; 8 en curso; 22 pendientes o bloqueadas; 2 descartadas con razón.
+- 6 fases; 82 tareas; 51 completadas; 8 en curso; 21 pendientes o bloqueadas; 2 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -307,9 +307,10 @@
   - Criterio: No presentar medios como fuentes oficiales y restaurar imagen social al volver a portada; Chromium valida metadata y footer del repo canónico.
   - Commit: `a4b78b4f5ab5842f18a0f801f7f6ef8e447d8d85`
   - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38104699251
-- [ ] **PERF-ARCHIVE-LAZY-DELIVERY** · P1 · queued — Separar índice liviano y cuerpo de reportajes para acelerar móvil
+- [x] **PERF-ARCHIVE-LAZY-DELIVERY** · P1 · done — Separar índice liviano y cuerpo de reportajes para acelerar móvil
   - Criterio: La portada descarga menos de 500 KB JSON sin comprimido y carga reportajes completos bajo demanda; la automatización horaria conserva escritura de cinco archivos y el build nunca sirve índices obsoletos. Comparar con tamaño anterior y pruebas de navegación.
-  - Depende de: QA-WEB
+  - Commit: `75ac5ab92fad92cf9c50a364726ff800cec25e64`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38166668611
 
 ## Reglas para nuevas tareas
 
