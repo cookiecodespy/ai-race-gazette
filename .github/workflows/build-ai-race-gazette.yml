@@ -52,6 +52,7 @@ jobs:
       - name: Editorial validation
         run: |
           python3 -m unittest tests/editorial_test.py
+          python3 -m unittest tests/release_readiness_test.py
           python3 -m unittest tests/coverage_audit_test.py
           python3 -m unittest tests/publication_integrity_test.py
           python3 -m unittest tests/visual_publish_test.py
@@ -65,6 +66,9 @@ jobs:
           python3 scripts/validate_visual_desk.py
           python3 scripts/validate_backlog.py
           python3 scripts/refresh_master_checklist.py --check
+
+      - name: Release readiness scoreboard (informational)
+        run: python3 scripts/release_readiness.py --summary
 
       - name: Build
         run: npm run build
