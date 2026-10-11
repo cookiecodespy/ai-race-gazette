@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T18:17:15.253Z",
+  "updatedAt": "2026-10-11T18:19:08.935Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -202,6 +202,162 @@
         "NVIDIA y Reflection forman parte de la Nemotron Coalition anunciada el 16 de marzo de 2026.",
         "Reuters fechó el reporte de conversaciones el 10 de octubre de 2026.",
         "Reflection anunció Beam el 5 de octubre de 2026."
+      ]
+    },
+    {
+      "id": "microsoft-nadella-models-insider-risks-2026",
+      "eventKey": "microsoft-nadella-agent-models-insider-risks-seven-principles-2026-10-10",
+      "date": "2026-10-10",
+      "announcedAt": "2026-10-10",
+      "company": "Microsoft",
+      "product": "Ensayo de Satya Nadella · gobernanza de agentes",
+      "title": "Nadella propone tratar los modelos de IA como riesgos internos y exige un freno de emergencia",
+      "summary": "Satya Nadella plantea siete principios para contener agentes: permisos y auditoría fuera del modelo, observabilidad, verificación y un mecanismo externo para detenerlos. Es una propuesta de arquitectura, no un producto nuevo de Microsoft.",
+      "tags": [
+        "Microsoft",
+        "Agentes",
+        "Seguridad",
+        "Gobernanza",
+        "Opinión ejecutiva"
+      ],
+      "source": {
+        "name": "Satya Nadella · Models as Insider Risks in the Super Intelligence Era",
+        "url": "https://snscratchpad.com/posts/models-as-insider-risks/",
+        "publishedAt": "2026-10-10"
+      },
+      "relatedSources": [
+        {
+          "name": "The Verge · Satya Nadella says we should assume all AI models are compromised",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+          "publishedAt": "2026-10-11"
+        }
+      ],
+      "imageBrief": "Grabado editorial horizontal 3:2 de un agente abstracto operando herramientas dentro de un perímetro con llaves de permisos, registros independientes y un freno de emergencia externo. Sepia, papel antiguo, sin logos ni interfaz ficticia presentada como real.",
+      "keyPoints": [
+        "Siete principios publicados el 10 de octubre: diversidad, observabilidad, verificabilidad, controles y auditoría independientes, contención y divulgación de incidentes.",
+        "Nadella reclama un freno de emergencia fuera del control del modelo y registros verificables de las acciones.",
+        "No se anunció producto, precio, calendario de despliegue ni norma empresarial obligatoria."
+      ],
+      "quickTakeaways": [
+        "El texto original es un ensayo del 10 de octubre, no un lanzamiento comercial.",
+        "Los permisos y mecanismos de interrupción deben quedar fuera del modelo.",
+        "Un segundo modelo que audita al primero no reemplaza evidencia independiente.",
+        "No hay nuevos precios, regiones ni plazos anunciados."
+      ],
+      "executiveSummary": "Nadella propone tratar los modelos con capacidad de acción como riesgos internos: no porque sean necesariamente maliciosos, sino porque pueden fallar o ser comprometidos. Su arquitectura separa inteligencia y autoridad, exige registros verificables y propone poder detener un agente desde fuera. El ensayo no anuncia un producto ni un estándar ya implantado.",
+      "finalSummary": "El aporte del 10 de octubre es una propuesta de gobernanza: la confianza en los agentes debe apoyarse en controles externos, auditoría y contención, no únicamente en las garantías del modelo. Falta comprobar cómo y cuándo se traducirá en implementaciones concretas.",
+      "analysis": "Análisis Gazette: el cambio conceptual es medir la seguridad del sistema completo —permisos, herramientas, registros y respuesta— y no confundir calidad del modelo con autorización para actuar.",
+      "watch": "Implementaciones verificables de frenos de emergencia, registros independientes, auditorías y estándares de contención en productos empresariales.",
+      "technicalDetails": [
+        {
+          "label": "Principios",
+          "value": "Siete: diversidad, observabilidad, verificabilidad, controles independientes, auditoría independiente, contención y divulgación de incidentes."
+        },
+        {
+          "label": "Estado",
+          "value": "Ensayo público de arquitectura; sin producto anunciado."
+        }
+      ],
+      "availability": {
+        "status": "Propuesta conceptual pública",
+        "platforms": [],
+        "regions": [],
+        "requirements": [],
+        "notes": [
+          "No se anunció software ni disponibilidad comercial."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio",
+          "value": "No aplica: no se anunció un producto."
+        }
+      ],
+      "limitations": [
+        "No es política vinculante de Microsoft ni especificación técnica normalizada.",
+        "No aporta evaluación independiente de una implementación concreta.",
+        "No define fechas, regiones, licencias ni requisitos de producto."
+      ],
+      "practicalAdvice": [
+        "Auditar permisos y registro de acciones fuera del modelo.",
+        "Probar la revocación de acceso durante una tarea real antes de usar agentes con privilegios elevados.",
+        "Separar análisis del modelo y decisiones de autorización del sistema."
+      ],
+      "usefulFacts": [
+        "Publicado por Satya Nadella el 10 de octubre de 2026.",
+        "El texto distingue explícitamente inteligencia y autoridad operativa."
+      ],
+      "articleVersion": 2,
+      "coveredAt": "2026-10-11",
+      "verifiedAt": "2026-10-11",
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual sobre sistemas de inteligencia artificial; no es una imagen documental del evento.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "body": [
+        "El 10 de octubre de 2026, Satya Nadella publicó en su sitio personal un ensayo titulado «Models as Insider Risks in the Super Intelligence Era». Su tesis es que una organización no debería conceder autoridad operativa a un modelo de inteligencia artificial simplemente porque confía en el proveedor o en una evaluación favorable. Los modelos pueden equivocarse, recibir instrucciones adversarias o comportarse de manera imprevista, especialmente cuando un agente puede consultar datos sensibles y ejecutar acciones con efectos reales.",
+        "La propuesta no anuncia un servicio comercial de Microsoft, un nuevo modelo, un calendario de implantación ni una política corporativa obligatoria. Es una posición pública del director ejecutivo sobre cómo diseñar sistemas empresariales alrededor de modelos avanzados. Esta distinción importa porque sería incorrecto interpretar sus siete principios como controles ya desplegados en todos los productos de Microsoft o como un estándar industrial aprobado.",
+        "Nadella compara el problema con la gestión de riesgos internos: una persona o proceso con acceso legítimo también puede causar daños por error, compromiso o abuso. La comparación no atribuye intención maliciosa a los modelos. Sirve para trasladar prácticas conocidas —identidad, privilegios mínimos, registro de actividad y límites de ejecución— a agentes que operan con credenciales, herramientas y permisos.",
+        "El primer principio es la diversidad de modelos: ningún modelo debería ser la única dependencia de una decisión importante ni verificar en exclusiva su propio trabajo. El segundo exige observabilidad: las acciones relevantes deben dejar evidencia legible y resistente a manipulación. El tercero reclama verificabilidad continua del sistema completo, incluyendo ataques, fallos, cambios de configuración y casos límite, no solo pruebas de tareas exitosas.",
+        "El cuarto principio separa los controles de acceso y acción del propio modelo. La organización, no el texto que genere el asistente, debe decidir qué datos puede leer y qué operaciones puede ejecutar. El quinto pide auditoría independiente: quien produce una acción no debería controlar también toda la evidencia utilizada para evaluar si esa acción fue correcta. La independencia se aplica tanto a los registros como a los mecanismos de validación.",
+        "El sexto es la contención desde el diseño. Nadella plantea asumir que un modelo puede quedar comprometido y disponer de un mecanismo externo para pausarlo o detenerlo mientras trabaja: su analogía es un freno de emergencia. El séptimo exige divulgación oportuna de incidentes a los afectados y mecanismos para compartir aprendizajes sobre fallos de controles y medidas correctivas. El ensayo no fija especificaciones técnicas universales para implementar estos principios.",
+        "El argumento central separa suministro de inteligencia y autoridad para actuar. Un modelo puede proponer una consulta, escribir código o recomendar una transferencia de datos; otra capa debe decidir si esa operación está permitida. Si el modelo pudiera modificar las reglas de autorización, borrar registros o concederse privilegios adicionales, el sistema perdería una frontera de seguridad precisamente cuando más la necesita.",
+        "Nadella también advierte sobre las cajas negras encadenadas: usar otro modelo para revisar al primero puede ser útil, pero no sustituye los controles deterministas. La explicación del razonamiento interno de un modelo, aun cuando esté disponible, no garantiza una descripción fiel de cómo llegó a un resultado. Por ello la verificación debe observar efectos externos y permisos efectivos, no depender exclusivamente de lo que el agente diga que hizo.",
+        "En una arquitectura empresarial, esta separación se traduciría en credenciales acotadas, ejecución aislada cuando corresponda, registros de herramientas independientes, validaciones de parámetros y un interruptor de revocación que no dependa de la cooperación del modelo. Es una interpretación práctica de los principios del ensayo, no una lista de componentes específicos que Microsoft haya presentado o certificado.",
+        "Análisis Gazette: el valor del planteamiento está en desplazar la conversación desde «qué modelo parece más seguro» hacia «qué daño puede causar un sistema si su modelo falla». Para un equipo que despliega agentes sobre repositorios, correo, finanzas o infraestructura, la pregunta operativa es quién autoriza las acciones, dónde queda la evidencia y cómo se detiene un proceso ya iniciado. Estas preguntas son relevantes incluso cuando se utiliza un modelo con buenos resultados en benchmarks.",
+        "Para desarrolladores, la recomendación práctica es diseñar permisos por herramienta y tarea, evitar credenciales globales innecesarias y ensayar escenarios de fallo antes de dar acceso a producción. Para responsables de seguridad, conviene exigir registros independientes y procedimientos de respuesta a incidentes. Para usuarios, una interfaz que explique qué hará un agente antes de ejecutar operaciones sensibles puede ser tan importante como la precisión de sus respuestas.",
+        "La propuesta también abre tensiones: registrar todas las acciones puede aumentar costes y obligaciones de privacidad; exigir supervisión humana en cada paso puede reducir la utilidad de la automatización; y un freno de emergencia mal diseñado puede interrumpir procesos legítimos. El ensayo ofrece principios de diseño, no evidencia de que una arquitectura concreta haya resuelto por completo esas compensaciones.",
+        "No existe una nueva suscripción, API o precio asociado a este ensayo. Tampoco se anunciaron regiones, requisitos de hardware ni una fecha de disponibilidad general. Los siete puntos son recomendaciones conceptuales publicadas por Nadella el 10 de octubre, no resultados de un ensayo clínico, un benchmark comparativo o una auditoría independiente de productos comerciales.",
+        "Queda por observar si Microsoft traduce esta posición en controles verificables de sus plataformas de agentes, en documentación de arquitectura o en estándares compartidos con otros proveedores. Una señal sólida sería la publicación de interfaces para revocar autoridad, evidencia de auditoría externa y pruebas reproducibles de contención bajo ataques. Una simple declaración de que un producto es «seguro» no demostraría el cumplimiento de esos principios.",
+        "Para una organización que ya usa agentes, una revisión útil consiste en elegir una acción sensible y comprobar cuatro cosas: quién concedió el permiso, dónde se validó fuera del modelo, qué registro independiente quedó y cómo se podría cancelar. Si alguna respuesta depende solo de la narración del asistente, el sistema conserva un punto ciego. Esta es orientación editorial derivada del ensayo, no una garantía de seguridad."
+      ],
+      "sections": [
+        {
+          "heading": "Una propuesta de seguridad, no un producto nuevo",
+          "kind": "report",
+          "paragraphs": [
+            "El 10 de octubre de 2026, Satya Nadella publicó en su sitio personal un ensayo titulado «Models as Insider Risks in the Super Intelligence Era». Su tesis es que una organización no debería conceder autoridad operativa a un modelo de inteligencia artificial simplemente porque confía en el proveedor o en una evaluación favorable. Los modelos pueden equivocarse, recibir instrucciones adversarias o comportarse de manera imprevista, especialmente cuando un agente puede consultar datos sensibles y ejecutar acciones con efectos reales.",
+            "La propuesta no anuncia un servicio comercial de Microsoft, un nuevo modelo, un calendario de implantación ni una política corporativa obligatoria. Es una posición pública del director ejecutivo sobre cómo diseñar sistemas empresariales alrededor de modelos avanzados. Esta distinción importa porque sería incorrecto interpretar sus siete principios como controles ya desplegados en todos los productos de Microsoft o como un estándar industrial aprobado.",
+            "Nadella compara el problema con la gestión de riesgos internos: una persona o proceso con acceso legítimo también puede causar daños por error, compromiso o abuso. La comparación no atribuye intención maliciosa a los modelos. Sirve para trasladar prácticas conocidas —identidad, privilegios mínimos, registro de actividad y límites de ejecución— a agentes que operan con credenciales, herramientas y permisos."
+          ]
+        },
+        {
+          "heading": "Los siete principios del ensayo",
+          "kind": "technical",
+          "paragraphs": [
+            "El primer principio es la diversidad de modelos: ningún modelo debería ser la única dependencia de una decisión importante ni verificar en exclusiva su propio trabajo. El segundo exige observabilidad: las acciones relevantes deben dejar evidencia legible y resistente a manipulación. El tercero reclama verificabilidad continua del sistema completo, incluyendo ataques, fallos, cambios de configuración y casos límite, no solo pruebas de tareas exitosas.",
+            "El cuarto principio separa los controles de acceso y acción del propio modelo. La organización, no el texto que genere el asistente, debe decidir qué datos puede leer y qué operaciones puede ejecutar. El quinto pide auditoría independiente: quien produce una acción no debería controlar también toda la evidencia utilizada para evaluar si esa acción fue correcta. La independencia se aplica tanto a los registros como a los mecanismos de validación.",
+            "El sexto es la contención desde el diseño. Nadella plantea asumir que un modelo puede quedar comprometido y disponer de un mecanismo externo para pausarlo o detenerlo mientras trabaja: su analogía es un freno de emergencia. El séptimo exige divulgación oportuna de incidentes a los afectados y mecanismos para compartir aprendizajes sobre fallos de controles y medidas correctivas. El ensayo no fija especificaciones técnicas universales para implementar estos principios."
+          ]
+        },
+        {
+          "heading": "Por qué el modelo no puede ser su propio guardián",
+          "kind": "context",
+          "paragraphs": [
+            "El argumento central separa suministro de inteligencia y autoridad para actuar. Un modelo puede proponer una consulta, escribir código o recomendar una transferencia de datos; otra capa debe decidir si esa operación está permitida. Si el modelo pudiera modificar las reglas de autorización, borrar registros o concederse privilegios adicionales, el sistema perdería una frontera de seguridad precisamente cuando más la necesita.",
+            "Nadella también advierte sobre las cajas negras encadenadas: usar otro modelo para revisar al primero puede ser útil, pero no sustituye los controles deterministas. La explicación del razonamiento interno de un modelo, aun cuando esté disponible, no garantiza una descripción fiel de cómo llegó a un resultado. Por ello la verificación debe observar efectos externos y permisos efectivos, no depender exclusivamente de lo que el agente diga que hizo.",
+            "En una arquitectura empresarial, esta separación se traduciría en credenciales acotadas, ejecución aislada cuando corresponda, registros de herramientas independientes, validaciones de parámetros y un interruptor de revocación que no dependa de la cooperación del modelo. Es una interpretación práctica de los principios del ensayo, no una lista de componentes específicos que Microsoft haya presentado o certificado."
+          ]
+        },
+        {
+          "heading": "Impacto para equipos, desarrolladores y responsables de riesgo",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: el valor del planteamiento está en desplazar la conversación desde «qué modelo parece más seguro» hacia «qué daño puede causar un sistema si su modelo falla». Para un equipo que despliega agentes sobre repositorios, correo, finanzas o infraestructura, la pregunta operativa es quién autoriza las acciones, dónde queda la evidencia y cómo se detiene un proceso ya iniciado. Estas preguntas son relevantes incluso cuando se utiliza un modelo con buenos resultados en benchmarks.",
+            "Para desarrolladores, la recomendación práctica es diseñar permisos por herramienta y tarea, evitar credenciales globales innecesarias y ensayar escenarios de fallo antes de dar acceso a producción. Para responsables de seguridad, conviene exigir registros independientes y procedimientos de respuesta a incidentes. Para usuarios, una interfaz que explique qué hará un agente antes de ejecutar operaciones sensibles puede ser tan importante como la precisión de sus respuestas.",
+            "La propuesta también abre tensiones: registrar todas las acciones puede aumentar costes y obligaciones de privacidad; exigir supervisión humana en cada paso puede reducir la utilidad de la automatización; y un freno de emergencia mal diseñado puede interrumpir procesos legítimos. El ensayo ofrece principios de diseño, no evidencia de que una arquitectura concreta haya resuelto por completo esas compensaciones."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, límites y señales a observar",
+          "kind": "practical",
+          "paragraphs": [
+            "No existe una nueva suscripción, API o precio asociado a este ensayo. Tampoco se anunciaron regiones, requisitos de hardware ni una fecha de disponibilidad general. Los siete puntos son recomendaciones conceptuales publicadas por Nadella el 10 de octubre, no resultados de un ensayo clínico, un benchmark comparativo o una auditoría independiente de productos comerciales.",
+            "Queda por observar si Microsoft traduce esta posición en controles verificables de sus plataformas de agentes, en documentación de arquitectura o en estándares compartidos con otros proveedores. Una señal sólida sería la publicación de interfaces para revocar autoridad, evidencia de auditoría externa y pruebas reproducibles de contención bajo ataques. Una simple declaración de que un producto es «seguro» no demostraría el cumplimiento de esos principios.",
+            "Para una organización que ya usa agentes, una revisión útil consiste en elegir una acción sensible y comprobar cuatro cosas: quién concedió el permiso, dónde se validó fuera del modelo, qué registro independiente quedó y cómo se podría cancelar. Si alguna respuesta depende solo de la narración del asistente, el sistema conserva un punto ciego. Esta es orientación editorial derivada del ensayo, no una garantía de seguridad."
+          ]
+        }
       ]
     },
     {
@@ -3263,6 +3419,186 @@
       "usefulFacts": [
         "El comunicado agrupa el acuerdo en tres pilares: agentes/analítica, infraestructura/seguridad y formación.",
         "La cifra de clientes digitales es un dato corporativo, no el número de usuarios de Gemini Enterprise."
+      ]
+    },
+    {
+      "id": "apple-huxe-ai-license-hiring-agreement-2026",
+      "eventKey": "apple-huxe-audio-ip-license-hiring-agreement-public-revelation-2026-10-09",
+      "date": "2026-10-09",
+      "announcedAt": "2026-06-09",
+      "company": "Apple",
+      "product": "Acuerdo de licencia y contratación · Huxe AI",
+      "title": "Apple acuerda licenciar tecnología de audio de Huxe y ofrecer empleo a parte de su equipo",
+      "summary": "Un registro europeo divulgado públicamente en octubre revela que Apple obtuvo derechos para ofrecer empleo a ciertos trabajadores de Huxe y una licencia no exclusiva de su propiedad intelectual. La notificación data de junio: no es una compra total ni un lanzamiento de Siri.",
+      "tags": [
+        "Apple",
+        "Audio",
+        "Agentes",
+        "Licencias",
+        "Talento"
+      ],
+      "source": {
+        "name": "Comisión Europea · List of Acquisitions, Apple Inc. / Huxe",
+        "url": "https://competition-cases.ec.europa.eu/acquisitions",
+        "publishedAt": "2026-06-09"
+      },
+      "relatedSources": [
+        {
+          "name": "MacRumors · Apple Signs Hiring and Licensing Deal With AI Podcast Startup Huxe",
+          "url": "https://www.macrumors.com/2026/10/09/apple-signs-hiring-deal-ai-podcast-startup-huxe/",
+          "publishedAt": "2026-10-09"
+        },
+        {
+          "name": "TechCrunch · Apple discloses deal to hire team and license tech from Huxe",
+          "url": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+          "publishedAt": "2026-10-10"
+        },
+        {
+          "name": "Huxe · Aviso oficial de cierre",
+          "url": "https://www.huxe.com/",
+          "publishedAt": "2026-05-21"
+        }
+      ],
+      "imageBrief": "Grabado editorial horizontal 3:2 de ondas de audio personalizadas y documentos de licencia junto a una pequeña mesa de trabajo, simbolizando transferencia de conocimiento y derechos. Estética prensa antigua sepia, sin logos falsos ni retratos documentales.",
+      "keyPoints": [
+        "La Comisión Europea registra derechos de contratación selectiva y licencia no exclusiva; no adquisición completa.",
+        "Apple notificó el acuerdo el 9 de junio; la noticia circuló públicamente el 9 de octubre.",
+        "Huxe cerró su servicio el 28 de mayo; no hay anuncio de integración en Siri o Podcasts."
+      ],
+      "quickTakeaways": [
+        "Es una divulgación pública de octubre de una notificación de junio.",
+        "La licencia es no exclusiva y no acredita compra total de Huxe.",
+        "No hay confirmación de contrataciones efectivas ni de importes.",
+        "Huxe dejó de operar en mayo y Apple no anunció nuevas funciones de audio."
+      ],
+      "executiveSummary": "La Comisión Europea publicó una notificación según la cual Apple puede contratar a determinados empleados de Huxe AI y recibirá una licencia no exclusiva de su propiedad intelectual. MacRumors la difundió el 9 de octubre, pero el registro está fechado el 9 de junio. El acuerdo no demuestra una adquisición total ni anticipa una función confirmada de Siri o Podcasts.",
+      "finalSummary": "La novedad comprobable es la divulgación de una operación de talento y licencia tecnológica previamente notificada. No se conocen el precio, las contrataciones completadas ni un producto de Apple derivado de Huxe. La cronología de junio y octubre debe mantenerse separada.",
+      "analysis": "Análisis Gazette: la operación muestra interés en experiencia conversacional de audio y conocimiento de producto, pero no permite inferir un calendario de integración en dispositivos Apple.",
+      "watch": "Comunicaciones oficiales sobre empleados incorporados, alcance de licencias, productos anunciados y eventuales documentos regulatorios adicionales.",
+      "technicalDetails": [
+        {
+          "label": "Tipo de acuerdo",
+          "value": "Derecho a ofrecer empleo a ciertos trabajadores y licencia no exclusiva de propiedad intelectual."
+        },
+        {
+          "label": "Notificación",
+          "value": "9 de junio de 2026 ante la Comisión Europea."
+        },
+        {
+          "label": "Divulgación periodística",
+          "value": "9 de octubre de 2026."
+        },
+        {
+          "label": "Cierre de Huxe",
+          "value": "28 de mayo de 2026; eliminación de datos anunciada para el 29 de mayo."
+        }
+      ],
+      "availability": {
+        "status": "Acuerdo de derechos; sin producto nuevo anunciado",
+        "platforms": [],
+        "regions": [],
+        "requirements": [],
+        "notes": [
+          "Huxe anunció cierre de su servicio el 28 de mayo de 2026.",
+          "No hay función Apple ni despliegue regional anunciado."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Valor del acuerdo",
+          "value": "No divulgado"
+        },
+        {
+          "label": "Precio al consumidor",
+          "value": "No aplica: no se anunció producto."
+        }
+      ],
+      "limitations": [
+        "El registro no identifica a los empleados ni confirma contrataciones realizadas.",
+        "No hay importe, duración ni alcance detallado de la licencia publicados.",
+        "Ningún producto de Siri, Apple Podcasts o iOS está confirmado por esta notificación.",
+        "No se puede inferir transferencia de datos personales de Huxe."
+      ],
+      "practicalAdvice": [
+        "No tratar esta operación como anuncio de nuevas funciones de Apple.",
+        "Distinguir fecha de notificación regulatoria de fecha de difusión periodística.",
+        "Consultar la Comisión Europea y el aviso oficial de cierre antes de extrapolar el acuerdo."
+      ],
+      "usefulFacts": [
+        "La Comisión Europea publica resúmenes de operaciones digitales notificadas por gatekeepers bajo el artículo 14 DMA.",
+        "Huxe anunció que sus funciones dejarían de funcionar el 28 de mayo a las 10:00 hora del Pacífico."
+      ],
+      "articleVersion": 2,
+      "coveredAt": "2026-10-11",
+      "verifiedAt": "2026-10-11",
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual sobre sistemas de inteligencia artificial; no es una imagen documental del evento.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "body": [
+        "El 9 de octubre de 2026, MacRumors dio visibilidad pública a una notificación de Apple registrada ante la Comisión Europea el 9 de junio. El texto oficial indica que Apple tendrá derecho a ofrecer empleo y contratar a determinados empleados de Huxe AI y recibirá una licencia no exclusiva sobre la propiedad intelectual de esa compañía. La formulación no describe una adquisición total de Huxe, ni identifica personas contratadas ni confirma que todas las ofertas de empleo hayan sido aceptadas.",
+        "Es importante separar tres fechas: Huxe anunció el cierre de su servicio en mayo, Apple notificó el acuerdo a la Comisión el 9 de junio y la información se difundió en medios el 9 de octubre. Por tanto, la noticia de octubre es la divulgación de un acuerdo previamente notificado, no evidencia de que Apple lo haya firmado ese mismo día. El registro europeo publica resúmenes de operaciones digitales bajo el artículo 14 de la Ley de Mercados Digitales.",
+        "TechCrunch retomó el caso el 10 de octubre y lo describió como una operación de contratación de talento acompañada de licencia tecnológica, fórmula conocida informalmente como «reverse acqui-hire». Esa etiqueta periodística ayuda a explicar la estructura, pero no debe confundirse con una resolución regulatoria ni con la compra de todas las acciones, activos o derechos de la empresa.",
+        "Huxe desarrolló una aplicación de contenido de audio personalizado. Su propuesta combinaba resúmenes adaptados a la jornada del usuario con explicaciones en formato conversacional. El sitio oficial describe módulos que cambiaban según el contexto y una experiencia en la que el oyente podía interrumpir para pedir una explicación diferente o profundizar en un tema. Se trataba de una interfaz de consumo, no de una plataforma de modelos fundacionales anunciada como tal.",
+        "MacRumors identifica entre sus fundadores a Raiza Martin, Jason Spielman y Stephen Hughes, vinculados anteriormente al equipo de NotebookLM de Google. El antecedente resulta relevante porque ese tipo de producto convirtió documentos y fuentes en conversaciones de audio, mientras Huxe exploraba una experiencia de escucha personalizada. No demuestra, sin embargo, que Apple haya contratado a esas personas ni que vaya a reproducir el mismo diseño en sus servicios.",
+        "El sitio de Huxe conserva un aviso de cierre fechado el 21 de mayo. Allí indicó que retiraría la aplicación de las tiendas el 21 de mayo, que el servicio dejaría de funcionar el 28 de mayo a las 10:00 hora del Pacífico y que eliminaría los datos de usuarios de sus sistemas el 29 de mayo. Son fechas del producto original, no fechas de integración en el ecosistema Apple.",
+        "Una licencia no exclusiva permite usar derechos de propiedad intelectual en las condiciones pactadas, pero por sí sola no implica que el licenciatario sea su único titular o que pueda impedir cualquier uso por terceros. El documento público no especifica el alcance técnico exacto, duración, territorio, contraprestación ni derechos sobre código, patentes o datos concretos. Tampoco confirma transferencia de bases de datos de usuarios, algo especialmente sensible en un servicio que podía relacionarse con correos y calendarios.",
+        "El derecho a presentar ofertas de empleo es distinto de una contratación efectiva. El registro no nombra a los empleados, no dice cuántos aceptaron ni asigna funciones dentro de Apple. El valor estratégico puede estar en conocimiento de producto, técnicas de interacción de voz o propiedad intelectual, pero esos son posibles motivos, no resultados que el documento pruebe.",
+        "En operaciones de IA, una estructura de talento más licencia puede permitir a una empresa acceder a capacidades sin adquirir formalmente la sociedad. Sin embargo, de este caso no puede concluirse que se haya evitado una revisión antimonopolio, que la Comisión haya aprobado un producto futuro o que exista exclusividad tecnológica. La notificación describe la operación; no publica todas sus cláusulas ni sus consecuencias.",
+        "Análisis Gazette: la combinación de audio personalizado y capacidad de interrupción encaja con una tendencia hacia asistentes que presentan información en lugar de limitarse a responder preguntas escritas. En dispositivos móviles, esa interfaz puede ser útil para noticias, aprendizaje, preparación de reuniones o consulta de documentos mientras el usuario realiza otras actividades. La relevancia está en la experiencia que Huxe exploró, no en una función nueva confirmada para Apple.",
+        "Apple dispone de servicios y superficies de interacción como Siri, Podcasts y sus dispositivos personales, pero el registro no menciona ninguno como destino de la tecnología. Afirmar que Siri recibirá podcasts conversacionales, que Apple Podcasts integrará Huxe o que una actualización de iOS incluirá la función sería especulación. Tampoco se anunciaron fechas de lanzamiento, regiones compatibles, idiomas, requisitos de hardware ni precios.",
+        "El cierre previo de Huxe limita además lo que puede probarse mediante una demostración pública actual: el producto dejó de prestar servicio y sus funciones ya no operan como antes. Quienes evalúen la noticia deben distinguir entre una tecnología histórica, un acuerdo de derechos y un producto de Apple que todavía no ha sido anunciado.",
+        "Para usuarios de Apple no existe ninguna acción que realizar, suscripción que contratar o ajuste que activar por este acuerdo. Para desarrolladores y analistas, el documento europeo es la referencia primaria para comprobar la estructura jurídica, mientras el aviso de Huxe sirve para confirmar la cronología de cierre. Los artículos periodísticos aportan contexto sobre el equipo y la posible estrategia, pero no sustituyen las cláusulas no divulgadas.",
+        "El siguiente hito verificable sería una comunicación de Apple sobre contrataciones efectivas, licencias utilizadas o funciones concretas; alternativamente, un nuevo documento regulatorio podría aclarar el alcance. Hasta entonces, las cifras económicas, el número de empleados, los modelos de IA utilizados y la integración técnica siguen sin estar disponibles públicamente.",
+        "El caso ilustra una forma de circulación de capacidades en la carrera de la IA: incluso cuando una aplicación desaparece del mercado, su experiencia de producto y sus derechos pueden seguir interesando a un fabricante mayor. Esa conclusión general no convierte el acuerdo en una adquisición completa ni garantiza que el público vuelva a ver el producto bajo otra marca."
+      ],
+      "sections": [
+        {
+          "heading": "Qué revela el registro europeo",
+          "kind": "report",
+          "paragraphs": [
+            "El 9 de octubre de 2026, MacRumors dio visibilidad pública a una notificación de Apple registrada ante la Comisión Europea el 9 de junio. El texto oficial indica que Apple tendrá derecho a ofrecer empleo y contratar a determinados empleados de Huxe AI y recibirá una licencia no exclusiva sobre la propiedad intelectual de esa compañía. La formulación no describe una adquisición total de Huxe, ni identifica personas contratadas ni confirma que todas las ofertas de empleo hayan sido aceptadas.",
+            "Es importante separar tres fechas: Huxe anunció el cierre de su servicio en mayo, Apple notificó el acuerdo a la Comisión el 9 de junio y la información se difundió en medios el 9 de octubre. Por tanto, la noticia de octubre es la divulgación de un acuerdo previamente notificado, no evidencia de que Apple lo haya firmado ese mismo día. El registro europeo publica resúmenes de operaciones digitales bajo el artículo 14 de la Ley de Mercados Digitales.",
+            "TechCrunch retomó el caso el 10 de octubre y lo describió como una operación de contratación de talento acompañada de licencia tecnológica, fórmula conocida informalmente como «reverse acqui-hire». Esa etiqueta periodística ayuda a explicar la estructura, pero no debe confundirse con una resolución regulatoria ni con la compra de todas las acciones, activos o derechos de la empresa."
+          ]
+        },
+        {
+          "heading": "Qué hacía Huxe y por qué interesa su tecnología",
+          "kind": "context",
+          "paragraphs": [
+            "Huxe desarrolló una aplicación de contenido de audio personalizado. Su propuesta combinaba resúmenes adaptados a la jornada del usuario con explicaciones en formato conversacional. El sitio oficial describe módulos que cambiaban según el contexto y una experiencia en la que el oyente podía interrumpir para pedir una explicación diferente o profundizar en un tema. Se trataba de una interfaz de consumo, no de una plataforma de modelos fundacionales anunciada como tal.",
+            "MacRumors identifica entre sus fundadores a Raiza Martin, Jason Spielman y Stephen Hughes, vinculados anteriormente al equipo de NotebookLM de Google. El antecedente resulta relevante porque ese tipo de producto convirtió documentos y fuentes en conversaciones de audio, mientras Huxe exploraba una experiencia de escucha personalizada. No demuestra, sin embargo, que Apple haya contratado a esas personas ni que vaya a reproducir el mismo diseño en sus servicios.",
+            "El sitio de Huxe conserva un aviso de cierre fechado el 21 de mayo. Allí indicó que retiraría la aplicación de las tiendas el 21 de mayo, que el servicio dejaría de funcionar el 28 de mayo a las 10:00 hora del Pacífico y que eliminaría los datos de usuarios de sus sistemas el 29 de mayo. Son fechas del producto original, no fechas de integración en el ecosistema Apple."
+          ]
+        },
+        {
+          "heading": "Licencia no exclusiva frente a adquisición",
+          "kind": "technical",
+          "paragraphs": [
+            "Una licencia no exclusiva permite usar derechos de propiedad intelectual en las condiciones pactadas, pero por sí sola no implica que el licenciatario sea su único titular o que pueda impedir cualquier uso por terceros. El documento público no especifica el alcance técnico exacto, duración, territorio, contraprestación ni derechos sobre código, patentes o datos concretos. Tampoco confirma transferencia de bases de datos de usuarios, algo especialmente sensible en un servicio que podía relacionarse con correos y calendarios.",
+            "El derecho a presentar ofertas de empleo es distinto de una contratación efectiva. El registro no nombra a los empleados, no dice cuántos aceptaron ni asigna funciones dentro de Apple. El valor estratégico puede estar en conocimiento de producto, técnicas de interacción de voz o propiedad intelectual, pero esos son posibles motivos, no resultados que el documento pruebe.",
+            "En operaciones de IA, una estructura de talento más licencia puede permitir a una empresa acceder a capacidades sin adquirir formalmente la sociedad. Sin embargo, de este caso no puede concluirse que se haya evitado una revisión antimonopolio, que la Comisión haya aprobado un producto futuro o que exista exclusividad tecnológica. La notificación describe la operación; no publica todas sus cláusulas ni sus consecuencias."
+          ]
+        },
+        {
+          "heading": "Qué podría cambiar y qué todavía no se sabe",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la combinación de audio personalizado y capacidad de interrupción encaja con una tendencia hacia asistentes que presentan información en lugar de limitarse a responder preguntas escritas. En dispositivos móviles, esa interfaz puede ser útil para noticias, aprendizaje, preparación de reuniones o consulta de documentos mientras el usuario realiza otras actividades. La relevancia está en la experiencia que Huxe exploró, no en una función nueva confirmada para Apple.",
+            "Apple dispone de servicios y superficies de interacción como Siri, Podcasts y sus dispositivos personales, pero el registro no menciona ninguno como destino de la tecnología. Afirmar que Siri recibirá podcasts conversacionales, que Apple Podcasts integrará Huxe o que una actualización de iOS incluirá la función sería especulación. Tampoco se anunciaron fechas de lanzamiento, regiones compatibles, idiomas, requisitos de hardware ni precios.",
+            "El cierre previo de Huxe limita además lo que puede probarse mediante una demostración pública actual: el producto dejó de prestar servicio y sus funciones ya no operan como antes. Quienes evalúen la noticia deben distinguir entre una tecnología histórica, un acuerdo de derechos y un producto de Apple que todavía no ha sido anunciado."
+          ]
+        },
+        {
+          "heading": "Implicaciones prácticas y próximos hitos",
+          "kind": "practical",
+          "paragraphs": [
+            "Para usuarios de Apple no existe ninguna acción que realizar, suscripción que contratar o ajuste que activar por este acuerdo. Para desarrolladores y analistas, el documento europeo es la referencia primaria para comprobar la estructura jurídica, mientras el aviso de Huxe sirve para confirmar la cronología de cierre. Los artículos periodísticos aportan contexto sobre el equipo y la posible estrategia, pero no sustituyen las cláusulas no divulgadas.",
+            "El siguiente hito verificable sería una comunicación de Apple sobre contrataciones efectivas, licencias utilizadas o funciones concretas; alternativamente, un nuevo documento regulatorio podría aclarar el alcance. Hasta entonces, las cifras económicas, el número de empleados, los modelos de IA utilizados y la integración técnica siguen sin estar disponibles públicamente.",
+            "El caso ilustra una forma de circulación de capacidades en la carrera de la IA: incluso cuando una aplicación desaparece del mercado, su experiencia de producto y sus derechos pueden seguir interesando a un fabricante mayor. Esa conclusión general no convierte el acuerdo en una adquisición completa ni garantiza que el público vuelva a ver el producto bajo otra marca."
+          ]
+        }
       ]
     },
     {
@@ -25525,12 +25861,12 @@
     {
       "date": "2026-10-09",
       "status": "partial",
-      "verifiedArticles": 17
+      "verifiedArticles": 18
     },
     {
       "date": "2026-10-10",
       "status": "partial",
-      "verifiedArticles": 2
+      "verifiedArticles": 3
     },
     {
       "date": "2026-10-11",
