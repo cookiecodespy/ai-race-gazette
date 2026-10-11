@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T01:40:44.126Z",
+  "updatedAt": "2026-10-11T01:42:49.841Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -10560,8 +10560,8 @@
       "coveredAt": "2026-10-07",
       "company": "Anthropic",
       "product": "Claude Sonnet 5.5",
-      "title": "Sonnet 5.5 apuesta por tareas cotidianas y una respuesta más rápida",
-      "summary": "Anthropic presenta el segundo modelo de la familia Claude 5.5.",
+      "title": "Claude Sonnet 5.5 acelera el trabajo cotidiano con agentes y mantiene el precio base de Sonnet 5",
+      "summary": "Anthropic lanzó Sonnet 5.5 el 28 de septiembre como modelo más rápido y eficiente para programación, documentos y herramientas. Según la compañía, genera respuestas más de un 30 % más rápido, conserva tarifas base de US$2 por millón de tokens de entrada y US$10 de salida y puede gastar hasta 30 % menos por tarea que Sonnet 5, dependiendo del trabajo.",
       "tags": [
         "Modelos",
         "Productividad"
@@ -10574,11 +10574,9 @@
         "url": "https://www.anthropic.com/claude-sonnet-5-5",
         "publishedAt": "2026-09-28"
       },
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-10",
       "body": [
-        "Anthropic anunció Sonnet 5.5 el 28 de septiembre. Lo presenta como complemento de Opus 5.5 para trabajo cotidiano bien definido, corrección de errores y creación de documentos.",
-        "El fabricante afirma que genera respuestas más rápido y necesita menos tokens para determinadas tareas que Sonnet 5. Estas mejoras proceden de sus pruebas; el ahorro real depende del trabajo.",
-        "Comparar modelos requiere mantener instrucciones, herramientas y criterios de calidad iguales. Medir solo velocidad puede ocultar una mayor necesidad de revisión o diferencias en el resultado."
+        "Anthropic lanzó Sonnet 5.5 el 28 de septiembre como modelo más rápido y eficiente para programación, documentos y herramientas. Según la compañía, genera respuestas más de un 30 % más rápido, conserva tarifas base de US$2 por millón de tokens de entrada y US$10 de salida y puede gastar hasta 30 % menos por tarea que Sonnet 5, dependiendo del trabajo."
       ],
       "keyPoints": [
         "Segundo modelo de la familia 5.5.",
@@ -10586,7 +10584,143 @@
       ],
       "analysis": "El modelo más útil puede ser el que resuelve una tarea de forma consistente dentro del tiempo y presupuesto disponibles.",
       "watch": "Evaluaciones de calidad, velocidad y costo por tarea.",
-      "announcedAt": "2026-09-28"
+      "announcedAt": "2026-09-28",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "Anthropic lanzó Sonnet 5.5 el 28 de septiembre como modelo más rápido y eficiente para programación, documentos y herramientas. Según la compañía, genera respuestas más de un 30 % más rápido, conserva tarifas base de US$2 por millón de tokens de entrada y US$10 de salida y puede gastar hasta 30 % menos por tarea que Sonnet 5, dependiendo del trabajo.",
+        "Las tasas de benchmarks no predicen rendimiento universal en todos los proyectos.",
+        "Medir calidad y coste con pruebas de la organización.",
+        "Sonnet 5.5 es el segundo integrante anunciado de la familia 5.5."
+      ],
+      "executiveSummary": "Anthropic lanzó Sonnet 5.5 el 28 de septiembre como modelo más rápido y eficiente para programación, documentos y herramientas. Según la compañía, genera respuestas más de un 30 % más rápido, conserva tarifas base de US$2 por millón de tokens de entrada y US$10 de salida y puede gastar hasta 30 % menos por tarea que Sonnet 5, dependiendo del trabajo. Los precios y porcentajes son declaraciones de Anthropic bajo condiciones determinadas y no garantías universales.",
+      "sections": [
+        {
+          "heading": "La actualización de la familia Claude 5.5",
+          "kind": "context",
+          "paragraphs": [
+            "Anthropic presentó Claude Sonnet 5.5 el 28 de septiembre, seis días después de Opus 5.5, como una alternativa orientada a tareas cotidianas y programación eficiente. El enfoque declarado es obtener resultados de calidad con menos tiempo y menos tokens, manteniendo un precio de API más bajo que el de la línea Opus. No se trata de un modelo totalmente distinto de la familia ni de una garantía de que el desempeño de todas las tareas supere al mayor modelo de Anthropic.",
+            "La empresa destacó corrección de bugs, producción de presentaciones, documentos y hojas de cálculo, así como diseño de interfaces. Son tareas en que el esfuerzo de revisión humana y la capacidad de seguir una plantilla importan tanto como la respuesta inicial. El anuncio es un lanzamiento real del 28 de septiembre; las fechas de otros modelos de la familia deben tratarse por separado para evitar cronologías ficticias."
+          ]
+        },
+        {
+          "heading": "Pruebas de programación y agentes",
+          "kind": "technical",
+          "paragraphs": [
+            "Anthropic informó 70,6 % en Terminal-Bench 4.0 para Sonnet 5.5, frente al 10,3 % atribuido por la empresa al Sonnet 5 en ese conjunto y configuración. La diferencia es significativa según esa evaluación, pero las condiciones concretas de herramientas, esfuerzo y versiones siguen siendo importantes. No corresponde extrapolar esa brecha a cada repositorio o concluir que un modelo resuelve el setenta por ciento de cualquier trabajo de desarrollo.",
+            "La compañía señaló progreso en tareas de horizonte largo, ejecución desde herramientas y comprensión de imágenes. También citó casos de clientes de pruebas tempranas que completaron más proyectos en menos iteraciones. La afirmación es prometedora para agentes de software, pero debe medirse con pruebas automáticas que permitan comprobar si el resultado funciona realmente, sin depender de la propia declaración del modelo de haber terminado."
+          ]
+        },
+        {
+          "heading": "Velocidad y eficiencia frente a precio",
+          "kind": "context",
+          "paragraphs": [
+            "El precio nominal comunicado fue US$2 por millón de tokens de entrada y US$10 por millón de salida. Las lecturas de caché cuestan US$0,20 por millón y las escrituras US$2,50, según la tabla del lanzamiento. Anthropic sostuvo que la generación de salida es más de treinta por ciento más rápida que Sonnet 5, y que la reducción de pasos y tokens puede disminuir hasta treinta por ciento el gasto por tarea en sus ensayos.",
+            "Esta distinción evita una confusión frecuente: la tarifa base no bajó necesariamente respecto del modelo anterior, sino que cambió la eficiencia al realizar un trabajo. Una tarea mal interpretada puede requerir múltiples intentos y anular el ahorro. Conviene medir coste por resultado aceptado, incluyendo herramientas, revisión y errores. Para cargas de alto volumen, la variación de latencia y la utilización de caché pueden importar más que una pequeña diferencia de tarifa nominal."
+          ]
+        },
+        {
+          "heading": "Trabajo profesional, diseño y hojas de cálculo",
+          "kind": "report",
+          "paragraphs": [
+            "Los ejemplos de Anthropic incluyen revisión de información financiera, edición de documentos y generación de aplicaciones visuales. La compañía afirma que Sonnet 5.5 mejoró en seguimiento de plantillas y acabados de diseño. Un resultado atractivo puede ahorrar iteraciones de presentación, pero es indispensable comprobar datos, referencias, fórmulas y permisos. Las pruebas de estilo no demuestran que una cifra financiera esté correctamente calculada.",
+            "En oficinas, el balance puede favorecer un modelo rápido cuando la tarea está bien delimitada: responder soporte, resumir conversaciones o generar un primer borrador. Una investigación con incertidumbre o una decisión irreversible puede justificar un modelo distinto o una revisión adicional. Seleccionar el modelo más adecuado para el nivel de riesgo y la dificultad es más sólido que utilizar siempre el mismo por su posición en un benchmark."
+          ]
+        },
+        {
+          "heading": "Seguridad y salvaguardas por tarea",
+          "kind": "analysis",
+          "paragraphs": [
+            "Anthropic informó que Sonnet 5.5 mejoró o igualó a Sonnet 5 en la mayoría de escenarios de sus auditorías conductuales. La empresa probó aproximadamente 1.850 situaciones y dijo que el nuevo modelo se acercó a Opus 5.5 en ciertas comprobaciones de contención. Son afirmaciones del proveedor que no equivalen a una prueba absoluta contra inyección de instrucciones, fuga de información o uso indebido.",
+            "La compañía añadió salvaguardas de ciberseguridad y de extracción de razonamiento. Algunas solicitudes de mayor riesgo pueden derivarse a modelos con controles distintos; también existen programas de acceso verificado para profesionales legítimos. En tareas biológicas Sonnet 5.5 conserva restricciones similares a Sonnet 5. El desarrollo ordinario de software, según Anthropic, continúa disponible, pero una organización debe estudiar términos, permisos y bloqueos antes de planificar investigación especializada."
+          ]
+        },
+        {
+          "heading": "Dónde se ofrece y cómo probarlo",
+          "kind": "practical",
+          "paragraphs": [
+            "El anuncio sitúa Sonnet 5.5 en las superficies de Claude y para desarrolladores, con opciones de esfuerzo que equilibran tiempo y profundidad de análisis. Anthropic explicó que las aplicaciones y Claude Code adoptan normalmente esfuerzo medio por defecto, mientras la plataforma de desarrolladores usa un valor alto. El comportamiento de latencia y consumo puede variar ampliamente si se cambia esa configuración.",
+            "Un equipo que migre desde Sonnet 5 debe probar exactamente los mismos casos y registrar versión, prompts, herramientas y resultados finales. Las mejoras generales no evitan cambios de formato que afecten un parser ni incompatibilidades en flujos existentes. Es importante comprobar el identificador del modelo, las cuotas reales y las opciones de privacidad en la plataforma usada, sin suponer acceso idéntico en todas las integraciones."
+          ]
+        },
+        {
+          "heading": "Lectura editorial y señales siguientes",
+          "kind": "context",
+          "paragraphs": [
+            "Análisis Gazette: el interés de Sonnet 5.5 es ofrecer una opción intermedia atractiva entre los modelos de máxima capacidad y los modelos de bajo coste destinados a volúmenes masivos. El desempeño operativo dependerá del tipo de tarea, de la capacidad de seguir instrucciones y de la eficiencia con la que utiliza herramientas. Las ganancias de velocidad reportadas por el fabricante deben contrastarse con cargas representativas.",
+            "La evolución competitiva no se entenderá solo por comparar resultados del día del anuncio. Los próximos hitos serán pruebas independientes, cambios de disponibilidad, experiencia en aplicaciones y mediciones de coste por entrega revisada. También habrá que seguir si la familia 5.5 mantiene las protecciones al incorporar más herramientas y contextos grandes en trabajos prolongados."
+          ]
+        }
+      ],
+      "finalSummary": "La evolución competitiva no se entenderá solo por comparar resultados del día del anuncio. Los próximos hitos serán pruebas independientes, cambios de disponibilidad, experiencia en aplicaciones y mediciones de coste por entrega revisada. También habrá que seguir si la familia 5.5 mantiene las protecciones al incorporar más herramientas y contextos grandes en trabajos prolongados.",
+      "technicalDetails": [
+        {
+          "label": "Fecha",
+          "value": "28 septiembre 2026"
+        },
+        {
+          "label": "Terminal-Bench 4.0",
+          "value": "70,6 %, según Anthropic"
+        },
+        {
+          "label": "Velocidad",
+          "value": "Más de 30 % de mejora frente a Sonnet 5 en la evaluación del proveedor"
+        },
+        {
+          "label": "Ahorro",
+          "value": "Hasta 30 % menos por tarea según Anthropic; precio por token conservado"
+        }
+      ],
+      "pricing": [
+        {
+          "label": "API entrada",
+          "value": "US$2 por millón de tokens"
+        },
+        {
+          "label": "API salida",
+          "value": "US$10 por millón de tokens"
+        },
+        {
+          "label": "Lectura de caché",
+          "value": "US$0,20 por millón de tokens"
+        },
+        {
+          "label": "Escritura de caché",
+          "value": "US$2,50 por millón de tokens"
+        }
+      ],
+      "availability": {
+        "status": "Disponible en Claude y plataformas de desarrolladores según plan y controles",
+        "platforms": [
+          "Claude",
+          "Claude Code",
+          "Claude Platform",
+          "Servicios cloud compatibles"
+        ],
+        "requirements": [
+          "Verificar plan, cuotas y límites especializados"
+        ],
+        "notes": [
+          "Los accesos de investigación sensible requieren aprobación donde corresponda."
+        ]
+      },
+      "limitations": [
+        "Las tasas de benchmarks no predicen rendimiento universal en todos los proyectos.",
+        "El precio por token se conserva y el ahorro depende de la eficiencia real.",
+        "Las protecciones pueden cambiar el comportamiento de tareas especializadas.",
+        "El lanzamiento no garantiza disponibilidad uniforme por región o integración."
+      ],
+      "practicalAdvice": [
+        "Medir calidad y coste con pruebas de la organización.",
+        "Comprobar archivos y fórmulas producidos antes de utilizarlos.",
+        "Registrar esfuerzo y versión del modelo en evaluaciones."
+      ],
+      "usefulFacts": [
+        "Sonnet 5.5 es el segundo integrante anunciado de la familia 5.5.",
+        "Las aplicaciones de Claude y Claude Code pueden utilizar niveles de esfuerzo ajustables.",
+        "Las salvaguardas de biología se describen como equivalentes a las de Sonnet 5."
+      ],
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial antiguo de calculadora mecánica más veloz, pluma que prepara documentos y máquina que edita código con múltiples engranajes, papel sepia y sin marcas."
     },
     {
       "id": "lambda-mayes-county-oklahoma-ai-datacenter-plan-2026-09-27",
@@ -11377,8 +11511,8 @@
       "coveredAt": "2026-10-07",
       "company": "Anthropic",
       "product": "Claude Opus 5.5",
-      "title": "Opus 5.5 renueva la propuesta de Claude para tareas complejas",
-      "summary": "Anthropic estrena la familia 5.5 y destaca mejoras de rendimiento y costo.",
+      "title": "Claude Opus 5.5: más capacidad agentiva, mejores controles y menor coste por trabajo",
+      "summary": "Anthropic presentó el 22 de septiembre Opus 5.5, primer modelo de la familia Claude 5.5. Ofrece mejor desempeño en tareas complejas, una reducción anunciada del 40 % en coste por tarea típica frente a Opus 5 y salvaguardas para usos sensibles. Su precio API base es US$4 por millón de tokens de entrada y US$20 por millón de salida.",
       "tags": [
         "Modelos",
         "Desarrollo"
@@ -11391,11 +11525,9 @@
         "url": "https://www.anthropic.com/claude-opus-5-5",
         "publishedAt": "2026-09-22"
       },
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-10",
       "body": [
-        "Anthropic anunció Opus 5.5 el 22 de septiembre como primer modelo de su nueva familia 5.5. La empresa lo sitúa como una opción para trabajo complejo.",
-        "El anuncio atribuye al modelo mejoras frente a Opus 5 y un menor costo por tarea. Son resultados del proveedor; no sustituyen pruebas independientes ni una evaluación del caso de uso propio.",
-        "Una migración debe revisar la versión concreta, límites de uso, comportamiento de herramientas y calidad de las respuestas. Es especialmente importante repetir tareas en las que los errores tengan un costo real."
+        "Anthropic presentó el 22 de septiembre Opus 5.5, primer modelo de la familia Claude 5.5. Ofrece mejor desempeño en tareas complejas, una reducción anunciada del 40 % en coste por tarea típica frente a Opus 5 y salvaguardas para usos sensibles. Su precio API base es US$4 por millón de tokens de entrada y US$20 por millón de salida."
       ],
       "keyPoints": [
         "Primera versión de la familia 5.5.",
@@ -11403,7 +11535,143 @@
       ],
       "analysis": "El costo de una tarea incluye reintentos y revisión, además de tokens. Una evaluación útil mide el trabajo terminado.",
       "watch": "Pruebas comparables y documentación de migración.",
-      "announcedAt": "2026-09-22"
+      "announcedAt": "2026-09-22",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "Anthropic presentó el 22 de septiembre Opus 5.5, primer modelo de la familia Claude 5.5. Ofrece mejor desempeño en tareas complejas, una reducción anunciada del 40 % en coste por tarea típica frente a Opus 5 y salvaguardas para usos sensibles. Su precio API base es US$4 por millón de tokens de entrada y US$20 por millón de salida.",
+        "Los resultados de pruebas dependen de esfuerzo, arnés y configuración.",
+        "Migrar con un conjunto reproducible de pruebas antes de despliegue.",
+        "Anthropic describió evaluadores externos antes del lanzamiento."
+      ],
+      "executiveSummary": "Anthropic presentó el 22 de septiembre Opus 5.5, primer modelo de la familia Claude 5.5. Ofrece mejor desempeño en tareas complejas, una reducción anunciada del 40 % en coste por tarea típica frente a Opus 5 y salvaguardas para usos sensibles. Su precio API base es US$4 por millón de tokens de entrada y US$20 por millón de salida. Los precios y porcentajes son declaraciones de Anthropic bajo condiciones determinadas y no garantías universales.",
+      "sections": [
+        {
+          "heading": "Qué cambió al anunciar la familia 5.5",
+          "kind": "context",
+          "paragraphs": [
+            "Anthropic presentó Claude Opus 5.5 el 22 de septiembre como el primer integrante de su familia 5.5, con énfasis en programación, uso de herramientas, investigación y trabajo prolongado. La compañía explicó que busca un equilibrio entre capacidades cercanas a Fable 5.1 y una operación más económica que Opus 5. La novedad concreta no es solamente el nombre de versión: también hay cambios de precio, velocidad, seguridad y experiencia de colaboración.",
+            "El anuncio llegó después de que Anthropic pidiera moderar el ritmo de avance de ciertas capacidades de frontera. La empresa afirmó que el modelo pasó por evaluaciones externas de organizaciones como METR y Frontier Design, además de su propia batería de pruebas. La existencia de evaluadores externos es relevante, pero no debe confundirse con una certificación de ausencia de fallos: los resultados y la forma de desplegar barreras varían por tarea."
+          ]
+        },
+        {
+          "heading": "Qué muestran los benchmarks, sin exagerarlos",
+          "kind": "technical",
+          "paragraphs": [
+            "Anthropic comunicó un 66,4 % en Terminal-Bench 4.0 para tareas de terminal, 54,4 % en FrontierCode v1.1 y 1.846 puntos Elo en GDPval-AA v2.1 para trabajo profesional. Estas cifras son resultados de configuraciones específicas del proveedor y de colaboradores, donde importan el arnés de ejecución, el esfuerzo de razonamiento, las herramientas disponibles y las salvaguardas. No es correcto deducir que el modelo liderará todas las pruebas de programación o todas las profesiones.",
+            "El propio comunicado señala que márgenes pequeños entre modelos pueden ser poco informativos en la práctica. Algunos resultados se obtienen a esfuerzo máximo y otros a configuraciones por defecto, por lo que comparar dos cifras sin igualar ese parámetro puede inducir errores. La medición valiosa para una empresa es el número de tareas correctas en sus propios repositorios, su tiempo de ejecución, incidencias y coste total por entrega validada."
+          ]
+        },
+        {
+          "heading": "Agentes de código y tareas de muchas horas",
+          "kind": "context",
+          "paragraphs": [
+            "La empresa mostró ejemplos de migraciones extensas de código, búsqueda de defectos y revisión de repositorios grandes. En uno de sus ensayos internos se encargó convertir HAProxy de C a Rust: Opus 5.5 habría terminado en 9,5 horas, frente a doce horas para Fable 5.1, con menor coste en esa prueba. Son resultados del fabricante con un entorno concreto, no una demostración de que cualquier migración masiva pueda automatizarse de manera segura en producción.",
+            "Un agente que trabaja muchas horas tiene riesgos diferentes a un chat corto. Puede malinterpretar un requisito, continuar después de que cambie una dependencia, introducir un bug silencioso o ejecutar un comando irreversible. Las mejoras del modelo son útiles si se combinan con pruebas de regresión, revisión de cambios, límites de acceso y un historial que permita deshacer acciones. La finalización declarada por el asistente no reemplaza la validación externa."
+          ]
+        },
+        {
+          "heading": "Precios nominales y coste real de tareas",
+          "kind": "report",
+          "paragraphs": [
+            "Para la API, Anthropic anunció US$4 por millón de tokens de entrada, US$20 por millón de salida, US$0,20 por millón de lecturas de caché y US$5 por millón de escrituras en caché. Frente a Opus 5 hay una reducción nominal del veinte por ciento en tokens de entrada y salida. Además, la empresa afirmó un ahorro cercano al cuarenta por ciento por tarea típica, porque el modelo requiere menos tokens bajo sus condiciones de prueba.",
+            "No debe confundirse bajar un precio por token con ahorrar siempre el mismo porcentaje por proyecto. El coste depende de longitud del contexto, intentos adicionales, cache hits, uso de herramientas, reejecuciones y esfuerzo configurado. Existe además un modo rápido de hasta 2,5 veces la velocidad nominal, con tarifas superiores de US$8 y US$40 por millón de tokens de entrada y salida. Para comparar escenarios, cada equipo debe medir gasto por resultado revisado."
+          ]
+        },
+        {
+          "heading": "Seguridad, permisos y restricciones por dominio",
+          "kind": "analysis",
+          "paragraphs": [
+            "Anthropic sostiene que Opus 5.5 mejoró en sus auditorías de comportamiento y resistencia a inyección de instrucciones. También informó controles para agentes de programación, como un clasificador de acciones, entornos aislados y revisión de código. Son mecanismos que buscan reducir riesgos, no garantías de que un documento malicioso o una instrucción ambigua nunca provoquen un error. El modelo conserva capacidad de equivocarse y requiere supervisión en acciones sensibles.",
+            "La compañía introdujo medidas especiales en ciberseguridad y biología. Para trabajos legítimos afectados por esos límites existen programas de verificación destinados a organizaciones aprobadas. La autorización de un usuario corriente no habilita por sí sola todos los tipos de operación. Las organizaciones que usan el modelo para investigación deben consultar condiciones actuales, separar datos privados y definir quién acepta las acciones de mayor impacto."
+          ]
+        },
+        {
+          "heading": "Dónde se anunció disponible",
+          "kind": "practical",
+          "paragraphs": [
+            "Anthropic indicó disponibilidad en sus propias aplicaciones y API, así como en plataformas de nube como AWS, Google Cloud y Microsoft Azure. Para desarrolladores publicó el identificador `claude-opus-5-5`. También comunicó cambios en límites de uso por ventanas de cinco horas para Pro, Max, Team y Enterprise por asiento. El acceso efectivo puede depender del plan, cuotas, región y controles de seguridad específicos de cada plataforma.",
+            "La presencia de un modelo en varias nubes facilita adopción empresarial, pero las condiciones comerciales y herramientas auxiliares no son necesariamente idénticas. Un equipo debe verificar contrato, retención de datos, región de procesamiento, integraciones y costes antes de migrar un flujo. En particular, mantener contexto y pruebas entre versiones importa más que cambiar un identificador de modelo y asumir que todos los resultados serán equivalentes."
+          ]
+        },
+        {
+          "heading": "Qué observar después del lanzamiento",
+          "kind": "context",
+          "paragraphs": [
+            "El avance de septiembre combina mejores capacidades y un esfuerzo explícito por hacer más viables los agentes de larga duración. Una organización que experimente con Opus 5.5 debería ejecutar pruebas de calidad, coste y seguridad en su entorno y registrar qué tareas se completan sin rehacer trabajo humano. La estabilidad del modelo con herramientas, permisos y datos reales vale más que una demostración escogida para una nota de prensa.",
+            "Análisis Gazette: el movimiento competitivo es reducir el coste de trabajos complejos manteniendo un nivel alto de capacidad, con salvaguardas especializadas. Las cifras de Anthropic merecen seguimiento, pero su significado debe evaluarse por tareas verificables, no por una clasificación única. La seguridad también necesita evidencia externa continua y barreras deterministas alrededor del sistema que invoca el modelo."
+          ]
+        }
+      ],
+      "finalSummary": "Análisis Gazette: el movimiento competitivo es reducir el coste de trabajos complejos manteniendo un nivel alto de capacidad, con salvaguardas especializadas. Las cifras de Anthropic merecen seguimiento, pero su significado debe evaluarse por tareas verificables, no por una clasificación única. La seguridad también necesita evidencia externa continua y barreras deterministas alrededor del sistema que invoca el modelo.",
+      "technicalDetails": [
+        {
+          "label": "Anuncio",
+          "value": "22 septiembre 2026"
+        },
+        {
+          "label": "Modelo API",
+          "value": "claude-opus-5-5"
+        },
+        {
+          "label": "Terminal-Bench 4.0",
+          "value": "66,4 %, según evaluación indicada por Anthropic"
+        },
+        {
+          "label": "GDPval-AA v2.1",
+          "value": "1846 Elo según Anthropic"
+        }
+      ],
+      "pricing": [
+        {
+          "label": "API entrada",
+          "value": "US$4 por millón de tokens"
+        },
+        {
+          "label": "API salida",
+          "value": "US$20 por millón de tokens"
+        },
+        {
+          "label": "Lecturas de caché",
+          "value": "US$0,20 por millón de tokens"
+        },
+        {
+          "label": "Modo rápido",
+          "value": "US$8 entrada / US$40 salida por millón"
+        }
+      ],
+      "availability": {
+        "status": "Disponible en Claude y plataformas de desarrolladores según plan y controles",
+        "platforms": [
+          "Claude",
+          "Claude Code",
+          "Claude Platform",
+          "Servicios cloud compatibles"
+        ],
+        "requirements": [
+          "Verificar plan, cuotas y límites especializados"
+        ],
+        "notes": [
+          "Los accesos de investigación sensible requieren aprobación donde corresponda."
+        ]
+      },
+      "limitations": [
+        "Los resultados de pruebas dependen de esfuerzo, arnés y configuración.",
+        "Una reducción promedio de costes no se replica automáticamente en cada tarea.",
+        "Los controles de seguridad no garantizan ausencia de errores ni de abuso.",
+        "El acceso a capacidades sensibles depende de verificación."
+      ],
+      "practicalAdvice": [
+        "Migrar con un conjunto reproducible de pruebas antes de despliegue.",
+        "Separar revisión de código y permisos de la salida del modelo.",
+        "Medir costes reales por tarea validada y no solo tarifa por token."
+      ],
+      "usefulFacts": [
+        "Anthropic describió evaluadores externos antes del lanzamiento.",
+        "El modo rápido tiene tarifas diferentes del modo estándar.",
+        "La familia Sonnet y Haiku 5.5 estaba anunciada como siguiente paso el 22 de septiembre."
+      ],
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de periódico antiguo de gran máquina de cálculo mecánica con diversos talleres de programación supervisados, tinta y papel sepia, sin logos ni texto ficticio."
     },
     {
       "id": "microsoft-global-ai-diffusion-report-q2-2026-sep-21",
