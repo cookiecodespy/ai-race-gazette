@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T08:27:01.483Z",
+  "updatedAt": "2026-10-11T11:25:45.992Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -10655,7 +10655,7 @@
           "url": "https://deepmind.google/models/model-cards/nano-banana-2-1/"
         }
       ],
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
       "body": [
         "La documentación de Gemini incorpora Nano Banana 2.1, un modelo orientado a la generación de imágenes y a la edición mediante instrucciones conversacionales. El identificador de la API permite distinguir esta versión de otros modelos de la misma familia.",
         "El flujo combina instrucciones de texto y material visual. Su utilidad está en iterar sobre una imagen: pedir cambios, ajustar elementos y trabajar en una conversación, en vez de tratar cada generación como una operación aislada.",
@@ -10671,7 +10671,65 @@
       "eventKey": "nano-banana-2-1",
       "coveredAt": "2026-10-07",
       "product": "Nano Banana 2.1",
-      "announcedAt": "2026-10-06"
+      "announcedAt": "2026-10-06",
+      "articleVersion": 2,
+      "executiveSummary": "Google documentó Nano Banana 2.1 el 6 de octubre de 2026 como modelo de generación y edición conversacional de imágenes para Gemini API. La ficha enumera mejoras de calidad, representación de texto, referencias múltiples y composiciones panorámicas. Son capacidades descritas por Google, no una evaluación independiente, y la disponibilidad en cada producto debe comprobarse por separado.",
+      "quickTakeaways": [
+        "Modelo identificado en la API como gemini-nano-banana-2.1, con entrada multimodal y salida de imagen y texto.",
+        "La ficha oficial declara hasta 14 imágenes de referencia, trabajo a 1K, 2K y 4K y mejoras de consistencia y composición.",
+        "La integración requiere verificar costes, límites efectivos y calidad de varias rondas; una ficha de modelo no garantiza despliegue idéntico en todas las aplicaciones."
+      ],
+      "sections": [
+        {
+          "heading": "Qué se anunció y cómo encaja en la familia",
+          "kind": "report",
+          "paragraphs": [
+            "La novedad no consiste simplemente en que Google haya incorporado una imagen nueva a Gemini. Nano Banana 2.1 tiene un identificador de modelo propio, gemini-nano-banana-2.1, lo que permite fijar una versión concreta durante las pruebas de integración. Google lo presenta como una evolución eficiente de Nano Banana 2, asociado a Gemini 3.1 Flash Image, frente a Nano Banana Pro, que utiliza Gemini 3 Pro Image. Esa distinción importa para no mezclar anuncios de modelos diferentes en un mismo balance de capacidades.",
+            "El anuncio del 6 de octubre llegó principalmente a través de documentación para desarrolladores. Conviene distinguir tres hechos: que exista una ficha oficial, que el modelo esté accesible a un proyecto de API concreto y que se utilice dentro de aplicaciones de Google o de terceros. Ninguna de esas etapas implica automáticamente las otras. Para usuarios profesionales, el código de modelo estable es una referencia más precisa que el nombre comercial, especialmente si una interfaz permite elegir entre varias generaciones de Nano Banana."
+          ]
+        },
+        {
+          "heading": "Capacidades técnicas declaradas por Google",
+          "kind": "technical",
+          "paragraphs": [
+            "La documentación describe entradas de texto, imágenes, video y documentos PDF, con salida de imagen y texto. Entre las novedades enumera mejoras de realismo, fidelidad a instrucciones, renderizado tipográfico y distribución de elementos en infografías. También declara resoluciones de salida de 1K, 2K y 4K —con 1K como opción predeterminada— y correcciones para mosaicos o artefactos en proporciones panorámicas de 1:4, 4:1, 1:8 y 8:1 cuando se trabaja a las resoluciones compatibles. Son especificaciones del proveedor que necesitan pruebas con materiales propios.",
+            "Otra característica relevante es la combinación de múltiples referencias: Google señala compatibilidad con hasta catorce imágenes, consistencia de hasta cuatro personajes y fidelidad de hasta diez objetos en su ejemplo de capacidad. El resultado no debe entenderse como una garantía de identidad exacta en cualquier escena. El sistema también ofrece grounding con Google Web e Image Search y niveles configurables de razonamiento minimal, medium y high. No deben confundirse esas opciones con edición vectorial determinista ni con herramientas de diseño que permitan recuperar capas originales."
+          ]
+        },
+        {
+          "heading": "Integración, límites y costes",
+          "kind": "practical",
+          "paragraphs": [
+            "Para integrar el servicio conviene registrar en cada prueba la versión exacta, el prompt, las imágenes de entrada, la resolución solicitada y si se usó búsqueda de apoyo. Solo así se pueden comparar salidas y detectar regresiones. La ficha de Google indica límites generales de 131.072 tokens de entrada y 32.768 de salida, pero un límite de tokens no reemplaza los límites prácticos de tamaño de archivo, latencia o cuota que se definan en otras páginas de la API. La misma ficha enumera Batch API como compatible y señala que este modelo no soporta function calling, ejecución de código, caché ni salidas estructuradas.",
+            "El documento de modelo consultado no entrega por sí solo una tarifa monetaria completa aplicable a todos los casos. Por eso esta cobertura evita asignarle un precio por imagen sin revisar la tabla de precios y el tipo de cuenta. En producción hay que calcular coste por resolución y volumen, posibles reintentos, tratamiento de archivos de entrada y requisitos contractuales antes de ofrecer una función masiva a usuarios. Un resultado visual atractivo durante una demostración no garantiza costes estables en un flujo de trabajo real."
+          ]
+        },
+        {
+          "heading": "Qué aporta y cómo comprobarlo",
+          "kind": "analysis",
+          "paragraphs": [
+            "La mejora que más puede cambiar un producto no siempre es la imagen inicial, sino la capacidad de editarla sin perder decisiones anteriores. Un experimento reproducible debería empezar por una escena, solicitar tres cambios sucesivos y revisar si objetos, rasgos, textos y composición permanecen consistentes. También conviene probar material que el modelo encuentre difícil: textos pequeños, cambios localizados, accesorios repetidos, formatos extremos y referencias parcialmente contradictorias. Esa evidencia local es más útil que deducir un vencedor universal a partir de ejemplos publicitarios.",
+            "Para un equipo de diseño, el modelo puede servir como herramienta de bocetado y exploración; para un desarrollador, como componente de un editor conversacional. Ambos necesitarán un mecanismo para descartar resultados, conservar versiones y verificar permisos sobre el contenido empleado. Si la ilustración acompaña una noticia factual, hay una exigencia adicional: identificarla claramente como generada y no permitir que su apariencia se interprete como fotografía del anuncio. Esa separación entre utilidad visual y evidencia periodística sigue siendo esencial en el Gazette."
+          ]
+        }
+      ],
+      "limitations": [
+        "Las mejoras de calidad y consistencia son afirmaciones de Google; no constituyen una medición independiente del Gazette.",
+        "Disponibilidad, precios concretos y cuotas pueden variar entre API y productos; no se infieren a partir de la ficha.",
+        "Una edición conversacional no garantiza capas recuperables ni precisión pixel a pixel."
+      ],
+      "practicalAdvice": [
+        "Probar una secuencia de al menos tres ediciones sobre las mismas referencias y registrar qué elementos se preservan.",
+        "Medir resolución, latencia, reintentos y coste antes de activar generación masiva.",
+        "Conservar el crédito de ilustración generada y separar el arte de la documentación del hecho informado."
+      ],
+      "usefulFacts": [
+        "Código del modelo documentado: gemini-nano-banana-2.1.",
+        "Resoluciones señaladas por Google: 1K, 2K y 4K; la ficha indica 1K por defecto.",
+        "La ficha enumera hasta catorce imágenes de referencia y soporte de Batch API."
+      ],
+      "finalSummary": "Nano Banana 2.1 amplía las opciones documentadas de creación y edición visual en Gemini API. La promesa está en iterar con más referencias y mejor composición, pero su valor real dependerá de ensayos repetibles, acceso efectivo, coste y control humano. La documentación primaria prueba el anuncio técnico, no el rendimiento de todos los productos que podrían incorporarlo.",
+      "imageStatus": "needs-specific-art"
     },
     {
       "id": "mistral-large-4",
@@ -11874,7 +11932,7 @@
         "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
         "publishedAt": "2026-09-30"
       },
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
       "body": [
         "Google anunció Gemini 4 Argon el 30 de septiembre. La primera fase de acceso se dirige a defensores de ciberseguridad de confianza mediante Fairwind.",
         "La empresa lo orienta a razonamiento y flujos profesionales largos, incluyendo programación y defensa. El anuncio no equivale a disponibilidad general para cualquier usuario.",
@@ -11886,7 +11944,93 @@
       ],
       "analysis": "La carrera de modelos incluye tanto capacidad como distribución. Un producto restringido tiene un impacto distinto de una herramienta abierta a todos.",
       "watch": "Ampliación del acceso y evaluaciones independientes.",
-      "announcedAt": "2026-09-30"
+      "announcedAt": "2026-09-30",
+      "articleVersion": 2,
+      "executiveSummary": "Google presentó Gemini 4 Argon el 30 de septiembre de 2026 para razonamiento prolongado, ingeniería de software, trabajo empresarial y defensa de ciberseguridad. El acceso comenzó con defensores seleccionados mediante Fairwind, no con un lanzamiento general. La compañía publicó precios introductorios previstos y numerosos resultados de evaluaciones, que deben citarse como afirmaciones del proveedor.",
+      "quickTakeaways": [
+        "El despliegue inicial se dirige a defensores de ciberseguridad de confianza mediante el programa Fairwind; Google plantea ampliar el acceso después.",
+        "Google anuncia un límite de salida de hasta un millón de tokens y precios introductorios de US$2 por millón de entrada y US$10 por millón de salida.",
+        "Los porcentajes de benchmarks y los casos internos son resultados comunicados por Google, no verificados de forma independiente por esta redacción."
+      ],
+      "sections": [
+        {
+          "heading": "Lanzamiento por fases, no disponibilidad general",
+          "kind": "report",
+          "paragraphs": [
+            "El 30 de septiembre Google hizo público Gemini 4 Argon y situó su primera etapa de acceso en un conjunto de organizaciones defensoras de ciberseguridad a través del programa Fairwind. El anuncio no convierte a Argon en un modelo abierto para toda cuenta personal, desarrollador o empresa. Google también describió un proceso voluntario de acceso previo con el gobierno estadounidense y la ampliación gradual de grupos de prueba mientras evalúa nuevas salvaguardas. Cualquier comparación de adopción debe reflejar esta diferencia entre modelo anunciado y producto realmente disponible.",
+            "La propuesta técnica incluye razonamiento sostenido en tareas largas de programación, investigación, análisis jurídico, finanzas y seguridad. Para quienes evalúan proveedores de IA, el acceso controlado limita la posibilidad de verificar rendimiento y costes con cargas propias. Por ello, esta edición separa las capacidades que Google describe de aquello que un lector podría contratar y utilizar hoy. Los casos internos y las demostraciones constituyen evidencia de interés, pero no sustituyen una evaluación reproducible fuera del entorno del fabricante."
+          ]
+        },
+        {
+          "heading": "Qué significa un millón de tokens de salida",
+          "kind": "technical",
+          "paragraphs": [
+            "Google afirma haber elevado el límite máximo de tokens de salida de 64.000 a un millón para permitir trayectorias de trabajo extensas sin dividir la generación en múltiples sesiones. La cifra se refiere a salida y no debe confundirse automáticamente con el tamaño del contexto de entrada ni con una garantía de que toda tarea mejorará al producir textos enormes. Un presupuesto largo permite mantener más pasos dentro de una operación, pero aumenta la importancia de evaluar corrección intermedia, coste, tiempos de respuesta y capacidad de detener una ejecución defectuosa.",
+            "Entre los ejemplos publicados se mencionan migraciones de código C y C++ hacia Rust, optimización de memoria en centros de datos e investigación de algoritmos cuánticos. Google afirma que sus agentes localizaron optimizaciones capaces de liberar más de 300 TiB de memoria tras el despliegue correspondiente y describe un caso de portabilidad SIMD en el decodificador libgav1. El mismo anuncio reconoce auditorías automáticas y manuales antes de llevar transformaciones críticas a producción. Esa cautela es relevante: un agente puede proponer una migración extensa, pero compilación y equivalencia funcional no siempre bastan para asegurar su seguridad."
+          ]
+        },
+        {
+          "heading": "Resultados, benchmarks y atribución",
+          "kind": "context",
+          "paragraphs": [
+            "El artículo oficial adjudica a Argon un 77,9 % en DeepSWE v1.1 para ingeniería de software de largo horizonte, un 51,3 % en AutomationBench para tareas empresariales y un 91,7 % en LVBench para comprensión de video largo. También comunica un 68 % en CWE-bench v1, donde lo sitúa empatado en el primer puesto de reparación de vulnerabilidades. Todos esos valores proceden de la comunicación de Google; cambian de significado según versión del conjunto de evaluación, metodología, uso de herramientas y presupuesto de ejecución. No son una tabla independiente elaborada por el Gazette.",
+            "La compañía destaca además aplicaciones de defensa junto con Wiz, que habría identificado una vulnerabilidad importante en software sanitario. La relevancia del caso es el posible apoyo a equipos defensores, pero el comunicado no autoriza generalizar que el modelo hallará fallos inéditos en cualquier entorno. En seguridad importa documentar alcance, permisos, revisión responsable y el estado real de corrección. Una capacidad demostrada en un contexto autorizado no elimina el riesgo de errores, alertas falsas o recomendaciones difíciles de reproducir."
+          ]
+        },
+        {
+          "heading": "Precios anunciados y evaluación práctica",
+          "kind": "practical",
+          "paragraphs": [
+            "Google indica un precio introductorio previsto de dos dólares por millón de tokens de entrada y diez dólares por millón de tokens de salida, con un descuento del 95 % respecto del precio de entrada para tokens de caché. Esta es una política anunciada y no una factura observada durante una contratación general. La evaluación económica tiene que considerar el acceso efectivo, las condiciones del plan, la frecuencia de llamadas y la cantidad de salida generada. Un límite enorme de salida puede representar un coste apreciable si los equipos lo usan sin presupuestos, abortos y revisión.",
+            "Un piloto empresarial responsable debería comparar Argon con alternativas accesibles bajo la misma tarea, conjunto de datos, controles de herramientas y tiempo de revisión humana. En programación habría que contar defectos tras ejecutar pruebas; en análisis jurídico y financiero, comprobar citas y procedencia; en ciberseguridad, usar entornos autorizados y protocolos de divulgación. Más capacidad anunciada no equivale automáticamente a una solución lista para integrarse con datos sensibles. La decisión depende también de residencia de datos, trazabilidad y operación segura."
+          ]
+        }
+      ],
+      "pricing": [
+        {
+          "label": "Entrada introductoria anunciada",
+          "value": "US$2 por millón de tokens"
+        },
+        {
+          "label": "Salida introductoria anunciada",
+          "value": "US$10 por millón de tokens"
+        },
+        {
+          "label": "Tokens de caché",
+          "value": "Google anuncia un descuento del 95 % respecto de entrada",
+          "note": "Sujeto a disponibilidad y condiciones de acceso del proveedor"
+        }
+      ],
+      "availability": {
+        "status": "Despliegue inicial restringido; no disponibilidad general confirmada en el anuncio del 30 de septiembre.",
+        "platforms": [
+          "Programa Fairwind para defensores de ciberseguridad de confianza"
+        ],
+        "regions": [],
+        "requirements": [
+          "Acceso autorizado al programa inicial"
+        ],
+        "notes": [
+          "Google plantea ampliar acceso a desarrolladores, empresas y consumidores cuando avance su evaluación de seguridad."
+        ]
+      },
+      "limitations": [
+        "El rendimiento de benchmarks publicado por Google requiere reproducción independiente con metodología comparable.",
+        "El despliegue inicial restringido impide asumir disponibilidad inmediata para toda organización.",
+        "Migraciones de código y parches de seguridad generados por agentes siguen requiriendo auditoría técnica y humana."
+      ],
+      "practicalAdvice": [
+        "Separar precio anunciado de servicio efectivamente contratable.",
+        "Probar controles de herramientas, calidad de resultados y auditoría humana antes de introducirlo en producción.",
+        "En ciberseguridad, limitar cualquier prueba a sistemas y entornos con autorización explícita."
+      ],
+      "usefulFacts": [
+        "Google comunicó hasta un millón de tokens de salida frente a 64.000 previos.",
+        "El anuncio describe migraciones de C/C++ a Rust y optimizaciones de memoria sujetas a revisión.",
+        "El acceso inicial se encuadra en Fairwind, no en un lanzamiento público general."
+      ],
+      "finalSummary": "Gemini 4 Argon representa la apuesta de Google por agentes capaces de sostener tareas profesionales complejas y por un despliegue que prioriza inicialmente a defensores cibernéticos. Sus especificaciones y ejemplos justifican seguimiento técnico, pero el impacto competitivo dependerá de apertura real, evaluación independiente y rendimiento seguro en entornos productivos.",
+      "imageStatus": "needs-specific-art"
     },
     {
       "id": "gpt-6-1-sol-devday",
