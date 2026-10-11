@@ -215,7 +215,7 @@
       "status": "queued",
       "lane": "Historical Backfill",
       "acceptance": "Siete fechas complete/reviewed-no-material-news con evidencia y Reporter V2",
-      "notes": "15 Sep contiene Waymo-Allianz y Google Retrieve-for-Train; 17 Sep Waymo Singapur, 18 Sep Google MilleMiglia y 21 Sep Microsoft difusión. Falta 16,19,20 Sep y auditoría inversa de todos los días."
+      "notes": "15 Sep contiene Waymo-Allianz y Google Retrieve-for-Train; 17 Sep Waymo Singapur, 18 Sep Google MilleMiglia y 21 Sep Microsoft difusión. Falta 16,19,20 Sep y auditoría inversa de todos los días. 16 Sep ahora tiene dos informes OpenAI comprobados; sigue partial. Pendientes 19, 20 Sep y la pasada inversa de todo el bloque."
     },
     {
       "id": "H-2230-GATE",
@@ -262,7 +262,7 @@
       "status": "in_progress",
       "lane": "Editor-in-Chief / Historical Backfill",
       "acceptance": "Cero artículos legacy sin excepción editorial justificada; conservar IDs, contrastar fuentes originales, enriquecer Reporter V2 y comprobar la integridad del archivo.",
-      "notes": "En pasada de 10 Oct 2026: cuatro migraciones confirmadas. Quedan 43 piezas legacy; recalcular al reanudar."
+      "notes": "Conteo vivo a 10 octubre: 41 artículos legacy tras seis migraciones de la serie V3. Recalcular cada vez desde news.json, preservar IDs y auditar fuentes."
     },
     {
       "id": "VIS-PREMIUM",
@@ -930,6 +930,40 @@
         "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
       ],
       "notes": "La infraestructura CI de la publicación se revisa tras el commit. Fechas siguen partial hasta auditoría inversa."
+    },
+    {
+      "id": "H-SEP16-OPENAI-SAFETY-WORK",
+      "phase": "P06",
+      "title": "Recuperar los dos informes originales de OpenAI del 16 septiembre",
+      "priority": "P0",
+      "status": "done",
+      "lane": "Historical Backfill",
+      "date": "2026-09-16",
+      "acceptance": "Publicar Reporter V2 sobre protocolo y seis casos de desalineación y sobre estudio de tareas laborales, con fechas originales, límites, JSON/RSS/ledger y validación editorial.",
+      "evidenceCommit": "56014e74533dfb16844e6a045540cd297f3e8833",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38101568267",
+        "https://openai.com/index/model-misalignment-reporting-framework/",
+        "https://openai.com/index/unlocking-new-ways-of-working/"
+      ],
+      "notes": "El día 16 dejó de estar vacío pero conserva estado partial hasta segunda auditoría por sector y fuente."
+    },
+    {
+      "id": "ED-SEP01-VIDEO-FALCON-V2",
+      "phase": "P09",
+      "title": "Migrar Gemini agentic video y Falcon Guardian a Reporter V2",
+      "priority": "P1",
+      "status": "done",
+      "lane": "Editor-in-Chief / Historical Backfill",
+      "date": "2026-09-01",
+      "acceptance": "Conservar IDs y fuentes originales, ampliar ambos informes con detalles técnicos, disponibilidad, límites y pruebas de integridad.",
+      "evidenceCommit": "e4dacc14b1692092add71ab294b40605da2c9be6",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38101653220",
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/",
+        "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-unveils-falcon-guardian-ai-agent-security/"
+      ],
+      "notes": "La deuda legacy pasó de 43 a 41 sin duplicar noticias."
     }
   ]
 }

@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 68 tareas; 30 completadas; 6 en curso; 30 pendientes o bloqueadas; 2 descartadas con razón.
+- 6 fases; 70 tareas; 32 completadas; 6 en curso; 30 pendientes o bloqueadas; 2 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -125,6 +125,11 @@
   - Criterio: Retrieve-for-Train (15 Sep) y MilleMiglia (18 Sep), Reporter V2, fuente primaria y publicación CI validada.
   - Commit: `5c5e00d8da126c378fe638a49d304db648df7e96`
   - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38099838309
+- [x] **H-SEP16-OPENAI-SAFETY-WORK** · P0 · done — Recuperar los dos informes originales de OpenAI del 16 septiembre
+  - Criterio: Publicar Reporter V2 sobre protocolo y seis casos de desalineación y sobre estudio de tareas laborales, con fechas originales, límites, JSON/RSS/ledger y validación editorial.
+  - Fecha investigada: 2026-09-16
+  - Commit: `56014e74533dfb16844e6a045540cd297f3e8833`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38101568267
 
 ## P07 — 22–30 septiembre: reconstrucción y legacy
 
@@ -189,6 +194,11 @@
   - Criterio: Waymo, Meta Muse Voice, Perplexity Hybrid Mac y Meta Muse Spark migrados a Reporter V2 conservando IDs y fuentes originales.
   - Commit: `96f2141a2f6084dc41833f5ccd111af7b220616a`
   - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38099084180
+- [x] **ED-SEP01-VIDEO-FALCON-V2** · P1 · done — Migrar Gemini agentic video y Falcon Guardian a Reporter V2
+  - Criterio: Conservar IDs y fuentes originales, ampliar ambos informes con detalles técnicos, disponibilidad, límites y pruebas de integridad.
+  - Fecha investigada: 2026-09-01
+  - Commit: `e4dacc14b1692092add71ab294b40605da2c9be6`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38101653220
 
 ## P10 — Segunda auditoría y lanzamiento v1.0
 
