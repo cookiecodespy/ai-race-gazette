@@ -49,7 +49,7 @@ try {
   assert.equal(seoStatus,200,'Public static article not found');
   assert.equal(sitemapCount,news.articles.length+1,'Public sitemap is out of sync');
   assert.match(seoHtml,/property="og:type" content="article"/,'OG metadata must be served without JS');
-  assert.match(seoHtml,/application\\/ld\\+json/,'Structured NewsArticle metadata is absent');
+  assert.match(seoHtml,/application\/ld\+json/,'Structured NewsArticle metadata is absent');
   assert(seoHtml.includes(canonicalSample.title.replaceAll('&','&amp;')),'SSR report headline missing');
 
   await page.goto(BASE,{waitUntil:'domcontentloaded',timeout:45000});
