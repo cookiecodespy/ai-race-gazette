@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T11:29:11.763Z",
+  "updatedAt": "2026-10-11T11:33:58.171Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -20641,7 +20641,7 @@
         "url": "https://blog.google/innovation-and-ai/products/gemini-app/better-tracks-lyria-gemini/",
         "publishedAt": "2026-09-04"
       },
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
       "body": [
         "Google anunció el 4 de septiembre la llegada de Lyria 3.5 a Gemini y a la API de Gemini. El modelo está orientado a generar música a partir de instrucciones.",
         "La aplicación permite elegir o describir géneros, trabajar con estilos vocales o instrumentales y seleccionar pistas cortas o más largas. El anuncio también cita AI Studio, Flow Music y Vids.",
@@ -20653,7 +20653,66 @@
       ],
       "analysis": "La música generativa gana utilidad cuando el usuario puede dirigir e iterar el resultado, además de obtener una primera pista.",
       "watch": "Control creativo, consistencia y condiciones de uso.",
-      "announcedAt": "2026-09-04"
+      "announcedAt": "2026-09-04",
+      "articleVersion": 2,
+      "executiveSummary": "El 4 de septiembre de 2026, Google anunció que Lyria 3.5 llegaba a Gemini y a Gemini API. La actualización amplió controles de género y estilo, plantillas y duración de pistas, con mejoras de voz y arreglos que Google atribuye al modelo. El comunicado declara disponibilidad global en la aplicación de Gemini, además de herramientas creativas y plataformas para desarrolladores; el acceso concreto puede depender de cuenta, superficie y condiciones de uso.",
+      "quickTakeaways": [
+        "Lyria 3.5 se anunció el 4 de septiembre para la aplicación Gemini y Gemini API, con acceso indicado por Google también en Flow Music, AI Studio y Vids.",
+        "El usuario puede elegir o describir género, solicitar estilos vocales o instrumentales, usar plantillas y variar la duración de pistas.",
+        "Las afirmaciones de calidad sonora y expresividad son del proveedor; cada uso comercial debe revisar licencias, derechos y condiciones del producto concreto."
+      ],
+      "sections": [
+        {
+          "heading": "Un modelo de música dentro del flujo de Gemini",
+          "kind": "report",
+          "paragraphs": [
+            "Google presentó Lyria 3.5 como un modelo capaz de crear canciones y fragmentos de audio desde instrucciones, y anunció su integración en superficies ya utilizadas por consumidores y creadores. El comunicado del 4 de septiembre hace dos afirmaciones diferentes: Lyria 3.5 mejora la expresividad de las voces y la riqueza de los arreglos musicales, y los usuarios podrán acceder a esas funciones desde la aplicación Gemini y su API. La primera parte es una valoración del fabricante; la segunda describe un cambio de distribución que puede contrastarse con la experiencia de acceso.",
+            "El lanzamiento importa porque reduce la distancia entre una idea escrita y un resultado sonoro de demostración. Una persona que produce un video o un anuncio puede solicitar una base musical, escoger una orientación de género y generar una pista con más control que una solicitud abierta. No significa que el sistema sustituya automáticamente composición, mezcla y masterización profesionales, ni que el usuario obtenga todos los derechos que podría necesitar para distribución comercial. Hay que examinar el producto y el destino final de cada pieza."
+          ]
+        },
+        {
+          "heading": "Controles creativos y diferencias de uso",
+          "kind": "technical",
+          "paragraphs": [
+            "En Gemini, Google describe selección o descripción libre del género musical, preferencia entre propuestas vocales e instrumentales y nuevas plantillas para iniciar tareas como música ambiental o pistas para celebraciones. También distingue canciones cortas de composiciones más largas. Estos controles son importantes porque cambian la experiencia: en vez de evaluar una única muestra aleatoria, el creador puede establecer ciertas restricciones antes de escuchar y decidir si continúa iterando.",
+            "La nota oficial no aporta una especificación exhaustiva de todos los controles de edición, formato, stems separados, tasas de muestreo, garantías de identidad vocal o composición por compases. Por ello, el Gazette no presume que cada superficie proporcione un editor multicanal ni que la API replique exactamente la interfaz de Gemini. Es más riguroso describir lo que está anunciado y someter los detalles de exportación, duración máxima y tratamiento de audio a la documentación vigente de la superficie que se va a utilizar."
+          ]
+        },
+        {
+          "heading": "Dónde anunció Google su disponibilidad",
+          "kind": "context",
+          "paragraphs": [
+            "Google señaló que Lyria 3.5 estaba disponible mundialmente para usuarios de Gemini en web y aplicaciones móviles y citó opciones para artistas en Google Flow Music, además de Google AI Studio y Google Vids. Para desarrolladores mencionó Gemini API. La expresión 'disponible' es del comunicado original; no implica que cada región, cuenta educativa o plan empresarial tenga idénticos límites de uso ni que todos los productos presenten la misma interfaz.",
+            "Conviene separar una aplicación creativa con botones y plantillas de una API que exige gestionar solicitudes, pagos, límites y respuestas. Una campaña publicitaria puede necesitar versiones ajustadas por duración y condiciones de licencia, mientras un prototipo personal quizá solo necesite una muestra satisfactoria. La elección entre herramientas depende de compatibilidad con ese trabajo, no solo de que empleen la misma familia de modelos."
+          ]
+        },
+        {
+          "heading": "Prueba práctica y cautelas para reutilización",
+          "kind": "practical",
+          "paragraphs": [
+            "Una evaluación comparativa responsable consiste en preparar varias instrucciones sobre el mismo género y revisar coherencia rítmica, dicción, cortes, transiciones y control de duración. Es útil anotar cuáles resultados requieren retoques fuera del generador y cuántos intentos hacen falta para conseguir uno aprovechable. Google califica al modelo como de mayor fidelidad; esa comparación no equivale a un estudio ciego independiente. La satisfacción del usuario y la capacidad de integrar el audio en un trabajo real son resultados distintos.",
+            "Antes de publicar una pieza generada, el creador debe revisar los términos de uso, las normas de transparencia y los derechos aplicables a contenido de terceros. Si la pista va a acompañar publicidad, conviene conservar la instrucción, versión del modelo y la plataforma utilizada para documentar su procedencia. No debe presentarse como una interpretación de un artista real ni como una grabación documental si no lo es. Las mejoras anunciadas hacen atractiva la tecnología, pero el control editorial sigue fuera del modelo."
+          ]
+        }
+      ],
+      "limitations": [
+        "Google no publica en este comunicado una evaluación independiente de calidad o todas las especificaciones técnicas del audio.",
+        "La disponibilidad anunciada en varias superficies no demuestra paridad de funciones, precios ni límites entre API y aplicaciones.",
+        "Los derechos de uso y el contenido publicitario deben verificarse en las condiciones aplicables antes de distribución."
+      ],
+      "practicalAdvice": [
+        "Probar con tres estilos y dos duraciones para comparar control y consistencia del resultado.",
+        "Comprobar acceso real en la cuenta y los términos de licencia de la plataforma antes de integrar pistas comerciales.",
+        "Conservar indicaciones, versión del modelo y superficie de creación como metadatos de procedencia."
+      ],
+      "usefulFacts": [
+        "Fecha del comunicado: 4 de septiembre de 2026.",
+        "Google citó Gemini, Gemini API, Google AI Studio, Google Flow Music y Google Vids.",
+        "Los controles anunciados incluyen género, estilo vocal/instrumental, plantillas y duración."
+      ],
+      "finalSummary": "Lyria 3.5 traslada generación musical a más flujos de Google y promete mayor expresividad. Su novedad más clara es la combinación de opciones de creación con una distribución amplia; lo que falta demostrar fuera de las propias muestras de la compañía es la fiabilidad del resultado para distintos géneros, tareas y condiciones de licencia.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado retro de una sala de música con un compositor humano, un gramófono y una máquina simbólica dibujando pentagramas estilizados sin notas legibles; destacar selección de instrumentos, cantante y arreglos, sin imitar músicos reales ni atribuir grabaciones documentales. Tinta negra y sepia sobre periódico envejecido; ilustración generada editorial, horizontal 3:2 sin textos incrustados."
     },
     {
       "id": "github-hydrafusion",
@@ -21767,7 +21826,7 @@
       "image": "assets/google.webp",
       "imageAlt": "Grabado editorial de arquitectura tecnológica",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
       "coveredAt": "2026-10-07",
       "source": {
         "name": "Google · anuncio oficial",
@@ -21784,7 +21843,87 @@
         "Separa capacidades avanzadas del acceso público."
       ],
       "analysis": "El control de distribución está pasando a ser parte de la arquitectura de producto para capacidades de doble uso.",
-      "watch": "Nuevos modelos incorporados y transparencia sobre criterios de acceso."
+      "watch": "Nuevos modelos incorporados y transparencia sobre criterios de acceso.",
+      "articleVersion": 2,
+      "executiveSummary": "Google presentó Fairwind el 2 de septiembre de 2026 como un programa de acceso limitado a capacidades avanzadas de defensa cibernética para organismos públicos, clientes de Google Cloud y socios de confianza. La primera oferta reúne Gemini 3.8 Flash Cyber y el arnés CodeMender para encontrar, comprobar y corregir vulnerabilidades. Es un programa de defensa controlado; no equivale a acceso irrestricto del público a modelos de ciberseguridad.",
+      "quickTakeaways": [
+        "Fairwind se lanzó el 2 de septiembre con acceso inicial restringido a defensores aprobados.",
+        "Combina Gemini 3.8 Flash Cyber con CodeMender para apoyar identificación, validación y corrección de vulnerabilidades.",
+        "Google afirma contar con más de 650 socios participantes y exige condiciones de operación, incluidas cuentas limitadas a equipos defensivos y autenticación multifactor."
+      ],
+      "sections": [
+        {
+          "heading": "Por qué surge Fairwind",
+          "kind": "report",
+          "paragraphs": [
+            "Google presentó Fairwind como una respuesta a un problema operativo de seguridad: los grandes modelos con capacidades avanzadas pueden ser caros de desplegar y complejos de controlar, mientras modelos abiertos más pequeños pueden requerir infraestructura adicional o tener menos recursos para tareas extensas de remediación. El programa busca poner capacidad de razonamiento especializada y herramientas de validación a disposición de organismos y empresas a los que Google considera socios confiables. La decisión de abrir primero un grupo limitado es parte de la política de seguridad del proveedor, no una característica que el Gazette pueda convertir en prueba de eficacia técnica.",
+            "El anuncio tiene un carácter distinto al de un chatbot o un asistente de escritorio: pretende apoyar equipos responsables de sistemas complejos e infraestructuras críticas. Google menciona autoridades públicas, operadores de salud, telecomunicaciones, energía y finanzas y plataformas tecnológicas centrales. En esos entornos, una corrección equivocada puede tener consecuencias operativas importantes. El beneficio potencial no es solo detectar más vulnerabilidades, sino reducir el tiempo entre hallazgo, verificación, desarrollo del parche y puesta en marcha con controles."
+          ]
+        },
+        {
+          "heading": "Gemini 3.8 Flash Cyber más CodeMender",
+          "kind": "technical",
+          "paragraphs": [
+            "Según Google, la oferta inicial combina su modelo Gemini 3.8 Flash Cyber con CodeMender, descrito como un arnés de trabajo para buscar, verificar y reparar fallos. No se trata únicamente de pedir a un modelo que escriba una recomendación textual: la propuesta integra razonamiento sobre código con procesos orientados a elaborar y validar cambios. Google afirma que los participantes pueden obtener parches listos para despliegue en minutos donde antes podían tardar semanas. La comparación temporal procede de la compañía y no debe tratarse como una garantía para cada repositorio.",
+            "El detalle más relevante para comprender el sistema es que detectar una debilidad y corregirla son fases distintas. Un aviso solo informa de riesgo; un cambio de código debe conservar el comportamiento previsto, someterse a pruebas y desplegarse siguiendo los controles de la organización. Fairwind intenta recorrer ambas etapas, pero las notas públicas no sustituyen políticas de revisión humana, pruebas de regresión y autorización de cambios. En sistemas sensibles, un parche que parece correcto puede introducir incompatibilidades o abrir otra vía de fallo."
+          ]
+        },
+        {
+          "heading": "Participación y reglas de seguridad",
+          "kind": "context",
+          "paragraphs": [
+            "Google declaró más de 650 socios participantes en el mundo y describió requisitos de operación. Entre ellos, limitar el acceso a personal interno de ciberseguridad, respuesta a incidentes o pruebas de penetración y usar controles como autenticación multifactor. Esas salvaguardas son coherentes con el carácter de capacidad restringida del programa: la organización receptora adquiere responsabilidades sobre quién utiliza las herramientas y con qué autorización. La cifra de participantes también procede de Google y no representa una auditoría independiente de adopción o resultados.",
+            "El comunicado diferencia claramente el programa restringido de los productos que ya pueden utilizar otros clientes de Google Cloud. Google dice que cualquier cliente de Cloud puede emplear CodeMender con modelos públicos alojados en Gemini Enterprise Agent Platform en combinación con otras defensas, mientras las capacidades de Gemini 3.8 Flash Cyber reciben prioridad dentro de Fairwind. No debe interpretarse esa alternativa como acceso indirecto al mismo modelo restringido ni como garantía de que todas las funciones avanzadas estén disponibles fuera del programa."
+          ]
+        },
+        {
+          "heading": "Efecto potencial y límites prácticos",
+          "kind": "analysis",
+          "paragraphs": [
+            "Una mejora real de respuesta defensiva se mide con indicadores como número de vulnerabilidades confirmadas, proporción de parches aceptados, tiempo de remediación, fallos introducidos y esfuerzo de revisión. El número de pruebas automatizadas o de alertas generadas puede crecer sin que aumente la seguridad. Para empresas con grandes repositorios, la dificultad mayor suele estar en reproducir un fallo, distinguirlo de un falso positivo y desplegar la corrección sin interrumpir operaciones. Los agentes podrían reducir algunos de esos costes, pero deben examinarse bajo supervisión.",
+            "Para una organización que considera Fairwind, la primera pregunta es si cumple criterios de elegibilidad y puede aplicar sus normas operativas, no si un demostrador encuentra fallos espectaculares. Debería definir un piloto con sistemas autorizados, controles de acceso, prueba de rollback y medidas de eficacia que permitan comprobar si el proceso acelera remediaciones seguras. El comunicado no ofrece una tarifa pública universal del programa, de modo que esta edición no atribuye precios ni contratos específicos. Tampoco presupone que las herramientas deban explorar redes ajenas sin autorización."
+          ]
+        },
+        {
+          "heading": "El vínculo con otros anuncios de Google",
+          "kind": "context",
+          "paragraphs": [
+            "El lanzamiento de Fairwind del 2 de septiembre es un evento material por sí mismo: crea un mecanismo de distribución restringida, alianzas y reglas para defensa. Semanas después Google usaría el mismo programa como vía inicial de acceso a Gemini 4 Argon. Los hechos pertenecen a etapas diferentes y por eso el Gazette conserva noticias separadas con fechas y eventKeys propios. Una refleja el nacimiento del programa; la otra, un nuevo modelo que comenzó a distribuirse a ciertos participantes.",
+            "Google también enmarca Fairwind dentro de su compromiso de resiliencia cibernética y de iniciativas públicas de capacitación y asistencia. El comunicado cita más de cien millones de dólares acumulados en compromisos mundiales de ciberseguridad de Google.org y una parte dirigida a clínicas que apoyan entidades públicas estadounidenses. Son cifras del proveedor sobre programas filantrópicos, no presupuesto de acceso directo asignado a Fairwind ni prueba de retorno comercial del sistema."
+          ]
+        }
+      ],
+      "availability": {
+        "status": "Acceso restringido al programa Fairwind para participantes aprobados por Google.",
+        "platforms": [
+          "Programa Fairwind para socios públicos, clientes de Google Cloud y empresas de ciberseguridad seleccionadas"
+        ],
+        "requirements": [
+          "Requisitos de selección y controles de acceso de la organización",
+          "Limitar uso a equipos internos de seguridad y activar autenticación multifactor"
+        ],
+        "notes": [
+          "CodeMender con modelos públicos de Gemini Enterprise Agent Platform es una opción separada del acceso priorizado a Gemini 3.8 Flash Cyber."
+        ]
+      },
+      "limitations": [
+        "Las cifras de socios y tiempos de reparación son declaraciones oficiales de Google, sin réplica independiente aportada por esta cobertura.",
+        "No hay tarifa pública universal del programa en la nota analizada.",
+        "La remediación de sistemas críticos requiere revisión, pruebas y despliegue autorizado."
+      ],
+      "practicalAdvice": [
+        "Empezar cualquier piloto por un entorno autorizado y un inventario de sistemas cubiertos.",
+        "Medir falsos positivos, parches aceptados, regresiones y tiempo hasta cierre definitivo de vulnerabilidades.",
+        "Preparar control de identidad, revisión humana y rollback antes de automatizar correcciones."
+      ],
+      "usefulFacts": [
+        "Fecha original de lanzamiento: 2 de septiembre de 2026.",
+        "Modelos/herramientas centrales anunciados: Gemini 3.8 Flash Cyber y CodeMender.",
+        "Google comunicó más de 650 socios y requisitos de acceso defensivo."
+      ],
+      "finalSummary": "Fairwind muestra que la distribución y la seguridad de modelos avanzados también son parte de la carrera de IA. Google apuesta por reunir modelos especializados y herramientas de reparación bajo acceso condicionado. El impacto real se evaluará por resultados de remediación y controles de despliegue, no únicamente por la cantidad de socios o por la velocidad anunciada de generación de parches.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial de diario antiguo: ingenieros defensivos revisan un puente tecnológico protegido por una bóveda, con pergaminos de código simbólico y un taller de reparación al fondo. Ilustrar revisión humana de parches y defensa de infraestructura, no un ataque real ni logos de proveedores. Tinta negra y sepia, papel envejecido, horizontal 3:2, sin textos sobre la imagen."
     },
     {
       "id": "gemini-3-8-flash-cyber",
