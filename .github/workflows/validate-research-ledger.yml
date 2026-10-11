@@ -1,0 +1,20 @@
+name: Validate Research Coverage Ledger
+
+on:
+  push:
+    paths:
+      - 'source/research/coverage-audit.json'
+      - 'source/scripts/validate_research_ledger.py'
+      - '.github/workflows/validate-research-ledger.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-backbone:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify historical research ledger against published archive
+        run: python3 source/scripts/validate_research_ledger.py
