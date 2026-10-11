@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T00:37:39.324Z",
+  "updatedAt": "2026-10-11T00:39:49.853Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -10659,6 +10659,457 @@
       "announcedAt": "2026-09-22"
     },
     {
+      "date": "2026-09-17",
+      "id": "waymo-singapore-autonomous-2028-plan-2026-09-17",
+      "eventKey": "waymo-singapore-mot-lta-2028-autonomous-ridehail-plan-2026-09-17",
+      "company": "Waymo",
+      "product": "Waymo Singapur · robotaxis",
+      "title": "Waymo anuncia su entrada en Singapur y apunta a viajes autónomos comerciales en 2028",
+      "summary": "Waymo y autoridades de transporte de Singapur anunciaron el 17 de septiembre un plan gradual para introducir taxis eléctricos completamente autónomos. El itinerario contempla llegada de vehículos, pruebas con especialistas en 2027 y posible servicio comercial en 2028, sujeto a preparación y permisos.",
+      "tags": [
+        "Robótica",
+        "Movilidad",
+        "Infraestructura",
+        "Singapur"
+      ],
+      "sourceUrl": "https://waymo.com/blog/2026/09/waymo-in-singapore/",
+      "sourceName": "Waymo · Singapore, Next Stop: Bringing Scalable, Safe Autonomous Mobility",
+      "hero": "assets/globe.webp",
+      "brief": "Grabado clásico de skyline de Singapur sin marcas reconocibles, vehículo autónomo eléctrico conceptual pasando cerca de estación de transporte público, papeles en sepia, no captura real, sin tipografía.",
+      "technicalDetails": [
+        {
+          "label": "Anuncio",
+          "value": "17 septiembre 2026"
+        },
+        {
+          "label": "Fase inicial",
+          "value": "Llegada planificada de vehículos Jaguar I-PACE eléctricos"
+        },
+        {
+          "label": "2027",
+          "value": "Preparación y adaptación con especialistas al volante"
+        },
+        {
+          "label": "2028",
+          "value": "Objetivo comercial totalmente autónomo, condicionado a requisitos"
+        }
+      ],
+      "availability": {
+        "status": "Plan futuro; servicio público todavía no anunciado como operativo",
+        "platforms": [
+          "Aplicación Waymo (planificada)"
+        ],
+        "regions": [
+          "Singapur, sectores por definir"
+        ],
+        "requirements": [
+          "Despliegue local",
+          "Validación técnica y aprobación regulatoria"
+        ],
+        "notes": [
+          "No hubo apertura pública del servicio en septiembre de 2026."
+        ]
+      },
+      "limitations": [
+        "El calendario 2028 es una intención futura.",
+        "Las estadísticas de seguridad proceden de mercados y mediciones de Waymo.",
+        "No se comunicaron tarifas ni mapa de cobertura definitivo."
+      ],
+      "practicalAdvice": [
+        "Seguir la información de las autoridades de transporte de Singapur y de Waymo.",
+        "No planificar un viaje basándose en una fecha objetivo todavía condicionada.",
+        "Comparar futuras cifras de movilidad con efectos sobre transporte público y congestión."
+      ],
+      "usefulFacts": [
+        "Waymo dijo que iniciaría con Jaguar I-PACE eléctricos.",
+        "El plan prevé especialistas durante la fase de preparación de 2027.",
+        "El proyecto enfatiza conexión con el transporte público existente."
+      ],
+      "articleVersion": 2,
+      "announcedAt": "2026-09-17",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual de transporte autónomo e infraestructura urbana; no es fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado clásico de skyline de Singapur sin marcas reconocibles, vehículo autónomo eléctrico conceptual pasando cerca de estación de transporte público, papeles en sepia, no captura real, sin tipografía.",
+      "source": {
+        "name": "Waymo · Singapore, Next Stop: Bringing Scalable, Safe Autonomous Mobility",
+        "url": "https://waymo.com/blog/2026/09/waymo-in-singapore/",
+        "publishedAt": "2026-09-17"
+      },
+      "body": [
+        "El 17 de septiembre Waymo comunicó un plan para introducir movilidad comercial totalmente autónoma y eléctrica en Singapur. Según el anuncio, trabajará con el Ministerio de Transporte y la Land Transport Authority, organismos responsables de preparar el entorno institucional del despliegue. La noticia no es que una persona ya pudiera pedir un taxi autónomo en Singapur en 2026: la compañía situó el objetivo de servicio comercial en 2028.",
+        "Waymo previó llevar una flota inicial de Jaguar I-PACE totalmente eléctricos en los meses posteriores al anuncio, con operaciones locales para preparar la infraestructura. Para 2027 describió una fase de adaptación en la que especialistas entrenados manejarían los vehículos y trabajarían sobre geometría vial, condiciones meteorológicas y requisitos del entorno. La fase comercial sin conductor quedó prevista para 2028, dentro de las autorizaciones que correspondan."
+      ],
+      "keyPoints": [
+        "El anuncio original está fechado el 2026-09-17.",
+        "Waymo y autoridades de transporte de Singapur anunciaron el 17 de septiembre un plan gradual para introducir taxis eléctricos completamente autónomos. El itinerario contempla llegada de vehículos, pruebas con especialistas en 2027 y posible servicio comercial en 2028, sujeto a preparación y permisos.",
+        "Waymo destacó las condiciones tropicales y el régimen de monzones entre las características que necesitan adaptación."
+      ],
+      "quickTakeaways": [
+        "Waymo y autoridades de transporte de Singapur anunciaron el 17 de septiembre un plan gradual para introducir taxis eléctricos completamente autónomos. El itinerario contempla llegada de vehículos, pruebas con especialistas en 2027 y posible servicio comercial en 2028, sujeto a preparación y permisos.",
+        "Waymo previó llevar una flota inicial de Jaguar I-PACE totalmente eléctricos en los meses posteriores al anuncio, con operaciones locales para preparar la infraestructura.",
+        "Waymo destacó las condiciones tropicales y el régimen de monzones entre las características que necesitan adaptación.",
+        "El calendario 2028 es una intención futura."
+      ],
+      "sections": [
+        {
+          "heading": "Singapur entra en la expansión internacional de Waymo",
+          "kind": "context",
+          "paragraphs": [
+            "El 17 de septiembre Waymo comunicó un plan para introducir movilidad comercial totalmente autónoma y eléctrica en Singapur. Según el anuncio, trabajará con el Ministerio de Transporte y la Land Transport Authority, organismos responsables de preparar el entorno institucional del despliegue. La noticia no es que una persona ya pudiera pedir un taxi autónomo en Singapur en 2026: la compañía situó el objetivo de servicio comercial en 2028.",
+            "La diferencia entre alianza y operación es especialmente importante en una tecnología que interactúa con peatones y otros vehículos. Waymo describió una hoja de ruta de varios pasos y enfatizó la necesidad de permisos, preparación local y validación. La cronología del Gazette conserva el 17 de septiembre como fecha del anuncio, separada del posible inicio de viajes de pago dos años más tarde."
+          ]
+        },
+        {
+          "heading": "Cómo será el calendario previsto",
+          "kind": "technical",
+          "paragraphs": [
+            "Waymo previó llevar una flota inicial de Jaguar I-PACE totalmente eléctricos en los meses posteriores al anuncio, con operaciones locales para preparar la infraestructura. Para 2027 describió una fase de adaptación en la que especialistas entrenados manejarían los vehículos y trabajarían sobre geometría vial, condiciones meteorológicas y requisitos del entorno. La fase comercial sin conductor quedó prevista para 2028, dentro de las autorizaciones que correspondan.",
+            "Cada etapa responde a riesgos distintos. Transportar y mantener una flota en un país no prueba que el sistema esté validado para operar solo. Conducir con especialistas permite recoger información local, pero no sustituye pruebas para retirar al operador humano. Lanzar un servicio comercial exige además gestión de pasajeros, incidentes y coordinación con autoridades, que el anuncio no daba por completadas."
+          ]
+        },
+        {
+          "heading": "Lluvias, geometría de calles y sensores",
+          "kind": "report",
+          "paragraphs": [
+            "Waymo destacó las condiciones tropicales y el régimen de monzones entre las características que necesitan adaptación. Los sistemas de percepción deben operar con superficies mojadas, lluvia intensa y gran densidad de movilidad, manteniendo distancia y predicción del movimiento. La empresa describió un conjunto de cámaras, radar y lidar capaz de observar el entorno alrededor del vehículo. Son componentes anunciados por el proveedor, no una demostración de desempeño perfecto bajo cualquier fenómeno climático.",
+            "La capacidad de reconocer a peatones, ciclistas y vehículos de movilidad personal no es idéntica a decidir correctamente cómo reaccionar en situaciones ambiguas. Por eso, incluso con sensores redundantes, importa validar planificación y comportamiento físico en calles reales. El anuncio no publicó métricas específicas de lluvia intensa para Singapur, ni una certificación final de autonomía sin conductor en ese país."
+          ]
+        },
+        {
+          "heading": "Integración con el transporte público",
+          "kind": "context",
+          "paragraphs": [
+            "El proyecto se presenta como complemento del transporte masivo en vez de sustituto de trenes y autobuses. Waymo identificó conexiones de primer y último kilómetro como un posible uso: facilitar desplazamientos entre estaciones y puntos de destino. La compañía citó que una parte sustancial de usuarios en San Francisco se recoge o deja cerca de estaciones de transporte; ese antecedente no demuestra que se repetirá la misma pauta en Singapur.",
+            "En una ciudad con infraestructura ferroviaria y transporte colectivo consolidado, el impacto dependerá de precios, disponibilidad y diseño de zonas. Un robotaxi que sustituye caminatas o transporte compartido puede tener efectos diferentes a otro que reemplaza un automóvil privado. Para analizar resultados habría que medir integración con estaciones, kilometraje vacío, congestión y viajes adicionales inducidos por el nuevo servicio."
+          ]
+        },
+        {
+          "heading": "Energía, seguridad y afirmaciones corporativas",
+          "kind": "analysis",
+          "paragraphs": [
+            "La empresa subrayó el carácter totalmente eléctrico de su flota y su relación con iniciativas de sostenibilidad local. Los vehículos eléctricos no generan emisiones directas del tubo de escape, pero una evaluación integral necesita considerar electricidad, fabricación y uso del espacio vial. Waymo también comunicó cifras agregadas de viajes y reducciones de choques frente a conductores humanos en los lugares de Estados Unidos donde opera.",
+            "Esas estadísticas son atribuciones del proveedor y no deben trasladarse automáticamente a Singapur. Las autoridades deberán revisar criterios propios, datos operativos y comportamiento en condiciones locales. Una afirmación sobre millones de kilómetros o viajes en otros países muestra experiencia acumulada, pero no equivale a que el servicio esté autorizado o sea estadísticamente seguro en todos los escenarios del nuevo destino."
+          ]
+        },
+        {
+          "heading": "Qué comprobar antes de dar el proyecto por logrado",
+          "kind": "practical",
+          "paragraphs": [
+            "La primera evidencia concreta será la llegada de vehículos y la organización operativa en Singapur. Después habrá que comprobar la fase de especialistas en 2027, la obtención de licencias y la validación independiente o regulatoria pertinente. Solo tras el inicio efectivo de viajes públicos puede hablarse de un servicio comercial disponible. No se anunciaron precios, zonas iniciales exactas ni fechas firmes de reservas en septiembre.",
+            "Análisis Gazette: los robotaxis pasan de experimentos técnicos a negociaciones complejas con ciudades y redes de movilidad. El reto ya no es únicamente demostrar que un vehículo conduce, sino integrar autorización, mantenimiento, seguridad y valor social. La ambición de 2028 ilustra esa dificultad y no debe confundirse con una apertura ya obtenida."
+          ]
+        }
+      ],
+      "executiveSummary": "Waymo y autoridades de transporte de Singapur anunciaron el 17 de septiembre un plan gradual para introducir taxis eléctricos completamente autónomos. El itinerario contempla llegada de vehículos, pruebas con especialistas en 2027 y posible servicio comercial en 2028, sujeto a preparación y permisos. La interpretación debe separar el lanzamiento o anuncio de la disponibilidad efectiva y contrastar los datos operativos con fuentes externas.",
+      "finalSummary": "Análisis Gazette: los robotaxis pasan de experimentos técnicos a negociaciones complejas con ciudades y redes de movilidad. El reto ya no es únicamente demostrar que un vehículo conduce, sino integrar autorización, mantenimiento, seguridad y valor social. La ambición de 2028 ilustra esa dificultad y no debe confundirse con una apertura ya obtenida.",
+      "analysis": "Análisis Gazette: la autonomía debe medirse tanto por su desempeño técnico como por operación, permisos, seguridad y accesibilidad. Los planes no equivalen a servicios ya disponibles.",
+      "watch": "Nuevos permisos, zona efectiva, flota, resultados de seguridad y plazos contrastados con la operación real."
+    },
+    {
+      "date": "2026-09-14",
+      "id": "waymo-tokyo-2027-nihon-kotsu-go-2026-09-14",
+      "eventKey": "waymo-go-nihon-kotsu-tokyo-2027-commercial-launch-agreement-2026-09-14",
+      "company": "Waymo",
+      "product": "Waymo Japón · Tokio",
+      "title": "Waymo y GO acuerdan preparar robotaxis sin conductor en Tokio para 2027",
+      "summary": "Waymo, Nihon Kotsu y GO anunciaron el 14 de septiembre de 2026 un acuerdo para preparar viajes comerciales sin conductor en Tokio durante 2027. La meta contempla unas cien unidades a medida que crezca la operación, sujeta a permisos y validaciones.",
+      "tags": [
+        "Robótica",
+        "Movilidad",
+        "Alianzas",
+        "Japón"
+      ],
+      "sourceUrl": "https://waymo.com/blog/2026/09/opening-tokyo-in-2027-with-nihon-kotsu-go/",
+      "sourceName": "Waymo · Opening our doors to Tokyo riders in 2027 with Nihon Kotsu and GO",
+      "hero": "assets/globe.webp",
+      "brief": "Grabado periodístico de calle estrecha de Tokio con torres bajas y vehículo robotaxi conceptual, conductor ausente, combinación mecánica local y futurista; tinta sepia sin caracteres japoneses ni logotipos inventados.",
+      "technicalDetails": [
+        {
+          "label": "Anuncio",
+          "value": "14 septiembre 2026"
+        },
+        {
+          "label": "Objetivo comercial",
+          "value": "Viajes totalmente autónomos en Tokio durante 2027, sujeto a permisos"
+        },
+        {
+          "label": "Socios",
+          "value": "Waymo, GO y Nihon Kotsu"
+        },
+        {
+          "label": "Flota futura",
+          "value": "Crecimiento gradual hacia alrededor de 100 vehículos"
+        }
+      ],
+      "availability": {
+        "status": "Plan comercial futuro, aún no servicio público confirmado",
+        "platforms": [
+          "GO (planificado)",
+          "Waymo (planificado)"
+        ],
+        "regions": [
+          "Tokio, zonas futuras por definir"
+        ],
+        "requirements": [
+          "Aprobación regulatoria y validación de tecnología y operación"
+        ],
+        "notes": [
+          "No es un lanzamiento público realizado en septiembre de 2026."
+        ]
+      },
+      "limitations": [
+        "2027 es una intención sujeta a condiciones.",
+        "La flota estimada no era una flota comercial activa en Tokio.",
+        "No había precios ni calendario público de reservas detallado."
+      ],
+      "practicalAdvice": [
+        "No usar el anuncio como prueba de disponibilidad actual de robotaxis en Tokio.",
+        "Seguir comunicados de GO, Nihon Kotsu y autoridades locales para permisos.",
+        "Distinguir pruebas supervisadas de viajes comerciales sin conductor."
+      ],
+      "usefulFacts": [
+        "Waymo llegó a Tokio en 2025 para realizar pruebas supervisadas.",
+        "La alianza prevé integración tanto con la aplicación GO como con Waymo.",
+        "La expansión hacia unas cien unidades fue descrita como gradual y planificada."
+      ],
+      "articleVersion": 2,
+      "announcedAt": "2026-09-14",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual de transporte autónomo e infraestructura urbana; no es fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado periodístico de calle estrecha de Tokio con torres bajas y vehículo robotaxi conceptual, conductor ausente, combinación mecánica local y futurista; tinta sepia sin caracteres japoneses ni logotipos inventados.",
+      "source": {
+        "name": "Waymo · Opening our doors to Tokyo riders in 2027 with Nihon Kotsu and GO",
+        "url": "https://waymo.com/blog/2026/09/opening-tokyo-in-2027-with-nihon-kotsu-go/",
+        "publishedAt": "2026-09-14"
+      },
+      "body": [
+        "El 14 de septiembre Waymo, Nihon Kotsu y GO comunicaron que habían acordado preparar el lanzamiento comercial de viajes sin conductor en Tokio durante 2027. El verbo importa: el acontecimiento de septiembre fue la formalización del plan y el siguiente nivel de coordinación, no una apertura de reservas públicas en ese momento. La fecha de 2027 quedó expresamente condicionada a aprobaciones regulatorias y a completar validaciones técnicas y operativas.",
+        "Waymo señaló que su presencia en Tokio venía desde 2025. Durante los meses anteriores al anuncio los vehículos habían circulado con personal entrenado de Nihon Kotsu supervisando la operación. Estas pruebas permitieron recopilar experiencia sobre calles estrechas, entornos densos y comportamiento de otros usuarios de la vía. Circular en modo autónomo bajo supervisión no equivale a transportar pasajeros comerciales sin operador humano."
+      ],
+      "keyPoints": [
+        "El anuncio original está fechado el 2026-09-14.",
+        "Waymo, Nihon Kotsu y GO anunciaron el 14 de septiembre de 2026 un acuerdo para preparar viajes comerciales sin conductor en Tokio durante 2027. La meta contempla unas cien unidades a medida que crezca la operación, sujeta a permisos y validaciones.",
+        "La empresa explicó que el servicio previsto comenzaría con una flota inicial y se expandiría gradualmente hacia alrededor de cien vehículos en barrios clave."
+      ],
+      "quickTakeaways": [
+        "Waymo, Nihon Kotsu y GO anunciaron el 14 de septiembre de 2026 un acuerdo para preparar viajes comerciales sin conductor en Tokio durante 2027. La meta contempla unas cien unidades a medida que crezca la operación, sujeta a permisos y validaciones.",
+        "Waymo señaló que su presencia en Tokio venía desde 2025.",
+        "La empresa explicó que el servicio previsto comenzaría con una flota inicial y se expandiría gradualmente hacia alrededor de cien vehículos en barrios clave.",
+        "2027 es una intención sujeta a condiciones."
+      ],
+      "sections": [
+        {
+          "heading": "Acuerdo anunciado, no servicio abierto",
+          "kind": "context",
+          "paragraphs": [
+            "El 14 de septiembre Waymo, Nihon Kotsu y GO comunicaron que habían acordado preparar el lanzamiento comercial de viajes sin conductor en Tokio durante 2027. El verbo importa: el acontecimiento de septiembre fue la formalización del plan y el siguiente nivel de coordinación, no una apertura de reservas públicas en ese momento. La fecha de 2027 quedó expresamente condicionada a aprobaciones regulatorias y a completar validaciones técnicas y operativas.",
+            "GO aporta la plataforma japonesa de solicitud de viajes, Nihon Kotsu conocimiento de taxis y operación local y Waymo la tecnología de conducción autónoma. La combinación pretende que el usuario pueda utilizar tanto GO como la aplicación de Waymo. Esta distribución de responsabilidades es un dato operativo relevante: un robotaxi no se comercializa en otro país únicamente trasladando el vehículo o traduciendo una interfaz."
+          ]
+        },
+        {
+          "heading": "Del trabajo supervisado al viaje sin conductor",
+          "kind": "technical",
+          "paragraphs": [
+            "Waymo señaló que su presencia en Tokio venía desde 2025. Durante los meses anteriores al anuncio los vehículos habían circulado con personal entrenado de Nihon Kotsu supervisando la operación. Estas pruebas permitieron recopilar experiencia sobre calles estrechas, entornos densos y comportamiento de otros usuarios de la vía. Circular en modo autónomo bajo supervisión no equivale a transportar pasajeros comerciales sin operador humano.",
+            "La siguiente etapa implica validar tanto el desempeño del sistema Waymo Driver como la coordinación conjunta de la operación. Las autoridades japonesas nacionales y locales deben conceder los permisos aplicables. Por tanto, un retraso en cualquiera de estos frentes puede modificar el calendario; el comunicado no ofrece una aprobación administrativa final ni una fecha exacta de inicio de viajes de pago."
+          ]
+        },
+        {
+          "heading": "Un despliegue inicial que aspira a unas cien unidades",
+          "kind": "report",
+          "paragraphs": [
+            "La empresa explicó que el servicio previsto comenzaría con una flota inicial y se expandiría gradualmente hacia alrededor de cien vehículos en barrios clave. La cifra es una meta de dimensión futura y no un inventario de automóviles que ya operaran comercialmente en septiembre de 2026. Tampoco implica que toda la ciudad, su aeropuerto o una región metropolitana completa estén cubiertos desde el primer día.",
+            "Una flota de este tamaño requiere estaciones de apoyo, carga, mantenimiento, limpieza, atención remota y protocolos para incidentes. Las empresas no desglosaron en el anuncio precios por kilómetro, coste de capital ni municipios exactos del mapa inaugural. Estas incógnitas deberán resolverse antes de interpretar la alianza como una fuente demostrada de ingresos o una alternativa general para todos los pasajeros."
+          ]
+        },
+        {
+          "heading": "El papel del operador y de la plataforma japonesa",
+          "kind": "context",
+          "paragraphs": [
+            "Nihon Kotsu tiene una trayectoria extensa en transporte de pasajeros y GO mantiene relación con usuarios que ya solicitan taxis. El acuerdo permite proponer un servicio nuevo dentro de hábitos existentes. Eso puede reducir la fricción de descubrir una aplicación distinta, aunque no elimina la necesidad de explicar claramente cuándo el vehículo llegará sin conductor y qué soporte recibirá una persona si ocurre un problema.",
+            "La empresa japonesa vinculó el proyecto con envejecimiento de la población y necesidades futuras de conductores. Son motivaciones estratégicas declaradas, no una garantía de que la tecnología vaya a resolver por sí misma la escasez laboral. El análisis público debería incluir condiciones de seguridad, accesibilidad, relaciones con otros proveedores de transporte y el papel continuo del personal humano en la operación."
+          ]
+        },
+        {
+          "heading": "Qué muestran y qué no muestran las métricas de Waymo",
+          "kind": "analysis",
+          "paragraphs": [
+            "Waymo afirmó que su plataforma prestaba más de medio millón de viajes semanales y comunicó una comparación de seguridad favorable frente a conductores humanos en sus mercados de operación. Esos números son declaraciones de la compañía para explicar experiencia adquirida en Estados Unidos. No constituyen evidencia observacional del servicio japonés, que todavía no transportaba clientes sin conductor en el momento del anuncio.",
+            "La transferencia a Tokio exige tratar condiciones locales: señalización, bicicletas, peatones, normas viales, calles estrechas y posibles interacciones con servicios de emergencia. La idea de un modelo de conducción general es atractiva, pero no justifica suponer que los resultados de un mercado se reproducen exactamente en otro. El avance debe juzgarse después con datos de operación local y aprobación efectiva."
+          ]
+        },
+        {
+          "heading": "Qué seguir hasta 2027",
+          "kind": "practical",
+          "paragraphs": [
+            "Los hitos siguientes serán la obtención de permisos, el cierre de los programas de validación, las zonas iniciales, la puesta en marcha de ambas aplicaciones para viajes autónomos y el tamaño efectivo de la flota. Antes de esa evidencia no corresponde etiquetar Tokio como una ciudad abierta al público con robotaxis sin conductor. La fecha de 2027 debe acompañarse siempre de su condición regulatoria.",
+            "Análisis Gazette: la alianza muestra que la carrera de la autonomía se traslada a redes comerciales y regulatorias internacionales. La tecnología es un componente, mientras que los socios locales facilitan experiencia de transporte y acceso a usuarios. El éxito dependerá de la ejecución conjunta, no solo de una demostración técnica convincente."
+          ]
+        }
+      ],
+      "executiveSummary": "Waymo, Nihon Kotsu y GO anunciaron el 14 de septiembre de 2026 un acuerdo para preparar viajes comerciales sin conductor en Tokio durante 2027. La meta contempla unas cien unidades a medida que crezca la operación, sujeta a permisos y validaciones. La interpretación debe separar el lanzamiento o anuncio de la disponibilidad efectiva y contrastar los datos operativos con fuentes externas.",
+      "finalSummary": "Análisis Gazette: la alianza muestra que la carrera de la autonomía se traslada a redes comerciales y regulatorias internacionales. La tecnología es un componente, mientras que los socios locales facilitan experiencia de transporte y acceso a usuarios. El éxito dependerá de la ejecución conjunta, no solo de una demostración técnica convincente.",
+      "analysis": "Análisis Gazette: la autonomía debe medirse tanto por su desempeño técnico como por operación, permisos, seguridad y accesibilidad. Los planes no equivalen a servicios ya disponibles.",
+      "watch": "Nuevos permisos, zona efectiva, flota, resultados de seguridad y plazos contrastados con la operación real."
+    },
+    {
+      "date": "2026-09-14",
+      "id": "waymo-las-vegas-public-autonomous-rides-2026-09-14",
+      "eventKey": "waymo-vegas-ojai-public-ride-launch-2026-09-14",
+      "company": "Waymo",
+      "product": "Waymo One · Las Vegas",
+      "title": "Waymo abre viajes autónomos al público en Las Vegas y estrena su flota Ojai",
+      "summary": "Waymo comenzó a recibir a sus primeros pasajeros públicos en Las Vegas el 14 de septiembre de 2026. La apertura incorpora vehículos Ojai con la sexta generación de Waymo Driver, pero el acceso y las zonas siguen ampliándose por etapas.",
+      "tags": [
+        "Robótica",
+        "Movilidad",
+        "Lanzamientos"
+      ],
+      "sourceUrl": "https://waymo.com/blog/2026/09/ride-in-las-vegas/",
+      "sourceName": "Waymo · Vegas, Deal Us In! We’re welcoming riders today",
+      "hero": "assets/globe.webp",
+      "brief": "Grabado antiguo de vehículo robotaxi conceptual frente a la avenida de Las Vegas, arquitectura de hoteles y boulevard, sin anuncios reconocibles, logotipos ni texto, tinta sepia; no fotografía documental.",
+      "technicalDetails": [
+        {
+          "label": "Fecha",
+          "value": "14 septiembre 2026"
+        },
+        {
+          "label": "Servicio",
+          "value": "Primeros viajes públicos totalmente autónomos"
+        },
+        {
+          "label": "Vehículo",
+          "value": "Ojai con Waymo Driver de sexta generación"
+        },
+        {
+          "label": "Zona comunicada",
+          "value": "Casi 24 millas de área operativa según Waymo"
+        }
+      ],
+      "availability": {
+        "status": "Primeros pasajeros públicos habilitados; ampliación gradual",
+        "platforms": [
+          "Aplicación Waymo"
+        ],
+        "regions": [
+          "Las Vegas, Nevada, dentro del área de servicio"
+        ],
+        "requirements": [
+          "Acceso al servicio y origen/destino dentro de zona habilitada"
+        ],
+        "notes": [
+          "No significa disponibilidad universal para toda la ciudad."
+        ]
+      },
+      "limitations": [
+        "El número de interesados no representa viajes completados.",
+        "Las cifras de seguridad se atribuyen a Waymo y su metodología.",
+        "No se confirmó tarifa única ni cobertura del área metropolitana completa."
+      ],
+      "practicalAdvice": [
+        "Revisar el mapa de cobertura y la habilitación dentro de la aplicación.",
+        "Mantener una alternativa de transporte cuando se viaje a horarios o lugares fuera del área.",
+        "Consultar información de incidentes y seguridad con contexto metodológico."
+      ],
+      "usefulFacts": [
+        "Waymo indicó que más de 100.000 personas habían expresado interés.",
+        "La compañía mencionó el Strip, Allegiant Stadium y The Venetian como destinos relevantes.",
+        "Waymo presentó Las Vegas entre los primeros mercados con flota mayoritariamente Ojai."
+      ],
+      "articleVersion": 2,
+      "announcedAt": "2026-09-14",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual de transporte autónomo e infraestructura urbana; no es fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado antiguo de vehículo robotaxi conceptual frente a la avenida de Las Vegas, arquitectura de hoteles y boulevard, sin anuncios reconocibles, logotipos ni texto, tinta sepia; no fotografía documental.",
+      "source": {
+        "name": "Waymo · Vegas, Deal Us In! We’re welcoming riders today",
+        "url": "https://waymo.com/blog/2026/09/ride-in-las-vegas/",
+        "publishedAt": "2026-09-14"
+      },
+      "body": [
+        "Waymo comunicó que las primeras personas del público podían utilizar viajes completamente autónomos en Las Vegas. Esto es distinto de un anuncio de intención futura: la operación pública inicial comenzó en esa fecha. También es distinto de afirmar que cualquier residente o turista ya tenía un servicio ilimitado. Waymo explicó que la incorporación de nuevos pasajeros se haría de forma progresiva mientras ampliaba el acceso.",
+        "El comunicado presenta Las Vegas como una de las primeras ciudades, junto con Denver y San Diego, donde la mayoría de la flota utilizaría el vehículo Ojai y la sexta generación del sistema Waymo Driver. Este detalle hace que el anuncio sea más que abrir una zona geográfica: añade una plataforma de hardware y experiencia de pasajero diferente a una operación comercial que ya existía en otras ciudades."
+      ],
+      "keyPoints": [
+        "El anuncio original está fechado el 2026-09-14.",
+        "Waymo comenzó a recibir a sus primeros pasajeros públicos en Las Vegas el 14 de septiembre de 2026. La apertura incorpora vehículos Ojai con la sexta generación de Waymo Driver, pero el acceso y las zonas siguen ampliándose por etapas.",
+        "La compañía presentó un área de servicio de casi veinticuatro millas de recorrido que conecta zonas como Boulder Junction, el Strip hasta Sahara Avenue y sectores entre Spring Valley y Winchester."
+      ],
+      "quickTakeaways": [
+        "Waymo comenzó a recibir a sus primeros pasajeros públicos en Las Vegas el 14 de septiembre de 2026. La apertura incorpora vehículos Ojai con la sexta generación de Waymo Driver, pero el acceso y las zonas siguen ampliándose por etapas.",
+        "El comunicado presenta Las Vegas como una de las primeras ciudades, junto con Denver y San Diego, donde la mayoría de la flota utilizaría el vehículo Ojai y la sexta generación del sistema Waymo Driver.",
+        "La compañía presentó un área de servicio de casi veinticuatro millas de recorrido que conecta zonas como Boulder Junction, el Strip hasta Sahara Avenue y sectores entre Spring Valley y Winchester.",
+        "El número de interesados no representa viajes completados."
+      ],
+      "sections": [
+        {
+          "heading": "Qué comenzó realmente el 14 de septiembre",
+          "kind": "context",
+          "paragraphs": [
+            "Waymo comunicó que las primeras personas del público podían utilizar viajes completamente autónomos en Las Vegas. Esto es distinto de un anuncio de intención futura: la operación pública inicial comenzó en esa fecha. También es distinto de afirmar que cualquier residente o turista ya tenía un servicio ilimitado. Waymo explicó que la incorporación de nuevos pasajeros se haría de forma progresiva mientras ampliaba el acceso.",
+            "Según la empresa, más de cien mil personas habían manifestado interés tras los meses de preparación. La cifra corresponde a interesados registrados, no a cien mil viajes realizados ni a usuarios activos. La compañía destacó destinos conocidos de la ciudad y afirmó que la expansión buscaba atender tanto recorridos de vecinos como desplazamientos de visitantes. El mapa operativo y la habilitación individual seguían siendo restricciones importantes."
+          ]
+        },
+        {
+          "heading": "El vehículo Ojai y la sexta generación de conducción",
+          "kind": "technical",
+          "paragraphs": [
+            "El comunicado presenta Las Vegas como una de las primeras ciudades, junto con Denver y San Diego, donde la mayoría de la flota utilizaría el vehículo Ojai y la sexta generación del sistema Waymo Driver. Este detalle hace que el anuncio sea más que abrir una zona geográfica: añade una plataforma de hardware y experiencia de pasajero diferente a una operación comercial que ya existía en otras ciudades.",
+            "Waymo describió cabina espaciosa, pantallas y elementos personalizables para los pasajeros. Estas características no deben confundirse con cambios demostrados en la seguridad o capacidad de decisión del conductor automático. Un vehículo de nueva generación exige evaluar además su operación en calles reales, limpieza y mantenimiento, manejo de incidencias, recogida de pasajeros y escalabilidad del servicio cuando la demanda crece."
+          ]
+        },
+        {
+          "heading": "La zona de servicio no abarca toda la ciudad",
+          "kind": "report",
+          "paragraphs": [
+            "La compañía presentó un área de servicio de casi veinticuatro millas de recorrido que conecta zonas como Boulder Junction, el Strip hasta Sahara Avenue y sectores entre Spring Valley y Winchester. Esa descripción proviene del anuncio y debe contrastarse con la información disponible en la aplicación al momento de viajar; no equivale a afirmar que cualquier dirección de Nevada estuviera cubierta.",
+            "Los robotaxis dependen de perímetros donde la empresa ha validado su operación y establecido procedimientos de asistencia. Para residentes y turistas, la utilidad se mide en la coincidencia entre origen, destino y zona habilitada. Una apertura pública inicial no garantiza servicio permanente en todos los horarios, cobertura de aeropuertos ni precios determinados. La comunicación consultada no ofrece una tarifa única verificable para todos los trayectos."
+          ]
+        },
+        {
+          "heading": "La seguridad como afirmación del proveedor",
+          "kind": "context",
+          "paragraphs": [
+            "Waymo citó su análisis de seguridad para afirmar una reducción del 94 % en choques con lesiones graves o peores frente a conductores humanos, normalizada por distancia. Debe atribuirse explícitamente: es un resultado comunicado por Waymo dentro de su metodología y no una garantía para cada trayecto, cada ciudad o cada escenario de tráfico. En este reportaje no hay una auditoría independiente de las estadísticas locales de Las Vegas.",
+            "La seguridad operativa incluye comportamiento frente a peatones, ciclistas, vehículos estacionados, obras y emergencias. Las Vegas agrega condiciones particulares de circulación y alta presencia turística. Para analizar la expansión resulta más útil observar informes de incidentes, metodología comparable, evolución de zonas y resultados acumulados que extrapolar una cifra global a un barrio específico sin datos adicionales."
+          ]
+        },
+        {
+          "heading": "Por qué la apertura importa para la inteligencia física",
+          "kind": "analysis",
+          "paragraphs": [
+            "Los sistemas de IA que toman decisiones físicas deben gestionar sensores, planificación de trayectorias, predicción de actores viales y restricciones de seguridad. Una ciudad nueva aumenta la diversidad de condiciones de despliegue. Waymo no publicó en esa nota especificaciones completas de entrenamiento o cambios algorítmicos internos; sería incorrecto inventarlos a partir del nombre de la sexta generación.",
+            "El paso de ensayos a operación comercial también exige infraestructura no algorítmica: soporte de flota, limpieza, atención de incidentes y relación con autoridades locales. En Las Vegas, el nuevo servicio debe integrarse en un ecosistema intenso de taxis, movilidad turística y accesos a recintos de gran concurrencia. Estos requisitos son parte de la dificultad industrial que no muestran los benchmarks tradicionales de modelos generativos."
+          ]
+        },
+        {
+          "heading": "Qué conviene seguir",
+          "kind": "practical",
+          "paragraphs": [
+            "Para quien quiera probar el servicio, el procedimiento responsable es consultar la aplicación, inscribirse cuando corresponda y comprobar cobertura real antes de contar con el vehículo para llegar a un evento. La compañía prometió ampliar progresivamente las personas admitidas. El servicio no debería utilizarse como la única alternativa de transporte sin confirmar antes destino y disponibilidad.",
+            "Análisis Gazette: el hito de septiembre es doble, por la apertura comercial de Las Vegas y por la incorporación mayoritaria de la nueva plataforma Ojai. La evolución relevante será el ritmo de acceso público, los kilómetros recorridos, las incidencias comparables y la experiencia de los usuarios. Ninguno de esos resultados futuros puede deducirse automáticamente del comunicado de lanzamiento."
+          ]
+        }
+      ],
+      "executiveSummary": "Waymo comenzó a recibir a sus primeros pasajeros públicos en Las Vegas el 14 de septiembre de 2026. La apertura incorpora vehículos Ojai con la sexta generación de Waymo Driver, pero el acceso y las zonas siguen ampliándose por etapas. La interpretación debe separar el lanzamiento o anuncio de la disponibilidad efectiva y contrastar los datos operativos con fuentes externas.",
+      "finalSummary": "Análisis Gazette: el hito de septiembre es doble, por la apertura comercial de Las Vegas y por la incorporación mayoritaria de la nueva plataforma Ojai. La evolución relevante será el ritmo de acceso público, los kilómetros recorridos, las incidencias comparables y la experiencia de los usuarios. Ninguno de esos resultados futuros puede deducirse automáticamente del comunicado de lanzamiento.",
+      "analysis": "Análisis Gazette: la autonomía debe medirse tanto por su desempeño técnico como por operación, permisos, seguridad y accesibilidad. Los planes no equivalen a servicios ya disponibles.",
+      "watch": "Nuevos permisos, zona efectiva, flota, resultados de seguridad y plazos contrastados con la operación real."
+    },
+    {
       "id": "google-cloud-dataflow-blackwell-pause-resume-2026-09-14",
       "eventKey": "google-cloud-dataflow-blackwell-pause-resume-2026-09-14",
       "articleVersion": 2,
@@ -16441,7 +16892,7 @@
     {
       "date": "2026-09-14",
       "status": "partial",
-      "verifiedArticles": 2
+      "verifiedArticles": 4
     },
     {
       "date": "2026-09-15",
@@ -16455,8 +16906,8 @@
     },
     {
       "date": "2026-09-17",
-      "status": "pending",
-      "verifiedArticles": 0
+      "status": "partial",
+      "verifiedArticles": 1
     },
     {
       "date": "2026-09-18",
