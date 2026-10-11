@@ -45,8 +45,11 @@ class EditorialTests(unittest.TestCase):
   a=next(a for a in self.data['articles'] if a.get('articleVersion')==2 and len(a['sections'])>=2)
   a['body']=['Resumen compatible con frontend anterior.']
   validate(self.data)
+ def test_migration_has_no_legacy_articles(self):
+  self.assertEqual(0, sum(a.get('articleVersion')!=2 for a in self.data['articles']))
  def test_legacy_short_body_still_rejected(self):
-  a=next(a for a in self.data['articles'] if a.get('articleVersion')!=2 and len(a['body'])>=2)
+  a=next(a for a in self.data['articles'] if a['date']<'2026-10-11' and a.get('coveredAt','')<'2026-10-11' and len(a['body'])>=2)
+  a.pop('articleVersion', None)  # Synthetic historical legacy fixture after full migration
   a['body']=['Solo un párrafo superficial.']
   with self.assertRaisesRegex(AssertionError,'An article needs developed context'):validate(self.data)
  def test_reporter_v2_rejects_invalid_section_kind(self):
@@ -63,7 +66,8 @@ class EditorialTests(unittest.TestCase):
   self.data['dailyCoverage'].pop(2)
   with self.assertRaisesRegex(AssertionError,'Gap in dailyCoverage|Article date missing'):validate(self.data)
  def test_new_legacy_articles_cannot_reenter_after_cutover(self):
-  a=next(a for a in self.data['articles'] if a.get('articleVersion')!=2)
+  a=next(a for a in self.data['articles'] if a['date']<'2026-10-11')
+  a.pop('articleVersion', None)  # Deliberately simulate a regression to legacy
   a['coveredAt']='2026-10-11'
   with self.assertRaisesRegex(AssertionError,'New publications must use Reporter V2'):validate(self.data)
 if __name__=='__main__':unittest.main()
