@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T01:42:49.841Z",
+  "updatedAt": "2026-10-11T01:47:05.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -10442,8 +10442,8 @@
       "coveredAt": "2026-10-07",
       "company": "OpenAI",
       "product": "GPT-6.1 Sol",
-      "title": "GPT-6.1 Sol llega como actualización del modelo de trabajo de OpenAI",
-      "summary": "OpenAI presenta la versión en DevDay para programación, uso de herramientas y trabajo profesional.",
+      "title": "GPT-6.1 Sol llega para agentes y programación con precios cinco veces menores que Astra por token",
+      "summary": "OpenAI lanzó GPT-6.1 Sol el 29 de septiembre de 2026 con mejoras en programación con agentes, uso de computadoras y trabajo profesional. Según sus pruebas, se acerca a GPT-6 Astra con tarifas estándar API de US$2 por millón de tokens de entrada y US$10 de salida, frente a US$10 y US$50 de Astra. Estaba disponible en API, Work y Codex, no en Chat general.",
       "tags": [
         "Modelos",
         "Desarrollo"
@@ -10452,14 +10452,13 @@
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
       "source": {
-        "name": "OpenAI · anuncio oficial",
-        "url": "https://openai.com/index/devday-2026-recap/",
+        "name": "OpenAI · Introducing GPT-6.1 Sol",
+        "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
         "publishedAt": "2026-09-29"
       },
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-10",
       "body": [
-        "OpenAI presentó GPT-6.1 Sol el 29 de septiembre en DevDay, como actualización de GPT-6 Sol. El resumen oficial indica disponibilidad en la API y planes de pago de ChatGPT.",
-        "La empresa destaca programación y trabajo profesional. Para decidir una migración, conviene comparar tareas reales, calidad, reintentos y costo total."
+        "OpenAI lanzó GPT-6.1 Sol el 29 de septiembre de 2026 con mejoras en programación con agentes, uso de computadoras y trabajo profesional. Según sus pruebas, se acerca a GPT-6 Astra con tarifas estándar API de US$2 por millón de tokens de entrada y US$10 de salida, frente a US$10 y US$50 de Astra. Estaba disponible en API, Work y Codex, no en Chat general."
       ],
       "keyPoints": [
         "Presentado en DevDay.",
@@ -10467,7 +10466,138 @@
       ],
       "analysis": "Una nueva versión merece una evaluación del flujo de trabajo completo, más allá del titular del lanzamiento.",
       "watch": "Pruebas comparables con la versión anterior.",
-      "announcedAt": "2026-09-29"
+      "announcedAt": "2026-09-29",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "OpenAI lanzó GPT-6.1 Sol el 29 de septiembre de 2026 con mejoras en programación con agentes, uso de computadoras y trabajo profesional. Según sus pruebas, se acerca a GPT-6 Astra con tarifas estándar API de US$2 por millón de tokens de entrada y US$10 de salida, frente a US$10 y US$50 de Astra. Estaba disponible en API, Work y Codex, no en Chat general.",
+        "Benchmark propio del proveedor no garantiza rendimiento universal.",
+        "DeepSWE v1.1 y GDP.pdf aparecen entre evaluaciones comunicadas.",
+        "Comparar el rendimiento con casos de la empresa y tests automáticos."
+      ],
+      "executiveSummary": "OpenAI lanzó GPT-6.1 Sol el 29 de septiembre de 2026 con mejoras en programación con agentes, uso de computadoras y trabajo profesional. Según sus pruebas, se acerca a GPT-6 Astra con tarifas estándar API de US$2 por millón de tokens de entrada y US$10 de salida, frente a US$10 y US$50 de Astra. Estaba disponible en API, Work y Codex, no en Chat general. El acceso real depende de las condiciones detalladas del proveedor y las medidas de control.",
+      "sections": [
+        {
+          "heading": "El lanzamiento concreto de DevDay 2026",
+          "kind": "context",
+          "paragraphs": [
+            "GPT-6.1 Sol se anunció durante DevDay 2026 como evolución de GPT-6 Sol. OpenAI lo posicionó entre GPT-6 Astra, su propuesta de mayor capacidad, y opciones de menor coste destinadas a trabajos sencillos o de alto volumen. El hito incluye un identificador nuevo para API, mejoras comunicadas en tareas exigentes y disponibilidad en superficies concretas. No corresponde interpretarlo como un reemplazo inmediato de todos los modelos dentro de ChatGPT.",
+            "La versión lleva el sufijo Sol, pero sus capacidades, precio y acceso no se confunden con el modelo anterior. En particular, OpenAI comunicó que el lanzamiento inicial atendía a usuarios de herramientas de trabajo y desarrollo. El anuncio está fechado el 29 de septiembre; cualquier ampliación posterior a otras interfaces necesita registrarse como actualización, no trasladarse retroactivamente a ese día."
+          ]
+        },
+        {
+          "heading": "Programación y agentes en repositorios",
+          "kind": "technical",
+          "paragraphs": [
+            "OpenAI destacó resultados en DeepSWE v1.1, una evaluación de tareas complejas de ingeniería de software, y afirmó que GPT-6.1 Sol alcanzaba un rendimiento comparable al de Astra por alrededor de una quinta parte del coste en esa configuración. La empresa declaró que superaba la mejor puntuación previa de GPT-6 Sol en 6,4 puntos porcentuales. Estos valores son del fabricante y dependen de herramientas, esfuerzo, tareas y entorno de ejecución.",
+            "Un agente programador puede editar múltiples archivos, ejecutar pruebas e investigar errores durante muchas etapas. Para una compañía, que lo haga más barato solo importa si las modificaciones son correctas. Conviene comparar ambos modelos sobre la misma batería de incidencias, controlar errores introducidos y verificar cada cambio antes de fusionarlo. Los resultados del benchmark no autorizan a dar acceso irrestricto a secretos o repositorios críticos."
+          ]
+        },
+        {
+          "heading": "Trabajo profesional y documentos complejos",
+          "kind": "context",
+          "paragraphs": [
+            "La publicación destacó GDP.pdf, un conjunto que mide respuestas basadas en archivos PDF con tablas, gráficos, diagramas y detalles difíciles de localizar. OpenAI afirmó que GPT-6.1 Sol mejoró frente a determinados competidores y se aproximó a Astra en las configuraciones evaluadas, con coste por tarea menor. También citó AutomationBench, orientado a flujos empresariales de varios pasos, donde el modelo reportó avances frente a GPT-6 Sol.",
+            "El desempeño sobre documentos financieros, legales o clínicos requiere comprobar referencias, unidades y cifras. Un asistente puede producir una explicación convincente con una tabla mal interpretada o un dato omitido. Las organizaciones deberían exigir citas verificables y revisar manualmente decisiones importantes. Además, una comparación entre proveedores puede involucrar modelos de respaldo o diferentes configuraciones, por lo que no debe generalizarse una ventaja publicada en un único protocolo."
+          ]
+        },
+        {
+          "heading": "Uso de computadoras y tareas científicas",
+          "kind": "report",
+          "paragraphs": [
+            "En OSWorld 2.0, OpenAI describió mejoras de siete puntos porcentuales frente a GPT-6 Sol con alto esfuerzo de razonamiento. El sistema se evaluó en flujos que requieren interactuar con aplicaciones y completar pasos sucesivos. El uso de computadora añade riesgos de permisos, estado cambiante y errores operativos. Para un flujo real se necesita comprobar qué herramientas están disponibles y cuáles requieren aprobación antes de automatizar acciones externas.",
+            "La compañía también comunicó avances en Terminal-Bench Science 0.1, con tareas de análisis de datos, simulación y razonamiento científico ejecutadas en entornos de terminal. Astra mantuvo ventaja en los problemas de mayor dificultad evaluados. La conclusión prudente es que Sol ofrece una alternativa económicamente atractiva para ciertos flujos, no que sustituya la revisión experta ni que todo experimento generado tenga validez."
+          ]
+        },
+        {
+          "heading": "Tarifas y el significado de una quinta parte",
+          "kind": "analysis",
+          "paragraphs": [
+            "La tabla de lanzamiento informó US$2 por millón de tokens de entrada, US$10 por millón de salida y US$0,10 por millón de entrada recuperada de caché. Para Astra la comparación presentada era US$10 y US$50 en entrada y salida estándar. Por tanto, una quinta parte se refiere a esas tarifas nominales, no a garantizar que todo proyecto costará exactamente veinte por ciento de su coste anterior.",
+            "El gasto real depende de número de intentos, tamaños de contexto, procesamiento de herramientas, caché y nivel de razonamiento. Una tarea más compleja podría consumir muchos más tokens en Sol que en un modelo superior, eliminando parte del ahorro. A la inversa, un flujo estable con contexto reutilizado puede beneficiarse de la tarifa reducida de caché. Para elegir modelo, registrar coste por tarea verificada es más útil que comparar una sola tarifa."
+          ]
+        },
+        {
+          "heading": "Disponibilidad y distinción entre Chat y Work",
+          "kind": "practical",
+          "paragraphs": [
+            "OpenAI confirmó GPT-6.1 Sol para desarrolladores mediante API como `gpt-6.1-sol` y para usuarios de Plus, Pro, Business, Enterprise y Edu en ChatGPT Work y Codex. La página especifica que no estaba disponible en el Chat general en ese momento. Este matiz importa porque una persona puede tener acceso a un plan determinado sin encontrar el modelo en todos los menús o experiencias del producto.",
+            "La compañía también habló de una modalidad Ultrafast y de otras capacidades de DevDay que tenían calendarios propios. No corresponde afirmar que la velocidad premium o cualquier herramienta nueva estaba incluida sin restricciones en la configuración normal de Sol. Las pruebas deben documentar plan, región, ventana de acceso, modo de cómputo y fecha, especialmente cuando se comparten comparaciones entre equipos."
+          ]
+        },
+        {
+          "heading": "Seguridad y evaluación práctica",
+          "kind": "context",
+          "paragraphs": [
+            "El material de seguridad del modelo describe evaluaciones específicas y controles para dominios de riesgo elevado. Igual que otros sistemas de agentes, GPT-6.1 Sol puede equivocarse al interpretar información no confiable, tratar mal una salida de herramienta o continuar con una suposición incorrecta. La supervisión y los límites externos siguen siendo requisitos de despliegue serio, incluso cuando las puntuaciones mejoran.",
+            "Análisis Gazette: la noticia del 29 de septiembre es el desplazamiento de capacidad agentiva avanzada hacia un segmento de coste más asequible. Es un cambio relevante para equipos con presupuestos limitados, pero su efecto se mide después en resultados reproducibles y autorizaciones seguras. Los próximos hitos serán cambios de disponibilidad, comparaciones independientes y coste real por trabajo terminado."
+          ]
+        }
+      ],
+      "finalSummary": "Análisis Gazette: la noticia del 29 de septiembre es el desplazamiento de capacidad agentiva avanzada hacia un segmento de coste más asequible. Es un cambio relevante para equipos con presupuestos limitados, pero su efecto se mide después en resultados reproducibles y autorizaciones seguras. Los próximos hitos serán cambios de disponibilidad, comparaciones independientes y coste real por trabajo terminado.",
+      "technicalDetails": [
+        {
+          "label": "Anuncio",
+          "value": "29 septiembre 2026"
+        },
+        {
+          "label": "API ID",
+          "value": "gpt-6.1-sol"
+        },
+        {
+          "label": "Comparación",
+          "value": "Tarifas estándar de entrada y salida, 1/5 de Astra"
+        },
+        {
+          "label": "Herramientas",
+          "value": "Codex, Work y API al anuncio; Chat general no"
+        }
+      ],
+      "pricing": [
+        {
+          "label": "API entrada",
+          "value": "US$2 por millón de tokens"
+        },
+        {
+          "label": "API salida",
+          "value": "US$10 por millón de tokens"
+        },
+        {
+          "label": "Entrada caché",
+          "value": "US$0,10 por millón de tokens"
+        }
+      ],
+      "availability": {
+        "status": "Disponible en API, Work y Codex, no en Chat general al lanzamiento",
+        "platforms": [
+          "API OpenAI",
+          "ChatGPT Work",
+          "Codex"
+        ],
+        "requirements": [
+          "Plan o acceso admitido"
+        ],
+        "notes": [
+          "Ultrafast y otras opciones siguen calendarios independientes."
+        ]
+      },
+      "limitations": [
+        "Benchmark propio del proveedor no garantiza rendimiento universal.",
+        "Sol no estaba disponible en la experiencia Chat general al anunciarse.",
+        "La tarifa por token no representa costo garantizado por tarea.",
+        "Los agentes siguen requiriendo permisos y revisión sobre acciones de impacto."
+      ],
+      "practicalAdvice": [
+        "Comparar el rendimiento con casos de la empresa y tests automáticos.",
+        "Registrar ahorro real por tarea correcta.",
+        "Confirmar superficie y configuración de modelo antes de decidir compra."
+      ],
+      "usefulFacts": [
+        "DeepSWE v1.1 y GDP.pdf aparecen entre evaluaciones comunicadas.",
+        "OpenAI citó diferencias concretas entre Chat y ChatGPT Work.",
+        "El coste de tokens de caché publicado fue diez centavos por millón."
+      ],
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado del siglo XIX de dos calculadoras monumentales, una enorme y otra compacta, ambas resolviendo planos de software a distinto costo, estilo sepia sin texto ni marcas."
     },
     {
       "id": "dots-devday",
@@ -10476,8 +10606,8 @@
       "coveredAt": "2026-10-07",
       "company": "OpenAI",
       "product": "Dots",
-      "title": "Dots propone agentes para tareas continuas",
-      "summary": "OpenAI anuncia agentes que pueden encargarse de trabajo persistente.",
+      "title": "Dots: OpenAI presenta agentes persistentes con computadora propia y conexión a aplicaciones",
+      "summary": "OpenAI presentó Dots el 29 de septiembre de 2026: agentes impulsados por GPT-6 Astra que pueden continuar tareas en una computadora propia en la nube, utilizar aplicaciones conectadas y pedir aprobación para acciones sensibles. El lanzamiento se desplegó gradualmente en mercados elegibles para Pro y Business Premium, con beta administrada en Enterprise, Edu y Healthcare.",
       "tags": [
         "Agentes",
         "Productos"
@@ -10486,14 +10616,13 @@
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
       "source": {
-        "name": "OpenAI · anuncio oficial",
-        "url": "https://openai.com/index/devday-2026-recap/",
+        "name": "OpenAI · Introducing dots",
+        "url": "https://openai.com/index/introducing-dots/",
         "publishedAt": "2026-09-29"
       },
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-10",
       "body": [
-        "OpenAI presentó Dots en DevDay el 29 de septiembre. Los describe como agentes que mantienen responsabilidades continuas.",
-        "El anuncio limita su acceso por plan, mercado y configuración del administrador. Antes de delegar una tarea recurrente, corresponde definir qué puede hacer el agente y cómo se revisan sus resultados."
+        "OpenAI presentó Dots el 29 de septiembre de 2026: agentes impulsados por GPT-6 Astra que pueden continuar tareas en una computadora propia en la nube, utilizar aplicaciones conectadas y pedir aprobación para acciones sensibles. El lanzamiento se desplegó gradualmente en mercados elegibles para Pro y Business Premium, con beta administrada en Enterprise, Edu y Healthcare."
       ],
       "keyPoints": [
         "Agentes con responsabilidades continuas.",
@@ -10501,7 +10630,125 @@
       ],
       "analysis": "El seguimiento y la revisión son parte de una tarea delegada: automatizar exige criterios claros de éxito.",
       "watch": "Disponibilidad y control de tareas delegadas.",
-      "announcedAt": "2026-09-29"
+      "announcedAt": "2026-09-29",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "OpenAI presentó Dots el 29 de septiembre de 2026: agentes impulsados por GPT-6 Astra que pueden continuar tareas en una computadora propia en la nube, utilizar aplicaciones conectadas y pedir aprobación para acciones sensibles. El lanzamiento se desplegó gradualmente en mercados elegibles para Pro y Business Premium, con beta administrada en Enterprise, Edu y Healthcare.",
+        "Proactividad de investigación no equivale a escritura ilimitada sobre apps.",
+        "La fase proactiva descrita utiliza herramientas de solo lectura.",
+        "Definir objetivos y permisos antes de conectar sistemas de negocio."
+      ],
+      "executiveSummary": "OpenAI presentó Dots el 29 de septiembre de 2026: agentes impulsados por GPT-6 Astra que pueden continuar tareas en una computadora propia en la nube, utilizar aplicaciones conectadas y pedir aprobación para acciones sensibles. El lanzamiento se desplegó gradualmente en mercados elegibles para Pro y Business Premium, con beta administrada en Enterprise, Edu y Healthcare. El acceso real depende de las condiciones detalladas del proveedor y las medidas de control.",
+      "sections": [
+        {
+          "heading": "De conversación puntual a responsabilidad persistente",
+          "kind": "context",
+          "paragraphs": [
+            "El anuncio de Dots introduce un tipo de asistente diseñado para continuar un trabajo incluso después de que la persona cierre la conversación. OpenAI lo presentó el 29 de septiembre durante DevDay y lo describió como un agente con objetivos sostenidos, acceso a una computadora en la nube y capacidad de colaborar con herramientas externas. La diferencia central frente a un chatbot es la continuidad del proyecto, aunque eso no significa que cualquier acción pueda ejecutarse sin autorización.",
+            "La empresa explicó que un usuario comienza con un dot principal y puede darle nombre, contexto y reglas de actuación. En el futuro imaginó equipos de dots que se coordinen, pero esa visión debe distinguirse de la disponibilidad inicial de múltiples agentes autónomos sin límites. También presentó un programa de agentes especializados para empresas como una iniciativa piloto, con identidad y sistemas de acceso administrados."
+          ]
+        },
+        {
+          "heading": "La computadora aislada y las herramientas",
+          "kind": "technical",
+          "paragraphs": [
+            "OpenAI indicó que cada dot cuenta con una computadora en la nube y un navegador, y que puede utilizar aplicaciones vinculadas por el usuario. La compañía mencionó un ecosistema con miles de aplicaciones compatibles. Esa cifra es de catálogo, no una garantía de que cada conector esté disponible en cualquier región, plan o tarea ni de que todos otorguen permisos de escritura automáticos.",
+            "La separación del ordenador personal es importante: los archivos y recursos locales no pasan a la computadora del dot simplemente porque se cree el agente. La persona decide si conecta sus aplicaciones o permite acceso a otro dispositivo. El usuario puede inspeccionar el trabajo realizado y revisar el estado de sus proyectos. En contextos sensibles siguen siendo necesarios permisos específicos y límites en la información accesible."
+          ]
+        },
+        {
+          "heading": "Proactividad, investigación y ejecución",
+          "kind": "context",
+          "paragraphs": [
+            "La empresa describió Dots como agentes capaces de preparar avances, investigar problemas y detectar tareas que merecen atención mientras el propietario realiza otra actividad. Ejemplos del anuncio incluyen revisar fallos de software, redactar materiales para un lanzamiento y mantener análisis actualizados cuando aparecen nuevos datos. Son ilustraciones de flujos posibles, no promesas de ejecución perfecta en cada organización.",
+            "OpenAI distingue el funcionamiento proactivo de lectura del trabajo delegado con permiso. La investigación en segundo plano puede consultar aplicaciones conectadas usando herramientas restringidas a solo lectura; por defecto no debería enviar mensajes, modificar servicios o controlar la computadora del usuario. La ejecución de tareas con efectos externos depende de las reglas del usuario, revisiones automáticas y aprobaciones según el nivel de riesgo."
+          ]
+        },
+        {
+          "heading": "Interacción con equipos y otros canales",
+          "kind": "report",
+          "paragraphs": [
+            "Un dot puede continuar contexto entre ChatGPT, Slack y Microsoft Teams, según la integración habilitada. También puede recibir mensajes y llamadas para aclarar un objetivo, y compartir progreso mientras realiza acciones en sus espacios permitidos. La continuidad evita que el usuario tenga que repetir cada instrucción en conversaciones separadas, pero exige asegurar que los permisos adecuados se mantienen también cuando se cambia de canal.",
+            "OpenAI explicó que los dots especializados en empresas pueden recibir identidades propias administradas por TI y acceso controlado a sistemas de registro. La colaboración con Microsoft Agent 365 apunta a integrar gobernanza corporativa, pero el anuncio la describe como trabajo y pilotos, no como despliegue concluido para todas las empresas. Cada integración requiere políticas de acceso, registro de acciones y controles de seguridad."
+          ]
+        },
+        {
+          "heading": "Qué decisiones siguen bajo control humano",
+          "kind": "analysis",
+          "paragraphs": [
+            "El documento oficial señala reglas integradas para determinar cuándo un agente puede actuar solo, cuándo debe pedir confirmación y cuándo una acción está bloqueada. Las reglas personalizadas del usuario pueden ajustar estos límites, sin anular requisitos de seguridad. Un sistema de revisión analiza acciones capaces de afectar cuentas o compartir información, y puede exigir que la persona apruebe un cambio antes de continuar.",
+            "OpenAI también indica que algunas tareas sensibles, como cambiar contraseñas, permanecen bajo control del usuario. Un ejemplo comercial citado muestra un agente que preparó una factura y la envió después de aprobación, una diferencia importante frente a imaginar operaciones financieras independientes sin revisión. Los errores de interpretación y las instrucciones maliciosas siguen siendo riesgos; la supervisión no desaparece porque el dot trabaje con autonomía parcial."
+          ]
+        },
+        {
+          "heading": "Planes de lanzamiento y límites de acceso",
+          "kind": "practical",
+          "paragraphs": [
+            "La primera etapa se anunció para Pro y Business Premium en mercados elegibles. OpenAI indicó que Enterprise, Edu y Healthcare podrían probar una beta cuando el administrador habilitara la función, inicialmente desactivada. El primer dot estaba incluido en los planes correspondientes, con una asignación de trabajo profundo y límites que podían cambiar tras el primer mes. La disponibilidad exacta dependía del país y de la cuenta.",
+            "El anuncio distingue conversar con un dot de utilizarlo para ejecutar tareas a través de Codex o ChatGPT Work. Estas últimas consumen límites de las herramientas correspondientes según el plan. Por eso, que el primer dot esté incluido no significa cómputo de agentes ilimitado ni acceso libre a cualquier modelo o aplicación. Antes de delegar trabajo costoso conviene revisar la actividad y los cupos disponibles."
+          ]
+        },
+        {
+          "heading": "La importancia de la memoria y la transparencia",
+          "kind": "context",
+          "paragraphs": [
+            "La propuesta busca que el dot aprenda objetivos, preferencias y criterios de calidad a partir de retroalimentación. Para que esa memoria sea útil necesita mantenerse corregible: una preferencia antigua podría dejar de ser válida y una instrucción nueva podría entrar en conflicto con compromisos anteriores. El usuario debería poder inspeccionar y actualizar el trabajo sin perder trazabilidad. OpenAI describió una vista de actividad para seguir las decisiones del agente.",
+            "Análisis Gazette: el acontecimiento de septiembre no es solamente el lanzamiento de otro chatbot. Dots intenta convertir capacidades de modelos en trabajo persistente y configurable, acercándose a un asistente con responsabilidades delegadas. El éxito futuro dependerá de fiabilidad, economía del cómputo, control de datos y buen manejo de aprobación humana. Ningún ejemplo de lanzamiento equivale a demostrar autonomía total en cualquier flujo."
+          ]
+        }
+      ],
+      "finalSummary": "Análisis Gazette: el acontecimiento de septiembre no es solamente el lanzamiento de otro chatbot. Dots intenta convertir capacidades de modelos en trabajo persistente y configurable, acercándose a un asistente con responsabilidades delegadas. El éxito futuro dependerá de fiabilidad, economía del cómputo, control de datos y buen manejo de aprobación humana. Ningún ejemplo de lanzamiento equivale a demostrar autonomía total en cualquier flujo.",
+      "technicalDetails": [
+        {
+          "label": "Anuncio",
+          "value": "29 septiembre 2026"
+        },
+        {
+          "label": "Modelo subyacente",
+          "value": "GPT-6 Astra, según OpenAI"
+        },
+        {
+          "label": "Infraestructura",
+          "value": "Computadora y navegador propios en la nube"
+        },
+        {
+          "label": "Herramientas",
+          "value": "Aplicaciones conectadas y aprobaciones por acción"
+        }
+      ],
+      "availability": {
+        "status": "Despliegue gradual y beta empresarial según plan",
+        "platforms": [
+          "ChatGPT web y desktop",
+          "ChatGPT móvil después de configuración",
+          "Slack y Teams según integración"
+        ],
+        "requirements": [
+          "Plan y mercado elegibles",
+          "Permisos sobre las aplicaciones vinculadas"
+        ],
+        "notes": [
+          "El primer dot puede estar incluido, pero las tareas profundas y herramientas mantienen límites de uso."
+        ]
+      },
+      "limitations": [
+        "Proactividad de investigación no equivale a escritura ilimitada sobre apps.",
+        "La disponibilidad depende del plan y el mercado.",
+        "Los dots pueden equivocarse y requieren revisar acciones importantes.",
+        "La existencia de miles de conectores no garantiza el mismo acceso en todos."
+      ],
+      "practicalAdvice": [
+        "Definir objetivos y permisos antes de conectar sistemas de negocio.",
+        "Supervisar acciones y dar aprobaciones cuando corresponda.",
+        "Medir resultados correctos y consumo de recursos, no solo actividad de fondo."
+      ],
+      "usefulFacts": [
+        "La fase proactiva descrita utiliza herramientas de solo lectura.",
+        "Los pilotos especializados requieren gobernanza empresarial.",
+        "Los agentes conservan continuidad entre canales integrados, según OpenAI."
+      ],
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de gabinete de redacción del siglo XIX con un asistente mecánico gestionando varias carpetas y tareas mientras una persona supervisa a distancia; papel envejecido, sin marcas ni texto."
     },
     {
       "id": "decisions-api",
