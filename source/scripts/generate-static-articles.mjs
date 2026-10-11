@@ -79,19 +79,40 @@ export function renderSitemap(articles) {
  return '<?xml version="1.0" encoding="utf-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+
   urls.map(u=>'<url><loc>'+html(u)+'</loc></url>').join('\n')+'\n</urlset>\n';
 }
+// Derived-only index: headlines on the home page, full reports fetched individually.
+export function makeNewsIndex(news) {
+ return {
+  archiveStart:news.archiveStart,coverageStart:news.coverageStart,
+  updatedAt:news.updatedAt,dailyCoverage:news.dailyCoverage,
+  articles:news.articles.map(a=>({
+   id:a.id,date:a.date,company:a.company,product:a.product||'',title:a.title,
+   summary:a.summary,tags:a.tags,image:a.image,imageAlt:a.imageAlt,
+   imageCredit:a.imageCredit,keyPoints:(a.keyPoints||[]).slice(0,2),
+   articleVersion:a.articleVersion
+  }))
+ };
+}
 export async function generate({source=path.join(ROOT,'public/data/news.json'),out=path.join(ROOT,'dist/client')}={}) {
  const news=JSON.parse(await readFile(source,'utf8'));
  if(!Array.isArray(news.articles)||news.articles.length===0)throw Error('Empty archive');
  await rm(path.join(out,'noticias'),{recursive:true,force:true});
+ const articleDataDir=path.join(out,'data','articles');
+ await rm(articleDataDir,{recursive:true,force:true});
+ await mkdir(articleDataDir,{recursive:true});
+ const indexText=JSON.stringify(makeNewsIndex(news));
+ const indexBytes=Buffer.byteLength(indexText,'utf8');
+ if(indexBytes>=500*1024)throw Error('News index exceeds 500 KB mobile budget: '+indexBytes);
+ await writeFile(path.join(out,'data','news-index.json'),indexText);
  const seen=new Set();
  for(const article of news.articles) {
   const dest=path.join(out,pagePath(article),'index.html');
   if(seen.has(dest))throw Error('Duplicate SEO article path');
   seen.add(dest);await mkdir(path.dirname(dest),{recursive:true});
   await writeFile(dest,renderArticlePage(article));
+  await writeFile(path.join(articleDataDir,article.id+'.json'),JSON.stringify(article));
  }
  await writeFile(path.join(out,'sitemap.xml'),renderSitemap(news.articles));
  await writeFile(path.join(out,'robots.txt'),'User-agent: *\nAllow: /\nSitemap: '+SITE+'sitemap.xml\n');
- console.log('Generated '+seen.size+' article pages and a sitemap from canonical news.json');
+ console.log('Generated '+seen.size+' article pages, on-demand JSON stories, '+indexBytes+'-byte index and a sitemap from canonical news.json');
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url))await generate();
