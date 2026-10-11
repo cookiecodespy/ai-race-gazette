@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T00:45:57.942Z",
+  "updatedAt": "2026-10-11T00:50:57.760Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -10808,6 +10808,151 @@
       ]
     },
     {
+      "id": "google-millemiglia-open-middle-mile-logistics-benchmark-2026-09-18",
+      "eventKey": "google-research-millemiglia-open-source-middle-mile-logistics-generator-2026-09-18",
+      "articleVersion": 2,
+      "date": "2026-09-18",
+      "announcedAt": "2026-09-18",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "Google Research",
+      "product": "MilleMiglia",
+      "title": "Google Research abre MilleMiglia: redes logísticas sintéticas para investigar rutas entre centros de distribución",
+      "summary": "Google Research publicó el 18 de septiembre MilleMiglia, un generador de problemas realistas de transporte entre centros logísticos. El sistema abierto en C++ produce escenarios con horarios, transbordos y capacidad limitada para investigar optimización del tramo intermedio sin exponer datos empresariales privados.",
+      "tags": [
+        "Investigación",
+        "Open Source",
+        "Logística",
+        "Optimización"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial conceptual sobre investigación y tecnología; no fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado sepia de periódico antiguo sobre MilleMiglia con componentes técnicos y científicos representados metafóricamente; sin textos incrustados, logos o capturas falsas.",
+      "source": {
+        "name": "Google Research · MilleMiglia: A realistic instance generator for middle-mile logistics",
+        "url": "https://research.google/blog/millemiglia-a-realistic-instance-generator-for-middle-mile-logistics/",
+        "publishedAt": "2026-09-18"
+      },
+      "body": [
+        "El 18 de septiembre Google Research presentó MilleMiglia, un generador de escenarios logísticos para estudiar el transporte entre centros de distribución. Se trata de investigación y herramientas para crear instancias de optimización, no de un servicio que automáticamente trace rutas para una empresa desde una interfaz comercial. El código y la documentación se enlazan desde la publicación original, que describe el programa como una base abierta para reproducir experimentos.",
+        "La logística de primera milla recoge productos desde su origen hacia nodos iniciales; la última milla distribuye paquetes desde centros locales a destinatarios. La milla intermedia mueve grandes volúmenes entre centros regionales o continentales. Una caja puede pasar por varios camiones y estaciones antes de estar lista para su entrega, en vez de permanecer en un único vehículo durante todo el proceso."
+      ],
+      "keyPoints": [
+        "Google Research publicó el 18 de septiembre MilleMiglia, un generador de problemas realistas de transporte entre centros logísticos. El sistema abierto en C++ produce escenarios con horarios, transbordos y capacidad limitada para investigar optimización del tramo intermedio sin exponer datos empresariales privados.",
+        "Generador de instancias en C++",
+        "Las redes sintéticas no reproducen todos los costos y casos reales."
+      ],
+      "quickTakeaways": [
+        "Google Research publicó el 18 de septiembre MilleMiglia, un generador de problemas realistas de transporte entre centros logísticos. El sistema abierto en C++ produce escenarios con horarios, transbordos y capacidad limitada para investigar optimización del tramo intermedio sin exponer datos empresariales privados.",
+        "La logística de primera milla recoge productos desde su origen hacia nodos iniciales; la última milla distribuye paquetes desde centros locales a destinatarios.",
+        "Las redes sintéticas no reproducen todos los costos y casos reales.",
+        "Ensayar algoritmos con escenarios reproducibles y distintas semillas."
+      ],
+      "sections": [
+        {
+          "heading": "Qué anunció Google Research",
+          "kind": "report",
+          "paragraphs": [
+            "El 18 de septiembre Google Research presentó MilleMiglia, un generador de escenarios logísticos para estudiar el transporte entre centros de distribución. Se trata de investigación y herramientas para crear instancias de optimización, no de un servicio que automáticamente trace rutas para una empresa desde una interfaz comercial. El código y la documentación se enlazan desde la publicación original, que describe el programa como una base abierta para reproducir experimentos.",
+            "La motivación es una dificultad habitual del sector: las topologías de redes reales, capacidades de almacenes y volúmenes de mercancía suelen ser confidenciales. Sin ejemplos públicos representativos resulta difícil comparar algoritmos de optimización en condiciones cercanas a un negocio. MilleMiglia intenta crear datos sintéticos sin copiar directamente esa información privada, manteniendo restricciones que los investigadores necesitan modelar."
+          ]
+        },
+        {
+          "heading": "Qué es la milla intermedia",
+          "kind": "report",
+          "paragraphs": [
+            "La logística de primera milla recoge productos desde su origen hacia nodos iniciales; la última milla distribuye paquetes desde centros locales a destinatarios. La milla intermedia mueve grandes volúmenes entre centros regionales o continentales. Una caja puede pasar por varios camiones y estaciones antes de estar lista para su entrega, en vez de permanecer en un único vehículo durante todo el proceso.",
+            "Esa transferencia crea un problema de sincronización. Si un envío llega después de la salida prevista del siguiente camión, puede esperar otro ciclo. Un almacén también tiene capacidad limitada para clasificar mercancía y cargar vehículos. Esto diferencia el dominio de una simple ruta óptima entre puntos: hay que considerar tiempo, transbordos, capacidad y demanda de muchos productos al mismo tiempo."
+          ]
+        },
+        {
+          "heading": "Un grafo que incluye espacio y tiempo",
+          "kind": "technical",
+          "paragraphs": [
+            "Google Research presenta la planificación como un flujo de múltiples mercancías sobre una red espacio-temporal. Cada nodo puede representar un centro logístico en un intervalo concreto y cada arista un movimiento de vehículo o almacenamiento temporal. En esa representación, dos caminos que visitan los mismos centros pueden tener coste y viabilidad distintos por los horarios disponibles.",
+            "Las restricciones incluyen salidas programadas, volumen máximo que un centro puede manejar durante una franja y necesidad de coordinar llegada y partida. Los algoritmos diseñados solo para visitar clientes durante una jornada pueden no capturar estas dependencias. MilleMiglia permite generar problemas que exigen decisiones de varios días y distintos vehículos, ofreciendo un desafío más cercano a operaciones entre centros."
+          ]
+        },
+        {
+          "heading": "Por qué importa el carácter sintético",
+          "kind": "report",
+          "paragraphs": [
+            "La herramienta usa distribuciones estadísticas para construir redes con estructuras plausibles, por ejemplo concentración geográfica de centros según densidad de población y actividad industrial. El objetivo es conservar patrones relevantes sin revelar rutas, pedidos o contratos reales de una compañía. Esto hace posibles comparaciones de métodos de investigación cuando las empresas no pueden liberar sus datos brutos.",
+            "El carácter sintético también limita las conclusiones. Un escenario generado puede parecer realista y aun así omitir reglas particulares de una cadena de suministro, operaciones aduaneras o costes de combustible. Que un solucionador obtenga buenos resultados en MilleMiglia no demuestra que reducirá los costos de una empresa específica. Para validar una aplicación comercial hacen falta datos internos autorizados y experimentos de integración."
+          ]
+        },
+        {
+          "heading": "Qué puede hacer un equipo de software",
+          "kind": "practical",
+          "paragraphs": [
+            "Un investigador puede crear conjuntos de pruebas con diferentes números de centros, horarios y flujos para comprobar escalabilidad de algoritmos. Un proveedor de WMS o TMS podría utilizar escenarios sintéticos durante desarrollo para explorar límites de un motor de planificación, sin cargar datos de clientes. Sin embargo, la publicación no asegura que MilleMiglia sea compatible directamente con cualquier producto empresarial ni que incluya todas sus restricciones.",
+            "El enfoque práctico sería definir métricas antes del experimento: tiempos de cómputo, soluciones factibles, coste estimado de transporte, puntualidad y robustez ante cambios de demanda. También es necesario documentar semillas y parámetros de generación para poder repetir cada ensayo. Una evaluación seria diferencia la calidad del generador de la calidad del algoritmo probado sobre sus escenarios."
+          ]
+        },
+        {
+          "heading": "Implicaciones para IA y operaciones",
+          "kind": "analysis",
+          "paragraphs": [
+            "MilleMiglia no es un modelo de lenguaje multimodal ni un robot que conduce; es infraestructura de evaluación para problemas combinatorios complejos. Su importancia en la carrera de IA reside en proporcionar tareas relevantes sobre las que comparar métodos matemáticos, modelos aprendidos y sistemas híbridos. Los benchmarks abiertos ayudan a hacer explícitas las restricciones que muchas demostraciones comerciales omiten.",
+            "Análisis Gazette: crear datos sintéticos realistas es una vía para acercar investigación y operaciones sin publicar información confidencial. El valor futuro de MilleMiglia deberá observarse en estudios reproducibles, adopción del código abierto y capacidad de representar redes diferentes. La noticia del 18 de septiembre es la presentación del generador, no una prueba de que haya optimizado automáticamente redes de distribución de empresas reales."
+          ]
+        }
+      ],
+      "executiveSummary": "Google Research publicó el 18 de septiembre MilleMiglia, un generador de problemas realistas de transporte entre centros logísticos. El sistema abierto en C++ produce escenarios con horarios, transbordos y capacidad limitada para investigar optimización del tramo intermedio sin exponer datos empresariales privados. La evidencia procede de los investigadores y debe interpretarse dentro de los escenarios del estudio.",
+      "finalSummary": "Análisis Gazette: crear datos sintéticos realistas es una vía para acercar investigación y operaciones sin publicar información confidencial. El valor futuro de MilleMiglia deberá observarse en estudios reproducibles, adopción del código abierto y capacidad de representar redes diferentes. La noticia del 18 de septiembre es la presentación del generador, no una prueba de que haya optimizado automáticamente redes de distribución de empresas reales.",
+      "analysis": "Análisis Gazette: los métodos de investigación deben juzgarse por reproducibilidad, limitaciones y aplicación comprobable, no por promesas de producto implícitas.",
+      "watch": "Resultados independientes, adopción y nuevos trabajos reproducibles.",
+      "technicalDetails": [
+        {
+          "label": "Publicación",
+          "value": "18 septiembre 2026"
+        },
+        {
+          "label": "Implementación",
+          "value": "Generador de instancias en C++"
+        },
+        {
+          "label": "Problema",
+          "value": "Red de transbordos de milla intermedia en espacio-tiempo"
+        },
+        {
+          "label": "Salida",
+          "value": "Benchmarks sintéticos con restricciones realistas"
+        }
+      ],
+      "availability": {
+        "status": "Código y documentación de investigación enlazados por Google Research",
+        "platforms": [
+          "Repositorio de código abierto",
+          "Artículo científico"
+        ],
+        "requirements": [
+          "Conocimientos de optimización logística para integración"
+        ],
+        "notes": [
+          "No se afirma que exista un producto WMS/TMS terminado basado en el generador."
+        ]
+      },
+      "limitations": [
+        "Las redes sintéticas no reproducen todos los costos y casos reales.",
+        "Un buen benchmark no garantiza ahorros comerciales.",
+        "La integración puede exigir ajustes de formato y restricciones.",
+        "La herramienta evalúa problemas; no reemplaza una operación TMS completa."
+      ],
+      "practicalAdvice": [
+        "Ensayar algoritmos con escenarios reproducibles y distintas semillas.",
+        "Separar métricas de solución y realismo del generador.",
+        "No usar datos empresariales privados sin autorización."
+      ],
+      "usefulFacts": [
+        "La publicación describe horarios fijos y límites de capacidad de centros.",
+        "Los productos pueden transbordarse entre varios vehículos.",
+        "El código de MilleMiglia está enlazado desde Google Research."
+      ]
+    },
+    {
       "date": "2026-09-17",
       "id": "waymo-singapore-autonomous-2028-plan-2026-09-17",
       "eventKey": "waymo-singapore-mot-lta-2028-autonomous-ridehail-plan-2026-09-17",
@@ -11103,6 +11248,150 @@
         "Allianz Partners ofrece apoyo en seguros y gestión digital de reclamaciones.",
         "La colaboración prevé investigación conjunta con Allianz Center for Technology.",
         "La recuperación de vehículos figura entre posibles áreas adicionales."
+      ]
+    },
+    {
+      "id": "google-retrieve-for-train-diffusion-search-2026-09-15",
+      "eventKey": "google-research-retrieve-for-train-diffusive-fanout-2026-09-15",
+      "articleVersion": 2,
+      "date": "2026-09-15",
+      "announcedAt": "2026-09-15",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "Google Research",
+      "product": "Retrieve-for-Train",
+      "title": "Google Research acelera búsquedas complejas con Retrieve-for-Train: optimización por refuerzo antes de la consulta",
+      "summary": "Google Research presentó el 15 de septiembre Retrieve-for-Train, un sistema que entrena fuera de línea una política de búsqueda y la destila en un recuperador por difusión de 53,9 millones de parámetros. Sus autores reportan aceleraciones de 12 a 20 veces frente a métodos autorregresivos en las tareas experimentales, sin demostrar superioridad universal en todos los buscadores.",
+      "tags": [
+        "Investigación",
+        "Modelos",
+        "Búsqueda",
+        "Optimización"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial conceptual sobre investigación y tecnología; no fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado sepia de periódico antiguo sobre Retrieve-for-Train con componentes técnicos y científicos representados metafóricamente; sin textos incrustados, logos o capturas falsas.",
+      "source": {
+        "name": "Google Research · Bypassing inference bottlenecks",
+        "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+        "publishedAt": "2026-09-15"
+      },
+      "body": [
+        "Una búsqueda compleja a menudo necesita un conjunto de respuestas complementarias, no diez versiones casi idénticas del mismo elemento. Si una persona pide equipo para acampar, puede necesitar carpa, saco, hornillo e iluminación. El reto es generar consultas derivadas que cubran necesidades distintas y que realmente correspondan a elementos del catálogo disponible. Google Research presentó Retrieve-for-Train para entrenar esa conducta antes de que llegue cada consulta.",
+        "El procedimiento comienza con un modelo de lenguaje de expansión de consultas entrenado mediante aprendizaje por refuerzo. El sistema recibe señales de recompensa calculadas sobre todo el conjunto resultante, no sobre una coincidencia individual. Google Research destaca tres propiedades que se equilibran: que las consultas puedan recuperar elementos reales del catálogo, que sean distintas entre sí y que mantengan relación con la intención original del usuario."
+      ],
+      "keyPoints": [
+        "Google Research presentó el 15 de septiembre Retrieve-for-Train, un sistema que entrena fuera de línea una política de búsqueda y la destila en un recuperador por difusión de 53,9 millones de parámetros. Sus autores reportan aceleraciones de 12 a 20 veces frente a métodos autorregresivos en las tareas experimentales, sin demostrar superioridad universal en todos los buscadores.",
+        "Difusión 53,9M parámetros",
+        "Los resultados dependen de los dominios y métricas estudiados."
+      ],
+      "quickTakeaways": [
+        "Google Research presentó el 15 de septiembre Retrieve-for-Train, un sistema que entrena fuera de línea una política de búsqueda y la destila en un recuperador por difusión de 53,9 millones de parámetros. Sus autores reportan aceleraciones de 12 a 20 veces frente a métodos autorregresivos en las tareas experimentales, sin demostrar superioridad universal en todos los buscadores.",
+        "El procedimiento comienza con un modelo de lenguaje de expansión de consultas entrenado mediante aprendizaje por refuerzo.",
+        "Los resultados dependen de los dominios y métricas estudiados.",
+        "Evaluar diversidad y relevancia del conjunto, no solo de cada resultado."
+      ],
+      "sections": [
+        {
+          "heading": "Por qué optimizar conjuntos completos de resultados",
+          "kind": "report",
+          "paragraphs": [
+            "Una búsqueda compleja a menudo necesita un conjunto de respuestas complementarias, no diez versiones casi idénticas del mismo elemento. Si una persona pide equipo para acampar, puede necesitar carpa, saco, hornillo e iluminación. El reto es generar consultas derivadas que cubran necesidades distintas y que realmente correspondan a elementos del catálogo disponible. Google Research presentó Retrieve-for-Train para entrenar esa conducta antes de que llegue cada consulta.",
+            "En un enfoque autorregresivo tradicional, un modelo de lenguaje dedica tokens y pasos sucesivos a planear varias subconsultas. Puede repetir paráfrasis de la frase original o agotar tiempo sin cubrir categorías complementarias. El trabajo propone adelantar la exploración costosa a una fase de entrenamiento y dejar un componente más pequeño para producir direcciones de recuperación en una sola ejecución."
+          ]
+        },
+        {
+          "heading": "Aprender la estrategia fuera de línea",
+          "kind": "report",
+          "paragraphs": [
+            "El procedimiento comienza con un modelo de lenguaje de expansión de consultas entrenado mediante aprendizaje por refuerzo. El sistema recibe señales de recompensa calculadas sobre todo el conjunto resultante, no sobre una coincidencia individual. Google Research destaca tres propiedades que se equilibran: que las consultas puedan recuperar elementos reales del catálogo, que sean distintas entre sí y que mantengan relación con la intención original del usuario.",
+            "Después de entrenar, el modelo más grande genera ejemplos sintéticos que asocian consultas con conjuntos objetivo. Estos ejemplos se convierten en datos supervisados para una arquitectura por difusión compacta. Así, el trabajo costoso de explorar políticas de búsqueda sucede una vez y se transforma en una ruta de inferencia paralela para un servicio que deba responder rápidamente."
+          ]
+        },
+        {
+          "heading": "El papel del modelo de difusión",
+          "kind": "technical",
+          "paragraphs": [
+            "Google Research describe un recuperador de 53,9 millones de parámetros que transforma el embedding de la consulta en varios embeddings de destino. En lugar de escribir texto token por token, genera de forma paralela una representación de distintas direcciones para recuperar resultados. Esta estructura explica la promesa de menor latencia, pero su validez depende de que el espacio vectorial utilizado represente suficientemente bien los elementos del catálogo.",
+            "La técnica no constituye un sustituto general de todos los grandes modelos ni significa que pueda investigar cualquier tema sin fuentes. Se aplica a un problema específico de búsqueda por conjuntos y aprovecha entrenamiento previo sobre el dominio. Si el catálogo cambia o presenta sesgos en su representación, el resultado puede perder calidad; el sistema necesita evaluación y mantenimiento como cualquier recuperador especializado."
+          ]
+        },
+        {
+          "heading": "Cómo fueron las evaluaciones",
+          "kind": "report",
+          "paragraphs": [
+            "El equipo utilizó modelos abiertos de cuatro mil millones de parámetros, entre ellos Gemma3-4B y Qwen3-4B, para aprender la expansión de consultas. Probó tareas sobre moda con datos de conjuntos de vestuario y sobre música con un conjunto industrial de listas. Son dominios con estructura de complementariedad entre elementos, lo cual permite evaluar diversidad y alineación al propósito de un conjunto completo.",
+            "Los autores comunicaron aceleraciones de entre doce y veinte veces frente a métodos autorregresivos bajo sus configuraciones experimentales, además de mejoras en calidad del conjunto frente a líneas base. Debe interpretarse como el resultado de ese estudio, no como un multiplicador que se obtendría automáticamente al sustituir el motor de búsqueda de cualquier empresa. El artículo no ofrece una auditoría de latencia independiente de todos los entornos de producción."
+          ]
+        },
+        {
+          "heading": "El riesgo de optimizar mal una recompensa",
+          "kind": "practical",
+          "paragraphs": [
+            "Una conclusión técnica interesante es que un único objetivo puede producir atajos degenerados. Google explicó que maximizar solo la proximidad al catálogo puede llevar a consultas artificiales sin utilidad, mientras priorizar alineación con la frase original puede generar demasiadas repeticiones. Añadir una métrica de diversidad ayuda a evitar ambos extremos, pero también obliga a decidir qué combinación de propiedades significa una buena respuesta.",
+            "En productos reales, esa decisión no es neutral. Un recomendador puede favorecer variedad, conveniencia, disponibilidad, precio o relevancia por razones distintas. El diseño de recompensas debe auditarse para evitar sesgos y resultados perjudiciales. La publicación de un método para balancear propiedades demuestra una estrategia de entrenamiento, no una política comercial universal ni un reemplazo del control editorial humano."
+          ]
+        },
+        {
+          "heading": "Qué significa para la carrera de la IA",
+          "kind": "analysis",
+          "paragraphs": [
+            "La aportación ilustra una tendencia: invertir más cómputo antes del despliegue para reducir coste y latencia al atender cada solicitud. En búsquedas que reciben miles de consultas, incluso diferencias moderadas por petición pueden ser importantes. Al mismo tiempo, este intercambio exige datos adecuados, entrenamiento y pruebas del dominio en el que se usará el sistema.",
+            "Análisis Gazette: Retrieve-for-Train no busca ganar una conversación con respuestas más largas, sino hacer eficientes operaciones concretas de recuperación. Es un aporte metodológico que merece seguimiento mediante reproducciones, costes integrales y disponibilidad de implementaciones. No corresponde anunciar un buscador público nuevo de Google solo porque Google Research haya difundido el trabajo."
+          ]
+        }
+      ],
+      "executiveSummary": "Google Research presentó el 15 de septiembre Retrieve-for-Train, un sistema que entrena fuera de línea una política de búsqueda y la destila en un recuperador por difusión de 53,9 millones de parámetros. Sus autores reportan aceleraciones de 12 a 20 veces frente a métodos autorregresivos en las tareas experimentales, sin demostrar superioridad universal en todos los buscadores. La evidencia procede de los investigadores y debe interpretarse dentro de los escenarios del estudio.",
+      "finalSummary": "Análisis Gazette: Retrieve-for-Train no busca ganar una conversación con respuestas más largas, sino hacer eficientes operaciones concretas de recuperación. Es un aporte metodológico que merece seguimiento mediante reproducciones, costes integrales y disponibilidad de implementaciones. No corresponde anunciar un buscador público nuevo de Google solo porque Google Research haya difundido el trabajo.",
+      "analysis": "Análisis Gazette: los métodos de investigación deben juzgarse por reproducibilidad, limitaciones y aplicación comprobable, no por promesas de producto implícitas.",
+      "watch": "Resultados independientes, adopción y nuevos trabajos reproducibles.",
+      "technicalDetails": [
+        {
+          "label": "Publicación",
+          "value": "15 septiembre 2026"
+        },
+        {
+          "label": "Modelo de inferencia",
+          "value": "Difusión 53,9M parámetros"
+        },
+        {
+          "label": "Entrenamiento",
+          "value": "RL fuera de línea con recompensa de conjunto"
+        },
+        {
+          "label": "Rendimiento anunciado",
+          "value": "12–20× frente a baselines autorregresivos del estudio, según autores"
+        }
+      ],
+      "availability": {
+        "status": "Trabajo de investigación; no se confirmó lanzamiento de producto comercial nuevo",
+        "platforms": [
+          "Publicación científica de Google Research"
+        ],
+        "requirements": [
+          "Datos y entrenamiento adaptados al dominio"
+        ],
+        "notes": [
+          "No confundir mejora experimental de recuperación con un buscador general disponible."
+        ]
+      },
+      "limitations": [
+        "Los resultados dependen de los dominios y métricas estudiados.",
+        "El modelo compacto necesita supervisión entrenada en el catálogo.",
+        "La recompensa puede sesgar las combinaciones de resultados.",
+        "La aceleración del proveedor no constituye benchmark independiente universal."
+      ],
+      "practicalAdvice": [
+        "Evaluar diversidad y relevancia del conjunto, no solo de cada resultado.",
+        "Medir latencia bajo carga representativa.",
+        "Contrastar rendimiento con consultas reales y catálogo actualizado."
+      ],
+      "usefulFacts": [
+        "El equipo probó tareas con ejemplos de moda y listas de música.",
+        "El procedimiento destila exploración RL a un modelo compacto.",
+        "La publicación distingue optimización en entrenamiento de razonamiento en tiempo de inferencia."
       ]
     },
     {
@@ -17704,7 +17993,7 @@
     {
       "date": "2026-09-15",
       "status": "partial",
-      "verifiedArticles": 1
+      "verifiedArticles": 2
     },
     {
       "date": "2026-09-16",
@@ -17718,8 +18007,8 @@
     },
     {
       "date": "2026-09-18",
-      "status": "pending",
-      "verifiedArticles": 0
+      "status": "partial",
+      "verifiedArticles": 1
     },
     {
       "date": "2026-09-19",
