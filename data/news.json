@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T03:36:19.100Z",
+  "updatedAt": "2026-10-11T03:37:10.135Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -18781,7 +18781,7 @@
         },
         {
           "heading": "Entrenamiento y conjuntos de datos abiertos",
-          "kind": "research",
+          "kind": "context",
           "paragraphs": [
             "Según su documentación, OpenBMB desarrolló MiniCPM5-2B con etapas de preentrenamiento base, adaptación intermedia y postentrenamiento. El proyecto relaciona esa receta con una organización escalonada de datos llamada UltraData Tiered Data Management. En la fase posterior utiliza supervisión sobre ejemplos, aprendizaje por refuerzo y distilación en línea a partir de profesores especializados. Estos detalles contribuyen a entender por qué el lanzamiento incluye tanto pesos de modelos como recursos de entrenamiento y guías, en vez de limitarse a una tarjeta de resultados.",
             "Entre los conjuntos de datos citados figuran UltraX para material web, UltraData-Code con organización de datos de programación, UltraData-SFT-Agent-2609 con aproximadamente 500.000 ejemplos para agentes y UltraData-RL-2609 con más de 80.000 ejemplos de refuerzo en razonamiento y tareas técnicas. La publicación de datos mejora la capacidad de inspeccionar parte de la receta, aunque no equivale automáticamente a reproducir todo el entrenamiento con el mismo resultado. Hay que revisar licencias, procedencia, versiones, procesos de filtrado y recursos de cómputo necesarios antes de reutilizarlos en un producto."
