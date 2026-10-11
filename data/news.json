@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T03:30:18.184Z",
+  "updatedAt": "2026-10-11T03:36:19.100Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -18727,7 +18727,7 @@
       "company": "OpenBMB",
       "product": "MiniCPM5-2B",
       "title": "OpenBMB publica MiniCPM5-2B para IA compacta y local",
-      "summary": "El modelo de 2.000 millones de parámetros apunta a dispositivos y recursos limitados sin renunciar a contexto largo y uso de herramientas.",
+      "summary": "OpenBMB publicó MiniCPM5-2B el 7 de septiembre de 2026, un modelo Transformer denso de aproximadamente 2.500 millones de parámetros totales —unos 2.000 millones excluyendo embeddings— para ejecución local, uso de herramientas y razonamiento. Ofrece variantes GGUF/MLX y datos de entrenamiento abiertos, con benchmarks atribuidos al proyecto.",
       "tags": [
         "Modelos",
         "Código abierto",
@@ -18736,8 +18736,8 @@
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
+      "coveredAt": "2026-10-11",
       "source": {
         "name": "OpenBMB · repositorio oficial",
         "url": "https://github.com/OpenBMB/MiniCPM",
@@ -18753,7 +18753,102 @@
         "Diseñado para despliegue local y uso de herramientas."
       ],
       "analysis": "Los modelos pequeños amplían dónde puede ejecutarse IA y reducen dependencia de nube para tareas acotadas.",
-      "watch": "Velocidad y calidad en hardware de consumo, licencias y resultados independientes."
+      "watch": "Velocidad y calidad en hardware de consumo, licencias y resultados independientes.",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "MiniCPM5-2B es la segunda versión de la familia MiniCPM5 tras el checkpoint 1B de mayo.",
+        "La ficha técnica declara 2.516.756.480 parámetros totales y contexto nativo de 131.072 tokens.",
+        "Se distribuyen modelos para vLLM, SGLang, llama.cpp, Transformers, GGUF, MLX y otras configuraciones.",
+        "Los promedios de benchmark y ventajas frente a otros modelos provienen de evaluaciones del propio equipo OpenBMB."
+      ],
+      "executiveSummary": "OpenBMB publicó MiniCPM5-2B el 7 de septiembre de 2026, un modelo Transformer denso de aproximadamente 2.500 millones de parámetros totales —unos 2.000 millones excluyendo embeddings— para ejecución local, uso de herramientas y razonamiento. Ofrece variantes GGUF/MLX y datos de entrenamiento abiertos, con benchmarks atribuidos al proyecto. La investigación editorial separa disponibilidad, arquitectura, limitaciones y métricas del proveedor de una validación independiente.",
+      "sections": [
+        {
+          "heading": "Lanzamiento y objetivo de un modelo compacto",
+          "kind": "report",
+          "paragraphs": [
+            "El 7 de septiembre de 2026 el proyecto OpenBMB registró el lanzamiento de MiniCPM5-2B, segundo checkpoint de su familia MiniCPM5 después de MiniCPM5-1B, publicado en mayo. El objetivo anunciado es combinar una huella de despliegue relativamente contenida con capacidades de conversación, programación, matemáticas, contexto largo y uso de herramientas. La noticia es verificable en el repositorio oficial y los enlaces de modelos publicados por el proyecto. No se trata de una API comercial cerrada ni de un modelo del tamaño de los grandes sistemas de frontera, sino de una propuesta para dispositivos y servidores con recursos limitados.",
+            "El nombre 2B expresa aproximadamente su categoría, pero no cuenta todos los parámetros de manera idéntica a cualquier otra ficha del mercado. La documentación oficial especifica 2.516.756.480 parámetros totales y 1.981.982.720 sin los embeddings. Esta diferencia importa para evitar comparaciones simplistas con etiquetas comerciales. Los requisitos prácticos dependen de precisión numérica, longitud de contexto, cachés de atención, motor de inferencia y concurrencia, no solamente del número de parámetros anunciado. La publicación también incluye modelos de etapas anteriores y formatos orientados a hardware diferente."
+          ]
+        },
+        {
+          "heading": "Arquitectura, atención y contexto",
+          "kind": "technical",
+          "paragraphs": [
+            "La ficha técnica describe una arquitectura Transformer densa estándar compatible con LlamaForCausalLM. Cuenta con 42 capas, 16 cabezales de consulta y dos cabezales de claves y valores bajo Grouped Query Attention, además de longitud de contexto de 131.072 tokens. Un contexto grande puede permitir introducir documentos amplios o historiales extensos, pero configurarlo exige memoria adicional y no garantiza que el modelo use cada dato distante de forma exacta. En aplicaciones locales es especialmente importante medir recuperación de información y latencia cuando la conversación se alarga.",
+            "La compatibilidad con motores populares reduce la necesidad de construir kernels especializados para dar servicio al modelo. OpenBMB explica rutas con vLLM y SGLang, ejemplos para Transformers y ejecución mediante llama.cpp. La documentación recomienda SGLang para determinadas llamadas a herramientas porque incluye un parser de las etiquetas XML que el modelo utiliza en esas salidas y puede convertirlas a estructuras compatibles con el formato habitual de tool calls. Eso no garantiza que cualquier herramienta sea usada correctamente; un agente todavía necesita argumentos validados, permisos controlados y gestión de errores."
+          ]
+        },
+        {
+          "heading": "Entrenamiento y conjuntos de datos abiertos",
+          "kind": "research",
+          "paragraphs": [
+            "Según su documentación, OpenBMB desarrolló MiniCPM5-2B con etapas de preentrenamiento base, adaptación intermedia y postentrenamiento. El proyecto relaciona esa receta con una organización escalonada de datos llamada UltraData Tiered Data Management. En la fase posterior utiliza supervisión sobre ejemplos, aprendizaje por refuerzo y distilación en línea a partir de profesores especializados. Estos detalles contribuyen a entender por qué el lanzamiento incluye tanto pesos de modelos como recursos de entrenamiento y guías, en vez de limitarse a una tarjeta de resultados.",
+            "Entre los conjuntos de datos citados figuran UltraX para material web, UltraData-Code con organización de datos de programación, UltraData-SFT-Agent-2609 con aproximadamente 500.000 ejemplos para agentes y UltraData-RL-2609 con más de 80.000 ejemplos de refuerzo en razonamiento y tareas técnicas. La publicación de datos mejora la capacidad de inspeccionar parte de la receta, aunque no equivale automáticamente a reproducir todo el entrenamiento con el mismo resultado. Hay que revisar licencias, procedencia, versiones, procesos de filtrado y recursos de cómputo necesarios antes de reutilizarlos en un producto."
+          ]
+        },
+        {
+          "heading": "Qué significan sus resultados de evaluación",
+          "kind": "analysis",
+          "paragraphs": [
+            "OpenBMB afirma un promedio de 53,9 en su conjunto de evaluaciones y sostiene que supera a otros modelos compactos comparados, incluidos algunos de mayor tamaño. También atribuye a RL y a la distilación mejoras medias de 10,96 puntos en capacidades generales y de razonamiento y 6,96 puntos en tareas agentivas bajo sus benchmarks. Son resultados de las condiciones seleccionadas por el equipo; no una clasificación universal independiente de todos los modelos disponibles. Las cifras no deben presentarse sin reconocer que diferentes protocolos, prompts y motores pueden cambiar las puntuaciones.",
+            "El valor de un modelo local no se limita a obtener mejor resultado en un promedio agregado. Para una tarea real importa cuánto tarda en responder, si puede seguir un formato de salida, el número de fallos de herramienta, qué pasa cuando se le da un documento largo y si su comportamiento es estable durante varias acciones. Análisis Gazette: los proyectos de IA compacta compiten por ofrecer capacidades suficientes donde un modelo mayor puede resultar demasiado costoso o difícil de instalar. La eficiencia final requiere pruebas en el equipo objetivo, no extrapolar una tabla del README."
+          ]
+        },
+        {
+          "heading": "Formatos, inferencia y consejos de despliegue",
+          "kind": "practical",
+          "paragraphs": [
+            "El repositorio enlaza formatos BF16, GGUF, MLX y variantes GPTQ o especiales para ciertas plataformas. Esto ayuda a usuarios de servidores Linux, PCs con CPU/GPU y equipos Apple a seleccionar una combinación apropiada. Las versiones cuantizadas pueden ahorrar memoria, pero también cambiar ligeramente el comportamiento o el rendimiento en determinadas tareas. La documentación incluye ejemplos de servidores compatibles con OpenAI para vLLM y SGLang y una ruta llama.cpp basada en GGUF. Ninguna configuración es óptima para todos los procesadores o restricciones de memoria.",
+            "El proyecto recomienda por defecto parámetros de generación temperature 1.0, top_p 0.95 y min_p 0.0; el propio README señala que distintos motores soportan opciones distintas y que determinados valores por defecto pueden favorecer repeticiones en ciertas configuraciones. Para reproducir una comparación hay que registrar versión exacta del modelo, precisión, prompt, contexto, cuantización y flags del servidor. Antes de usar llamadas a herramientas, conviene comprobar que el parser seleccionado identifica correctamente las salidas y que un componente externo valida la autorización real de las acciones."
+          ]
+        },
+        {
+          "heading": "Aplicaciones y preguntas abiertas",
+          "kind": "context",
+          "paragraphs": [
+            "MiniCPM5-2B puede considerarse para asistentes que respondan sobre archivos locales, tareas pequeñas de programación, clasificación de texto o agentes con herramientas acotadas. Su despliegue sin enviar cada prompt a una API externa puede resultar interesante para privacidad y control de costes, pero almacenar datos en una máquina tampoco garantiza por sí solo controles adecuados de acceso, cifrado y respaldo. Un modelo de 2B puede equivocarse, confundir parámetros o aceptar instrucciones maliciosas de documentos; la arquitectura de la aplicación debe gestionar esos riesgos.",
+            "El seguimiento debe observar pruebas independientes en varios idiomas y hardware, consumo real de memoria con contexto largo, soporte de herramientas y evolución de las licencias de pesos y datos. El repositorio del proyecto aparece bajo licencia Apache-2.0, pero cada artefacto externo descargado desde repositorios de modelos y conjuntos de datos requiere revisar su propia ficha y licencia. La noticia del 7 de septiembre es la disponibilidad de un modelo y materiales abiertos con capacidades declaradas por el equipo, no la demostración de que cualquier teléfono o PC ejecutará siempre tareas complejas con la calidad de un modelo mayor."
+          ]
+        }
+      ],
+      "finalSummary": "MiniCPM5-2B amplía la oferta de modelos locales compactos con arquitectura documentada, contexto amplio y varias vías de despliegue. Su utilidad debe evaluarse en hardware real y los benchmarks siguen siendo resultados atribuidos al proveedor.",
+      "limitations": [
+        "Los resultados de benchmark provienen del equipo OpenBMB y no son garantía independiente.",
+        "El contexto máximo publicado no implica precisión perfecta en documentos largos.",
+        "Los requisitos de memoria y latencia dependen del formato, la cuantización y el motor.",
+        "Las licencias de artefactos externos y datasets deben revisarse en cada ficha."
+      ],
+      "practicalAdvice": [
+        "Seleccionar BF16, GGUF o MLX según hardware y memoria real.",
+        "Evaluar tareas de código, matemáticas, idiomas y herramientas sobre un conjunto propio.",
+        "Registrar versión, tokens de contexto, cuantización y parámetros de generación.",
+        "Aislar acciones del agente, validar argumentos y comprobar derechos de reutilización de datos."
+      ],
+      "technicalDetails": [
+        {
+          "label": "Lanzamiento",
+          "value": "7 septiembre 2026"
+        },
+        {
+          "label": "Parámetros totales",
+          "value": "2.516.756.480; 1.981.982.720 sin embeddings"
+        },
+        {
+          "label": "Contexto publicado",
+          "value": "131.072 tokens"
+        },
+        {
+          "label": "Capas y cabezales",
+          "value": "42 capas; GQA 16 Q / 2 KV"
+        },
+        {
+          "label": "Inferencia",
+          "value": "vLLM, SGLang, Transformers, llama.cpp, GGUF, MLX y más"
+        }
+      ],
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de gabinete científico antiguo, pequeño autómata examinando enormes rollos de texto y engranajes de cálculo, foco en capacidad compacta sin sugerir tamaño real, tinta y sepia, sin logotipos ni texto."
     },
     {
       "id": "google-cathay-contrail-trial",
@@ -19539,7 +19634,7 @@
       "company": "NVIDIA",
       "product": "Personal AI Router (PAIR)",
       "title": "NVIDIA presenta PAIR para repartir IA local entre varios equipos",
-      "summary": "Personal AI Router distribuye inferencia entre computadoras locales y busca convertir una red doméstica o de trabajo en un pequeño clúster de IA.",
+      "summary": "NVIDIA presentó Personal AI Router (PAIR) como una beta gratuita y de código abierto que descubre PCs compatibles en una red local y reparte solicitudes de inferencia independientes. No une sus memorias GPU en una sola GPU virtual; ayuda a ejecutar varias tareas de agentes en paralelo.",
       "tags": [
         "Infraestructura",
         "Modelos",
@@ -19548,8 +19643,8 @@
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
+      "coveredAt": "2026-10-11",
       "source": {
         "name": "NVIDIA · anuncio oficial",
         "url": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/",
@@ -19565,7 +19660,109 @@
         "Diseñado para coordinar varios equipos."
       ],
       "analysis": "La agregación de recursos locales puede hacer útiles modelos mayores sin comprar una única estación extremadamente cara.",
-      "watch": "Rendimiento sobre redes domésticas y soporte para hardware heterogéneo."
+      "watch": "Rendimiento sobre redes domésticas y soporte para hardware heterogéneo.",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "PAIR distribuye solicitudes de inferencia autónomas entre ordenadores disponibles en una red local.",
+        "La beta anunciada el 3 de septiembre admite Windows, macOS y Linux, pero solo determinados equipos y aceleradores.",
+        "Según NVIDIA, funciona con servidores Ollama y LM Studio; las máquinas pueden incorporarse y retirarse dinámicamente.",
+        "El aumento de velocidad de hasta 1,9 veces de la misma nota corresponde a optimizaciones llama.cpp, no a una prueba de PAIR."
+      ],
+      "executiveSummary": "NVIDIA presentó Personal AI Router (PAIR) como una beta gratuita y de código abierto que descubre PCs compatibles en una red local y reparte solicitudes de inferencia independientes. No une sus memorias GPU en una sola GPU virtual; ayuda a ejecutar varias tareas de agentes en paralelo. La investigación editorial separa disponibilidad, arquitectura, limitaciones y métricas del proveedor de una validación independiente.",
+      "sections": [
+        {
+          "heading": "El anuncio de NVIDIA en IFA 2026",
+          "kind": "report",
+          "paragraphs": [
+            "El 3 de septiembre de 2026, durante la feria IFA, NVIDIA presentó Personal AI Router, abreviado PAIR, como una herramienta para compartir capacidad de inferencia de inteligencia artificial entre varios equipos de una misma red local. El software se describe como gratuito y abierto y su primera distribución es una beta. Es uno de varios anuncios que NVIDIA reunió ese día junto a noticias sobre agentes locales, llama.cpp, vLLM y nuevos equipos RTX Spark. PAIR merece una noticia independiente porque resuelve una necesidad distinta: coordinar solicitudes de modelos que ya ejecutan diferentes ordenadores.",
+            "La idea parte de una observación doméstica: muchos hogares y pequeños laboratorios cuentan con más de un PC y algunos permanecen desocupados durante parte del día. Un agente que lanza subtareas de documentación, programación y análisis puede generar varias llamadas simultáneas a modelos. Si todas llegan al mismo servidor, compiten por memoria y capacidad de procesamiento. PAIR descubre otros sistemas compatibles y enruta cada solicitud de inferencia a un nodo con capacidad, intentando aprovechar recursos ya disponibles sin trasladar necesariamente el trabajo a una nube pública."
+          ]
+        },
+        {
+          "heading": "Cómo distribuye solicitudes y qué no debe confundirse",
+          "kind": "technical",
+          "paragraphs": [
+            "PAIR se sitúa entre la aplicación que solicita una inferencia y los servidores locales que pueden realizarla. NVIDIA menciona Ollama y LM Studio como software compatible. La herramienta puede detectar ordenadores en una red privada, conocer la disponibilidad de recursos y seleccionar un destino para nuevas peticiones. Cuando un equipo entra o sale, la selección puede adaptarse. En una demostración descrita por NVIDIA, Hermes divide un encargo amplio en cinco subagentes; el router envía sus solicitudes a distintos PCs para que no aguarden todos por el mismo procesador gráfico.",
+            "Este enfoque se parece al balanceo de cargas de servicios informáticos, no a fusionar físicamente varias tarjetas en una sola GPU enorme. Si un modelo requiere más memoria que la disponible en un único nodo, PAIR no demuestra por sí mismo que sus pesos puedan repartirse entre memorias de otros PCs para ejecutar una única petición gigante. El beneficio esperado es más concurrencia y menor cola para tareas separables. El rendimiento depende del tamaño de cada modelo, velocidad de red, CPU/GPU de los nodos, número de trabajos y políticas de enrutamiento, por lo que no existe una aceleración universal garantizada."
+          ]
+        },
+        {
+          "heading": "Compatibilidad de la beta y requisitos anunciados",
+          "kind": "report",
+          "paragraphs": [
+            "La información oficial identifica interfaces gráficas y de terminal para Windows, macOS y Linux. Entre las plataformas compatibles figuran GPU GeForce RTX serie 20 o posteriores, tarjetas profesionales NVIDIA RTX PRO basadas en Turing o generaciones siguientes, NVIDIA DGX Spark y máquinas Apple con silicio M4 o posterior. Que una beta sea multiplataforma no significa que cualquier equipo antiguo con conexión Wi-Fi resulte elegible. También deben confirmarse versiones de drivers, sistemas de inferencia instalados, visibilidad entre nodos y permisos de acceso al conectar máquinas reales.",
+            "La disponibilidad anunciada es beta, no una certificación de estabilidad para operaciones empresariales críticas. El usuario debe comprobar la documentación de instalación actual y los modelos que ofrece cada nodo, evitando suponer que un modelo ausente se descargará o se convertirá automáticamente al formato apropiado. Las diferencias entre Ollama y LM Studio y la variabilidad de hardware generan límites operativos. NVIDIA no publicó una tarifa por tarea para PAIR en ese comunicado porque presenta el software como gratuito, aunque electricidad, redes y mantenimiento de varios equipos sí representan costes reales."
+          ]
+        },
+        {
+          "heading": "Rendimiento: separar la cifra de 1,9× del router",
+          "kind": "analysis",
+          "paragraphs": [
+            "En el mismo anuncio, NVIDIA destacó que determinadas optimizaciones de llama.cpp podían ofrecer hasta 1,9 veces el throughput en una GPU GeForce RTX 5090 bajo sus condiciones de evaluación. También citó mejoras de vLLM en otros aceleradores. Esas cifras describen motores y kernels de inferencia, no una medición del rendimiento que PAIR garantiza al repartir tareas entre ordenadores. Agrupar todos los avances de una conferencia bajo un solo titular puede crear una causalidad falsa. El Gazette separa la mejora del backend de la capacidad de distribuir solicitudes concurrentes.",
+            "Para estudiar PAIR en la práctica hay que definir una línea base: cuánto tarda el mismo conjunto de trabajos de agentes si usa un solo equipo y cuánto tarda cuando puede aprovechar dos o tres. Deben medirse tiempo total hasta terminar la tarea, latencia por petición, throughput, porcentaje de fallos y consumo energético. Es importante mantener iguales los modelos, prompts y límites de tokens, porque añadir otro nodo con un modelo diferente altera también la calidad, no solo la velocidad. Un aumento de concurrencia no garantiza que cada respuesta individual salga antes."
+          ]
+        },
+        {
+          "heading": "Privacidad, permisos y observabilidad de agentes locales",
+          "kind": "context",
+          "paragraphs": [
+            "La ejecución local puede disminuir la necesidad de enviar información a servicios de nube, pero PAIR modifica las fronteras internas de confianza. Una solicitud que antes se procesaba solo en el PC principal podría ser enviada a otro ordenador de la red. Conviene comprobar qué datos se transfieren, cómo se autentican los nodos, qué conexiones están permitidas y si las máquinas comparten usuarios o directorios sensibles. Una red doméstica tampoco equivale automáticamente a un entorno confiable; dispositivos invitados y equipos desactualizados pueden ampliar la superficie de exposición.",
+            "En un taller de agentes, además, la experiencia debería explicar qué nodo atendió cada petición, cuáles están disponibles y qué ocurre al desconectarse uno. Si el usuario debe interpretar puertos, procesos o archivos de log para saber si su solicitud llegó al servidor correcto, el sistema funciona técnicamente pero no es sencillo de administrar. Análisis Gazette: los routers locales ganarán valor si convierten varios ordenadores heterogéneos en un recurso fácil de observar y controlar, no solo si aumentan el uso agregado de GPU."
+          ]
+        },
+        {
+          "heading": "Casos de uso y seguimiento responsable",
+          "kind": "practical",
+          "paragraphs": [
+            "El caso ideal es un conjunto de subtareas independientes: extraer información de documentos separados, analizar diferentes incidencias, clasificar mensajes o revisar módulos de un proyecto de software. En estos escenarios, la aplicación puede lanzar varias solicitudes a modelos sin requerir que cada subagente conozca de antemano la máquina que lo ejecutará. Conviene comenzar con tareas reversibles y datos no sensibles para verificar que el enrutamiento funciona y que los resultados conservan la calidad esperada al pasar entre nodos de hardware y configuración diferentes.",
+            "El seguimiento posterior deberá buscar pruebas reproducibles de latencia y escalamiento, evolución de la beta, soporte de más sistemas y controles de seguridad verificables. Para una organización pequeña el ahorro potencial puede provenir de reutilizar máquinas existentes; para un usuario con solo un PC, PAIR no proporciona por arte de magia hardware adicional. El anuncio del 3 de septiembre introduce una herramienta concreta para el problema de concurrencia local, pero su utilidad final debe demostrarse con cargas reales y no con cifras de rendimiento asociadas a otros componentes."
+          ]
+        }
+      ],
+      "finalSummary": "PAIR ofrece un mecanismo de distribución de solicitudes independientes a modelos locales en varios PCs, con compatibilidad declarada con Ollama y LM Studio. Su beta puede mejorar concurrencia, pero no unifica automáticamente VRAM ni garantiza la cifra de aceleración anunciada para otros motores de NVIDIA.",
+      "limitations": [
+        "PAIR no convierte automáticamente varias memorias GPU en un bloque unificado capaz de cargar cualquier modelo.",
+        "Las plataformas compatibles están restringidas a hardware anunciado y requisitos del software.",
+        "La cifra hasta 1,9× de NVIDIA corresponde a optimizaciones de llama.cpp, no a un benchmark propio de PAIR.",
+        "La beta necesita evaluación de autenticación, seguridad y comportamiento frente a nodos desconectados."
+      ],
+      "practicalAdvice": [
+        "Empezar con dos máquinas compatibles y tareas paralelas de baja sensibilidad.",
+        "Medir tiempo total, throughput, errores y energía frente a un único nodo.",
+        "Comprobar cifrado, autenticación, alcance de red y registros de las solicitudes transferidas.",
+        "No prometer ahorro económico ni acelerar un modelo monolítico sin mediciones de esa configuración."
+      ],
+      "technicalDetails": [
+        {
+          "label": "Fecha",
+          "value": "3 septiembre 2026"
+        },
+        {
+          "label": "Producto",
+          "value": "NVIDIA Personal AI Router (PAIR)"
+        },
+        {
+          "label": "Estado",
+          "value": "Beta gratuita y código abierto"
+        },
+        {
+          "label": "Motores",
+          "value": "Ollama y LM Studio"
+        },
+        {
+          "label": "Plataformas",
+          "value": "Windows, macOS y Linux; RTX 20+, RTX PRO Turing+, DGX Spark y Apple M4+"
+        }
+      ],
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de revista técnica del XIX: tres mesas de trabajo con autómatas que comparten encargos mediante tubos neumáticos y un distribuidor mecánico central, representación metafórica, tinta y sepia, sin texto ni logotipos.",
+      "relatedSources": [
+        {
+          "name": "NVIDIA · documentación técnica de PAIR",
+          "url": "https://developer.nvidia.com/blog/",
+          "publishedAt": "2026-09-03"
+        }
+      ]
     },
     {
       "id": "nvidia-hugging-face-acquisition",
