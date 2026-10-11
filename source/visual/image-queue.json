@@ -8,7 +8,7 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
-  "generatedFromNewsUpdatedAt": "2026-10-11T02:15:51.632Z",
+  "generatedFromNewsUpdatedAt": "2026-10-11T02:25:33.918Z",
   "generatedAt": "2026-10-11",
   "items": [
     {
@@ -158,6 +158,32 @@
       "desiredOutput": "assets/news/2026-09-01/waymo-denver-san-diego-tampa.webp",
       "brief": "Grabado editorial de periódico antiguo con tres escenas urbanas diferenciadas, un taxi autónomo sin conductor por las calles de Denver, San Diego y Tampa. Estilo grabado sepia, sin letras ni logos, no fotografía.",
       "sourceSummary": "La compañía empieza a recibir pasajeros públicos en tres nuevos mercados y amplía gradualmente el acceso.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
+      "articleId": "amazon-connect-agentic-cx-designer",
+      "eventKey": "amazon-connect-agentic-cx-designer",
+      "date": "2026-09-02",
+      "company": "AWS",
+      "product": "Amazon Connect agentic CX designer",
+      "title": "AWS lleva un diseñador agentivo a Amazon Connect",
+      "currentImage": "assets/hero.webp",
+      "currentAssetId": "gazette-generic-ai-hero-v1",
+      "currentReuseCount": 86,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-02/amazon-connect-agentic-cx-designer.webp",
+      "brief": "Grabado de periódico del siglo XIX: operadores de una central telefónica mecánica diseñan un flujo de conversación con tarjetas y compuertas que separan preguntas abiertas de decisiones regladas, tinta sepia, papel envejecido, sin texto, marcas, logos falsos ni interfaz presentada como documental.",
+      "sourceSummary": "La herramienta no-code combina pasos deterministas y agentes para crear y probar experiencias de atención en voz y canales digitales.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
@@ -3122,32 +3148,6 @@
       "desiredOutput": "assets/news/2026-09-01/openai-path-to-astra-safeguards.webp",
       "brief": "Crear una ilustración específica para “OpenAI endurece las salvaguardas antes de GPT-6 Astra”. El foco visual debe representar GPT-6 Astra de OpenAI y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "sourceSummary": "OpenAI dice que Astra alcanza su umbral crítico de capacidad cibernética y describe restricciones adicionales antes del lanzamiento.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "amazon-connect-agentic-cx-designer",
-      "eventKey": "amazon-connect-agentic-cx-designer",
-      "date": "2026-09-02",
-      "company": "AWS",
-      "product": "Amazon Connect agentic CX designer",
-      "title": "AWS lleva un diseñador agentivo a Amazon Connect",
-      "currentImage": "assets/hero.webp",
-      "currentAssetId": "gazette-generic-ai-hero-v1",
-      "currentReuseCount": 86,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-02/amazon-connect-agentic-cx-designer.webp",
-      "brief": "Crear una ilustración específica para “AWS lleva un diseñador agentivo a Amazon Connect”. El foco visual debe representar Amazon Connect agentic CX designer de AWS y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "La herramienta no-code combina pasos deterministas y agentes para crear y probar experiencias de atención en voz y canales digitales.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
