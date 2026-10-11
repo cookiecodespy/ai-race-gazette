@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T11:36:31.205Z",
+  "updatedAt": "2026-10-11T11:39:32.611Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -21580,7 +21580,7 @@
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
       "coveredAt": "2026-10-07",
       "source": {
         "name": "OpenAI · anuncio oficial",
@@ -21609,7 +21609,102 @@
         "Algunas capacidades tienen acceso más restringido."
       ],
       "analysis": "Astra muestra que la frontera competitiva incluye capacidad, costo, distribución y controles; la disponibilidad real puede ser tan importante como el benchmark.",
-      "watch": "Ampliación de acceso, precio y evaluaciones independientes."
+      "watch": "Ampliación de acceso, precio y evaluaciones independientes.",
+      "articleVersion": 2,
+      "executiveSummary": "OpenAI presentó GPT-6 Astra el 3 de septiembre de 2026 como modelo de frontera para uso de computadoras, programación, trabajo profesional, ciencia y defensa de ciberseguridad. El despliegue comenzó con un grupo limitado y fue ampliándose por planes y plataformas. Los resultados de benchmarks, incluido el 98 % en FrontierMath Tier 4 y el 99,9 % en ARC-AGI-3, proceden del anuncio del proveedor y deben leerse junto a metodología, salvaguardas y disponibilidad.",
+      "quickTakeaways": [
+        "GPT-6 Astra se anunció el 3 de septiembre con lanzamiento inicial restringido y extensión progresiva a ChatGPT, API, Azure y Bedrock.",
+        "OpenAI publicó precios Standard de US$10 por millón de tokens de entrada y US$50 por millón de salida en la API, con tarifas distintas para caché y modo rápido.",
+        "La empresa destaca avances en computer use, ciencia y ciberseguridad; los resultados de evaluaciones son claims del fabricante, no rankings independientes del Gazette."
+      ],
+      "sections": [
+        {
+          "heading": "Qué se anunció y quién podía acceder",
+          "kind": "report",
+          "paragraphs": [
+            "OpenAI presentó Astra como su nuevo modelo de frontera para tareas complejas, con especial énfasis en usar herramientas, navegar interfaces, escribir código y producir documentos profesionales. El comunicado inicial del 3 de septiembre explicó que comenzaría con acceso para un conjunto limitado de organizaciones, seguido de una expansión a clientes de ChatGPT Plus, Pro, Business y Enterprise, junto con API, Microsoft Azure y Amazon Bedrock. Esto exige separar anuncio, disponibilidad inicial y ampliaciones posteriores: no todas las cuentas obtuvieron acceso necesariamente a la vez.",
+            "La propuesta implica más que responder preguntas. OpenAI describió un sistema capaz de interactuar con software, completar formularios, realizar investigación y examinar interfaces construidas por el propio modelo. El desempeño en tareas prolongadas tiene implicaciones para empresas que esperan delegar trabajo de extremo a extremo, pero una ejecución útil no se mide únicamente por que el agente intente los pasos. También debe terminar correctamente, respetar autorizaciones y dejar evidencia verificable del resultado."
+          ]
+        },
+        {
+          "heading": "Uso de computadoras y trabajo profesional",
+          "kind": "technical",
+          "paragraphs": [
+            "Según las evaluaciones publicadas por OpenAI, Astra alcanzó un 72,6 % en OSWorld 2.0 bajo una configuración de aproximadamente cuarenta minutos por tarea frente al 65,7 % de GPT-5.6 Sol con setenta y cinco minutos. La empresa también presentó una mejora de eficiencia en su entorno Codex y ejemplos de redacción, hojas de cálculo y presentación de diapositivas. Esas cifras no son una demostración de que el modelo hará cualquier tarea de oficina más rápido que una persona: los resultados dependen del harness, los datos y las reglas de evaluación.",
+            "En programación, OpenAI resaltó el uso de agentes con herramientas y la conservación de información entre ventanas de contexto. Una parte de la novedad reside en recuperar notas y resultados anteriores sin depender únicamente de resúmenes condensados, reduciendo la pérdida de decisiones históricas durante investigaciones extensas. Esa función debe examinarse en su implementación concreta: una memoria recuperable no elimina la necesidad de pruebas automáticas, revisión de cambios y registros de los supuestos adoptados durante el trabajo."
+          ]
+        },
+        {
+          "heading": "Benchmarks espectaculares y riesgo de confundirlos",
+          "kind": "context",
+          "paragraphs": [
+            "El anuncio comunicó un 98 % en FrontierMath Tier 4, 99,9 % en ARC-AGI-3 y 100 % en ExploitBench, además de referencias a resultados de investigación matemática. Son cifras de OpenAI y su interpretación depende de versiones de tareas, presupuesto de inferencia, herramientas y posibles límites de los conjuntos de prueba. En particular, una puntuación alta en un benchmark de seguridad diseñado para evaluar exploits no debe transformarse en una promesa genérica de reparación o investigación segura.",
+            "OpenAI también publicó detalles de pruebas sobre capacidad de actuar fuera del ámbito autorizado. En una evaluación interna, sostuvo que Astra no excedió el objetivo autorizado en los escenarios medidos, frente a un comportamiento distinto de una versión anterior sin protecciones de producción. Es una evidencia relevante sobre la dirección del entrenamiento, pero no una garantía absoluta de ausencia de fallos. Las evaluaciones deben repetirse en flujos reales con controles adicionales y seguimiento de incidentes."
+          ]
+        },
+        {
+          "heading": "Ciberseguridad, salvaguardas y despliegue responsable",
+          "kind": "analysis",
+          "paragraphs": [
+            "El proveedor describió a Astra como capaz de encontrar y desarrollar formas de explotar fallos de software a un nivel que exige barreras adicionales. El anuncio dice que el modelo cruza el umbral Critical en ciberseguridad de su Preparedness Framework y que las versiones orientadas a consumidores y desarrolladores restringen ciertas tareas de explotación avanzada. El Gazette registra esos hechos como políticas y hallazgos comunicados por OpenAI, sin ofrecer procedimientos ofensivos. Para defensores, la utilidad práctica está en revisión segura de código, identificación autorizada y apoyo a parches.",
+            "OpenAI informó además que sus salvaguardas automáticas pueden pausar o detener trabajos legítimos en ciertas circunstancias. Esto introduce una tensión de producto: un agente puede ser técnicamente muy capaz pero difícil de utilizar si no comunica qué operación está bloqueada, qué alternativa existe y qué intervención corresponde al propietario. La confiabilidad debe medirse tanto en eficacia de las tareas como en respeto de permisos y claridad operativa. Ningún resultado de benchmark resuelve por sí solo ese problema."
+          ]
+        },
+        {
+          "heading": "Precio y evaluación real de la propuesta",
+          "kind": "practical",
+          "paragraphs": [
+            "El comunicado indicó tarifas Standard de diez dólares por millón de tokens de entrada y cincuenta por millón de salida, con tarifas separadas para lecturas y escrituras de caché. También describió un modo Fast de hasta dos veces la velocidad con coste doble de Standard. Son tarifas anunciadas para la API en esa fecha; pueden cambiar por producto, región, modalidad y acuerdos. El uso en ChatGPT quedó sujeto a cupos de cada plan y acceso progresivo, no a la misma fórmula de facturación por tokens.",
+            "Quien piense integrar Astra debería evaluar tres cosas en paralelo: calidad del resultado bajo tareas conocidas, coste operativo por tarea completada y seguridad de las acciones autorizadas. En un piloto se pueden comparar un conjunto fijo de solicitudes, registrar confirmaciones y errores y medir cuánto trabajo humano queda después de la salida del agente. Conviene conservar versiones de modelo y harness, porque un cambio en cualquiera de ambos puede modificar el rendimiento. Una interfaz que solo presenta porcentajes publicados, sin controles para revisar resultados, sería insuficiente para una decisión de compra."
+          ]
+        }
+      ],
+      "pricing": [
+        {
+          "label": "API Standard — entrada anunciada",
+          "value": "US$10 / 1 millón de tokens"
+        },
+        {
+          "label": "API Standard — salida anunciada",
+          "value": "US$50 / 1 millón de tokens"
+        },
+        {
+          "label": "Modo Fast",
+          "value": "Hasta 2× velocidad por 2× tarifa Standard",
+          "note": "Precios del anuncio inicial, sujetos a condiciones y cambios"
+        }
+      ],
+      "availability": {
+        "status": "Anuncio con acceso inicial limitado y expansión gradual por planes y plataformas.",
+        "platforms": [
+          "ChatGPT Plus, Pro, Business y Enterprise",
+          "OpenAI API, Azure y Amazon Bedrock"
+        ],
+        "requirements": [
+          "Elegibilidad por plan, administración del espacio de trabajo y cuota disponible"
+        ],
+        "notes": [
+          "Acceso Enterprise desactivado por defecto al inicio, según el anuncio de OpenAI."
+        ]
+      },
+      "limitations": [
+        "Las cifras de evaluación publicadas por OpenAI no son resultados independientes del Gazette.",
+        "La disponibilidad del 3 de septiembre fue progresiva; no equivale a acceso inmediato mundial para toda cuenta.",
+        "Las políticas de seguridad y límites operativos deben probarse en cada flujo de trabajo."
+      ],
+      "practicalAdvice": [
+        "Probar tareas con permisos mínimos y criterios de finalización verificables.",
+        "Comparar coste por tarea completa, no solo precio por millón de tokens.",
+        "Registrar fecha, versión del modelo, harness, intervenciones y fallos de seguridad durante pilotos."
+      ],
+      "usefulFacts": [
+        "OpenAI anunció Astra el 3 de septiembre de 2026.",
+        "El comunicado da 72,6 % en OSWorld 2.0 bajo una configuración específica.",
+        "El lanzamiento empresarial incluyó acceso progresivo y controles de administrador."
+      ],
+      "finalSummary": "GPT-6 Astra representó un salto anunciado por OpenAI hacia agentes capaces de trabajar en software y procesos reales, con avances de evaluación y nuevos requisitos de seguridad. Para valorar su importancia conviene separar capacidades medidas por el proveedor, acceso efectivo y resultados operativos. La carrera de la IA se decide tanto en el modelo como en el sistema que ejecuta, supervisa y explica sus acciones.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial barroco de un laboratorio de ingeniería y una oficina del siglo XIX donde una máquina simbólica resuelve planos, revisa páginas de ciencia y trabaja ante un computador abstracto; varios observadores humanos verifican resultados y mantienen límites. Negro/sepia en papel añejo, sin marcas ni cifras de benchmarks en la imagen, sin fotografía documental, horizontal 3:2."
     },
     {
       "id": "wonderful-series-c-2026",
@@ -21628,7 +21723,7 @@
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
       "coveredAt": "2026-10-07",
       "source": {
         "name": "Wonderful · anuncio oficial",
@@ -21645,7 +21740,74 @@
         "Capital dirigido a agentes empresariales."
       ],
       "analysis": "Parte del valor de la carrera puede migrar hacia distribución, integración y operación de agentes dentro de empresas.",
-      "watch": "Crecimiento de clientes, economía por agente y dependencia de proveedores de modelos."
+      "watch": "Crecimiento de clientes, economía por agente y dependencia de proveedores de modelos.",
+      "articleVersion": 2,
+      "executiveSummary": "Wonderful anunció el 2 de septiembre de 2026 una Serie C de US$550 millones a valoración declarada de US$5.000 millones, liderada por Insight Partners y con participación de Salesforce e inversores anteriores. Su objetivo es ampliar un sistema operativo de IA empresarial que coordine agentes, aplicaciones, integraciones y gobierno. Los datos sobre expansión a más de 35 mercados y 650 empleados son comunicaciones de la compañía.",
+      "quickTakeaways": [
+        "Wonderful anunció una financiación Serie C de US$550 millones y una valoración de US$5.000 millones el 2 de septiembre.",
+        "La compañía presenta Wonderful AI OS como capa para coordinar agentes, flujos, aplicaciones e integraciones con gobierno empresarial.",
+        "El anuncio declara operaciones en más de 35 mercados y 650 empleados; no permite deducir ingresos, rentabilidad ni adopción independiente sin otras pruebas."
+      ],
+      "sections": [
+        {
+          "heading": "La transacción y los participantes",
+          "kind": "report",
+          "paragraphs": [
+            "Desde Ámsterdam, Wonderful comunicó el cierre de una ronda Serie C de 550 millones de dólares encabezada por Insight Partners, con participación de Salesforce y de inversionistas como Index Ventures, IVP, Vine Ventures, 9Yards y Bessemer Venture Partners. La empresa informó una valoración de cinco mil millones de dólares. Es importante mantener ambas cifras separadas: una es dinero captado en una operación de financiación y la otra la valoración empresarial anunciada. No son medidas intercambiables ni equivalen a ingresos generados por sus agentes.",
+            "Wonderful indicó que utilizará el capital para desarrollar el producto, reforzar equipos de despliegue internacional y atender demanda de automatización corporativa. Según la compañía, desde su Serie B de marzo expandió su presencia a más de 35 mercados y alcanzó 650 empleados. Estos datos muestran la escala que pretende transmitir el comunicado, pero no establecen por sí mismos cuántos clientes obtuvieron ahorros verificables ni cuánto trabajo se automatizó sin revisión humana."
+          ]
+        },
+        {
+          "heading": "Qué propone un sistema operativo de IA para empresas",
+          "kind": "technical",
+          "paragraphs": [
+            "Wonderful describe su AI OS como una base compartida que coordina agentes, flujos de trabajo, aplicaciones nativas de inteligencia artificial, contexto empresarial, conectores y ejecuciones gobernadas. Su planteamiento es evitar crear asistentes aislados para cada departamento, cada uno con integración y memoria diferentes. Un sistema común podría permitir reutilizar identidades, herramientas y conocimiento bajo políticas empresariales. Es la visión comercial de la empresa; la calidad del producto real depende del nivel de control y la fiabilidad de cada integración.",
+            "La plataforma se presenta como abierta y agnóstica respecto de modelos. Esa afirmación interesa a organizaciones que no quieren reconstruir todo cuando aparece un modelo mejor o más económico, pero conviene verificar qué proveedores son compatibles de verdad, qué componentes continúan siendo propietarios y cómo se exportan datos, configuraciones y registros. Un producto puede permitir escoger modelos sin eliminar dependencia de conectores o reglas internas. Esa distinción debe estar en cualquier evaluación de arquitectura."
+          ]
+        },
+        {
+          "heading": "Por qué la coordinación importa más que sumar agentes",
+          "kind": "context",
+          "paragraphs": [
+            "Una empresa puede obtener resultados útiles con un agente que responda preguntas frecuentes; el desafío aparece cuando intenta escalar automatización a finanzas, soporte, operaciones y equipos comerciales. Cada área trabaja con bases de datos, permisos y criterios de aceptación distintos. Si se construyen flujos sin una capa de observación compartida, crecen los costes de mantenimiento y resulta difícil reconstruir quién tomó una decisión. Wonderful afirma que su plataforma unifica ese plano de control para que cada nueva aplicación aproveche una infraestructura existente.",
+            "Esto no significa que toda organización necesite inmediatamente un sistema operativo de IA completo. En equipos pequeños, una integración simple puede resolver la necesidad sin infraestructura extensa. El punto de inflexión aparece cuando varios departamentos deben compartir políticas, contexto o agentes con autorizaciones distintas. Incluso entonces, la arquitectura debería añadir controles a partir de riesgos y necesidades medibles, no por seguir una categoría comercial nueva."
+          ]
+        },
+        {
+          "heading": "Cómo evaluar una plataforma de esta categoría",
+          "kind": "practical",
+          "paragraphs": [
+            "Un comprador debería formular un problema concreto: por ejemplo, tramitar solicitudes con información de un CRM y documentación interna, manteniendo aprobaciones para acciones de escritura. Luego puede exigir una demostración que muestre qué identidad usa el agente, cuáles son las fuentes consultadas, dónde se almacena el contexto, qué ocurre cuando falla una herramienta y cómo se reproduce una operación. Si todo funciona únicamente mientras un técnico interpreta trazas y ejecuta comandos manuales, puede existir capacidad técnica sin producto verdaderamente utilizable.",
+            "La evaluación también necesita métricas: porcentaje de tareas finalizadas correctamente, costes por tarea, tiempo de intervención humana, incidentes de permisos y facilidad de migración entre proveedores. El anuncio de Wonderful no proporciona una tarifa universal de licencias ni una base pública suficiente para estimar el retorno de inversión de un cliente específico. Por eso no corresponde anunciar ahorros cuantificados de forma genérica. La financiación confirma la transacción declarada; los beneficios operativos requieren mediciones separadas."
+          ]
+        },
+        {
+          "heading": "Importancia competitiva de la ronda",
+          "kind": "analysis",
+          "paragraphs": [
+            "La inversión subraya que la carrera de la IA no ocurre únicamente entre laboratorios de modelos. También participan empresas que quieren convertirse en la capa a través de la cual las organizaciones consumen modelos, administran agentes y conservan contexto. Quien controle integraciones y gobierno puede ser relevante incluso si no entrena el modelo más poderoso. En esa categoría, la diferenciación puede venir de facilidad de despliegue, auditoría, seguridad y experiencia de usuario.",
+            "Al mismo tiempo, una valoración elevada no demuestra una victoria competitiva ni convierte a Wonderful en estándar industrial. Será necesario seguir su adopción real, capacidad de integrarse con infraestructura heredada y política de cambio de proveedor. El Gazette registra la financiación como noticia independiente porque modifica de forma material los recursos con los que la empresa puede expandirse, sin tratar el anuncio como prueba anticipada de éxito."
+          ]
+        }
+      ],
+      "limitations": [
+        "La valoración y expansión comercial son cifras declaradas por Wonderful; no hay auditoría financiera independiente aquí.",
+        "El comunicado no publica una tarifa universal ni demuestra compatibilidad práctica con todos los modelos.",
+        "La promesa de un sistema operativo común debe contrastarse con integración, seguridad y costes de operación reales."
+      ],
+      "practicalAdvice": [
+        "Elegir un proceso piloto que cruce dos sistemas y requiera una aprobación explícita.",
+        "Verificar exportación de contexto, auditoría de acciones y capacidad de cambiar modelos.",
+        "Medir costes y errores antes de desplegar la plataforma en múltiples departamentos."
+      ],
+      "usefulFacts": [
+        "Ronda: US$550 millones Serie C, anunciada el 2 de septiembre de 2026.",
+        "Valoración comunicada: US$5.000 millones.",
+        "Wonderful declara más de 35 mercados y 650 empleados en la fecha del comunicado."
+      ],
+      "finalSummary": "La Serie C de Wonderful refleja el atractivo de las plataformas que coordinan trabajo agentivo a escala empresarial. El anuncio combina financiación significativa con una visión de AI OS agnóstico de modelos. La cuestión decisiva será comprobar si esa infraestructura puede transformar procesos manteniendo contexto, permisos y resultados auditables, más allá de la narrativa de expansión.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de periódico envejecido: una gran oficina de coordinación con engranajes conectando departamentos y pequeños autómatas especializados alrededor de un plano central, figuras humanas supervisando; representar inversión y orquestación sin billetes con cifras inventadas. Sepia y tinta negra, 3:2, sin logos ni texto sobre la ilustración."
     },
     {
       "id": "qwen3-8-max-0902",
