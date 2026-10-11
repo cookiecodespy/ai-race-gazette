@@ -1,8 +1,226 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T20:20:51.379Z",
+  "updatedAt": "2026-10-11T22:22:12.633Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "amazon-decart-acquisition-talks-2026",
+      "eventKey": "amazon-decart-7b-acquisition-talks-wsj-report-2026-10-11",
+      "articleVersion": 2,
+      "date": "2026-10-11",
+      "announcedAt": "2026-10-11",
+      "coveredAt": "2026-10-11",
+      "verifiedAt": "2026-10-11",
+      "company": "Amazon",
+      "product": "Decart · conversaciones de adquisición",
+      "title": "Reporte: Amazon negocia comprar Decart por cerca de US$7.000 millones, según WSJ",
+      "summary": "The Wall Street Journal reportó negociaciones para que Amazon compre Decart por unos US$7.000 millones. Reuters recogió la información el 11 de octubre, pero no pudo verificarla independientemente; ninguna de las empresas confirmó un acuerdo.",
+      "tags": [
+        "Reporte",
+        "Adquisiciones",
+        "Amazon",
+        "Infraestructura",
+        "Modelos de mundo",
+        "Video generativo",
+        "Startups"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual de redes e infraestructura tecnológica; no representa instalaciones, reuniones ni una adquisición real de Amazon o Decart.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado horizontal 3:2 estilo prensa antigua en tinta sepia sobre papel envejecido: dos centros abstractos de computación unidos por circuitos que conectan chips y fotogramas de video generativo, con símbolo discreto de negociación abierta. Evitar logotipos falsos, retratos inventados, contratos firmados, cifras impresas y apariencia de fotografía documental.",
+      "source": {
+        "name": "Reuters · Amazon in talks to buy AI startup Decart for around $7 billion, WSJ reports",
+        "url": "https://www.reuters.com/business/retail-consumer/amazon-talks-buy-ai-startup-decart-around-7-billion-wsj-reports-2026-10-11/",
+        "publishedAt": "2026-10-11"
+      },
+      "relatedSources": [
+        {
+          "name": "The Wall Street Journal · Amazon in Talks to Buy AI Startup Decart for Around $7 Billion",
+          "url": "https://www.wsj.com/business/deals/amazon-in-talks-to-buy-ai-startup-decart-for-around-7-billion-9433abad",
+          "publishedAt": "2026-10-11"
+        },
+        {
+          "name": "Decart · presentación oficial de DOS, Lucy y Oasis",
+          "url": "https://decart.ai/",
+          "publishedAt": null
+        },
+        {
+          "name": "Decart · publicaciones y anuncio de financiación de mayo",
+          "url": "https://decart.ai/blog",
+          "publishedAt": null
+        },
+        {
+          "name": "Decart · Oasis 3",
+          "url": "https://decart.ai/oasis",
+          "publishedAt": null
+        },
+        {
+          "name": "Decart · Lucy",
+          "url": "https://decart.ai/lucy",
+          "publishedAt": null
+        }
+      ],
+      "body": [
+        "El 11 de octubre de 2026, The Wall Street Journal informó que Amazon mantiene conversaciones para adquirir Decart, una empresa de inteligencia artificial especializada en optimización de cómputo y modelos interactivos. El valor potencial de la operación rondaría los 7.000 millones de dólares, según personas familiarizadas con las negociaciones citadas por el diario. Reuters recogió el reporte el mismo domingo y aclaró que no pudo verificarlo de manera independiente. No existe un anuncio de adquisición firmado ni una comunicación oficial que confirme el precio o los términos.",
+        "Reuters señaló que Amazon y Decart no respondieron inmediatamente a sus solicitudes de comentarios. La ausencia de respuesta no equivale a confirmación. Las conversaciones podrían producir un acuerdo pronto, cambiar de condiciones o fracasar, y también podría aparecer otro comprador, de acuerdo con el reporte atribuido. Por eso el titular se formula como negociación reportada: el evento periodístico comprobable es la publicación de información por medios reputados, no un traspaso de propiedad ni una integración empresarial consumada.",
+        "Decart trabaja en dos frentes que suelen tratarse por separado. El primero es DOS, Decart Optimization Stack, una plataforma que la compañía presenta como infraestructura de entrenamiento e inferencia optimizada para distintas familias de chips. Su sitio oficial menciona compatibilidad con aceleradores NVIDIA, AWS Trainium y Google TPU. El segundo frente son modelos capaces de transformar video y generar entornos interactivos en tiempo real. La combinación apunta a reducir fricciones entre el hardware que ejecuta la IA y las aplicaciones que consumen esa capacidad.",
+        "Para Amazon, la dimensión de infraestructura podría ser especialmente relevante por su negocio de nube y por el desarrollo de chips propios. Un software que facilite ejecutar cargas de IA sobre diferentes aceleradores podría ayudar a clientes a comparar rendimiento, costes y dependencia tecnológica. Sin embargo, esta es una interpretación estratégica del Gazette: Amazon no ha comunicado una integración de DOS con AWS, una compra de la tecnología ni una política de exclusividad. Tampoco hay pruebas públicas de que un eventual acuerdo altere inmediatamente los precios de Trainium o los servicios de nube.",
+        "El sitio de Decart presenta Lucy como un sistema de edición y transformación de video en directo. La empresa publicó Lucy 2.5 en julio de 2026 y atribuye a esa versión una generación de 30 fotogramas por segundo, mayor consistencia temporal y efectos visuales sensibles al movimiento. Son características declaradas por el proveedor, no mediciones independientes realizadas para esta noticia. Su interés comercial abarca comercio electrónico, publicidad, retransmisiones y experiencias interactivas en las que el contenido puede cambiar mientras se visualiza.",
+        "Otro producto, Oasis 3, fue presentado en junio de 2026 como modelo de mundo interactivo para inteligencia artificial física. Decart describe escenarios generados que responden a acciones de agentes, con vistas de cámara sincronizadas y acceso mediante API. La página del producto indica una latencia inferior a 200 milisegundos y generación a 22 fotogramas por segundo en una configuración especificada. Esas cifras corresponden a afirmaciones y condiciones del proveedor; no demuestran por sí solas que una simulación sustituya pruebas físicas, modelos de dinámica validados o evaluaciones de seguridad de robots.",
+        "Decart anunció el 18 de mayo de 2026 una ronda de 300 millones de dólares liderada por Radical Ventures, con NVIDIA entre los nuevos inversores, según su publicación oficial y el despacho de Reuters. El Journal, citado por Reuters, situó la valoración de la empresa cerca de 4.000 millones de dólares en mayo. Esa referencia histórica no es el precio de una transacción actual: una valoración privada, un monto negociado y el efectivo que finalmente se pague son conceptos distintos, y una adquisición puede combinar dinero, acciones u otras condiciones.",
+        "El historial reciente añade una señal de interés competitivo, pero también de incertidumbre. Reuters recuerda que Bloomberg había informado de conversaciones exploratorias de Anthropic para comprar Decart por alrededor de 6.000 millones de dólares en agosto. Según ese antecedente, Anthropic dejó de perseguir la operación después de una revisión de la empresa. Ninguna de esas conversaciones anteriores constituye evidencia de que Amazon haya alcanzado ahora un acuerdo. Sí ayudan a entender por qué los activos de optimización y modelos de mundo atraen la atención de laboratorios y proveedores de infraestructura.",
+        "La posible operación también plantea una tensión interesante: Decart anuncia una pila diseñada para aprovechar hardware de NVIDIA, AWS y Google, mientras que Amazon compite en infraestructura de nube y desarrolla sus propios aceleradores. Si hubiera adquisición, habría que comprobar si la compatibilidad multiplataforma se conserva o cambia. No hay anuncio de cierre del acceso a chips rivales, de retiro de productos ni de modificación de contratos. Convertir esas posibilidades en hechos sería anticipar decisiones que las partes no han comunicado.",
+        "Para desarrolladores, clientes y equipos de robótica, la noticia no altera por sí misma la disponibilidad de Lucy, Oasis o DOS. Las páginas oficiales de Decart siguen describiendo sus productos y canales de contacto; no se publicó una migración obligatoria a AWS, un nuevo nivel de servicio ni una tarifa asociada al reporte. Antes de adoptar estas herramientas conviene evaluar requisitos de integración, documentación, condiciones de uso, estabilidad, privacidad de video y costes completos de inferencia con las ofertas vigentes, sin asumir ventajas derivadas de una compra hipotética.",
+        "Para empresas que diseñan productos de video generativo o simulación, un cambio de propietario podría afectar soporte, hojas de ruta y negociación comercial. Pero esas consecuencias dependen del alcance de una operación que todavía no está confirmada. Una revisión prudente distingue tres capas: capacidad técnica que Decart afirma ofrecer hoy, información financiera que los medios atribuyen a fuentes y escenarios de integración que aún son análisis. Esa separación evita tomar decisiones contractuales a partir de un titular sobre conversaciones.",
+        "Para usuarios generales, la cifra de 7.000 millones de dólares no representa una subida de precios, una nueva suscripción ni una disponibilidad regional. Tampoco significa que Amazon haya lanzado un nuevo modelo de video o que los productos de Decart se incorporen automáticamente a Alexa. El reporte se refiere a una potencial transacción corporativa. Si más adelante se anuncian cambios de producto, precios, condiciones o acceso, deberán verificarse como actualizaciones materiales del mismo evento o como lanzamientos distintos, según corresponda.",
+        "Análisis Gazette: el valor estratégico de Decart podría residir tanto en la capa de optimización de hardware como en las aplicaciones interactivas que dependen de inferencia rápida. La carrera de IA ya no se limita a entrenar modelos de lenguaje más grandes: incluye sistemas que procesan video en directo, simuladores que reaccionan a decisiones y software que decide dónde ejecutar cada carga. Un comprador con infraestructura global podría intentar conectar esas piezas. Esa hipótesis explica el interés, pero no confirma sinergias, ahorros ni resultados comerciales.",
+        "Las próximas señales verificables serán un comunicado conjunto, un documento regulatorio, términos económicos precisos, cambios en los productos o una declaración explícita de las empresas. También importará observar si el reporte es corregido, si surge otro postor y si se mantiene el soporte para múltiples chips. Hasta entonces, la formulación responsable es que Amazon negocia una posible adquisición de Decart por alrededor de 7.000 millones de dólares, según The Wall Street Journal, recogido por Reuters; ni el acuerdo ni su valor definitivo están confirmados."
+      ],
+      "keyPoints": [
+        "WSJ reporta conversaciones para una posible compra de Decart por unos US$7.000 millones; Reuters no pudo verificar el reporte por su cuenta.",
+        "No hay acuerdo, precio final ni integración anunciados por Amazon o Decart.",
+        "Decart desarrolla DOS para infraestructura de IA y los modelos interactivos Lucy y Oasis."
+      ],
+      "quickTakeaways": [
+        "La cifra de US$7.000 millones es un monto reportado, no una adquisición cerrada.",
+        "Reuters atribuye la noticia a WSJ y señala que no obtuvo confirmación independiente.",
+        "Decart combina software de optimización de chips con video y simulación interactiva.",
+        "La valoración de casi US$4.000 millones en mayo es un antecedente, no el precio de compra.",
+        "No se han anunciado cambios de precios, regiones o acceso a los productos."
+      ],
+      "sections": [
+        {
+          "heading": "El reporte: negociaciones, no compra cerrada",
+          "kind": "report",
+          "paragraphs": [
+            "El 11 de octubre de 2026, The Wall Street Journal informó que Amazon mantiene conversaciones para adquirir Decart, una empresa de inteligencia artificial especializada en optimización de cómputo y modelos interactivos. El valor potencial de la operación rondaría los 7.000 millones de dólares, según personas familiarizadas con las negociaciones citadas por el diario. Reuters recogió el reporte el mismo domingo y aclaró que no pudo verificarlo de manera independiente. No existe un anuncio de adquisición firmado ni una comunicación oficial que confirme el precio o los términos.",
+            "Reuters señaló que Amazon y Decart no respondieron inmediatamente a sus solicitudes de comentarios. La ausencia de respuesta no equivale a confirmación. Las conversaciones podrían producir un acuerdo pronto, cambiar de condiciones o fracasar, y también podría aparecer otro comprador, de acuerdo con el reporte atribuido. Por eso el titular se formula como negociación reportada: el evento periodístico comprobable es la publicación de información por medios reputados, no un traspaso de propiedad ni una integración empresarial consumada."
+          ]
+        },
+        {
+          "heading": "Por qué Decart puede resultar estratégica",
+          "kind": "technical",
+          "paragraphs": [
+            "Decart trabaja en dos frentes que suelen tratarse por separado. El primero es DOS, Decart Optimization Stack, una plataforma que la compañía presenta como infraestructura de entrenamiento e inferencia optimizada para distintas familias de chips. Su sitio oficial menciona compatibilidad con aceleradores NVIDIA, AWS Trainium y Google TPU. El segundo frente son modelos capaces de transformar video y generar entornos interactivos en tiempo real. La combinación apunta a reducir fricciones entre el hardware que ejecuta la IA y las aplicaciones que consumen esa capacidad.",
+            "Para Amazon, la dimensión de infraestructura podría ser especialmente relevante por su negocio de nube y por el desarrollo de chips propios. Un software que facilite ejecutar cargas de IA sobre diferentes aceleradores podría ayudar a clientes a comparar rendimiento, costes y dependencia tecnológica. Sin embargo, esta es una interpretación estratégica del Gazette: Amazon no ha comunicado una integración de DOS con AWS, una compra de la tecnología ni una política de exclusividad. Tampoco hay pruebas públicas de que un eventual acuerdo altere inmediatamente los precios de Trainium o los servicios de nube.",
+            "El sitio de Decart presenta Lucy como un sistema de edición y transformación de video en directo. La empresa publicó Lucy 2.5 en julio de 2026 y atribuye a esa versión una generación de 30 fotogramas por segundo, mayor consistencia temporal y efectos visuales sensibles al movimiento. Son características declaradas por el proveedor, no mediciones independientes realizadas para esta noticia. Su interés comercial abarca comercio electrónico, publicidad, retransmisiones y experiencias interactivas en las que el contenido puede cambiar mientras se visualiza.",
+            "Otro producto, Oasis 3, fue presentado en junio de 2026 como modelo de mundo interactivo para inteligencia artificial física. Decart describe escenarios generados que responden a acciones de agentes, con vistas de cámara sincronizadas y acceso mediante API. La página del producto indica una latencia inferior a 200 milisegundos y generación a 22 fotogramas por segundo en una configuración especificada. Esas cifras corresponden a afirmaciones y condiciones del proveedor; no demuestran por sí solas que una simulación sustituya pruebas físicas, modelos de dinámica validados o evaluaciones de seguridad de robots."
+          ]
+        },
+        {
+          "heading": "Antecedentes financieros y competencia",
+          "kind": "context",
+          "paragraphs": [
+            "Decart anunció el 18 de mayo de 2026 una ronda de 300 millones de dólares liderada por Radical Ventures, con NVIDIA entre los nuevos inversores, según su publicación oficial y el despacho de Reuters. El Journal, citado por Reuters, situó la valoración de la empresa cerca de 4.000 millones de dólares en mayo. Esa referencia histórica no es el precio de una transacción actual: una valoración privada, un monto negociado y el efectivo que finalmente se pague son conceptos distintos, y una adquisición puede combinar dinero, acciones u otras condiciones.",
+            "El historial reciente añade una señal de interés competitivo, pero también de incertidumbre. Reuters recuerda que Bloomberg había informado de conversaciones exploratorias de Anthropic para comprar Decart por alrededor de 6.000 millones de dólares en agosto. Según ese antecedente, Anthropic dejó de perseguir la operación después de una revisión de la empresa. Ninguna de esas conversaciones anteriores constituye evidencia de que Amazon haya alcanzado ahora un acuerdo. Sí ayudan a entender por qué los activos de optimización y modelos de mundo atraen la atención de laboratorios y proveedores de infraestructura.",
+            "La posible operación también plantea una tensión interesante: Decart anuncia una pila diseñada para aprovechar hardware de NVIDIA, AWS y Google, mientras que Amazon compite en infraestructura de nube y desarrolla sus propios aceleradores. Si hubiera adquisición, habría que comprobar si la compatibilidad multiplataforma se conserva o cambia. No hay anuncio de cierre del acceso a chips rivales, de retiro de productos ni de modificación de contratos. Convertir esas posibilidades en hechos sería anticipar decisiones que las partes no han comunicado."
+          ]
+        },
+        {
+          "heading": "Qué cambia hoy y qué no cambia",
+          "kind": "practical",
+          "paragraphs": [
+            "Para desarrolladores, clientes y equipos de robótica, la noticia no altera por sí misma la disponibilidad de Lucy, Oasis o DOS. Las páginas oficiales de Decart siguen describiendo sus productos y canales de contacto; no se publicó una migración obligatoria a AWS, un nuevo nivel de servicio ni una tarifa asociada al reporte. Antes de adoptar estas herramientas conviene evaluar requisitos de integración, documentación, condiciones de uso, estabilidad, privacidad de video y costes completos de inferencia con las ofertas vigentes, sin asumir ventajas derivadas de una compra hipotética.",
+            "Para empresas que diseñan productos de video generativo o simulación, un cambio de propietario podría afectar soporte, hojas de ruta y negociación comercial. Pero esas consecuencias dependen del alcance de una operación que todavía no está confirmada. Una revisión prudente distingue tres capas: capacidad técnica que Decart afirma ofrecer hoy, información financiera que los medios atribuyen a fuentes y escenarios de integración que aún son análisis. Esa separación evita tomar decisiones contractuales a partir de un titular sobre conversaciones.",
+            "Para usuarios generales, la cifra de 7.000 millones de dólares no representa una subida de precios, una nueva suscripción ni una disponibilidad regional. Tampoco significa que Amazon haya lanzado un nuevo modelo de video o que los productos de Decart se incorporen automáticamente a Alexa. El reporte se refiere a una potencial transacción corporativa. Si más adelante se anuncian cambios de producto, precios, condiciones o acceso, deberán verificarse como actualizaciones materiales del mismo evento o como lanzamientos distintos, según corresponda."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y señales para seguir",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: el valor estratégico de Decart podría residir tanto en la capa de optimización de hardware como en las aplicaciones interactivas que dependen de inferencia rápida. La carrera de IA ya no se limita a entrenar modelos de lenguaje más grandes: incluye sistemas que procesan video en directo, simuladores que reaccionan a decisiones y software que decide dónde ejecutar cada carga. Un comprador con infraestructura global podría intentar conectar esas piezas. Esa hipótesis explica el interés, pero no confirma sinergias, ahorros ni resultados comerciales.",
+            "Las próximas señales verificables serán un comunicado conjunto, un documento regulatorio, términos económicos precisos, cambios en los productos o una declaración explícita de las empresas. También importará observar si el reporte es corregido, si surge otro postor y si se mantiene el soporte para múltiples chips. Hasta entonces, la formulación responsable es que Amazon negocia una posible adquisición de Decart por alrededor de 7.000 millones de dólares, según The Wall Street Journal, recogido por Reuters; ni el acuerdo ni su valor definitivo están confirmados."
+          ]
+        }
+      ],
+      "executiveSummary": "Amazon estaría negociando la adquisición de Decart por alrededor de US$7.000 millones, de acuerdo con The Wall Street Journal, citado por Reuters el 11 de octubre de 2026. No existe confirmación de las empresas y las conversaciones podrían no culminar en un acuerdo. La importancia potencial está en DOS, la infraestructura optimizada de Decart, y en sus modelos interactivos Lucy y Oasis; sus capacidades declaradas no deben confundirse con resultados independientes.",
+      "finalSummary": "La novedad es un reporte de negociaciones, no una compra anunciada. Decart posee tecnología de optimización e IA interactiva que podría interesar a Amazon, pero no hay precio definitivo, cierre ni cambios de disponibilidad. El siguiente hito comprobable será una declaración corporativa o documentación oficial.",
+      "analysis": "Análisis Gazette: una eventual adquisición podría unir nube, chips y modelos interactivos de baja latencia, pero la integración y las sinergias siguen siendo hipótesis.",
+      "watch": "Comunicados de Amazon y Decart, términos finales, aprobación regulatoria, continuidad multiplataforma de DOS y cambios verificables en Lucy, Oasis y precios.",
+      "technicalDetails": [
+        {
+          "label": "Monto potencial reportado",
+          "value": "~US$7.000 millones",
+          "note": "The Wall Street Journal citado por Reuters; no confirmado por las empresas."
+        },
+        {
+          "label": "Financiación anunciada en mayo",
+          "value": "US$300 millones",
+          "note": "Ronda liderada por Radical Ventures, con NVIDIA como inversor nuevo."
+        },
+        {
+          "label": "Lucy 2.5",
+          "value": "30 FPS declarados",
+          "note": "Claim del proveedor, no benchmark independiente de esta noticia."
+        },
+        {
+          "label": "Oasis 3",
+          "value": "<200 ms y 22 FPS declarados",
+          "note": "Configuración y cifras descritas en la web oficial de Decart."
+        }
+      ],
+      "availability": {
+        "status": "Sin cambio de disponibilidad anunciado por el reporte",
+        "platforms": [
+          "DOS",
+          "Lucy",
+          "Oasis 3"
+        ],
+        "regions": [],
+        "requirements": [],
+        "notes": [
+          "Los accesos y contratos siguen sujetos a la documentación vigente de Decart.",
+          "No se confirmó una integración con AWS."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio de adquisición",
+          "value": "No confirmado; reporte cercano a US$7.000 millones"
+        },
+        {
+          "label": "Precios de productos",
+          "value": "Sin cambios anunciados por esta noticia"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-05-18",
+          "label": "Decart anuncia financiación de US$300 millones"
+        },
+        {
+          "date": "2026-06-10",
+          "label": "Decart presenta Oasis 3"
+        },
+        {
+          "date": "2026-07-16",
+          "label": "Decart publica Lucy 2.5"
+        },
+        {
+          "date": "2026-10-11",
+          "label": "WSJ informa conversaciones con Amazon; Reuters recoge el reporte"
+        }
+      ],
+      "limitations": [
+        "La información de negociación procede de fuentes anónimas citadas por WSJ; Reuters no pudo confirmarla independientemente.",
+        "Amazon y Decart no confirmaron una operación ni respondieron de inmediato a Reuters.",
+        "No hay precio definitivo, acuerdo firmado, calendario de cierre ni condiciones de integración públicas.",
+        "Las métricas técnicas citadas de Decart son afirmaciones del proveedor y no verificaciones independientes."
+      ],
+      "practicalAdvice": [
+        "No modificar contratos o arquitecturas por una compra aún no anunciada.",
+        "Evaluar compatibilidad, latencia, costes y privacidad con pruebas propias y documentación vigente.",
+        "Seguir declaraciones corporativas y documentos regulatorios antes de inferir cambios de acceso."
+      ],
+      "usefulFacts": [
+        "DOS declara soporte para NVIDIA, AWS Trainium y Google TPU.",
+        "Lucy se orienta a edición de video en directo; Oasis 3 a entornos interactivos para IA física.",
+        "La fecha editorial del evento es la del reporte, no una supuesta fecha de cierre."
+      ]
+    },
     {
       "id": "nvidia-reflection-ai-acquisition-talks-reported-2026",
       "eventKey": "nvidia-reflection-ai-acquisition-or-investment-talks-ft-report-2026-10-10",
@@ -26061,8 +26279,8 @@
     },
     {
       "date": "2026-10-11",
-      "status": "pending",
-      "verifiedArticles": 0
+      "status": "partial",
+      "verifiedArticles": 1
     }
   ]
 }
