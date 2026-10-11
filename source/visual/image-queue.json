@@ -8,7 +8,7 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
-  "generatedFromNewsUpdatedAt": "2026-10-11T03:55:37.697Z",
+  "generatedFromNewsUpdatedAt": "2026-10-11T03:58:05.568Z",
   "generatedAt": "2026-10-11",
   "items": [
     {
@@ -1884,6 +1884,58 @@
       "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
     },
     {
+      "articleId": "anthropic-cyber-verification",
+      "eventKey": "anthropic-cyber-verification",
+      "date": "2026-10-06",
+      "company": "Anthropic",
+      "product": "Cyber Verification Program",
+      "title": "Anthropic amplía el acceso para equipos de seguridad",
+      "currentImage": "assets/hero.webp",
+      "currentAssetId": "gazette-generic-ai-hero-v1",
+      "currentReuseCount": 86,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-10-06/anthropic-cyber-verification.webp",
+      "brief": "Grabado de prensa antigua mostrando tres puertas con custodios y equipos defensivos que inspeccionan sistemas de relojería abstractos; los niveles se distinguen sin texto ni logos, sepia, sin representación de ataques.",
+      "sourceSummary": "El programa reúne tres niveles con requisitos diferentes para profesionales y organizaciones.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
+      "articleId": "claude-google-workspace",
+      "eventKey": "claude-google-workspace",
+      "date": "2026-10-06",
+      "company": "Anthropic",
+      "product": "Claude para Workspace",
+      "title": "Claude entra en Docs, Sheets y Slides desde Google Workspace",
+      "currentImage": "assets/google.webp",
+      "currentAssetId": "gazette-google-architecture-v1",
+      "currentReuseCount": 29,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-10-06/claude-google-workspace.webp",
+      "brief": "Grabado sepia del siglo XIX de una mesa editorial con tres estaciones de documentos, libros contables y láminas de presentación, asistente autómata y supervisores humanos; sin iconos falsos ni marcas comerciales.",
+      "sourceSummary": "El complemento lleva la asistencia de Claude al documento abierto y está en beta para planes de pago.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
       "articleId": "google-embeddinggemma-2",
       "eventKey": "google-embeddinggemma-2",
       "date": "2026-10-06",
@@ -1900,6 +1952,32 @@
       "desiredOutput": "assets/news/2026-10-06/google-embeddinggemma-2.webp",
       "brief": "EmbeddingGemma 2 de Google DeepMind: grabado sepia de un pequeño núcleo de cómputo en dispositivo que conecta documentos, líneas de código, fotografías, película y ondas de audio a un mapa de vectores; formato horizontal de periódico antiguo; no inventar UI real ni usar logos falsos.",
       "sourceSummary": "Google DeepMind presenta un modelo open-weight multimodal de 740 millones de parámetros, licencia Apache 2.0 y diseño modular para embeddings y recuperación de información en dispositivos.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
+      "articleId": "mistral-large-4",
+      "eventKey": "mistral-large-4",
+      "date": "2026-10-06",
+      "company": "Mistral",
+      "product": "Mistral Large 4",
+      "title": "Mistral presenta Large 4 en vista previa",
+      "currentImage": "assets/mistral.webp",
+      "currentAssetId": "gazette-mistral-lab-v1",
+      "currentReuseCount": 4,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "brief-ready",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-10-06/mistral-large-4.webp",
+      "brief": "Grabado editorial sepia de un gran laboratorio europeo con una máquina de múltiples compartimentos especializados y observadores revisando planos, papeles y gráficos, sin textos, logos ni afirmaciones visuales documentales.",
+      "sourceSummary": "La compañía francesa presenta su nuevo modelo en vista previa pública y anuncia una apertura posterior de sus pesos.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
@@ -3782,58 +3860,6 @@
       "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
     },
     {
-      "articleId": "anthropic-cyber-verification",
-      "eventKey": "anthropic-cyber-verification",
-      "date": "2026-10-06",
-      "company": "Anthropic",
-      "product": "Cyber Verification Program",
-      "title": "Anthropic amplía el acceso para equipos de seguridad",
-      "currentImage": "assets/hero.webp",
-      "currentAssetId": "gazette-generic-ai-hero-v1",
-      "currentReuseCount": 86,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-10-06/anthropic-cyber-verification.webp",
-      "brief": "Crear una ilustración específica para “Anthropic amplía el acceso para equipos de seguridad”. El foco visual debe representar Cyber Verification Program de Anthropic y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "El programa reúne tres niveles con requisitos diferentes para profesionales y organizaciones.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "claude-google-workspace",
-      "eventKey": "claude-google-workspace",
-      "date": "2026-10-06",
-      "company": "Anthropic",
-      "product": "Claude para Workspace",
-      "title": "Claude entra en Docs, Sheets y Slides desde Google Workspace",
-      "currentImage": "assets/google.webp",
-      "currentAssetId": "gazette-google-architecture-v1",
-      "currentReuseCount": 29,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-10-06/claude-google-workspace.webp",
-      "brief": "Crear una ilustración específica para “Claude entra en Docs, Sheets y Slides desde Google Workspace”. El foco visual debe representar Claude para Workspace de Anthropic y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "El complemento lleva la asistencia de Claude al documento abierto y está en beta para planes de pago.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
       "articleId": "nano-banana-2-1",
       "eventKey": "nano-banana-2-1",
       "date": "2026-10-06",
@@ -3876,32 +3902,6 @@
       "desiredOutput": "assets/news/2026-10-09/openai-codex-composer-predictions-2026.webp",
       "brief": "Crear una ilustración específica para “Codex empieza a sugerir el siguiente mensaje: OpenAI estrena Composer predictions en beta para Pro”. El foco visual debe representar Codex Composer predictions de OpenAI y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "sourceSummary": "OpenAI activó una beta de predicciones de mensajes en Codex Desktop para cuentas personales Pro de adultos. La sugerencia usa el hilo actual y exige aceptación y envío manual; generarla no consume créditos durante la beta.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "mistral-large-4",
-      "eventKey": "mistral-large-4",
-      "date": "2026-10-06",
-      "company": "Mistral",
-      "product": "Mistral Large 4",
-      "title": "Mistral presenta Large 4 en vista previa",
-      "currentImage": "assets/mistral.webp",
-      "currentAssetId": "gazette-mistral-lab-v1",
-      "currentReuseCount": 4,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P3",
-      "productionStatus": "brief-ready",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-10-06/mistral-large-4.webp",
-      "brief": "Ilustración editorial específica para Mistral Large 4 en vista previa: una gran corriente de viento abstracta atravesando un laboratorio de modelos y convergiendo en una máquina central, con una caja/archivo de pesos abierta en segundo plano como metáfora de la futura apertura; evitar representar instalaciones reales. Grabado antiguo europeo, tinta y sepia, sin texto ni logos.",
-      "sourceSummary": "La compañía francesa presenta su nuevo modelo en vista previa pública y anuncia una apertura posterior de sus pesos.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
