@@ -157,7 +157,8 @@
       "priority": "P0",
       "status": "in_progress",
       "lane": "Historical Backfill",
-      "acceptance": "Registro por día/fuente/sector, candidatos y descartes sin inventar métricas"
+      "acceptance": "Registro por día/fuente/sector, candidatos y descartes sin inventar métricas",
+      "notes": "Meta Muse seguridad 8 Sep, Perplexity Windows 14 Sep, Waymo Las Vegas/Tokio 14 Sep publicados; todavía falta barrido doble de todas las fuentes/categorías."
     },
     {
       "id": "H-0814-GOOGLE",
@@ -213,7 +214,8 @@
       "priority": "P0",
       "status": "queued",
       "lane": "Historical Backfill",
-      "acceptance": "Siete fechas complete/reviewed-no-material-news con evidencia y Reporter V2"
+      "acceptance": "Siete fechas complete/reviewed-no-material-news con evidencia y Reporter V2",
+      "notes": "El 15,17,21 septiembre ahora contienen notas verificadas; 16,18,19,20 sin cobertura, auditarlas antes de cerrar P06."
     },
     {
       "id": "H-2230-GATE",
@@ -256,9 +258,10 @@
       "phase": "P09",
       "title": "Migrar todos los artículos legacy restantes a Reporter V2",
       "priority": "P0",
-      "status": "queued",
+      "status": "in_progress",
       "lane": "Editor-in-Chief / Historical Backfill",
-      "acceptance": "Cero artículos legacy sin excepción editorial documentada; la línea base tenía 48, ahora quedan 47. Preservar ids y verificar fuentes."
+      "acceptance": "Cero artículos legacy sin excepción editorial justificada; conservar IDs, contrastar fuentes originales, enriquecer Reporter V2 y comprobar la integridad del archivo.",
+      "notes": "En pasada de 10 Oct 2026: cuatro migraciones confirmadas. Quedan 43 piezas legacy; recalcular al reanudar."
     },
     {
       "id": "VIS-PREMIUM",
@@ -855,6 +858,48 @@
         "https://arxiv.org/abs/2609.13730"
       ],
       "notes": "Preprint enviado 12 Sep según arXiv. Algunos índices presentan publicaciones posteriores y subida comunitaria en octubre; no atribuir retroactivamente liberación completa de modelos/código al 12 sin comprobar historial original."
+    },
+    {
+      "id": "H-P05-V3-FOUR-STORIES",
+      "phase": "P05",
+      "title": "Publicar cuatro omisiones verificadas del 8 y 14 septiembre",
+      "priority": "P0",
+      "status": "done",
+      "lane": "Historical Backfill",
+      "acceptance": "Meta seguridad Muse; Waymo Las Vegas y Tokio; Perplexity Portable Computer Windows. Reporter V2, fuentes oficiales, RSS/JSON consistentes y CI.",
+      "evidenceCommit": "aaa447688749545f26c247fb04ddd1a53536e6fa",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38099318855"
+      ],
+      "notes": "Otros dos relatos Waymo en commit 453d67f6e173b05d5690dc68c9554448fddf6ac0. Jornadas todavía parciales."
+    },
+    {
+      "id": "H-P06-V3-THREE-STORIES",
+      "phase": "P06",
+      "title": "Recuperar eventos verificables de los días 15, 17 y 21 septiembre",
+      "priority": "P0",
+      "status": "done",
+      "lane": "Historical Backfill",
+      "acceptance": "Waymo y Allianz, Waymo Singapur y Microsoft Global AI Diffusion publicados con evidencia y ledger parcial, sin declarar semana completa.",
+      "evidenceCommit": "d66d323c6be623252bdbba6f64a122ef0b2ceb95",
+      "verifiedEvidence": [
+        "https://blogs.microsoft.com/on-the-issues/2026/09/21/the-continued-state-of-global-ai-diffusion-in-2026/"
+      ],
+      "notes": "Waymo Singapur se publicó en 453d67f6e173b05d5690dc68c9554448fddf6ac0."
+    },
+    {
+      "id": "ED-P09-V3-FOUR-LEGACY",
+      "phase": "P09",
+      "title": "Migrar cuatro artículos cortos originales del 1–2 septiembre",
+      "priority": "P0",
+      "status": "done",
+      "lane": "Editor-in-Chief / Historical Backfill",
+      "acceptance": "Waymo, Meta Muse Voice, Perplexity Hybrid Mac y Meta Muse Spark migrados a Reporter V2 conservando IDs y fuentes originales.",
+      "evidenceCommit": "96f2141a2f6084dc41833f5ccd111af7b220616a",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38099084180"
+      ],
+      "notes": "Primera mitad commit 725ee9941dc0bf78a022d3fca1629bc506eed8f7. Legacy disminuye de 47 a 43."
     }
   ]
 }

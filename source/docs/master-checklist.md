@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 63 tareas; 25 completadas; 5 en curso; 31 pendientes o bloqueadas; 2 descartadas con razón.
+- 6 fases; 66 tareas; 28 completadas; 6 en curso; 30 pendientes o bloqueadas; 2 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -106,6 +106,10 @@
 - [ ] **H-SEP12-JUMPSTART** · P1 · queued — Investigar JumpStart: 160.000 entrenamientos para aprendizaje offline
   - Criterio: Verificar versión original arXiv, fecha real de disponibilidad de suite de modelos/código, materialidad e independencia; publicar Reporter V2 si corresponde o justificar descarte con evidencia.
   - Fecha investigada: 2026-09-12
+- [x] **H-P05-V3-FOUR-STORIES** · P0 · done — Publicar cuatro omisiones verificadas del 8 y 14 septiembre
+  - Criterio: Meta seguridad Muse; Waymo Las Vegas y Tokio; Perplexity Portable Computer Windows. Reporter V2, fuentes oficiales, RSS/JSON consistentes y CI.
+  - Commit: `aaa447688749545f26c247fb04ddd1a53536e6fa`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38099318855
 
 ## P06 — 15–21 septiembre: reconstrucción Reporter V2
 
@@ -113,6 +117,10 @@
 
 - [ ] **H-1521-GATE** · P0 · queued — Reconstruir 15–21 septiembre
   - Criterio: Siete fechas complete/reviewed-no-material-news con evidencia y Reporter V2
+- [x] **H-P06-V3-THREE-STORIES** · P0 · done — Recuperar eventos verificables de los días 15, 17 y 21 septiembre
+  - Criterio: Waymo y Allianz, Waymo Singapur y Microsoft Global AI Diffusion publicados con evidencia y ledger parcial, sin declarar semana completa.
+  - Commit: `d66d323c6be623252bdbba6f64a122ef0b2ceb95`
+  - Evidencia: https://blogs.microsoft.com/on-the-issues/2026/09/21/the-continued-state-of-global-ai-diffusion-in-2026/
 
 ## P07 — 22–30 septiembre: reconstrucción y legacy
 
@@ -154,8 +162,8 @@
 
 **Estado:** queued. **Gate:** Artículos legacy enriquecidos o exceptuados con evidencia; ilustraciones específicas de titulares importantes y estándares visuales.
 
-- [ ] **ED-LEGACY48** · P0 · queued — Migrar todos los artículos legacy restantes a Reporter V2
-  - Criterio: Cero artículos legacy sin excepción editorial documentada; la línea base tenía 48, ahora quedan 47. Preservar ids y verificar fuentes.
+- [ ] **ED-LEGACY48** · P0 · in_progress — Migrar todos los artículos legacy restantes a Reporter V2
+  - Criterio: Cero artículos legacy sin excepción editorial justificada; conservar IDs, contrastar fuentes originales, enriquecer Reporter V2 y comprobar la integridad del archivo.
 - [ ] **VIS-PREMIUM** · P1 · queued — Crear lote visual periódico de grabados específicos
   - Criterio: Disminuir el fallback repetido, resolver P0 de imagen y mantener créditos
 - [ ] **VIS-GENERATION** · P1 · queued — Explorar generación automática por noticia con QA
@@ -169,6 +177,10 @@
 - [ ] **VIS-AUTO-QUEUE-REFRESH** · P1 · in_progress — Sincronizar cola visual tras publicaciones Newsroom
   - Criterio: Refrescar image-queue y asset-manifest automáticamente, sin pisar noticias ni commits vacíos y con tres ejecuciones validadas.
   - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798603043
+- [x] **ED-P09-V3-FOUR-LEGACY** · P0 · done — Migrar cuatro artículos cortos originales del 1–2 septiembre
+  - Criterio: Waymo, Meta Muse Voice, Perplexity Hybrid Mac y Meta Muse Spark migrados a Reporter V2 conservando IDs y fuentes originales.
+  - Commit: `96f2141a2f6084dc41833f5ccd111af7b220616a`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38099084180
 
 ## P10 — Segunda auditoría y lanzamiento v1.0
 
