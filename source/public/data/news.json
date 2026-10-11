@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T02:28:09.109Z",
+  "updatedAt": "2026-10-11T03:20:44.435Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -18639,8 +18639,8 @@
       "image": "assets/google.webp",
       "imageAlt": "Grabado editorial de arquitectura tecnológica",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
+      "coveredAt": "2026-10-11",
       "source": {
         "name": "Cathay Pacific · anuncio oficial",
         "url": "https://news.cathaypacific.com/translation-cathay-pacific-and-google-partner-to-research-and-trial-ai-powered-contrail-avoidance",
@@ -18656,7 +18656,102 @@
         "El objetivo es evaluar factibilidad e impacto."
       ],
       "analysis": "La IA aplicada a operaciones físicas necesita demostrar beneficio sin introducir costos o riesgos mayores.",
-      "watch": "Resultados de los vuelos de prueba y métricas públicas de impacto."
+      "watch": "Resultados de los vuelos de prueba y métricas públicas de impacto.",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "Cathay Pacific y Google anunciaron el 7 de septiembre una alianza para investigar estelas de condensación persistentes y ajustes de vuelo.",
+        "La prueba inicial empezó a finales de 2025; más de 80 vuelos utilizaron rutas de evitación según el comunicado.",
+        "Google estima alrededor de un 40 % menos de impacto de calentamiento por estelas en esos vuelos de prueba, no en toda la operación.",
+        "Se inicia una segunda fase más amplia con rutas asiáticas y transpacíficas; la reducción de CO₂ sigue siendo una meta climática independiente."
+      ],
+      "executiveSummary": "La aerolínea se suma a pruebas operativas de una herramienta de IA que busca identificar ajustes de vuelo capaces de reducir contrails. El informe distingue hechos confirmados del proveedor, datos proyectados, fases del despliegue y evaluación pendiente.",
+      "sections": [
+        {
+          "heading": "El hito del 7 de septiembre y el origen de las pruebas",
+          "kind": "report",
+          "paragraphs": [
+            "El 7 de septiembre de 2026, Cathay Pacific y Google comunicaron una alianza para seguir investigando y probar la evitación de estelas de condensación persistentes mediante herramientas de inteligencia artificial. El anuncio identifica a Cathay como primera aerolínea comercial socia de Google en Asia-Pacífico para esta tecnología y como primera empresa aérea que ensaya el método en vuelos ultralargos. Pero las pruebas no empezaron ese día: según el comunicado, un ensayo operativo había comenzado a finales de 2025. La noticia combina los primeros resultados comunicados con el anuncio de una segunda fase mayor.",
+            "Cathay opera una red que incluye rutas asiáticas y transpacíficas, ámbitos relevantes porque la investigación anterior había representado menos a determinadas zonas de la región. La colaboración pretende generar datos de operaciones reales para estudiar factibilidad, restricciones y posibles beneficios climáticos. No es una decisión de modificar indiscriminadamente la altitud de cada vuelo ni una certificación de que la tecnología ya reduzca el impacto de toda la flota. La aerolínea distingue pruebas concretas de una adopción general que requiere más evidencia."
+          ]
+        },
+        {
+          "heading": "Qué son las estelas persistentes y por qué importan",
+          "kind": "context",
+          "paragraphs": [
+            "Las estelas de condensación son nubes lineales que pueden formarse detrás de los aviones cuando atraviesan regiones muy frías y húmedas a gran altitud. Muchas desaparecen pronto, mientras otras persisten y se expanden en capas nubosas. Bajo ciertas condiciones, estas nubes afectan el balance radiativo de la atmósfera y pueden contribuir al calentamiento. La formación depende de condiciones locales, del avión y de su trayectoria; no todas las estelas tienen el mismo efecto y algunas no son persistentes.",
+            "El comunicado explica que la investigación científica considera el efecto de estas estelas como parte del impacto climático de la aviación distinto del dióxido de carbono. Cathay menciona estimaciones previas según las cuales las persistentes podrían representar en torno a un tercio del impacto climático total del sector. Es una referencia a trabajos anteriores, no una medición generada por los vuelos de prueba de Cathay. El CO₂ emitido por el combustible sigue siendo importante, y evitar estelas no sustituye mejorar flotas, eficiencia o combustibles sostenibles."
+          ]
+        },
+        {
+          "heading": "Cómo participa la IA y quién toma decisiones",
+          "kind": "technical",
+          "paragraphs": [
+            "Google combina modelos predictivos de condiciones propicias para estelas, identificación mediante imágenes satelitales e información meteorológica para estimar zonas donde podrían formarse. El objetivo es ofrecer a despachadores de vuelo y pilotos información que permita considerar pequeños cambios de altitud o ruta cuando son viables. La herramienta no controla autónomamente el avión ni anula reglas aeronáuticas. El personal de operaciones conserva responsabilidades relativas a seguridad, gestión del espacio aéreo, rendimiento de la aeronave, combustible y condiciones vigentes.",
+            "Cathay utiliza conectividad Wi-Fi en vuelo y su sistema interno Electronic Flight Folder (EFF) para mostrar pronósticos de Google junto a parámetros de la operación. Esto coloca la predicción en el entorno de trabajo existente del piloto, sin obligarlo a consultar un panel externo aislado. El diseño es importante: una recomendación correcta pero ilegible, retrasada o ajena al procedimiento puede ser inútil. Análisis Gazette: en operaciones físicas, el éxito de la IA depende de que las predicciones lleguen a quien decide y respeten las restricciones del dominio."
+          ]
+        },
+        {
+          "heading": "Qué muestran realmente los vuelos iniciales",
+          "kind": "report",
+          "paragraphs": [
+            "Cathay dice que el ensayo iniciado a finales de 2025 apuntaba a más de cien vuelos de su red. Más de ochenta siguieron rutas de evitación de estelas, y Google estima que estos vuelos lograron una reducción aproximada del 40 % en el impacto de calentamiento asociado a las estelas. No es una disminución del 40 % de emisiones de carbono, ni una mejora demostrada del total de vuelos comerciales de la compañía. Es una estimación comunicada por el proveedor tecnológico para el grupo experimental que ejecutó medidas.",
+            "La ruta Hong Kong–Singapur destacó por condiciones favorables a la formación de estelas persistentes. Según el análisis temprano divulgado, cambios pequeños de altitud evitaron algunas formaciones y acciones en esa ruta contribuyeron a más de la mitad del impacto climático estimado de la prueba. Estas cifras pueden depender fuertemente de meteorología, selección de vuelos y modelos utilizados. Además, el comunicado explica que no todos los cien vuelos objetivo participaron por restricciones de espacio aéreo y carga, un recordatorio de que la viabilidad operativa no se determina exclusivamente con un pronóstico acertado."
+          ]
+        },
+        {
+          "heading": "Segunda fase, límites y comprobaciones ambientales",
+          "kind": "analysis",
+          "paragraphs": [
+            "Los socios anuncian una segunda fase más amplia por redes de Asia y rutas transpacíficas, con participación de Contrails.org, una iniciativa sin fines de lucro dedicada a avanzar la ciencia de reducción del efecto climático de las estelas. El objetivo declarado es ampliar el conjunto de datos y orientar potenciales buenas prácticas. No se publica un calendario con todas las rutas, ni una garantía de reducción porcentual para la siguiente etapa. Las evaluaciones futuras deberán considerar variación meteorológica, impacto del combustible adicional y efectos que puedan compensar el beneficio buscado.",
+            "Para valorar el saldo climático real hay que diferenciar tres medidas: la frecuencia con la que se evitan estelas persistentes, la diferencia estimada en calentamiento por esas estelas y el cambio total en la huella climática de la operación. También importa el margen de seguridad y las limitaciones que impiden ejecutar una ruta óptima en la simulación. Google y Cathay reconocen que hacen falta más pruebas para estimar beneficios a escala de aerolíneas y espacios aéreos completos. La noticia no justifica usar un porcentaje experimental como pronóstico general para todo el sector."
+          ]
+        },
+        {
+          "heading": "Qué seguir y cómo evaluar su expansión",
+          "kind": "practical",
+          "paragraphs": [
+            "El avance relevante para 2027 será disponer de datos de ensayo diversos, documentar los métodos que detectan estelas y comparar las rutas con escenarios de referencia apropiados. También será necesario comprobar cómo se integran recomendaciones en procedimientos reales, cuáles se rechazan por seguridad o carga y quién valida las mediciones climáticas. Los resultados serían más sólidos si organismos de investigación externos pueden reproducir estimaciones o revisar sus supuestos. Ese nivel de prueba importa antes de convertir una práctica piloto en política operacional habitual.",
+            "Para lectores de tecnología, este caso ilustra una categoría de IA aplicada: modelos predictivos que apoyan decisiones humanas en sistemas de restricciones estrictas. El beneficio potencial es encontrar oportunidades de pequeños ajustes con impacto, pero el coste de una recomendación equivocada puede ser elevado. El seguimiento del Gazette mantendrá separados resultados de pruebas, cifras estimadas del proveedor y despliegue operacional. El 7 de septiembre fue un anuncio verificable de expansión de investigación, no el fin del problema climático de las estelas."
+          ]
+        }
+      ],
+      "finalSummary": "Cathay y Google comunicaron resultados iniciales prometedores de investigación sobre rutas y estelas, y anunciaron una prueba más amplia. La evidencia disponible es una estimación de vuelos seleccionados; la seguridad y el beneficio climático a escala todavía requieren estudios adicionales.",
+      "limitations": [
+        "El 40 % corresponde al impacto de calentamiento estimado por estelas de vuelos participantes, no a reducción global de CO₂.",
+        "La primera muestra de vuelos es limitada y no representa toda la aviación comercial.",
+        "Condiciones de seguridad, espacio aéreo y carga pueden impedir ajustes incluso cuando el algoritmo sugiere evitarlos.",
+        "La segunda fase anunciada necesita datos independientes y resultados posteriores."
+      ],
+      "practicalAdvice": [
+        "Interpretar resultados por el grupo de vuelos que realmente tomó medidas.",
+        "Evaluar combustible adicional y seguridad junto a la reducción de estelas.",
+        "Seguir fuentes primarias y estudios de validación antes de asumir ahorros climáticos universales.",
+        "Distinguir modelos de predicción de sistemas autónomos de control aeronáutico."
+      ],
+      "technicalDetails": [
+        {
+          "label": "Anuncio",
+          "value": "7 septiembre 2026"
+        },
+        {
+          "label": "Inicio del ensayo",
+          "value": "Finales de 2025"
+        },
+        {
+          "label": "Vuelos",
+          "value": "Más de 80 siguiendo rutas de evitación"
+        },
+        {
+          "label": "Resultado estimado",
+          "value": "~40 % menos impacto de calentamiento por estelas, según Google"
+        },
+        {
+          "label": "Fase siguiente",
+          "value": "Más rutas asiáticas y transpacíficas con Contrails.org"
+        }
+      ],
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado científico de aeronave comercial en vuelo en capas atmosféricas, mapas de humedad y altitudes representados por nubes y símbolos visuales sin texto ni cifras, papel sepia con estilo de revista técnica antigua."
     },
     {
       "id": "openai-automated-research-intern",
@@ -18745,8 +18840,8 @@
       "image": "assets/globe.webp",
       "imageAlt": "Grabado editorial de un globo terrestre",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
+      "coveredAt": "2026-10-11",
       "source": {
         "name": "TCS · anuncio oficial",
         "url": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-hypervault-establish-large-scale-ai-data-center-campus-telangana",
@@ -18762,7 +18857,98 @@
         "Infraestructura preparada para GPU de alta densidad."
       ],
       "analysis": "La carrera de IA también se libra en electricidad, refrigeración, suelo y capacidad física para alojar aceleradores.",
-      "watch": "Calendario de construcción, clientes y capacidad que realmente entra en operación."
+      "watch": "Calendario de construcción, clientes y capacidad que realmente entra en operación.",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "TCS anunció que HyperVault obtuvo 264 acres en Hyderabad para un campus de infraestructura de IA.",
+        "La cifra de hasta 1 GW es capacidad proyectada para el desarrollo total, no potencia construida ni contratada hoy.",
+        "El grupo estima inversiones de hasta 70.000 crore de rupias de HyperVault y socios, sujetas a ejecución futura.",
+        "GPU de alta densidad, refrigeración líquida y desarrollo en fases son parte del diseño comunicado por TCS."
+      ],
+      "executiveSummary": "HyperVault aseguró terreno para un complejo preparado para despliegues de GPU de alta densidad y refrigeración líquida. El informe distingue hechos confirmados del proveedor, datos proyectados, fases del despliegue y evaluación pendiente.",
+      "sections": [
+        {
+          "heading": "El anuncio de suelo y capacidad proyectada",
+          "kind": "report",
+          "paragraphs": [
+            "El 5 de septiembre de 2026, Tata Consultancy Services (TCS) comunicó que su filial HyperVault había asegurado 264 acres de terreno para construir un campus de centros de datos de inteligencia artificial en Hyderabad, estado de Telangana, India. El proyecto se planifica para una capacidad de hasta un gigavatio, con desarrollo por fases según necesidades de clientes y condiciones tecnológicas. El hito real de la fecha es la obtención del terreno y la presentación del plan industrial, no la inauguración de instalaciones de un gigavatio ni la puesta en servicio de miles de GPU.",
+            "La distinción entre capacidad final prevista y capacidad efectivamente instalada es decisiva. Un centro de datos de IA necesita suelo, permisos, suministro eléctrico, redes, refrigeración, equipos y contratos comerciales antes de prestar servicio. El comunicado no fija una fecha definitiva para completar cada fase ni confirma que todo el campus vaya a operar con la capacidad máxima anunciada. TCS describe una infraestructura orientada a compañías que entrenan y sirven modelos de frontera y a grandes proveedores de nube, pero no revela un listado público de clientes comprometidos a usar toda la capacidad."
+          ]
+        },
+        {
+          "heading": "Qué significa un gigavatio en este contexto",
+          "kind": "technical",
+          "paragraphs": [
+            "La unidad gigavatio mide potencia, no energía acumulada ni rendimiento de un modelo. En un centro de datos, la demanda eléctrica comprende aceleradores, procesadores, redes, almacenamiento y equipos auxiliares. La potencia de diseño de un campus no se puede convertir de manera fiable en una cantidad específica de GPU sin conocer densidad por rack, eficiencia energética, refrigeración, tecnologías de hardware y reservas operativas. Tampoco representa potencia disponible hoy. Usar la cifra como si fuera capacidad instalada provocaría una impresión falsa del avance de la construcción.",
+            "El proyecto contempla GPU de alta densidad y sistemas de refrigeración líquida. A medida que crece la densidad de cómputo, el calor debe retirarse de forma controlada; por eso se vuelve importante conocer la infraestructura de agua, el consumo auxiliar y el mantenimiento. HyperVault describe refrigeración direct-to-chip entre sus capacidades de diseño y acceso a conectividad de red. Los detalles técnicos finales pueden variar por fase y por el tipo de cliente. El proveedor no publica en el anuncio un diseño completo de distribución eléctrica o métricas certificadas de eficiencia energética."
+          ]
+        },
+        {
+          "heading": "Alcance de inversión y naturaleza de las cifras",
+          "kind": "report",
+          "paragraphs": [
+            "TCS estima que HyperVault y sus socios podrían invertir hasta 70.000 crore de rupias en construir y gestionar esta infraestructura. Es una cifra prospectiva para un proyecto de largo plazo, no una inversión totalmente ejecutada el día de la noticia. La empresa señala que el campus podría generar varios miles de empleos directos e indirectos y potenciar sectores conexos como ingeniería, construcción, suministro eléctrico, refrigeración y operaciones. Tampoco son puestos ya ocupados ni resultados contables auditados en septiembre.",
+            "Las cifras proceden del comunicado de TCS y de declaraciones de autoridades locales incluidas en ese material. Para evaluar la evolución habrá que revisar anuncios de contratos, inversión efectiva, fechas de energización de fases, equipos instalados y empleo medido. El lenguaje de expectativa debe preservarse porque existe incertidumbre de permisos, disponibilidad de electricidad, financiación, equipamiento y demanda. La noticia se sostiene sobre un anuncio industrial concreto, pero el resultado financiero y operativo está abierto."
+          ]
+        },
+        {
+          "heading": "Dónde se sitúa en el ecosistema indio",
+          "kind": "context",
+          "paragraphs": [
+            "Hyderabad es una localización con actividad tecnológica y centros empresariales, y el gobierno de Telangana respaldó públicamente el anuncio. TCS presenta el proyecto como un componente de su estrategia de infraestructura preparada para IA. La escala potencial se relaciona con la demanda de entrenamiento e inferencia de modelos, que puede justificar instalaciones de mayor densidad y ciclos de actualización rápida de aceleradores. Sin embargo, el plan no convierte automáticamente al campus en uno de los mayores centros de datos en funcionamiento en el mundo, porque se trata todavía de una capacidad proyectada.",
+            "HyperVault forma parte de TCS, un grupo de servicios tecnológicos con presencia internacional, y menciona al ecosistema Tata y a TPG como socio estratégico. Esa combinación de capacidades industriales y capital puede respaldar una iniciativa compleja, pero no sustituye la evidencia de ejecución. Para comprender su importancia comercial conviene observar qué empresas anuncian arrendamientos, cómo se organizarán los servicios de cómputo y si se publican condiciones de compra o acceso. No hay una tarifa de inferencia o entrenamiento anunciada a partir del suelo adquirido."
+          ]
+        },
+        {
+          "heading": "Electricidad, agua y sostenibilidad",
+          "kind": "analysis",
+          "paragraphs": [
+            "TCS señala objetivos de incorporación de energía verde y principios de diseño neutral en agua. Son compromisos o características previstas en la planificación del campus. No equivalen a una medición independiente del impacto ambiental una vez construido. Un proyecto de este tamaño demanda contrastar suministros eléctricos, emisiones asociadas, recursos hídricos locales, resiliencia ante picos de carga y tratamiento del calor. También importa si la energía se obtiene mediante nueva generación, contratos o conexión a redes existentes, y en qué condiciones se sostiene la disponibilidad del servicio.",
+            "Análisis Gazette: el cuello de botella de la carrera por la inteligencia artificial no es únicamente el número de parámetros de los modelos. Electricidad, redes, terrenos, gestión térmica y financiación determinan cuánto cómputo se puede usar de forma continua. El caso HyperVault ilustra por qué las promesas de capacidad son indicadores tempranos de estrategia, pero no medidas de potencia computacional operativa. La evaluación a largo plazo debe seguir hitos físicos en vez de limitarse a repetir tamaños anunciados."
+          ]
+        },
+        {
+          "heading": "Qué comprobar en cada fase",
+          "kind": "practical",
+          "paragraphs": [
+            "Un analista de infraestructura debería construir una cronología de permisos, contratos eléctricos, obras, energización, recepción de hardware y comienzo de servicio. Los hitos se pueden asociar con documentos regulatorios, declaraciones oficiales y mediciones de operación, evitando sumar megavatios anunciados que todavía no existen. Para clientes potenciales, los factores clave son ubicación de los datos, conectividad, redundancia, seguridad física y lógica, capacidad efectiva reservable y costes totales de un contrato de cómputo. No todas esas respuestas están disponibles en el comunicado inicial.",
+            "El seguimiento del Gazette deberá revisar anuncios de nuevas fases y clientes y comparar la inversión ejecutada con las estimaciones iniciales. Si el proyecto crece, también habrá que comprobar cómo se cumplen sus principios ambientales y si las promesas de empleo se traducen en puestos reales. La noticia del 5 de septiembre importa por la magnitud del plan y el terreno conseguido; el resultado final dependerá de infraestructura construida y verificable, no de una cifra máxima presentada al comienzo."
+          ]
+        }
+      ],
+      "finalSummary": "HyperVault aseguró terreno y anunció un proyecto de gran escala para IA en India. Las cifras de capacidad, inversión y empleo deben mantenerse identificadas como planes hasta que existan fases construidas, contratos y mediciones verificables.",
+      "limitations": [
+        "El gigavatio es capacidad objetivo y no instalación energética ya operativa.",
+        "La inversión y el empleo son estimaciones de proyecto divulgadas por TCS y autoridades, no hechos consumados.",
+        "No se publicaron cronogramas completos de energización, clientes comprometidos ni métricas ambientales medidas.",
+        "Los objetivos de energía verde y agua requieren verificación una vez que operen las instalaciones."
+      ],
+      "practicalAdvice": [
+        "Separar capacidad anunciada, en construcción y puesta en servicio.",
+        "Seguir contratos eléctricos, hitos por fases y disponibilidad para clientes antes de estimar el impacto en cómputo.",
+        "Comparar eficiencia y consumo ambiental con métricas medidas, no solo intenciones.",
+        "No convertir potencia del campus a número de GPU sin conocer la configuración de hardware y energía."
+      ],
+      "technicalDetails": [
+        {
+          "label": "Terreno obtenido",
+          "value": "264 acres en Hyderabad (Telangana)"
+        },
+        {
+          "label": "Capacidad final contemplada",
+          "value": "Hasta 1 GW"
+        },
+        {
+          "label": "Inversión estimada",
+          "value": "Hasta 70.000 crore INR con socios"
+        },
+        {
+          "label": "Construcción",
+          "value": "Desarrollo por fases según demanda"
+        }
+      ],
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de un vasto campus industrial de centros de datos en fase de proyecto, transformadores, torres de refrigeración y canales de agua dibujados sobre pergamino, perspectiva de ingeniero del siglo XIX sin apariencia de fotografía real."
     },
     {
       "id": "dome-agent-operations-platform",
@@ -21249,8 +21435,8 @@
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
+      "coveredAt": "2026-10-11",
       "source": {
         "name": "AWS · What's New",
         "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-quick-custom-apps-natural-language/",
@@ -21266,7 +21452,98 @@
         "Conectores empresariales y control de permisos."
       ],
       "analysis": "La barrera para automatizar procesos baja cuando la interfaz de construcción es lenguaje natural, pero la gobernanza de datos y permisos gana importancia.",
-      "watch": "Calidad de las aplicaciones generadas y controles de revisión y cambios."
+      "watch": "Calidad de las aplicaciones generadas y controles de revisión y cambios.",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "AWS llevó a disponibilidad general Apps in Amazon Quick el 1 de septiembre de 2026, tras una preview de abril.",
+        "Las aplicaciones se describen en lenguaje natural y conectan con herramientas y bases empresariales; no son un sustituto automático de controles de datos.",
+        "El anuncio especifica acceso para clientes Plus, Professional y Enterprise; no permite inferir que cualquier cuenta gratuita cree apps.",
+        "New York Life y el equipo interno de Quick son ejemplos aportados por AWS, no mediciones independientes de eficiencia."
+      ],
+      "executiveSummary": "AWS lleva a disponibilidad general la creación de aplicaciones conectadas a datos y herramientas empresariales a partir de una descripción. El informe distingue hechos confirmados del proveedor, datos proyectados, fases del despliegue y evaluación pendiente.",
+      "sections": [
+        {
+          "heading": "De abril a septiembre: el cambio real",
+          "kind": "report",
+          "paragraphs": [
+            "El 1 de septiembre de 2026, Amazon Web Services comunicó la disponibilidad general de la creación de aplicaciones personalizadas mediante lenguaje natural en Amazon Quick. El producto permite describir una necesidad de negocio para obtener una aplicación conectada a sistemas corporativos, que se puede publicar y compartir con otros usuarios. La novedad de septiembre es la transición desde la versión preliminar anunciada en abril de 2026. No se trata de un modelo fundacional recién entrenado ni de la primera demostración de interfaces generadas mediante indicaciones, sino de la ampliación del acceso operativo a una capacidad específica dentro de Quick.",
+            "La noticia es relevante porque reubica parte del trabajo de creación de aplicaciones en manos de responsables de áreas de negocio: recursos humanos, ventas, finanzas o gestión de proyectos pueden intentar plasmar un flujo sin encargar desde cero un desarrollo convencional. AWS ilustra el lanzamiento con rastreadores de proyectos, paneles para clientes y portales formativos. El proveedor promete crear soluciones en minutos, pero esa expresión comercial describe una aspiración de rapidez para algunos casos; no prueba que una aplicación compleja, integrada y auditada quede lista con una sola descripción."
+          ]
+        },
+        {
+          "heading": "Qué genera la herramienta y de dónde salen los datos",
+          "kind": "technical",
+          "paragraphs": [
+            "Amazon Quick recibe una descripción del usuario, interpreta el tipo de interfaz que necesita y produce una aplicación conectada a los datos existentes. AWS nombra conectores hacia Salesforce, Jira, Asana, ServiceNow, Microsoft 365, Google Workspace, bases de datos y almacenes empresariales. El valor no reside solo en dibujar pantallas: los paneles creados deberían poder actualizarse cuando cambian las fuentes conectadas, evitando copias manuales que pronto quedan obsoletas. Eso requiere que el conector funcione con el contexto de identidad correcto y que los esquemas y relaciones de datos estén bien definidos.",
+            "La compañía afirma que las conexiones respetan las políticas de identidad, autorización y control de acceso de la organización. Esa afirmación debe leerse como propiedad de diseño declarada por AWS, no como certificación de cada integración particular. Antes de compartir una app, el administrador necesita comprobar acceso por perfiles, filtrado de filas o atributos sensibles, privilegios del creador y destinatarios de publicación. Un prototipo que reúne información útil puede convertirse en una fuga si muestra datos que el usuario final no tendría permiso de consultar directamente."
+          ]
+        },
+        {
+          "heading": "Edición iterativa y publicación",
+          "kind": "context",
+          "paragraphs": [
+            "El proceso anunciado no termina en la primera generación. La persona puede describir modificaciones de apariencia, solicitar una función de IA adicional o conectar otro sistema sin reescribir manualmente la aplicación. AWS presenta la publicación y el uso compartido con usuarios concretos o con la organización como parte del mismo recorrido. En teoría, esto permite ajustes rápidos ante cambios de proceso, pero también obliga a gestionar versiones: una modificación del formulario o de la consulta subyacente puede afectar resultados y decisiones de varios equipos al mismo tiempo.",
+            "Para un despliegue profesional conviene definir quién puede editar la lógica, quién aprueba el cambio y cómo recuperar la configuración anterior. Las descripciones en lenguaje natural son una interfaz de autoría, no un contrato inmutable sobre lo que la app hará. Un formulario puede aparentar funcionar mientras aplica mal un filtro o interpreta de forma ambigua un estado comercial. Pruebas de aceptación con datos representativos y revisiones periódicas deben acompañar la facilidad de edición. Reducir barreras para construir también puede aumentar el número de herramientas internas que necesitan gobierno."
+          ]
+        },
+        {
+          "heading": "Clientes mencionados y qué prueban sus ejemplos",
+          "kind": "report",
+          "paragraphs": [
+            "AWS menciona a New York Life, que utilizó Apps in Quick durante la preview para crear un portal de aprendizaje destinado a un equipo de Institutional Life. El portal reúne contenidos de incorporación, formación y cumplimiento en una experiencia. La empresa también señala un uso interno: el equipo de Amazon Quick centraliza seguimiento de oportunidades comerciales, solicitudes de clientes y adopción en una aplicación de revisión semanal, reemplazando extracciones manuales desde cuatro sistemas diferentes. Son ejemplos de adopción presentados en el propio comunicado.",
+            "Estos casos aportan claridad sobre los problemas que AWS intenta resolver, pero no incluyen un estudio independiente con número de horas ahorradas, reducción de errores o coste total de mantenimiento. Tampoco permiten concluir que todas las organizaciones obtendrán mejoras equivalentes. Lo útil para una comparación rigurosa es medir tiempo de creación de una app y tiempo de estabilización por separado, además de la exactitud de los datos, los permisos efectivos y la carga de soporte que soportará el equipo de tecnología."
+          ]
+        },
+        {
+          "heading": "Planes, disponibilidad y costes abiertos",
+          "kind": "practical",
+          "paragraphs": [
+            "La información de lanzamiento es específica respecto al acceso: AWS indica que la función de crear aplicaciones está disponible para clientes de los planes Plus, Professional y Enterprise desde el 1 de septiembre de 2026. Que Amazon Quick ofrezca otras modalidades de entrada no significa que la creación de aplicaciones esté incluida indistintamente en todas ellas. Las tarifas, cuotas, permisos de uso y disponibilidad regional se deben revisar en las páginas oficiales vigentes al contratar; el breve anuncio no suministra un presupuesto universal para cada aplicación.",
+            "Un responsable comercial debería calcular el coste de suscripciones, conectores, datos y revisión del resultado. Si una app aumenta productividad, el ahorro hay que compararlo con la calidad de la información y los gastos de soporte, no solo con el tiempo de dibujar la primera pantalla. También deben confirmarse retención de datos, registros de acceso y exportación de resultados antes de incorporar procesos críticos. La facilidad de crear una aplicación no implica que una plataforma ajena permita migrarla posteriormente sin trabajo adicional."
+          ]
+        },
+        {
+          "heading": "Competencia e implicaciones para los equipos",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: el lanzamiento encaja en una tendencia de interfaces que se construyen a partir de intenciones y conectan sistemas existentes, en lugar de depender de una fase completa de desarrollo para cada necesidad menor. La competencia entre proveedores empresariales puede desplazarse hacia calidad de conectores, precisión de permisos, capacidad de iteración y gobierno. Una app interna valiosa combina presentación y procesos, pero su utilidad depende de que los datos que muestra correspondan a la realidad de negocio y de que los trabajadores puedan comprender cuándo son fiables.",
+            "Para probar la propuesta conviene elegir un caso medible y reversible, como un panel de proyectos con pocos usuarios, fuentes conocidas y validación de métricas contra los sistemas de origen. Después se puede comprobar quién puede ver, editar, compartir o borrar la aplicación. Solo entonces corresponde plantear flujos con consecuencias externas. El siguiente seguimiento periodístico debería buscar datos públicos de adopción, costes reales y límites del editor, sin transformar anuncios de producto en garantías de seguridad o rentabilidad empresarial."
+          ]
+        }
+      ],
+      "finalSummary": "Amazon Quick llevó la construcción de apps a partir de lenguaje natural fuera de preview. El alcance concreto combina interfaces, conectores empresariales y publicación para equipos; las ventajas anunciadas requieren comprobar permisos, datos, costes y resultados en situaciones reales.",
+      "limitations": [
+        "El anuncio de AWS no publica un precio único por aplicación terminada.",
+        "Las experiencias citadas son ejemplos reportados por el proveedor y no mediciones independientes.",
+        "No todas las cuentas de Quick tienen necesariamente acceso a Apps: se especificaron Plus, Professional y Enterprise.",
+        "Generar una interfaz no sustituye revisión de permisos, exactitud de datos y control de cambios."
+      ],
+      "practicalAdvice": [
+        "Empezar con una aplicación reversible de análisis o seguimiento, no con una operación financiera irreversible.",
+        "Verificar permisos del usuario final con datos reales de prueba antes de compartir la aplicación.",
+        "Medir horas de mantenimiento, defectos y utilidad de los datos además del tiempo de generación.",
+        "Confirmar plan contratado, límites y precio en la documentación actual de AWS."
+      ],
+      "technicalDetails": [
+        {
+          "label": "Fecha de disponibilidad general",
+          "value": "1 de septiembre de 2026"
+        },
+        {
+          "label": "Preview anterior",
+          "value": "28 de abril de 2026"
+        },
+        {
+          "label": "Planes anunciados",
+          "value": "Plus, Professional y Enterprise"
+        },
+        {
+          "label": "Integraciones citadas",
+          "value": "Salesforce, Jira, Asana, ServiceNow, Microsoft 365 y Google Workspace"
+        }
+      ],
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado periodístico en tinta sepia: administradores construyen un tablero de aplicación desde tarjetas, archivos empresariales y engranajes conectados a distintas oficinas, sin palabras, logotipos ni apariencia de interfaz real."
     },
     {
       "id": "air-agent-security-platform",
