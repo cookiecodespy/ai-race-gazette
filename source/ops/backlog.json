@@ -318,14 +318,20 @@
       "phase": "P05",
       "title": "Evaluar Google AI plans: nuevas herramientas y acceso",
       "priority": "P1",
-      "status": "queued",
+      "status": "cancelled",
       "lane": "Historical Backfill",
       "acceptance": "Verificar fecha, independencia, materialidad, duplicados y fuentes; publicar Reporter V2 o descartar documentando la decisión.",
       "evidence": [
         "https://blog.google/products-and-platforms/products/google-one/fall-2026-ai-plan-updates/"
       ],
       "date": "2026-09-09",
-      "notes": "Cambios de acceso a IA en apps y suscripciones; verificar si novedades son suficientemente materiales."
+      "notes": "Cambios de acceso a IA en apps y suscripciones; verificar si novedades son suficientemente materiales.",
+      "cancellationReason": "El texto del 9 Sep es una recopilación de funciones con anuncios originales anteriores: voz Gmail/Docs/Keep del 3 Sep, Google Pics del 1 Sep, Sheets canvas del 13 Ago y Chrome en Gemini Spark del 30 Jul. No se verificó un lanzamiento material único que justifique artículo del 9 Sep. Reabrir únicamente ante prueba de nuevo acceso/cambio independiente fechado ese día.",
+      "verifiedEvidence": [
+        "https://blog.google/products-and-platforms/products/google-one/fall-2026-ai-plan-updates/",
+        "https://blog.google/products-and-platforms/products/workspace/voice-features-gmail-docs-keep/",
+        "https://blog.google/innovation-and-ai/products/gemini-app/gemini-spark-updates-july-2026/"
+      ]
     },
     {
       "id": "H-GOOGLE-SEP14-DATAFLOW",
@@ -779,13 +785,19 @@
       "phase": "P05",
       "title": "Evaluar ReWeight de robótica (12 Sep)",
       "priority": "P1",
-      "status": "queued",
+      "status": "done",
       "lane": "Historical Backfill",
       "date": "2026-09-12",
       "acceptance": "Corroborar arXiv, reproducibilidad y valor editorial; Reporter V2 o descarte con evidencia.",
       "evidence": [
         "https://arxiv.org/abs/2609.13851"
-      ]
+      ],
+      "evidenceCommit": "6e634ec1493f21a35c62ca92e21f8c738b0e86a5",
+      "verifiedEvidence": [
+        "https://arxiv.org/abs/2609.13851",
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38098743612"
+      ],
+      "notes": "Reportaje Reporter V2 publicado el 12 Sep; CI editorial y orden RSS corregidos con commit 5ac9b15c81a24fb445af21a2e27094084d507d81. No equivale a cerrar la jornada."
     },
     {
       "id": "H-SEP08-ALPHAGENOME",
@@ -829,6 +841,20 @@
         "docs/operations-and-recovery.md",
         "https://github.com/cookiecodespy/cookiecodespy.github.io/pull/9"
       ]
+    },
+    {
+      "id": "H-SEP12-JUMPSTART",
+      "phase": "P05",
+      "title": "Investigar JumpStart: 160.000 entrenamientos para aprendizaje offline",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Historical Backfill",
+      "date": "2026-09-12",
+      "acceptance": "Verificar versión original arXiv, fecha real de disponibilidad de suite de modelos/código, materialidad e independencia; publicar Reporter V2 si corresponde o justificar descarte con evidencia.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.13730"
+      ],
+      "notes": "Preprint enviado 12 Sep según arXiv. Algunos índices presentan publicaciones posteriores y subida comunitaria en octubre; no atribuir retroactivamente liberación completa de modelos/código al 12 sin comprobar historial original."
     }
   ]
 }

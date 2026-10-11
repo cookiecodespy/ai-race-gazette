@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 62 tareas; 24 completadas; 5 en curso; 32 pendientes o bloqueadas; 1 descartadas con razón.
+- 6 fases; 63 tareas; 25 completadas; 5 en curso; 31 pendientes o bloqueadas; 2 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -43,9 +43,11 @@
 - [ ] **H-0814-GATE** · P0 · blocked — Cerrar estados 8–14 con doble auditoría
   - Criterio: Todos los candidatos resueltos, evidencia de dos pasadas, cobertura y RSS consistentes
   - Depende de: H-0814-SOURCES, H-0814-GOOGLE, H-SEP08-MISTRAL, H-SEP10-GPTLIVE, H-SEP12-13, H-GOOGLE-DEEPMIND-0814
-- [ ] **H-GOOGLE-SEP09-AIPLANS** · P1 · queued — Evaluar Google AI plans: nuevas herramientas y acceso
+- [ ] **H-GOOGLE-SEP09-AIPLANS** · P1 · cancelled — Evaluar Google AI plans: nuevas herramientas y acceso
   - Criterio: Verificar fecha, independencia, materialidad, duplicados y fuentes; publicar Reporter V2 o descartar documentando la decisión.
   - Fecha investigada: 2026-09-09
+  - Evidencia: https://blog.google/products-and-platforms/products/google-one/fall-2026-ai-plan-updates/
+  - Motivo de descarte: El texto del 9 Sep es una recopilación de funciones con anuncios originales anteriores: voz Gmail/Docs/Keep del 3 Sep, Google Pics del 1 Sep, Sheets canvas del 13 Ago y Chrome en Gemini Spark del 30 Jul. No se verificó un lanzamiento material único que justifique artículo del 9 Sep. Reabrir únicamente ante prueba de nuevo acceso/cambio independiente fechado ese día.
 - [x] **H-GOOGLE-SEP14-DATAFLOW** · P1 · done — Evaluar Google Cloud Dataflow con GPU Blackwell
   - Criterio: Verificar fecha, independencia, materialidad, duplicados y fuentes; publicar Reporter V2 o descartar documentando la decisión.
   - Fecha investigada: 2026-09-14
@@ -86,9 +88,11 @@
   - Criterio: Revisar laboratorios, startups, open source, chips, modelos, seguridad y producto; resolver pendientes.
 - [ ] **H-SEP14-REVERSE** · P0 · queued — Segunda pasada del 14 septiembre después de BigQuery y Dataflow
   - Criterio: Confirmar otros anuncios relevantes del día y registrar revisados/descartes antes de cerrar.
-- [ ] **H-SEP12-REWEIGHT** · P1 · queued — Evaluar ReWeight de robótica (12 Sep)
+- [x] **H-SEP12-REWEIGHT** · P1 · done — Evaluar ReWeight de robótica (12 Sep)
   - Criterio: Corroborar arXiv, reproducibilidad y valor editorial; Reporter V2 o descarte con evidencia.
   - Fecha investigada: 2026-09-12
+  - Commit: `6e634ec1493f21a35c62ca92e21f8c738b0e86a5`
+  - Evidencia: https://arxiv.org/abs/2609.13851
 - [x] **H-SEP08-ALPHAGENOME** · P0 · done — Google DeepMind AlphaGenome Atlas
   - Criterio: Reportaje V2, fuente primaria, límites clínicos y sincronización de publicación.
   - Fecha investigada: 2026-09-08
@@ -99,6 +103,9 @@
   - Fecha investigada: 2026-09-12
   - Commit: `ff2d3e0775cd8191362f54684df3fb9b052e918f`
   - Evidencia: https://darioamodei.com/post/we-must-pace-the-frontier
+- [ ] **H-SEP12-JUMPSTART** · P1 · queued — Investigar JumpStart: 160.000 entrenamientos para aprendizaje offline
+  - Criterio: Verificar versión original arXiv, fecha real de disponibilidad de suite de modelos/código, materialidad e independencia; publicar Reporter V2 si corresponde o justificar descarte con evidencia.
+  - Fecha investigada: 2026-09-12
 
 ## P06 — 15–21 septiembre: reconstrucción Reporter V2
 
