@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T01:26:04.792Z",
+  "updatedAt": "2026-10-11T01:40:44.126Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -11217,6 +11217,160 @@
       "announcedAt": "2026-09-23"
     },
     {
+      "id": "microsoft-eviltokens-ai-cybercrime-disruption-sep22-2026",
+      "eventKey": "microsoft-dcu-eviltokens-infrastructure-seizure-disclosure-2026-09-22",
+      "articleVersion": 2,
+      "date": "2026-09-22",
+      "announcedAt": "2026-09-22",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "Microsoft",
+      "product": "Digital Crimes Unit · operación EvilTokens",
+      "title": "Microsoft desmantela EvilTokens, una plataforma de fraude que usaba IA para analizar buzones robados",
+      "summary": "Microsoft reveló el 22 de septiembre una operación judicial y técnica contra EvilTokens, servicio delictivo que combinaba cuentas de correo comprometidas con un chatbot para priorizar fraudes financieros. La compañía lo vinculó con más de 12.000 buzones y 10.000 organizaciones; informó la incautación de 50 sitios y la desactivación de más de 150 dominios adicionales, junto a medidas policiales británicas.",
+      "tags": [
+        "Ciberseguridad",
+        "Agentes",
+        "Microsoft",
+        "Fraude",
+        "Defensa"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual de investigación tecnológica; no es fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado periodístico antiguo de un buzón empresarial protegido por guardianes y engranajes de análisis forense, contraste entre correspondencia robada y cierre judicial, sin logos ni detalle operativo criminal.",
+      "source": {
+        "name": "Microsoft Digital Crimes Unit · Disrupting EvilTokens",
+        "url": "https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/",
+        "publishedAt": "2026-09-22"
+      },
+      "body": [
+        "Microsoft reveló el 22 de septiembre una operación judicial y técnica contra EvilTokens, servicio delictivo que combinaba cuentas de correo comprometidas con un chatbot para priorizar fraudes financieros. La compañía lo vinculó con más de 12.000 buzones y 10.000 organizaciones; informó la incautación de 50 sitios y la desactivación de más de 150 dominios adicionales, junto a medidas policiales británicas."
+      ],
+      "keyPoints": [
+        "Microsoft reveló el 22 de septiembre una operación judicial y técnica contra EvilTokens, servicio delictivo que combinaba cuentas de correo comprometidas con un chatbot para priorizar fraudes financieros. La compañía lo vinculó con más de 12.000 buzones y 10.000 organizaciones; informó la incautación de 50 sitios y la desactivación de más de 150 dominios adicionales, junto a medidas policiales británicas.",
+        "Más de 12.000 según Microsoft",
+        "La investigación corporativa no cuantifica pérdidas económicas definitivas."
+      ],
+      "quickTakeaways": [
+        "Microsoft reveló el 22 de septiembre una operación judicial y técnica contra EvilTokens, servicio delictivo que combinaba cuentas de correo comprometidas con un chatbot para priorizar fraudes financieros. La compañía lo vinculó con más de 12.000 buzones y 10.000 organizaciones; informó la incautación de 50 sitios y la desactivación de más de 150 dominios adicionales, junto a medidas policiales británicas.",
+        "La investigación corporativa no cuantifica pérdidas económicas definitivas.",
+        "Revocar sesiones y credenciales afectadas siguiendo respuesta a incidentes.",
+        "Microsoft informó colaboración con Health-ISAC y múltiples proveedores."
+      ],
+      "sections": [
+        {
+          "heading": "Una operación anunciada el 22 de septiembre",
+          "kind": "report",
+          "paragraphs": [
+            "Microsoft comunicó una acción coordinada contra EvilTokens, una plataforma utilizada para facilitar delitos financieros con cuentas de correo previamente comprometidas. El hecho publicado ese día es la interrupción de infraestructura y la divulgación de la investigación, no el lanzamiento original del servicio, que la empresa sitúa en febrero de 2026. Para una cronología rigurosa importa distinguir la fecha de la acción de las distintas etapas de actividad del grupo.",
+            "Según Microsoft, EvilTokens combinaba interfaces de análisis de correos robados con funciones de inteligencia artificial. Al evaluar conversaciones ya existentes, podía ayudar a delincuentes a identificar responsables de pagos, relaciones entre proveedores y comunicaciones sensibles. La capacidad de interpretar contexto empresarial es justamente lo que hace novedoso el caso: no se trata simplemente de escribir un mensaje convincente, sino de analizar información privada para orientar un fraude."
+          ]
+        },
+        {
+          "heading": "Qué dimensión tuvo la actividad observada",
+          "kind": "technical",
+          "paragraphs": [
+            "La Digital Crimes Unit afirmó que EvilTokens estuvo relacionado con más de doce mil buzones comprometidos pertenecientes a más de diez mil organizaciones. Los sectores afectados incluían comercio, construcción, servicios financieros, inmobiliarias, educación y salud. Los países con mayor actividad observada comprendían Estados Unidos, Canadá, Reino Unido, Australia, India y Francia. Son cifras del análisis de Microsoft y de los datos que su investigación pudo observar.",
+            "Una cifra de buzones comprometidos no equivale automáticamente a doce mil fraudes consumados, ni a una pérdida económica determinada. La publicación tampoco proporciona un censo completo de todas las víctimas o campañas históricas. El contexto sirve para entender el alcance de infraestructura investigada, pero cualquier conclusión adicional sobre dinero desviado o eficacia delictiva necesitaría pruebas independientes y datos de transacciones."
+          ]
+        },
+        {
+          "heading": "Cómo se combinaban los accesos robados con IA",
+          "kind": "report",
+          "paragraphs": [
+            "Microsoft explicó que la plataforma operaba sobre correo comprometido, resumiendo hilos y localizando conversaciones que podían resultar relevantes para fraudes de identidad y pagos. La IA actuaba como herramienta de clasificación y priorización de información obtenida ilícitamente. Este reportaje evita reproducir procedimientos de abuso: los detalles de las técnicas de compromiso corresponden a la investigación de seguridad y su uso indebido es un delito.",
+            "Para las organizaciones la lección defensiva es que un correo robado permite inferir quién autoriza facturas, quién administra relaciones comerciales y cuándo se espera una transferencia. Un atacante puede aprovechar esa información para hacerse pasar por alguien conocido. En una época de herramientas de búsqueda y resumen más eficaces, se reduce el tiempo entre la pérdida de acceso y el intento de fraude, haciendo importante detectar temprano sesiones anómalas."
+          ]
+        },
+        {
+          "heading": "La intervención judicial y los socios",
+          "kind": "report",
+          "paragraphs": [
+            "Microsoft dijo que, con apoyo de Health-ISAC y autorización judicial federal en Estados Unidos, se incautaron cincuenta sitios web y se deshabilitaron más de ciento cincuenta dominios relacionados con la operación. Participaron proveedores de infraestructura y entidades especializadas, entre ellos Cloudflare, Coinbase, OpenAI, Railway y organizaciones de inteligencia sobre amenazas. Esa colaboración reflejó que la actividad no dependía de una sola plataforma o servicio.",
+            "En paralelo, la Metropolitan Police británica arrestó el 11 de septiembre a dos hombres sospechosos de estar vinculados con la supuesta operación. Microsoft aclaró que quedaron en libertad bajo fianza policial mientras continuaba la investigación. Por tanto, una detención en esta etapa no equivale a una condena ni permite atribuir a una persona responsabilidad penal definitiva. La fuente distingue la actuación policial del procedimiento civil y técnico de interrupción."
+          ]
+        },
+        {
+          "heading": "Qué significa desmantelar una infraestructura",
+          "kind": "report",
+          "paragraphs": [
+            "Desactivar dominios y sitios puede bloquear parte de la operación inmediata, interrumpir la comunicación de clientes y facilitar avisos a afectados. No demuestra que todas las copias del software, credenciales robadas o relaciones comerciales desaparezcan. Microsoft informó que notificó a víctimas y colaboró en remediación. El peligro de un servicio de fraude automatizado persiste aunque la infraestructura principal de un caso particular deje de operar.",
+            "La compañía describió esta intervención como su primera acción judicial contra un servicio delictivo de extremo a extremo facilitado por inteligencia artificial, dentro de una historia más amplia de operaciones de su Digital Crimes Unit. La declaración debe atribuirse a Microsoft, no generalizarse a todas las agencias o proveedores. Su valor es mostrar una respuesta coordinada entre operadores de servicios, analistas y autoridades."
+          ]
+        },
+        {
+          "heading": "Medidas de defensa que surgen de la investigación",
+          "kind": "practical",
+          "paragraphs": [
+            "Cuando una cuenta empresarial aparece comprometida, cambiar la contraseña puede ser insuficiente si quedan sesiones activas. Es importante revisar tokens y sesiones, examinar reglas de reenvío, comprobar los accesos recientes y avisar a contactos que podrían recibir mensajes falsificados. Las instrucciones exactas dependen del sistema de identidad usado; corresponde seguir los procedimientos oficiales del proveedor y del equipo de seguridad.",
+            "Para pagos de empresas, Microsoft recomienda verificar cambios de datos bancarios y solicitudes inusuales mediante un segundo canal previamente confiable, independiente del correo comprometido. También conviene aplicar autenticación resistente al phishing, supervisión de comportamientos anómalos, separación de funciones y autorizaciones múltiples cuando corresponda. Estas medidas reducen el riesgo sin asumir que un modelo de IA será capaz de identificar por sí solo cada estafa."
+          ]
+        },
+        {
+          "heading": "Lectura Gazette: qué cambia con el fraude asistido por IA",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: el caso EvilTokens muestra un uso de IA distinto de la creación de mensajes automatizados. La capacidad de leer grandes volúmenes de correspondencia y extraer una estructura de decisiones comerciales puede aumentar el alcance de un compromiso de identidad. Al mismo tiempo, la respuesta de Microsoft ilustra la necesidad de cooperación técnica y legal entre proveedores que alojan distintas partes de una actividad maliciosa.",
+            "La evaluación futura debe observar si las medidas de detección y notificación mejoran tras esta operación, además de seguir otros servicios semejantes. El hecho material registrado en septiembre es la interrupción anunciada por Microsoft; no se atribuye a la IA el control total de los delincuentes ni se afirma que el fraude haya desaparecido. La distinción entre hechos probados, hallazgos corporativos y actuaciones policiales es esencial."
+          ]
+        }
+      ],
+      "executiveSummary": "Microsoft reveló el 22 de septiembre una operación judicial y técnica contra EvilTokens, servicio delictivo que combinaba cuentas de correo comprometidas con un chatbot para priorizar fraudes financieros. La compañía lo vinculó con más de 12.000 buzones y 10.000 organizaciones; informó la incautación de 50 sitios y la desactivación de más de 150 dominios adicionales, junto a medidas policiales británicas. El alcance y las cifras requieren atribución a los autores y verificación independiente antes de extrapolarse.",
+      "finalSummary": "La evaluación futura debe observar si las medidas de detección y notificación mejoran tras esta operación, además de seguir otros servicios semejantes. El hecho material registrado en septiembre es la interrupción anunciada por Microsoft; no se atribuye a la IA el control total de los delincuentes ni se afirma que el fraude haya desaparecido. La distinción entre hechos probados, hallazgos corporativos y actuaciones policiales es esencial.",
+      "analysis": "Análisis Gazette: el acontecimiento debe evaluarse por su evidencia, límites, estado de disponibilidad y resultados posteriores, no por extrapolación de un anuncio.",
+      "watch": "Resultados reproducibles, seguimiento institucional, condiciones de acceso y limitaciones reportadas.",
+      "technicalDetails": [
+        {
+          "label": "Divulgación",
+          "value": "22 septiembre 2026"
+        },
+        {
+          "label": "Buzones vinculados",
+          "value": "Más de 12.000 según Microsoft"
+        },
+        {
+          "label": "Organizaciones afectadas",
+          "value": "Más de 10.000 según Microsoft"
+        },
+        {
+          "label": "Infraestructura interrumpida",
+          "value": "50 sitios incautados y más de 150 dominios adicionales desactivados"
+        },
+        {
+          "label": "Arrestos policiales",
+          "value": "Dos sospechosos arrestados el 11 de septiembre; investigación aún abierta"
+        }
+      ],
+      "availability": {
+        "status": "Operación de interrupción e informe público; no es un producto disponible",
+        "platforms": [
+          "Fuente original y recursos documentados"
+        ],
+        "requirements": [],
+        "notes": [
+          "El anuncio no equivale a garantía de disponibilidad universal."
+        ]
+      },
+      "limitations": [
+        "La investigación corporativa no cuantifica pérdidas económicas definitivas.",
+        "Las detenciones no equivalen a condenas.",
+        "El cierre de dominios no elimina el riesgo de servicios semejantes.",
+        "No toda cuenta comprometida implica fraude económico consumado."
+      ],
+      "practicalAdvice": [
+        "Revocar sesiones y credenciales afectadas siguiendo respuesta a incidentes.",
+        "Verificar cambios de pago por un canal separado del correo electrónico.",
+        "Activar controles fuertes de identidad, monitoreo y aprobación de transferencias."
+      ],
+      "usefulFacts": [
+        "Microsoft informó colaboración con Health-ISAC y múltiples proveedores.",
+        "El caso involucraba análisis automatizado de buzones comprometidos.",
+        "La interrupción fue coordinada con autoridades y socios privados."
+      ]
+    },
+    {
       "id": "claude-opus-5-5",
       "eventKey": "claude-opus-5-5",
       "date": "2026-09-22",
@@ -11695,6 +11849,165 @@
       "finalSummary": "Análisis Gazette: los robotaxis pasan de experimentos técnicos a negociaciones complejas con ciudades y redes de movilidad. El reto ya no es únicamente demostrar que un vehículo conduce, sino integrar autorización, mantenimiento, seguridad y valor social. La ambición de 2028 ilustra esa dificultad y no debe confundirse con una apertura ya obtenida.",
       "analysis": "Análisis Gazette: la autonomía debe medirse tanto por su desempeño técnico como por operación, permisos, seguridad y accesibilidad. Los planes no equivalen a servicios ya disponibles.",
       "watch": "Nuevos permisos, zona efectiva, flota, resultados de seguridad y plazos contrastados con la operación real."
+    },
+    {
+      "id": "google-generative-ui-teacher-learning-interactives-2026-09-17",
+      "eventKey": "google-research-teacher-guided-genui-interactives-library-pilot-2026-09-17",
+      "articleVersion": 2,
+      "date": "2026-09-17",
+      "announcedAt": "2026-09-17",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "Google Research",
+      "product": "Learning Interactives · Generative UI",
+      "title": "Google abre más de 30 simulaciones educativas creadas con IA y propone que profesores generen las suyas",
+      "summary": "Google Research publicó el 17 de septiembre una biblioteca gratuita de más de treinta actividades STEM interactivas generadas con IA y revisadas por docentes. También explicó un sistema experimental de interfaces generativas con objetivos aprobados por el profesor, pistas graduadas y pruebas automáticas; la creación personalizada permanece vinculada a un programa piloto.",
+      "tags": [
+        "Educación",
+        "Investigación",
+        "Interfaces",
+        "Generative UI"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial conceptual de investigación tecnológica; no es fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de escuela del siglo XIX con docentes y estudiantes manipulando un tablero interactivo mecánico de física y matemáticas, papel sepia, sin texto ni logos.",
+      "source": {
+        "name": "Google Research · The future of practice",
+        "url": "https://research.google/blog/the-future-of-practice-enabling-teachers-to-create-learning-interactives-with-generative-ui/",
+        "publishedAt": "2026-09-17"
+      },
+      "relatedSources": [
+        {
+          "name": "Google Research · biblioteca de demostraciones",
+          "url": "https://research.google.com/learning-interactives/"
+        }
+      ],
+      "body": [
+        "Google Research publicó el 17 de septiembre una biblioteca gratuita de más de treinta actividades STEM interactivas generadas con IA y revisadas por docentes. También explicó un sistema experimental de interfaces generativas con objetivos aprobados por el profesor, pistas graduadas y pruebas automáticas; la creación personalizada permanece vinculada a un programa piloto."
+      ],
+      "keyPoints": [
+        "Google Research publicó el 17 de septiembre una biblioteca gratuita de más de treinta actividades STEM interactivas generadas con IA y revisadas por docentes. También explicó un sistema experimental de interfaces generativas con objetivos aprobados por el profesor, pistas graduadas y pruebas automáticas; la creación personalizada permanece vinculada a un programa piloto.",
+        "Más de 30 simulaciones STEM públicas en inglés",
+        "La valoración docente no demuestra mejoras de aprendizaje de alumnos."
+      ],
+      "quickTakeaways": [
+        "Google Research publicó el 17 de septiembre una biblioteca gratuita de más de treinta actividades STEM interactivas generadas con IA y revisadas por docentes. También explicó un sistema experimental de interfaces generativas con objetivos aprobados por el profesor, pistas graduadas y pruebas automáticas; la creación personalizada permanece vinculada a un programa piloto.",
+        "La valoración docente no demuestra mejoras de aprendizaje de alumnos.",
+        "Revisar objetivos curriculares y corrección antes de usar.",
+        "Google usó interfaces generativas con evaluaciones agentivas en navegador."
+      ],
+      "sections": [
+        {
+          "heading": "Una biblioteca pública, no un despliegue universal",
+          "kind": "report",
+          "paragraphs": [
+            "El 17 de septiembre Google Research presentó un experimento para transformar contenidos de clase en simulaciones con las que el alumno pueda experimentar. La noticia material tiene dos partes: la publicación de una biblioteca con más de treinta actividades STEM ya revisadas por profesores y la descripción de un sistema capaz de generar experiencias nuevas para un objetivo curricular concreto. No debe confundirse la biblioteca disponible con el acceso universal al generador para cualquier escuela.",
+            "La biblioteca inicial contiene materiales en inglés para educación secundaria sobre física, química, matemáticas y otros temas científicos. Las instituciones que utilizan Google Workspace for Education podían inscribirse en un programa piloto para compartir observaciones. Según la empresa, una actividad nueva generada para una clase se envía primero al docente para que la revise; solo después de su aprobación puede añadirse a la biblioteca pública."
+          ]
+        },
+        {
+          "heading": "Por qué una interfaz puede enseñar algo que una respuesta no enseña",
+          "kind": "technical",
+          "paragraphs": [
+            "Leer una explicación sobre la trayectoria de un proyectil no permite necesariamente experimentar con ángulo, velocidad, gravedad o condiciones del entorno. Una simulación interactiva convierte esos conceptos en variables que un estudiante modifica para contrastar hipótesis. Google relaciona la propuesta con el aprendizaje activo y con la necesidad de que los alumnos construyan modelos mentales, en lugar de limitarse a observar una demostración.",
+            "Sin embargo, una pantalla con botones no garantiza por sí misma aprendizaje profundo. Si las reglas físicas son incorrectas o las pistas revelan respuestas sin invitar a pensar, la interfaz puede reforzar malentendidos. Los investigadores introducen restricciones pedagógicas para que el profesor defina objetivos, revise precisión y oriente la dificultad. La intervención docente sigue siendo necesaria para decidir dónde encaja cada actividad dentro del currículo."
+          ]
+        },
+        {
+          "heading": "Cómo se genera la experiencia educativa",
+          "kind": "report",
+          "paragraphs": [
+            "El proceso parte de un tema elegido por el profesor y transforma esa intención en objetivos de aprendizaje editables que deben aprobarse. Después produce niveles de dificultad creciente, una mecánica interactiva y apoyo contextual: herramientas, fórmulas, pistas progresivas y explicaciones de las soluciones. Esta secuencia evita reducir la generación a una página vistosa sin una habilidad concreta que el estudiante pueda practicar.",
+            "Google describe un uso especializado de interfaces generativas: el sistema construye componentes de interacción dinámicamente, sin que cada simulación tenga que programarse a mano desde cero. Eso reduce una parte del coste de prototipado, pero el proceso incorpora validación. No está demostrado que pueda producir una experiencia correcta para cualquier asignatura o nivel sin revisión, ni que sus elementos sean accesibles en todos los dispositivos y contextos."
+          ]
+        },
+        {
+          "heading": "Agentes que prueban botones y casos extremos",
+          "kind": "report",
+          "paragraphs": [
+            "La arquitectura incluye bucles de autocrítica que evalúan alineación pedagógica, funcionamiento de las reglas y aspectos visuales. Google explicó que una comprobación de resolubilidad puede abrir Chrome, interactuar con la simulación como lo haría un alumno y probar comportamientos adversariales, por ejemplo llevando controles a valores extremos. Si detecta problemas, el sistema revisa la propuesta antes de mostrarla al profesor.",
+            "Esta prueba automática es un ejemplo concreto del papel de agentes en la generación de software. No basta con producir HTML que se renderice: hay que comprobar que un nivel tenga solución, que los botones cambien el estado correcto y que las instrucciones sean consistentes. Aun así, un navegador automatizado no comprueba comprensión humana, motivación ni todas las necesidades de accesibilidad. Los docentes deben seguir controlando la aprobación final."
+          ]
+        },
+        {
+          "heading": "Qué evaluaron los profesores y qué falta medir",
+          "kind": "report",
+          "paragraphs": [
+            "Google señaló que docentes de STEM en Reino Unido valoraron cuarenta actividades mediante criterios pedagógicos y de diseño. En un estudio inicial estadounidense participaron doce profesores, cada uno de los cuales pidió tres actividades personalizadas. La calificación media comunicada fue ocho de diez. Son señales favorables de percepción de calidad, no una prueba causal de que los estudiantes mejoraron sus notas o aprendieron más rápido.",
+            "La empresa reconoció que planea estudiar ganancias de aprendizaje y compromiso del alumnado con investigaciones de experiencia de usuario y estudios de campo. Para juzgar impacto educativo habrá que comparar grupos, controlar nivel inicial y medir retención del conocimiento. Una muestra reducida de profesores entusiastas puede orientar el diseño, pero no justifica extrapolar las puntuaciones a todos los centros escolares o alumnos."
+          ]
+        },
+        {
+          "heading": "Qué puede hacer hoy un docente y qué no",
+          "kind": "practical",
+          "paragraphs": [
+            "En la fecha de publicación, un profesor podía explorar la biblioteca pública de actividades aprobadas e identificar temas útiles para su clase. Un centro con las herramientas y condiciones correspondientes podía postular al piloto para participar en pruebas y generar nuevas simulaciones. Eso no equivale a que el generador personalizado estuviera abierto a todas las personas sin restricciones o coste, ni a que los recursos estuvieran traducidos a todos los idiomas.",
+            "Antes de utilizar una actividad conviene comprobar adecuación al nivel del curso, idioma, requisitos tecnológicos, explicaciones y resultados que entrega la simulación. También corresponde revisar tratamiento de datos de menores y accesibilidad. La automatización puede ayudar a elaborar prácticas diferenciadas, pero el profesor debe decidir qué objetivos importan y observar si las preguntas realmente contribuyen al aprendizaje. El producto complementa decisiones pedagógicas, no las reemplaza."
+          ]
+        },
+        {
+          "heading": "Lectura Gazette y próximos hitos",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: el cambio significativo no es solamente introducir inteligencia artificial en una explicación textual. Google está investigando el paso hacia interfaces que son software educativo generado para una tarea concreta, con validación automática y supervisión de especialistas. El mismo patrón podría aplicarse a entrenamientos de trabajo, laboratorios virtuales y visualizaciones científicas si se logra mantener fidelidad del contenido.",
+            "El siguiente hito será saber si la creación personalizada se abre a más escuelas, qué idiomas admite y si existen ensayos que demuestren aprendizaje medible. También importa cómo se controla quién aprueba una simulación y cómo se reparan errores después de su publicación. Mientras no haya esa evidencia, la noticia debe describirse como biblioteca revisada y experimento piloto, no como profesor artificial plenamente autónomo."
+          ]
+        }
+      ],
+      "executiveSummary": "Google Research publicó el 17 de septiembre una biblioteca gratuita de más de treinta actividades STEM interactivas generadas con IA y revisadas por docentes. También explicó un sistema experimental de interfaces generativas con objetivos aprobados por el profesor, pistas graduadas y pruebas automáticas; la creación personalizada permanece vinculada a un programa piloto. El alcance y las cifras requieren atribución a los autores y verificación independiente antes de extrapolarse.",
+      "finalSummary": "El siguiente hito será saber si la creación personalizada se abre a más escuelas, qué idiomas admite y si existen ensayos que demuestren aprendizaje medible. También importa cómo se controla quién aprueba una simulación y cómo se reparan errores después de su publicación. Mientras no haya esa evidencia, la noticia debe describirse como biblioteca revisada y experimento piloto, no como profesor artificial plenamente autónomo.",
+      "analysis": "Análisis Gazette: el acontecimiento debe evaluarse por su evidencia, límites, estado de disponibilidad y resultados posteriores, no por extrapolación de un anuncio.",
+      "watch": "Resultados reproducibles, seguimiento institucional, condiciones de acceso y limitaciones reportadas.",
+      "technicalDetails": [
+        {
+          "label": "Fecha",
+          "value": "17 septiembre 2026"
+        },
+        {
+          "label": "Biblioteca",
+          "value": "Más de 30 simulaciones STEM públicas en inglés"
+        },
+        {
+          "label": "Docentes evaluadores",
+          "value": "12 profesores estadounidenses en estudio inicial, además de evaluación STEM en Reino Unido"
+        },
+        {
+          "label": "Valoración reportada",
+          "value": "8/10 de promedio entre 12 profesores estadounidenses"
+        },
+        {
+          "label": "Creación personalizada",
+          "value": "Piloto con Google for Education"
+        }
+      ],
+      "availability": {
+        "status": "Biblioteca de demostraciones pública; generador personalizado en piloto",
+        "platforms": [
+          "Fuente original y recursos documentados"
+        ],
+        "requirements": [],
+        "notes": [
+          "El anuncio no equivale a garantía de disponibilidad universal."
+        ]
+      },
+      "limitations": [
+        "La valoración docente no demuestra mejoras de aprendizaje de alumnos.",
+        "El generador no se habilitó universalmente en el anuncio.",
+        "Las simulaciones requieren revisión de precisión y currículo.",
+        "La biblioteca inicial se publicó en inglés."
+      ],
+      "practicalAdvice": [
+        "Revisar objetivos curriculares y corrección antes de usar.",
+        "Considerar idiomas, accesibilidad y datos de estudiantes.",
+        "Tratar los resultados preliminares de profesores como opiniones, no ensayos de aprendizaje."
+      ],
+      "usefulFacts": [
+        "Google usó interfaces generativas con evaluaciones agentivas en navegador.",
+        "Se publicaron más de 30 simulaciones revisadas por educadores.",
+        "Los profesores deben aprobar las nuevas actividades antes de agregarse a la biblioteca."
+      ]
     },
     {
       "id": "openai-worker-task-crossover-workflows-study-2026-09-16",
@@ -15106,6 +15419,157 @@
       "analysis": "Análisis Gazette: el modelo muestra una vía alternativa de progreso en IA: representaciones reutilizables para datos científicos multimodales, con pesos, benchmarks y código abiertos. La ventaja se mide en descubrimientos confirmables, no solo en métricas del proveedor.",
       "watch": "Reproducciones independientes, comprobación posterior de zonas de hielo, robustez ante nuevos instrumentos y regiones, y costos de ajuste para equipos científicos.",
       "finalSummary": "La publicación del modelo lunar el 10 de septiembre amplía la aplicación de la IA fundacional a la ciencia planetaria. Su valor está en reunir instrumentos diversos y hacer reproducibles nuevas investigaciones; sus predicciones deben seguir distinguiéndose de observaciones físicas verificadas."
+    },
+    {
+      "id": "google-toolgrad-tool-use-answer-first-synthetic-data-2026-09-10",
+      "eventKey": "google-research-toolgrad-blog-release-sep10-2026",
+      "articleVersion": 2,
+      "date": "2026-09-10",
+      "announcedAt": "2026-09-10",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "Google Research",
+      "product": "ToolGrad / ToolGrad-500",
+      "title": "ToolGrad: Google enseña a los agentes a usar herramientas construyendo primero la solución",
+      "summary": "Google Research explicó el 10 de septiembre ToolGrad, un método que sintetiza datos de entrenamiento de agentes construyendo primero una cadena válida de herramientas y después la petición del usuario. Los investigadores reportan 99,8 % de éxito al generar esas cadenas y mejoras en evaluaciones de llamada a funciones, sin que el resultado sea una garantía para todos los agentes.",
+      "tags": [
+        "Investigación",
+        "Agentes",
+        "Herramientas",
+        "Open Source"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial conceptual de investigación tecnológica; no es fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial de un laboratorio mecánico donde se ensamblan piezas de herramientas antes de redactar las instrucciones, tinta oscura y papel envejecido, sin letras ni logos.",
+      "source": {
+        "name": "Google Research · ToolGrad: Efficient tool-use dataset generation with textual gradients",
+        "url": "https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/",
+        "publishedAt": "2026-09-10"
+      },
+      "relatedSources": [
+        {
+          "name": "Google Research · paper ToolGrad, ACL 2026",
+          "url": "https://research.google/pubs/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients-2/"
+        }
+      ],
+      "body": [
+        "Google Research explicó el 10 de septiembre ToolGrad, un método que sintetiza datos de entrenamiento de agentes construyendo primero una cadena válida de herramientas y después la petición del usuario. Los investigadores reportan 99,8 % de éxito al generar esas cadenas y mejoras en evaluaciones de llamada a funciones, sin que el resultado sea una garantía para todos los agentes."
+      ],
+      "keyPoints": [
+        "Google Research explicó el 10 de septiembre ToolGrad, un método que sintetiza datos de entrenamiento de agentes construyendo primero una cadena válida de herramientas y después la petición del usuario. Los investigadores reportan 99,8 % de éxito al generar esas cadenas y mejoras en evaluaciones de llamada a funciones, sin que el resultado sea una garantía para todos los agentes.",
+        "Construcción de cadenas de herramientas antes de generar consultas",
+        "La tasa de 99,8 % se refiere a generación de datos, no a resolver todas las tareas."
+      ],
+      "quickTakeaways": [
+        "Google Research explicó el 10 de septiembre ToolGrad, un método que sintetiza datos de entrenamiento de agentes construyendo primero una cadena válida de herramientas y después la petición del usuario. Los investigadores reportan 99,8 % de éxito al generar esas cadenas y mejoras en evaluaciones de llamada a funciones, sin que el resultado sea una garantía para todos los agentes.",
+        "La tasa de 99,8 % se refiere a generación de datos, no a resolver todas las tareas.",
+        "Probar contra herramientas reales no vistas durante entrenamiento.",
+        "La investigación se presentó en ACL 2026."
+      ],
+      "sections": [
+        {
+          "heading": "La inversión del problema tradicional de entrenamiento",
+          "kind": "report",
+          "paragraphs": [
+            "Los asistentes que emplean herramientas necesitan aprender no solo a redactar una respuesta, sino a seleccionar una API, pasar argumentos correctos, interpretar una devolución y decidir qué hacer después. Conseguir ejemplos suficientemente variados para entrenar esa conducta es difícil. Un enfoque tradicional genera primero una pregunta ficticia y obliga a otro agente a encontrar una secuencia de llamadas que la resuelva. Cuando la búsqueda falla, el dato sintetizado queda incompleto o no sirve para entrenamiento.",
+            "Google Research explicó el 10 de septiembre ToolGrad como alternativa: construir primero una cadena ejecutable de operaciones y redactar después una consulta de usuario coherente con ese resultado. Se trata de una explicación pública del trabajo presentado en ACL 2026, no de un lanzamiento de un asistente para consumidores. La inversión de orden busca reducir exploraciones fallidas y hacer verificable cada ejemplo de entrenamiento."
+          ]
+        },
+        {
+          "heading": "Cuatro componentes colaboran en la generación",
+          "kind": "technical",
+          "paragraphs": [
+            "La arquitectura comienza con un módulo que propone posibles APIs para ampliar una cadena. Distintos ejecutores prueban las candidatas y registran resultados. Un selector examina los informes y elige una operación compatible con la secuencia existente. Finalmente, un actualizador basado en lenguaje modifica la pregunta sintética y la respuesta para reflejar el flujo válido que se ha construido. El procedimiento se repite para producir trayectorias más largas.",
+            "Los autores utilizan la expresión gradientes textuales como analogía: en vez de derivadas numéricas de una función matemática, una crítica expresada en lenguaje orienta qué parte del flujo conviene cambiar. Eso permite trabajar con herramientas heterogéneas, aunque la corrección sigue dependiendo del entorno de prueba, de la configuración de las APIs y de la calidad de la selección. No cualquier cadena que ejecuta sin error resuelve necesariamente una necesidad humana importante."
+          ]
+        },
+        {
+          "heading": "Por qué la verificación previa ayuda a entrenar",
+          "kind": "report",
+          "paragraphs": [
+            "ToolGrad busca que el dato de entrenamiento incluya una instrucción plausible y una secuencia de herramientas cuya ejecución se ha comprobado. Si el flujo de llamadas no existe o arroja errores, el ejemplo puede enseñar al modelo a repetir comportamientos incorrectos. Generar primero acciones válidas facilita que la instrucción posterior se ajuste a lo que las herramientas realmente pueden hacer, en vez de exigir a un buscador que descubra a ciegas una trayectoria.",
+            "El enfoque también tiene riesgos de distribución. Una pregunta sintetizada después de la solución puede resultar artificial o favorecer casos fáciles de construir, aunque la cadena parezca sofisticada. Por eso, al evaluar un modelo entrenado con estos ejemplos debe usarse una colección independiente de herramientas y consultas humanas. Los investigadores emplearon justamente una evaluación fuera de distribución para estimar cuánto se generalizaba la habilidad adquirida."
+          ]
+        },
+        {
+          "heading": "Los resultados experimentales, con atribución",
+          "kind": "report",
+          "paragraphs": [
+            "Google informó que trabajó con la base de ToolBench, que contiene más de dieciséis mil APIs, y que su método obtuvo una tasa de éxito de generación del 99,8 % en la comparación presentada. Esta cifra se refiere a los ejemplos construidos por el procedimiento y a las condiciones de la prueba, no a que un agente entrenado con ToolGrad complete el 99,8 % de las tareas reales. Es una distinción central del resultado.",
+            "El equipo creó además ToolGrad-500 y ajustó modelos Gemma 3 de uno, cuatro y doce mil millones de parámetros. En Berkeley Function Calling Leaderboard, reportó 83,1 puntos para ToolGrad-12B, frente a cifras de modelos comerciales evaluados bajo el protocolo citado. La posición de cualquier modelo en un benchmark depende de versión, fecha y configuración; no debe presentarse esa puntuación como superioridad permanente ante todos los servicios."
+          ]
+        },
+        {
+          "heading": "Qué aporta a empresas que construyen agentes",
+          "kind": "report",
+          "paragraphs": [
+            "Una organización con sistemas internos debe decidir qué herramientas son aptas, quién puede ejecutarlas y qué resultado constituye una tarea correcta. La generación de datos de llamadas puede servir para desarrollar evaluaciones controladas sobre APIs propias, pero no basta con copiar un dataset construido para otro catálogo. Los identificadores, parámetros, permisos y errores posibles de los servicios empresariales requieren ejemplos representativos de ese contexto.",
+            "Para evaluar el enfoque, convendría separar conjuntos de entrenamiento y de pruebas, registrar versiones de APIs, medir tasa de ejecución válida y tasa de éxito del objetivo final. Una cadena con argumentos sintácticamente correctos puede modificar un registro equivocado o seleccionar información obsoleta. Por tanto, las comprobaciones deben incluir efectos de las acciones y no solo la ausencia de excepciones. Los sistemas conectados a datos sensibles también necesitan límites de autorización ajenos al modelo."
+          ]
+        },
+        {
+          "heading": "Lo que enseña sobre la carrera de modelos",
+          "kind": "practical",
+          "paragraphs": [
+            "ToolGrad desplaza la competencia desde coleccionar respuestas conversacionales hasta construir experiencias que enseñen a los modelos a coordinar herramientas. Los autores buscan aumentar la complejidad de los ejemplos sin aumentar proporcionalmente el coste de etiquetarlos. Su principal contribución está en el proceso de preparación de datos: los modelos que se ajustan con ellos pueden mejorar después, aunque no se garantiza el mismo salto para cada tamaño o familia.",
+            "Análisis Gazette: la fiabilidad de los agentes depende tanto del modelo como de cómo se generan y verifican los ejemplos de acciones. La publicación aporta una metodología concreta, un conjunto experimental y recursos de investigación. El siguiente paso es examinar replicaciones con APIs cambiantes, permisos reales y tareas de usuarios no preparadas por el mismo generador de datos. Eso permitirá distinguir mejora de benchmark de utilidad sostenida."
+          ]
+        }
+      ],
+      "executiveSummary": "Google Research explicó el 10 de septiembre ToolGrad, un método que sintetiza datos de entrenamiento de agentes construyendo primero una cadena válida de herramientas y después la petición del usuario. Los investigadores reportan 99,8 % de éxito al generar esas cadenas y mejoras en evaluaciones de llamada a funciones, sin que el resultado sea una garantía para todos los agentes. El alcance y las cifras requieren atribución a los autores y verificación independiente antes de extrapolarse.",
+      "finalSummary": "Análisis Gazette: la fiabilidad de los agentes depende tanto del modelo como de cómo se generan y verifican los ejemplos de acciones. La publicación aporta una metodología concreta, un conjunto experimental y recursos de investigación. El siguiente paso es examinar replicaciones con APIs cambiantes, permisos reales y tareas de usuarios no preparadas por el mismo generador de datos. Eso permitirá distinguir mejora de benchmark de utilidad sostenida.",
+      "analysis": "Análisis Gazette: el acontecimiento debe evaluarse por su evidencia, límites, estado de disponibilidad y resultados posteriores, no por extrapolación de un anuncio.",
+      "watch": "Resultados reproducibles, seguimiento institucional, condiciones de acceso y limitaciones reportadas.",
+      "technicalDetails": [
+        {
+          "label": "Publicación de Google Research",
+          "value": "10 septiembre 2026"
+        },
+        {
+          "label": "Método",
+          "value": "Construcción de cadenas de herramientas antes de generar consultas"
+        },
+        {
+          "label": "Generación",
+          "value": "99,8 % de éxito en comparación experimental del equipo"
+        },
+        {
+          "label": "Dataset",
+          "value": "ToolGrad-500"
+        },
+        {
+          "label": "Evaluación",
+          "value": "83,1 BFCL en ToolGrad-12B, según autores"
+        }
+      ],
+      "availability": {
+        "status": "Framework y recursos de investigación; no es un servicio general de agentes",
+        "platforms": [
+          "Fuente original y recursos documentados"
+        ],
+        "requirements": [],
+        "notes": [
+          "El anuncio no equivale a garantía de disponibilidad universal."
+        ]
+      },
+      "limitations": [
+        "La tasa de 99,8 % se refiere a generación de datos, no a resolver todas las tareas.",
+        "Los benchmarks de llamada a funciones no garantizan seguridad de acciones.",
+        "Las APIs externas pueden cambiar y dejar obsoletos los ejemplos.",
+        "Los resultados proceden de investigadores involucrados en el trabajo."
+      ],
+      "practicalAdvice": [
+        "Probar contra herramientas reales no vistas durante entrenamiento.",
+        "Separar ejecución de APIs de la corrección del objetivo del usuario.",
+        "Mantener permisos mínimos y auditoría de acciones."
+      ],
+      "usefulFacts": [
+        "La investigación se presentó en ACL 2026.",
+        "ToolGrad usa un ciclo de proponer, ejecutar, seleccionar y actualizar.",
+        "El equipo utilizó ToolBench como fuente de APIs."
+      ]
     },
     {
       "id": "gemini-windows",
@@ -19086,7 +19550,7 @@
     {
       "date": "2026-09-10",
       "status": "partial",
-      "verifiedArticles": 6
+      "verifiedArticles": 7
     },
     {
       "date": "2026-09-11",
@@ -19121,7 +19585,7 @@
     {
       "date": "2026-09-17",
       "status": "partial",
-      "verifiedArticles": 1
+      "verifiedArticles": 2
     },
     {
       "date": "2026-09-18",
@@ -19146,7 +19610,7 @@
     {
       "date": "2026-09-22",
       "status": "partial",
-      "verifiedArticles": 1
+      "verifiedArticles": 2
     },
     {
       "date": "2026-09-23",
