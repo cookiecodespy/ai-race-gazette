@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T03:44:27.641Z",
+  "updatedAt": "2026-10-11T03:55:37.697Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -21178,8 +21178,8 @@
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
+      "coveredAt": "2026-10-11",
       "source": {
         "name": "OpenAI · Path to Astra",
         "url": "https://openai.com/index/path-to-astra/",
@@ -21195,7 +21195,103 @@
         "El acceso a capacidades avanzadas incorpora restricciones adicionales."
       ],
       "analysis": "La carrera frontier incluye también quién puede acceder a cada capacidad y bajo qué controles.",
-      "watch": "Cómo evolucionan los controles de acceso y qué capacidades llegan a desarrolladores comunes."
+      "watch": "Cómo evolucionan los controles de acceso y qué capacidades llegan a desarrolladores comunes.",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "OpenAI afirmó el 1 de septiembre que Astra superó su umbral interno Critical de capacidad de ciberseguridad.",
+        "El informe distingue riesgo de abuso por personas del riesgo de acciones no autorizadas del propio agente.",
+        "La compañía describió refuerzo de rechazos, clasificadores, monitoreo y aislamiento tras evaluaciones de seguridad.",
+        "El anuncio era una explicación previa al lanzamiento; no significa disponibilidad pública inmediata de todas las capacidades."
+      ],
+      "executiveSummary": "OpenAI publicó su evaluación de riesgos y las condiciones de seguridad que consideraba necesarias antes de poner Astra a disposición de usuarios. La compañía clasificó las capacidades cibernéticas del sistema en su nivel interno Critical y anunció controles adicionales y acceso más limitado a funciones sensibles. Esta pieza trata la gobernanza y preparación del despliegue, no el lanzamiento comercial posterior del modelo.",
+      "sections": [
+        {
+          "heading": "Un anuncio de seguridad anterior al lanzamiento",
+          "kind": "report",
+          "paragraphs": [
+            "El 1 de septiembre de 2026, OpenAI difundió una evaluación sobre la preparación de Astra y declaró que, bajo su marco de riesgos, el modelo había alcanzado el umbral crítico en capacidades de ciberseguridad. No fue la misma noticia que el lanzamiento posterior de GPT-6 Astra: el documento describe criterios, experimentos y medidas de protección previos a su distribución. Esa separación temporal evita atribuir al público capacidades que, en ese momento, estaban siendo evaluadas y sujetas a reglas de acceso diferenciadas.",
+            "La clasificación Critical es una determinación hecha por el proveedor siguiendo su propio Preparedness Framework. En el marco explicado, se relaciona con la posibilidad de identificar y aprovechar fallos desconocidos en sistemas protegidos o realizar secuencias de acciones peligrosas con escasa guía humana. No equivale a que todo usuario tenga esa capacidad mediante una conversación normal. Herramientas, permisos y configuración influyen en lo que un modelo puede intentar y ejecutar, por lo que conviene distinguir evaluación de laboratorio, entorno permitido y producto realmente disponible."
+          ]
+        },
+        {
+          "heading": "Qué evaluaciones describió OpenAI",
+          "kind": "technical",
+          "paragraphs": [
+            "OpenAI indica que combinó pruebas automatizadas y evaluaciones dirigidas por especialistas. El informe menciona ejercicios con sistemas endurecidos, entornos de software y comparaciones con generaciones anteriores, así como resultados en bancos de pruebas internos. Esas pruebas buscan medir capacidades técnicas en escenarios definidos, no producir una tasa general de éxito frente a toda infraestructura. Las condiciones incluyen acceso a herramientas especializadas y criterios experimentales que pueden diferir de los límites aplicados a usuarios ordinarios.",
+            "La compañía también explicó por qué algunas evaluaciones públicas pueden resultar insuficientes: los modelos pueden haber encontrado ejemplos similares durante entrenamiento o desarrollo. Por ello creó escenarios internos con casos recientes y describió la detección de problemas desconocidos comunicados a sus responsables. Es importante no reproducir aquí procedimientos técnicos que podrían facilitar abuso. Periodísticamente, el dato relevante es que el proveedor considera que las capacidades requieren protección reforzada y que planea divulgar más detalles de pruebas en su documentación de lanzamiento."
+          ]
+        },
+        {
+          "heading": "Dos rutas de riesgo que exigen protecciones distintas",
+          "kind": "analysis",
+          "paragraphs": [
+            "La primera ruta es un usuario malicioso que intenta orientar al modelo hacia un uso peligroso. En ese caso, controles de solicitud, identidad, límites de uso, restricciones de herramientas y detección de patrones pueden reducir exposición. La segunda es más difícil de simplificar: un agente podría ejecutar pasos no autorizados aun cuando la tarea inicial fuera legítima, por error, confusión o comportamientos inesperados. Aquí hacen falta límites técnicos independientes de la capacidad del modelo para interpretar y obedecer instrucciones.",
+            "OpenAI defendió una estrategia de defensas por capas: entrenamiento de rechazo para peticiones no permitidas, controles de sistema, monitoreo de actividad y contención. Ninguna capa individual debe presentarse como garantía absoluta. Un clasificador puede errar, una prueba de alineación cubre únicamente situaciones evaluadas y un permiso mal configurado puede ampliar el daño potencial. La relevancia de esta noticia para la carrera de IA consiste en que la mejora de capacidad obliga a replantear quién recibe acceso y qué mecanismos intervienen cuando un sistema actúa con herramientas."
+          ]
+        },
+        {
+          "heading": "Cambios de desarrollo y medidas operativas",
+          "kind": "context",
+          "paragraphs": [
+            "Según la publicación, el proveedor retrasó partes del desarrollo y despliegue mientras fortalecía protecciones. También describe pausas y reanudación de determinados trabajos de entrenamiento después de adoptar requisitos adicionales de seguridad e infraestructura. Esas decisiones son hitos de operación interna reportados por la compañía; no permiten conocer de forma independiente cada cambio ni concluir que no existirá riesgo residual. El informe deja constancia de restricciones y de la intención de volver a revisar el sistema a medida que se recolectara más evidencia.",
+            "En un entorno empresarial, el paralelismo es claro: la autorización de una herramienta potente debería depender del estado de controles verificables, no solo de la fecha de un calendario de entregas. Se necesita inventario de herramientas, políticas de red, identidades de servicio, escalamiento de incidentes y pruebas de recuperación. Un equipo puede usar modelos avanzados para defensa legítima, pero debe limitar el alcance de cualquier acción que modifique activos o comunicaciones reales y documentar cuándo requiere intervención humana."
+          ]
+        },
+        {
+          "heading": "Acceso restringido y comunicación de incertidumbre",
+          "kind": "report",
+          "paragraphs": [
+            "La pieza anticipó que las capacidades cibernéticas más avanzadas tendrían disponibilidad más limitada que el uso general. OpenAI describió acceso inicial para evaluadores y una expansión posterior de trabajos defensivos mediante Daybreak Blue. Son planes declarados en el momento del informe, no una lista permanente de quién puede acceder hoy. Tampoco constituyen una autorización global para investigar sistemas de terceros sin permiso. La disponibilidad final debe verificarse en la documentación vigente del producto y en las condiciones de los programas correspondientes.",
+            "OpenAI divulgó cifras de pruebas de resistencia y comparaciones de tasas de rechazo; esas métricas se entienden dentro de los conjuntos de evaluación utilizados. Una tasa elevada de rechazo en un banco de pruebas no asegura que nunca ocurra un caso de abuso ni que el sistema atienda sin errores toda solicitud defensiva legítima. De igual manera, una prueba de capacidad sobre entornos controlados no equivale a desempeño real universal. El análisis responsable conserva ambos aspectos: aumento de capacidad según el proveedor y necesidad de evaluar la eficacia de controles independientes."
+          ]
+        },
+        {
+          "heading": "Qué deberían adoptar quienes construyen agentes",
+          "kind": "practical",
+          "paragraphs": [
+            "La principal lección de ingeniería es no convertir una autorización verbal al modelo en permiso irreversible de infraestructura. Un agente que analiza un repositorio puede funcionar con lectura y sin credenciales de producción; uno que ejecuta pruebas necesita un entorno aislado y registros; uno que propone cambios requiere revisión y respaldo. Cuando el sistema debe actuar sin intervención constante, conviene diseñar reglas sobre destinatarios, efectos máximos y recuperación verificable. Esos límites deben aplicarse por la herramienta o el sistema, no por la buena voluntad textual del agente.",
+            "Para interpretar el avance de OpenAI, el Gazette debería seguir publicaciones posteriores sobre pruebas de seguridad, modelos de acceso, correcciones y restricciones efectivamente habilitadas. También interesan hallazgos externos y revisiones de incidentes cuando existan. El documento de septiembre señala que la seguridad operacional se vuelve condición de lanzamiento de modelos capaces, pero no basta por sí solo para certificar que todos los riesgos están resueltos. El reporte corresponde a una evaluación y un plan de despliegue, claramente separados del anuncio comercial posterior."
+          ]
+        }
+      ],
+      "finalSummary": "El informe previo a Astra coloca la seguridad y el control de acceso dentro de las decisiones centrales de lanzamiento. Las capacidades y defensas comunicadas deben leerse como evaluaciones del proveedor con condiciones técnicas explícitas; la autorización y el comportamiento real necesitan comprobación continua.",
+      "technicalDetails": [
+        {
+          "label": "Fecha del informe",
+          "value": "1 septiembre 2026"
+        },
+        {
+          "label": "Clasificación",
+          "value": "Critical bajo Preparedness Framework de OpenAI"
+        },
+        {
+          "label": "Acceso avanzado previsto",
+          "value": "Evaluadores iniciales y ampliación defensiva mediante Daybreak Blue"
+        },
+        {
+          "label": "Defensas descritas",
+          "value": "Rechazos, clasificadores, monitoreo y controles de infraestructura"
+        }
+      ],
+      "limitations": [
+        "La clasificación y las cifras de evaluación proceden de OpenAI.",
+        "Las condiciones de laboratorio no son equivalentes al acceso público.",
+        "Las protecciones descritas no eliminan por definición todo riesgo residual.",
+        "El documento es previo al lanzamiento; la disponibilidad posterior debe confirmarse aparte."
+      ],
+      "practicalAdvice": [
+        "Separar capacidades de lectura, prueba, escritura y despliegue.",
+        "Definir permisos técnicos externos al modelo y pruebas en entornos aislados.",
+        "Comprobar controles, alertas y reversión antes de habilitar autonomía.",
+        "Actualizar estado de disponibilidad desde documentación posterior sin alterar la fecha del anuncio."
+      ],
+      "usefulFacts": [
+        "El comunicado original es anterior al lanzamiento comercial de Astra.",
+        "El marco del proveedor contempla riesgo de abuso y de acciones autónomas no autorizadas.",
+        "OpenAI anunció salvaguardas en varias capas, no una única barrera."
+      ],
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de periódico antiguo de un laboratorio de autómatas detrás de varias puertas de seguridad, guardias humanos supervisando herramientas y permisos, metáfora tecnológica sin texto ni logotipos."
     },
     {
       "id": "muse-voice-transcribe",
@@ -21894,7 +21990,7 @@
       "id": "claude-mythos-5-1",
       "eventKey": "claude-mythos-5-1",
       "date": "2026-09-01",
-      "coveredAt": "2026-10-07",
+      "coveredAt": "2026-10-11",
       "company": "Anthropic",
       "product": "Claude Mythos 5.1",
       "title": "Mythos 5.1 llega mediante programas de acceso de confianza",
@@ -21911,7 +22007,7 @@
         "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
         "publishedAt": "2026-09-01"
       },
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
       "body": [
         "Mythos 5.1 fue anunciado junto a Fable 5.1 el 1 de septiembre. Anthropic describe ambos como el mismo modelo con niveles diferentes de salvaguardas.",
         "Mythos se ofrece mediante programas de acceso de confianza para ciberseguridad y ciencias de la vida; no es un lanzamiento general.",
@@ -21923,13 +22019,110 @@
       ],
       "analysis": "La disponibilidad es parte del producto. El nombre de un modelo por sí solo no indica si un equipo puede utilizarlo.",
       "watch": "Requisitos y evolución de los programas de acceso.",
-      "announcedAt": "2026-09-01"
+      "announcedAt": "2026-09-01",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "Mythos 5.1 comparte el modelo subyacente con Fable 5.1; la diferencia principal está en las salvaguardas y la elegibilidad.",
+        "La variante se distribuye mediante programas de verificación para ciberdefensa y ciencias de la vida, no como acceso público irrestricto.",
+        "Anthropic publica pruebas experimentales sobre diseño de proteínas y optimización de modelos; son resultados delimitados, no validaciones clínicas.",
+        "La propia empresa reconoce límites en evaluaciones de agentes prolongados, acciones no autorizadas y sistemas multiagente."
+      ],
+      "executiveSummary": "Claude Mythos 5.1 es la modalidad de acceso verificado del modelo anunciado por Anthropic junto a Fable 5.1. La noticia relevante no es un segundo núcleo de IA, sino la separación entre una variante ampliamente disponible y otra orientada a actividades científicas y de defensa que requieren salvaguardas específicas. Sus demostraciones científicas y sus evaluaciones de seguridad necesitan atribución y límites explícitos.",
+      "sections": [
+        {
+          "heading": "Mismo modelo base, permisos diferentes",
+          "kind": "report",
+          "paragraphs": [
+            "Cuando Anthropic anunció Fable 5.1 y Mythos 5.1, aclaró que ambos comparten el modelo subyacente. La distinción se refiere a los mecanismos de protección y las categorías de usuarios que pueden acceder a determinadas capacidades. Fable busca ser la opción de disponibilidad general para trabajo profesional, mientras Mythos habilita un conjunto distinto de actividades para participantes verificados. Esto evita una interpretación frecuente de los lanzamientos: dos nombres de producto no significan necesariamente dos arquitecturas entrenadas de manera independiente.",
+            "Para un investigador o una empresa, lo importante es conocer qué modalidad puede solicitar, bajo qué reglas y para cuáles proyectos. La existencia de un programa no constituye aceptación automática, y la participación puede quedar limitada por jurisdicción, credenciales, sector o requisitos técnicos. Una organización que planifique trabajo científico sensible debe consultar las condiciones actuales directamente con el proveedor y diseñar el proyecto alrededor de las restricciones realmente confirmadas, en vez de asumir que el modelo anunciado estará disponible mediante una suscripción común."
+          ]
+        },
+        {
+          "heading": "Acceso para ciberdefensa y ciencias de la vida",
+          "kind": "context",
+          "paragraphs": [
+            "El anuncio distingue dos vías de acceso confiable. El Cyber Verification Program se orienta a profesionales de ciberseguridad que necesitan tareas defensivas especializadas. La expansión hacia modelos de clase Mythos se describe como una evolución del programa, no como una autorización universal a cualquier usuario desde el primer día. El Life Sciences Verification Program, desarrollado con colaboración gubernamental estadounidense según Anthropic, busca habilitar investigación y desarrollo de ciencias de la vida para especialistas sujetos a evaluación. Algunas cohortes iniciales ya habían sido incorporadas según la empresa.",
+            "Estos programas responden a un dilema: limitar demasiado las capacidades avanzadas puede dificultar investigación legítima, pero habilitarlas sin restricciones puede aumentar riesgos. La solución propuesta por Anthropic utiliza controles diferenciados por tarea y perfil. Esa diferenciación también significa que las pruebas realizadas con Mythos no describen exactamente lo que un usuario normal puede reproducir con Fable. Cualquier comparación de modelos debe registrar si se probó una configuración de producción con salvaguardas activas, una modalidad verificada o un entorno de laboratorio."
+          ]
+        },
+        {
+          "heading": "Experimentos sobre proteínas y su interpretación",
+          "kind": "technical",
+          "paragraphs": [
+            "Anthropic presenta experimentos de diseño de proteínas en los que Mythos 5.1 trabajó con herramientas abiertas de predicción y diseño molecular. Algunos resultados se enviaron a entidades externas para comprobar unión experimental a objetivos concretos. En la publicación se mencionan pruebas con varios blancos moleculares, un porcentaje elevado de diseños viables y comparaciones de afinidad con competiciones previas. Estas cifras proceden de tareas seleccionadas y no significan que el sistema haya descubierto un medicamento ni que su uso resulte seguro para personas.",
+            "El diseño de un candidato molecular es solo una etapa temprana. Después se requiere evaluar especificidad, toxicidad, estabilidad, fabricación y comportamiento en sistemas biológicos. Incluso una unión confirmada en laboratorio no demuestra eficacia terapéutica. El interés del anuncio está en combinar búsqueda computacional y verificación experimental de resultados delimitados. Una cobertura responsable debe mantener visibles las condiciones de la prueba y distinguir su éxito local de afirmaciones sobre el proceso completo de investigación farmacéutica."
+          ]
+        },
+        {
+          "heading": "Optimización de cómputo y investigación científica",
+          "kind": "technical",
+          "paragraphs": [
+            "Otra prueba comunicada trata sobre mejorar el rendimiento de modelos existentes que procesan datos biológicos. Anthropic indica que Mythos diseñó cambios en kernels y reutilización de resultados intermedios que aceleraron ciertas cargas sin modificar sus salidas. Para un laboratorio, reducir tiempo de GPU puede facilitar más iteraciones dentro de un presupuesto limitado. Pero la mejora relativa depende de hardware, tamaños de entrada, memoria y patrones de ejecución. No corresponde trasladar el número máximo publicado a todo experimento de genómica ni a cualquier arquitectura.",
+            "La documentación también describe trabajo de cartografía planetaria apoyado por herramientas de IA, aunque en ese caso la publicación atribuye el desarrollo a Fable 5.1. Separar los ejemplos evita asignar indebidamente todos los logros de un comunicado conjunto a Mythos. La tecnología necesita evaluación propia por tarea. En ciencia, una buena práctica es conservar código, datos, semillas, parámetros, mediciones de error y validación externa para que otros puedan reproducir lo que una presentación general resume."
+          ]
+        },
+        {
+          "heading": "Riesgos de autonomía y salvaguardas",
+          "kind": "analysis",
+          "paragraphs": [
+            "Anthropic señala evaluaciones de comportamiento, seguridad de agentes y prompt injection, además de controles para limitar el uso indebido. También reconoce que su sistema de evaluación no cubre con igual profundidad todos los entornos de contexto largo, múltiples agentes y tareas imposibles. El propio anuncio advierte que todavía pueden existir formas de eludir controles o comportamientos no deseados. Esa admisión es especialmente relevante para un modelo que puede ejecutar tareas técnicas con herramientas y acceso a información sensible.",
+            "Un laboratorio no debe interpretar una verificación de acceso como autorización para prescindir de controles de proyecto. Los agentes necesitan identidades definidas, herramientas autorizadas, separación de entornos, revisión de cambios y mecanismos de detención. En un flujo científico, las etapas irreversibles o sensibles deben conservar supervisión proporcional al riesgo. La seguridad de una plataforma incluye tanto impedir mal uso deliberado como contener errores imprevistos durante actividades supuestamente legítimas. Ningún benchmark presentado demuestra infalibilidad para todos los escenarios."
+          ]
+        },
+        {
+          "heading": "Lo que cambia para organizaciones y usuarios",
+          "kind": "practical",
+          "paragraphs": [
+            "Para decidir si postular a un programa verificado, el primer paso es identificar una necesidad que no pueda cubrirse con una modalidad general. Después deben prepararse credenciales de organización, descripción del proyecto, procedimientos de revisión y políticas internas sobre datos. Una prueba de defensa legítima debe delimitar sistemas propios o autorizados y conservar registros de aprobación. En investigación biomédica se requieren además autorizaciones institucionales cuando corresponda. La utilidad de una capacidad avanzada depende de integrar estas reglas al trabajo cotidiano.",
+            "El seguimiento editorial de Mythos debería concentrarse en ampliaciones comprobadas de elegibilidad, publicaciones metodológicas, validaciones científicas externas y análisis de seguridad. No corresponde etiquetar el acceso restringido como disponibilidad pública ni considerar una demostración científica el equivalente a un producto clínico. La noticia es importante por la nueva distinción entre capacidad técnica y gobernanza del acceso, una separación que puede convertirse en parte central de la distribución de modelos avanzados."
+          ]
+        }
+      ],
+      "finalSummary": "Mythos 5.1 ejemplifica un modelo de distribución por niveles de confianza: capacidades avanzadas para usuarios verificados con salvaguardas diferenciadas. Su investigación inicial es relevante, pero la evidencia disponible no autoriza concluir que se haya resuelto el desarrollo clínico ni la seguridad de agentes autónomos.",
+      "technicalDetails": [
+        {
+          "label": "Relación con Fable",
+          "value": "Mismo modelo subyacente con salvaguardas y elegibilidad diferenciadas"
+        },
+        {
+          "label": "Ciberseguridad",
+          "value": "Acceso mediante Cyber Verification Program según las condiciones del proveedor"
+        },
+        {
+          "label": "Ciencias de la vida",
+          "value": "Acceso por programa de verificación específico"
+        },
+        {
+          "label": "General availability",
+          "value": "No; acceso limitado a organizaciones o personas aprobadas"
+        }
+      ],
+      "limitations": [
+        "Acceso restringido y requisitos de elegibilidad sujetos a cambios.",
+        "Las pruebas de proteínas no demuestran eficacia clínica.",
+        "Los resultados de optimización dependen de las cargas y el hardware evaluados.",
+        "La evaluación de comportamiento multiagente sigue siendo incompleta."
+      ],
+      "practicalAdvice": [
+        "Comprobar vía oficial de verificación y términos antes de diseñar un despliegue.",
+        "Mantener validación científica externa y documentación experimental reproducible.",
+        "No confundir permiso de acceso con ausencia de riesgos operativos.",
+        "Comparar configuraciones con las mismas salvaguardas y herramientas."
+      ],
+      "usefulFacts": [
+        "Fable 5.1 y Mythos 5.1 son la misma base de modelo.",
+        "La noticia distingue disponibilidad de capacidades y capacidad propiamente dicha.",
+        "Las evaluaciones científicas citadas son tareas experimentales acotadas."
+      ],
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia de un laboratorio y un centro de defensa divididos por puertas de acceso verificado; supervisores examinan credenciales y autómatas usan instrumentos abstractos, sin representaciones biológicas sensibles ni texto.",
+      "verificationNote": "La página primaria muestra mes y año (septiembre de 2026), no día exacto en su encabezado; la fecha histórica de 1 de septiembre del archivo requiere confirmar el día en la segunda auditoría. Se conserva id/eventKey."
     },
     {
       "id": "claude-fable-5-1",
       "eventKey": "claude-fable-5-1",
       "date": "2026-09-01",
-      "coveredAt": "2026-10-07",
+      "coveredAt": "2026-10-11",
       "company": "Anthropic",
       "product": "Claude Fable 5.1",
       "title": "Claude Fable 5.1 abre septiembre con foco en código y trabajo profesional",
@@ -21946,7 +22139,7 @@
         "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
         "publishedAt": "2026-09-01"
       },
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
       "body": [
         "El 1 de septiembre, Anthropic anunció Fable 5.1 y Mythos 5.1. Fable es la variante de disponibilidad general, orientada a programación y trabajo profesional.",
         "El proveedor afirma haber mejorado capacidad, costo y salvaguardas. Esta cobertura no convierte sus evaluaciones internas en una comparación independiente.",
@@ -21958,7 +22151,104 @@
       ],
       "analysis": "La competencia se mide también en calidad por tarea y facilidad de integración. Conviene comparar con el flujo de trabajo actual antes de migrar.",
       "watch": "Pruebas propias y condiciones de acceso de la plataforma elegida.",
-      "announcedAt": "2026-09-01"
+      "announcedAt": "2026-09-01",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "Claude Fable 5.1 es la variante de disponibilidad general; Mythos 5.1 comparte el modelo base, pero usa un régimen de acceso diferente.",
+        "Anthropic anuncia una rebaja del 75 % en las lecturas de caché hasta US$0,25 por millón de tokens, no una rebaja uniforme de todas las tarifas.",
+        "Los precios indicados para Fable 5.1 son US$10 por millón de tokens de entrada y US$50 por millón de salida, antes de particularidades comerciales.",
+        "Las mejoras de programación y razonamiento son resultados de evaluaciones publicadas por la empresa, no garantías individuales de productividad."
+      ],
+      "executiveSummary": "Anthropic lanzó la actualización Claude Fable 5.1 para programación, investigación asistida y trabajo profesional de largo horizonte. La diferencia comercial más clara es el acceso general, frente a la variante Mythos restringida, junto a un precio reducido para las lecturas de contexto previamente almacenado. Los resultados de benchmarks requieren atribución al proveedor y pruebas en tareas reales antes de extrapolar ventajas.",
+      "sections": [
+        {
+          "heading": "Qué cambia respecto de Fable 5",
+          "kind": "report",
+          "paragraphs": [
+            "El anuncio presenta Fable 5.1 como una iteración destinada a desarrollar software y resolver problemas profesionales que requieren varios pasos. Para un equipo que ya usa un modelo anterior, la pregunta principal no es si la nueva versión obtiene la mayor cifra en una tabla, sino si mejora las tareas que le cuestan tiempo: rastrear errores, entender dependencias, proponer soluciones con pruebas y mantener una explicación coherente durante sesiones largas. Esas actividades mezclan razonamiento, uso de herramientas, lectura de fuentes y controles propios del repositorio. Ninguna cifra aislada refleja completamente esa combinación.",
+            "Anthropic identifica también cambios en las salvaguardas y en el tratamiento empresarial de datos. La misma base de modelo se distribuye como Fable para uso general y como Mythos con controles y elegibilidad distintos. Esto no permite intercambiar ambos nombres como si fueran dos saltos de inteligencia independientes. En una comparación editorial conviene registrar por separado el modelo subyacente, el esfuerzo de inferencia, las herramientas, las limitaciones de la política de uso y las condiciones de acceso; esos factores explican diferencias de experiencia incluso cuando el núcleo del modelo coincide."
+          ]
+        },
+        {
+          "heading": "Precio por token, caché y coste real",
+          "kind": "technical",
+          "paragraphs": [
+            "El componente económico del lanzamiento se centra en la lectura de caché. Cuando una conversación o un agente vuelve a utilizar un contexto que ya se procesó, ese contenido puede facturarse de otra manera que los tokens nuevos. Anthropic sitúa las lecturas en US$0,25 por millón de tokens, una reducción del 75 % sobre el precio anterior de ese componente. Mantiene como referencia US$10 por millón de entrada y US$50 por millón de salida para el modelo. Los importes publicados corresponden al esquema de consumo por tokens y deben verificarse por proveedor de nube, plan y modalidad de servicio.",
+            "La empresa estima que el coste de cargas habituales puede descender alrededor del 25 %, y que los flujos particularmente agentivos, ricos en herramientas y contexto reutilizado, pueden ahorrar más, con ejemplos de hasta aproximadamente 45 %. No significa que todas las empresas recibirán ese porcentaje. Un equipo cuyo uso casi no emplea caché, o que genera muchas salidas largas, tendrá otra composición de gasto. La comparación responsable mantiene las mismas tareas, los mismos datos, los mismos requisitos de calidad y mide coste por solución aceptada, no solo coste nominal de un millón de tokens."
+          ]
+        },
+        {
+          "heading": "Benchmarks y por qué no son una clasificación universal",
+          "kind": "analysis",
+          "paragraphs": [
+            "Anthropic publica resultados en tareas de terminal, razonamiento, programación y automatización. Cada benchmark define su propio universo: un problema de consola, una evaluación de conocimiento o una tarea con interfaz gráfica son actividades diferentes. Además, las tablas se ven afectadas por el esfuerzo configurado, el conjunto de herramientas, el presupuesto permitido y las salvaguardas que intervienen. Las pruebas de un proveedor pueden estar bien documentadas sin ser una repetición independiente. Por esa razón, el Gazette las atribuye a Anthropic y evita convertirlas en una promesa de liderazgo absoluto para cualquier proyecto.",
+            "Una mejora en una tarea de terminal puede reducir retrabajo, pero también incentivar a otorgar permisos amplios a un agente. La evaluación debería incluir si las modificaciones pasan pruebas, si respetan las restricciones de seguridad, si generan dependencias indeseadas y si una persona comprende el resultado antes de integrarlo. La velocidad aparente importa menos si el equipo acaba invirtiendo horas para revisar código defectuoso. En trabajos prolongados, también debe medirse la capacidad de retomar una ejecución, dejar artefactos auditables y explicar incertidumbres cuando falta información."
+          ]
+        },
+        {
+          "heading": "Capacidades que no implican permisos ilimitados",
+          "kind": "context",
+          "paragraphs": [
+            "El proveedor comunica que su nueva política permite usar Fable 5.1 en más tareas defensivas, como identificar vulnerabilidades de software, mientras otras operaciones de uso dual continúan limitadas o redirigidas. Esto responde a un problema práctico: una política excesivamente amplia puede bloquear investigaciones de seguridad legítimas, pero una política insuficiente puede facilitar abuso. Anthropic describe una disminución de intervenciones incorrectas en las sesiones de Claude Code al ajustar sus protecciones. Esa cifra representa sus pruebas y comportamiento esperado, no una garantía de que todo falso positivo haya desaparecido.",
+            "Los mecanismos de protección actúan junto a permisos de herramientas, controles de infraestructura y revisión de cambios. Una organización que permita a un agente leer un repositorio no ha autorizado necesariamente desplegar una aplicación, extraer secretos o cambiar configuraciones de producción. Los equipos deben separar esas facultades. Tampoco se debe confundir el nombre Mythos con una variante que cualquiera pueda invocar en la API: Anthropic reserva ese régimen para personas y entidades evaluadas bajo programas específicos."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, integración y límites",
+          "kind": "report",
+          "paragraphs": [
+            "El lanzamiento incluye acceso a través de Claude y de su plataforma para desarrolladores, además de ofertas de proveedores de nube citados por Anthropic. El identificador descrito para la API es claude-fable-5-1. La disponibilidad anunciada no demuestra que cada cuenta tenga inmediatamente todas las opciones ni condiciones empresariales idénticas. Pueden existir permisos, límites de uso, requisitos de producto y diferencias por región o contrato. Es importante consultar la documentación comercial vigente antes de decidir el reemplazo de un modelo en una aplicación crítica.",
+            "El documento del anuncio también habla de investigaciones científicas y de distintas medidas empresariales de privacidad. Estos apartados no deben transformarse en promesas sobre la capacidad de Fable 5.1 para realizar descubrimientos científicos autónomos o sobre la ausencia total de almacenamiento de información en cualquier entorno. Las demostraciones seleccionadas pueden ayudar a comprender el potencial, pero cada uso tiene supuestos particulares. En el caso de Enterprise Frontier Safeguards, el despliegue está anunciado por etapas y merece un reportaje separado, ya que trata arquitectura de monitoreo y custodia de datos."
+          ]
+        },
+        {
+          "heading": "Cómo evaluar una migración profesional",
+          "kind": "practical",
+          "paragraphs": [
+            "Para una prueba seria, conviene construir un conjunto de 20 a 50 tareas representativas con criterios objetivos. En programación se pueden usar incidencias ya resueltas, cambios con pruebas automáticas y revisiones de seguridad, evitando compartir secretos innecesarios. En análisis documental importan citas comprobables, contradicciones detectadas y errores de interpretación. Cada resultado debe evaluarse sin conocer qué modelo lo generó cuando sea posible. También conviene repetir tareas que suelen fallar en sesiones largas, como mantener restricciones y recuperar trabajo tras una interrupción.",
+            "El resultado útil de esa evaluación es un mapa de decisiones: qué tareas migrar, en qué modalidad de esfuerzo, qué autorizaciones conceder y qué controles conservar. Una migración total por entusiasmo ante el lanzamiento puede aumentar coste operacional, aunque baje el precio por lectura de caché. Para el seguimiento del Gazette importan pruebas reproducibles de clientes, cambios de disponibilidad, precios efectivos, fallos reconocidos y nuevas revisiones de seguridad. La noticia registra un avance anunciado con parámetros comerciales concretos; su valor real dependerá de cómo se comporte en operaciones auditables."
+          ]
+        }
+      ],
+      "finalSummary": "Fable 5.1 combina disponibilidad general, nuevas evaluaciones de capacidad y un cambio importante de precio para el contexto reutilizado. La decisión de adoptarlo requiere medir calidad, latencia, permisos, coste real y límites de seguridad en tareas propias.",
+      "technicalDetails": [
+        {
+          "label": "Modelo API",
+          "value": "claude-fable-5-1"
+        },
+        {
+          "label": "Entrada estándar",
+          "value": "US$10 por millón de tokens"
+        },
+        {
+          "label": "Salida estándar",
+          "value": "US$50 por millón de tokens"
+        },
+        {
+          "label": "Lectura de caché",
+          "value": "US$0,25 por millón de tokens; reducción del 75 % anunciada"
+        }
+      ],
+      "limitations": [
+        "Los benchmarks y estimaciones de ahorro pertenecen al proveedor.",
+        "La disminución de coste depende de cuánto contexto reutiliza realmente cada carga.",
+        "No todas las tareas de seguridad quedan habilitadas por el ajuste de salvaguardas.",
+        "El comunicado no muestra un estudio independiente del beneficio en producción de todas las empresas."
+      ],
+      "practicalAdvice": [
+        "Medir coste por tarea validada y no solo por token.",
+        "Probar un conjunto de tareas reproducibles con los permisos mínimos.",
+        "Distinguir disponibilidad general de acceso Mythos verificado.",
+        "Consultar la documentación de despliegue y precio específica del proveedor elegido."
+      ],
+      "usefulFacts": [
+        "Anthropic dice que Fable y Mythos 5.1 comparten base de modelo.",
+        "El precio de lectura de caché es distinto del de entrada nueva.",
+        "El esfuerzo de inferencia altera tanto coste como resultados en benchmarks."
+      ],
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial antiguo de un taller de programadores con autómatas que analizan planos de software, revisiones humanas y libros de contexto reutilizado, sepia, sin logotipos ni texto.",
+      "verificationNote": "La página primaria muestra mes y año (septiembre de 2026), no día exacto en su encabezado; la fecha histórica de 1 de septiembre del archivo requiere confirmar el día en la segunda auditoría. Se conserva id/eventKey."
     },
     {
       "id": "anthropic-enterprise-frontier-safeguards",
@@ -21976,8 +22266,8 @@
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
+      "coveredAt": "2026-10-11",
       "source": {
         "name": "Anthropic · anuncio oficial",
         "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
@@ -21993,7 +22283,103 @@
         "Despliegue planteado por fases."
       ],
       "analysis": "La seguridad pasa a formar parte explícita del producto empresarial y puede pesar tanto como la capacidad del modelo en decisiones de adopción.",
-      "watch": "Disponibilidad efectiva, opciones de despliegue y evidencia independiente de los controles."
+      "watch": "Disponibilidad efectiva, opciones de despliegue y evidencia independiente de los controles.",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "Enterprise Frontier Safeguards (EFS) busca combinar monitoreo de abuso con custodia empresarial de los datos en infraestructura del propio cliente.",
+        "Anthropic anuncia almacenamiento de actividad en la cuenta de nube del cliente y revisión humana a cargo de sus equipos, sin requerir revisión humana por Anthropic.",
+        "El desarrollo recibió colaboración de más de cien clientes y contempla plataformas como AWS, Google Cloud y Azure.",
+        "Su despliegue es gradual; el anuncio no equivale a disponibilidad inmediata para todas las cuentas."
+      ],
+      "executiveSummary": "Anthropic presentó Enterprise Frontier Safeguards como una arquitectura para que empresas reguladas utilicen modelos avanzados con controles de seguridad y mayor custodia sobre la información. En lugar de exigir que toda la actividad quede almacenada por el proveedor, propone conservarla en infraestructura y claves bajo control del cliente mientras operan mecanismos automáticos de detección. La arquitectura y la disponibilidad requieren revisión contractual y técnica por organización.",
+      "sections": [
+        {
+          "heading": "El problema entre privacidad y seguridad",
+          "kind": "report",
+          "paragraphs": [
+            "Los modelos más capaces pueden apoyar tareas empresariales complejas, pero también exponen a organizaciones a intentos de abuso y acciones imprevistas. Para detectar patrones que se extienden entre sesiones, algunas plataformas necesitan correlacionar actividad durante un periodo. Esa retención puede resultar incompatible con políticas de confidencialidad o contratos que exigen que la información permanezca bajo custodia del propio cliente. Anthropic presenta Enterprise Frontier Safeguards, o EFS, como un mecanismo para reducir esta tensión y permitir una operación más controlada en sectores con obligaciones estrictas.",
+            "El anuncio debe leerse con su temporalidad: se trata de una solución comunicada para despliegue por fases, no de una característica necesariamente activa en todas las organizaciones al publicarse. El diseño se elaboró con aportes de clientes de servicios financieros, salud, telecomunicaciones, manufactura y otros sectores. Eso indica la clase de requisitos que pretende satisfacer, pero no constituye una certificación universal de cumplimiento regulatorio. Cada empresa sigue siendo responsable de evaluar el producto en su entorno y contexto jurídico."
+          ]
+        },
+        {
+          "heading": "Dónde quedan los datos y quién controla las claves",
+          "kind": "technical",
+          "paragraphs": [
+            "La arquitectura anunciada permite que datos de actividad utilizados para monitoreo se guarden en recursos que controla la organización usuaria. Anthropic menciona posibilidades de almacenamiento en servicios como Amazon S3, Azure Blob Storage o Google Cloud Storage, sujetos a los mecanismos de su correspondiente infraestructura. Las políticas de acceso, claves de cifrado y auditoría se coordinan con el entorno empresarial. La idea es que incorporar monitoreo de modelos no requiera necesariamente contratar al proveedor de modelos como otro custodio persistente de todo el historial.",
+            "Pero custodia no significa ausencia absoluta de almacenamiento ni imposibilidad de que sistemas autorizados procesen información. Para detectar patrones, los mecanismos automatizados requieren analizar señales relevantes, y el cliente mantiene datos conforme a su configuración. Una evaluación debe preguntar qué información se registra, por cuánto tiempo, bajo qué identidad de servicio, con qué cifrado y quién puede consultarla. El concepto de zero data retention describe ciertas obligaciones del proveedor, no elimina la necesidad de definir retenciones y borrados en la infraestructura propia."
+          ]
+        },
+        {
+          "heading": "Monitoreo automático y revisión por personas autorizadas",
+          "kind": "technical",
+          "paragraphs": [
+            "EFS plantea controles que examinan actividad a lo largo de una ventana de tiempo para identificar indicios de uso indebido o credenciales comprometidas. Si un patrón requiere revisión, las señales se transfieren a los equipos designados por el cliente. El anuncio especifica que no se necesita revisión humana por parte de empleados de Anthropic como paso habitual de este diseño. Esto resulta relevante cuando los registros contienen información privilegiada, asuntos legales o materiales que solo determinadas personas dentro de una organización pueden examinar.",
+            "Ningún detector automatizado tiene certeza perfecta. Una alerta legítima puede ser mal interpretada, y una conducta dañina puede quedar fuera de las reglas conocidas. El plan de adopción necesita definir respuesta a incidentes, grados de criticidad, tiempos de resolución y la documentación de falsos positivos. También requiere delimitar qué parte del servicio puede bloquear una acción, qué parte solo informa y quién está facultado para intervenir. Sin esas definiciones, un sistema de monitoreo técnicamente activo podría no mejorar la seguridad efectiva de la operación."
+          ]
+        },
+        {
+          "heading": "Compatibilidad anunciada y cronología de despliegue",
+          "kind": "context",
+          "paragraphs": [
+            "Anthropic incluye en la cobertura prevista varias superficies de uso: Claude Code, Claude Enterprise, su plataforma de API y opciones de distribución a través de proveedores de nube y servicios gestionados. La amplitud de la lista no implica que todas las integraciones estén disponibles desde el primer día, tengan la misma configuración o estén incluidas en un precio único. El comunicado indica una introducción progresiva y opciones transitorias de zero data retention para clientes elegibles hasta que EFS esté preparado.",
+            "Una institución que necesite decidir fecha de migración debe solicitar documentación actualizada de disponibilidad en su región, compatibilidad con su plataforma, modelo de responsabilidades, términos contractuales y procesos de auditoría. También debe confirmar cómo se administran las claves, qué registros se conservan y cómo se revoca el acceso. El diseño descrito por Anthropic proporciona un marco de preguntas, pero el despliegue real solo puede aceptarse después de validar que el servicio concreto cumple las restricciones de la empresa."
+          ]
+        },
+        {
+          "heading": "Riesgos técnicos y criterios verificables",
+          "kind": "analysis",
+          "paragraphs": [
+            "Desde la perspectiva de seguridad empresarial, el punto más interesante es que la detección y la propiedad del almacenamiento quedan separadas. El proveedor puede aportar modelos de análisis y mecanismos de respuesta sin convertirse automáticamente en el repositorio operativo principal de toda la actividad. Esto reduce ciertas barreras de adopción y permite aprovechar controles de identidad, auditoría y gobierno ya implantados. Sin embargo, también introduce dependencias entre servicios, flujos de claves y configuraciones que una auditoría debe considerar.",
+            "Un posible fallo no siempre será una filtración directa. También pueden producirse alertas sin contexto, diferencias entre políticas empresariales y las del proveedor, registros insuficientes para investigar incidentes, datos almacenados en regiones equivocadas o bloqueos que paralicen procesos legítimos. La organización debería simular esos escenarios antes del despliegue. El hecho de que la custodia sea empresarial no garantiza que se hayan configurado correctamente todas las reglas o que las señales procesadas por un motor de detección sean exhaustivas."
+          ]
+        },
+        {
+          "heading": "Aplicación práctica y seguimiento",
+          "kind": "practical",
+          "paragraphs": [
+            "Un piloto puede empezar con un flujo interno de documentación o desarrollo que use identidades limitadas, retenciones definidas y una matriz clara de riesgos. Antes de habilitarlo se documentan quién puede ver los datos, qué mecanismos de detección están activos y cómo se tramita una alarma. Luego se realizan pruebas con incidentes simulados y se registra si el equipo responsable recibió información suficiente para decidir. La verificación incluye restauración y borrado, no solo respuestas correctas del modelo.",
+            "Para una empresa pequeña, el mismo razonamiento se aplica aun sin contratar EFS: controlar datos, limitar herramientas y diseñar una manera comprensible de observar y revertir acciones. No hace falta replicar una plataforma para exigir esos principios. El Gazette debería actualizar esta noticia cuando existan pruebas independientes, nuevas condiciones de acceso o documentación de costes y configuración. El 1 de septiembre se anunció una arquitectura para resolver necesidades reales de clientes; su eficacia y adopción deberán verificarse en despliegues específicos."
+          ]
+        }
+      ],
+      "finalSummary": "Enterprise Frontier Safeguards propone combinar custodia empresarial de actividad con monitoreo automático frente a abuso de modelos avanzados. Su interés está en la separación de responsabilidades, pero ninguna organización debe declarar resuelto el cumplimiento hasta validar su configuración, contratos y controles concretos.",
+      "technicalDetails": [
+        {
+          "label": "Modelo de custodia",
+          "value": "Almacenamiento de actividad en infraestructura controlada por el cliente"
+        },
+        {
+          "label": "Monitoreo",
+          "value": "Detección automática de patrones con revisión humana empresarial"
+        },
+        {
+          "label": "Proveedores mencionados",
+          "value": "AWS, Google Cloud, Microsoft Azure"
+        },
+        {
+          "label": "Lanzamiento",
+          "value": "Despliegue por fases, no general inmediato"
+        }
+      ],
+      "limitations": [
+        "El anuncio no equivale a certificación de cumplimiento para todas las jurisdicciones.",
+        "Los detalles y costes efectivos de cada implementación requieren contrato y configuración.",
+        "Zero data retention no significa que ningún registro quede guardado dentro del cliente.",
+        "El monitoreo automático puede generar falsos positivos y omitir actividad maliciosa."
+      ],
+      "practicalAdvice": [
+        "Crear inventario de datos, claves, retención, usuarios y jurisdicciones antes de la implantación.",
+        "Ejercitar alertas y escalamiento con el equipo de respuesta real.",
+        "Verificar la disponibilidad específica de la plataforma elegida.",
+        "Exigir trazabilidad y mecanismos de revocación en pruebas de agentes."
+      ],
+      "usefulFacts": [
+        "Anthropic atribuye al desarrollo participación de más de cien organizaciones.",
+        "La revisión humana descrita puede realizarse en el equipo del cliente.",
+        "La residencia de datos y la capacidad de detectar abuso son requisitos distintos."
+      ],
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de una cámara de archivos en banco antiguo, custodios con llaves en un lado y autómatas vigilantes en el otro, división clara de control y supervisión, ilustración sepia sin texto ni logos."
     },
     {
       "id": "amazon-quick-natural-language-apps",
