@@ -77,6 +77,18 @@ Registro:
 
 Mantén ambos JSON idénticos y ambos RSS idénticos.
 
+### Publicación atómica obligatoria (corrección V5 · 2026-10-11)
+
+Una misma noticia no puede publicarse mediante cinco commits independientes. El fallo de ordenación RSS del 11 de octubre demostró que una secuencia de escrituras por archivo permite que la web exponga temporalmente JSON actualizado con RSS antiguo, aunque el siguiente commit lo repare.
+
+1. Leer de `main` el **SHA exacto del commit**, su árbol y los cinco archivos autorizados. Reconciliar el lote, verificar IDs/eventKeys, conteos de `dailyCoverage`, orden RSS por `(date, id)` descendente y equivalencia byte a byte de cada espejo **antes** de escribir.
+2. Preparar los cinco contenidos en memoria. Crear los blobs con Git Data API (`create_blob`), generar **un árbol** basado en el árbol del `main` leído (`create_tree`) y **un solo commit** padre del HEAD leído (`create_commit`).
+3. Actualizar `refs/heads/main` **una sola vez**, mediante `update_ref` sin `force`, comprobando `expected_sha` cuando esté disponible. Si la rama avanzó, abortar la publicación de ese intento, releer y reconciliar; no sustituir la rama con una instantánea antigua.
+4. Releer el SHA resultante y los espejos. Verificar que el commit tiene los cinco archivos esperados (sin otros cambios), pasa validación editorial y activa las Actions correspondientes. Si no hay cambio material, no crear ni blobs innecesarios ni commit.
+5. Si alguna operación o aprobación impide completar la transacción, **no usar `update_file`/Contents API para publicar partes**. Abortar antes de mover la rama y entregar el paquete pendiente según `automation-operations.md`. Los objetos Git huérfanos no son publicaciones visibles.
+
+Este mecanismo es un requisito de integridad operativa; aún necesita una prueba de publicación real y una prueba de colisión con Backfill para marcar `OPS-CONCURRENCY-TEST` como completada.
+
 ## Regla de no-op para la cadencia horaria
 
 Si la revisión no encuentra novedades materiales y verificables:
