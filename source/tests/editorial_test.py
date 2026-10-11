@@ -62,4 +62,8 @@ class EditorialTests(unittest.TestCase):
   self.assertGreater(len(self.data.get('dailyCoverage',[])),3)
   self.data['dailyCoverage'].pop(2)
   with self.assertRaisesRegex(AssertionError,'Gap in dailyCoverage|Article date missing'):validate(self.data)
+ def test_new_legacy_articles_cannot_reenter_after_cutover(self):
+  a=next(a for a in self.data['articles'] if a.get('articleVersion')!=2)
+  a['coveredAt']='2026-10-11'
+  with self.assertRaisesRegex(AssertionError,'New publications must use Reporter V2'):validate(self.data)
 if __name__=='__main__':unittest.main()
