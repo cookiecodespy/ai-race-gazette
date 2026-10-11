@@ -8,10 +8,11 @@
     "test": "node --test tests/news.test.mjs",
     "test:browser": "node scripts/browser-qa.mjs",
     "fonts": "node scripts/prepare-fonts.mjs",
-    "build": "vite build && node scripts/prepare-sites-build.mjs",
+    "build": "vite build && node scripts/generate-static-articles.mjs && node scripts/prepare-sites-build.mjs",
     "preview": "vite preview",
     "test:sites": "node --test tests/sites-worker.test.mjs",
-    "test:live": "node scripts/live-qa.mjs"
+    "test:live": "node scripts/live-qa.mjs",
+    "test:seo": "node --test tests/static-articles.test.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "5.0.4",

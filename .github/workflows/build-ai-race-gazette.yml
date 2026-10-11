@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
     paths:
+      - 'data/news.json'
+      - 'source/public/data/news.json'
       - 'source/src/**'
       - 'source/index.html'
       - 'source/package.json'
@@ -73,6 +75,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Static SEO regression
+        run: npm run test:seo
+
       - name: Sites worker tests
         run: npm run test:sites
 
@@ -94,6 +99,8 @@ jobs:
           git fetch origin main
           # If frontend/build inputs change while CI runs, newer CI owns publishing.
           if ! git diff --quiet HEAD origin/main -- \
+            data/news.json \
+            source/public/data/news.json \
             source/src \
             source/index.html \
             source/package.json \
@@ -113,6 +120,10 @@ jobs:
           mkdir -p ../assets
           rm -f ../assets/index-*.js ../assets/index-*.css
           cp -R dist/client/assets/. ../assets/
+          rm -rf ../noticias
+          cp -R dist/client/noticias ../noticias
+          cp dist/client/sitemap.xml ../sitemap.xml
+          cp dist/client/robots.txt ../robots.txt
           if [ -d public/assets/news ]; then
             test -d dist/client/assets/news
             diff -qr public/assets/news dist/client/assets/news
@@ -123,8 +134,8 @@ jobs:
         run: |
           # git diff ignores untracked files; stage first so brand-new WebP assets
           # are included in the change detection and published atomically.
-          git add -A index.html assets
-          if git diff --cached --quiet -- index.html assets; then
+          git add -A index.html assets noticias sitemap.xml robots.txt
+          if git diff --cached --quiet -- index.html assets noticias sitemap.xml robots.txt; then
             echo "No compiled frontend changes."
             exit 0
           fi

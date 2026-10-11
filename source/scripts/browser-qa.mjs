@@ -38,6 +38,16 @@ await page.getByRole('button',{name:'Vista lista'}).click();
 assert.equal(await page.locator('.news-list-item').count(),data.articles.length);
 await page.screenshot({path:'qa/polished/02-lista.png',fullPage:true});
 
+const seoSample=data.articles.find(a=>a.articleVersion===2);
+const seoResponse=await page.request.get(url+'noticias/'+seoSample.date+'/'+seoSample.id+'/');
+assert.equal(seoResponse.status(),200,'Indexable static article page must exist');
+const seoHtml=await seoResponse.text();
+assert.match(seoHtml,/application\/ld\+json/,'Static news page must contain JSON-LD');
+assert.match(seoHtml,/og:type" content="article"/,'OpenGraph must exist without client JavaScript');
+const sitemapResponse=await page.request.get(url+'sitemap.xml');
+assert.equal(sitemapResponse.status(),200,'Sitemap must be served');
+assert.equal(((await sitemapResponse.text()).match(/<url>/g)||[]).length,data.articles.length+1);
+
 const v2=data.articles.find(a=>a.articleVersion===2);
 assert.ok(v2,'Expected at least one Reporter V2 fixture in published data');
 await page.getByRole('searchbox').fill(v2.title);
