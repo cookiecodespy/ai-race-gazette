@@ -8,7 +8,7 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
-  "generatedFromNewsUpdatedAt": "2026-10-11T02:10:52.320Z",
+  "generatedFromNewsUpdatedAt": "2026-10-11T02:13:53.612Z",
   "generatedAt": "2026-10-11",
   "items": [
     {
@@ -184,6 +184,32 @@
       "desiredOutput": "assets/news/2026-09-02/muse-spark-1-3.webp",
       "brief": "Grabado editorial de máquina de cálculo y programación con engranajes, herramientas y rollos de instrucciones extensas, estilo periódico antiguo sin textos.",
       "sourceSummary": "Spark 1.3 apunta a tareas de programación más largas, multitarea y uso más eficiente de herramientas.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
+      "articleId": "weathernext-3",
+      "eventKey": "weathernext-3",
+      "date": "2026-09-03",
+      "company": "Google",
+      "product": "WeatherNext 3",
+      "title": "Google presenta WeatherNext 3 y lleva sus pronósticos a más productos",
+      "currentImage": "assets/google.webp",
+      "currentAssetId": "gazette-google-architecture-v1",
+      "currentReuseCount": 29,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-03/weathernext-3.webp",
+      "brief": "Grabado del siglo XIX de un observatorio meteorológico con globo, nubes, relieve y estaciones conectadas mediante instrumentos, reflejando lluvia y viento en papel sepia, sin texto, marcas ni aspecto de fotografía documental.",
+      "sourceSummary": "El sistema meteorológico de IA actualiza pronósticos con mayor frecuencia e incorpora más variables para productos y energía.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
@@ -3356,32 +3382,6 @@
       "desiredOutput": "assets/news/2026-09-03/nvidia-pair.webp",
       "brief": "Ilustración editorial para NVIDIA Personal AI Router (PAIR): varias computadoras de escritorio y estaciones locales conectadas a un pequeño nodo central que reparte cargas de inferencia como una central ferroviaria en miniatura; debe comunicar clúster local doméstico/profesional, no un datacenter gigante. Grabado antiguo, tinta/sepia, sin logos ni texto.",
       "sourceSummary": "Personal AI Router distribuye inferencia entre computadoras locales y busca convertir una red doméstica o de trabajo en un pequeño clúster de IA.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "weathernext-3",
-      "eventKey": "weathernext-3",
-      "date": "2026-09-03",
-      "company": "Google",
-      "product": "WeatherNext 3",
-      "title": "Google presenta WeatherNext 3 y lleva sus pronósticos a más productos",
-      "currentImage": "assets/google.webp",
-      "currentAssetId": "gazette-google-architecture-v1",
-      "currentReuseCount": 29,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-03/weathernext-3.webp",
-      "brief": "Crear una ilustración específica para “Google presenta WeatherNext 3 y lleva sus pronósticos a más productos”. El foco visual debe representar WeatherNext 3 de Google y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "El sistema meteorológico de IA actualiza pronósticos con mayor frecuencia e incorpora más variables para productos y energía.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
