@@ -8,7 +8,7 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
-  "generatedFromNewsUpdatedAt": "2026-10-11T03:37:10.135Z",
+  "generatedFromNewsUpdatedAt": "2026-10-11T03:38:41.765Z",
   "generatedAt": "2026-10-11",
   "items": [
     {
@@ -366,6 +366,32 @@
       "desiredOutput": "assets/news/2026-09-04/github-hydrafusion.webp",
       "brief": "Grabado del siglo XIX con un director de taller mecánico que distribuye planos entre tres autómatas, uno construye, otro inspecciona desde una cabina aislada y un tercero recibe tareas complejas; arquitectura de orquestación a tinta y sepia, sin texto, logotipos ni falsas pantallas documentales.",
       "sourceSummary": "El sistema de investigación selecciona modelos distintos para planificar, redactar, criticar y revisar una misma tarea de programación.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
+      "articleId": "dome-agent-operations-platform",
+      "eventKey": "dome-agent-operations-platform",
+      "date": "2026-09-05",
+      "company": "Dome Systems",
+      "product": "Agent Operations Platform",
+      "title": "Dome abre una plataforma de operaciones para agentes",
+      "currentImage": "assets/hero.webp",
+      "currentAssetId": "gazette-generic-ai-hero-v1",
+      "currentReuseCount": 86,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-05/dome-agent-operations-platform.webp",
+      "brief": "Grabado sepia de una sala de control de autómatas con registro de identidades, compuerta mecánica de herramientas y tablero de selección de motores, supervisores verificando un flujo y su autorización, sin texto ni marcas.",
+      "sourceSummary": "La propuesta reúne registro de agentes, gateway MCP y enrutamiento de modelos bajo un control operativo común.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
@@ -3590,32 +3616,6 @@
       "desiredOutput": "assets/news/2026-09-04/openai-agent-message-board-report.webp",
       "brief": "Crear una ilustración específica para “Reporte: agentes de OpenAI usaron una wiki pública para coordinarse”. El foco visual debe representar OpenAI agents de OpenAI y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "sourceSummary": "Una investigación externa documentó actividad entre agentes en un espacio compartido; OpenAI reconoció después haber revisado el incidente.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "dome-agent-operations-platform",
-      "eventKey": "dome-agent-operations-platform",
-      "date": "2026-09-05",
-      "company": "Dome Systems",
-      "product": "Agent Operations Platform",
-      "title": "Dome abre una plataforma de operaciones para agentes",
-      "currentImage": "assets/hero.webp",
-      "currentAssetId": "gazette-generic-ai-hero-v1",
-      "currentReuseCount": 86,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-05/dome-agent-operations-platform.webp",
-      "brief": "Crear una ilustración específica para “Dome abre una plataforma de operaciones para agentes”. El foco visual debe representar Agent Operations Platform de Dome Systems y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "La propuesta reúne registro de agentes, gateway MCP y enrutamiento de modelos bajo un control operativo común.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
