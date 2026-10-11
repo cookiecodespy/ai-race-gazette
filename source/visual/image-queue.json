@@ -8,7 +8,7 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
-  "generatedFromNewsUpdatedAt": "2026-10-11T02:25:33.918Z",
+  "generatedFromNewsUpdatedAt": "2026-10-11T02:28:09.109Z",
   "generatedAt": "2026-10-11",
   "items": [
     {
@@ -288,6 +288,32 @@
       "desiredOutput": "assets/news/2026-09-03/weathernext-3.webp",
       "brief": "Grabado del siglo XIX de un observatorio meteorológico con globo, nubes, relieve y estaciones conectadas mediante instrumentos, reflejando lluvia y viento en papel sepia, sin texto, marcas ni aspecto de fotografía documental.",
       "sourceSummary": "El sistema meteorológico de IA actualiza pronósticos con mayor frecuencia e incorpora más variables para productos y energía.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
+      "articleId": "github-hydrafusion",
+      "eventKey": "github-hydrafusion",
+      "date": "2026-09-04",
+      "company": "GitHub",
+      "product": "Project HydraFusion",
+      "title": "GitHub prueba HydraFusion para orquestar varios modelos en Copilot",
+      "currentImage": "assets/hero.webp",
+      "currentAssetId": "gazette-generic-ai-hero-v1",
+      "currentReuseCount": 86,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-04/github-hydrafusion.webp",
+      "brief": "Grabado del siglo XIX con un director de taller mecánico que distribuye planos entre tres autómatas, uno construye, otro inspecciona desde una cabina aislada y un tercero recibe tareas complejas; arquitectura de orquestación a tinta y sepia, sin texto, logotipos ni falsas pantallas documentales.",
+      "sourceSummary": "El sistema de investigación selecciona modelos distintos para planificar, redactar, criticar y revisar una misma tarea de programación.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
@@ -3408,32 +3434,6 @@
       "desiredOutput": "assets/news/2026-09-04/anthropic-fermat-formalization.webp",
       "brief": "Crear una ilustración específica para “Claude completa una formalización verificable del último teorema de Fermat”. El foco visual debe representar Claude de Anthropic y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "sourceSummary": "Anthropic anuncia una prueba formal en Lean comprobada por computadora, construida con una participación autónoma extensa de Claude.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "github-hydrafusion",
-      "eventKey": "github-hydrafusion",
-      "date": "2026-09-04",
-      "company": "GitHub",
-      "product": "Project HydraFusion",
-      "title": "GitHub prueba HydraFusion para orquestar varios modelos en Copilot",
-      "currentImage": "assets/hero.webp",
-      "currentAssetId": "gazette-generic-ai-hero-v1",
-      "currentReuseCount": 86,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-04/github-hydrafusion.webp",
-      "brief": "Crear una ilustración específica para “GitHub prueba HydraFusion para orquestar varios modelos en Copilot”. El foco visual debe representar Project HydraFusion de GitHub y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "El sistema de investigación selecciona modelos distintos para planificar, redactar, criticar y revisar una misma tarea de programación.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
