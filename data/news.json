@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T11:33:58.171Z",
+  "updatedAt": "2026-10-11T11:36:31.205Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -21485,7 +21485,7 @@
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
       "coveredAt": "2026-10-07",
       "source": {
         "name": "xAI · anuncio oficial",
@@ -21502,7 +21502,66 @@
         "Controles administrativos y de acceso."
       ],
       "analysis": "La competencia por agentes empresariales depende de plataforma de ejecución y gobernanza tanto como del modelo.",
-      "watch": "Precios y evidencia de confiabilidad en tareas largas."
+      "watch": "Precios y evidencia de confiabilidad en tareas largas.",
+      "articleVersion": 2,
+      "executiveSummary": "xAI anunció el 3 de septiembre de 2026 que Grok Bot extendía su disponibilidad a empresas con controles de acceso, red y auditoría. El proveedor describe trabajadores autónomos con computadoras en la nube, capaces de operar aplicaciones conectadas por el usuario. Grok y Cursor Enterprise recibían dos semanas gratuitas de uso desde el anuncio; ello no equivale a gratuidad permanente ni a acceso sin límites.",
+      "quickTakeaways": [
+        "El lanzamiento empresarial agrega controles de acceso, red y auditoría para bots que ejecutan tareas mediante sus propias computadoras en la nube.",
+        "xAI anuncia la posibilidad de crear bots especializados, enseñar rutinas por demostración y compartir plantillas; las cifras de adopción son declaraciones de la empresa.",
+        "La promoción oficial ofrecía dos semanas gratuitas a clientes Grok y Cursor Enterprise desde el 3 de septiembre, no una licencia sin vencimiento."
+      ],
+      "sections": [
+        {
+          "heading": "Un trabajador digital en lugar de otra ventana de chat",
+          "kind": "report",
+          "paragraphs": [
+            "El comunicado del 3 de septiembre describe Grok Bot como una herramienta para delegar tareas completas a agentes autónomos. Cada bot se crea para un puesto concreto y opera en un equipo alojado en la nube, con acceso a aplicaciones y páginas web según las cuentas que el usuario haya vinculado. La propuesta cambia la unidad de interacción: en vez de pedir una respuesta, se encarga un trabajo y el agente vuelve cuando lo concluye o requiere una decisión. La novedad empresarial incluye controles que permiten gestionar varios bots en un entorno corporativo.",
+            "xAI explica que un usuario puede enseñar una rutina haciendo que el bot observe un recorrido, incorporar correcciones y reutilizar esa forma de trabajo como plantilla para compañeros. También describe que múltiples bots pueden enviarse mensajes y compartir contexto. Son capacidades comunicadas en el lanzamiento; esta redacción no ha probado su ejecución de extremo a extremo en los servicios citados. Para una empresa, la diferencia entre demostración y producción depende de fiabilidad, cuentas autorizadas, manejo de errores y trazabilidad."
+          ]
+        },
+        {
+          "heading": "Los controles que hacen posible el uso empresarial",
+          "kind": "technical",
+          "paragraphs": [
+            "El anuncio afirma que Grok Bot incorpora controles de acceso, red y auditoría. Son piezas esenciales cuando un agente trabaja con documentos, correos o sistemas internos: un bot sin límites podría ejecutar una acción en nombre de quien lo configuró fuera del contexto deseado. xAI señala que el trabajo de cada usuario se ejecuta en un entorno aislado y que los bots no tienen acceso por defecto; solo alcanzan cuentas en las que el usuario los haya conectado. Esta es la arquitectura descrita por el proveedor y debe comprobarse frente a documentación contractual y ensayos de seguridad.",
+            "Un despliegue responsable necesita además separar el acceso de lectura del permiso de escritura. Un agente que redacta un correo no debería enviarlo automáticamente sin que exista una política adecuada, y otro que revisa solicitudes de código no debería fusionarlas sin el control requerido por la organización. Los controles de auditoría anunciados ayudan a investigar acciones realizadas, pero el comunicado no demuestra por sí solo la calidad de sus registros ni la cobertura de todos los conectores. Conviene solicitar ejemplos concretos antes de dar por resuelta esa necesidad."
+          ]
+        },
+        {
+          "heading": "Casos de uso y cifras que requieren atribución",
+          "kind": "context",
+          "paragraphs": [
+            "xAI ofrece ejemplos en ventas, contratación, marketing, finanzas e ingeniería. Los bots podrían preparar borradores después de webinars, resumir reuniones, proponer mensajes a candidatos, vigilar renovaciones de software o revisar solicitudes de cambios y fallos de compilación. La empresa afirma que miles de organizaciones adoptaron la herramienta y cita Legora, Supermicro y ServiceTitan, además de millones de bots creados en semanas. Son datos promocionales sin auditoría externa presentada aquí, de modo que no sirven para medir la adopción general de agentes autónomos en toda la industria.",
+            "Los ejemplos comparten un patrón útil: el bot recopila información distribuida y prepara acciones para revisión. Una empresa debería probar primero una tarea que deje evidencia clara de inicio, fin y aprobación, como actualizar un borrador de informe a partir de notas. A partir de ahí puede medir si los agentes reducen esfuerzo sin incrementar retrabajo. Darles permisos amplios desde el primer día no es necesario para comprobar su propuesta de valor."
+          ]
+        },
+        {
+          "heading": "La promoción temporal y el coste real",
+          "kind": "practical",
+          "paragraphs": [
+            "Desde el 3 de septiembre, el anuncio ofrecía uso gratuito durante las siguientes dos semanas a clientes de Grok y Cursor Enterprise, con invitaciones para otros integrantes de la organización, incluso sin asiento previo. Eso describe una promoción fechada, no un precio actual del producto ni una política de acceso permanente. En una evaluación posterior a esa ventana conviene pedir condiciones comerciales vigentes, límites de uso, número de bots, capacidad concurrente y cobertura de soporte. No es correcto extrapolar la promoción histórica a la situación de octubre.",
+            "Un piloto bien diseñado compararía dos equipos sobre el mismo proceso: uno realizando la tarea manualmente y otro con bots, midiendo duración, revisiones, acciones incorrectas y carga del personal que supervisa. También registraría dónde se almacenan los datos, qué acciones requieren confirmación y cómo detener tareas en curso. La experiencia final debe mostrar con claridad qué ocurrió, no obligar al usuario a interpretar trazas técnicas para decidir si el agente funcionó."
+          ]
+        }
+      ],
+      "limitations": [
+        "Las cifras de organizaciones y bots adoptados proceden de xAI y no fueron auditadas independientemente aquí.",
+        "El comunicado no detalla exhaustivamente los permisos de cada integración ni las tarifas posteriores a la promoción.",
+        "El aislamiento descrito requiere comprobaciones operativas y contractuales antes de conectar datos sensibles."
+      ],
+      "practicalAdvice": [
+        "Crear un piloto con permisos mínimos y una tarea reversible antes de conectar sistemas críticos.",
+        "Medir resultados finalizados correctamente, retrabajo y tiempo de supervisión humana.",
+        "Pedir condiciones comerciales vigentes: la prueba gratuita de dos semanas anunciada en septiembre no es una oferta permanente."
+      ],
+      "usefulFacts": [
+        "Fecha del anuncio oficial: 3 de septiembre de 2026.",
+        "Bots especializados cuentan, según xAI, con un computador cloud aislado por usuario.",
+        "Promoción histórica: dos semanas de uso gratuito para clientes Grok y Cursor Enterprise."
+      ],
+      "finalSummary": "Grok Bot Enterprise amplía la apuesta por agentes que operan aplicaciones completas con políticas corporativas. Su relevancia está en unir ejecución autónoma, enseñanza de rutinas y controles administrativos, pero el valor real depende de resultados confiables y permisos comprensibles. Los ejemplos y cifras del anuncio son puntos de partida para verificar, no garantías de desempeño.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Ilustración tipo xilografía de periódico antiguo: varias figuras de asistentes mecánicos trabajan en mesas separadas de oficina, cada una con tareas distintas, mientras una persona supervisa mediante cerraduras y un libro de registro simbólico. Tinta negra y sepia, papel envejecido, sin marca corporativa o interfaz inventada, sin texto incrustado, formato 3:2."
     },
     {
       "id": "gpt-6-astra",
@@ -21791,7 +21850,7 @@
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
       "coveredAt": "2026-10-07",
       "source": {
         "name": "HiddenLayer · anuncio oficial",
@@ -21808,7 +21867,67 @@
         "Ronda liderada por Delta-v Capital."
       ],
       "analysis": "La seguridad agentiva está pasando de proyecto interno a mercado propio.",
-      "watch": "Uso real de la plataforma y evidencia de reducción de incidentes."
+      "watch": "Uso real de la plataforma y evidencia de reducción de incidentes.",
+      "articleVersion": 2,
+      "executiveSummary": "HiddenLayer anunció el 2 de septiembre de 2026 una ronda Serie B de US$100 millones liderada por Delta-v Capital, con participación de firmas como Ten Eleven Ventures, Morgan Stanley, M12 y Booz Allen Ventures. La empresa planea reforzar protección de agentes en ejecución y herramientas de seguridad para agentes de programación. Los datos de ingresos, clientes y adopción del comunicado son declaraciones corporativas y no auditorías independientes.",
+      "quickTakeaways": [
+        "Ronda Serie B anunciada por US$100 millones, liderada por Delta-v Capital.",
+        "Parte de los fondos se destinará a Agentic Runtime Security y Agent Harness Security para proteger agentes que usan herramientas o escriben código.",
+        "HiddenLayer comunicó crecimiento superior a 10 veces en ingresos recurrentes y más de 50 nuevos clientes, sin que el Gazette disponga de estados financieros auditados que corroboren esos números."
+      ],
+      "sections": [
+        {
+          "heading": "Qué financia la Serie B",
+          "kind": "report",
+          "paragraphs": [
+            "La compañía de seguridad HiddenLayer confirmó el 2 de septiembre una financiación Serie B de cien millones de dólares. El comunicado identifica a Delta-v Capital como líder de la ronda y menciona entre los participantes a Ten Eleven Ventures, Morgan Stanley, M12 —el brazo inversor de Microsoft— y Booz Allen Ventures. El capital está destinado a reforzar la plataforma, ampliar trabajo de protección de agentes de IA y aumentar la presencia comercial internacional, especialmente en Europa y la región EMEA. La noticia describe una inversión material, no una valoración publicada de la compañía.",
+            "En el contexto de la carrera de la inteligencia artificial, la financiación refleja que el desarrollo de agentes también genera demanda de herramientas de seguridad especializadas. Un chatbot que contesta preguntas tiene una superficie de riesgo diferente a un agente con credenciales para consultar documentos, operar sistemas y modificar código. Las organizaciones requieren saber qué puede hacer cada agente y observar su comportamiento mientras trabaja. HiddenLayer argumenta que la seguridad debe continuar durante la ejecución y no limitarse a revisiones previas al despliegue."
+          ]
+        },
+        {
+          "heading": "Seguridad de agentes en tiempo de ejecución",
+          "kind": "technical",
+          "paragraphs": [
+            "HiddenLayer describe su componente Agentic Runtime Security como una capa de visibilidad que detecta y detiene intentos de manipulación, uso indebido de herramientas y acciones no autorizadas mientras el agente funciona. También presenta Agent Harness Security, una solución que extiende el módulo de protección en ejecución a los entornos de agentes de programación que escriben, revisan o publican cambios. Esta distinción importa: asegurar el modelo base no cubre automáticamente las aplicaciones, credenciales, conectores y herramientas que rodean al modelo.",
+            "Los riesgos posibles incluyen instrucciones maliciosas insertadas en fuentes no confiables, permisos demasiado amplios, llamadas de herramienta incompatibles con una política y cadenas de acciones que parecen legítimas de manera aislada pero son peligrosas al combinarse. Son categorías de amenaza conocidas, no acusaciones de fallos específicos en los clientes de HiddenLayer. La empresa afirma que sus soluciones intentan identificar y bloquear estos problemas, aunque el comunicado no incluye una evaluación pública reproducible de precisión, falsos positivos o capacidad de cobertura frente a ataques novedosos."
+          ]
+        },
+        {
+          "heading": "Las cifras empresariales publicadas",
+          "kind": "context",
+          "paragraphs": [
+            "El documento sostiene que los ingresos recurrentes anuales de HiddenLayer crecieron más de diez veces durante el último año, que sumó más de cincuenta clientes de plataforma y que sirve a una organización proveedora de modelos con más de setecientos millones de usuarios semanales. Además cita treinta y nueve patentes concedidas y sesenta y cinco solicitudes pendientes relacionadas con detección adversarial, protección de modelos y análisis de amenazas. Todas esas cifras son declaraciones de HiddenLayer y no permiten calcular sus ingresos absolutos, margen operativo ni cuota de mercado sin información adicional.",
+            "La compañía también destaca contribuciones a iniciativas relacionadas con CISA, MITRE, NIST, OWASP y OpenSSF. Participar en esos espacios puede ser relevante para el sector, pero no debe confundirse con una certificación oficial de todas sus herramientas. Tampoco la ronda de capital permite concluir automáticamente que las plataformas de protección funcionan mejor que las alternativas: las decisiones de compra requieren comparación técnica y análisis de condiciones de integración."
+          ]
+        },
+        {
+          "heading": "Evaluación que debería hacer un comprador",
+          "kind": "practical",
+          "paragraphs": [
+            "Una empresa que analiza proteger agentes necesita empezar por un inventario: qué modelos utiliza, qué datos consultan, qué herramientas ejecutan, qué credenciales manejan y qué acciones pueden ser irreversibles. Sobre ese mapa deben aplicarse controles de acceso y registros de actividad, incluso antes de evaluar un producto especializado. Al probar una herramienta de seguridad, conviene preparar escenarios controlados con entradas hostiles, errores de configuración y acciones no autorizadas, y medir detección, bloqueo, falsos positivos y facilidad de investigación.",
+            "En agentes de programación habría que añadir pruebas sobre repositorios y flujos de despliegue: quién aprueba cambios, cómo se conserva la cadena de evidencia y qué ocurre si el agente intenta ejecutar comandos inesperados. La solución no debe bloquear indiscriminadamente el trabajo válido ni requerir interpretar registros imposibles de usar. La interfaz operativa debe explicar al responsable qué se impidió, por qué y qué decisión debe tomar. Esa combinación de seguridad y observabilidad es la que convierte una plataforma técnica en un producto utilizable.",
+            "La nota corporativa no publica en la propia comunicación una tarifa contractual universal de Agent Harness Security ni el valor posterior de HiddenLayer. El Gazette evita inferir ambos conceptos. Para presupuestar, cada comprador necesitará conocer precio por recurso, volumen de inferencias o agente protegido, infraestructura adicional, soporte y alcance de la cobertura. La inversión anunciada debe juzgarse por mejoras reales en productos y adopción demostrable, no solo por el titular de financiación."
+          ]
+        }
+      ],
+      "limitations": [
+        "Crecimiento, usuarios protegidos y patentes provienen de un comunicado corporativo sin auditoría independiente del Gazette.",
+        "No se publica una valoración o precio universal de la solución en el anuncio analizado.",
+        "La protección de ejecución complementa, pero no reemplaza, segmentación de privilegios, revisión humana y respuesta a incidentes."
+      ],
+      "practicalAdvice": [
+        "Inventariar permisos y herramientas de agentes antes de escoger controles de seguridad.",
+        "Probar el bloqueo y la explicación de incidentes con escenarios autorizados y reproducibles.",
+        "Evaluar coste y falsos positivos además de cobertura de amenazas."
+      ],
+      "usefulFacts": [
+        "Anuncio de Serie B: 2 de septiembre de 2026, Austin, Texas.",
+        "Monto anunciado: US$100 millones; lidera Delta-v Capital.",
+        "Nuevas inversiones previstas en Agentic Runtime Security y Agent Harness Security."
+      ],
+      "finalSummary": "La ronda de HiddenLayer muestra una oportunidad comercial creciente alrededor de la defensa de agentes autónomos. Las soluciones propuestas apuntan a observar y controlar su comportamiento durante el trabajo real, una necesidad diferente a proteger únicamente el modelo. La eficacia del producto, el coste de despliegue y las métricas de negocio todavía requieren contraste independiente.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial de prensa antigua: un laboratorio con armaduras de seguridad protegiendo pequeñas máquinas agentivas que escriben en rollos de código, con cerraduras y guardianes; ilustrar protección en tiempo de ejecución y crecimiento de empresa, sin símbolos monetarios con cifras falsas ni logos. Tinta sepia y negra, textura de diario envejecido, 3:2."
     },
     {
       "id": "google-fairwind-program",
