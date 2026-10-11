@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T01:47:05.000Z",
+  "updatedAt": "2026-10-11T01:54:48.656Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -10600,6 +10600,161 @@
       "imageBrief": "Grabado del siglo XIX de dos calculadoras monumentales, una enorme y otra compacta, ambas resolviendo planos de software a distinto costo, estilo sepia sin texto ni marcas."
     },
     {
+      "id": "google-diffusion-controller-image-generation-guidance-2026-09-29",
+      "eventKey": "google-research-diffusion-controller-steering-network-2026-09-29",
+      "articleVersion": 2,
+      "date": "2026-09-29",
+      "announcedAt": "2026-09-29",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "Google Research",
+      "product": "Diffusion Controller",
+      "title": "Google investiga Diffusion Controller: una red ligera para dirigir la generación de imágenes",
+      "summary": "Google Research presentó el 29 de septiembre Diffusion Controller, una metodología que dirige el proceso de difusión para mejorar el cumplimiento de instrucciones visuales. En experimentos con Stable Diffusion v1.4 reportó mejoras de preferencia, incluido un 90 % de victorias de una variante completamente ajustable frente al modelo de referencia; no anunció un producto de imagen disponible para todos.",
+      "tags": [
+        "Investigación",
+        "Imágenes",
+        "Modelos",
+        "Optimización"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado conceptual editorial de investigación en IA; no fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado mecánico decimonónico de una prensa de imágenes guiada por amortiguadores y engranajes diminutos, tinta sepia y papel antiguo, sin texto ni logotipos.",
+      "source": {
+        "name": "Google Research · How Diffusion Controller unifies and simplifies AI image generation",
+        "url": "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/",
+        "publishedAt": "2026-09-29"
+      },
+      "body": [
+        "Google Research presentó el 29 de septiembre Diffusion Controller, una metodología que dirige el proceso de difusión para mejorar el cumplimiento de instrucciones visuales. En experimentos con Stable Diffusion v1.4 reportó mejoras de preferencia, incluido un 90 % de victorias de una variante completamente ajustable frente al modelo de referencia; no anunció un producto de imagen disponible para todos."
+      ],
+      "keyPoints": [
+        "Google Research presentó el 29 de septiembre Diffusion Controller, una metodología que dirige el proceso de difusión para mejorar el cumplimiento de instrucciones visuales. En experimentos con Stable Diffusion v1.4 reportó mejoras de preferencia, incluido un 90 % de victorias de una variante completamente ajustable frente al modelo de referencia; no anunció un producto de imagen disponible para todos.",
+        "El 90 % no representa todos los modelos ni variantes.",
+        "El método añade una red auxiliar de control."
+      ],
+      "quickTakeaways": [
+        "Google Research presentó el 29 de septiembre Diffusion Controller, una metodología que dirige el proceso de difusión para mejorar el cumplimiento de instrucciones visuales. En experimentos con Stable Diffusion v1.4 reportó mejoras de preferencia, incluido un 90 % de victorias de una variante completamente ajustable frente al modelo de referencia; no anunció un producto de imagen disponible para todos.",
+        "El 90 % no representa todos los modelos ni variantes.",
+        "El método añade una red auxiliar de control.",
+        "Comparar variantes con la misma línea base y prompts."
+      ],
+      "sections": [
+        {
+          "heading": "Un nuevo problema de control para modelos visuales",
+          "kind": "report",
+          "paragraphs": [
+            "Google Research explicó el 29 de septiembre que generar una imagen estéticamente atractiva no significa necesariamente respetar cada detalle del texto del usuario. Un modelo puede dibujar un animal con proporciones realistas pero olvidar sus gafas, o intentar añadirlas deformando el rostro. Diffusion Controller está diseñado para dirigir el proceso de generación de forma más fina.",
+            "La noticia corresponde a una publicación científica sobre cómo controlar modelos de difusión, no a una actualización anunciada para todas las cuentas de Gemini o Nano Banana. El proyecto investiga una arquitectura y sus experimentos; no ofrece una tarifa de uso, un botón nuevo en una aplicación ni compatibilidad práctica universal con cualquier servicio comercial cerrado."
+          ]
+        },
+        {
+          "heading": "Qué hace una red auxiliar de control",
+          "kind": "technical",
+          "paragraphs": [
+            "Los modelos de difusión transforman una imagen de ruido en un resultado reconocible mediante pasos sucesivos. El método descrito agrega una red más pequeña que interviene sobre esa trayectoria, desplazando ciertos estados hacia el objetivo buscado. Los autores la comparan con un amortiguador de dirección: aporta correcciones mientras el generador principal mantiene sus capacidades aprendidas.",
+            "La ventaja conceptual consiste en no tener que reconstruir o reentrenar toda la arquitectura para cada preferencia específica. En las variantes de acceso limitado, los parámetros principales pueden permanecer congelados y la red adicional aprender cómo modificar la evolución de la imagen. La capacidad de realizarlo depende de la información interna que una implementación expone a los investigadores."
+          ]
+        },
+        {
+          "heading": "Una formulación matemática unificada",
+          "kind": "technical",
+          "paragraphs": [
+            "La publicación pretende conectar técnicas que antes se trataban como familias separadas: guía durante la inferencia, ajuste fino, adaptadores y optimización a partir de recompensas. Al representar la generación como un problema de control continuo, los autores buscan explicar qué correcciones aumentan la adecuación a una instrucción sin destruir la estabilidad del proceso.",
+            "El equipo convirtió la formulación en alternativas prácticas de entrenamiento mediante gradiente de políticas, PPO y pérdidas ponderadas por recompensa. Estas técnicas persiguen mejorar la puntuación de la imagen final, pero dependen de una señal de valoración adecuada. Si esa recompensa prefiere un rasgo superficial que los usuarios no desean, el controlador puede aprender a producir imágenes que puntúan bien y fallan en utilidad."
+          ]
+        },
+        {
+          "heading": "Distintos niveles de acceso al modelo",
+          "kind": "report",
+          "paragraphs": [
+            "Google distingue variantes en que puede observar información intermedia del generador y otras que permiten modificar los pesos internos. Los experimentos incluyen una red de control para caja gris, una referencia simplificada sin ciertos componentes y métodos denominados Diffusion Controller-J y -S para entrenamiento con acceso interno completo. Esta distinción evita mezclar resultados que exigen libertades técnicas diferentes.",
+            "Una API que solo entrega una imagen final desde un prompt no necesariamente permite aplicar un módulo que recibe estados intermedios de difusión. Por eso, el hecho de que la idea sea compatible con modelos parcialmente restringidos no demuestra que pueda incorporarse sin permisos a cualquier plataforma de imagen. Una integración empresarial necesitaría comprobar el tipo de acceso real, requisitos y coste."
+          ]
+        },
+        {
+          "heading": "Resultados de preferencia humana",
+          "kind": "report",
+          "paragraphs": [
+            "El artículo evalúa controladores sobre un backbone Stable Diffusion v1.4 y utiliza Human Preference Score versión dos para medir alineación con prompts y preferencias estéticas. Los investigadores comparan configuraciones con ajuste supervisado, pérdidas ponderadas y entrenamiento por políticas, mostrando casos en que una corrección mejora la fidelidad visual sin crear defectos evidentes.",
+            "El resultado más divulgado es el 90 por ciento de victorias de la variante con acceso completo frente a la línea de base en las pruebas del equipo. No debe convertirse en una probabilidad universal de éxito ni atribuirse a todas las versiones de Diffusion Controller. El desempeño cambia con prompts, modelo base y criterio de evaluación, por lo que necesita replicación fuera de los ejemplos publicados."
+          ]
+        },
+        {
+          "heading": "Aplicaciones potenciales y costes",
+          "kind": "report",
+          "paragraphs": [
+            "En producción creativa, la capacidad de hacer que un generador respete atributos precisos podría ayudar a mantener estilos y restricciones de una marca. Un equipo de diseño valoraría menos iteraciones para obtener una composición adecuada, siempre que no se introduzcan errores nuevos. Ese beneficio es una hipótesis de aplicación derivada de la investigación, no un ahorro comercial medido para todas las compañías.",
+            "Además de construir y entrenar la red auxiliar, hay costes de integración, evaluación y mantenimiento de compatibilidad. Un controlador preparado para una versión de un generador puede necesitar adaptación si cambian sus estados internos o el formato de las imágenes. El trabajo técnico no publica un precio total de operación, de modo que prometer una reducción universal de coste sería injustificado."
+          ]
+        },
+        {
+          "heading": "Qué significa en la carrera de IA",
+          "kind": "analysis",
+          "paragraphs": [
+            "El enfoque ilustra que mejorar un sistema generativo no siempre exige aumentar indefinidamente su tamaño. Controlar la trayectoria de un modelo existente puede convertirse en una línea complementaria de progreso, especialmente para casos que demandan precisión visual. Pero optimizar para preferencias es complejo y una puntuación alta no garantiza ausencia de contenido defectuoso o inapropiado.",
+            "Análisis Gazette: el acontecimiento del 29 de septiembre es una propuesta para conectar teoría de control con práctica de generación de imágenes. El siguiente paso será repetir los resultados en modelos más recientes, estudiar interfaces con acceso limitado y medir coste frente a calidad. Hasta entonces corresponde registrarlo como investigación, no como lanzamiento de producto para usuarios."
+          ]
+        }
+      ],
+      "executiveSummary": "Google Research presentó el 29 de septiembre Diffusion Controller, una metodología que dirige el proceso de difusión para mejorar el cumplimiento de instrucciones visuales. En experimentos con Stable Diffusion v1.4 reportó mejoras de preferencia, incluido un 90 % de victorias de una variante completamente ajustable frente al modelo de referencia; no anunció un producto de imagen disponible para todos. Los hallazgos tienen limitaciones y requieren verificación independiente.",
+      "finalSummary": "Análisis Gazette: el acontecimiento del 29 de septiembre es una propuesta para conectar teoría de control con práctica de generación de imágenes. El siguiente paso será repetir los resultados en modelos más recientes, estudiar interfaces con acceso limitado y medir coste frente a calidad. Hasta entonces corresponde registrarlo como investigación, no como lanzamiento de producto para usuarios.",
+      "analysis": "Análisis Gazette: es investigación documentada y no debe confundirse con acceso general a un producto terminado.",
+      "watch": "Resultados reproducibles, nuevas publicaciones técnicas, límites de disponibilidad y evolución de la investigación.",
+      "technicalDetails": [
+        {
+          "label": "Publicación",
+          "value": "29 septiembre 2026"
+        },
+        {
+          "label": "Modelo estudiado",
+          "value": "Stable Diffusion v1.4"
+        },
+        {
+          "label": "Métrica",
+          "value": "Human Preference Score v2"
+        },
+        {
+          "label": "Métodos",
+          "value": "PPO y pérdidas ponderadas por recompensa"
+        },
+        {
+          "label": "Resultado",
+          "value": "90 % de victorias en variante con acceso completo, según autores"
+        }
+      ],
+      "availability": {
+        "status": "Investigación; no producto público confirmado",
+        "platforms": [
+          "Google Research y paper técnico"
+        ],
+        "requirements": [
+          "Compatibilidad con información del proceso de difusión"
+        ],
+        "notes": [
+          "No implica compatibilidad automática con APIs cerradas."
+        ]
+      },
+      "limitations": [
+        "El 90 % no representa todos los modelos ni variantes.",
+        "Los resultados proceden de experimentos específicos.",
+        "La función de recompensa puede priorizar señales inadecuadas.",
+        "La integración en producción requiere validaciones adicionales."
+      ],
+      "practicalAdvice": [
+        "Comparar variantes con la misma línea base y prompts.",
+        "Medir fidelidad, calidad y costo, por separado.",
+        "No asumir acceso a estados internos de APIs cerradas."
+      ],
+      "usefulFacts": [
+        "El método añade una red auxiliar de control.",
+        "La variante white-box puede actualizar pesos del generador.",
+        "Los autores utilizaron Stable Diffusion v1.4 en sus evaluaciones."
+      ]
+    },
+    {
       "id": "dots-devday",
       "eventKey": "dots-devday",
       "date": "2026-09-29",
@@ -11560,6 +11715,161 @@
         "A²RD alterna segmentos que hacen progresar la trama y segmentos que anclan referencias.",
         "VQQA usa preguntas visuales para orientar nuevas generaciones.",
         "Google mostró un ejemplo audiovisual de unos diez minutos."
+      ]
+    },
+    {
+      "id": "openai-mentalhealthbench-expert-open-evaluation-2026-09-23",
+      "eventKey": "openai-mentalhealthbench-open-benchmark-expert-release-2026-09-23",
+      "articleVersion": 2,
+      "date": "2026-09-23",
+      "announcedAt": "2026-09-23",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "OpenAI",
+      "product": "MentalHealthBench",
+      "title": "OpenAI presenta MentalHealthBench: un benchmark abierto para evaluar conversaciones de IA sobre salud mental",
+      "summary": "OpenAI publicó el 23 de septiembre MentalHealthBench, diseñado con más de 80 psicólogos y psiquiatras de 22 países. Usa conversaciones sintéticas y criterios ponderados para examinar la seguridad, el contexto y el respeto a la autonomía del usuario. Es una evaluación de investigación, no la certificación de un terapeuta de IA.",
+      "tags": [
+        "Investigación",
+        "Seguridad",
+        "Salud mental",
+        "Evaluaciones"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado conceptual editorial de investigación en IA; no fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado científico del siglo XIX de un gabinete de expertos examinando respuestas simbólicas de una máquina de cálculo, distintas escalas de evaluación en papeles envejecidos, sin fotografías ni texto.",
+      "source": {
+        "name": "OpenAI · Introducing MentalHealthBench",
+        "url": "https://openai.com/index/introducing-mentalhealthbench/",
+        "publishedAt": "2026-09-23"
+      },
+      "body": [
+        "OpenAI publicó el 23 de septiembre MentalHealthBench, diseñado con más de 80 psicólogos y psiquiatras de 22 países. Usa conversaciones sintéticas y criterios ponderados para examinar la seguridad, el contexto y el respeto a la autonomía del usuario. Es una evaluación de investigación, no la certificación de un terapeuta de IA."
+      ],
+      "keyPoints": [
+        "OpenAI publicó el 23 de septiembre MentalHealthBench, diseñado con más de 80 psicólogos y psiquiatras de 22 países. Usa conversaciones sintéticas y criterios ponderados para examinar la seguridad, el contexto y el respeto a la autonomía del usuario. Es una evaluación de investigación, no la certificación de un terapeuta de IA.",
+        "Conversaciones sintéticas no replican todos los casos reales.",
+        "Los casos abarcan tres niveles de urgencia."
+      ],
+      "quickTakeaways": [
+        "OpenAI publicó el 23 de septiembre MentalHealthBench, diseñado con más de 80 psicólogos y psiquiatras de 22 países. Usa conversaciones sintéticas y criterios ponderados para examinar la seguridad, el contexto y el respeto a la autonomía del usuario. Es una evaluación de investigación, no la certificación de un terapeuta de IA.",
+        "Conversaciones sintéticas no replican todos los casos reales.",
+        "Los casos abarcan tres niveles de urgencia.",
+        "Usar varias pruebas y revisión de expertos, no solo una puntuación."
+      ],
+      "sections": [
+        {
+          "heading": "Qué apareció el 23 de septiembre",
+          "kind": "report",
+          "paragraphs": [
+            "OpenAI anunció MentalHealthBench como un recurso abierto para comparar respuestas de modelos en conversaciones que incluyen estrés, decisiones interpersonales, cuidados de otras personas y posibles emergencias. La noticia no fue lanzar un sistema de diagnóstico ni habilitar terapia automática. Fue publicar un conjunto de evaluación estructurado para identificar respuestas útiles, omisiones y conductas que deberían evitarse.",
+            "La compañía argumentó que muchos instrumentos anteriores se concentran en crisis agudas y emplean reglas generales. Eso deja preguntas sin medir cuando el usuario no se encuentra en una emergencia, pero necesita que la herramienta interprete el contexto con prudencia y reconozca límites. Un modelo puede evitar un consejo peligroso y, aun así, responder de manera fría, precipitada o inútil."
+          ]
+        },
+        {
+          "heading": "El papel de profesionales clínicos",
+          "kind": "technical",
+          "paragraphs": [
+            "La metodología reunió a más de ochenta psicólogos y psiquiatras con licencia de veintidós países, con experiencia en diecinueve idiomas y casi veinte subespecialidades. La participación profesional importa porque una conversación sobre salud mental no se evalúa solo por la fluidez del texto: es necesario valorar contexto, autonomía, seguridad y adecuación al nivel de preocupación expresado.",
+            "Cada diálogo sintético fue examinado por al menos tres especialistas. Los criterios conservados tenían que reunir apoyo de dos sin contradicción del tercero, según la documentación en inglés. Esta búsqueda de consenso reduce la dependencia de una sola opinión, pero no elimina discrepancias culturales ni la posibilidad de que una experiencia particular no quede bien representada en los casos elegidos."
+          ]
+        },
+        {
+          "heading": "Cómo funciona una rúbrica de comportamiento",
+          "kind": "technical",
+          "paragraphs": [
+            "Cada caso incluye criterios de respuesta para el último mensaje del usuario. Los profesionales pueden puntuar positivamente hacer una pregunta pertinente, explicar opciones o recomendar apoyo real cuando corresponde, y penalizar asumir sentimientos, imponer una decisión o ignorar señales de urgencia. Los pesos van de menos diez a más diez, dependiendo de la importancia clínica atribuida a cada conducta.",
+            "Un evaluador automático, GPT-5.6 Sol, se emplea para revisar la respuesta del modelo frente a los criterios escritos por expertos. Ese diseño facilita repetir grandes lotes de pruebas, pero introduce otra limitación: el modelo evaluador también puede equivocarse al identificar si una frase satisface una regla. Los resultados requieren validación humana y no deben confundirse con diagnóstico o medición clínica."
+          ]
+        },
+        {
+          "heading": "Qué personas y situaciones aparecen",
+          "kind": "report",
+          "paragraphs": [
+            "MentalHealthBench incluye perfiles de adultos, adolescentes de trece a diecisiete años, cuidadores y profesionales de salud. Los escenarios se agrupan en conversaciones no urgentes, preocupaciones graves sin emergencia inmediata y situaciones que exigen apoyo real urgente. La composición del conjunto busca diversidad para evaluar comportamiento, no reflejar estadísticamente qué temas son frecuentes entre personas usuarias.",
+            "Para adolescentes, la edad se indicó explícitamente al modelo mediante un mensaje de sistema, buscando comparabilidad entre proveedores. OpenAI advierte que ese método puede no reproducir todas las protecciones presentes en productos reales. Los expertos de salud mental juvenil revisaron esos casos. Un puntaje obtenido bajo estas condiciones no implica que el mismo sistema se comporte igual en un servicio con ajustes o controles distintos."
+          ]
+        },
+        {
+          "heading": "Datos sintéticos y privacidad",
+          "kind": "report",
+          "paragraphs": [
+            "Los diálogos fueron creados de forma sintética para reflejar situaciones plausibles sin publicar transcripciones identificables de pacientes. Algunos incluyen antecedentes que deberían modificar la respuesta, por ejemplo pérdidas recientes o tensiones con amistades. Esto permite comprobar si el asistente integra correctamente información relevante antes de aconsejar, sin exigir exponer información privada de personas reales en el conjunto abierto.",
+            "No obstante, una simulación no reproduce la complejidad de la atención humana continuada. El lenguaje, las preferencias y los riesgos pueden cambiar a lo largo de una relación de ayuda, y un caso breve ofrece una visión incompleta. Tampoco se puede deducir del rendimiento del benchmark que un producto esté autorizado legal o éticamente para actividades clínicas."
+          ]
+        },
+        {
+          "heading": "Resultados y perspectivas de usuarios",
+          "kind": "report",
+          "paragraphs": [
+            "OpenAI publicó comparaciones de diferentes modelos con intervalos de confianza del noventa y cinco por ciento y resultados desglosados en diez dimensiones de comportamiento. Dos sistemas con puntuación global parecida pueden mostrar fortalezas distintas, como saber solicitar contexto frente a ofrecer pasos prácticos. Las cifras proceden de los modelos y procedimientos evaluados en septiembre, no de toda versión futura.",
+            "La empresa realizó además un análisis separado con cuarenta y cuatro adultos de dieciséis países, que evaluaron conversaciones no urgentes. Los participantes valoraron tono y próximos pasos concretos, mientras los especialistas dieron más importancia a recabar contexto y evitar interpretaciones precipitadas. Esta diferencia permite investigar utilidad percibida y adecuación profesional sin reemplazar los criterios clínicos centrales."
+          ]
+        },
+        {
+          "heading": "Cómo debería usarse una evaluación abierta",
+          "kind": "analysis",
+          "paragraphs": [
+            "Un equipo que construye asistentes puede incorporar MentalHealthBench como una prueba adicional dentro de un programa de seguridad que incluya expertos locales, análisis por idioma y verificaciones de privacidad. No debe optimizar únicamente para una puntuación agregada, porque la respuesta apropiada ante una persona depende de gravedad y contexto. Los sistemas deben ser capaces de orientar hacia ayuda humana cuando corresponde.",
+            "Análisis Gazette: el valor principal del trabajo es proporcionar una medida más detallada para detectar qué conductas mejoran y cuáles todavía fallan. La apertura invita a reproducir, cuestionar y ampliar el conjunto, sin prometer perfección clínica. OpenAI subraya expresamente que ChatGPT no sustituye terapia ni atención profesional, una distinción que ninguna clasificación de modelos debería borrar."
+          ]
+        }
+      ],
+      "executiveSummary": "OpenAI publicó el 23 de septiembre MentalHealthBench, diseñado con más de 80 psicólogos y psiquiatras de 22 países. Usa conversaciones sintéticas y criterios ponderados para examinar la seguridad, el contexto y el respeto a la autonomía del usuario. Es una evaluación de investigación, no la certificación de un terapeuta de IA. Los hallazgos tienen limitaciones y requieren verificación independiente.",
+      "finalSummary": "Análisis Gazette: el valor principal del trabajo es proporcionar una medida más detallada para detectar qué conductas mejoran y cuáles todavía fallan. La apertura invita a reproducir, cuestionar y ampliar el conjunto, sin prometer perfección clínica. OpenAI subraya expresamente que ChatGPT no sustituye terapia ni atención profesional, una distinción que ninguna clasificación de modelos debería borrar.",
+      "analysis": "Análisis Gazette: es investigación documentada y no debe confundirse con acceso general a un producto terminado.",
+      "watch": "Resultados reproducibles, nuevas publicaciones técnicas, límites de disponibilidad y evolución de la investigación.",
+      "technicalDetails": [
+        {
+          "label": "Anuncio",
+          "value": "23 septiembre 2026"
+        },
+        {
+          "label": "Expertos",
+          "value": "Más de 80 especialistas de 22 países"
+        },
+        {
+          "label": "Situaciones",
+          "value": "Adultos, adolescentes, cuidadores y clínicos"
+        },
+        {
+          "label": "Dimensiones",
+          "value": "Diez comportamientos evaluados"
+        },
+        {
+          "label": "Rúbrica",
+          "value": "Pesos entre -10 y +10"
+        }
+      ],
+      "availability": {
+        "status": "Benchmark abierto, no producto médico",
+        "platforms": [
+          "Recurso de investigación OpenAI"
+        ],
+        "requirements": [
+          "Evaluación ética y supervisión profesional para cualquier aplicación sensible"
+        ],
+        "notes": [
+          "El benchmark no certifica un asistente como terapeuta."
+        ]
+      },
+      "limitations": [
+        "Conversaciones sintéticas no replican todos los casos reales.",
+        "El evaluador automático también puede cometer errores.",
+        "Las diferencias culturales y lingüísticas requieren análisis adicional.",
+        "No reemplaza terapia ni servicios de emergencia."
+      ],
+      "practicalAdvice": [
+        "Usar varias pruebas y revisión de expertos, no solo una puntuación.",
+        "Evaluar seguridad y agencia de las personas en el idioma de la aplicación.",
+        "Distinguir investigación de aprobación clínica."
+      ],
+      "usefulFacts": [
+        "Los casos abarcan tres niveles de urgencia.",
+        "OpenAI incluyó una evaluación separada con 44 adultos.",
+        "Los evaluadores expertos trabajaron desde 22 países."
       ]
     },
     {
@@ -20130,7 +20440,7 @@
     {
       "date": "2026-09-23",
       "status": "partial",
-      "verifiedArticles": 1
+      "verifiedArticles": 2
     },
     {
       "date": "2026-09-24",
@@ -20160,7 +20470,7 @@
     {
       "date": "2026-09-29",
       "status": "partial",
-      "verifiedArticles": 3
+      "verifiedArticles": 4
     },
     {
       "date": "2026-09-30",
