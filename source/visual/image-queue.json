@@ -8,7 +8,7 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
-  "generatedFromNewsUpdatedAt": "2026-10-11T03:58:05.568Z",
+  "generatedFromNewsUpdatedAt": "2026-10-11T04:02:21.383Z",
   "generatedAt": "2026-10-11",
   "items": [
     {
@@ -402,6 +402,32 @@
       "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
     },
     {
+      "articleId": "nvidia-hugging-face-acquisition",
+      "eventKey": "nvidia-hugging-face-acquisition",
+      "date": "2026-09-03",
+      "company": "NVIDIA",
+      "product": "Hugging Face",
+      "title": "NVIDIA acuerda adquirir Hugging Face",
+      "currentImage": "assets/hero.webp",
+      "currentAssetId": "gazette-generic-ai-hero-v1",
+      "currentReuseCount": 86,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-03/nvidia-hugging-face-acquisition.webp",
+      "brief": "Grabado periodístico sepia del siglo XIX: dos enormes talleres mecánicos conectan una fundición de cómputo con una biblioteca abierta de modelos y archivos, puentes hacia muchos caminos de nube y hardware, alegoría editorial y no escena real; sin texto ni logotipos.",
+      "sourceSummary": "El fabricante de chips anuncia un acuerdo para comprar la plataforma open-source, sujeto a las condiciones habituales de cierre.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
       "articleId": "nvidia-pair",
       "eventKey": "nvidia-pair",
       "date": "2026-09-03",
@@ -444,6 +470,32 @@
       "desiredOutput": "assets/news/2026-09-03/weathernext-3.webp",
       "brief": "Grabado del siglo XIX de un observatorio meteorológico con globo, nubes, relieve y estaciones conectadas mediante instrumentos, reflejando lluvia y viento en papel sepia, sin texto, marcas ni aspecto de fotografía documental.",
       "sourceSummary": "El sistema meteorológico de IA actualiza pronósticos con mayor frecuencia e incorpora más variables para productos y energía.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
+      "articleId": "anthropic-fermat-formalization",
+      "eventKey": "anthropic-fermat-formalization",
+      "date": "2026-09-04",
+      "company": "Anthropic",
+      "product": "Claude",
+      "title": "Claude completa una formalización verificable del último teorema de Fermat",
+      "currentImage": "assets/hero.webp",
+      "currentAssetId": "gazette-generic-ai-hero-v1",
+      "currentReuseCount": 86,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-04/anthropic-fermat-formalization.webp",
+      "brief": "Grabado científico en tinta y sepia de una biblioteca matemática del siglo XIX, enorme árbol de teoremas unidos por hilos con autómatas matemáticos resolviendo lemas y un verificador mecánico al centro; composición alegórica, sin textos, ecuaciones inventadas ni logotipos.",
+      "sourceSummary": "Anthropic anuncia una prueba formal en Lean comprobada por computadora, construida con una participación autónoma extensa de Claude.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
@@ -3616,58 +3668,6 @@
       "desiredOutput": "assets/news/2026-09-03/ifm-k2-horizon.webp",
       "brief": "Crear una ilustración específica para “IFM publica K2 Horizon como familia abierta de modelos”. El foco visual debe representar K2 Horizon de IFM y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "sourceSummary": "La colección cubre varios tamaños y acompaña los modelos con código y materiales de entrenamiento para facilitar reproducción e investigación.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "nvidia-hugging-face-acquisition",
-      "eventKey": "nvidia-hugging-face-acquisition",
-      "date": "2026-09-03",
-      "company": "NVIDIA",
-      "product": "Hugging Face",
-      "title": "NVIDIA acuerda adquirir Hugging Face",
-      "currentImage": "assets/hero.webp",
-      "currentAssetId": "gazette-generic-ai-hero-v1",
-      "currentReuseCount": 86,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-03/nvidia-hugging-face-acquisition.webp",
-      "brief": "Crear una ilustración específica para “NVIDIA acuerda adquirir Hugging Face”. El foco visual debe representar Hugging Face de NVIDIA y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "El fabricante de chips anuncia un acuerdo para comprar la plataforma open-source, sujeto a las condiciones habituales de cierre.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "anthropic-fermat-formalization",
-      "eventKey": "anthropic-fermat-formalization",
-      "date": "2026-09-04",
-      "company": "Anthropic",
-      "product": "Claude",
-      "title": "Claude completa una formalización verificable del último teorema de Fermat",
-      "currentImage": "assets/hero.webp",
-      "currentAssetId": "gazette-generic-ai-hero-v1",
-      "currentReuseCount": 86,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-04/anthropic-fermat-formalization.webp",
-      "brief": "Crear una ilustración específica para “Claude completa una formalización verificable del último teorema de Fermat”. El foco visual debe representar Claude de Anthropic y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "Anthropic anuncia una prueba formal en Lean comprobada por computadora, construida con una participación autónoma extensa de Claude.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
