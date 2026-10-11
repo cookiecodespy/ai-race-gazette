@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T23:25:43.585Z",
+  "updatedAt": "2026-10-11T00:22:17.750Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -11859,6 +11859,186 @@
       ]
     },
     {
+      "id": "openai-custom-gpt-retirement-plugin-migration-2026-09-11",
+      "eventKey": "openai-custom-gpt-retirement-plugin-migration-announced-2026-09-11",
+      "articleVersion": 2,
+      "date": "2026-09-11",
+      "announcedAt": "2026-09-11",
+      "coveredAt": "2026-10-10",
+      "verifiedAt": "2026-10-10",
+      "company": "OpenAI",
+      "product": "ChatGPT · GPT personalizados y plugins",
+      "title": "OpenAI anuncia el retiro futuro de los GPT personalizados y su migración a plugins",
+      "summary": "OpenAI comunicó el 11 de septiembre que planea retirar los GPT personalizados y ofrecer una migración hacia plugins. Los GPT existentes siguen disponibles por ahora. La transición exige revisar instrucciones, archivos, acciones personalizadas y permisos; las fechas pueden variar según la cuenta y el espacio de trabajo.",
+      "tags": [
+        "ChatGPT",
+        "Plugins",
+        "Plataformas",
+        "Migración",
+        "Disponibilidad"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado conceptual de una imprenta que transforma cuadernos de instrucciones en módulos de herramientas; no representa una interfaz real de ChatGPT.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de periódico del siglo XIX: una imprenta mecánica transforma cuadernos de instrucciones y estanterías de archivos en módulos intercambiables de un gabinete de herramientas. Imagen conceptual sobre migración de GPT a plugins, tinta negra y sepia, papel envejecido, sin texto incrustado, logos ni falsas interfaces.",
+      "source": {
+        "name": "OpenAI · ChatGPT release notes (11 de septiembre de 2026)",
+        "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "publishedAt": "2026-09-11"
+      },
+      "relatedSources": [
+        {
+          "name": "OpenAI · Custom GPT retirement and migration FAQ",
+          "url": "https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq"
+        }
+      ],
+      "body": [
+        "OpenAI anunció el 11 de septiembre de 2026 un cambio de dirección para los GPT personalizados de ChatGPT: planea retirarlos y trasladar sus usos a plugins. El anuncio es una hoja de ruta, no la confirmación de que los GPT hayan dejado de funcionar ese día.",
+        "La transición alcanza a creadores, usuarios que dependen de GPT ajenos y organizaciones con configuraciones de permisos. La decisión más importante no es simplemente conservar un texto de instrucciones, sino comprobar qué herramientas, referencias y accesos hacen que cada asistente sea útil."
+      ],
+      "keyPoints": [
+        "El retiro fue anunciado el 11 de septiembre como un plan futuro; los GPT existentes continúan utilizables hasta su fecha aplicable.",
+        "OpenAI describe un proceso de migración a plugins, pero la disponibilidad depende de cuenta, plan y espacio de trabajo.",
+        "Las acciones personalizadas no se transfieren automáticamente y requieren revisión o reconstrucción por separado."
+      ],
+      "quickTakeaways": [
+        "El anuncio histórico es del 11 de septiembre, no la fecha en que desaparecieron los GPT.",
+        "Los plugins reúnen instrucciones reutilizables, archivos de referencia y aplicaciones conectadas.",
+        "El asistente migrado no conserva necesariamente el mismo modelo ni todas las integraciones.",
+        "Los plazos y las herramientas disponibles deben comprobarse por cuenta y organización.",
+        "La migración no mantiene automáticamente las condiciones de publicación y acceso."
+      ],
+      "sections": [
+        {
+          "heading": "Qué anunció OpenAI el 11 de septiembre",
+          "kind": "report",
+          "paragraphs": [
+            "En las notas oficiales de ChatGPT fechadas el 11 de septiembre, OpenAI comunicó su intención de retirar los GPT personalizados y ofrecer una ruta de migración a plugins. La empresa describió los plugins como una forma de combinar instrucciones reutilizables con aplicaciones conectadas. También señaló que los GPT existentes podían seguir utilizándose hasta la fecha de retiro correspondiente, según los permisos y condiciones de cada cuenta.",
+            "La palabra clave es planificación. El comunicado no equivale a una baja inmediata del servicio, no significa que cada creador recibiera acceso a migración en septiembre y tampoco garantiza que dos organizaciones vean las mismas opciones. Confundir anuncio y ejecución haría que una cronología histórica atribuyera a septiembre cambios que estaban programados para después."
+          ]
+        },
+        {
+          "heading": "Por qué importa a usuarios y organizaciones",
+          "kind": "context",
+          "paragraphs": [
+            "Los GPT personalizados permitían empaquetar instrucciones, archivos de conocimiento y conexiones para repetir tareas. En la práctica, podían servir como asistentes de estudio, soporte interno, investigación o operaciones. La migración propuesta cambia el contenedor de esas instrucciones. Su impacto depende de qué parte de un flujo se conserva y de qué permisos tienen los usuarios que lo ejecutan.",
+            "Para un equipo, el riesgo no es solo perder la URL antigua de un GPT. También podría perder una acción externa, alterar un acceso compartido o encontrar respuestas distintas con el reemplazo. Esas dependencias deben inventariarse antes de declarar la migración como completada. Para quienes utilizan GPT creados por terceros, el trabajo principal consiste en saber si el autor ofrecerá un sustituto."
+          ]
+        },
+        {
+          "heading": "Qué se transfiere y qué queda fuera",
+          "kind": "technical",
+          "paragraphs": [
+            "La guía oficial describe un proceso en el que las instrucciones de un GPT se convierten en una habilidad del plugin y los archivos de conocimiento pasan a referencias. Las aplicaciones conectadas pueden añadirse como apps. Esa descripción es una guía de la funcionalidad prevista y no implica que todo componente externo funcione automáticamente sin comprobar autorización, disponibilidad y configuración.",
+            "Hay dos excepciones especialmente relevantes. Las acciones personalizadas de GPT, que podían llamar servicios externos, no se migran automáticamente; pueden requerir una integración equivalente o un servidor MCP propio. Además, el modelo elegido para el GPT no se traslada como una selección vinculante al plugin. Por eso, reproducir las instrucciones no garantiza reproducir exactamente el comportamiento de un asistente anterior."
+          ]
+        },
+        {
+          "heading": "Disponibilidad y calendario: no confundir objetivos con acceso real",
+          "kind": "report",
+          "paragraphs": [
+            "Las notas de septiembre fijaron el rumbo, mientras que la documentación de migración detalla un calendario posterior. La guía consultada durante esta cobertura sitúa el retiro estándar previsto para el 11 de diciembre de 2026 y contempla una extensión al 11 de febrero de 2027 para determinados espacios Enterprise que reciban una prórroga aprobada. Son fechas programadas, no hechos ya consumados al redactarse este reportaje.",
+            "En el apartado Enterprise, OpenAI indicó como hito objetivo el 22 de septiembre para disponibilizar la experiencia de migración y el 26 de octubre como fecha planificada para terminar la creación de GPT nuevos. La propia empresa advierte que los objetivos no garantizan acceso uniforme. Las fechas para un usuario concreto deben contrastarse con los avisos de su cuenta y los controles de su organización."
+          ]
+        },
+        {
+          "heading": "Cómo migraría un creador su asistente",
+          "kind": "practical",
+          "paragraphs": [
+            "Según el procedimiento oficial, el creador debe identificar el GPT correspondiente y, cuando aparezca la opción, seleccionar la migración a plugin. La operación toma como base la versión publicada del GPT; los borradores no publicados no se incorporan directamente. Publicar la versión necesaria no obliga a hacer público el GPT para todo internet. Tras la migración, el original permanece utilizable hasta su retiro, pero pasa a ser de solo lectura.",
+            "El plugin resultante comienza privado y no hereda automáticamente los ajustes de compartición anteriores. Ese detalle es fácil de pasar por alto: un GPT usado por un equipo podría tener que compartirse mediante las opciones del espacio de trabajo y las autorizaciones disponibles. OpenAI recomienda probarlo antes de pedir a los usuarios que cambien de herramienta."
+          ]
+        },
+        {
+          "heading": "Qué deben comprobar los equipos técnicos",
+          "kind": "practical",
+          "paragraphs": [
+            "Un inventario mínimo debería incluir el propósito de cada GPT, su responsable, sus instrucciones activas, sus archivos de referencia, sus acciones personalizadas y las personas que dependen de él. Después se necesitan casos de prueba representativos, tanto tareas habituales como una difícil, para comparar el resultado entre el GPT original y el plugin migrado.",
+            "La prueba debe separar tres cosas: calidad de las respuestas, disponibilidad de herramientas y permisos de acceso. Un plugin puede conservar instrucciones y, aun así, carecer de permisos sobre una aplicación; también puede necesitar un sustituto para una acción personalizada. La evidencia de migración exitosa debería ser un flujo completo ejecutado y revisado, no solamente que aparezca el nuevo plugin en una lista."
+          ]
+        },
+        {
+          "heading": "Lo que todavía no estaba garantizado",
+          "kind": "analysis",
+          "paragraphs": [
+            "No todas las cuentas ven necesariamente la misma opción de migración ni todos los planes y espacios de trabajo tienen los mismos permisos. La documentación oficial insiste en que deben consultarse los avisos de cuenta. Tampoco existe una promesa de equivalencia exacta entre GPT y plugin: modelos distintos, herramientas no transferidas y nuevas reglas de compartición pueden modificar la experiencia real.",
+            "Análisis Gazette: este cambio es significativo porque desplaza el énfasis desde asistentes configurados como páginas individuales hacia capacidades reutilizables que interactúan con aplicaciones. La utilidad dependerá de que el nuevo formato preserve contextos, seguridad y flujos completos. Para medir su éxito habrá que observar adopción efectiva y no solo disponibilidad nominal de una herramienta de migración."
+          ]
+        },
+        {
+          "heading": "Qué observar después del anuncio",
+          "kind": "context",
+          "paragraphs": [
+            "Los próximos hitos verificables son la disponibilidad real de migración por plan, las condiciones de acceso a plugins, los cambios del calendario programado y el tratamiento de acciones personalizadas. También importarán las opciones de publicación para creadores que distribuían sus GPT públicamente y la capacidad de los administradores para controlar quién puede instalar y usar cada reemplazo.",
+            "Para los usuarios, la recomendación editorial es sencilla: no asumir que su GPT ya ha desaparecido, pero tampoco posponer la revisión hasta la fecha límite. Conserva ejemplos de uso y comprueba el aviso de tu cuenta. Si utilizas un GPT de otra persona, pregunta por el reemplazo antes de depender de él para una tarea crítica."
+          ]
+        }
+      ],
+      "executiveSummary": "OpenAI anunció el 11 de septiembre una migración futura de los GPT personalizados hacia plugins. La retirada no ocurrió ese día. El cambio puede facilitar la reutilización de instrucciones y herramientas, pero exige pruebas porque las acciones personalizadas, la selección de modelo y los permisos compartidos no se preservan necesariamente.",
+      "finalSummary": "La noticia del 11 de septiembre inaugura una transición planificada, no registra un producto ya retirado. El resultado dependerá de que los creadores migren y prueben sus flujos reales, con atención a acciones externas, archivos, acceso compartido y fechas aplicables por cuenta.",
+      "analysis": "Análisis Gazette: migrar el contenedor no equivale a migrar la experiencia. La interoperabilidad de herramientas y el control de permisos serán tan importantes como las instrucciones del asistente.",
+      "watch": "Acceso real al proceso de migración, ajustes de plazos, sustitución de acciones personalizadas, permisos de compartición y continuidad de los GPT existentes.",
+      "technicalDetails": [
+        {
+          "label": "Fecha del anuncio",
+          "value": "11 de septiembre de 2026"
+        },
+        {
+          "label": "Naturaleza",
+          "value": "Retiro futuro anunciado, no ejecutado ese día"
+        },
+        {
+          "label": "Formato sucesor",
+          "value": "Plugins con habilidades, referencias y apps"
+        },
+        {
+          "label": "Acciones personalizadas",
+          "value": "Sin transferencia automática"
+        }
+      ],
+      "availability": {
+        "status": "Transición anunciada, despliegue de migración condicionado a la cuenta",
+        "platforms": [
+          "ChatGPT",
+          "Plugins según plan y espacio de trabajo"
+        ],
+        "requirements": [
+          "Acceso a la función de migración",
+          "Permisos de plugins y apps",
+          "GPT publicado para migrar su última versión"
+        ],
+        "notes": [
+          "Los GPT originales siguen operativos hasta el retiro que corresponda.",
+          "Los calendarios son previstos y pueden variar por plan y organización."
+        ]
+      },
+      "timeline": [
+        {
+          "date": "2026-09-11",
+          "label": "Anuncio de migración futura de GPT personalizados a plugins."
+        }
+      ],
+      "limitations": [
+        "La opción de migración puede no estar disponible todavía para determinadas cuentas.",
+        "Las acciones personalizadas requieren reconstrucción o sustitución fuera de la migración automática.",
+        "La migración no garantiza equivalencia de modelo, permisos, herramientas ni calidad de respuesta.",
+        "Las fechas posteriores al anuncio son planes sujetos a modificación y condiciones de cada cuenta."
+      ],
+      "practicalAdvice": [
+        "Hacer inventario de GPT, instrucciones, archivos, acciones externas y responsables.",
+        "Probar el reemplazo con tareas sencillas y difíciles antes de cambiar un flujo crítico.",
+        "Verificar permisos de compartición y acceso a aplicaciones después de migrar.",
+        "No presentar el retiro como consumado antes de su fecha efectiva."
+      ],
+      "usefulFacts": [
+        "El anuncio histórico apareció en las notas oficiales de ChatGPT el 11 de septiembre de 2026.",
+        "La documentación de OpenAI programa el retiro estándar para el 11 de diciembre de 2026, sujeto a avisos aplicables.",
+        "La extensión Enterprise hasta febrero de 2027 requiere aprobación específica.",
+        "Los GPT migrados pasan a ser de solo lectura y el plugin reemplazante comienza privado."
+      ]
+    },
+    {
       "id": "openai-gpt-live-1-api-2026-09-10",
       "eventKey": "openai-gpt-live-1-api-2026-09-10",
       "articleVersion": 2,
@@ -15826,7 +16006,7 @@
     {
       "date": "2026-09-11",
       "status": "partial",
-      "verifiedArticles": 2
+      "verifiedArticles": 3
     },
     {
       "date": "2026-09-12",
