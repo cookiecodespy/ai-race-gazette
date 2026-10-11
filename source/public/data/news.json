@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T11:25:45.992Z",
+  "updatedAt": "2026-10-11T11:29:11.763Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -12522,7 +12522,7 @@
         "url": "https://developers.openai.com/api/docs/guides/decisions",
         "publishedAt": null
       },
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
       "verificationNote": "Presentada en preview limitada el 29 de septiembre; la guía revisada el 7 de octubre describe la beta pública. Son fases distintas del mismo lanzamiento.",
       "body": [
         "OpenAI documenta Decisions como una API en beta pública que evalúa texto, imágenes o ambos y devuelve respuestas tipadas. En la versión consultada, gpt-6-luna es el modelo disponible y las solicitudes se envían a un endpoint dedicado.",
@@ -12552,7 +12552,66 @@
         }
       ],
       "product": "Decisions API",
-      "announcedAt": "2026-09-29"
+      "announcedAt": "2026-09-29",
+      "articleVersion": 2,
+      "executiveSummary": "La Decisions API de OpenAI se presenta en beta pública como un endpoint especializado para transformar texto e imágenes en respuestas tipadas: probabilidades, elecciones entre categorías y puntuaciones sobre escalas. La documentación identifica a gpt-6-luna como modelo disponible y comunica una ventaja aproximada de velocidad frente a Responses API; esa comparación es una afirmación de OpenAI, no una prueba del Gazette.",
+      "quickTakeaways": [
+        "La interfaz dedicada usa POST /v1/decisions y preguntas de tipo predicate, choice o score.",
+        "El proveedor anuncia una latencia aproximadamente diez veces menor que la de Responses API, sin que esta edición haya reproducido la medición.",
+        "Un resultado estructurado facilita el enrutamiento, pero las probabilidades deben calibrarse y las decisiones sensibles requieren controles humanos."
+      ],
+      "sections": [
+        {
+          "heading": "Qué cambia frente a una respuesta conversacional",
+          "kind": "report",
+          "paragraphs": [
+            "La novedad de Decisions no es únicamente que un modelo pueda clasificar texto. Una aplicación que necesita cientos o miles de decisiones pequeñas normalmente tiene que pedir al modelo una respuesta estructurada y luego interpretar ese resultado. OpenAI propone una interfaz enfocada en preguntas acotadas para evitar tratar cada clasificación como una conversación completa. La documentación consultada describe una beta pública y el endpoint POST /v1/decisions, con gpt-6-luna como único modelo admitido en ese momento. Esta disponibilidad se distingue de la vista previa limitada anunciada originalmente el 29 de septiembre.",
+            "Cada solicitud reúne el modelo, una evidencia compartida en el campo input y una lista de preguntas. La evidencia puede ser texto o mensajes con texto e imágenes. Cada pregunta posee nombre identificable y tipo determinado; las respuestas llegan agrupadas en answers y conservan el nombre de referencia. Para un programador, ese contrato ayuda a conectar clasificación de documentos, moderación contextual, enrutamiento de tickets o análisis de fotografías a una lógica de aplicación. No convierte, sin embargo, una salida probabilística en verdad verificable."
+          ]
+        },
+        {
+          "heading": "Tres operaciones: condición, elección y escala",
+          "kind": "technical",
+          "paragraphs": [
+            "El tipo predicate estima mediante un valor entre cero y uno la probabilidad de que se cumpla una condición descrita. Google no participa en este anuncio: la especificación es de OpenAI, y sus propios ejemplos incluyen daños visibles sobre un producto. Choice selecciona una opción dentro de un conjunto cerrado, como el departamento correcto para una solicitud de asistencia. Score asigna una evaluación sobre niveles ordenados, por ejemplo una escala de gravedad; su resultado se calcula a partir de probabilidades sobre esos niveles y puede quedar entre dos valores. La distinción es relevante porque una categoría nominal no debe confundirse con una magnitud continua.",
+            "OpenAI orienta el endpoint a respuestas evaluativas, no a generar explicaciones largas o cualquier esquema arbitrario. La propia documentación dirige a Structured Outputs de Responses API cuando se necesita generar objetos según un esquema personalizado y a function calling cuando el objetivo es solicitar que el modelo use herramientas con argumentos. Por tanto, Decisions no reemplaza el resto de la plataforma. Elegirlo solo tiene sentido cuando los tipos predefinidos corresponden al problema que la aplicación necesita resolver."
+          ]
+        },
+        {
+          "heading": "Velocidad anunciada y coste de integración",
+          "kind": "context",
+          "paragraphs": [
+            "OpenAI afirma que Decisions responde unas diez veces más rápido que Responses API para el trabajo que plantea. La cifra es un claim comercial y técnico del proveedor: esta redacción no examinó el benchmark, el hardware, la mezcla de entradas ni el tamaño de las solicitudes comparadas. Un equipo serio mediría latencias p50 y p95 sobre su conjunto de tareas, controlaría reintentos y fallos de red y compararía no solo rapidez sino calidad de las clasificaciones. El tiempo de cómputo menor deja de ser ventaja si aumentan los errores que obligan a revisión manual.",
+            "El precio final de usar una API depende de su tarifa vigente, volumen y patrón de datos; la guía de la función que se revisó no basta para atribuir un precio universal a cada decisión. Tampoco debe deducirse que la futura salida de beta esté garantizada en una fecha concreta: la página expresa una expectativa de lanzamiento general en semanas. Los equipos deberían programar una integración que pueda cambiar de versión y ejecutar pruebas de regresión antes de modificar reglas de producción."
+          ]
+        },
+        {
+          "heading": "Cómo usar probabilidades de forma responsable",
+          "kind": "practical",
+          "paragraphs": [
+            "Una probabilidad devuelta por un modelo puede ayudar a priorizar trabajo, pero su interpretación depende de calibración. Si una aplicación envía casos fáciles y difíciles en proporciones distintas, el umbral que funciona en la demostración puede fallar en producción. Conviene reunir un conjunto representativo etiquetado por personas, medir precisión y recuperación por segmento y revisar falsos positivos y negativos. En entornos de alto impacto se necesitan además reglas explícitas para que la decisión pueda derivarse a revisión humana.",
+            "El ejemplo más útil para una empresa quizá sea clasificar solicitudes en vez de delegar automáticamente resoluciones. Se puede usar choice para sugerir el equipo receptor y predicate para advertir de un riesgo, manteniendo registros del texto usado, de la respuesta y de las correcciones del operador. La trazabilidad permitirá saber si la API reduce el trabajo real y no solo el número de líneas de código. También conviene minimizar los datos enviados y separar el resultado estadístico del juicio de negocio que finalmente aplica una persona."
+          ]
+        }
+      ],
+      "limitations": [
+        "Velocidad 10x: afirmación de OpenAI no comprobada de forma independiente aquí.",
+        "La beta y el único modelo disponible pueden cambiar; revisar versión, precios y disponibilidad antes de desplegar.",
+        "Las probabilidades no sustituyen calibración, auditoría ni revisión humana en decisiones sensibles."
+      ],
+      "practicalAdvice": [
+        "Empezar con un conjunto etiquetado y comparar quality, costes y latencias contra la implementación actual.",
+        "Definir qué umbrales requieren intervención humana y registrar errores por categorías.",
+        "Usar Responses API con Structured Outputs cuando la tarea necesite un JSON arbitrario o explicaciones desarrolladas."
+      ],
+      "usefulFacts": [
+        "Endpoint documentado: POST /v1/decisions.",
+        "Tipos de pregunta: predicate, choice y score.",
+        "Modelo señalado en la documentación consultada: gpt-6-luna."
+      ],
+      "finalSummary": "Decisions API especializa una tarea de alto volumen en productos de IA: transformar evidencia en preguntas evaluativas con salida previsible. Su ventaja dependerá de que la rapidez anunciada se sostenga en pruebas reales y de que cada organización implemente calibración y controles adecuados. Su lanzamiento no debe confundirse con una solución general para toda decisión empresarial.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de periódico antiguo: un gran tablero de clasificación con tres caminos simbólicos —condición, selección y escala—, documentos y fotografías abstractas pasando ante una mesa de revisores humanos. Representar toma de decisiones asistida, no juicios automáticos infalibles. Tinta negra y sepia, papel desgastado, orientación horizontal 3:2, sin números ni nombres inventados, sin fotografía documental."
     },
     {
       "id": "claude-sonnet-5-5",
@@ -13492,7 +13551,7 @@
         "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/",
         "publishedAt": "2026-09-23"
       },
-      "verifiedAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
       "body": [
         "Google anunció el 23 de septiembre un nuevo despliegue de Connected Apps para Gemini. El objetivo es realizar tareas entre servicios desde el asistente.",
         "Entre las herramientas citadas están Airtable, Linear y monday.com para productividad, además de Adobe, Picsart, Squarespace y Webflow para creación. La publicación describe un despliegue que comienza ese día.",
@@ -13504,7 +13563,66 @@
       ],
       "analysis": "Las integraciones pueden convertir una conversación en trabajo útil entre aplicaciones. Su valor depende de resultados fiables y permisos claros.",
       "watch": "Disponibilidad de cada conexión y control de acciones.",
-      "announcedAt": "2026-09-23"
+      "announcedAt": "2026-09-23",
+      "articleVersion": 2,
+      "executiveSummary": "Google anunció el 23 de septiembre una nueva ola de aplicaciones conectadas a Gemini, con despliegue gradual desde ese día. Incluye servicios de productividad, creación y vida cotidiana. El cambio apunta a realizar tareas entre herramientas desde una conversación, pero el anuncio no demuestra que todas las integraciones estén disponibles para toda cuenta, región o plan.",
+      "quickTakeaways": [
+        "Google anunció conexiones nuevas de Gemini a servicios de terceros en categorías de productividad, creatividad y estilo de vida.",
+        "Entre las marcas mencionadas están Airtable, Linear, monday.com, Adobe, Webflow, Peloton y SeatGeek.",
+        "Conectar una cuenta implica revisar permisos y probar qué acciones admite realmente cada integración; el despliegue anunciado era gradual."
+      ],
+      "sections": [
+        {
+          "heading": "Del asistente aislado al trabajo entre aplicaciones",
+          "kind": "report",
+          "paragraphs": [
+            "El anuncio de Google describe un cambio de experiencia: en lugar de abrir manualmente cada servicio, el usuario puede conectar algunas de sus aplicaciones preferidas a Gemini y solicitar operaciones desde la misma conversación. La empresa publicó la noticia el 23 de septiembre de 2026 y presentó el despliegue como algo que comenzaba ese día, no como disponibilidad mundial y simultánea de todas las integraciones. El mensaje principal es reducir el cambio permanente entre pestañas durante tareas cotidianas.",
+            "Hay una diferencia importante entre reconocer información sobre una plataforma y actuar dentro de una cuenta autorizada. Una integración útil necesita permisos efectivos, una acción compatible, manejo de errores y una forma de comprobar que el resultado se aplicó. Para evaluar esta nueva categoría de herramientas no basta con contar logos: conviene probar el recorrido completo desde una petición en lenguaje natural hasta el resultado visible en la aplicación conectada."
+          ]
+        },
+        {
+          "heading": "Servicios incluidos en el anuncio",
+          "kind": "technical",
+          "paragraphs": [
+            "Google agrupó varias conexiones de productividad, como Airtable, Linear, monday.com, PandaDoc, Wispr AI y Zoho. Para creatividad citó Adobe, Picsart, Squarespace y Webflow. En estilo de vida mencionó apartments.com, Experian, Peloton y SeatGeek. Es una lista comunicada por la compañía, no una comprobación individual del alcance de cada conector. Por ejemplo, la conexión de un gestor de proyectos puede ser distinta a la de una plataforma para diseñar sitios o la consulta de información financiera.",
+            "La publicación explica que la activación puede iniciarse desde los ajustes de Gemini o dentro de la conversación, por ejemplo mencionando una aplicación con arroba. Esa entrada simplificada no indica por sí sola qué lectura, escritura o confirmación permite cada proveedor. Un conector puede ofrecer consultas sin edición, mientras otro podría introducir cambios que merecen confirmación. Por eso hay que revisar las capacidades reales en pantalla y las condiciones que cada servicio establezca."
+          ]
+        },
+        {
+          "heading": "Permisos, privacidad y límites operativos",
+          "kind": "practical",
+          "paragraphs": [
+            "El acceso entre cuentas plantea cuestiones de autorización. Si Gemini puede consultar un tablero de proyectos o iniciar la creación de un activo visual, la persona debe saber con qué identidad opera, qué datos deja visibles al asistente y qué permisos mantiene tras cerrar una sesión. Un buen flujo de adopción empezaría con cuentas de prueba y proyectos sin información sensible, después comprobaría revocación de accesos, errores y registro de cambios. Ni el anuncio ni la presencia de una marca en la lista eximen de revisar estos controles.",
+            "Las conexiones también deben evaluarse por fricción de uso. Resulta más cómodo pedir una tarea en lenguaje natural, pero esa ganancia desaparece si es necesario interpretar un error vago, repetir instrucciones o abrir tres pantallas para saber si la acción ocurrió. La experiencia deseable confirma con claridad el destino y el resultado, y permite al usuario corregir el objetivo. La fiabilidad de esa interacción es una parte esencial de la competencia entre asistentes conectados."
+          ]
+        },
+        {
+          "heading": "Qué observar en el despliegue",
+          "kind": "analysis",
+          "paragraphs": [
+            "La ola de Connected Apps llega en un mercado donde la utilidad de un asistente se mide cada vez más por su capacidad de participar en el trabajo real y no únicamente por contestar preguntas. Para equipos que usan varias herramientas de gestión, la promesa es centralizar acciones sencillas sin tener que reconstruir manualmente contexto en cada aplicación. Sin embargo, sigue siendo necesario distinguir demostraciones, funciones anunciadas y resultados comprobados con cuentas reales.",
+            "El seguimiento periodístico debe concentrarse en qué integraciones se habilitan efectivamente, para qué regiones y planes, qué acciones permiten y cómo comunican permisos. La ausencia de disponibilidad en una cuenta particular no invalida por sí sola un despliegue gradual; tampoco basta el anuncio para afirmar que el servicio ya está operativo para todos. El Gazette conservará esta noticia como el evento original y registrará una actualización si Google confirma cambios materiales posteriores."
+          ]
+        }
+      ],
+      "limitations": [
+        "El artículo de Google habla de despliegue progresivo; no se puede inferir acceso universal inmediato.",
+        "El anuncio enumera proveedores, pero no documenta en la propia noticia el mismo conjunto de operaciones para todos.",
+        "Los usuarios deben revisar permisos, disponibilidad regional y los resultados efectivos de cada conector."
+      ],
+      "practicalAdvice": [
+        "Probar primero una tarea no sensible con un servicio ya utilizado.",
+        "Verificar en ajustes los permisos concedidos y cómo desconectar una app.",
+        "Confirmar en la aplicación de destino que la acción solicitada realmente se ejecutó."
+      ],
+      "usefulFacts": [
+        "Inicio del despliegue anunciado: 23 de septiembre de 2026.",
+        "Tres grupos oficiales: productividad, creatividad y estilo de vida.",
+        "Google menciona la conexión en ajustes o mediante una mención con arroba."
+      ],
+      "finalSummary": "Las nuevas Connected Apps de Gemini amplían las superficies donde un asistente puede resultar útil. El anuncio es relevante por acercar el lenguaje natural a acciones entre aplicaciones, pero el éxito dependerá de disponibilidad, controles comprensibles y ejecución verificable. La cobertura no equipara la lista de socios con un despliegue universal ya terminado.",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado horizontal de diario antiguo: un asistente mecánico simbólico conecta un escritorio de proyectos, un taller de creación y objetos cotidianos mediante cables y carpetas; personas revisan qué conexión activar. Enfatizar interoperabilidad y control de permisos, sin usar logos falsos ni representar capturas reales. Tinta negra, sepia, papel envejecido, proporción 3:2."
     },
     {
       "id": "microsoft-eviltokens-ai-cybercrime-disruption-sep22-2026",
