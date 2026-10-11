@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T04:02:21.383Z",
+  "updatedAt": "2026-10-11T04:23:01.930Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -3794,6 +3794,209 @@
         }
       ],
       "articleVersion": 2
+    },
+    {
+      "id": "openai-september-annualized-revenue-50b-report-2026",
+      "eventKey": "openai-september-annualized-revenue-50b-reporting-method-2026-10-08",
+      "articleVersion": 2,
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-11",
+      "verifiedAt": "2026-10-11",
+      "company": "OpenAI",
+      "product": "Ingresos anualizados · reporte financiero",
+      "title": "Reporte: OpenAI registra cerca de US$50.000 millones anualizados, no los US$70.000 millones difundidos",
+      "summary": "Reuters y Financial Times reportan que la tasa de ingresos anualizada de OpenAI al cierre de septiembre rondó US$50.000 millones. La diferencia frente a la cifra anterior de US$70.000 millones responde principalmente a métodos de contabilizar ventas por socios; no es una pérdida de caja confirmada.",
+      "tags": [
+        "Reporte",
+        "Finanzas",
+        "Ingresos",
+        "Modelos de negocio",
+        "Mercado IA"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial de infraestructura tecnológica global, usado como ilustración conceptual de las finanzas de IA.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia 3:2 de dos libros de contabilidad con columnas diferentes conectados a centros de datos y fichas de nube, metáfora de ingresos brutos frente a netos; sin cifras incrustadas, logos falsos ni gráficos presentados como estados auditados.",
+      "source": {
+        "name": "Reuters · OpenAI's September annualized revenue nears $50 billion",
+        "url": "https://www.reuters.com/business/openais-annualized-revenue-20-billion-less-than-previously-signaled-ft-reports-2026-10-08/",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "Financial Times · OpenAI annualised revenues $20bn less than previously signalled",
+          "url": "https://www.ft.com/content/b66a9858-f8fb-46cb-b506-44bfe26fca2a",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "Axios · OpenAI annualized revenue $20 billion less than previously reported",
+          "url": "https://www.axios.com/2026/10/08/openai-50-billion-arr-anthropic-revenue-accounting",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "name": "Barron's · OpenAI Fears Soothed, But Selloff Shows Market Fragility",
+          "url": "https://www.barrons.com/livecoverage/stock-market-news-today-100926/card/openai-fears-soothed-but-selloff-shows-market-fragility-oQGsU2Q20sCGMiUP3ZHU",
+          "publishedAt": "2026-10-09"
+        }
+      ],
+      "body": [
+        "El 8 de octubre de 2026, Financial Times informó que los ingresos anualizados de OpenAI al cierre de septiembre se acercaban a US$50.000 millones, frente a la cifra próxima a US$70.000 millones que había circulado anteriormente. Reuters corroboró el reporte con una persona familiarizada con la información transmitida a inversores. Se trata de cifras privadas comunicadas en reportes periodísticos, no de estados financieros auditados publicados por la compañía.",
+        "La diferencia de aproximadamente US$20.000 millones provocó titulares sobre una supuesta caída de ingresos. Esa interpretación es demasiado simple. Las fuentes describen principalmente una diferencia de metodología para comparar las ventas de OpenAI con las de Anthropic, no una pérdida demostrada de US$20.000 millones en ventas efectivamente realizadas. Reuters solicitó comentarios a OpenAI y no recibió respuesta para su publicación.",
+        "Una tasa anualizada de ingresos, también llamada revenue run rate, extrapola a doce meses el ritmo observado durante un período más corto, a menudo el último mes. Si un negocio registrara US$4.000 millones en un mes, una multiplicación mecánica daría US$48.000 millones anualizados. Eso no significa que ya haya facturado esa cantidad durante un año completo ni que vaya a mantener ese ritmo.",
+        "Este matiz importa especialmente en empresas que crecen con rapidez, cambian precios, amplían contratos y consumen enormes recursos informáticos. Un indicador anualizado puede ser útil para observar la velocidad comercial, pero no equivale a ingresos históricos reconocidos durante doce meses, margen bruto, flujo de caja ni beneficio. Comparar ese indicador con compromisos plurianuales de infraestructura sin distinguir horizontes produce conclusiones engañosas.",
+        "Reuters explicó que OpenAI y Anthropic presentan de manera distinta parte de las ventas canalizadas mediante proveedores de nube. Anthropic incluye determinados importes vendidos a través de socios como AWS y Google Cloud dentro de su cifra superior de ingresos, mientras que OpenAI no incluye de la misma forma algunas ventas de sus socios. El tratamiento depende de la estructura comercial y de quién controla la relación con el cliente.",
+        "Axios precisó que la cifra mayor atribuida anteriormente a OpenAI surgió al intentar expresar su actividad sobre una base más comparable con la metodología comunicada para Anthropic. Esto no permite afirmar que una empresa esté falseando sus cuentas. Las cifras de titulares, las métricas internas de inversores y los ingresos reconocidos según normas contables son objetos distintos que requieren notas explicativas antes de compararse.",
+        "Según Reuters, OpenAI había comenzado 2026 con un ritmo anualizado próximo a US$20.000 millones, frente a US$6.000 millones durante 2024. La cifra reportada para septiembre, cercana a US$50.000 millones, seguiría representando una expansión considerable. No obstante, el periódico no publicó una conciliación auditada entre los US$50.000 millones y la estimación previa de US$70.000 millones.",
+        "Reuters también informó que Anthropic había superado US$65.000 millones anualizados en julio, según fuentes, y recogió comparaciones de ingresos trimestrales entre ambas compañías. No es prudente convertir esos números en un ranking definitivo sin homogeneizar períodos, criterios de reconocimiento y participación de socios. Tampoco se conocen en estas fuentes márgenes operativos auditados que permitan deducir cuál negocio es más rentable.",
+        "Los reportes aparecieron en un mercado que intenta valorar empresas de modelos, fabricantes de chips y operadores de centros de datos a partir de expectativas de crecimiento excepcional. Reuters vinculó la noticia con la inquietud bursátil del 8 de octubre, mientras Barron's describió una reacción inicial negativa y un alivio posterior cuando Bloomberg informó que OpenAI seguía aspirando a alcanzar US$70.000 millones anualizados al terminar 2026.",
+        "El objetivo de fin de año reportado por Bloomberg es una expectativa futura, no una corrección retroactiva del dato de septiembre. Las dos informaciones pueden coexistir: un ritmo cercano a US$50.000 millones en septiembre y una meta más alta para diciembre. Nada de esto demuestra por sí solo que la meta vaya a cumplirse, ni que el movimiento de un índice bursátil tenga una causa única.",
+        "Análisis Gazette: la carrera de modelos ya no se mide solamente por benchmarks, usuarios o número de tokens. La capacidad de transformar el uso en ingresos sostenibles importa para financiar centros de datos, investigación, chips especializados y productos de agentes. Una diferencia de presentación de US$20.000 millones altera la lectura pública de la escala comercial incluso cuando no cambia el funcionamiento de un solo modelo.",
+        "Los grandes proveedores de infraestructura venden capacidad anticipando demanda futura. Sin embargo, un ingreso anualizado de un laboratorio no equivale al dinero disponible para pagar contratos de cómputo: hay costos de inferencia, entrenamiento, distribución, personal y capital. Por eso el análisis de sostenibilidad debe conectar crecimiento comercial, márgenes, obligaciones de infraestructura y calendario de pagos, en lugar de extrapolar una sola cifra.",
+        "Una comparación razonable debería usar la misma ventana temporal y explicar si se incluyen ventas brutas de socios o solo la parte retenida por cada laboratorio. También habría que separar suscripciones directas, API, contratos empresariales y acuerdos de distribución. Sin ese desglose, decir que uno de los dos laboratorios aventaja al otro por una cifra exacta transmite una precisión que la evidencia pública todavía no ofrece.",
+        "Los reportes no anuncian un nuevo modelo, una API, un plan de suscripción ni un cambio en las tarifas de ChatGPT o Claude. Tampoco contienen un aviso de reducción de servicio. La noticia es financiera y de transparencia informativa: ayuda a entender cómo se están presentando a inversores los negocios que sostienen la competencia tecnológica.",
+        "Para interpretar futuras noticias de financiación, conviene anotar cuatro datos antes de comparar: fecha de medición, definición del ingreso, tratamiento de ventas a través de socios y si el importe es realizado, anualizado o proyectado. Si alguno falta, la comparación debe llevar una advertencia. Un objetivo anunciado para diciembre no debe mezclarse con una observación de septiembre como si ambos fueran ingresos ya obtenidos.",
+        "También conviene buscar documentos financieros verificables cuando se produzcan futuras salidas a bolsa o comunicaciones regulatorias. Hasta entonces, Reuters, Financial Times, Axios y Bloomberg aportan reportes útiles, pero las fuentes citadas no sustituyen estados auditados. Las cifras pueden revisarse a medida que aparezcan explicaciones formales, y una eventual corrección deberá actualizar este mismo artículo sin crear una noticia duplicada.",
+        "El hecho publicable es que Reuters confirmó el reporte de una tasa de ingresos anualizada cercana a US$50.000 millones para septiembre, inferior a la cifra aproximada de US$70.000 millones previamente difundida. La diferencia se relaciona con intentos de hacer comparables los métodos de registro de ventas por socios. No debe presentarse como una pérdida contable demostrada ni como un recorte confirmado de las previsiones anuales.",
+        "Análisis Gazette: el episodio muestra una vulnerabilidad informativa en la industria de IA. Cuanto mayores sean las valoraciones y los compromisos de infraestructura, más importante será exigir definiciones comparables y documentos verificables. Los próximos hitos son una explicación oficial de las métricas, nuevas cifras trimestrales, el cumplimiento o no del objetivo de fin de año reportado y mayor transparencia financiera."
+      ],
+      "keyPoints": [
+        "Reuters reporta casi US$50.000 millones anualizados en septiembre, no los US$70.000 millones citados anteriormente.",
+        "La diferencia refleja principalmente métodos distintos para presentar ventas por socios de nube, no una caída demostrada de ventas.",
+        "Son cifras privadas reportadas, no estados auditados ni un cambio de precio de productos."
+      ],
+      "quickTakeaways": [
+        "Reuters reporta casi US$50.000 millones anualizados en septiembre, no los US$70.000 millones citados anteriormente.",
+        "La diferencia refleja principalmente métodos distintos para presentar ventas por socios de nube, no una caída demostrada de ventas.",
+        "Son cifras privadas reportadas, no estados auditados ni un cambio de precio de productos."
+      ],
+      "sections": [
+        {
+          "heading": "El dato que cambió la comparación",
+          "kind": "report",
+          "paragraphs": [
+            "El 8 de octubre de 2026, Financial Times informó que los ingresos anualizados de OpenAI al cierre de septiembre se acercaban a US$50.000 millones, frente a la cifra próxima a US$70.000 millones que había circulado anteriormente. Reuters corroboró el reporte con una persona familiarizada con la información transmitida a inversores. Se trata de cifras privadas comunicadas en reportes periodísticos, no de estados financieros auditados publicados por la compañía.",
+            "La diferencia de aproximadamente US$20.000 millones provocó titulares sobre una supuesta caída de ingresos. Esa interpretación es demasiado simple. Las fuentes describen principalmente una diferencia de metodología para comparar las ventas de OpenAI con las de Anthropic, no una pérdida demostrada de US$20.000 millones en ventas efectivamente realizadas. Reuters solicitó comentarios a OpenAI y no recibió respuesta para su publicación."
+          ]
+        },
+        {
+          "heading": "Qué significa ingreso anualizado",
+          "kind": "context",
+          "paragraphs": [
+            "Una tasa anualizada de ingresos, también llamada revenue run rate, extrapola a doce meses el ritmo observado durante un período más corto, a menudo el último mes. Si un negocio registrara US$4.000 millones en un mes, una multiplicación mecánica daría US$48.000 millones anualizados. Eso no significa que ya haya facturado esa cantidad durante un año completo ni que vaya a mantener ese ritmo.",
+            "Este matiz importa especialmente en empresas que crecen con rapidez, cambian precios, amplían contratos y consumen enormes recursos informáticos. Un indicador anualizado puede ser útil para observar la velocidad comercial, pero no equivale a ingresos históricos reconocidos durante doce meses, margen bruto, flujo de caja ni beneficio. Comparar ese indicador con compromisos plurianuales de infraestructura sin distinguir horizontes produce conclusiones engañosas."
+          ]
+        },
+        {
+          "heading": "La contabilidad de ventas a través de la nube",
+          "kind": "technical",
+          "paragraphs": [
+            "Reuters explicó que OpenAI y Anthropic presentan de manera distinta parte de las ventas canalizadas mediante proveedores de nube. Anthropic incluye determinados importes vendidos a través de socios como AWS y Google Cloud dentro de su cifra superior de ingresos, mientras que OpenAI no incluye de la misma forma algunas ventas de sus socios. El tratamiento depende de la estructura comercial y de quién controla la relación con el cliente.",
+            "Axios precisó que la cifra mayor atribuida anteriormente a OpenAI surgió al intentar expresar su actividad sobre una base más comparable con la metodología comunicada para Anthropic. Esto no permite afirmar que una empresa esté falseando sus cuentas. Las cifras de titulares, las métricas internas de inversores y los ingresos reconocidos según normas contables son objetos distintos que requieren notas explicativas antes de compararse."
+          ]
+        },
+        {
+          "heading": "Qué se sabe de las cifras y qué no",
+          "kind": "report",
+          "paragraphs": [
+            "Según Reuters, OpenAI había comenzado 2026 con un ritmo anualizado próximo a US$20.000 millones, frente a US$6.000 millones durante 2024. La cifra reportada para septiembre, cercana a US$50.000 millones, seguiría representando una expansión considerable. No obstante, el periódico no publicó una conciliación auditada entre los US$50.000 millones y la estimación previa de US$70.000 millones.",
+            "Reuters también informó que Anthropic había superado US$65.000 millones anualizados en julio, según fuentes, y recogió comparaciones de ingresos trimestrales entre ambas compañías. No es prudente convertir esos números en un ranking definitivo sin homogeneizar períodos, criterios de reconocimiento y participación de socios. Tampoco se conocen en estas fuentes márgenes operativos auditados que permitan deducir cuál negocio es más rentable."
+          ]
+        },
+        {
+          "heading": "El mercado reaccionó a la incertidumbre",
+          "kind": "context",
+          "paragraphs": [
+            "Los reportes aparecieron en un mercado que intenta valorar empresas de modelos, fabricantes de chips y operadores de centros de datos a partir de expectativas de crecimiento excepcional. Reuters vinculó la noticia con la inquietud bursátil del 8 de octubre, mientras Barron's describió una reacción inicial negativa y un alivio posterior cuando Bloomberg informó que OpenAI seguía aspirando a alcanzar US$70.000 millones anualizados al terminar 2026.",
+            "El objetivo de fin de año reportado por Bloomberg es una expectativa futura, no una corrección retroactiva del dato de septiembre. Las dos informaciones pueden coexistir: un ritmo cercano a US$50.000 millones en septiembre y una meta más alta para diciembre. Nada de esto demuestra por sí solo que la meta vaya a cumplirse, ni que el movimiento de un índice bursátil tenga una causa única."
+          ]
+        },
+        {
+          "heading": "Por qué importa para la carrera de la IA",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la carrera de modelos ya no se mide solamente por benchmarks, usuarios o número de tokens. La capacidad de transformar el uso en ingresos sostenibles importa para financiar centros de datos, investigación, chips especializados y productos de agentes. Una diferencia de presentación de US$20.000 millones altera la lectura pública de la escala comercial incluso cuando no cambia el funcionamiento de un solo modelo.",
+            "Los grandes proveedores de infraestructura venden capacidad anticipando demanda futura. Sin embargo, un ingreso anualizado de un laboratorio no equivale al dinero disponible para pagar contratos de cómputo: hay costos de inferencia, entrenamiento, distribución, personal y capital. Por eso el análisis de sostenibilidad debe conectar crecimiento comercial, márgenes, obligaciones de infraestructura y calendario de pagos, en lugar de extrapolar una sola cifra."
+          ]
+        },
+        {
+          "heading": "Cómo interpretar las comparaciones con Anthropic",
+          "kind": "competition",
+          "paragraphs": [
+            "Una comparación razonable debería usar la misma ventana temporal y explicar si se incluyen ventas brutas de socios o solo la parte retenida por cada laboratorio. También habría que separar suscripciones directas, API, contratos empresariales y acuerdos de distribución. Sin ese desglose, decir que uno de los dos laboratorios aventaja al otro por una cifra exacta transmite una precisión que la evidencia pública todavía no ofrece.",
+            "Los reportes no anuncian un nuevo modelo, una API, un plan de suscripción ni un cambio en las tarifas de ChatGPT o Claude. Tampoco contienen un aviso de reducción de servicio. La noticia es financiera y de transparencia informativa: ayuda a entender cómo se están presentando a inversores los negocios que sostienen la competencia tecnológica."
+          ]
+        },
+        {
+          "heading": "Qué debería comprobar un lector",
+          "kind": "practical",
+          "paragraphs": [
+            "Para interpretar futuras noticias de financiación, conviene anotar cuatro datos antes de comparar: fecha de medición, definición del ingreso, tratamiento de ventas a través de socios y si el importe es realizado, anualizado o proyectado. Si alguno falta, la comparación debe llevar una advertencia. Un objetivo anunciado para diciembre no debe mezclarse con una observación de septiembre como si ambos fueran ingresos ya obtenidos.",
+            "También conviene buscar documentos financieros verificables cuando se produzcan futuras salidas a bolsa o comunicaciones regulatorias. Hasta entonces, Reuters, Financial Times, Axios y Bloomberg aportan reportes útiles, pero las fuentes citadas no sustituyen estados auditados. Las cifras pueden revisarse a medida que aparezcan explicaciones formales, y una eventual corrección deberá actualizar este mismo artículo sin crear una noticia duplicada."
+          ]
+        },
+        {
+          "heading": "Conclusión y próximos hitos",
+          "kind": "analysis",
+          "paragraphs": [
+            "El hecho publicable es que Reuters confirmó el reporte de una tasa de ingresos anualizada cercana a US$50.000 millones para septiembre, inferior a la cifra aproximada de US$70.000 millones previamente difundida. La diferencia se relaciona con intentos de hacer comparables los métodos de registro de ventas por socios. No debe presentarse como una pérdida contable demostrada ni como un recorte confirmado de las previsiones anuales.",
+            "Análisis Gazette: el episodio muestra una vulnerabilidad informativa en la industria de IA. Cuanto mayores sean las valoraciones y los compromisos de infraestructura, más importante será exigir definiciones comparables y documentos verificables. Los próximos hitos son una explicación oficial de las métricas, nuevas cifras trimestrales, el cumplimiento o no del objetivo de fin de año reportado y mayor transparencia financiera."
+          ]
+        }
+      ],
+      "executiveSummary": "Financial Times y Reuters reportaron que OpenAI informó a inversores un ritmo de ingresos anualizado cercano a US$50.000 millones al cierre de septiembre de 2026. La cifra es inferior a una estimación previa de US$70.000 millones construida para comparar métodos de contabilización con Anthropic. La noticia es sobre presentación de métricas privadas y transparencia, no sobre una pérdida de efectivo confirmada.",
+      "finalSummary": "La tasa anualizada de OpenAI para septiembre rondaría US$50.000 millones según reportes reputados, pero las comparaciones con US$70.000 millones y con Anthropic requieren aclarar período y método contable. No hay estados auditados públicos en las fuentes citadas; el próximo hito será una conciliación verificable.",
+      "analysis": "Análisis Gazette: el crecimiento de la IA exige métricas comerciales comparables. Una tasa anualizada no demuestra rentabilidad ni financia automáticamente compromisos de cómputo; la transparencia importa tanto como la velocidad de crecimiento.",
+      "watch": "Conciliación oficial de cifras, nuevas métricas trimestrales, tratamiento de ventas por socios, metas de fin de año y futuros documentos financieros auditados.",
+      "technicalDetails": [
+        {
+          "label": "Ingresos anualizados de septiembre",
+          "value": "Cerca de US$50.000 millones, según Reuters y FT"
+        },
+        {
+          "label": "Cifra difundida anteriormente",
+          "value": "Cerca de US$70.000 millones; cálculo de comparación reportado"
+        },
+        {
+          "label": "Diferencia entre cifras",
+          "value": "Aproximadamente US$20.000 millones; no es pérdida de caja demostrada"
+        },
+        {
+          "label": "Naturaleza de la métrica",
+          "value": "Tasa anualizada de ingresos, no facturación histórica de doce meses"
+        }
+      ],
+      "availability": {
+        "status": "Reporte financiero; no anuncia producto ni cambio de acceso",
+        "platforms": [],
+        "regions": [],
+        "requirements": [],
+        "notes": [
+          "OpenAI no respondió a Reuters antes de la publicación."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precios de productos",
+          "value": "Sin cambios anunciados en este reporte"
+        }
+      ],
+      "limitations": [
+        "Las cifras proceden de reportes sobre comunicaciones privadas, no de estados auditados publicados.",
+        "La comparación con Anthropic depende del reconocimiento de ventas canalizadas por socios.",
+        "La cifra de fin de año reportada por Bloomberg es una meta futura, no un dato de septiembre."
+      ],
+      "practicalAdvice": [
+        "No confundir tasa anualizada con ingresos realizados durante un año.",
+        "Comprobar si las ventas de socios se registran brutas o netas antes de comparar empresas.",
+        "Esperar cifras auditadas y definiciones explícitas para evaluar rentabilidad."
+      ],
+      "usefulFacts": [
+        "Reuters fechó su reporte el 8 de octubre de 2026 y lo actualizó el 9.",
+        "Una tasa anualizada suele extrapolar el ritmo de un mes a doce meses."
+      ]
     },
     {
       "image": "assets/hero.webp",
@@ -23243,7 +23446,7 @@
     {
       "date": "2026-10-08",
       "status": "partial",
-      "verifiedArticles": 27
+      "verifiedArticles": 28
     },
     {
       "date": "2026-10-09",
