@@ -23,6 +23,7 @@
 | `source/scripts/check_publication_integrity.py` | Espejos, semántica RSS y coherencia del calendario |
 | `source/scripts/quality-audit.py` | Diagnóstico de profundidad, compañías y uso de ilustraciones |
 | `source/scripts/release_readiness.py` | Informe legible de gates de v1.0, no aprobación automática |
+| `source/scripts/generate-static-articles.mjs` | HTML individual, OpenGraph, NewsArticle, sitemap y robots derivados del JSON canónico |
 | `source/ops/backlog.json` | Única fuente del checklist de cierre |
 | `source/docs/master-checklist.md` | Checklist generado de forma determinista |
 | `source/research/coverage-audit.json` | Evidencia de dos pasadas de investigación por fecha |
@@ -58,11 +59,11 @@ El `[skip ci]` se reserva al commit generado del bundle, nunca a publicaciones d
 
 **Independientes:** comprobar ejecución y recuperación de la Scheduled Task, concurrencia contra Newsroom, Pages real en móvil y escritorio, accesibilidad, metadatos vistos por crawlers sin JavaScript, rollback y firma editorial. **CI verde no equivale a v1.0 aprobada**.
 
-## 6. Dos riesgos de arquitectura abiertos
+## 6. Rendimiento pendiente y SEO individual verificado parcialmente
 
 **Payload editorial.** `data/news.json` incluye cuerpos completos, incluso para lectores que solo abren la portada. La alternativa de índice liviano + artículo bajo demanda debe mantener compatibilidad con la automatización que hoy solo modifica cinco archivos. Publicar un índice derivado desactualizado es peor que una carga inicial más pesada. Aceptación: menos de 500 KB iniciales de JSON sin compresión y cero artículos desincronizados en una carrera entre Newsroom y compilación. Ver `PERF-ARCHIVE-LAZY-DELIVERY`.
 
-**SEO y tarjetas por artículo.** Las rutas `#articulo/<id>` se gestionan en el navegador: actualizar OpenGraph después de montar React ayuda a la pestaña, pero muchos crawlers sociales no ejecutan JavaScript. No declarar resuelto SEO individual hasta tener URL indexable y metadatos prerenderizados por noticia, canonical y sitemap validados sin JS. Ver `QA-SEO-PREVIEW`.
+**SEO individual — implementación y QA técnicos completados; validación social externa pendiente.** `source/scripts/generate-static-articles.mjs` genera `noticias/YYYY-MM-DD/<id>/index.html` con contenido legible sin JavaScript, OpenGraph, canonical, NewsArticle JSON-LD, sitemap y robots. `source/tests/static-articles.test.mjs` y Browser QA validan las salidas, y Live Smoke comprueba la publicación real. La portada interactiva conserva navegación con `#articulo/<id>` y el botón de compartir usa la URL HTML canónica. El Build se dispara por cambios editoriales y rechaza entradas de datos modificadas durante la compilación. El mecanismo está probado y reduce una brecha importante de indexabilidad, pero verificar previsualizaciones de redes sociales concretas y la actualización de crawlers sigue dentro de `QA-SEO-PREVIEW`; no se debe confundir HTML indexable con indexación garantizada.
 
 ## 7. Comprobación reproducible
 
