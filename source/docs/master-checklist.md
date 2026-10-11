@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 78 tareas; 40 completadas; 6 en curso; 30 pendientes o bloqueadas; 2 descartadas con razón.
+- 6 fases; 82 tareas; 42 completadas; 11 en curso; 27 pendientes o bloqueadas; 2 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -207,7 +207,7 @@
 **Estado:** queued. **Gate:** Artículos legacy enriquecidos o exceptuados con evidencia; ilustraciones específicas de titulares importantes y estándares visuales.
 
 - [ ] **ED-LEGACY48** · P0 · in_progress — Migrar todos los artículos legacy restantes a Reporter V2
-  - Criterio: Cero legacy sin excepciones justificadas y fuentes comprobadas; quedan 37 de 143 artículos al corte. Conservar IDs y validar cada migración.
+  - Criterio: Cero legacy sin excepciones justificadas y fuentes comprobadas. Mantener IDs y medir deuda viva desde quality-audit y release-readiness, nunca con cifras históricas fijas.
 - [ ] **VIS-PREMIUM** · P1 · queued — Crear lote visual periódico de grabados específicos
   - Criterio: Disminuir el fallback repetido, resolver P0 de imagen y mantener créditos
 - [ ] **VIS-GENERATION** · P1 · queued — Explorar generación automática por noticia con QA
@@ -234,6 +234,9 @@
   - Criterio: Publicación o validación realizada con evidencia, sin cerrar las fechas históricas por sí sola.
   - Commit: `ba928730edbfad01c3fa1bfc8331577dfd311d94`
   - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38103011095
+- [ ] **QA-V2-NEW-STORIES-HARDGATE** · P0 · in_progress — Bloquear nuevas noticias legacy tras la migración V2
+  - Criterio: Contenido con fecha o coveredAt desde 2026-10-11 debe ser Reporter V2; comprobar regresión y CI final; preservar legacy histórico hasta migrarlo.
+  - Commit: `74312a137abe43f55ed7b53cbed12594317a79de`
 
 ## P10 — Segunda auditoría y lanzamiento v1.0
 
@@ -258,11 +261,11 @@
 - [x] **QA-HTTP-SMOKE** · P0 · done — Smoke tests públicos de artículos, RSS e imágenes
   - Criterio: Comprobar HTTP 200, assets, navegación móvil y RSS desplegado tras publicación; incluir URLs concretas.
   - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798281530
-- [ ] **QA-SEO-PREVIEW** · P1 · queued — Auditar SEO y tarjetas al compartir artículos
+- [ ] **QA-SEO-PREVIEW** · P1 · in_progress — Auditar SEO y tarjetas al compartir artículos
   - Criterio: Revisar metadatos disponibles a crawlers sin JavaScript, canonical, sitemap, OG y previews por artículo.
-- [ ] **QA-A11Y** · P1 · queued — Auditar contraste, teclado, lectores de pantalla y responsive
+- [ ] **QA-A11Y** · P1 · in_progress — Auditar contraste, teclado, lectores de pantalla y responsive
   - Criterio: Pruebas de focus, landmarks, alt, tamaños móviles y correcciones de accesibilidad comprobadas.
-- [ ] **QA-RELEASE-GATE** · P0 · queued — Validación final de release v1.0 sin P0 abiertos
+- [ ] **QA-RELEASE-GATE** · P0 · in_progress — Validación final de release v1.0 sin P0 abiertos
   - Criterio: Firmar criterios editorial, histórico, visual, SEO, automatización y CI antes de declarar producto acabado.
   - Depende de: QA-LAUNCH
 - [x] **QA-READTIME-REGRESSION** · P1 · done — Reparar tiempo de lectura real en Reporter V2
@@ -275,7 +278,7 @@
   - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37796206364
 - [ ] **QA-MAJOR-STORY-CORROBORATION** · P1 · queued — Revisar reportajes mayores que citan una sola fuente
   - Criterio: Reabrir fuentes primarias, validar claims y usar documentación o corroboración externa donde exista; no fabricar una segunda fuente.
-- [ ] **QA-EDITORIAL-METRICS-LIVE** · P1 · queued — Panel interno verificable de avance y frescura
+- [ ] **QA-EDITORIAL-METRICS-LIVE** · P1 · in_progress — Panel interno verificable de avance y frescura
   - Criterio: Generar métricas verificables de artículos, legacy, días registrados/auditados, última publicación y trabajo pendiente desde JSON de main.
 - [x] **QA-PUBLIC-MOBILE-LIVE** · P1 · done — Prueba diaria del sitio público en móvil y escritorio
   - Criterio: Smoke automatizado comprueba JSON/RSS, navegación, imágenes, ausencia de errores JS y desbordamiento horizontal móvil.
@@ -285,6 +288,17 @@
   - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798463907
 - [ ] **OPS-GAZETTE-CUTOVER** · P0 · blocked — Confirmar tarea ChatGPT y cerrar separación del portafolio
   - Criterio: Una sola tarea horaria con destino exclusivo ai-race-gazette, última conciliación de ambos main, Pages/CI verificados y PR #9 fusionado sin cambiar el portafolio.
+- [x] **ARCH-UI-MODULES-V4** · P1 · done — Separar la interfaz en componentes autónomos sin regresiones
+  - Criterio: App.jsx, Article, Coverage y ArchivePieces desacoplados; pruebas React/Playwright responsive y publicación build aprobadas.
+  - Commit: `fe224f6ae097fd19acd4315d879e52151ba9218c`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38104455650
+- [x] **QA-EDITORIAL-COPY-META-V4** · P1 · done — Corregir atribución de fuentes y restablecer metadatos OG
+  - Criterio: No presentar medios como fuentes oficiales y restaurar imagen social al volver a portada; Chromium valida metadata y footer del repo canónico.
+  - Commit: `a4b78b4f5ab5842f18a0f801f7f6ef8e447d8d85`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38104699251
+- [ ] **PERF-ARCHIVE-LAZY-DELIVERY** · P1 · queued — Separar índice liviano y cuerpo de reportajes para acelerar móvil
+  - Criterio: La portada descarga menos de 500 KB JSON sin comprimido y carga reportajes completos bajo demanda; la automatización horaria conserva escritura de cinco archivos y el build nunca sirve índices obsoletos. Comparar con tamaño anterior y pruebas de navegación.
+  - Depende de: QA-WEB
 
 ## Reglas para nuevas tareas
 

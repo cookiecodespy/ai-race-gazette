@@ -261,7 +261,7 @@
       "priority": "P0",
       "status": "in_progress",
       "lane": "Editor-in-Chief / Historical Backfill",
-      "acceptance": "Cero legacy sin excepciones justificadas y fuentes comprobadas; quedan 37 de 143 artículos al corte. Conservar IDs y validar cada migración.",
+      "acceptance": "Cero legacy sin excepciones justificadas y fuentes comprobadas. Mantener IDs y medir deuda viva desde quality-audit y release-readiness, nunca con cifras históricas fijas.",
       "notes": "En pasada de octubre: Claude Opus 5.5, Sonnet 5.5, GPT-6.1 Sol y Dots migrados a Reporter V2. Reparación de RSS en cc4402b04ac31c576500de33b70b41aa5de9ead2."
     },
     {
@@ -621,7 +621,7 @@
       "phase": "P10",
       "title": "Auditar SEO y tarjetas al compartir artículos",
       "priority": "P1",
-      "status": "queued",
+      "status": "in_progress",
       "lane": "Product / QA",
       "acceptance": "Revisar metadatos disponibles a crawlers sin JavaScript, canonical, sitemap, OG y previews por artículo."
     },
@@ -630,7 +630,7 @@
       "phase": "P10",
       "title": "Auditar contraste, teclado, lectores de pantalla y responsive",
       "priority": "P1",
-      "status": "queued",
+      "status": "in_progress",
       "lane": "Product / QA",
       "acceptance": "Pruebas de focus, landmarks, alt, tamaños móviles y correcciones de accesibilidad comprobadas."
     },
@@ -639,7 +639,7 @@
       "phase": "P10",
       "title": "Validación final de release v1.0 sin P0 abiertos",
       "priority": "P0",
-      "status": "queued",
+      "status": "in_progress",
       "lane": "Product / QA",
       "acceptance": "Firmar criterios editorial, histórico, visual, SEO, automatización y CI antes de declarar producto acabado.",
       "dependsOn": [
@@ -727,7 +727,7 @@
       "phase": "P10",
       "title": "Panel interno verificable de avance y frescura",
       "priority": "P1",
-      "status": "queued",
+      "status": "in_progress",
       "lane": "Product & QA",
       "acceptance": "Generar métricas verificables de artículos, legacy, días registrados/auditados, última publicación y trabajo pendiente desde JSON de main."
     },
@@ -1080,6 +1080,54 @@
       "verifiedEvidence": [
         "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38103454324",
         "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38103454343"
+      ]
+    },
+    {
+      "id": "ARCH-UI-MODULES-V4",
+      "phase": "P10",
+      "title": "Separar la interfaz en componentes autónomos sin regresiones",
+      "priority": "P1",
+      "status": "done",
+      "lane": "Arquitectura / QA",
+      "acceptance": "App.jsx, Article, Coverage y ArchivePieces desacoplados; pruebas React/Playwright responsive y publicación build aprobadas.",
+      "evidenceCommit": "fe224f6ae097fd19acd4315d879e52151ba9218c",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38104455650"
+      ]
+    },
+    {
+      "id": "QA-EDITORIAL-COPY-META-V4",
+      "phase": "P10",
+      "title": "Corregir atribución de fuentes y restablecer metadatos OG",
+      "priority": "P1",
+      "status": "done",
+      "lane": "Arquitectura / QA",
+      "acceptance": "No presentar medios como fuentes oficiales y restaurar imagen social al volver a portada; Chromium valida metadata y footer del repo canónico.",
+      "evidenceCommit": "a4b78b4f5ab5842f18a0f801f7f6ef8e447d8d85",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38104699251"
+      ]
+    },
+    {
+      "id": "QA-V2-NEW-STORIES-HARDGATE",
+      "phase": "P09",
+      "title": "Bloquear nuevas noticias legacy tras la migración V2",
+      "priority": "P0",
+      "status": "in_progress",
+      "lane": "Arquitectura / QA",
+      "acceptance": "Contenido con fecha o coveredAt desde 2026-10-11 debe ser Reporter V2; comprobar regresión y CI final; preservar legacy histórico hasta migrarlo.",
+      "evidenceCommit": "74312a137abe43f55ed7b53cbed12594317a79de"
+    },
+    {
+      "id": "PERF-ARCHIVE-LAZY-DELIVERY",
+      "phase": "P10",
+      "title": "Separar índice liviano y cuerpo de reportajes para acelerar móvil",
+      "priority": "P1",
+      "status": "queued",
+      "lane": "Arquitectura / QA",
+      "acceptance": "La portada descarga menos de 500 KB JSON sin comprimido y carga reportajes completos bajo demanda; la automatización horaria conserva escritura de cinco archivos y el build nunca sirve índices obsoletos. Comparar con tamaño anterior y pruebas de navegación.",
+      "dependsOn": [
+        "QA-WEB"
       ]
     }
   ]
