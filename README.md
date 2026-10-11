@@ -1,87 +1,73 @@
 # AI Race Gazette
 
-**Repositorio independiente:** `cookiecodespy/ai-race-gazette`. El sitio público mantiene la URL `https://cookiecodespy.github.io/ai-race-gazette/`. El código fuente está en `source/`, y los archivos publicados están en la raíz del repositorio.
+**Un periódico digital en español para seguir y entender la evolución de la inteligencia artificial.**
 
-Para desarrollar y comprobar localmente: `cd source && npm ci && npm test && npm run build`. GitHub Pages utiliza `main` / `/(root)`.
+[Leer el periódico](https://cookiecodespy.github.io/ai-race-gazette/) · [Explorar el archivo](https://cookiecodespy.github.io/ai-race-gazette/) · [Suscribirse al RSS](https://cookiecodespy.github.io/ai-race-gazette/feed.xml) · [Roadmap](ROADMAP.md)
 
-Operación y recuperación: [runbook actualizado](docs/operations-and-recovery.md). La separación de repositorios se completó el 10 de octubre de 2026; la primera ejecución posterior al cambio de destino de la tarea horaria sigue pendiente de observación.
+AI Race Gazette reúne noticias e informes sobre modelos, investigación, agentes, infraestructura, chips, productos y compañías emergentes. Su identidad visual se inspira en los diarios impresos: portadas ilustradas, tipografía editorial y una hemeroteca organizada por fecha.
 
-AI Race Gazette es una hemeroteca pública en español sobre la carrera de la inteligencia artificial y la tecnología. Combina una interfaz inspirada en prensa impresa con un archivo verificable, artículos enlazables, fuentes primarias y análisis editorial separado de los hechos.
+El sitio está **publicado y en evolución**. La reconstrucción histórica y la revisión de determinados artículos siguen abiertas. La presencia de una noticia en el archivo no significa que su jornada esté auditada de forma exhaustiva.
 
-Sitio: https://cookiecodespy.github.io/ai-race-gazette/
+## Qué ofrece
 
-## Producto
+- **Portadas y artículos completos.** Cada noticia tiene su propia página con contexto, detalles técnicos, limitaciones y fuentes, cuando están disponibles.
+- **Hemeroteca diaria.** Distingue fechas verificadas, parcialmente investigadas y pendientes. Un día sin artículos no se considera automáticamente un día sin novedades.
+- **Búsqueda y filtros.** Permite explorar por compañía, tema y fecha desde una vista de portadas o de lista.
+- **Cobertura abierta.** Incorpora empresas, laboratorios y proyectos relevantes sin depender de un catálogo cerrado.
+- **Actualización editorial.** Un proceso periódico busca novedades materiales y las añade solamente cuando hay respaldo documental.
+- **RSS.** Publica un feed para seguir las noticias desde lectores externos.
 
-- Portadas individuales y vista lista; ambas abren una página completa por noticia.
-- Búsqueda sin distinción de acentos y filtros combinables por compañía, tema, mes y día.
-- Compañías y temas derivados dinámicamente de los datos: un actor nuevo puede aparecer sin modificar React.
-- Ediciones diarias y ledger de cobertura para distinguir jornadas completas, parciales, pendientes o revisadas sin novedades materiales.
-- Reporter V2 para informes largos: lectura rápida, desarrollo, datos técnicos, disponibilidad/precio, cronología, análisis editorial, consejos, datos útiles, curiosidades verificadas, limitaciones, resumen final y fuentes cuando corresponda.
-- RSS, diseño responsive, navegación por teclado, impresión y URLs compartibles por artículo/edición.
-- Ilustraciones editoriales con crédito; nunca se presentan imágenes generadas como fotografía documental.
+## Criterios editoriales
 
-## Código
+AI Race Gazette prioriza anuncios, documentación, investigaciones y repositorios originales. Distingue entre hechos documentados, afirmaciones del proveedor, reportes todavía no confirmados y análisis editorial.
 
-El sitio publicado es estático en GitHub Pages. El código reproducible vive en `source/`: React/Vite para la interfaz y Python estándar para validación editorial, RSS y QA. No necesita una API de IA de pago para el ciclo editorial normal.
+Las fechas corresponden al evento investigado, no necesariamente a la fecha en que otro medio lo comenta. Las actualizaciones conservan la identidad de la noticia para evitar duplicados. No se crean titulares para rellenar jornadas del calendario.
 
-Comprobaciones locales:
+Las ilustraciones generadas se identifican como arte editorial. No se presentan como fotografías documentales ni sustituyen a las fuentes.
+
+Consulta la [política editorial](source/docs/editorial-policy.md) y el [estándar de artículos](source/docs/gazette-v1-standard.md).
+
+## Tecnología
+
+El sitio se publica en GitHub Pages. La interfaz se desarrolla con React y Vite; la validación de contenido y la preparación del archivo utilizan scripts en Python y Node.js.
+
+```text
+/
+├── index.html         # Sitio publicado
+├── assets/            # Recursos públicos
+├── data/news.json     # Archivo editorial publicado
+├── feed.xml           # Feed RSS
+├── source/            # Aplicación, pruebas y herramientas
+│   ├── src/
+│   ├── scripts/
+│   ├── tests/
+│   ├── docs/
+│   └── visual/
+└── docs/              # Documentación técnica de migración y operación
+```
+
+Para ejecutar las comprobaciones de desarrollo:
 
 ```bash
 cd source
 npm ci
 npm test
-python3 -m unittest tests/editorial_test.py
+python3 -m unittest discover -s tests -p '*_test.py'
 python3 scripts/editorial.py --validate-only
 python3 scripts/quality-audit.py
 npm run build
-npm run test:sites
 ```
 
-El workflow `.github/workflows/build-ai-race-gazette.yml` ejecuta tests Node/Python, validación editorial, build, pruebas del worker, QA en Chromium y publica el frontend compilado cuando cambia el código fuente.
+Los workflows de GitHub Actions validan el contenido, ejecutan pruebas y construyen el sitio. Las actualizaciones editoriales mantienen sincronizados el archivo público, su copia de compilación y el RSS.
 
-## Automatización
+## Estado del proyecto
 
-La tarea **AI Race Gazette Newsroom** se administra en ChatGPT. ID verificado: `6ac671bed2e8819184ed6fce0a20e531`, activa cada hora al minuto 21 (zona `America/Santiago`) y actualizada el 10 de octubre de 2026 con destino exclusivo `cookiecodespy/ai-race-gazette/main`. La primera ejecución posterior a la migración aún debe observarse; un no-op válido no genera commits. No usa Codex, Work ni una API de pago como parte del ciclo editorial rutinario.
+La infraestructura principal está desplegada. Antes de publicar la versión **v1.0** quedan tres líneas de trabajo: completar la auditoría de septiembre y octubre, enriquecer los artículos anteriores al formato editorial actual y finalizar la biblioteca visual con pruebas de accesibilidad, SEO y experiencia móvil.
 
-Reglas principales:
-- ventana móvil de al menos 48 horas;
-- fuentes oficiales primero;
-- lista de compañías abierta;
-- Reporter V2 desde el nacimiento de cada noticia nueva;
-- deduplicación por `eventKey`;
-- no-op estricto cuando no hay cambios materiales;
-- refetch/merge de `main` antes de escribir;
-- frontend protegido de las actualizaciones horarias;
-- si una ejecución desatendida no recibe permiso para escribir en GitHub, prepara un paquete de publicación pendiente y no deja estados parciales.
+El [roadmap público](ROADMAP.md) resume las etapas y los criterios de lanzamiento. El seguimiento técnico detallado vive en la cola de trabajo versionada.
 
-Fuentes de verdad:
-- `source/docs/gazette-v1-standard.md`
-- `source/docs/article-v2-schema.md`
-- `source/docs/editorial-policy.md`
-- `source/docs/scheduled-task.md`
-- `source/docs/automation-operations.md`
-- `source/docs/coordination.md`
+## Alcance y atribución
 
-## Histórico
+Este es un proyecto editorial independiente, sin afiliación con las empresas mencionadas. Las marcas y los materiales de terceros pertenecen a sus respectivos titulares. Las fuentes se atribuyen en los artículos.
 
-Al corte de conciliación del 10 de octubre de 2026:
-- 112 artículos, de los cuales 65 son Reporter V2 y 47 legacy;
-- 39 jornadas registradas entre el 1 de septiembre y el 9 de octubre;
-- el ledger actual conserva 23 jornadas `partial` y 16 `pending`, ninguna cerrada;
-- el histórico sigue en reconstrucción; las cifras y cierres de auditorías antiguas son evidencia histórica, no el estado actual;
-- las jornadas sin una historia material pueden cerrarse como `reviewed-no-material-news` después de una auditoría real;
-- los titulares de prototipos antiguos son pistas, no hechos.
-
-El workflow de reconstrucción se documenta en `source/docs/roadmap.md` y `source/docs/coverage-audit.md`.
-
-## Estado de Reporter V2
-
-La infraestructura, el frontend y la validación Reporter V2 ya existen. Claude Haiku 5.5 es la primera pieza publicada en el nuevo formato. Los artículos legacy restantes se irán enriqueciendo por lotes mientras se completa el archivo histórico; conservan sus IDs y eventKeys.
-
-## Imágenes
-
-La política visual está en `source/docs/image-policy.md`. Las noticias pueden reutilizar temporalmente arte de biblioteca y registrar `imageBrief` + `imageStatus` cuando necesitan una ilustración específica. La generación autónoma y carga de binarios desde Scheduled Tasks se mantiene separada hasta disponer de un Visual Desk automatizado y fiable.
-
-Se conserva el brief original en `DESIGN-BRIEF.md`, la maqueta anterior en `prototype.html` y la referencia visual en `assets/reference-look.jpg`.
-
-Publicación independiente. Las marcas pertenecen a sus respectivos titulares. Ilustraciones generadas con IA cuando así se acredita.
+El código es públicamente visible, pero la publicación del repositorio no constituye por sí sola una autorización general para reutilizarlo. Los términos de licencia todavía no se han definido.
