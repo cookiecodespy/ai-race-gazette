@@ -10729,7 +10729,8 @@
         "La ficha enumera hasta catorce imágenes de referencia y soporte de Batch API."
       ],
       "finalSummary": "Nano Banana 2.1 amplía las opciones documentadas de creación y edición visual en Gemini API. La promesa está en iterar con más referencias y mejor composición, pero su valor real dependerá de ensayos repetibles, acceso efectivo, coste y control humano. La documentación primaria prueba el anuncio técnico, no el rendimiento de todos los productos que podrían incorporarlo.",
-      "imageStatus": "needs-specific-art"
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Ilustración editorial original de prensa antigua: un taller de grabado y fotografía con láminas de diferentes tamaños, un mismo personaje conservando rasgos en varias composiciones y una mano corrigiendo imágenes sobre el papel; tecnología sugerida sin interfaces, marcas ni textos ficticios. Tinta negra y sepia sobre pergamino envejecido, formato horizontal 3:2, sin aspecto de captura o fotografía documental. Rotular como arte generado."
     },
     {
       "id": "mistral-large-4",
@@ -12030,7 +12031,8 @@
         "El acceso inicial se encuadra en Fairwind, no en un lanzamiento público general."
       ],
       "finalSummary": "Gemini 4 Argon representa la apuesta de Google por agentes capaces de sostener tareas profesionales complejas y por un despliegue que prioriza inicialmente a defensores cibernéticos. Sus especificaciones y ejemplos justifican seguimiento técnico, pero el impacto competitivo dependerá de apertura real, evaluación independiente y rendimiento seguro en entornos productivos.",
-      "imageStatus": "needs-specific-art"
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial original de prensa antigua: una biblioteca de ingeniería y un laboratorio defensivo de ciberseguridad conectados por una máquina simbólica de razonamiento, con revisores humanos examinando planos y código abstracto; representar investigación y control responsable, no un hackeo real. Tinta negra y sepia, papel envejecido, formato horizontal 3:2; sin texto, logos inventados ni falsa fotografía documental."
     },
     {
       "id": "gpt-6-1-sol-devday",
