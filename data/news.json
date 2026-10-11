@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T03:40:51.572Z",
+  "updatedAt": "2026-10-11T03:42:04.772Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -19808,7 +19808,8 @@
           "kind": "analysis",
           "paragraphs": [
             "En el mismo anuncio, NVIDIA destacó que determinadas optimizaciones de llama.cpp podían ofrecer hasta 1,9 veces el throughput en una GPU GeForce RTX 5090 bajo sus condiciones de evaluación. También citó mejoras de vLLM en otros aceleradores. Esas cifras describen motores y kernels de inferencia, no una medición del rendimiento que PAIR garantiza al repartir tareas entre ordenadores. Agrupar todos los avances de una conferencia bajo un solo titular puede crear una causalidad falsa. El Gazette separa la mejora del backend de la capacidad de distribuir solicitudes concurrentes.",
-            "Para estudiar PAIR en la práctica hay que definir una línea base: cuánto tarda el mismo conjunto de trabajos de agentes si usa un solo equipo y cuánto tarda cuando puede aprovechar dos o tres. Deben medirse tiempo total hasta terminar la tarea, latencia por petición, throughput, porcentaje de fallos y consumo energético. Es importante mantener iguales los modelos, prompts y límites de tokens, porque añadir otro nodo con un modelo diferente altera también la calidad, no solo la velocidad. Un aumento de concurrencia no garantiza que cada respuesta individual salga antes."
+            "Para estudiar PAIR en la práctica hay que definir una línea base: cuánto tarda el mismo conjunto de trabajos de agentes si usa un solo equipo y cuánto tarda cuando puede aprovechar dos o tres. Deben medirse tiempo total hasta terminar la tarea, latencia por petición, throughput, porcentaje de fallos y consumo energético. Es importante mantener iguales los modelos, prompts y límites de tokens, porque añadir otro nodo con un modelo diferente altera también la calidad, no solo la velocidad. Un aumento de concurrencia no garantiza que cada respuesta individual salga antes.",
+            "Un artículo técnico adicional de NVIDIA aporta una demostración más específica de PAIR: cinco subagentes de Hermes Desktop ejecutados mediante Ollama y un modelo Qwen 3.6 35B A3B tardaron aproximadamente 18 minutos en una RTX Spark individual y 8 minutos con 48 segundos en un conjunto de tres dispositivos compuesto por un portátil RTX Spark, DGX Spark y RTX 5090. El proveedor etiqueta el ensayo como no oficial y dependiente de configuración, no como benchmark universal de escalamiento. El equipo debe distinguir este experimento del aumento de 1,9 veces que la otra nota atribuye a optimizaciones de llama.cpp."
           ]
         },
         {
@@ -19816,7 +19817,8 @@
           "kind": "context",
           "paragraphs": [
             "La ejecución local puede disminuir la necesidad de enviar información a servicios de nube, pero PAIR modifica las fronteras internas de confianza. Una solicitud que antes se procesaba solo en el PC principal podría ser enviada a otro ordenador de la red. Conviene comprobar qué datos se transfieren, cómo se autentican los nodos, qué conexiones están permitidas y si las máquinas comparten usuarios o directorios sensibles. Una red doméstica tampoco equivale automáticamente a un entorno confiable; dispositivos invitados y equipos desactualizados pueden ampliar la superficie de exposición.",
-            "En un taller de agentes, además, la experiencia debería explicar qué nodo atendió cada petición, cuáles están disponibles y qué ocurre al desconectarse uno. Si el usuario debe interpretar puertos, procesos o archivos de log para saber si su solicitud llegó al servidor correcto, el sistema funciona técnicamente pero no es sencillo de administrar. Análisis Gazette: los routers locales ganarán valor si convierten varios ordenadores heterogéneos en un recurso fácil de observar y controlar, no solo si aumentan el uso agregado de GPU."
+            "En un taller de agentes, además, la experiencia debería explicar qué nodo atendió cada petición, cuáles están disponibles y qué ocurre al desconectarse uno. Si el usuario debe interpretar puertos, procesos o archivos de log para saber si su solicitud llegó al servidor correcto, el sistema funciona técnicamente pero no es sencillo de administrar. Análisis Gazette: los routers locales ganarán valor si convierten varios ordenadores heterogéneos en un recurso fácil de observar y controlar, no solo si aumentan el uso agregado de GPU.",
+            "La documentación técnica añade que PAIR utiliza descubrimiento de nodos por mDNS, aprobación explícita de emparejamiento y cifrado mutuo TLS con certificados generados para comunicaciones entre equipos. El enrutador considera presencia del modelo, estado del motor, trabajos activos y ocupación de la GPU. Además, su vista Jobs permite identificar qué nodo ejecutó cada petición: contar cinco subagentes no prueba que realmente trabajaran cinco GPU, por lo que la telemetría de distribución es la evidencia necesaria. Estas salvaguardas son mecanismos anunciados que aún merecen revisión independiente en configuraciones reales."
           ]
         },
         {
@@ -19861,14 +19863,22 @@
         {
           "label": "Plataformas",
           "value": "Windows, macOS y Linux; RTX 20+, RTX PRO Turing+, DGX Spark y Apple M4+"
+        },
+        {
+          "label": "Ensayo NVIDIA (no benchmark universal)",
+          "value": "18:00 min en un equipo frente a 8:48 min en tres nodos, cinco subagentes Hermes y Ollama"
+        },
+        {
+          "label": "Emparejamiento y seguridad",
+          "value": "mDNS, confirmación manual y mTLS según NVIDIA"
         }
       ],
       "imageStatus": "needs-specific-art",
       "imageBrief": "Grabado de revista técnica del XIX: tres mesas de trabajo con autómatas que comparten encargos mediante tubos neumáticos y un distribuidor mecánico central, representación metafórica, tinta y sepia, sin texto ni logotipos.",
       "relatedSources": [
         {
-          "name": "NVIDIA · documentación técnica de PAIR",
-          "url": "https://developer.nvidia.com/blog/",
+          "name": "NVIDIA Technical Blog · Arquitectura y demostración PAIR",
+          "url": "https://developer.nvidia.com/blog/nvidia-pair-virtual-inference-router-expands-available-compute-on-your-local-network",
           "publishedAt": "2026-09-03"
         }
       ]
