@@ -31,6 +31,27 @@ try {
   const rssItems=(rssText.match(/<item>/g)||[]).length;
   assert.equal(rssItems,news.articles.length,'Public RSS count differs from published JSON');
 
+  // Validate actual public indexable pages, without evaluating application JavaScript.
+  const canonicalSample=news.articles.find(a=>a.articleVersion===2)||news.articles[0];
+  const canonicalUrl=BASE+'noticias/'+canonicalSample.date+'/'+canonicalSample.id+'/';
+  let seoStatus=0,sitemapCount=0,seoHtml='';
+  for(let attempt=0;attempt<9;attempt++){
+    const [a,s]=await Promise.all([
+      page.request.get(canonicalUrl,{timeout:20000}),
+      page.request.get(BASE+'sitemap.xml',{timeout:20000})
+    ]);
+    seoStatus=a.status();
+    seoHtml=seoStatus===200?await a.text():'';
+    sitemapCount=s.status()===200?((await s.text()).match(/<url>/g)||[]).length:0;
+    if(seoStatus===200 && sitemapCount===news.articles.length+1)break;
+    await new Promise(resolve=>setTimeout(resolve,10000)); // Pages deployment may lag Newsroom JSON.
+  }
+  assert.equal(seoStatus,200,'Public static article not found');
+  assert.equal(sitemapCount,news.articles.length+1,'Public sitemap is out of sync');
+  assert.match(seoHtml,/property="og:type" content="article"/,'OG metadata must be served without JS');
+  assert.match(seoHtml,/application\\/ld\\+json/,'Structured NewsArticle metadata is absent');
+  assert(seoHtml.includes(canonicalSample.title.replaceAll('&','&amp;')),'SSR report headline missing');
+
   await page.goto(BASE,{waitUntil:'domcontentloaded',timeout:45000});
   await page.locator('.news-cover').first().waitFor({timeout:30000});
   const cards=await page.locator('.news-cover').count();
@@ -58,7 +79,7 @@ try {
   await mobile.screenshot({path:'qa/live-mobile.png',fullPage:true});
 
   assert.deepEqual(errors,[],'Browser JavaScript errors');
-  stats={passed:true,site:BASE,sourceRepository:'cookiecodespy/ai-race-gazette',mirrorsIdentical:true,publicArticles:news.articles.length,rssItems,visibleCovers:cards,desktopURL,hasImage,mobileHorizontalOverflow:overflow,errors};
+  stats={passed:true,site:BASE,sourceRepository:'cookiecodespy/ai-race-gazette',mirrorsIdentical:true,publicArticles:news.articles.length,rssItems,canonicalUrl,seoStatus,sitemapCount,visibleCovers:cards,desktopURL,hasImage,mobileHorizontalOverflow:overflow,errors};
   console.log('Live Gazette OK: '+news.articles.length+' articles, RSS, images, mobile, no page errors');
 } finally {
   await mkdir('qa',{recursive:true});
