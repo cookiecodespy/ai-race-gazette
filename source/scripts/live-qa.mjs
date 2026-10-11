@@ -35,7 +35,7 @@ try {
   const canonicalSample=news.articles.find(a=>a.articleVersion===2)||news.articles[0];
   const canonicalUrl=BASE+'noticias/'+canonicalSample.date+'/'+canonicalSample.id+'/';
   let seoStatus=0,sitemapCount=0,seoHtml='';
-  for(let attempt=0;attempt<9;attempt++){
+  for(let attempt=0;attempt<30;attempt++){
     const [a,s]=await Promise.all([
       page.request.get(canonicalUrl,{timeout:20000}),
       page.request.get(BASE+'sitemap.xml',{timeout:20000})

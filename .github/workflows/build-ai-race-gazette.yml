@@ -141,7 +141,7 @@ jobs:
           fi
           git config user.name "AI Race Gazette Build"
           git config user.email "actions@users.noreply.github.com"
-          git commit -m "build: publish AI Race Gazette frontend [skip ci]"
+          git commit -m "build: publish AI Race Gazette frontend and indexable articles"
           git push
 
       - name: Request Pages publication of latest main
