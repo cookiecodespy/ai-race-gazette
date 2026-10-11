@@ -8,7 +8,7 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
-  "generatedFromNewsUpdatedAt": "2026-10-11T11:25:45.992Z",
+  "generatedFromNewsUpdatedAt": "2026-10-11T11:29:11.763Z",
   "generatedAt": "2026-10-11",
   "items": [
     {
@@ -1572,6 +1572,32 @@
       "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
     },
     {
+      "articleId": "gemini-connected-apps",
+      "eventKey": "gemini-connected-apps",
+      "date": "2026-09-23",
+      "company": "Google",
+      "product": "Connected Apps",
+      "title": "Gemini incorpora una nueva ola de aplicaciones conectadas",
+      "currentImage": "assets/google.webp",
+      "currentAssetId": "gazette-google-architecture-v1",
+      "currentReuseCount": 29,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-23/gemini-connected-apps.webp",
+      "brief": "Grabado horizontal de diario antiguo: un asistente mecánico simbólico conecta un escritorio de proyectos, un taller de creación y objetos cotidianos mediante cables y carpetas; personas revisan qué conexión activar. Enfatizar interoperabilidad y control de permisos, sin usar logos falsos ni representar capturas reales. Tinta negra, sepia, papel envejecido, proporción 3:2.",
+      "sourceSummary": "Google comienza a desplegar conexiones con herramientas de productividad y creación.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
       "articleId": "openai-mentalhealthbench-expert-open-evaluation-2026-09-23",
       "eventKey": "openai-mentalhealthbench-open-benchmark-expert-release-2026-09-23",
       "date": "2026-09-23",
@@ -1718,6 +1744,32 @@
       "desiredOutput": "assets/news/2026-09-28/claude-sonnet-5-5.webp",
       "brief": "Grabado editorial antiguo de calculadora mecánica más veloz, pluma que prepara documentos y máquina que edita código con múltiples engranajes, papel sepia y sin marcas.",
       "sourceSummary": "Anthropic lanzó Sonnet 5.5 el 28 de septiembre como modelo más rápido y eficiente para programación, documentos y herramientas. Según la compañía, genera respuestas más de un 30 % más rápido, conserva tarifas base de US$2 por millón de tokens de entrada y US$10 de salida y puede gastar hasta 30 % menos por tarea que Sonnet 5, dependiendo del trabajo.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
+      "articleId": "decisions-api",
+      "eventKey": "decisions-api",
+      "date": "2026-09-29",
+      "company": "OpenAI",
+      "product": "Decisions API",
+      "title": "Decisions API lleva las respuestas tipadas al centro de las aplicaciones",
+      "currentImage": "assets/hero.webp",
+      "currentAssetId": "gazette-generic-ai-hero-v1",
+      "currentReuseCount": 87,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-29/decisions-api.webp",
+      "brief": "Grabado de periódico antiguo: un gran tablero de clasificación con tres caminos simbólicos —condición, selección y escala—, documentos y fotografías abstractas pasando ante una mesa de revisores humanos. Representar toma de decisiones asistida, no juicios automáticos infalibles. Tinta negra y sepia, papel desgastado, orientación horizontal 3:2, sin números ni nombres inventados, sin fotografía documental.",
+      "sourceSummary": "La beta pública usa gpt-6-luna para clasificar, elegir entre opciones y evaluar contenido con respuestas estructuradas.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
@@ -3876,58 +3928,6 @@
       "desiredOutput": "assets/news/2026-09-06/openai-automated-research-intern.webp",
       "brief": "Crear una ilustración específica para “OpenAI dice haber alcanzado su hito de “research intern” automatizado”. El foco visual debe representar Research acceleration de OpenAI y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "sourceSummary": "La compañía afirma que sus agentes ya pueden completar tareas de investigación bien definidas que antes tomarían días a un investigador humano.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "gemini-connected-apps",
-      "eventKey": "gemini-connected-apps",
-      "date": "2026-09-23",
-      "company": "Google",
-      "product": "Connected Apps",
-      "title": "Gemini incorpora una nueva ola de aplicaciones conectadas",
-      "currentImage": "assets/google.webp",
-      "currentAssetId": "gazette-google-architecture-v1",
-      "currentReuseCount": 29,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-23/gemini-connected-apps.webp",
-      "brief": "Crear una ilustración específica para “Gemini incorpora una nueva ola de aplicaciones conectadas”. El foco visual debe representar Connected Apps de Google y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "Google comienza a desplegar conexiones con herramientas de productividad y creación.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "decisions-api",
-      "eventKey": "decisions-api",
-      "date": "2026-09-29",
-      "company": "OpenAI",
-      "product": "Decisions API",
-      "title": "Decisions API lleva las respuestas tipadas al centro de las aplicaciones",
-      "currentImage": "assets/hero.webp",
-      "currentAssetId": "gazette-generic-ai-hero-v1",
-      "currentReuseCount": 87,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-29/decisions-api.webp",
-      "brief": "Crear una ilustración específica para “Decisions API lleva las respuestas tipadas al centro de las aplicaciones”. El foco visual debe representar Decisions API de OpenAI y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "La beta pública usa gpt-6-luna para clasificar, elegir entre opciones y evaluar contenido con respuestas estructuradas.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
