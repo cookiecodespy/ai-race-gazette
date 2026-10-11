@@ -2,6 +2,8 @@
 
 **Seguimiento vivo:** [`master-checklist.md`](master-checklist.md) y `../ops/backlog.json`. Toda novedad nueva entra en la cola con ID estable y evidencia.
 
+> **Actualización 11-oct-2026:** Esta página conserva hitos históricos desde el 7 de octubre; no usar sus números ni estados antiguos como estado vivo. Ver [auditoría de cierre 11-oct-2026](closure-control-2026-10-11.md), y para métricas vivas ejecutar `scripts/release_readiness.py` y consultar los JSON en `main`. Las fechas 1–7 septiembre figuran ahora `partial` bajo la nueva auditoría Research Backbone v1, pese a haber pasado una auditoría legacy anterior.
+
 Fecha de corte: 2026-10-07.
 
 ## Estado general
@@ -32,7 +34,7 @@ Fecha de corte: 2026-10-07.
 - Automatización de ChatGPT + GitHub configurada para revisar novedades cada hora.
 - La automatización rutinaria no debe invocar Codex, Work ni una API de pago.
 - Protocolo de coordinación para evitar sobrescrituras entre Newsroom y Historical Backfill.
-- Reconstrucción histórica 1–7 septiembre auditada, deduplicada y marcada como completa con evidencia en `docs/history-audit-2026-09-01-07.md`.
+- Reconstrucción histórica 1–7 septiembre auditada y deduplicada bajo el criterio legacy de la época; reabierta como `partial` hasta completar segunda auditoría Research Backbone v1. Evidencia: `docs/history-audit-2026-09-01-07.md`.
 
 ### Funcionando parcialmente
 - Archivo histórico desde 2026-09-01.
