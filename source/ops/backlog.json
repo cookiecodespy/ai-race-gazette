@@ -537,9 +537,14 @@
       "phase": "P08",
       "title": "Prueba de colisión Newsroom y Backfill",
       "priority": "P0",
-      "status": "queued",
+      "status": "done",
       "lane": "Architecture / QA",
-      "acceptance": "Simular dos writers, comprobar SHA conflict/rebase y ausencia de pérdida o duplicación en JSON/RSS."
+      "acceptance": "Simular dos writers, comprobar SHA conflict/rebase y ausencia de pérdida o duplicación en JSON/RSS.",
+      "evidenceCommit": "757eac9928a810d6352cfb3cd1ac0ee594780d7c",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38137457910"
+      ],
+      "notes": "V5 2026-10-11: prueba Git aislada simula dos escritores Newsroom/Backfill en mismo HEAD. El CAS del segundo falla, relectura/rebase conserva 3 eventos sin duplicar, los dos JSON y RSS y ledger coinciden y la ordenación RSS es correcta. Prueba de colisión de mismo eventKey aborta sin publicar. No sustituye prueba de tres ejecuciones reales de Scheduled Task."
     },
     {
       "id": "OPS-ROLLBACK-DRILL",

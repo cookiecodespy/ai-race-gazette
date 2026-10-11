@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 82 tareas; 45 completadas; 9 en curso; 26 pendientes o bloqueadas; 2 descartadas con razón.
+- 6 fases; 82 tareas; 46 completadas; 9 en curso; 25 pendientes o bloqueadas; 2 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -187,8 +187,10 @@
   - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37797427043
 - [ ] **OPS-RUN-PROOF** · P0 · queued — Demostrar tres ejecuciones reales de Newsroom horario
   - Criterio: Verificar al menos tres ejecuciones consecutivas, no-op silencioso y publicación autorizada cuando aparezca un evento.
-- [ ] **OPS-CONCURRENCY-TEST** · P0 · queued — Prueba de colisión Newsroom y Backfill
+- [x] **OPS-CONCURRENCY-TEST** · P0 · done — Prueba de colisión Newsroom y Backfill
   - Criterio: Simular dos writers, comprobar SHA conflict/rebase y ausencia de pérdida o duplicación en JSON/RSS.
+  - Commit: `757eac9928a810d6352cfb3cd1ac0ee594780d7c`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38137457910
 - [ ] **OPS-ROLLBACK-DRILL** · P1 · queued — Ensayar rollback y restauración de datos/arte
   - Criterio: Documentar y ensayar restauración desde Git con evidencia, sin afectar la raíz de cookiecodespy.github.io.
 - [x] **OPS-RESUME-SAFE** · P0 · done — Recuperación verificable después de interrupciones de chat
