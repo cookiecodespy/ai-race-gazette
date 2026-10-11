@@ -7,6 +7,8 @@ await mkdir('qa/polished',{recursive:true});
 const browser=await chromium.launch({headless:true});
 const page=await browser.newPage({viewport:{width:1440,height:1000},locale:'es-CL'});
 const errors=[];
+const newsRequests=[];
+page.on('request',request=>{if(request.url().includes('/data/'))newsRequests.push(request.url());});
 page.on('pageerror',e=>errors.push(e.message));
 page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
 const url=process.env.QA_URL||'http://127.0.0.1:4173/';
@@ -20,6 +22,8 @@ const dateRange=(start,end)=>{
 
 await page.goto(url);
 await page.getByRole('heading',{name:'Noticias de IA',exact:true}).waitFor();
+assert.ok(newsRequests.some(u=>u.includes('/data/news-index.json')),'Home must load compact index');
+assert.equal(newsRequests.some(u=>u.includes('/data/news.json')),false,'Home must not load full archive');
 await page.evaluate(()=>document.fonts.ready);
 assert.equal(await page.locator('.news-cover').count(),Math.min(12,data.articles.length));
 
@@ -101,6 +105,7 @@ if(missingDay){
 
 await page.goto(url+`#articulo/${v2.id}`);
 await page.getByRole('heading',{name:'En 30 segundos'}).waitFor();
+assert.ok(newsRequests.some(u=>u.includes('/data/articles/'+v2.id+'.json')),'Reader must fetch selected report on demand');
 await page.getByRole('heading',{name:'La lectura del Gazette'}).waitFor();
 if(v2.usefulFacts?.length)await page.getByRole('heading',{name:'Datos útiles'}).waitFor();
 if(v2.curiosities?.length)await page.getByRole('heading',{name:'Datos curiosos'}).waitFor();
