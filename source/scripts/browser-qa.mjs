@@ -143,7 +143,7 @@ assert.equal(await page.evaluate(()=>document.activeElement.id),'contenido');
 
 // Synthetic stress fixture: many simultaneous launches remain paginated and filterable.
 const stress=await browser.newPage();
-await stress.route('**/data/news.json',r=>r.fulfill({json:{...data,articles:Array.from({length:60},(_,i)=>({...data.articles[0],id:`feature-${String(i).padStart(2,'0')}`,eventKey:`feature-${i}`,date:'2026-10-06',company:'OpenAI',title:`Función independiente ${i}`}))}}));
+await stress.route('**/data/news-index.json',r=>r.fulfill({json:{...data,articles:Array.from({length:60},(_,i)=>({...data.articles[0],id:`feature-${String(i).padStart(2,'0')}`,eventKey:`feature-${i}`,date:'2026-10-06',company:'OpenAI',title:`Función independiente ${i}`}))}}));
 await stress.goto(url);
 await stress.locator('.news-cover').first().waitFor();
 assert.equal(await stress.locator('.news-cover').count(),12);
