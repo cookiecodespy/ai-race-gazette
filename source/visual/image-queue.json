@@ -8,7 +8,7 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
-  "generatedFromNewsUpdatedAt": "2026-10-11T11:29:11.763Z",
+  "generatedFromNewsUpdatedAt": "2026-10-11T11:33:58.171Z",
   "generatedAt": "2026-10-11",
   "items": [
     {
@@ -376,6 +376,32 @@
       "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
     },
     {
+      "articleId": "google-fairwind-program",
+      "eventKey": "google-fairwind-program",
+      "date": "2026-09-02",
+      "company": "Google",
+      "product": "Fairwind",
+      "title": "Google crea Fairwind para distribuir capacidades cibernéticas avanzadas",
+      "currentImage": "assets/google.webp",
+      "currentAssetId": "gazette-google-architecture-v1",
+      "currentReuseCount": 29,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-02/google-fairwind-program.webp",
+      "brief": "Grabado editorial de diario antiguo: ingenieros defensivos revisan un puente tecnológico protegido por una bóveda, con pergaminos de código simbólico y un taller de reparación al fondo. Ilustrar revisión humana de parches y defensa de infraestructura, no un ataque real ni logos de proveedores. Tinta negra y sepia, papel envejecido, horizontal 3:2, sin textos sobre la imagen.",
+      "sourceSummary": "El programa de acceso limitado está dirigido a gobiernos, clientes y socios de confianza que trabajan en defensa.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
       "articleId": "muse-spark-1-3",
       "eventKey": "muse-spark-1-3",
       "date": "2026-09-02",
@@ -522,6 +548,32 @@
       "desiredOutput": "assets/news/2026-09-04/github-hydrafusion.webp",
       "brief": "Grabado del siglo XIX con un director de taller mecánico que distribuye planos entre tres autómatas, uno construye, otro inspecciona desde una cabina aislada y un tercero recibe tareas complejas; arquitectura de orquestación a tinta y sepia, sin texto, logotipos ni falsas pantallas documentales.",
       "sourceSummary": "El sistema de investigación selecciona modelos distintos para planificar, redactar, criticar y revisar una misma tarea de programación.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
+      "articleId": "lyria-3-5-gemini",
+      "eventKey": "lyria-3-5-gemini",
+      "date": "2026-09-04",
+      "company": "Google",
+      "product": "Lyria 3.5",
+      "title": "Lyria 3.5 lleva la creación musical a Gemini",
+      "currentImage": "assets/google.webp",
+      "currentAssetId": "gazette-google-architecture-v1",
+      "currentReuseCount": 29,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-04/lyria-3-5-gemini.webp",
+      "brief": "Grabado retro de una sala de música con un compositor humano, un gramófono y una máquina simbólica dibujando pentagramas estilizados sin notas legibles; destacar selección de instrumentos, cantante y arreglos, sin imitar músicos reales ni atribuir grabaciones documentales. Tinta negra y sepia sobre periódico envejecido; ilustración generada editorial, horizontal 3:2 sin textos incrustados.",
+      "sourceSummary": "Google anuncia generación musical con opciones de género, voz y duración.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
@@ -3652,32 +3704,6 @@
       "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
     },
     {
-      "articleId": "google-fairwind-program",
-      "eventKey": "google-fairwind-program",
-      "date": "2026-09-02",
-      "company": "Google",
-      "product": "Fairwind",
-      "title": "Google crea Fairwind para distribuir capacidades cibernéticas avanzadas",
-      "currentImage": "assets/google.webp",
-      "currentAssetId": "gazette-google-architecture-v1",
-      "currentReuseCount": 29,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-02/google-fairwind-program.webp",
-      "brief": "Crear una ilustración específica para “Google crea Fairwind para distribuir capacidades cibernéticas avanzadas”. El foco visual debe representar Fairwind de Google y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "El programa de acceso limitado está dirigido a gobiernos, clientes y socios de confianza que trabajan en defensa.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
       "articleId": "hiddenlayer-series-b-agent-security",
       "eventKey": "hiddenlayer-series-b-agent-security",
       "date": "2026-09-02",
@@ -3824,32 +3850,6 @@
       "desiredOutput": "assets/news/2026-09-03/ifm-k2-horizon.webp",
       "brief": "Crear una ilustración específica para “IFM publica K2 Horizon como familia abierta de modelos”. El foco visual debe representar K2 Horizon de IFM y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "sourceSummary": "La colección cubre varios tamaños y acompaña los modelos con código y materiales de entrenamiento para facilitar reproducción e investigación.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "lyria-3-5-gemini",
-      "eventKey": "lyria-3-5-gemini",
-      "date": "2026-09-04",
-      "company": "Google",
-      "product": "Lyria 3.5",
-      "title": "Lyria 3.5 lleva la creación musical a Gemini",
-      "currentImage": "assets/google.webp",
-      "currentAssetId": "gazette-google-architecture-v1",
-      "currentReuseCount": 29,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-04/lyria-3-5-gemini.webp",
-      "brief": "Crear una ilustración específica para “Lyria 3.5 lleva la creación musical a Gemini”. El foco visual debe representar Lyria 3.5 de Google y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "Google anuncia generación musical con opciones de género, voz y duración.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
