@@ -23,3 +23,18 @@ test('Legacy short articles have minimum reading time and empty fields are toler
  assert.equal(articleWordCount({title:'Dos palabras',summary:'',body:[]}),2);
  assert.equal(estimatedReadingMinutes({title:'Dos palabras'}),2);
 });
+
+
+test('Edition grouping stays stable for many articles without modifying the original',()=>{
+ const many=Array.from({length:2500},(_,i)=>({id:`a-${i}`,date:`2026-10-${String((i%25)+1).padStart(2,'0')}`}));
+ const before=many.map(a=>a.id);
+ const grouped=groupEditions(many);
+ assert.equal(grouped.length,25);
+ assert.equal(grouped.reduce((n,edition)=>n+edition.articles.length,0),2500);
+ assert.deepEqual(many.map(a=>a.id),before);
+ for(const edition of grouped){
+  assert.equal(edition.articles.length,100);
+  assert.ok(edition.articles.every(a=>a.date===edition.date));
+ }
+ assert.deepEqual(grouped.map(e=>e.date),[...grouped.map(e=>e.date)].sort().reverse());
+});
