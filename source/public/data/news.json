@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T03:37:10.135Z",
+  "updatedAt": "2026-10-11T03:38:41.765Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -19195,8 +19195,8 @@
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-07",
-      "coveredAt": "2026-10-07",
+      "verifiedAt": "2026-10-11",
+      "coveredAt": "2026-10-11",
       "source": {
         "name": "Dome Systems · anuncio oficial",
         "url": "https://www.domesystems.ai/updates/dome-launches-agent-operations-platform",
@@ -19212,7 +19212,116 @@
         "Control de modelos y herramientas desde una capa común."
       ],
       "analysis": "La administración de agentes puede terminar pareciéndose a la administración de servicios: inventario, identidad, permisos y observabilidad.",
-      "watch": "Adopción, interoperabilidad y controles de seguridad."
+      "watch": "Adopción, interoperabilidad y controles de seguridad.",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "El 5 de septiembre, Dome abrió acceso self-service a su Agent Operations Platform con precios publicados en su sitio.",
+        "La propuesta combina registro de agentes, gateway para controlar herramientas y broker de selección de modelos.",
+        "La política declarada cubre identidad, autorizaciones, cuotas y eventos durante todo el ciclo de acciones.",
+        "La interoperabilidad y las ventajas operativas descritas son afirmaciones de la empresa, todavía sin benchmarks externos en su anuncio."
+      ],
+      "executiveSummary": "Dome Systems lanzó acceso autogestionado a una plataforma de operación de agentes dirigida a equipos empresariales. Busca reunir identidad y ciclo de vida, evaluación de llamadas a herramientas y enrutamiento de modelos bajo políticas y registros coherentes. El comunicado del 5 de septiembre describe una arquitectura y una oferta disponible, pero no demuestra por sí mismo cobertura o eficacia absoluta entre sistemas.",
+      "sections": [
+        {
+          "heading": "El anuncio del 5 de septiembre: acceso de autoservicio",
+          "kind": "report",
+          "paragraphs": [
+            "El 5 de septiembre de 2026, Dome Systems anunció que su Agent Operations Platform abría acceso self-service para equipos de plataforma empresariales. La noticia no consiste en un nuevo modelo de lenguaje ni en un agente capaz de hacer por sí mismo todas las tareas de una compañía. Es una plataforma de administración que intenta unificar políticas aplicables a agentes construidos sobre diferentes frameworks y proveedores. La empresa tiene sede en Redwood City y fue fundada por Dave McJannet y Marc Holmes, antiguos ejecutivos de HashiCorp, según su comunicado.",
+            "Dome sostiene que muchos equipos empresariales acumulan soluciones puntuales para herramientas, modelos y despliegue de agentes. Los controles pueden fragmentarse cuando un agente accede a un gateway distinto, ejecuta un modelo externo o cambia de runtime. El problema que señala es operativo: políticas distintas, credenciales repartidas y registros difíciles de correlacionar. El anuncio afirma que ahora puede crearse una cuenta para experimentar con una plataforma unificada y que existe información pública sobre precios. Eso permite un comienzo autogestionado, pero no equivale a una adopción industrial general demostrada."
+          ]
+        },
+        {
+          "heading": "Registro de agentes: identidad, ciclo de vida y responsables",
+          "kind": "technical",
+          "paragraphs": [
+            "La primera de las tres piezas descritas es el registro de agentes, una lista controlada de identidades y capacidades de cada aplicación agentiva. La intención es que un agente no sea simplemente un proceso que alguien puso a funcionar y olvidó. Debe haber información sobre qué equipo lo administra, para qué tareas está autorizado y qué credenciales necesita. Dome comunica que su sistema puede aprovisionar acceso sin poner credenciales directamente en manos del agente, una separación importante cuando los procesos consumen datos de varios servicios.",
+            "Este tipo de inventario puede resolver una necesidad real en organizaciones con muchos agentes: saber cuáles están activos, quién autorizó su despliegue y cómo desactivarlos si cambia su propietario o se descubre un riesgo. Sin embargo, registrar un agente no demuestra que éste cumpla las reglas funcionales de su negocio. La calidad de una identidad depende de cómo se integra con el proveedor de autenticación, cómo se rotan secretos y si es posible revocar acceso de manera efectiva. Esos detalles deben ensayarse con cuentas y herramientas concretas."
+          ]
+        },
+        {
+          "heading": "Gateway MCP y controles en cada llamada a herramientas",
+          "kind": "technical",
+          "paragraphs": [
+            "La segunda pieza es un gateway de herramientas que inspecciona cada invocación en su contexto y puede permitirla, denegarla o elevarla para una decisión adicional. MCP es un protocolo de integración que facilita exponer herramientas a agentes, pero utilizar MCP no significa que todos los servidores externos sean igualmente confiables. El gateway pretende aplicar reglas a las acciones, destinatarios y datos, y no únicamente decidir una vez al inicio que el agente tiene acceso global a un servicio.",
+            "En un flujo de soporte, por ejemplo, consultar el estado de una orden y eliminar un registro de cliente son operaciones con riesgos distintos aunque utilicen el mismo CRM. Un sistema de políticas debe poder distinguir lectura, escritura e impacto externo, además de registrar por qué permitió cada operación. Dome ilustra un caso parecido en el comunicado: el registro identifica al agente, el gateway revisa su llamada al CRM, los controles inspeccionan la respuesta y las cuotas limitan costes. Es un escenario del fabricante, no una prueba independiente de que cualquier conector vaya a comportarse así."
+          ]
+        },
+        {
+          "heading": "Broker de modelos y políticas de selección",
+          "kind": "context",
+          "paragraphs": [
+            "La tercera capacidad es un broker de modelos. Su cometido es dirigir solicitudes hacia proveedores aprobados conforme a reglas de la organización. La selección puede depender de permisos sobre información confidencial, costes, modelos permitidos y requisitos particulares de un departamento. Esta capa importa porque muchas empresas utilizan más de un proveedor y un agente podría llamar a modelos diferentes durante un mismo encargo. Una política de herramientas no resuelve por sí sola qué datos es aceptable enviar a cada proveedor de inferencia.",
+            "Un broker no debe confundirse con una promesa de que todos los modelos darán resultados equivalentes. Si una solicitud cambia de proveedor, pueden cambiar límites de contexto, formato de respuesta, tasas, latencia y comportamiento de uso de herramientas. La plataforma debe registrar la elección y permitir reproducir evaluaciones críticas. Las afirmaciones de Dome acerca del control unificado están respaldadas por la descripción de su producto, pero el comunicado no publica una batería de benchmarks abiertos que pruebe rendimiento idéntico en todos los runtimes y nubes."
+          ]
+        },
+        {
+          "heading": "Un vocabulario de eventos para auditar todo el ciclo",
+          "kind": "analysis",
+          "paragraphs": [
+            "Dome dice que las decisiones de sus componentes se registran mediante un vocabulario común de eventos. El objetivo es reconstruir un recorrido de agente a través de distintos sistemas: identidad inicial, herramienta utilizada, autorización, modelo seleccionado, política aplicada y consumo. La observabilidad resulta importante cuando una organización tiene varias decenas de agentes de equipos diferentes. Un error no siempre se puede analizar con los logs de un único proveedor, y los costes pueden aparecer repartidos entre distintas cuentas.",
+            "Análisis Gazette: la capa de operación de agentes puede convertirse en una categoría propia de infraestructura, comparable con los sistemas que ayudaron a administrar servicios y contenedores en la nube. Pero una consola de eventos solo aporta valor si los responsables pueden encontrar causas y acciones concretas sin reconstruir manualmente grandes volúmenes de JSON. También debe proteger datos sensibles que aparezcan en trazas y separar información que puede consultar un operador de lo que necesita un auditor. El comunicado no ofrece métricas externas de cobertura de eventos, latencia adicional o resolución de incidentes."
+          ]
+        },
+        {
+          "heading": "Precios, alcance y límites comerciales del anuncio",
+          "kind": "report",
+          "paragraphs": [
+            "El lanzamiento proporciona una ruta de registro en app.domesystems.ai y remite a una página pública de precios. El comunicado no expone en su texto una tabla contractual de cobro por petición ni promete que todas las funciones avanzadas estén incluidas sin coste. Para una evaluación empresarial habría que revisar límites del plan, condiciones comerciales, soporte, cuotas y mecanismos de exportación de registros en el momento de la contratación. La apertura self-service facilita probar la plataforma, pero no sustituye evaluación de seguridad, revisión legal o integración con identidades corporativas.",
+            "La compañía menciona respaldo de Redpoint Ventures, Bessemer Venture Partners y Mango Capital. Esa información contextualiza su posición empresarial, pero no constituye una evaluación de mercado ni garantía de continuidad. También presenta la solución como independiente del runtime y la nube: ese es su objetivo de producto. La interoperabilidad concreta debe verificarse con servidores MCP, modelos, frameworks y entornos que utilice realmente cada cliente. La noticia registra un lanzamiento de acceso, no el cumplimiento demostrado de todas las condiciones de una gran empresa."
+          ]
+        },
+        {
+          "heading": "Pruebas prácticas y qué seguir",
+          "kind": "practical",
+          "paragraphs": [
+            "Una evaluación responsable puede comenzar con dos agentes de prueba que utilicen frameworks diferentes pero llamen a una misma herramienta simulada. El equipo registra sus identidades, limita quién puede leer o escribir, aplica una regla que impida borrar datos y comprueba qué registra el gateway. Después ejecuta peticiones hacia modelos de dos proveedores autorizados, comprueba que el broker aplica restricciones y mide errores, latencia y coste añadido frente a la conexión directa. La capacidad de denegar una llamada no basta: hay que comprobar que ninguna ruta alternativa evade la política.",
+            "También es necesario ensayar incidentes: desconexión del gateway, revocación de credenciales, cambios de esquema en una herramienta y envío de contenido malicioso por una fuente externa. El siguiente seguimiento editorial debería buscar documentación técnica y auditorías independientes, evolución de integraciones y pruebas de recuperación en organizaciones usuarias. El 5 de septiembre Dome ofreció una arquitectura de gestión y acceso inicial real; que se convierta en una solución operativa a escala dependerá de controles verificables y una experiencia comprensible para sus administradores."
+          ]
+        }
+      ],
+      "finalSummary": "La Agent Operations Platform intenta convertir un conjunto disperso de gateways y routers en una capa común de gestión de agentes, permisos y auditoría. Es una propuesta con acceso comercial, no una certificación independiente de seguridad o ahorro en todas las organizaciones.",
+      "technicalDetails": [
+        {
+          "label": "Fecha",
+          "value": "5 septiembre 2026"
+        },
+        {
+          "label": "Empresa",
+          "value": "Dome Systems, Redwood City"
+        },
+        {
+          "label": "Componentes",
+          "value": "Agent Registry, Tool Gateway y Model Broker"
+        },
+        {
+          "label": "Acceso",
+          "value": "Self-service; información pública de precios en el sitio del proveedor"
+        }
+      ],
+      "availability": {
+        "status": "Acceso autogestionado anunciado el 5 de septiembre de 2026",
+        "platforms": [
+          "Aplicación web de Dome Systems"
+        ],
+        "notes": [
+          "Comprobar planes, cuotas y funciones vigentes antes de contratar.",
+          "La adopción empresarial requiere validar integraciones y permisos propios."
+        ]
+      },
+      "practicalAdvice": [
+        "Probar políticas con dos agentes y al menos un intento deliberado de acceso no autorizado.",
+        "Medir sobrecarga de latencia, costes y cobertura de los registros en flujos reales.",
+        "Configurar revocación de credenciales, cuotas y auditoría sin depender solo del LLM.",
+        "Comprobar compatibilidad de frameworks y conectores con pruebas reproducibles."
+      ],
+      "limitations": [
+        "La información procede del proveedor y no incluye evaluaciones independientes de eficacia.",
+        "El comunicado no especifica una tarifa universal por solicitud de agente.",
+        "Un gateway no garantiza por sí mismo protección frente a todos los ataques de prompt injection.",
+        "La observabilidad y el gobierno dependen de conexiones e identidades correctamente configuradas."
+      ],
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado sepia de una sala de control de autómatas con registro de identidades, compuerta mecánica de herramientas y tablero de selección de motores, supervisores verificando un flujo y su autorización, sin texto ni marcas."
     },
     {
       "id": "openai-agent-message-board-report",
