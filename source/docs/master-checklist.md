@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 82 tareas; 51 completadas; 8 en curso; 21 pendientes o bloqueadas; 2 descartadas con razón.
+- 6 fases; 83 tareas; 52 completadas; 8 en curso; 21 pendientes o bloqueadas; 2 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -311,6 +311,11 @@
   - Criterio: La portada descarga menos de 500 KB JSON sin comprimido y carga reportajes completos bajo demanda; la automatización horaria conserva escritura de cinco archivos y el build nunca sirve índices obsoletos. Comparar con tamaño anterior y pruebas de navegación.
   - Commit: `75ac5ab92fad92cf9c50a364726ff800cec25e64`
   - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38166668611
+
+- [x] **UX-FACET-COMPACT** · P1 · done — Compactar filtros sin ocultar compañías ni temas raros
+  - Criterio: Máximo 13 filtros rápidos y desplegables accesibles que conservan las 60 compañías y 158 temas; los filtros se combinan y pasan Browser QA.
+  - Commit: `7b0dd8c7887b5980e41519ea5204c72cf45b9305`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38167255473
 
 ## Reglas para nuevas tareas
 

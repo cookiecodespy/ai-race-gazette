@@ -56,3 +56,10 @@ El siguiente chat no pregunta por el último resumen: lee HEAD y `source/docs/re
 - Tarea `PERF-ARCHIVE-LAZY-DELIVERY` cerrada con CI, navegador y Pages comprobados. La auditoría manual integral `QA-WEB` continúa pendiente.
 - El informe automático de calidad de la compilación arrojó **159 V2, 0 legacy, 0 artículos inferiores a 900 palabras, mediana de 1.534 palabras**, sin certificar factualmente todos los claims.
 - No interpretar estos números como datos en tiempo real para futuras sesiones: siempre actualizar desde main.
+
+
+## Filtros y alcance del lanzamiento (11-oct-2026)
+
+- [PR #3](https://github.com/cookiecodespy/ai-race-gazette/pull/3): la portada anterior renderizaba 60 compañías y 158 etiquetas como filtros; ahora limita a 13 accesos rápidos más selectores completos. [CI de PR PASS](https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38167164410); [Build main PASS](https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38167255473), bundle `7b0dd8c7887b5980e41519ea5204c72cf45b9305`.
+- Pendiente de QA: sinónimos de etiquetas ('Open Source', 'Open source', 'Código abierto') fragmentan los filtros y merecen normalización antes de considerar terminada la experiencia.
+- Advertencia de alcance: `release_readiness.py` cuenta todas las tareas abiertas, incluso ideas opcionales como automatizar arte, y fija `v1Ready: false`. Antes de firmar v1.0, separar requisitos de lanzamiento y mejoras futuras con criterios explícitos, sin fingir certificación editorial/visual.

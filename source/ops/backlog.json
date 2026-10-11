@@ -1158,6 +1158,20 @@
         "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38166668611",
         "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38166740122"
       ]
+    },
+    {
+      "id": "UX-FACET-COMPACT",
+      "phase": "P10",
+      "title": "Compactar filtros sin ocultar compañías ni temas raros",
+      "priority": "P1",
+      "status": "done",
+      "lane": "Product & QA",
+      "acceptance": "Máximo 13 filtros rápidos y desplegables accesibles que conservan las 60 compañías y 158 temas; los filtros se combinan y pasan Browser QA.",
+      "evidenceCommit": "7b0dd8c7887b5980e41519ea5204c72cf45b9305",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38167255473",
+        "https://github.com/cookiecodespy/ai-race-gazette/pull/3"
+      ]
     }
   ]
 }

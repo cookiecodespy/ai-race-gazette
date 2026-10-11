@@ -7,6 +7,10 @@ Nombre sugerido del chat:
 
 Operar y mejorar la automatización que mantiene AI Race Gazette al día sin usar Codex, Work ni una API de pago durante las actualizaciones editoriales rutinarias.
 
+## Reentrada después de chats saturados — 11 octubre 2026
+
+**Este handoff conserva cifras históricas que ya no son actuales.** Antes de continuar, leer `source/docs/closure-control-2026-10-11.md` y `source/docs/recovery-after-interruption.md`, consultar `main` y el checklist generado desde `source/ops/backlog.json`. Corte comprobado: 159 artículos Reporter V2, 41 fechas, 0 días certificados bajo Research Backbone v1, 28 ilustraciones P0 pendientes. PR #2 redujo el JSON inicial a 162.395 bytes; PR #3 compactó los filtros; ambos fusionados. Nunca crear segunda automatización horaria ni publicar en el portafolio.
+
 ## Fuente de verdad
 
 Repositorio canónico (desde el 9 de octubre de 2026):
