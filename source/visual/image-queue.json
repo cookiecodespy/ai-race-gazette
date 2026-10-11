@@ -8,7 +8,7 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
-  "generatedFromNewsUpdatedAt": "2026-10-11T00:41:42.771Z",
+  "generatedFromNewsUpdatedAt": "2026-10-11T00:44:21.842Z",
   "generatedAt": "2026-10-11",
   "items": [
     {
@@ -64,6 +64,32 @@
       "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
     },
     {
+      "articleId": "perplexity-hybrid-compute",
+      "eventKey": "perplexity-hybrid-compute",
+      "date": "2026-09-01",
+      "company": "Perplexity",
+      "product": "Hybrid Compute",
+      "title": "Perplexity mezcla modelos locales y nube en Mac",
+      "currentImage": "assets/hero.webp",
+      "currentAssetId": "gazette-generic-ai-hero-v1",
+      "currentReuseCount": 81,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-01/perplexity-hybrid-compute.webp",
+      "brief": "Grabado antiguo de computador con gabinete para documentos secretos, pasarela hacia nube externa y engranajes de cálculo, sin logotipos ni interfaces ficticias.",
+      "sourceSummary": "Hybrid Compute decide qué partes de una tarea pueden ejecutarse en el equipo y cuáles requieren servicios en la nube.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
       "articleId": "waymo-denver-san-diego-tampa",
       "eventKey": "waymo-denver-san-diego-tampa",
       "date": "2026-09-01",
@@ -80,6 +106,32 @@
       "desiredOutput": "assets/news/2026-09-01/waymo-denver-san-diego-tampa.webp",
       "brief": "Grabado editorial de periódico antiguo con tres escenas urbanas diferenciadas, un taxi autónomo sin conductor por las calles de Denver, San Diego y Tampa. Estilo grabado sepia, sin letras ni logos, no fotografía.",
       "sourceSummary": "La compañía empieza a recibir pasajeros públicos en tres nuevos mercados y amplía gradualmente el acceso.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
+      "articleId": "muse-spark-1-3",
+      "eventKey": "muse-spark-1-3",
+      "date": "2026-09-02",
+      "company": "Meta",
+      "product": "Muse Spark 1.3",
+      "title": "Meta actualiza Muse Spark para agentes de código de mayor duración",
+      "currentImage": "assets/hero.webp",
+      "currentAssetId": "gazette-generic-ai-hero-v1",
+      "currentReuseCount": 81,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-02/muse-spark-1-3.webp",
+      "brief": "Grabado editorial de máquina de cálculo y programación con engranajes, herramientas y rollos de instrucciones extensas, estilo periódico antiguo sin textos.",
+      "sourceSummary": "Spark 1.3 apunta a tareas de programación más largas, multitarea y uso más eficiente de herramientas.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
@@ -2404,32 +2456,6 @@
       "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
     },
     {
-      "articleId": "perplexity-hybrid-compute",
-      "eventKey": "perplexity-hybrid-compute",
-      "date": "2026-09-01",
-      "company": "Perplexity",
-      "product": "Hybrid Compute",
-      "title": "Perplexity mezcla modelos locales y nube en Mac",
-      "currentImage": "assets/hero.webp",
-      "currentAssetId": "gazette-generic-ai-hero-v1",
-      "currentReuseCount": 81,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-01/perplexity-hybrid-compute.webp",
-      "brief": "Crear una ilustración específica para “Perplexity mezcla modelos locales y nube en Mac”. El foco visual debe representar Hybrid Compute de Perplexity y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "Hybrid Compute decide qué partes de una tarea pueden ejecutarse en el equipo y cuáles requieren servicios en la nube.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
       "articleId": "amazon-connect-agentic-cx-designer",
       "eventKey": "amazon-connect-agentic-cx-designer",
       "date": "2026-09-02",
@@ -2550,32 +2576,6 @@
       "desiredOutput": "assets/news/2026-09-02/hiddenlayer-series-b-agent-security.webp",
       "brief": "Crear una ilustración específica para “HiddenLayer recauda US$100 millones y amplía seguridad para agentes”. El foco visual debe representar Agent Harness Security de HiddenLayer y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "sourceSummary": "La Serie B financia una expansión centrada en protección del runtime y del harness que rodea a los agentes de IA.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "muse-spark-1-3",
-      "eventKey": "muse-spark-1-3",
-      "date": "2026-09-02",
-      "company": "Meta",
-      "product": "Muse Spark 1.3",
-      "title": "Meta actualiza Muse Spark para agentes de código de mayor duración",
-      "currentImage": "assets/hero.webp",
-      "currentAssetId": "gazette-generic-ai-hero-v1",
-      "currentReuseCount": 81,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-02/muse-spark-1-3.webp",
-      "brief": "Crear una ilustración específica para “Meta actualiza Muse Spark para agentes de código de mayor duración”. El foco visual debe representar Muse Spark 1.3 de Meta y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "Spark 1.3 apunta a tareas de programación más largas, multitarea y uso más eficiente de herramientas.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
