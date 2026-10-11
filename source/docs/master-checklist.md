@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 82 tareas; 42 completadas; 11 en curso; 27 pendientes o bloqueadas; 2 descartadas con razón.
+- 6 fases; 82 tareas; 45 completadas; 9 en curso; 26 pendientes o bloqueadas; 2 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -204,10 +204,11 @@
 
 ## P09 — Enriquecimiento de legacy y Visual Desk
 
-**Estado:** queued. **Gate:** Artículos legacy enriquecidos o exceptuados con evidencia; ilustraciones específicas de titulares importantes y estándares visuales.
+**Estado:** in_progress. **Gate:** Artículos legacy enriquecidos o exceptuados con evidencia; ilustraciones específicas de titulares importantes y estándares visuales.
 
-- [ ] **ED-LEGACY48** · P0 · in_progress — Migrar todos los artículos legacy restantes a Reporter V2
+- [x] **ED-LEGACY48** · P0 · done — Migrar todos los artículos legacy restantes a Reporter V2
   - Criterio: Cero legacy sin excepciones justificadas y fuentes comprobadas. Mantener IDs y medir deuda viva desde quality-audit y release-readiness, nunca con cifras históricas fijas.
+  - Commit: `91ce03e3bf82a26736cce566f8626ab0946f291c`
 - [ ] **VIS-PREMIUM** · P1 · queued — Crear lote visual periódico de grabados específicos
   - Criterio: Disminuir el fallback repetido, resolver P0 de imagen y mantener créditos
 - [ ] **VIS-GENERATION** · P1 · queued — Explorar generación automática por noticia con QA
@@ -216,8 +217,9 @@
   - Criterio: Resolver briefs P0 con WebP originales, credit/alt y prueba visual; reducir las 46 reutilizaciones hero.
 - [ ] **VIS-REUSE-RULES** · P1 · queued — Política cuantificada de reutilización visual
   - Criterio: Definir presupuesto visual, tipos de grabado, niveles de especificidad y umbral de repetición con QA.
-- [ ] **ED-LEGACY-BATCH** · P0 · queued — Migración Reporter V2 por lotes de artículos antiguos
+- [x] **ED-LEGACY-BATCH** · P0 · done — Migración Reporter V2 por lotes de artículos antiguos
   - Criterio: Cerrar historias legacy por semana/actor, revisar fuentes y no alterar identificadores ni inventar contenido.
+  - Commit: `91ce03e3bf82a26736cce566f8626ab0946f291c`
 - [ ] **VIS-AUTO-QUEUE-REFRESH** · P1 · in_progress — Sincronizar cola visual tras publicaciones Newsroom
   - Criterio: Refrescar image-queue y asset-manifest automáticamente, sin pisar noticias ni commits vacíos y con tres ejecuciones validadas.
   - Evidencia: https://github.com/cookiecodespy/cookiecodespy.github.io/actions/runs/37798603043
@@ -234,9 +236,9 @@
   - Criterio: Publicación o validación realizada con evidencia, sin cerrar las fechas históricas por sí sola.
   - Commit: `ba928730edbfad01c3fa1bfc8331577dfd311d94`
   - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38103011095
-- [ ] **QA-V2-NEW-STORIES-HARDGATE** · P0 · in_progress — Bloquear nuevas noticias legacy tras la migración V2
+- [x] **QA-V2-NEW-STORIES-HARDGATE** · P0 · done — Bloquear nuevas noticias legacy tras la migración V2
   - Criterio: Contenido con fecha o coveredAt desde 2026-10-11 debe ser Reporter V2; comprobar regresión y CI final; preservar legacy histórico hasta migrarlo.
-  - Commit: `74312a137abe43f55ed7b53cbed12594317a79de`
+  - Commit: `ac621a7b6e897f1badb3ef3e02e4ebce7c0c2a69`
 
 ## P10 — Segunda auditoría y lanzamiento v1.0
 

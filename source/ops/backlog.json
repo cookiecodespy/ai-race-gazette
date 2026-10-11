@@ -59,7 +59,7 @@
     {
       "id": "P09",
       "title": "Enriquecimiento de legacy y Visual Desk",
-      "status": "queued",
+      "status": "in_progress",
       "gate": "Artículos legacy enriquecidos o exceptuados con evidencia; ilustraciones específicas de titulares importantes y estándares visuales."
     },
     {
@@ -259,10 +259,11 @@
       "phase": "P09",
       "title": "Migrar todos los artículos legacy restantes a Reporter V2",
       "priority": "P0",
-      "status": "in_progress",
+      "status": "done",
       "lane": "Editor-in-Chief / Historical Backfill",
       "acceptance": "Cero legacy sin excepciones justificadas y fuentes comprobadas. Mantener IDs y medir deuda viva desde quality-audit y release-readiness, nunca con cifras históricas fijas.",
-      "notes": "En pasada de octubre: Claude Opus 5.5, Sonnet 5.5, GPT-6.1 Sol y Dots migrados a Reporter V2. Reparación de RSS en cc4402b04ac31c576500de33b70b41aa5de9ead2."
+      "notes": "V5 2026-10-11: 17/17 legacy migrados, 154/154 Reporter V2. Referencias primarias o informe de tercero con atribución explícita; informe externo de wiki separado de confirmación general de OpenAI. Validación final y espejo verificados.",
+      "evidenceCommit": "91ce03e3bf82a26736cce566f8626ab0946f291c"
     },
     {
       "id": "VIS-PREMIUM",
@@ -669,9 +670,11 @@
       "phase": "P09",
       "title": "Migración Reporter V2 por lotes de artículos antiguos",
       "priority": "P0",
-      "status": "queued",
+      "status": "done",
       "lane": "Editorial / Historical Backfill",
-      "acceptance": "Cerrar historias legacy por semana/actor, revisar fuentes y no alterar identificadores ni inventar contenido."
+      "acceptance": "Cerrar historias legacy por semana/actor, revisar fuentes y no alterar identificadores ni inventar contenido.",
+      "evidenceCommit": "91ce03e3bf82a26736cce566f8626ab0946f291c",
+      "notes": "Migración por 8 lotes en V5; artículos históricos mantienen id, eventKey y date. RSS sincronizado tras aclaración de reporte de wiki. 0 legacy en archivo canónico."
     },
     {
       "id": "QA-READTIME-REGRESSION",
@@ -1113,10 +1116,11 @@
       "phase": "P09",
       "title": "Bloquear nuevas noticias legacy tras la migración V2",
       "priority": "P0",
-      "status": "in_progress",
+      "status": "done",
       "lane": "Arquitectura / QA",
       "acceptance": "Contenido con fecha o coveredAt desde 2026-10-11 debe ser Reporter V2; comprobar regresión y CI final; preservar legacy histórico hasta migrarlo.",
-      "evidenceCommit": "74312a137abe43f55ed7b53cbed12594317a79de"
+      "evidenceCommit": "ac621a7b6e897f1badb3ef3e02e4ebce7c0c2a69",
+      "notes": "Build PASS ejecución 38136981662. Pruebas de regresión ahora crean fixtures legacy sintéticos tras la migración total; validator rechaza reingreso legacy con coveredAt o fecha >= 2026-10-11."
     },
     {
       "id": "PERF-ARCHIVE-LAZY-DELIVERY",
