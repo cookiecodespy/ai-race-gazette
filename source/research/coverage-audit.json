@@ -696,27 +696,30 @@
     {
       "date": "2026-10-02",
       "archiveStatus": "partial",
-      "verifiedArticles": 1,
+      "verifiedArticles": 2,
       "auditMode": "pending-backbone-audit",
       "reviewedSourceIds": [
-        "anthropic-news-engineering"
+        "anthropic-news-engineering",
+        "google-research-blog"
       ],
       "reviewedCategories": [
         "agents",
-        "developer-tools"
+        "developer-tools",
+        "research",
+        "security"
       ],
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
         "found": null,
-        "published": 1,
+        "published": 2,
         "discarded": null,
         "unresolved": null
       },
       "auditDocument": null,
       "reviewedAt": "2026-10-10",
       "backboneReauditRequired": false,
-      "notes": "Dos comunicados oficiales de Anthropic (1 y 2 octubre) revisados y publicados; barrido de otros actores, discovery abierto y auditoría inversa pendientes. No se certifica jornada completa."
+      "notes": "Google Research: publicación primaria fechada recuperada en pasada parcial del 10-10. Restan fuentes de otros actores, discovery abierto, deduplicación inversa y doble auditoría; no se certifica complete."
     },
     {
       "date": "2026-10-03",
@@ -760,23 +763,29 @@
     },
     {
       "date": "2026-10-05",
-      "archiveStatus": "pending",
-      "verifiedArticles": 0,
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
       "auditMode": "pending-backbone-audit",
-      "reviewedSourceIds": [],
-      "reviewedCategories": [],
+      "reviewedSourceIds": [
+        "google-research-blog"
+      ],
+      "reviewedCategories": [
+        "research",
+        "agents",
+        "security"
+      ],
       "openDiscoveryPerformed": false,
       "reversePassPerformed": false,
       "candidateStats": {
         "found": null,
-        "published": 0,
+        "published": 1,
         "discarded": null,
         "unresolved": null
       },
       "auditDocument": null,
-      "reviewedAt": null,
+      "reviewedAt": "2026-10-10",
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "Google Research: publicación primaria fechada recuperada en pasada parcial del 10-10. Restan fuentes de otros actores, discovery abierto, deduplicación inversa y doble auditoría; no se certifica complete."
     },
     {
       "date": "2026-10-06",

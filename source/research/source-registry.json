@@ -533,6 +533,30 @@
         "models",
         "products"
       ]
+    },
+    {
+      "id": "google-research-blog",
+      "organization": "Google Research",
+      "coveragePriority": "core",
+      "sourceType": "research",
+      "official": true,
+      "enabled": true,
+      "domains": [
+        "research.google"
+      ],
+      "entrypoints": [
+        "https://research.google/blog/"
+      ],
+      "allowedUrlPrefixes": [
+        "https://research.google/blog/"
+      ],
+      "topics": [
+        "research",
+        "privacy",
+        "security",
+        "agents",
+        "federated-learning"
+      ]
     }
   ],
   "coveragePolicy": {
