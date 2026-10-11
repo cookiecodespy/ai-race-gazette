@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T02:15:51.632Z",
+  "updatedAt": "2026-10-11T02:25:33.918Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -19841,7 +19841,142 @@
         "Combina lógica determinista y agentes."
       ],
       "analysis": "Los agentes empresariales probablemente convivirán con reglas tradicionales; integrar ambos enfoques puede reducir riesgo operativo.",
-      "watch": "Cómo se auditan decisiones del agente dentro de flujos reales."
+      "watch": "Cómo se auditan decisiones del agente dentro de flujos reales.",
+      "articleVersion": 2,
+      "quickTakeaways": [
+        "Agentic CX Designer alcanzó disponibilidad general el 2 de septiembre de 2026 después de una preview anunciada en junio.",
+        "El lienzo combina conversación mediante modelos de lenguaje con rutas deterministas para aprobaciones, elegibilidad y cumplimiento.",
+        "AWS identificó nueve regiones iniciales; el lanzamiento no confirma disponibilidad general para todas las regiones ni una tarifa única.",
+        "Live Sync y Touchpoint tienen anuncios propios y deben distinguirse del diseñador aunque formen parte del mismo ecosistema."
+      ],
+      "executiveSummary": "AWS convirtió su diseñador sin código para autoservicio con IA en una oferta de disponibilidad general el 2 de septiembre de 2026. La noticia es un cambio verificable de etapa del producto: equipos de negocio pueden modelar conversaciones, integrar sistemas, probar y publicar experiencias desde un lienzo. Los pasos críticos se mantienen sujetos a reglas explícitas. La adopción real, el coste y los resultados requieren evaluación por implementación.",
+      "sections": [
+        {
+          "heading": "De preview a disponibilidad general: la fecha importa",
+          "kind": "report",
+          "paragraphs": [
+            "El 2 de septiembre de 2026, AWS anunció la disponibilidad general de Agentic CX Designer para Amazon Connect Customer. Se trata de una herramienta visual sin código dirigida al diseño y puesta en marcha de experiencias de autoservicio por voz y canales digitales. Su propósito es reunir conversación generativa y procesos de negocio explícitos en una misma superficie de trabajo. El hito de septiembre no representa la invención de la herramienta: AWS ya había presentado una vista previa en junio de 2026. Lo que cambia en esta noticia es el estado de acceso, que pasa de prueba anticipada a disponibilidad general dentro de un conjunto definido de regiones.",
+            "Esta cronología ayuda a distinguir dos cosas que suelen mezclarse en los anuncios de IA. Una demostración de un flujo de atención puede mostrar una experiencia prometedora, pero la disponibilidad general implica que un proveedor ofrece la funcionalidad fuera de la fase etiquetada como preview y publica regiones para usarla. No significa que cada empresa tenga un sistema autónomo terminado al habilitar el producto. Las integraciones con sistemas reales, las pruebas con usuarios, las autorizaciones y el gobierno del proceso continúan siendo tareas de la organización que configura la solución."
+          ]
+        },
+        {
+          "heading": "Diseño híbrido: lenguaje natural y pasos deterministas",
+          "kind": "technical",
+          "paragraphs": [
+            "La propuesta central combina un modelo de lenguaje que interpreta una conversación flexible con un flujo determinista que define qué debe suceder en momentos críticos. En el lienzo visual, los equipos configuran lógica, integraciones y límites de la experiencia. El modelo puede gestionar preguntas o variaciones en la manera de expresarse del cliente, pero decisiones como elegibilidad, aprobación, derivación o cumplimiento se resuelven siguiendo el flujo definido. Esta separación es importante: responder amablemente a una pregunta y autorizar una operación son actividades con requisitos de evidencia y control diferentes.",
+            "Supongamos que una persona solicita modificar una reserva o iniciar una solicitud financiera. El componente conversacional puede explicar los datos necesarios y orientar la interacción. Sin embargo, confirmar identidad, comprobar condiciones, consultar el sistema de registro y aplicar cambios efectivos debe obedecer reglas verificables. AWS presenta ese patrón como una combinación de la claridad de un diagrama de flujo y la flexibilidad de un LLM. En arquitectura de producto, conviene verlo como una orquestación de reglas y herramientas alrededor de una interfaz conversacional, no como un modelo al que se concede autoridad ilimitada sobre los sistemas de la empresa."
+          ]
+        },
+        {
+          "heading": "Qué hace el lienzo sin código y qué no resuelve solo",
+          "kind": "context",
+          "paragraphs": [
+            "El anuncio afirma que los equipos de negocio pueden diseñar conversaciones, conectar aplicaciones, probar y desplegar desde el mismo entorno sin depender de una transferencia constante de especificaciones a ingeniería. Esto puede acortar algunos ciclos de diseño, especialmente cuando los procesos están bien documentados y los sistemas de origen ya ofrecen integraciones compatibles. La frase comercial de pasar de meses a semanas debe tratarse como expectativa del proveedor, no como garantía contractual para todo cliente. La complejidad de una integración heredada o una revisión regulatoria puede seguir condicionando el calendario.",
+            "El hecho de no escribir código en la interfaz no elimina responsabilidades técnicas. Alguien debe definir la semántica de los datos, qué cuenta como transacción autorizada, qué hacer cuando un conector falla y cómo recuperarse de una conversación ambigua. También debe documentar la versión del flujo que se puso en producción y la manera de volver a una versión anterior si una modificación causa errores. Para evaluar un piloto, conviene medir tasas de resolución efectiva, abandonos, transferencias a personas, incidentes y satisfacción, en vez de quedarse con la cantidad de bloques que contiene el diagrama."
+          ]
+        },
+        {
+          "heading": "Relación con Live Sync y Touchpoint",
+          "kind": "technical",
+          "paragraphs": [
+            "La vista previa de junio mostraba cómo Live Sync podía acompañar a una persona mientras navegaba por una aplicación web o móvil durante una conversación por voz o chat. AWS publicó el 2 de septiembre otro anuncio separado sobre la disponibilidad general de Live Sync y Touchpoint. Live Sync coordina pasos visibles del cliente, mientras Touchpoint ofrece una superficie conversacional integrable que puede incluir tarjetas, formularios, carruseles o vídeo. Son capacidades relacionadas del ecosistema Connect Customer, pero no deben confundirse con el anuncio del diseñador ni utilizarse como prueba de que cada nueva experiencia incluye automáticamente todas las funciones.",
+            "Una experiencia guiada puede ser útil para completar formularios, explicar campos o abrir una página apropiada mientras el cliente mantiene la conversación. Pero para sistemas sensibles, la aplicación debe confirmar explícitamente qué datos se rellenaron y solicitar autorización antes de ejecutar cambios. La demostración de ayuda visual no sustituye el consentimiento, las reglas sobre datos personales o los mecanismos de corrección. Análisis Gazette: la interacción multimodal empieza a parecerse más a una aplicación coordinada por un asistente, y menos a un chatbot encapsulado en una caja de texto."
+          ]
+        },
+        {
+          "heading": "Regiones, acceso y lo que no sabemos del precio",
+          "kind": "report",
+          "paragraphs": [
+            "AWS identifica nueve regiones con disponibilidad general inicial: Este de Estados Unidos (Norte de Virginia), Oeste de Estados Unidos (Oregón), Canadá central, Tokio, Seúl, Singapur, Sídney, Fráncfort y Londres. Son regiones de infraestructura AWS, no una lista de nacionalidades de clientes admitidas. Un negocio ubicado fuera de esas geografías puede necesitar comprobar residencia de datos, latencia, contratos y restricciones locales antes de decidir cómo desplegar. El comunicado no confirma disponibilidad general en la región de Sudamérica ni en todas las regiones globales de AWS.",
+            "El anuncio de lanzamiento no incluye un precio específico por conversación, asiento o flujo del diseñador. El proveedor remite a sus páginas de producto y de precios, que pueden cambiar según uso, configuración y servicios asociados. Por tanto, sería incorrecto publicar una cifra inventada o asumir que una interfaz no-code es gratuita en producción. Antes de contratar, un equipo debe presupuestar canales utilizados, servicios integrados, almacenamiento o registro de interacciones, pruebas y costes operativos de revisión humana. El coste por solicitud efectivamente resuelta es una métrica más representativa que el precio aislado de una interacción."
+          ]
+        },
+        {
+          "heading": "Seguridad, pruebas y recuperación en atención real",
+          "kind": "analysis",
+          "paragraphs": [
+            "Una aplicación de atención al cliente puede fallar de maneras difíciles de advertir en una demo: respuestas incorrectas a preguntas raras, instrucciones maliciosas incrustadas en documentos, datos personales expuestos en registros, clasificación equivocada del motivo de contacto o una transición defectuosa a un operador humano. Un diseño serio debe ensayar esos casos antes de permitir acciones con efectos externos. Los límites del lienzo y las reglas del proceso pueden ser defensas útiles, pero su eficacia depende de configurar identidades, controles de acceso, validaciones del servidor y pruebas de extremo a extremo.",
+            "También importa la experiencia de observabilidad. Si el cliente cree que una operación quedó terminada, el sistema debe poder demostrar el cambio real en el sistema de registro y emitir una confirmación inequívoca. Si se pierde una conexión, debe quedar claro si la acción se ejecutó, falló o necesita reintentarse. El operador debería visualizar el paso alcanzado, la razón de una transferencia y el historial de decisiones relevante, sin obligarlo a interpretar únicamente logs técnicos. La autonomía conversacional solo aporta valor cuando los usuarios y administradores pueden comprender lo ocurrido."
+          ]
+        },
+        {
+          "heading": "Implicaciones competitivas y evaluación práctica",
+          "kind": "practical",
+          "paragraphs": [
+            "Este lanzamiento representa la integración de IA generativa en herramientas empresariales donde ya existían flujos de contacto y atención. La ventaja potencial no es solo responder de forma natural, sino permitir que responsables del proceso configuren, prueben y ajusten una experiencia coordinada con sistemas existentes. Eso puede cambiar cómo colaboran equipos de negocio, diseño y tecnología. Aun así, la comparación con otras plataformas necesita mediciones sobre los mismos tipos de solicitudes, canales, lenguas y requisitos de seguridad. El anuncio de AWS no publica un benchmark independiente que justifique un liderazgo universal.",
+            "Para iniciar una prueba, conviene elegir un flujo concreto con reglas estables, por ejemplo consultar el estado de una solicitud sin modificar datos. Luego se añade un caso de escritura reversible con autorización y seguimiento. El equipo debería registrar preguntas resueltas, derivaciones, correcciones manuales, respuestas no respaldadas y coste por resolución. También debe comprobar las regiones realmente disponibles y las condiciones comerciales al momento de contratar. Los próximos hitos para el Gazette son adopción verificable, cambios de cobertura regional, mediciones de productividad y mejoras en observabilidad, no repetir la promesa de que cada proceso podrá automatizarse en unas semanas."
+          ]
+        }
+      ],
+      "finalSummary": "La noticia es la llegada a disponibilidad general de un diseñador que combina conversación flexible y procesos de negocio controlados. La solución ofrece un camino para ensayar agentes de atención al cliente, pero no elimina la necesidad de validación de identidad, reglas de autorización, pruebas, observabilidad y evaluación de costes por caso de uso.",
+      "availability": {
+        "status": "Disponibilidad general a partir del 2 de septiembre de 2026 en regiones anunciadas por AWS",
+        "regions": [
+          "US East (N. Virginia)",
+          "US West (Oregon)",
+          "Canada (Central)",
+          "Asia Pacific (Tokyo)",
+          "Asia Pacific (Seoul)",
+          "Asia Pacific (Singapore)",
+          "Asia Pacific (Sydney)",
+          "Europe (Frankfurt)",
+          "Europe (London)"
+        ],
+        "notes": [
+          "Confirmar los requisitos comerciales y de datos de cada despliegue.",
+          "El anuncio no publica una tarifa universal del diseñador."
+        ]
+      },
+      "timeline": [
+        {
+          "date": "2026-06-22",
+          "label": "Vista previa de Agentic CX Designer"
+        },
+        {
+          "date": "2026-09-02",
+          "label": "Disponibilidad general anunciada por AWS"
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Interfaz",
+          "value": "Lienzo sin código para flujos conversacionales de voz y digital"
+        },
+        {
+          "label": "Modelo de control",
+          "value": "LLM para conversación más flujos deterministas para decisiones críticas"
+        },
+        {
+          "label": "Regiones",
+          "value": "Nueve regiones iniciales declaradas por AWS"
+        }
+      ],
+      "limitations": [
+        "No se proporcionó benchmark independiente de resultados de atención ni garantía de implementación en semanas.",
+        "No hay una tarifa específica universal en el anuncio original.",
+        "Las capacidades Live Sync y Touchpoint tienen anuncios separados; su relación comercial debe verificarse.",
+        "Las acciones sensibles requieren permisos, confirmaciones y supervisión adecuados al sistema de negocio."
+      ],
+      "practicalAdvice": [
+        "Seleccionar un flujo de bajo riesgo para evaluar precisión, resolución y derivación a operadores.",
+        "Probar errores de conectores, datos incompletos, cambios de intención e interrupciones antes de habilitar escrituras.",
+        "Revisar residencia de datos, región AWS y costes completos del proceso.",
+        "Mantener controles deterministas y trazabilidad externa al modelo para acciones sensibles."
+      ],
+      "relatedSources": [
+        {
+          "name": "AWS · anuncio de preview de junio",
+          "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-connect-customer-agentic-cx-preview/",
+          "publishedAt": "2026-06-22"
+        },
+        {
+          "name": "AWS · Live Sync y Touchpoint",
+          "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/live-sync-touchpoint/",
+          "publishedAt": "2026-09-02"
+        }
+      ],
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de periódico del siglo XIX: operadores de una central telefónica mecánica diseñan un flujo de conversación con tarjetas y compuertas que separan preguntas abiertas de decisiones regladas, tinta sepia, papel envejecido, sin texto, marcas, logos falsos ni interfaz presentada como documental."
     },
     {
       "id": "waymo-denver-san-diego-tampa",
