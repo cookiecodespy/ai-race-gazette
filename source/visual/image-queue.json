@@ -8,7 +8,7 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
-  "generatedFromNewsUpdatedAt": "2026-10-11T03:30:18.184Z",
+  "generatedFromNewsUpdatedAt": "2026-10-11T03:36:19.100Z",
   "generatedAt": "2026-10-11",
   "items": [
     {
@@ -298,6 +298,32 @@
       "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
     },
     {
+      "articleId": "nvidia-pair",
+      "eventKey": "nvidia-pair",
+      "date": "2026-09-03",
+      "company": "NVIDIA",
+      "product": "Personal AI Router (PAIR)",
+      "title": "NVIDIA presenta PAIR para repartir IA local entre varios equipos",
+      "currentImage": "assets/hero.webp",
+      "currentAssetId": "gazette-generic-ai-hero-v1",
+      "currentReuseCount": 86,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "brief-ready",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-03/nvidia-pair.webp",
+      "brief": "Grabado de revista técnica del XIX: tres mesas de trabajo con autómatas que comparten encargos mediante tubos neumáticos y un distribuidor mecánico central, representación metafórica, tinta y sepia, sin texto ni logotipos.",
+      "sourceSummary": "NVIDIA presentó Personal AI Router (PAIR) como una beta gratuita y de código abierto que descubre PCs compatibles en una red local y reparte solicitudes de inferencia independientes. No une sus memorias GPU en una sola GPU virtual; ayuda a ejecutar varias tareas de agentes en paralelo.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
       "articleId": "weathernext-3",
       "eventKey": "weathernext-3",
       "date": "2026-09-03",
@@ -392,6 +418,32 @@
       "desiredOutput": "assets/news/2026-09-07/google-cathay-contrail-trial.webp",
       "brief": "Grabado científico de aeronave comercial en vuelo en capas atmosféricas, mapas de humedad y altitudes representados por nubes y símbolos visuales sin texto ni cifras, papel sepia con estilo de revista técnica antigua.",
       "sourceSummary": "La aerolínea se suma a pruebas operativas de una herramienta de IA que busca identificar ajustes de vuelo capaces de reducir contrails.",
+      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
+      "outputSpec": {
+        "format": "webp",
+        "preferredWidth": 1600,
+        "aspectRatio": "3:2",
+        "safeCenterCrop": true
+      },
+      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
+    },
+    {
+      "articleId": "minicpm5-2b",
+      "eventKey": "minicpm5-2b",
+      "date": "2026-09-07",
+      "company": "OpenBMB",
+      "product": "MiniCPM5-2B",
+      "title": "OpenBMB publica MiniCPM5-2B para IA compacta y local",
+      "currentImage": "assets/hero.webp",
+      "currentAssetId": "gazette-generic-ai-hero-v1",
+      "currentReuseCount": 86,
+      "articleImageStatus": "needs-specific-art",
+      "queuePriority": "P0",
+      "productionStatus": "needs-art-direction",
+      "desiredType": "editorial-illustration",
+      "desiredOutput": "assets/news/2026-09-07/minicpm5-2b.webp",
+      "brief": "Grabado de gabinete científico antiguo, pequeño autómata examinando enormes rollos de texto y engranajes de cálculo, foco en capacidad compacta sin sugerir tamaño real, tinta y sepia, sin logotipos ni texto.",
+      "sourceSummary": "OpenBMB publicó MiniCPM5-2B el 7 de septiembre de 2026, un modelo Transformer denso de aproximadamente 2.500 millones de parámetros totales —unos 2.000 millones excluyendo embeddings— para ejecución local, uso de herramientas y razonamiento. Ofrece variantes GGUF/MLX y datos de entrenamiento abiertos, con benchmarks atribuidos al proyecto.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
@@ -3470,32 +3522,6 @@
       "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
     },
     {
-      "articleId": "nvidia-pair",
-      "eventKey": "nvidia-pair",
-      "date": "2026-09-03",
-      "company": "NVIDIA",
-      "product": "Personal AI Router (PAIR)",
-      "title": "NVIDIA presenta PAIR para repartir IA local entre varios equipos",
-      "currentImage": "assets/hero.webp",
-      "currentAssetId": "gazette-generic-ai-hero-v1",
-      "currentReuseCount": 86,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "brief-ready",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-03/nvidia-pair.webp",
-      "brief": "Ilustración editorial para NVIDIA Personal AI Router (PAIR): varias computadoras de escritorio y estaciones locales conectadas a un pequeño nodo central que reparte cargas de inferencia como una central ferroviaria en miniatura; debe comunicar clúster local doméstico/profesional, no un datacenter gigante. Grabado antiguo, tinta/sepia, sin logos ni texto.",
-      "sourceSummary": "Personal AI Router distribuye inferencia entre computadoras locales y busca convertir una red doméstica o de trabajo en un pequeño clúster de IA.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
       "articleId": "anthropic-fermat-formalization",
       "eventKey": "anthropic-fermat-formalization",
       "date": "2026-09-04",
@@ -3642,32 +3668,6 @@
       "desiredOutput": "assets/news/2026-09-06/openai-automated-research-intern.webp",
       "brief": "Crear una ilustración específica para “OpenAI dice haber alcanzado su hito de “research intern” automatizado”. El foco visual debe representar Research acceleration de OpenAI y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "sourceSummary": "La compañía afirma que sus agentes ya pueden completar tareas de investigación bien definidas que antes tomarían días a un investigador humano.",
-      "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "outputSpec": {
-        "format": "webp",
-        "preferredWidth": 1600,
-        "aspectRatio": "3:2",
-        "safeCenterCrop": true
-      },
-      "publishRule": "No sustituir el fallback hasta revisar coherencia factual, legibilidad, crédito y ausencia de elementos engañosos."
-    },
-    {
-      "articleId": "minicpm5-2b",
-      "eventKey": "minicpm5-2b",
-      "date": "2026-09-07",
-      "company": "OpenBMB",
-      "product": "MiniCPM5-2B",
-      "title": "OpenBMB publica MiniCPM5-2B para IA compacta y local",
-      "currentImage": "assets/hero.webp",
-      "currentAssetId": "gazette-generic-ai-hero-v1",
-      "currentReuseCount": 86,
-      "articleImageStatus": "legacy-unclassified",
-      "queuePriority": "P1",
-      "productionStatus": "needs-art-direction",
-      "desiredType": "editorial-illustration",
-      "desiredOutput": "assets/news/2026-09-07/minicpm5-2b.webp",
-      "brief": "Crear una ilustración específica para “OpenBMB publica MiniCPM5-2B para IA compacta y local”. El foco visual debe representar MiniCPM5-2B de OpenBMB y la idea central del informe, sin convertir metáforas en hechos. Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
-      "sourceSummary": "El modelo de 2.000 millones de parámetros apunta a dispositivos y recursos limitados sin renunciar a contexto largo y uso de herramientas.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
