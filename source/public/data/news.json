@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T11:47:13.898Z",
+  "updatedAt": "2026-10-11T12:20:39.501Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -2486,6 +2486,202 @@
       ]
     },
     {
+      "id": "cloudflare-clef-omni-multimodal-workers-ai-2026",
+      "eventKey": "cloudflare-clef-omni-multimodal-decision-workers-ai-2026-10-09",
+      "articleVersion": 2,
+      "date": "2026-10-09",
+      "announcedAt": "2026-10-09",
+      "coveredAt": "2026-10-11",
+      "verifiedAt": "2026-10-11",
+      "company": "Cloudflare",
+      "product": "Clef-omni, Clef-flash y Clef en Workers AI",
+      "title": "Cloudflare lanza Clef-omni para audio y vídeo y rebaja un 58% Clef-flash",
+      "summary": "Cloudflare incorpora Clef-omni, un modelo de decisiones estructuradas que admite texto, imágenes, audio y vídeo. Clef-flash baja a US$0,038 por millón de tokens de entrada, pero reduce su contexto alojado de 64K a 24K; Clef también acelera según pruebas del proveedor.",
+      "tags": [
+        "Cloudflare",
+        "Workers AI",
+        "Modelos abiertos",
+        "Multimodal",
+        "Precios",
+        "Infraestructura"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Ilustración editorial conceptual de infraestructura global; no representa servidores reales de Cloudflare.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial en sepia de un mecanismo de clasificación que recibe una cinta de vídeo, ondas sonoras, fotografía y texto y produce tarjetas abstractas de decisiones; estilo prensa antigua, papel envejecido, horizontal 3:2, sujetos centrados. Sin logotipos falsos, texto ilegible, capturas ficticias ni apariencia fotográfica.",
+      "source": {
+        "name": "Cloudflare · Clef-omni adds audio and video input, Clef-flash is now cheaper, and Clef is faster",
+        "url": "https://developers.cloudflare.com/changelog/post/2026-10-09-clef-omni-workers-ai/",
+        "publishedAt": "2026-10-09"
+      },
+      "relatedSources": [
+        {
+          "name": "Cloudflare Workers AI · clef-omni",
+          "url": "https://developers.cloudflare.com/workers-ai/models/clef-omni/"
+        },
+        {
+          "name": "Cloudflare Workers AI · clef-flash",
+          "url": "https://developers.cloudflare.com/workers-ai/models/clef-flash/"
+        }
+      ],
+      "body": [
+        "El 9 de octubre de 2026, Cloudflare anunció Clef-omni para Workers AI, un modelo que transforma entradas de texto, imágenes, audio y vídeo en decisiones estructuradas. La misma comunicación incluye una rebaja del precio de Clef-flash y mejoras de latencia para Clef. Los tres cambios pertenecen a una misma familia de modelos y se agrupan aquí como un evento editorial. La disponibilidad anunciada corresponde al servicio Workers AI; no implica que Cloudflare haya lanzado un nuevo asistente conversacional ni que todos los modelos de la familia admitan las mismas modalidades.",
+        "La diferencia esencial respecto de un modelo generativo es su salida. Clef-omni recibe un estado y preguntas tipadas con respuestas permitidas, y devuelve puntuaciones o probabilidades para esas opciones. No escribe una respuesta libre de varias páginas. Esto puede servir para clasificar tickets, ordenar alertas o revisar señales de funcionamiento de equipos. La aplicación cliente conserva la responsabilidad de interpretar los resultados, decidir umbrales y controlar las acciones posteriores. Una probabilidad alta no constituye por sí sola una certificación técnica, una autorización de crédito ni una decisión que deba ejecutarse automáticamente.",
+        "Cloudflare describe una arquitectura de mezcla de expertos de 30.000 millones de parámetros totales, con aproximadamente 3.000 millones activos en cada inferencia. Esa diferencia importa porque el tamaño total no equivale al trabajo computacional realizado en cada solicitud. El modelo se ofrece con pesos abiertos, pero el alojamiento administrado tiene un precio y restricciones propias. Su identificador de Workers AI es @cf/cloudflare/clef-omni y utiliza el selector clef-omni en la API. Los resultados de rendimiento publicados por el fabricante no equivalen a una auditoría externa.",
+        "La documentación técnica acepta audio WAV o MP3 y vídeo MP4 o WebM, además de texto, JSON e imágenes. Una solicitud puede contener hasta cuatro imágenes, cuatro clips de audio y dos vídeos, con límites adicionales de tamaño y duración. Los vídeos admitidos tienen como máximo 60 segundos cada uno y se muestrean a dos fotogramas por segundo. La integración utiliza contenido multimedia codificado y no descarga automáticamente archivos desde URL remotas. Para grabaciones largas, un desarrollador debe seleccionar segmentos, dividir el material o diseñar otro flujo de preprocesamiento.",
+        "El ejemplo oficial reúne una foto de una instalación, una grabación del ruido de una máquina y un vídeo de un ventilador. El modelo responde preguntas específicas sobre la etiqueta visible, la normalidad del sonido y el funcionamiento del ventilador. Cloudflare sostiene que evaluar conjuntamente imagen y sonido puede reducir la necesidad de encadenar transcripción, análisis visual y clasificación por separado. Es una propuesta de simplificación de ciertas tareas, no evidencia de que el modelo sustituya todas las herramientas especializadas ni de que identifique fallos industriales con fiabilidad certificada.",
+        "En los benchmarks publicados, Clef-omni registra 94,8 de macro-F1 en BANKING77, frente a 94,20 de Clef y 90,93 de Clef-flash. En CLINC150+OOS obtiene 97,7, por delante de 97,43 y 66,77 respectivamente. Pero en BFCL case exact, Clef-omni registra 98,2, por debajo de Clef y Clef-flash; tampoco lidera la comparación de PhishNChips. Los resultados no justifican afirmar que el nuevo modelo sea superior en todas las tareas. Son cifras comunicadas por Cloudflare, cuya reproducibilidad y extrapolación a datos de clientes requieren comprobaciones independientes.",
+        "Clef-omni cuesta US$0,150 por millón de tokens de entrada y ofrece 64.000 tokens de contexto alojado. Clef mantiene US$0,240 por millón y 64.000 de contexto. Clef-flash baja de US$0,090 a US$0,038 por millón: una reducción aproximada del 57,8%, redondeada al 58% en el titular. La contrapartida es que el contexto de Clef-flash alojado pasa de 64.000 a 24.000 tokens. Cloudflare indica que solo el 0,24% de sus solicitudes superaban el nuevo límite, según sus datos internos; esa distribución puede no representar las necesidades de otras organizaciones.",
+        "El recorte afecta al servicio administrado de Clef-flash. Los pesos descargables permanecen sin cambios y, según Cloudflare, admiten hasta 256.000 tokens cuando se alojan por cuenta propia. Por eso el coste nominal más bajo no es automáticamente una mejor opción para flujos con documentos largos o estados acumulados de agentes. También hay que distinguir tokens de texto y multimedia: imágenes, audio y vídeo se convierten en tokens de entrada, consumen contexto y generan cargos según las reglas del modelo. La documentación actual señala que la familia Clef no cobra tokens de salida.",
+        "Para Clef-omni, Cloudflare estima unos 780 tokens por minuto de audio y hasta aproximadamente 15.400 por minuto de vídeo a resolución máxima, más los tokens de sonido cuando corresponda. Un vídeo de 480p puede utilizar alrededor de 8.600 tokens de fotogramas por minuto. La factura real depende de duración, resolución y formato, y el coste total de una aplicación también incluye almacenamiento, ingestión, procesamiento adicional y supervisión. Una comparación honesta debe medir coste por decisión correcta y no únicamente precio por millón de tokens anunciados.",
+        "Cloudflare afirma además que optimizó Clef sin cambiar sus pesos. En una muestra cercana a 3.400 tokens, su latencia mediana publicada pasa de 616 a 305 milisegundos; con unas 800 unidades, de 262 a 152 milisegundos. La empresa atribuye parte de la mejora a SGLang. Estos tiempos corresponden a mediciones propias y no garantizan idéntica latencia en otra región, con otra carga de tráfico o en autoalojamiento. Tampoco deben confundirse con los tiempos de Clef-omni: el anuncio presenta modelos y pruebas diferentes.",
+        "Clef-omni está disponible en Workers AI y se integra con AI Gateway mediante la interfaz System One compartida con otros modelos de la familia. El anuncio no identifica una expansión regional específica, nuevas tarifas de suscripción de Workers ni garantías de capacidad universal. Para probarlo conviene definir preguntas con respuestas bien delimitadas, preparar ejemplos etiquetados por humanos y medir errores, calibración, latencia y coste en datos representativos. En decisiones de seguridad, salud, empleo o finanzas, la salida del modelo necesita controles apropiados y no debería activar por sí sola medidas irreversibles.",
+        "Análisis Gazette: los modelos de decisiones estructuradas compiten en un terreno diferente al de los chatbots. Su valor está en ofrecer señales integrables, previsibilidad operativa y evaluación de opciones, pero también trasladan al desarrollador el diseño de preguntas y la responsabilidad de verificar los resultados. La rebaja de Clef-flash intensifica la competencia por costes de inferencia, mientras su menor contexto recuerda que una reducción de precio puede venir acompañada de límites. Faltan pruebas independientes sobre ruido, idiomas, vídeo complejo, sesgos, calibración y coste completo por caso de uso.",
+        "En conclusión, la novedad confirmada del 9 de octubre es triple: Clef-omni añade decisiones multimodales con audio y vídeo a Workers AI, Clef-flash abarata la inferencia alojada a cambio de contexto, y Clef incorpora optimizaciones de velocidad declaradas por Cloudflare. La arquitectura, los precios y los límites están documentados, pero los benchmarks y las mejoras de rendimiento son afirmaciones del proveedor. Lo siguiente a observar será si los equipos consiguen resultados robustos y costes razonables con sus propios datos, más allá de las demostraciones de lanzamiento."
+      ],
+      "keyPoints": [
+        "Clef-omni evalúa texto, imágenes, audio y vídeo y devuelve probabilidades para opciones definidas.",
+        "Clef-flash baja de US$0,090 a US$0,038 por millón de tokens de entrada, con contexto alojado reducido a 24K.",
+        "Cloudflare declara hasta 2 veces menos latencia en Clef; no son pruebas independientes."
+      ],
+      "quickTakeaways": [
+        "Anuncio del 9 de octubre de 2026; Clef-omni está en Workers AI.",
+        "Clef-omni no genera texto libre: puntúa respuestas permitidas.",
+        "MoE de 30B parámetros totales y 3B activos, según Cloudflare.",
+        "Clef-omni cuesta US$0,150/M tokens de entrada y ofrece 64K de contexto.",
+        "Clef-flash reduce precio aproximadamente 58%, pero contexto alojado de 64K a 24K.",
+        "Los benchmarks y la aceleración son claims del proveedor."
+      ],
+      "executiveSummary": "Cloudflare lanzó Clef-omni para decisiones estructuradas multimodales, rebajó Clef-flash y optimizó Clef. La reducción de precio de Clef-flash exige considerar la pérdida de contexto hospedado, mientras que la facturación multimedia depende de tokenización y las métricas de rendimiento aún necesitan contraste externo.",
+      "sections": [
+        {
+          "heading": "Lanzamiento y naturaleza del modelo",
+          "kind": "report",
+          "paragraphs": [
+            "El 9 de octubre de 2026, Cloudflare anunció Clef-omni para Workers AI, un modelo que transforma entradas de texto, imágenes, audio y vídeo en decisiones estructuradas. La misma comunicación incluye una rebaja del precio de Clef-flash y mejoras de latencia para Clef. Los tres cambios pertenecen a una misma familia de modelos y se agrupan aquí como un evento editorial. La disponibilidad anunciada corresponde al servicio Workers AI; no implica que Cloudflare haya lanzado un nuevo asistente conversacional ni que todos los modelos de la familia admitan las mismas modalidades.",
+            "La diferencia esencial respecto de un modelo generativo es su salida. Clef-omni recibe un estado y preguntas tipadas con respuestas permitidas, y devuelve puntuaciones o probabilidades para esas opciones. No escribe una respuesta libre de varias páginas. Esto puede servir para clasificar tickets, ordenar alertas o revisar señales de funcionamiento de equipos. La aplicación cliente conserva la responsabilidad de interpretar los resultados, decidir umbrales y controlar las acciones posteriores. Una probabilidad alta no constituye por sí sola una certificación técnica, una autorización de crédito ni una decisión que deba ejecutarse automáticamente."
+          ]
+        },
+        {
+          "heading": "Arquitectura y medios compatibles",
+          "kind": "technical",
+          "paragraphs": [
+            "Cloudflare describe una arquitectura de mezcla de expertos de 30.000 millones de parámetros totales, con aproximadamente 3.000 millones activos en cada inferencia. Esa diferencia importa porque el tamaño total no equivale al trabajo computacional realizado en cada solicitud. El modelo se ofrece con pesos abiertos, pero el alojamiento administrado tiene un precio y restricciones propias. Su identificador de Workers AI es @cf/cloudflare/clef-omni y utiliza el selector clef-omni en la API. Los resultados de rendimiento publicados por el fabricante no equivalen a una auditoría externa.",
+            "La documentación técnica acepta audio WAV o MP3 y vídeo MP4 o WebM, además de texto, JSON e imágenes. Una solicitud puede contener hasta cuatro imágenes, cuatro clips de audio y dos vídeos, con límites adicionales de tamaño y duración. Los vídeos admitidos tienen como máximo 60 segundos cada uno y se muestrean a dos fotogramas por segundo. La integración utiliza contenido multimedia codificado y no descarga automáticamente archivos desde URL remotas. Para grabaciones largas, un desarrollador debe seleccionar segmentos, dividir el material o diseñar otro flujo de preprocesamiento.",
+            "El ejemplo oficial reúne una foto de una instalación, una grabación del ruido de una máquina y un vídeo de un ventilador. El modelo responde preguntas específicas sobre la etiqueta visible, la normalidad del sonido y el funcionamiento del ventilador. Cloudflare sostiene que evaluar conjuntamente imagen y sonido puede reducir la necesidad de encadenar transcripción, análisis visual y clasificación por separado. Es una propuesta de simplificación de ciertas tareas, no evidencia de que el modelo sustituya todas las herramientas especializadas ni de que identifique fallos industriales con fiabilidad certificada."
+          ]
+        },
+        {
+          "heading": "Benchmarks atribuidos",
+          "kind": "technical",
+          "paragraphs": [
+            "En los benchmarks publicados, Clef-omni registra 94,8 de macro-F1 en BANKING77, frente a 94,20 de Clef y 90,93 de Clef-flash. En CLINC150+OOS obtiene 97,7, por delante de 97,43 y 66,77 respectivamente. Pero en BFCL case exact, Clef-omni registra 98,2, por debajo de Clef y Clef-flash; tampoco lidera la comparación de PhishNChips. Los resultados no justifican afirmar que el nuevo modelo sea superior en todas las tareas. Son cifras comunicadas por Cloudflare, cuya reproducibilidad y extrapolación a datos de clientes requieren comprobaciones independientes."
+          ]
+        },
+        {
+          "heading": "Precio, contexto y coste real",
+          "kind": "report",
+          "paragraphs": [
+            "Clef-omni cuesta US$0,150 por millón de tokens de entrada y ofrece 64.000 tokens de contexto alojado. Clef mantiene US$0,240 por millón y 64.000 de contexto. Clef-flash baja de US$0,090 a US$0,038 por millón: una reducción aproximada del 57,8%, redondeada al 58% en el titular. La contrapartida es que el contexto de Clef-flash alojado pasa de 64.000 a 24.000 tokens. Cloudflare indica que solo el 0,24% de sus solicitudes superaban el nuevo límite, según sus datos internos; esa distribución puede no representar las necesidades de otras organizaciones.",
+            "El recorte afecta al servicio administrado de Clef-flash. Los pesos descargables permanecen sin cambios y, según Cloudflare, admiten hasta 256.000 tokens cuando se alojan por cuenta propia. Por eso el coste nominal más bajo no es automáticamente una mejor opción para flujos con documentos largos o estados acumulados de agentes. También hay que distinguir tokens de texto y multimedia: imágenes, audio y vídeo se convierten en tokens de entrada, consumen contexto y generan cargos según las reglas del modelo. La documentación actual señala que la familia Clef no cobra tokens de salida.",
+            "Para Clef-omni, Cloudflare estima unos 780 tokens por minuto de audio y hasta aproximadamente 15.400 por minuto de vídeo a resolución máxima, más los tokens de sonido cuando corresponda. Un vídeo de 480p puede utilizar alrededor de 8.600 tokens de fotogramas por minuto. La factura real depende de duración, resolución y formato, y el coste total de una aplicación también incluye almacenamiento, ingestión, procesamiento adicional y supervisión. Una comparación honesta debe medir coste por decisión correcta y no únicamente precio por millón de tokens anunciados."
+          ]
+        },
+        {
+          "heading": "Rendimiento y disponibilidad",
+          "kind": "technical",
+          "paragraphs": [
+            "Cloudflare afirma además que optimizó Clef sin cambiar sus pesos. En una muestra cercana a 3.400 tokens, su latencia mediana publicada pasa de 616 a 305 milisegundos; con unas 800 unidades, de 262 a 152 milisegundos. La empresa atribuye parte de la mejora a SGLang. Estos tiempos corresponden a mediciones propias y no garantizan idéntica latencia en otra región, con otra carga de tráfico o en autoalojamiento. Tampoco deben confundirse con los tiempos de Clef-omni: el anuncio presenta modelos y pruebas diferentes.",
+            "Clef-omni está disponible en Workers AI y se integra con AI Gateway mediante la interfaz System One compartida con otros modelos de la familia. El anuncio no identifica una expansión regional específica, nuevas tarifas de suscripción de Workers ni garantías de capacidad universal. Para probarlo conviene definir preguntas con respuestas bien delimitadas, preparar ejemplos etiquetados por humanos y medir errores, calibración, latencia y coste en datos representativos. En decisiones de seguridad, salud, empleo o finanzas, la salida del modelo necesita controles apropiados y no debería activar por sí sola medidas irreversibles."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y preguntas abiertas",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: los modelos de decisiones estructuradas compiten en un terreno diferente al de los chatbots. Su valor está en ofrecer señales integrables, previsibilidad operativa y evaluación de opciones, pero también trasladan al desarrollador el diseño de preguntas y la responsabilidad de verificar los resultados. La rebaja de Clef-flash intensifica la competencia por costes de inferencia, mientras su menor contexto recuerda que una reducción de precio puede venir acompañada de límites. Faltan pruebas independientes sobre ruido, idiomas, vídeo complejo, sesgos, calibración y coste completo por caso de uso.",
+            "En conclusión, la novedad confirmada del 9 de octubre es triple: Clef-omni añade decisiones multimodales con audio y vídeo a Workers AI, Clef-flash abarata la inferencia alojada a cambio de contexto, y Clef incorpora optimizaciones de velocidad declaradas por Cloudflare. La arquitectura, los precios y los límites están documentados, pero los benchmarks y las mejoras de rendimiento son afirmaciones del proveedor. Lo siguiente a observar será si los equipos consiguen resultados robustos y costes razonables con sus propios datos, más allá de las demostraciones de lanzamiento."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Identificador",
+          "value": "@cf/cloudflare/clef-omni"
+        },
+        {
+          "label": "Arquitectura",
+          "value": "MoE 30B total / 3B activos (según Cloudflare)"
+        },
+        {
+          "label": "Entradas",
+          "value": "Texto, JSON, imágenes, WAV/MP3 y MP4/WebM"
+        },
+        {
+          "label": "Vídeos",
+          "value": "Hasta 2 por solicitud; máximo 60 segundos cada uno; 2 fps"
+        },
+        {
+          "label": "Salida",
+          "value": "Probabilidades de opciones tipadas, no generación libre"
+        }
+      ],
+      "availability": {
+        "status": "Disponible en Workers AI desde el 9 de octubre de 2026",
+        "platforms": [
+          "Cloudflare Workers AI",
+          "AI Gateway"
+        ],
+        "regions": [],
+        "requirements": [
+          "Modelo @cf/cloudflare/clef-omni y selector clef-omni",
+          "Límites de medios, tamaño y contexto"
+        ],
+        "notes": [
+          "No se anuncia una expansión regional específica."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Clef-omni",
+          "value": "US$0,150 / millón de tokens de entrada",
+          "note": "64K de contexto alojado"
+        },
+        {
+          "label": "Clef-flash",
+          "value": "US$0,038 / millón de tokens de entrada",
+          "note": "Antes US$0,090; contexto alojado ahora 24K"
+        },
+        {
+          "label": "Clef",
+          "value": "US$0,240 / millón de tokens de entrada",
+          "note": "64K de contexto alojado"
+        }
+      ],
+      "limitations": [
+        "Benchmarks y latencias proceden de Cloudflare, no de una evaluación independiente.",
+        "Fiabilidad con audio ruidoso, distintos idiomas y escenas complejas no comprobada independientemente.",
+        "Los medios consumen tokens variables; el precio por millón no es el coste final por clip.",
+        "El anuncio no enumera regiones adicionales ni garantías universales de latencia."
+      ],
+      "practicalAdvice": [
+        "Probar con muestras propias etiquetadas y medir falsos positivos y calibración.",
+        "Medir tokens multimedia reales y el coste completo por decisión correcta.",
+        "Revisar el nuevo límite de 24K de Clef-flash antes de migrar cargas largas.",
+        "Añadir controles humanos para decisiones sensibles."
+      ],
+      "usefulFacts": [
+        "La documentación admite hasta cuatro clips de audio y dos vídeos por solicitud.",
+        "La tokenización publicada estima unos 780 tokens por minuto de audio.",
+        "Los pesos de Clef-flash autoalojados conservan soporte declarado de hasta 256K."
+      ],
+      "analysis": "Análisis Gazette: la competencia de los modelos de decisión se juega en integración, calibración y coste real, no en la generación de texto extenso. El descuento de Clef-flash implica una contrapartida de contexto que debe evaluarse por caso.",
+      "watch": "Evaluaciones independientes de calibración, coste multimedia real, latencia bajo carga, idiomas y fiabilidad en escenarios de producción.",
+      "finalSummary": "Clef-omni añade decisiones multimodales a Workers AI; Clef-flash baja precio y contexto alojado; Clef acelera según mediciones de Cloudflare. Su utilidad se determinará con pruebas independientes y datos propios."
+    },
+    {
       "id": "china-new-productive-forces-ai-plus-19-measures-2026",
       "eventKey": "china-state-council-19-measures-new-quality-productive-forces-ai-plus-2026-10-09",
       "date": "2026-10-09",
@@ -3390,6 +3586,243 @@
       "usefulFacts": [
         "La compañía cita producción inicial en mayo y permisos de pruebas en agosto de 2026.",
         "El ensayo interno a 1 RMB fue una validación del proceso de pago."
+      ]
+    },
+    {
+      "id": "voyager-creative-agent-editors-pricing-2026",
+      "eventKey": "voyager-creative-agent-harness-editors-pricing-launch-2026-10-08",
+      "articleVersion": 2,
+      "date": "2026-10-08",
+      "announcedAt": "2026-10-08",
+      "coveredAt": "2026-10-11",
+      "verifiedAt": "2026-10-11",
+      "company": "Voyager",
+      "product": "Voyager · agente creativo de escritorio",
+      "title": "Voyager lanza un agente creativo para Blender, Resolve y Adobe, con planes desde gratis",
+      "summary": "Voyager, de Nullframe, presentó un agente de escritorio que combina modelos de IA con editores creativos y herramientas propias de diseño, vídeo y audio. El lanzamiento del 8 de octubre llega primero a Mac con Apple silicon; Windows y Linux siguen en alfa. Los planes van de gratis a US$500 mensuales.",
+      "tags": [
+        "Agentes",
+        "Creatividad",
+        "Vídeo",
+        "Diseño",
+        "Herramientas",
+        "Startups"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual de redes tecnológicas y herramientas creativas; no muestra una interfaz ni un producto real de Voyager.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Ilustración horizontal 3:2 tipo grabado de periódico antiguo, sepia: un estudio creativo con mesa de montaje, monitor abstracto, línea de tiempo de vídeo, lienzo de diseño y teclado musical conectados por engranajes de agente. Sin interfaces reproducidas como capturas, sin logos inventados, sin personas reales ni promesas visuales de capacidades no verificadas.",
+      "source": {
+        "name": "Y Combinator · Launch YC: Voyager AI harness for video and creative work",
+        "url": "https://www.ycombinator.com/launches/Ufz-voyager-ai-harness-for-video-and-creative-work",
+        "publishedAt": "2026-10-08"
+      },
+      "relatedSources": [
+        {
+          "name": "Voyager · FAQ oficial: capacidades, licencias y plataformas",
+          "url": "https://voyager.so/faq",
+          "publishedAt": null
+        },
+        {
+          "name": "Voyager · precios y créditos oficiales",
+          "url": "https://voyager.so/pricing",
+          "publishedAt": null
+        },
+        {
+          "name": "Voyager · sitio oficial",
+          "url": "https://voyager.so/",
+          "publishedAt": null
+        }
+      ],
+      "body": [
+        "El 8 de octubre de 2026, Voyager presentó públicamente una aplicación de escritorio para coordinar agentes de inteligencia artificial y herramientas creativas. El anuncio en Launch YC describe un sistema para producir vídeo, música, gráficos y proyectos interactivos, con modelos que pueden operar aplicaciones instaladas en el ordenador. La propuesta no consiste únicamente en generar una imagen o un clip a partir de texto: el agente también organiza pasos de edición y entrega proyectos que el usuario puede seguir modificando.",
+        "Voyager pertenece a Nullframe, la compañía detrás de Moda. La presentación de Y Combinator habla de más de cien modelos y herramientas creativas conectables, pero esa cifra procede del proveedor y no equivale a cien integraciones probadas de forma independiente. El producto se presenta como un 'open harness', expresión que describe su capacidad para combinar modelos, cuentas y aplicaciones; su propia documentación aclara que el programa Voyager no es software de código abierto.",
+        "Según la documentación oficial, el agente aprovecha interfaces de scripting de cada programa cuando existen. En Photoshop puede usar scripts; para Premiere Pro emplea un puente local; para After Effects e Illustrator recurre a sus mecanismos de automatización; y para DaVinci Resolve utiliza la API de scripting disponible. Cuando una función no ofrece interfaz programable, Voyager puede interactuar con ventanas mediante permisos de macOS. Esto introduce una diferencia importante entre operaciones reproducibles por API y acciones visuales más sensibles a cambios de interfaz.",
+        "Entre las aplicaciones citadas están Blender, Unity, Photoshop, Illustrator, After Effects, Premiere Pro, DaVinci Resolve, Final Cut Pro y Ableton Live. La compañía también menciona habilidades para herramientas adicionales, pero no debe interpretarse que todas las funciones de cada programa estén automatizadas. La compatibilidad depende de versión, licencia, permisos y exposición de controles. El control directo de las aplicaciones Adobe se limita actualmente a macOS.",
+        "El caso de DaVinci Resolve muestra por qué importa esa distinción: la empresa indica que con Resolve Studio el agente edita mediante scripting, mientras que con la edición gratuita prepara el montaje y lo transfiere a Resolve para completar el trabajo. No es correcto prometer la misma profundidad de control en ambas versiones. En proyectos profesionales conviene probar una secuencia representativa antes de confiarle entregas con plazos.",
+        "Para quienes no tienen licencias de suites externas, Voyager incorpora sus propios motores Design, Video y DAW. Design reúne capas vectoriales y ráster, composición y gráficos animados; Video ofrece línea de tiempo, multicámara y corrección; DAW contempla arreglos, instrumentos, complementos VST3 y mezcla. Son funciones declaradas por el fabricante, no una certificación de equivalencia con Adobe Creative Cloud o Ableton Live. La documentación admite, por ejemplo, que su DAW todavía no incluye instrumentos orquestales muestreados.",
+        "El énfasis está en mantener resultados editables. La página de precios menciona exportaciones como PSD, SVG, Lottie y PDF para diseño, OTIO, FCPXML o EDL para transferir ediciones y formatos habituales de vídeo y audio. Que un formato figure en la lista no garantiza preservación perfecta de todos los efectos, fuentes, pistas o plugins al mover un proyecto. Para equipos con flujos de posproducción complejos, una prueba de ida y vuelta es más útil que una demostración de un solo clic.",
+        "Voyager permite conectar una suscripción existente de Claude o ChatGPT a través de sus runtimes oficiales, utilizar su propio agente o añadir claves de proveedores compatibles. También anuncia soporte para servidores MCP y habilidades reutilizables, incluidas algunas instaladas en otros entornos de agentes. Esa flexibilidad es el sentido operativo de su apertura: el usuario puede elegir herramientas y modelos, pero sigue dependiendo de un producto propietario para la orquestación.",
+        "Entre los servicios de generación citados figuran Veo, Seedance, Kling, MiniMax, Wan, Nano Banana, GPT Image, FLUX y ElevenLabs. El catálogo no implica que todos estén incluidos en todos los planes, regiones o cuentas. Algunos modelos requieren un nivel superior, autorización específica o facturación externa. La documentación señala además que el agente puede enviar a proveedores los archivos y el contexto necesarios para una tarea, aunque los proyectos permanezcan almacenados localmente.",
+        "La versión principal requiere un Mac con Apple silicon, desde M1, y macOS 15 o posterior. Los Mac Intel no están admitidos. Hay compilaciones alfa para Windows 11 de 64 bits y Linux de 64 bits; no deben describirse como lanzamientos generales equivalentes al de macOS. En Windows, el instalador aún no está firmado y ciertas herramientas integradas pueden estar deshabilitadas. La empresa anuncia aplicaciones móviles futuras, sin fecha pública de disponibilidad general.",
+        "En cuanto a privacidad, Voyager afirma que la instalación no sube automáticamente proyectos completos, pero sí puede enviar materiales a proveedores de IA para ejecutar instrucciones. También declara recopilar estadísticas de uso y errores sanitizados, configurables desde preferencias. Para trabajo con material confidencial o clientes sujetos a contrato, estas declaraciones deben contrastarse con las políticas aplicables y con las conexiones concretas que el usuario active.",
+        "Los precios mensuales publicados en dólares estadounidenses son Free a US$0, Starter a US$19 por asiento, Creator a US$49, Ultra a US$149 y GigaMax a US$500. El plan gratuito ofrece 1.000 créditos mensuales, con un máximo de 500 durante cualquier ventana de cinco horas, y excluye vídeo, voz y renderizado en nube. Los planes pagados incluyen respectivamente 1.500, 4.700, 14.400 y 52.000 créditos mensuales; las promociones de lanzamiento elevan temporalmente algunos saldos durante las tres primeras facturas.",
+        "El proveedor define cada crédito como un centavo de dólar del precio de lista de generación del modelo y afirma no añadir margen a esas generaciones. Como ejemplos orientativos, publica unos 48 créditos por ocho segundos de MiniMax H3 con audio y alrededor de 277 para ocho segundos de Seedance 2.5. Los costes reales varían por modelo, duración, resolución y consumo de entrada; los créditos mensuales no se acumulan. Las licencias de aplicaciones externas y las claves propias de otros proveedores pueden añadir facturación separada.",
+        "Análisis Gazette: Voyager representa un desplazamiento desde las galerías de contenido generado hacia agentes que intervienen en la producción y entregan proyectos modificables. Para un estudio pequeño, integrar guion, generación, montaje y sonido podría reducir saltos entre aplicaciones. Para una empresa, el valor real dependerá de consistencia, trazabilidad, control de permisos y capacidad de corregir resultados, no del número anunciado de modelos compatibles.",
+        "El lanzamiento todavía deja preguntas abiertas. No hay una evaluación independiente y amplia de fiabilidad entre aplicaciones, calidad de exportación, tiempos de corrección o coste total de proyectos complejos. Tampoco se ha demostrado que el agente sustituya a profesionales de edición y mezcla. La comparación comercial del proveedor sobre cuánto costaría comprar otras suites es publicidad de funcionalidades supuestamente comparables, no una equivalencia técnica certificada.",
+        "Consejo práctico: probar primero con un proyecto pequeño y reversible, por ejemplo un vídeo breve con material no confidencial. Registrar el coste en créditos, el número de intervenciones manuales, los formatos exportados y la posibilidad de reabrir cada archivo en el editor original. Conviene otorgar solo los permisos indispensables y revisar qué modelos reciben contenido del proyecto. Si el flujo falla en una transición sencilla, no es razonable delegar todavía un encargo crítico.",
+        "Qué observar: mejoras de las compilaciones Windows y Linux, soporte real de automatización en Adobe fuera de macOS, compatibilidad con formatos profesionales y publicación de pruebas reproducibles de calidad y coste. También será relevante si las integraciones MCP mantienen controles claros sobre permisos y si aparecen métricas independientes de productividad. Hasta entonces, el hecho confirmado es la disponibilidad inicial y el catálogo anunciado; la superioridad frente a alternativas permanece sin demostrar."
+      ],
+      "keyPoints": [
+        "El agente opera aplicaciones creativas y también incluye editores propios; Voyager es propietario, aunque interoperable.",
+        "La versión principal exige Apple silicon y macOS 15; Windows y Linux están en alfa.",
+        "Free ofrece 1.000 créditos; Starter, Creator, Ultra y GigaMax cuestan US$19, US$49, US$149 y US$500 al mes."
+      ],
+      "quickTakeaways": [
+        "El lanzamiento público figura en Launch YC el 8 de octubre de 2026.",
+        "El agente combina herramientas de vídeo, diseño y sonido con modelos de varios proveedores.",
+        "No es software abierto: 'open harness' se refiere a la interoperabilidad.",
+        "macOS 15 con Apple silicon es la plataforma principal; Windows y Linux siguen en alfa.",
+        "Los créditos, licencias externas y suscripciones de modelos requieren atención separada."
+      ],
+      "sections": [
+        {
+          "heading": "El lanzamiento y su alcance",
+          "kind": "report",
+          "paragraphs": [
+            "El 8 de octubre de 2026, Voyager presentó públicamente una aplicación de escritorio para coordinar agentes de inteligencia artificial y herramientas creativas. El anuncio en Launch YC describe un sistema para producir vídeo, música, gráficos y proyectos interactivos, con modelos que pueden operar aplicaciones instaladas en el ordenador. La propuesta no consiste únicamente en generar una imagen o un clip a partir de texto: el agente también organiza pasos de edición y entrega proyectos que el usuario puede seguir modificando.",
+            "Voyager pertenece a Nullframe, la compañía detrás de Moda. La presentación de Y Combinator habla de más de cien modelos y herramientas creativas conectables, pero esa cifra procede del proveedor y no equivale a cien integraciones probadas de forma independiente. El producto se presenta como un 'open harness', expresión que describe su capacidad para combinar modelos, cuentas y aplicaciones; su propia documentación aclara que el programa Voyager no es software de código abierto."
+          ]
+        },
+        {
+          "heading": "Cómo trabaja con las aplicaciones",
+          "kind": "technical",
+          "paragraphs": [
+            "Según la documentación oficial, el agente aprovecha interfaces de scripting de cada programa cuando existen. En Photoshop puede usar scripts; para Premiere Pro emplea un puente local; para After Effects e Illustrator recurre a sus mecanismos de automatización; y para DaVinci Resolve utiliza la API de scripting disponible. Cuando una función no ofrece interfaz programable, Voyager puede interactuar con ventanas mediante permisos de macOS. Esto introduce una diferencia importante entre operaciones reproducibles por API y acciones visuales más sensibles a cambios de interfaz.",
+            "Entre las aplicaciones citadas están Blender, Unity, Photoshop, Illustrator, After Effects, Premiere Pro, DaVinci Resolve, Final Cut Pro y Ableton Live. La compañía también menciona habilidades para herramientas adicionales, pero no debe interpretarse que todas las funciones de cada programa estén automatizadas. La compatibilidad depende de versión, licencia, permisos y exposición de controles. El control directo de las aplicaciones Adobe se limita actualmente a macOS.",
+            "El caso de DaVinci Resolve muestra por qué importa esa distinción: la empresa indica que con Resolve Studio el agente edita mediante scripting, mientras que con la edición gratuita prepara el montaje y lo transfiere a Resolve para completar el trabajo. No es correcto prometer la misma profundidad de control en ambas versiones. En proyectos profesionales conviene probar una secuencia representativa antes de confiarle entregas con plazos."
+          ]
+        },
+        {
+          "heading": "Herramientas integradas y archivos editables",
+          "kind": "technical",
+          "paragraphs": [
+            "Para quienes no tienen licencias de suites externas, Voyager incorpora sus propios motores Design, Video y DAW. Design reúne capas vectoriales y ráster, composición y gráficos animados; Video ofrece línea de tiempo, multicámara y corrección; DAW contempla arreglos, instrumentos, complementos VST3 y mezcla. Son funciones declaradas por el fabricante, no una certificación de equivalencia con Adobe Creative Cloud o Ableton Live. La documentación admite, por ejemplo, que su DAW todavía no incluye instrumentos orquestales muestreados.",
+            "El énfasis está en mantener resultados editables. La página de precios menciona exportaciones como PSD, SVG, Lottie y PDF para diseño, OTIO, FCPXML o EDL para transferir ediciones y formatos habituales de vídeo y audio. Que un formato figure en la lista no garantiza preservación perfecta de todos los efectos, fuentes, pistas o plugins al mover un proyecto. Para equipos con flujos de posproducción complejos, una prueba de ida y vuelta es más útil que una demostración de un solo clic."
+          ]
+        },
+        {
+          "heading": "Modelos, agentes y extensibilidad",
+          "kind": "context",
+          "paragraphs": [
+            "Voyager permite conectar una suscripción existente de Claude o ChatGPT a través de sus runtimes oficiales, utilizar su propio agente o añadir claves de proveedores compatibles. También anuncia soporte para servidores MCP y habilidades reutilizables, incluidas algunas instaladas en otros entornos de agentes. Esa flexibilidad es el sentido operativo de su apertura: el usuario puede elegir herramientas y modelos, pero sigue dependiendo de un producto propietario para la orquestación.",
+            "Entre los servicios de generación citados figuran Veo, Seedance, Kling, MiniMax, Wan, Nano Banana, GPT Image, FLUX y ElevenLabs. El catálogo no implica que todos estén incluidos en todos los planes, regiones o cuentas. Algunos modelos requieren un nivel superior, autorización específica o facturación externa. La documentación señala además que el agente puede enviar a proveedores los archivos y el contexto necesarios para una tarea, aunque los proyectos permanezcan almacenados localmente."
+          ]
+        },
+        {
+          "heading": "Disponibilidad y requisitos",
+          "kind": "report",
+          "paragraphs": [
+            "La versión principal requiere un Mac con Apple silicon, desde M1, y macOS 15 o posterior. Los Mac Intel no están admitidos. Hay compilaciones alfa para Windows 11 de 64 bits y Linux de 64 bits; no deben describirse como lanzamientos generales equivalentes al de macOS. En Windows, el instalador aún no está firmado y ciertas herramientas integradas pueden estar deshabilitadas. La empresa anuncia aplicaciones móviles futuras, sin fecha pública de disponibilidad general.",
+            "En cuanto a privacidad, Voyager afirma que la instalación no sube automáticamente proyectos completos, pero sí puede enviar materiales a proveedores de IA para ejecutar instrucciones. También declara recopilar estadísticas de uso y errores sanitizados, configurables desde preferencias. Para trabajo con material confidencial o clientes sujetos a contrato, estas declaraciones deben contrastarse con las políticas aplicables y con las conexiones concretas que el usuario active."
+          ]
+        },
+        {
+          "heading": "Precios y límites de los créditos",
+          "kind": "report",
+          "paragraphs": [
+            "Los precios mensuales publicados en dólares estadounidenses son Free a US$0, Starter a US$19 por asiento, Creator a US$49, Ultra a US$149 y GigaMax a US$500. El plan gratuito ofrece 1.000 créditos mensuales, con un máximo de 500 durante cualquier ventana de cinco horas, y excluye vídeo, voz y renderizado en nube. Los planes pagados incluyen respectivamente 1.500, 4.700, 14.400 y 52.000 créditos mensuales; las promociones de lanzamiento elevan temporalmente algunos saldos durante las tres primeras facturas.",
+            "El proveedor define cada crédito como un centavo de dólar del precio de lista de generación del modelo y afirma no añadir margen a esas generaciones. Como ejemplos orientativos, publica unos 48 créditos por ocho segundos de MiniMax H3 con audio y alrededor de 277 para ocho segundos de Seedance 2.5. Los costes reales varían por modelo, duración, resolución y consumo de entrada; los créditos mensuales no se acumulan. Las licencias de aplicaciones externas y las claves propias de otros proveedores pueden añadir facturación separada."
+          ]
+        },
+        {
+          "heading": "Impacto, límites y evaluación práctica",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: Voyager representa un desplazamiento desde las galerías de contenido generado hacia agentes que intervienen en la producción y entregan proyectos modificables. Para un estudio pequeño, integrar guion, generación, montaje y sonido podría reducir saltos entre aplicaciones. Para una empresa, el valor real dependerá de consistencia, trazabilidad, control de permisos y capacidad de corregir resultados, no del número anunciado de modelos compatibles.",
+            "El lanzamiento todavía deja preguntas abiertas. No hay una evaluación independiente y amplia de fiabilidad entre aplicaciones, calidad de exportación, tiempos de corrección o coste total de proyectos complejos. Tampoco se ha demostrado que el agente sustituya a profesionales de edición y mezcla. La comparación comercial del proveedor sobre cuánto costaría comprar otras suites es publicidad de funcionalidades supuestamente comparables, no una equivalencia técnica certificada.",
+            "Consejo práctico: probar primero con un proyecto pequeño y reversible, por ejemplo un vídeo breve con material no confidencial. Registrar el coste en créditos, el número de intervenciones manuales, los formatos exportados y la posibilidad de reabrir cada archivo en el editor original. Conviene otorgar solo los permisos indispensables y revisar qué modelos reciben contenido del proyecto. Si el flujo falla en una transición sencilla, no es razonable delegar todavía un encargo crítico.",
+            "Qué observar: mejoras de las compilaciones Windows y Linux, soporte real de automatización en Adobe fuera de macOS, compatibilidad con formatos profesionales y publicación de pruebas reproducibles de calidad y coste. También será relevante si las integraciones MCP mantienen controles claros sobre permisos y si aparecen métricas independientes de productividad. Hasta entonces, el hecho confirmado es la disponibilidad inicial y el catálogo anunciado; la superioridad frente a alternativas permanece sin demostrar."
+          ]
+        }
+      ],
+      "executiveSummary": "Voyager lanzó un agente de escritorio para coordinar modelos generativos y aplicaciones creativas como Blender, DaVinci Resolve y Adobe, además de tres motores propios de edición. La propuesta privilegia proyectos editables sobre resultados aislados, pero sus afirmaciones de compatibilidad y productividad requieren validación independiente. El producto se ofrece inicialmente en Mac con Apple silicon y una estructura de créditos que va desde un plan gratuito a niveles profesionales.",
+      "finalSummary": "Voyager confirma un lanzamiento inicial para macOS, con integraciones creativas y precios publicados. Windows y Linux permanecen en alfa; la amplitud del catálogo y los ahorros anunciados son declaraciones del proveedor, no benchmarks independientes. La prueba decisiva será cuánto trabajo editable entrega con fiabilidad y coste predecible.",
+      "analysis": "Análisis Gazette: la innovación potencial está en llevar agentes desde la generación de piezas aisladas hasta la edición reproducible en aplicaciones profesionales. El valor comercial deberá medirse en control, correcciones y exportaciones, no en promesas de automatización total.",
+      "watch": "Lanzamiento general de Windows/Linux, límites reales de scripting y control visual, métricas de coste por proyecto, privacidad, MCP y exportaciones editables.",
+      "technicalDetails": [
+        {
+          "label": "Producto",
+          "value": "Agente creativo propietario con conectores de herramientas y modelos"
+        },
+        {
+          "label": "Plataforma principal",
+          "value": "Apple silicon (M1+) con macOS 15+"
+        },
+        {
+          "label": "Otras plataformas",
+          "value": "Windows 11 x64 y Linux x64 en alfa"
+        },
+        {
+          "label": "Aplicaciones",
+          "value": "Blender, Resolve, Adobe, Unity, Ableton y otras según integración y licencia"
+        },
+        {
+          "label": "Interoperabilidad",
+          "value": "Scripting, puentes locales, MCP, habilidades y control de ventana con permisos"
+        }
+      ],
+      "availability": {
+        "status": "Lanzamiento inicial en macOS; versiones alfa en Windows y Linux",
+        "platforms": [
+          "macOS 15+ con Apple silicon",
+          "Windows 11 x64 (alfa)",
+          "Linux x64 (alfa)"
+        ],
+        "regions": [],
+        "requirements": [
+          "Mac M1 o posterior para versión principal",
+          "Licencias propias para software externo de pago"
+        ],
+        "notes": [
+          "Control en vivo de Adobe solo en macOS por ahora.",
+          "Los planes de generación no incluyen necesariamente suscripciones de terceros."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Free",
+          "value": "US$0/mes; 1.000 créditos; sin vídeo, voz ni render nube"
+        },
+        {
+          "label": "Starter",
+          "value": "US$19/mes por asiento; 1.500 créditos"
+        },
+        {
+          "label": "Creator",
+          "value": "US$49/mes por asiento; 4.700 créditos"
+        },
+        {
+          "label": "Ultra",
+          "value": "US$149/mes por asiento; 14.400 créditos"
+        },
+        {
+          "label": "GigaMax",
+          "value": "US$500/mes por asiento; 52.000 créditos"
+        },
+        {
+          "label": "Créditos",
+          "value": "1 crédito = US$0,01 según tarifa declarada del proveedor; promociones iniciales y gastos externos aplican"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-08",
+          "label": "Lanzamiento en Y Combinator"
+        }
+      ],
+      "limitations": [
+        "No existe evaluación independiente amplia de fiabilidad de edición entre aplicaciones.",
+        "El programa es propietario, no open source.",
+        "Windows y Linux están en alfa y pueden carecer de funciones.",
+        "El coste final depende de modelos, créditos, licencias y claves de proveedores.",
+        "El procesamiento con modelos externos puede enviar contenido seleccionado del proyecto a terceros."
+      ],
+      "practicalAdvice": [
+        "Probar con archivos no confidenciales y permisos mínimos.",
+        "Validar exportaciones y edición posterior en aplicaciones de destino.",
+        "Registrar créditos y pasos manuales por proyecto antes de escalar."
+      ],
+      "usefulFacts": [
+        "Free limita a 500 créditos en cualquier ventana de cinco horas.",
+        "Las suscripciones de software creativo externo se contratan por separado.",
+        "El plan Team está anunciado pero aún no disponible generalmente."
+      ],
+      "curiosities": [
+        "La empresa también desarrolló Moda.",
+        "Voyager incluye motores propios de diseño, vídeo y audio, además de integraciones externas."
       ]
     },
     {
@@ -8242,243 +8675,6 @@
         "El programa es una de las dos primeras líneas de Anthropic Cyber Mission.",
         "Los once socios incluyen especialistas de redes industriales y fabricantes.",
         "OSS Scanner y Cyber Verification Program tienen mecanismos de acceso distintos."
-      ]
-    },
-    {
-      "id": "voyager-creative-agent-editors-pricing-2026",
-      "eventKey": "voyager-creative-agent-harness-editors-pricing-launch-2026-10-08",
-      "articleVersion": 2,
-      "date": "2026-10-08",
-      "announcedAt": "2026-10-08",
-      "coveredAt": "2026-10-11",
-      "verifiedAt": "2026-10-11",
-      "company": "Voyager",
-      "product": "Voyager · agente creativo de escritorio",
-      "title": "Voyager lanza un agente creativo para Blender, Resolve y Adobe, con planes desde gratis",
-      "summary": "Voyager, de Nullframe, presentó un agente de escritorio que combina modelos de IA con editores creativos y herramientas propias de diseño, vídeo y audio. El lanzamiento del 8 de octubre llega primero a Mac con Apple silicon; Windows y Linux siguen en alfa. Los planes van de gratis a US$500 mensuales.",
-      "tags": [
-        "Agentes",
-        "Creatividad",
-        "Vídeo",
-        "Diseño",
-        "Herramientas",
-        "Startups"
-      ],
-      "image": "assets/globe.webp",
-      "imageAlt": "Grabado editorial conceptual de redes tecnológicas y herramientas creativas; no muestra una interfaz ni un producto real de Voyager.",
-      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
-      "visualAssetId": "gazette-global-infrastructure-v1",
-      "imageStatus": "needs-specific-art",
-      "imageBrief": "Ilustración horizontal 3:2 tipo grabado de periódico antiguo, sepia: un estudio creativo con mesa de montaje, monitor abstracto, línea de tiempo de vídeo, lienzo de diseño y teclado musical conectados por engranajes de agente. Sin interfaces reproducidas como capturas, sin logos inventados, sin personas reales ni promesas visuales de capacidades no verificadas.",
-      "source": {
-        "name": "Y Combinator · Launch YC: Voyager AI harness for video and creative work",
-        "url": "https://www.ycombinator.com/launches/Ufz-voyager-ai-harness-for-video-and-creative-work",
-        "publishedAt": "2026-10-08"
-      },
-      "relatedSources": [
-        {
-          "name": "Voyager · FAQ oficial: capacidades, licencias y plataformas",
-          "url": "https://voyager.so/faq",
-          "publishedAt": null
-        },
-        {
-          "name": "Voyager · precios y créditos oficiales",
-          "url": "https://voyager.so/pricing",
-          "publishedAt": null
-        },
-        {
-          "name": "Voyager · sitio oficial",
-          "url": "https://voyager.so/",
-          "publishedAt": null
-        }
-      ],
-      "body": [
-        "El 8 de octubre de 2026, Voyager presentó públicamente una aplicación de escritorio para coordinar agentes de inteligencia artificial y herramientas creativas. El anuncio en Launch YC describe un sistema para producir vídeo, música, gráficos y proyectos interactivos, con modelos que pueden operar aplicaciones instaladas en el ordenador. La propuesta no consiste únicamente en generar una imagen o un clip a partir de texto: el agente también organiza pasos de edición y entrega proyectos que el usuario puede seguir modificando.",
-        "Voyager pertenece a Nullframe, la compañía detrás de Moda. La presentación de Y Combinator habla de más de cien modelos y herramientas creativas conectables, pero esa cifra procede del proveedor y no equivale a cien integraciones probadas de forma independiente. El producto se presenta como un 'open harness', expresión que describe su capacidad para combinar modelos, cuentas y aplicaciones; su propia documentación aclara que el programa Voyager no es software de código abierto.",
-        "Según la documentación oficial, el agente aprovecha interfaces de scripting de cada programa cuando existen. En Photoshop puede usar scripts; para Premiere Pro emplea un puente local; para After Effects e Illustrator recurre a sus mecanismos de automatización; y para DaVinci Resolve utiliza la API de scripting disponible. Cuando una función no ofrece interfaz programable, Voyager puede interactuar con ventanas mediante permisos de macOS. Esto introduce una diferencia importante entre operaciones reproducibles por API y acciones visuales más sensibles a cambios de interfaz.",
-        "Entre las aplicaciones citadas están Blender, Unity, Photoshop, Illustrator, After Effects, Premiere Pro, DaVinci Resolve, Final Cut Pro y Ableton Live. La compañía también menciona habilidades para herramientas adicionales, pero no debe interpretarse que todas las funciones de cada programa estén automatizadas. La compatibilidad depende de versión, licencia, permisos y exposición de controles. El control directo de las aplicaciones Adobe se limita actualmente a macOS.",
-        "El caso de DaVinci Resolve muestra por qué importa esa distinción: la empresa indica que con Resolve Studio el agente edita mediante scripting, mientras que con la edición gratuita prepara el montaje y lo transfiere a Resolve para completar el trabajo. No es correcto prometer la misma profundidad de control en ambas versiones. En proyectos profesionales conviene probar una secuencia representativa antes de confiarle entregas con plazos.",
-        "Para quienes no tienen licencias de suites externas, Voyager incorpora sus propios motores Design, Video y DAW. Design reúne capas vectoriales y ráster, composición y gráficos animados; Video ofrece línea de tiempo, multicámara y corrección; DAW contempla arreglos, instrumentos, complementos VST3 y mezcla. Son funciones declaradas por el fabricante, no una certificación de equivalencia con Adobe Creative Cloud o Ableton Live. La documentación admite, por ejemplo, que su DAW todavía no incluye instrumentos orquestales muestreados.",
-        "El énfasis está en mantener resultados editables. La página de precios menciona exportaciones como PSD, SVG, Lottie y PDF para diseño, OTIO, FCPXML o EDL para transferir ediciones y formatos habituales de vídeo y audio. Que un formato figure en la lista no garantiza preservación perfecta de todos los efectos, fuentes, pistas o plugins al mover un proyecto. Para equipos con flujos de posproducción complejos, una prueba de ida y vuelta es más útil que una demostración de un solo clic.",
-        "Voyager permite conectar una suscripción existente de Claude o ChatGPT a través de sus runtimes oficiales, utilizar su propio agente o añadir claves de proveedores compatibles. También anuncia soporte para servidores MCP y habilidades reutilizables, incluidas algunas instaladas en otros entornos de agentes. Esa flexibilidad es el sentido operativo de su apertura: el usuario puede elegir herramientas y modelos, pero sigue dependiendo de un producto propietario para la orquestación.",
-        "Entre los servicios de generación citados figuran Veo, Seedance, Kling, MiniMax, Wan, Nano Banana, GPT Image, FLUX y ElevenLabs. El catálogo no implica que todos estén incluidos en todos los planes, regiones o cuentas. Algunos modelos requieren un nivel superior, autorización específica o facturación externa. La documentación señala además que el agente puede enviar a proveedores los archivos y el contexto necesarios para una tarea, aunque los proyectos permanezcan almacenados localmente.",
-        "La versión principal requiere un Mac con Apple silicon, desde M1, y macOS 15 o posterior. Los Mac Intel no están admitidos. Hay compilaciones alfa para Windows 11 de 64 bits y Linux de 64 bits; no deben describirse como lanzamientos generales equivalentes al de macOS. En Windows, el instalador aún no está firmado y ciertas herramientas integradas pueden estar deshabilitadas. La empresa anuncia aplicaciones móviles futuras, sin fecha pública de disponibilidad general.",
-        "En cuanto a privacidad, Voyager afirma que la instalación no sube automáticamente proyectos completos, pero sí puede enviar materiales a proveedores de IA para ejecutar instrucciones. También declara recopilar estadísticas de uso y errores sanitizados, configurables desde preferencias. Para trabajo con material confidencial o clientes sujetos a contrato, estas declaraciones deben contrastarse con las políticas aplicables y con las conexiones concretas que el usuario active.",
-        "Los precios mensuales publicados en dólares estadounidenses son Free a US$0, Starter a US$19 por asiento, Creator a US$49, Ultra a US$149 y GigaMax a US$500. El plan gratuito ofrece 1.000 créditos mensuales, con un máximo de 500 durante cualquier ventana de cinco horas, y excluye vídeo, voz y renderizado en nube. Los planes pagados incluyen respectivamente 1.500, 4.700, 14.400 y 52.000 créditos mensuales; las promociones de lanzamiento elevan temporalmente algunos saldos durante las tres primeras facturas.",
-        "El proveedor define cada crédito como un centavo de dólar del precio de lista de generación del modelo y afirma no añadir margen a esas generaciones. Como ejemplos orientativos, publica unos 48 créditos por ocho segundos de MiniMax H3 con audio y alrededor de 277 para ocho segundos de Seedance 2.5. Los costes reales varían por modelo, duración, resolución y consumo de entrada; los créditos mensuales no se acumulan. Las licencias de aplicaciones externas y las claves propias de otros proveedores pueden añadir facturación separada.",
-        "Análisis Gazette: Voyager representa un desplazamiento desde las galerías de contenido generado hacia agentes que intervienen en la producción y entregan proyectos modificables. Para un estudio pequeño, integrar guion, generación, montaje y sonido podría reducir saltos entre aplicaciones. Para una empresa, el valor real dependerá de consistencia, trazabilidad, control de permisos y capacidad de corregir resultados, no del número anunciado de modelos compatibles.",
-        "El lanzamiento todavía deja preguntas abiertas. No hay una evaluación independiente y amplia de fiabilidad entre aplicaciones, calidad de exportación, tiempos de corrección o coste total de proyectos complejos. Tampoco se ha demostrado que el agente sustituya a profesionales de edición y mezcla. La comparación comercial del proveedor sobre cuánto costaría comprar otras suites es publicidad de funcionalidades supuestamente comparables, no una equivalencia técnica certificada.",
-        "Consejo práctico: probar primero con un proyecto pequeño y reversible, por ejemplo un vídeo breve con material no confidencial. Registrar el coste en créditos, el número de intervenciones manuales, los formatos exportados y la posibilidad de reabrir cada archivo en el editor original. Conviene otorgar solo los permisos indispensables y revisar qué modelos reciben contenido del proyecto. Si el flujo falla en una transición sencilla, no es razonable delegar todavía un encargo crítico.",
-        "Qué observar: mejoras de las compilaciones Windows y Linux, soporte real de automatización en Adobe fuera de macOS, compatibilidad con formatos profesionales y publicación de pruebas reproducibles de calidad y coste. También será relevante si las integraciones MCP mantienen controles claros sobre permisos y si aparecen métricas independientes de productividad. Hasta entonces, el hecho confirmado es la disponibilidad inicial y el catálogo anunciado; la superioridad frente a alternativas permanece sin demostrar."
-      ],
-      "keyPoints": [
-        "El agente opera aplicaciones creativas y también incluye editores propios; Voyager es propietario, aunque interoperable.",
-        "La versión principal exige Apple silicon y macOS 15; Windows y Linux están en alfa.",
-        "Free ofrece 1.000 créditos; Starter, Creator, Ultra y GigaMax cuestan US$19, US$49, US$149 y US$500 al mes."
-      ],
-      "quickTakeaways": [
-        "El lanzamiento público figura en Launch YC el 8 de octubre de 2026.",
-        "El agente combina herramientas de vídeo, diseño y sonido con modelos de varios proveedores.",
-        "No es software abierto: 'open harness' se refiere a la interoperabilidad.",
-        "macOS 15 con Apple silicon es la plataforma principal; Windows y Linux siguen en alfa.",
-        "Los créditos, licencias externas y suscripciones de modelos requieren atención separada."
-      ],
-      "sections": [
-        {
-          "heading": "El lanzamiento y su alcance",
-          "kind": "report",
-          "paragraphs": [
-            "El 8 de octubre de 2026, Voyager presentó públicamente una aplicación de escritorio para coordinar agentes de inteligencia artificial y herramientas creativas. El anuncio en Launch YC describe un sistema para producir vídeo, música, gráficos y proyectos interactivos, con modelos que pueden operar aplicaciones instaladas en el ordenador. La propuesta no consiste únicamente en generar una imagen o un clip a partir de texto: el agente también organiza pasos de edición y entrega proyectos que el usuario puede seguir modificando.",
-            "Voyager pertenece a Nullframe, la compañía detrás de Moda. La presentación de Y Combinator habla de más de cien modelos y herramientas creativas conectables, pero esa cifra procede del proveedor y no equivale a cien integraciones probadas de forma independiente. El producto se presenta como un 'open harness', expresión que describe su capacidad para combinar modelos, cuentas y aplicaciones; su propia documentación aclara que el programa Voyager no es software de código abierto."
-          ]
-        },
-        {
-          "heading": "Cómo trabaja con las aplicaciones",
-          "kind": "technical",
-          "paragraphs": [
-            "Según la documentación oficial, el agente aprovecha interfaces de scripting de cada programa cuando existen. En Photoshop puede usar scripts; para Premiere Pro emplea un puente local; para After Effects e Illustrator recurre a sus mecanismos de automatización; y para DaVinci Resolve utiliza la API de scripting disponible. Cuando una función no ofrece interfaz programable, Voyager puede interactuar con ventanas mediante permisos de macOS. Esto introduce una diferencia importante entre operaciones reproducibles por API y acciones visuales más sensibles a cambios de interfaz.",
-            "Entre las aplicaciones citadas están Blender, Unity, Photoshop, Illustrator, After Effects, Premiere Pro, DaVinci Resolve, Final Cut Pro y Ableton Live. La compañía también menciona habilidades para herramientas adicionales, pero no debe interpretarse que todas las funciones de cada programa estén automatizadas. La compatibilidad depende de versión, licencia, permisos y exposición de controles. El control directo de las aplicaciones Adobe se limita actualmente a macOS.",
-            "El caso de DaVinci Resolve muestra por qué importa esa distinción: la empresa indica que con Resolve Studio el agente edita mediante scripting, mientras que con la edición gratuita prepara el montaje y lo transfiere a Resolve para completar el trabajo. No es correcto prometer la misma profundidad de control en ambas versiones. En proyectos profesionales conviene probar una secuencia representativa antes de confiarle entregas con plazos."
-          ]
-        },
-        {
-          "heading": "Herramientas integradas y archivos editables",
-          "kind": "technical",
-          "paragraphs": [
-            "Para quienes no tienen licencias de suites externas, Voyager incorpora sus propios motores Design, Video y DAW. Design reúne capas vectoriales y ráster, composición y gráficos animados; Video ofrece línea de tiempo, multicámara y corrección; DAW contempla arreglos, instrumentos, complementos VST3 y mezcla. Son funciones declaradas por el fabricante, no una certificación de equivalencia con Adobe Creative Cloud o Ableton Live. La documentación admite, por ejemplo, que su DAW todavía no incluye instrumentos orquestales muestreados.",
-            "El énfasis está en mantener resultados editables. La página de precios menciona exportaciones como PSD, SVG, Lottie y PDF para diseño, OTIO, FCPXML o EDL para transferir ediciones y formatos habituales de vídeo y audio. Que un formato figure en la lista no garantiza preservación perfecta de todos los efectos, fuentes, pistas o plugins al mover un proyecto. Para equipos con flujos de posproducción complejos, una prueba de ida y vuelta es más útil que una demostración de un solo clic."
-          ]
-        },
-        {
-          "heading": "Modelos, agentes y extensibilidad",
-          "kind": "context",
-          "paragraphs": [
-            "Voyager permite conectar una suscripción existente de Claude o ChatGPT a través de sus runtimes oficiales, utilizar su propio agente o añadir claves de proveedores compatibles. También anuncia soporte para servidores MCP y habilidades reutilizables, incluidas algunas instaladas en otros entornos de agentes. Esa flexibilidad es el sentido operativo de su apertura: el usuario puede elegir herramientas y modelos, pero sigue dependiendo de un producto propietario para la orquestación.",
-            "Entre los servicios de generación citados figuran Veo, Seedance, Kling, MiniMax, Wan, Nano Banana, GPT Image, FLUX y ElevenLabs. El catálogo no implica que todos estén incluidos en todos los planes, regiones o cuentas. Algunos modelos requieren un nivel superior, autorización específica o facturación externa. La documentación señala además que el agente puede enviar a proveedores los archivos y el contexto necesarios para una tarea, aunque los proyectos permanezcan almacenados localmente."
-          ]
-        },
-        {
-          "heading": "Disponibilidad y requisitos",
-          "kind": "report",
-          "paragraphs": [
-            "La versión principal requiere un Mac con Apple silicon, desde M1, y macOS 15 o posterior. Los Mac Intel no están admitidos. Hay compilaciones alfa para Windows 11 de 64 bits y Linux de 64 bits; no deben describirse como lanzamientos generales equivalentes al de macOS. En Windows, el instalador aún no está firmado y ciertas herramientas integradas pueden estar deshabilitadas. La empresa anuncia aplicaciones móviles futuras, sin fecha pública de disponibilidad general.",
-            "En cuanto a privacidad, Voyager afirma que la instalación no sube automáticamente proyectos completos, pero sí puede enviar materiales a proveedores de IA para ejecutar instrucciones. También declara recopilar estadísticas de uso y errores sanitizados, configurables desde preferencias. Para trabajo con material confidencial o clientes sujetos a contrato, estas declaraciones deben contrastarse con las políticas aplicables y con las conexiones concretas que el usuario active."
-          ]
-        },
-        {
-          "heading": "Precios y límites de los créditos",
-          "kind": "report",
-          "paragraphs": [
-            "Los precios mensuales publicados en dólares estadounidenses son Free a US$0, Starter a US$19 por asiento, Creator a US$49, Ultra a US$149 y GigaMax a US$500. El plan gratuito ofrece 1.000 créditos mensuales, con un máximo de 500 durante cualquier ventana de cinco horas, y excluye vídeo, voz y renderizado en nube. Los planes pagados incluyen respectivamente 1.500, 4.700, 14.400 y 52.000 créditos mensuales; las promociones de lanzamiento elevan temporalmente algunos saldos durante las tres primeras facturas.",
-            "El proveedor define cada crédito como un centavo de dólar del precio de lista de generación del modelo y afirma no añadir margen a esas generaciones. Como ejemplos orientativos, publica unos 48 créditos por ocho segundos de MiniMax H3 con audio y alrededor de 277 para ocho segundos de Seedance 2.5. Los costes reales varían por modelo, duración, resolución y consumo de entrada; los créditos mensuales no se acumulan. Las licencias de aplicaciones externas y las claves propias de otros proveedores pueden añadir facturación separada."
-          ]
-        },
-        {
-          "heading": "Impacto, límites y evaluación práctica",
-          "kind": "analysis",
-          "paragraphs": [
-            "Análisis Gazette: Voyager representa un desplazamiento desde las galerías de contenido generado hacia agentes que intervienen en la producción y entregan proyectos modificables. Para un estudio pequeño, integrar guion, generación, montaje y sonido podría reducir saltos entre aplicaciones. Para una empresa, el valor real dependerá de consistencia, trazabilidad, control de permisos y capacidad de corregir resultados, no del número anunciado de modelos compatibles.",
-            "El lanzamiento todavía deja preguntas abiertas. No hay una evaluación independiente y amplia de fiabilidad entre aplicaciones, calidad de exportación, tiempos de corrección o coste total de proyectos complejos. Tampoco se ha demostrado que el agente sustituya a profesionales de edición y mezcla. La comparación comercial del proveedor sobre cuánto costaría comprar otras suites es publicidad de funcionalidades supuestamente comparables, no una equivalencia técnica certificada.",
-            "Consejo práctico: probar primero con un proyecto pequeño y reversible, por ejemplo un vídeo breve con material no confidencial. Registrar el coste en créditos, el número de intervenciones manuales, los formatos exportados y la posibilidad de reabrir cada archivo en el editor original. Conviene otorgar solo los permisos indispensables y revisar qué modelos reciben contenido del proyecto. Si el flujo falla en una transición sencilla, no es razonable delegar todavía un encargo crítico.",
-            "Qué observar: mejoras de las compilaciones Windows y Linux, soporte real de automatización en Adobe fuera de macOS, compatibilidad con formatos profesionales y publicación de pruebas reproducibles de calidad y coste. También será relevante si las integraciones MCP mantienen controles claros sobre permisos y si aparecen métricas independientes de productividad. Hasta entonces, el hecho confirmado es la disponibilidad inicial y el catálogo anunciado; la superioridad frente a alternativas permanece sin demostrar."
-          ]
-        }
-      ],
-      "executiveSummary": "Voyager lanzó un agente de escritorio para coordinar modelos generativos y aplicaciones creativas como Blender, DaVinci Resolve y Adobe, además de tres motores propios de edición. La propuesta privilegia proyectos editables sobre resultados aislados, pero sus afirmaciones de compatibilidad y productividad requieren validación independiente. El producto se ofrece inicialmente en Mac con Apple silicon y una estructura de créditos que va desde un plan gratuito a niveles profesionales.",
-      "finalSummary": "Voyager confirma un lanzamiento inicial para macOS, con integraciones creativas y precios publicados. Windows y Linux permanecen en alfa; la amplitud del catálogo y los ahorros anunciados son declaraciones del proveedor, no benchmarks independientes. La prueba decisiva será cuánto trabajo editable entrega con fiabilidad y coste predecible.",
-      "analysis": "Análisis Gazette: la innovación potencial está en llevar agentes desde la generación de piezas aisladas hasta la edición reproducible en aplicaciones profesionales. El valor comercial deberá medirse en control, correcciones y exportaciones, no en promesas de automatización total.",
-      "watch": "Lanzamiento general de Windows/Linux, límites reales de scripting y control visual, métricas de coste por proyecto, privacidad, MCP y exportaciones editables.",
-      "technicalDetails": [
-        {
-          "label": "Producto",
-          "value": "Agente creativo propietario con conectores de herramientas y modelos"
-        },
-        {
-          "label": "Plataforma principal",
-          "value": "Apple silicon (M1+) con macOS 15+"
-        },
-        {
-          "label": "Otras plataformas",
-          "value": "Windows 11 x64 y Linux x64 en alfa"
-        },
-        {
-          "label": "Aplicaciones",
-          "value": "Blender, Resolve, Adobe, Unity, Ableton y otras según integración y licencia"
-        },
-        {
-          "label": "Interoperabilidad",
-          "value": "Scripting, puentes locales, MCP, habilidades y control de ventana con permisos"
-        }
-      ],
-      "availability": {
-        "status": "Lanzamiento inicial en macOS; versiones alfa en Windows y Linux",
-        "platforms": [
-          "macOS 15+ con Apple silicon",
-          "Windows 11 x64 (alfa)",
-          "Linux x64 (alfa)"
-        ],
-        "regions": [],
-        "requirements": [
-          "Mac M1 o posterior para versión principal",
-          "Licencias propias para software externo de pago"
-        ],
-        "notes": [
-          "Control en vivo de Adobe solo en macOS por ahora.",
-          "Los planes de generación no incluyen necesariamente suscripciones de terceros."
-        ]
-      },
-      "pricing": [
-        {
-          "label": "Free",
-          "value": "US$0/mes; 1.000 créditos; sin vídeo, voz ni render nube"
-        },
-        {
-          "label": "Starter",
-          "value": "US$19/mes por asiento; 1.500 créditos"
-        },
-        {
-          "label": "Creator",
-          "value": "US$49/mes por asiento; 4.700 créditos"
-        },
-        {
-          "label": "Ultra",
-          "value": "US$149/mes por asiento; 14.400 créditos"
-        },
-        {
-          "label": "GigaMax",
-          "value": "US$500/mes por asiento; 52.000 créditos"
-        },
-        {
-          "label": "Créditos",
-          "value": "1 crédito = US$0,01 según tarifa declarada del proveedor; promociones iniciales y gastos externos aplican"
-        }
-      ],
-      "timeline": [
-        {
-          "date": "2026-10-08",
-          "label": "Lanzamiento en Y Combinator"
-        }
-      ],
-      "limitations": [
-        "No existe evaluación independiente amplia de fiabilidad de edición entre aplicaciones.",
-        "El programa es propietario, no open source.",
-        "Windows y Linux están en alfa y pueden carecer de funciones.",
-        "El coste final depende de modelos, créditos, licencias y claves de proveedores.",
-        "El procesamiento con modelos externos puede enviar contenido seleccionado del proyecto a terceros."
-      ],
-      "practicalAdvice": [
-        "Probar con archivos no confidenciales y permisos mínimos.",
-        "Validar exportaciones y edición posterior en aplicaciones de destino.",
-        "Registrar créditos y pasos manuales por proyecto antes de escalar."
-      ],
-      "usefulFacts": [
-        "Free limita a 500 créditos en cualquier ventana de cinco horas.",
-        "Las suscripciones de software creativo externo se contratan por separado.",
-        "El plan Team está anunciado pero aún no disponible generalmente."
-      ],
-      "curiosities": [
-        "La empresa también desarrolló Moda.",
-        "Voyager incluye motores propios de diseño, vídeo y audio, además de integraciones externas."
       ]
     },
     {
@@ -24958,7 +25154,7 @@
     {
       "date": "2026-10-09",
       "status": "partial",
-      "verifiedArticles": 15
+      "verifiedArticles": 16
     },
     {
       "date": "2026-10-10",
