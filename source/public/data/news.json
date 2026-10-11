@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T03:27:34.133Z",
+  "updatedAt": "2026-10-11T03:30:18.184Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -12856,7 +12856,7 @@
       ],
       "image": "assets/globe.webp",
       "imageAlt": "Grabado editorial de una red de empresas y centros de investigación; no representa el anuncio como fotografía.",
-      "imageCredit": "Ilustración editorial generada con IA; no es una fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
       "source": {
         "name": "Reuters · investigación del 19 de septiembre",
         "url": "https://www.reuters.com/business/anthropic-considers-releasing-new-ai-model-ahead-ipo-sources-say-2026-09-19/",
@@ -12971,7 +12971,8 @@
         }
       ],
       "imageStatus": "needs-specific-art",
-      "imageBrief": "Grabado editorial estilo prensa antigua: mesas de negociación y un laboratorio de autómatas separados por cortinas de incertidumbre, documentos y calendarios vacíos, sin marcas, texto o apariencia de fotografía real."
+      "imageBrief": "Grabado editorial estilo prensa antigua: mesas de negociación y un laboratorio de autómatas separados por cortinas de incertidumbre, documentos y calendarios vacíos, sin marcas, texto o apariencia de fotografía real.",
+      "visualAssetId": "gazette-global-infrastructure-v1"
     },
     {
       "id": "google-millemiglia-open-middle-mile-logistics-benchmark-2026-09-18",
