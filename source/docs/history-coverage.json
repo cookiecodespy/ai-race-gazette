@@ -165,13 +165,15 @@
   },
   {
     "date": "2026-10-01",
-    "status": "pending",
-    "verifiedArticles": 0
+    "status": "partial",
+    "verifiedArticles": 1,
+    "reviewedAt": "2026-10-10"
   },
   {
     "date": "2026-10-02",
-    "status": "pending",
-    "verifiedArticles": 0
+    "status": "partial",
+    "verifiedArticles": 1,
+    "reviewedAt": "2026-10-10"
   },
   {
     "date": "2026-10-03",
