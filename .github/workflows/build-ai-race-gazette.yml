@@ -6,6 +6,9 @@ on:
     paths:
       - 'data/news.json'
       - 'source/public/data/news.json'
+      # RSS-only repairs must also rerun the full build/QA after a failed news commit.
+      - 'feed.xml'
+      - 'source/public/feed.xml'
       - 'source/src/**'
       - 'source/index.html'
       - 'source/package.json'
