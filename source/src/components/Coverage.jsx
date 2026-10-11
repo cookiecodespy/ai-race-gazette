@@ -20,10 +20,10 @@ function CoverageCalendar({dailyCoverage,month}) {
  return <section className="coverage-calendar" aria-labelledby="coverage-calendar-title">
   <div className="coverage-calendar-heading"><div><span className="eyebrow">Cronología auditable</span><h2 id="coverage-calendar-title">{monthLabel(activeMonth)}</h2></div><p>{totals.complete||0} completos · {totals['reviewed-no-material-news']||0} sin novedades · {(totals.partial||0)+(totals.pending||0)} por cerrar</p></div>
   <div className="calendar-legend" aria-label="Leyenda de cobertura"><span className="complete">Completo</span><span className="partial">Parcial</span><span className="pending">Pendiente</span><span className="reviewed-no-material-news">Sin novedades</span></div>
-  <div className="calendar-grid" role="grid" aria-label={`Cobertura de ${monthLabel(activeMonth)}`}>
-   {['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'].map(label=><div className="calendar-weekday" role="columnheader" key={label}>{label}</div>)}
+  <div className="calendar-grid" role="group" aria-label={`Cobertura de ${monthLabel(activeMonth)}`}>
+   {['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'].map(label=><div className="calendar-weekday" key={label}>{label}</div>)}
    {Array.from({length:mondayOffset},(_,i)=><div className="calendar-pad" aria-hidden="true" key={`pad-${i}`}/>)}
-   {days.map(({day,date,coverage})=><a role="gridcell" className={`calendar-day ${coverage?.status||'pending'}`} href={`#edicion/${date}`} aria-label={`${dateLabel(date,true)} · ${coverageStatusLabel(coverage?.status||'pending')} · ${coverage?.verifiedArticles||0} noticias`} key={date}><strong>{day}</strong><span>{coverage?.verifiedArticles||0} {coverage?.verifiedArticles===1?'noticia':'noticias'}</span><small>{coverageStatusLabel(coverage?.status||'pending')}</small></a>)}
+   {days.map(({day,date,coverage})=><a className={`calendar-day ${coverage?.status||'pending'}`} href={`#edicion/${date}`} aria-label={`${dateLabel(date,true)} · ${coverageStatusLabel(coverage?.status||'pending')} · ${coverage?.verifiedArticles||0} noticias`} key={date}><strong>{day}</strong><span>{coverage?.verifiedArticles||0} {coverage?.verifiedArticles===1?'noticia':'noticias'}</span><small>{coverageStatusLabel(coverage?.status||'pending')}</small></a>)}
   </div>
  </section>;
 }

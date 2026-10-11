@@ -105,6 +105,9 @@ await page.reload();
 await page.getByRole('heading',{name:'Consulta la evidencia original'}).waitFor();
 await page.getByRole('link',{name:'Volver a la portada',exact:true}).click();
 await page.locator('.news-cover').first().waitFor();
+assert.equal(await page.locator('meta[property="og:type"]').getAttribute('content'),'website');
+assert.match(await page.locator('meta[property="og:image"]').getAttribute('content'),/assets\/hero\.webp$/);
+assert.equal(await page.getByRole('link',{name:'Código & correcciones'}).getAttribute('href'),'https://github.com/cookiecodespy/ai-race-gazette');
 
 for(const width of [320,390,768,1280]){
   await page.setViewportSize({width,height:844});
