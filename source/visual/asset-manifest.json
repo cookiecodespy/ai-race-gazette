@@ -63,7 +63,7 @@
         "Ilustración editorial generada con IA; no es una fotografía de Google.",
         "Ilustración editorial generada con IA; no es una fotografía del anuncio."
       ],
-      "currentUsage": 24,
+      "currentUsage": 26,
       "notes": "Fallback orientado a Google/arquitectura tecnológica; no asumir que representa instalaciones reales."
     },
     {
@@ -104,7 +104,7 @@
       "legacyCredits": [
         "Ilustración editorial generada con IA; no es una fotografía del anuncio."
       ],
-      "currentUsage": 27,
+      "currentUsage": 28,
       "notes": "Fallback para infraestructura y expansión geográfica."
     },
     {
