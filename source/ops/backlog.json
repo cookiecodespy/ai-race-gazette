@@ -475,12 +475,17 @@
       "phase": "P05",
       "title": "ChatGPT anuncia retiro futuro de custom GPTs y migración a plugins",
       "priority": "P0",
-      "status": "queued",
+      "status": "done",
       "lane": "Historical Backfill",
       "date": "2026-09-11",
       "acceptance": "Revisar anuncio oficial y su cambio material, publicar V2 si corresponde; deduplicar y documentar estado de acceso.",
       "evidence": [
         "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+      ],
+      "evidenceCommit": "8f09831ae457dabdf757391ef4a2885b35dd3be5",
+      "verifiedEvidence": [
+        "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq"
       ]
     },
     {

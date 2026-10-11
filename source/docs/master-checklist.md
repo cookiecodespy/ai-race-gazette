@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 62 tareas; 23 completadas; 5 en curso; 33 pendientes o bloqueadas; 1 descartadas con razón.
+- 6 fases; 62 tareas; 24 completadas; 5 en curso; 32 pendientes o bloqueadas; 1 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -75,9 +75,11 @@
   - Criterio: Revisar anuncio oficial y su cambio material, publicar V2 si corresponde; deduplicar y documentar estado de acceso.
   - Fecha investigada: 2026-09-11
   - Evidencia: https://openai.com/index/introducing-gpt-rosalind/
-- [ ] **H-OPENAI-SEP11-GPT-MIGRATION** · P0 · queued — ChatGPT anuncia retiro futuro de custom GPTs y migración a plugins
+- [x] **H-OPENAI-SEP11-GPT-MIGRATION** · P0 · done — ChatGPT anuncia retiro futuro de custom GPTs y migración a plugins
   - Criterio: Revisar anuncio oficial y su cambio material, publicar V2 si corresponde; deduplicar y documentar estado de acceso.
   - Fecha investigada: 2026-09-11
+  - Commit: `8f09831ae457dabdf757391ef4a2885b35dd3be5`
+  - Evidencia: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
 - [ ] **H-SEP12-13** · P0 · in_progress — Cobertura exhaustiva del 12 y 13 de septiembre
   - Criterio: Fuentes por día, discovery abierto y pasada inversa; publicar V2 o registrar sin novedades con evidencia.
 - [ ] **H-SEP08-11-REVERSE** · P0 · queued — Segunda pasada por compañías del 8 al 11 septiembre
