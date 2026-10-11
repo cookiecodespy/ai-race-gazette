@@ -1051,12 +1051,17 @@
       "phase": "P07",
       "title": "MentalHealthBench de OpenAI 23 septiembre",
       "priority": "P1",
-      "status": "queued",
+      "status": "done",
       "lane": "Historical Backfill",
       "date": "2026-09-23",
       "acceptance": "Verificar el trabajo original, escribir Reporter V2 y actualizar archivos y registro de investigación de forma atómica antes de marcar como publicado.",
       "evidence": [
         "https://openai.com/index/introducing-mentalhealthbench/"
+      ],
+      "evidenceCommit": "7305910bc04e89235cad41da59e100f1f5738f3c",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38103454324",
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38103454343"
       ]
     },
     {
@@ -1064,12 +1069,17 @@
       "phase": "P07",
       "title": "Diffusion Controller de Google Research 29 septiembre",
       "priority": "P1",
-      "status": "queued",
+      "status": "done",
       "lane": "Historical Backfill",
       "date": "2026-09-29",
       "acceptance": "Verificar el trabajo original, escribir Reporter V2 y actualizar archivos y registro de investigación de forma atómica antes de marcar como publicado.",
       "evidence": [
         "https://research.google/blog/how-diffusion-controller-unifies-and-simplifies-ai-image-generation/"
+      ],
+      "evidenceCommit": "7305910bc04e89235cad41da59e100f1f5738f3c",
+      "verifiedEvidence": [
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38103454324",
+        "https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38103454343"
       ]
     }
   ]

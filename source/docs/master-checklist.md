@@ -11,7 +11,7 @@
 
 ## Progreso de la cola
 
-- 6 fases; 78 tareas; 38 completadas; 6 en curso; 32 pendientes o bloqueadas; 2 descartadas con razón.
+- 6 fases; 78 tareas; 40 completadas; 6 en curso; 30 pendientes o bloqueadas; 2 descartadas con razón.
 
 ## P05 — 8–14 septiembre: reconstrucción Reporter V2
 
@@ -158,12 +158,16 @@
   - Criterio: Publicación o validación realizada con evidencia, sin cerrar las fechas históricas por sí sola.
   - Commit: `e4fb631024dc887c16d80f89323368e65953b298`
   - Evidencia: https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/
-- [ ] **H-P07-MENTALHEALTHBENCH-SEP23** · P1 · queued — MentalHealthBench de OpenAI 23 septiembre
+- [x] **H-P07-MENTALHEALTHBENCH-SEP23** · P1 · done — MentalHealthBench de OpenAI 23 septiembre
   - Criterio: Verificar el trabajo original, escribir Reporter V2 y actualizar archivos y registro de investigación de forma atómica antes de marcar como publicado.
   - Fecha investigada: 2026-09-23
-- [ ] **H-P07-DIFFUSION-CONTROLLER-SEP29** · P1 · queued — Diffusion Controller de Google Research 29 septiembre
+  - Commit: `7305910bc04e89235cad41da59e100f1f5738f3c`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38103454324
+- [x] **H-P07-DIFFUSION-CONTROLLER-SEP29** · P1 · done — Diffusion Controller de Google Research 29 septiembre
   - Criterio: Verificar el trabajo original, escribir Reporter V2 y actualizar archivos y registro de investigación de forma atómica antes de marcar como publicado.
   - Fecha investigada: 2026-09-29
+  - Commit: `7305910bc04e89235cad41da59e100f1f5738f3c`
+  - Evidencia: https://github.com/cookiecodespy/ai-race-gazette/actions/runs/38103454324
 
 ## P08 — Octubre hasta la fecha y Newsroom continua
 
