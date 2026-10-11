@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T14:23:53.332Z",
+  "updatedAt": "2026-10-11T18:17:15.253Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -14514,6 +14514,154 @@
       ]
     },
     {
+      "id": "qwen-image-2-1-open-weights-2026-09-20",
+      "eventKey": "qwen-image-2-1-open-weights-2026-09-20",
+      "articleVersion": 2,
+      "date": "2026-09-20",
+      "announcedAt": "2026-09-20",
+      "coveredAt": "2026-10-11",
+      "verifiedAt": "2026-10-11",
+      "company": "Alibaba",
+      "product": "Qwen-Image-2.1",
+      "title": "Qwen abre los pesos de Image 2.1: imágenes y edición con transparencias en un único modelo",
+      "summary": "Qwen publicó el 20 de septiembre Qwen-Image-2.1, un modelo descargable de generación y edición visual con componente generativo de 7.000 millones de parámetros, canal alfa RGBA y hasta diez referencias. Utiliza la licencia Qwen Research, no una licencia comercial abierta equivalente a Apache.",
+      "tags": [
+        "Imágenes",
+        "Modelos",
+        "Código abierto",
+        "Desarrollo"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual de una esfera tecnológica, empleado provisionalmente para ilustrar generación visual; no representa el modelo de Qwen.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial vintage para Qwen-Image-2.1: un atelier técnico antiguo donde artistas humanos editan una lámina de ilustración transparente superpuesta sobre otras hojas, con diez referencias fotográficas abstractas y una prensa de impresión; transmitir creación y edición unificadas, no representar interfaz real de Qwen. Tinta negra y sepia sobre pergamino envejecido, horizontal 3:2, sin logotipos o números ficticios ni apariencia de fotografía documental.",
+      "source": {
+        "name": "Qwen · anuncio oficial Qwen-Image-2.1",
+        "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+        "publishedAt": "2026-09-20"
+      },
+      "relatedSources": [
+        {
+          "name": "QwenLM · repositorio oficial",
+          "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+          "publishedAt": "2026-09-20"
+        },
+        {
+          "name": "Qwen · ficha y pesos en Hugging Face",
+          "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+          "publishedAt": "2026-09-20"
+        }
+      ],
+      "body": [
+        "Qwen publicó el 20 de septiembre de 2026 Qwen-Image-2.1 con una propuesta verificable: pesos disponibles para descargar, código y ejemplos de integración, y un modelo capaz de generar y editar imágenes dentro de la misma arquitectura. El anuncio oficial está fechado ese día y el historial del repositorio confirma la publicación. La novedad no debe confundirse con las posteriores variantes Turbo y Pro ni con los servicios de API publicados en octubre.",
+        "En la generación visual asistida por IA, una gran parte del trabajo real no consiste en producir la primera imagen, sino en corregirla sin volver a empezar. Qwen intenta reunir ambas etapas y añade soporte para imágenes con fondo transparente, algo especialmente útil al preparar pegatinas, recortes o elementos gráficos que luego se colocarán en un diseño. Sus afirmaciones de calidad y eficiencia son del equipo desarrollador; el Gazette no ha ejecutado una evaluación comparativa independiente."
+      ],
+      "quickTakeaways": [
+        "Lanzamiento de pesos anunciado el 20 de septiembre; la ficha de Qwen describe un componente generativo de 7B parámetros y 32 capas DiT.",
+        "El sistema combina texto a imagen, edición localizada, salida RGBA transparente y uso de hasta diez referencias.",
+        "Los archivos se distribuyen bajo Qwen Research License. Disponibilidad de pesos no equivale a libertad comercial irrestricta; revisar la licencia antes de incorporar el modelo a un producto."
+      ],
+      "executiveSummary": "Qwen-Image-2.1 llegó el 20 de septiembre de 2026 con pesos abiertos a descarga y ejemplos de integración en herramientas de creación de imágenes. La versión une generación y edición, puede producir transparencias nativas, considera hasta diez imágenes de referencia y declara mejoras de tipografía, detalle y coste computacional. El acceso bajo Qwen Research License exige cautela para usos comerciales, y el lanzamiento de servicios Pro/Turbo ocurrido el 9 de octubre corresponde a una fase posterior.",
+      "sections": [
+        {
+          "heading": "Una misma herramienta para generar y editar",
+          "kind": "report",
+          "paragraphs": [
+            "El modelo se presenta como una combinación de generación desde instrucciones y transformación de una imagen existente. En lugar de necesitar necesariamente una herramienta distinta para obtener el primer resultado y otra para retocarlo, Qwen describe un único flujo en el que la entrada puede ser una orden de texto y una o varias imágenes. El repositorio oficial incluye ejemplos separados de text-to-image, image editing y generación transparente. Esta arquitectura declarada no significa que el archivo de salida conserve capas profesionales editables en todos los programas; esa compatibilidad debe examinarse a través del formato y del flujo utilizado.",
+            "El uso de hasta diez imágenes de referencia sirve para transmitir al modelo pistas sobre sujetos, objetos o estilos. Qwen menciona mecanismos de edición local mediante círculos, anotaciones pintadas o máscaras independientes, con el objetivo de facilitar cambios sobre regiones delimitadas. Se trata de capacidades que el equipo afirma haber implementado; la fidelidad exacta a cada persona o producto y la precisión de los bordes necesitan pruebas con materiales reales. Para un diseñador, editar una parte sin perder coherencia en el resto puede importar tanto como mejorar la calidad promedio de la primera imagen."
+          ]
+        },
+        {
+          "heading": "Arquitectura y tamaño declarado",
+          "kind": "technical",
+          "paragraphs": [
+            "La documentación identifica un componente de generación visual de aproximadamente 7.000 millones de parámetros y 32 capas Single-Stream Diffusion Transformer. Qwen cita atención de granularidad mixta y reutilización de caché de prefijo como optimizaciones de eficiencia. Estas características describen decisiones de diseño y no permiten deducir, por sí solas, consumo total de memoria de un despliegue particular. El sistema completo también depende de codificadores y otros componentes; por eso comparar solamente el número de parámetros de la parte visual con otro modelo puede resultar engañoso.",
+            "En los ejemplos de inferencia del repositorio se utiliza la biblioteca Diffusers y el pipeline QwenImage21Pipeline. La página muestra una generación de 2.048 por 2.048 píxeles y proporciones como 3:2, 16:9 o 9:16. Esos ejemplos ilustran configuraciones documentadas; no constituyen una promesa de que toda combinación de hardware, precisión y tamaño funcionará con el mismo tiempo o memoria. Si se quiere operar localmente, hay que revisar las dependencias exactas, capacidad de GPU, offload a CPU y estrategias de cuantización compatibles con la versión descargada."
+          ]
+        },
+        {
+          "heading": "Transparencia, máscaras y resultados con texto",
+          "kind": "technical",
+          "paragraphs": [
+            "La compatibilidad con RGBA es una de las diferencias que Qwen resalta. El canal alfa permite representar píxeles transparentes además de colores, algo que facilita generar un objeto recortado y colocarlo sobre un fondo diseñado por una persona. La página oficial ilustra pegatinas y otros elementos sin fondo; también ofrece ejemplos para extraer sujetos de fotografías. La calidad de la máscara resultante sigue siendo una pregunta empírica: cabello, reflejos, humo y bordes complejos son casos apropiados para una evaluación antes de usar el modelo en trabajo final.",
+            "El anuncio también atribuye mejoras en texturas, iluminación de retratos, detalles y representación de texto. La capacidad de incorporar letras reconocibles es relevante para carteles, infografías y maquetas, pero no debe darse por sentado que todos los rótulos resultarán perfectos. Una comparación responsable incluiría idiomas, tipografías, tamaños pequeños y prompts con varias instrucciones conflictivas. En el Gazette, las ilustraciones generadas deben evitar presentar textos ficticios como si fueran etiquetas oficiales de un producto: la flexibilidad creativa no sustituye la procedencia periodística."
+          ]
+        },
+        {
+          "heading": "Licencia y disponibilidad: pesos de septiembre, APIs de octubre",
+          "kind": "context",
+          "paragraphs": [
+            "La fecha central de esta historia es el 20 de septiembre: Qwen publicó el modelo y anunció pesos descargables en Hugging Face y ModelScope. Los archivos aparecen bajo la licencia Qwen Research License Agreement. Aunque los pesos pueden obtenerse, eso no equivale a que se publiquen con una licencia permisiva genérica como MIT o Apache 2.0; las organizaciones deben leer el texto contractual y confirmar si su uso previsto está autorizado. Este reportaje no asigna permisos comerciales universales a partir de una etiqueta de 'open source' utilizada en divulgación.",
+            "El registro actual del repositorio contiene hitos posteriores: el 9 de octubre anunció Qwen-Image-2.1-Turbo y las APIs alojadas Pro y Turbo en Alibaba Cloud Model Studio. Esas modalidades no deben fecharse retroactivamente en el lanzamiento del 20 de septiembre. Tampoco corresponde atribuir a la primera liberación los precios, límites o velocidad de los servicios posteriores sin documentación específica. El hecho históricamente verificado es la disponibilidad de pesos y ejemplos originales, seguida de ampliaciones del ecosistema."
+          ]
+        },
+        {
+          "heading": "Pruebas que importan para desarrolladores y creadores",
+          "kind": "practical",
+          "paragraphs": [
+            "Para comprobar el valor de un modelo generativo descargable conviene diseñar un conjunto de tareas repetibles: crear una imagen desde texto, modificar un detalle específico sin alterar lo demás, producir un recorte con transparencia, trabajar con tres referencias consistentes y colocar una frase corta en distintos fondos. Guardar prompts, semilla cuando sea posible, resolución y versión de los pesos facilita evaluar cambios. Los ejemplos promocionales más logrados pueden inspirar la prueba, pero no reemplazan el análisis de errores ni el cálculo del porcentaje de resultados que necesitan retoque manual.",
+            "Antes de adoptar la herramienta en una empresa o un proyecto público deben sumarse condiciones de licencia, costes de infraestructura, tiempo de generación, medidas para proteger datos de entrada y un proceso de revisión humana. En una integración local pueden existir ventajas de control sobre los archivos, pero también responsabilidades de mantenimiento y compatibilidad con librerías. La calidad de la experiencia dependerá de que los usuarios puedan modificar un resultado, conservar versiones y conocer límites de manera simple; un script que produce imágenes no es todavía un editor listo para todo público."
+          ]
+        }
+      ],
+      "analysis": "La noticia representa un avance material en el acceso a tecnología de creación visual: un equipo externo al duopolio de servicios cerrados ofrece pesos descargables y un pipeline de edición con transparencia. Eso puede ampliar la experimentación de investigadores y equipos pequeños. Sin embargo, 'descargable' no garantiza derecho comercial amplio ni costos bajos en hardware existente. La competencia real dependerá de la calidad verificable, la facilidad de instalación y la capacidad de integrar revisiones en un producto.",
+      "watch": "Revisar comparativas independientes, aclaraciones de licencia, requisitos de memoria y evolución de la API Pro/Turbo introducida después del lanzamiento original. Seguir la disponibilidad de integraciones comunitarias sin confundir una actualización posterior con el hito de septiembre.",
+      "limitations": [
+        "Las mejoras de calidad y eficiencia son declaraciones del equipo Qwen, no una medición independiente de la redacción.",
+        "La Qwen Research License debe analizarse por separado antes de un uso comercial o redistribución.",
+        "Los ejemplos de Diffusers no garantizan la misma latencia o memoria en todos los equipos; Pro/Turbo API son hitos posteriores."
+      ],
+      "practicalAdvice": [
+        "Probar generación inicial, edición localizada, referencias múltiples y transparencia con el mismo conjunto de prompts.",
+        "Comprobar la licencia específica del checkpoint antes de desplegarlo en un producto comercial.",
+        "Medir VRAM, tiempo, artefactos visuales y tasa de retoques manuales en lugar de fiarse solo de ejemplos seleccionados."
+      ],
+      "usefulFacts": [
+        "Fecha documentada de lanzamiento original: 20 de septiembre de 2026.",
+        "Qwen identifica 7B parámetros en el componente de generación visual y 32 capas de difusión Transformer.",
+        "Admite hasta diez referencias y ejemplos de salida RGBA, según sus fichas oficiales.",
+        "La página histórica diferencia la liberación de pesos del 20 de septiembre de Pro/Turbo publicados el 9 de octubre."
+      ],
+      "technicalDetails": [
+        {
+          "label": "Modelo",
+          "value": "Qwen-Image-2.1"
+        },
+        {
+          "label": "Componente visual",
+          "value": "7B parámetros, 32 capas Single-Stream DiT",
+          "note": "Especificación de Qwen, no tamaño total de todos los componentes"
+        },
+        {
+          "label": "Referencias",
+          "value": "Hasta 10 imágenes",
+          "note": "Capacidad declarada por el equipo"
+        },
+        {
+          "label": "Formato",
+          "value": "RGB y RGBA con transparencias",
+          "note": "Resultados de edición y generación"
+        }
+      ],
+      "availability": {
+        "status": "Pesos descargables desde el 20 de septiembre de 2026, sujetos a Qwen Research License.",
+        "platforms": [
+          "Hugging Face y ModelScope",
+          "Integraciones en Diffusers y ComfyUI documentadas desde el lanzamiento"
+        ],
+        "regions": [],
+        "requirements": [
+          "Revisar acuerdo de licencia y requisitos de hardware"
+        ],
+        "notes": [
+          "APIs Pro y Turbo: evolución posterior documentada el 9 de octubre, no modalidad original del 20 de septiembre."
+        ]
+      },
+      "finalSummary": "La apertura de Qwen-Image-2.1 el 20 de septiembre agrega una referencia importante a la historia de IA visual: un modelo descargable que unifica creación y edición, con transparencias y hasta diez referencias. El impacto concreto requiere medir resultados y coste de operación, y la licencia Qwen Research impide suponer permisos irrestrictos. Esta incorporación reabre la fecha histórica del Gazette como cobertura parcial hasta completar el resto de la auditoría por actores y categorías."
+    },
+    {
       "id": "anthropic-new-model-ipo-talks-reuters-sep19",
       "eventKey": "anthropic-new-model-ipo-talks-reuters-sep19",
       "date": "2026-09-19",
@@ -25274,8 +25422,10 @@
     },
     {
       "date": "2026-09-20",
-      "status": "pending",
-      "verifiedArticles": 0
+      "status": "partial",
+      "verifiedArticles": 1,
+      "reviewedAt": "2026-10-11",
+      "audit": "evidence-qwen-image-2-1-2026-09-20.md"
     },
     {
       "date": "2026-09-21",

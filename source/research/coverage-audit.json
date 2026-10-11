@@ -453,23 +453,29 @@
     },
     {
       "date": "2026-09-20",
-      "archiveStatus": "pending",
-      "verifiedArticles": 0,
+      "archiveStatus": "partial",
+      "verifiedArticles": 1,
       "auditMode": "pending-backbone-audit",
-      "reviewedSourceIds": [],
-      "reviewedCategories": [],
-      "openDiscoveryPerformed": false,
+      "reviewedSourceIds": [
+        "qwen-blog"
+      ],
+      "reviewedCategories": [
+        "image-video",
+        "models",
+        "open-source"
+      ],
+      "openDiscoveryPerformed": true,
       "reversePassPerformed": false,
       "candidateStats": {
-        "found": null,
-        "published": 0,
+        "found": 1,
+        "published": 1,
         "discarded": null,
         "unresolved": null
       },
-      "auditDocument": null,
-      "reviewedAt": null,
+      "auditDocument": "docs/evidence-qwen-image-2-1-2026-09-20.md",
+      "reviewedAt": "2026-10-11",
       "backboneReauditRequired": false,
-      "notes": "Pendiente de completar con source registry + discovery abierto + pasada inversa."
+      "notes": "Se detectó y publicó Qwen-Image-2.1 del 20 Sep mediante discovery abierto y fuentes primarias. La fecha permanece partial hasta barrido completo de registro oficial, candidatos y segunda pasada inversa. No inferir ausencia de otros lanzamientos."
     },
     {
       "date": "2026-09-21",
