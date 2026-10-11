@@ -3,6 +3,17 @@ export function filterArticles(articles, { query = '', company = 'Todas', month 
   const words = normalize(query).trim().split(/\s+/).filter(Boolean);
   return articles.filter(a => (company === 'Todas' || a.company === company) && (month === 'all' || a.date.startsWith(month)) && (!day || a.date === day) && (topic === 'Todos' || a.tags.includes(topic)) && words.every(w => normalize([a.title, a.summary, a.company, a.product || '', ...a.tags].join(' ')).includes(w)));
 }
+/** Rank every available company or topic without losing uncommon actors. */
+export function rankFacets(articles, kind = 'company') {
+ const counts=new Map();
+ for(const article of articles) {
+  const values=kind==='tags'?(article.tags||[]):[article.company];
+  for(const value of values) if(typeof value==='string'&&value.trim())
+   counts.set(value,(counts.get(value)||0)+1);
+ }
+ return [...counts].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],'es'))
+  .map(([value,count])=>({value,count}));
+}
 export const sortArticles = articles => [...articles].sort((a,b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
 export const monthLabel = month => new Intl.DateTimeFormat('es-CL',{month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(month+'-15T12:00:00Z'));
 export const dateLabel = (date, short = false) => new Intl.DateTimeFormat('es-CL', {day:'numeric', month:short ? 'short' : 'long', year:'numeric', timeZone:'UTC'}).format(new Date(date + 'T12:00:00Z'));

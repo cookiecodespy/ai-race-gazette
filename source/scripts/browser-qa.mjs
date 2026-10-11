@@ -26,6 +26,20 @@ assert.ok(newsRequests.some(u=>u.includes('/data/news-index.json')),'Home must l
 assert.equal(newsRequests.some(u=>u.includes('/data/news.json')),false,'Home must not load full archive');
 await page.evaluate(()=>document.fonts.ready);
 assert.equal(await page.locator('.news-cover').count(),Math.min(12,data.articles.length));
+const companyChoices=[...new Set(data.articles.map(a=>a.company))],topicChoices=[...new Set(data.articles.flatMap(a=>a.tags))];
+assert.ok(companyChoices.length>20&&topicChoices.length>20,'Validate long-tail facet fixture');
+assert.ok((await page.locator('.category-chips .category-chip').count())<=13,'Header must not render hundreds of filter buttons');
+assert.equal(await page.locator('select[aria-label="Seleccionar compañía"] option').count(),companyChoices.length+1);
+assert.equal(await page.locator('select[aria-label="Seleccionar tema"] option').count(),topicChoices.length+1);
+const rareCompany=companyChoices.find(c=>!['OpenAI','Google','Anthropic','Microsoft','Google Research','Waymo'].includes(c));
+assert.ok(rareCompany);
+await page.getByLabel('Seleccionar compañía').selectOption(rareCompany);
+assert.match(await page.locator('.results-meta').textContent(),new RegExp('^'+data.articles.filter(a=>a.company===rareCompany).length+' noticias?'));
+await page.getByLabel('Seleccionar compañía').selectOption('Todas');
+const rareTopic=topicChoices.find(t=>!['Agentes','Modelos','Investigación','Seguridad','Infraestructura','Desarrollo'].includes(t));
+await page.getByLabel('Seleccionar tema').selectOption(rareTopic);
+assert.match(await page.locator('.results-meta').textContent(),new RegExp('^'+data.articles.filter(a=>a.tags.includes(rareTopic)).length+' noticias?'));
+await page.getByLabel('Seleccionar tema').selectOption('Todos');
 
 const positions=await page.evaluate(()=>['.archive-masthead','.project-intro','.archive-controls','.coverage-calendar','.archive-results'].map(s=>document.querySelector(s).getBoundingClientRect().top));
 assert.deepEqual(positions,[...positions].sort((a,b)=>a-b));
