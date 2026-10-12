@@ -1,8 +1,187 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-12T07:43:33.000Z",
+  "updatedAt": "2026-10-12T11:17:34.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "tencent-proposed-usd-cny-bonds-ai-capex-2026",
+      "eventKey": "tencent-proposed-usd-cny-bonds-ai-capex-2026-10-12",
+      "articleVersion": 2,
+      "date": "2026-10-12",
+      "announcedAt": "2026-10-12",
+      "coveredAt": "2026-10-12",
+      "verifiedAt": "2026-10-12",
+      "company": "Tencent",
+      "product": "Propuesta de bonos internacionales y gasto de capital 2026",
+      "title": "Tencent propone nuevos bonos mientras su gasto en infraestructura supera los 96.000 millones de yuanes",
+      "summary": "Tencent confirmó una propuesta de emisión internacional de deuda sin acuerdo vinculante. Reuters reporta un objetivo de al menos US$4.500 millones, mientras un documento corporativo cifra el gasto de capital del primer semestre en 96.300 millones de yuanes; no todo corresponde a IA.",
+      "tags": [
+        "Tencent",
+        "Financiación",
+        "Infraestructura",
+        "Centros de datos",
+        "China",
+        "IA",
+        "Bonos"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Ilustración conceptual de infraestructura tecnológica y conexiones globales; no representa una instalación real de Tencent.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial panorámico 3:2 de un centro de datos conceptual y un puente financiero hecho de bonos y circuitos, para representar la financiación de infraestructura de Tencent. Tinta sepia, papel envejecido, estilo periódico antiguo. No usar logotipos inventados, cifras impresas en el arte, fotografías simuladas, gráficos bursátiles falsos ni edificios reconocibles como sedes reales.",
+      "source": {
+        "name": "Tencent · Propuesta de emisión de notas y resumen de información financiera (HKEX, 12 oct 2026)",
+        "url": "https://www.tencent.com/wp-content/uploads/2026/10/C700_Launch-Announcement.pdf",
+        "publishedAt": "2026-10-12"
+      },
+      "relatedSources": [
+        {
+          "name": "Reuters · Tencent eyes $4.5 billion bond sale amid AI funding push",
+          "url": "https://www.reuters.com/world/asia-pacific/tencent-plans-dollar-offshore-yuan-bond-sale-under-note-programme-2026-10-12/",
+          "publishedAt": "2026-10-12"
+        },
+        {
+          "name": "Tencent · Portal oficial de inversores y anuncios",
+          "url": "https://www.tencent.com/zh-cn/investors/"
+        },
+        {
+          "name": "Tencent · Resultados trimestrales 2026",
+          "url": "https://www.tencent.com/investors/results/"
+        }
+      ],
+      "body": [
+        "El 12 de octubre de 2026, Tencent anunció a la Bolsa de Hong Kong una propuesta para emitir nuevos bonos internacionales bajo su programa global de notas a medio plazo. El aviso corporativo confirma la intención de ofrecer deuda a determinados inversores profesionales, pero advierte que todavía no se ha firmado ningún acuerdo vinculante. La operación puede no materializarse. Su interés para la carrera de la inteligencia artificial reside en el contexto: Tencent está ampliando con rapidez su gasto en infraestructura tecnológica y compite por capacidad de cómputo, pero la emisión no constituye por sí sola un lanzamiento de modelo ni una inversión en IA con destino exclusivo ya demostrado.",
+        "Reuters informó el mismo día, citando a una persona con conocimiento directo de los planes, que la empresa pretende obtener al menos 4.500 millones de dólares. Esa cifra procede del reporte periodístico, no de un importe definitivo publicado por Tencent. La fuente añadió que el tamaño final dependerá de las condiciones del mercado y del interés de los compradores. La diferencia es sustancial: una propuesta de financiación y una colocación cerrada son etapas distintas. Hasta conocer un anuncio de fijación de precio, no debe registrarse el monto como capital ya captado, ni proyectarse como presupuesto de entrenamiento de modelos.",
+        "El documento oficial establece que los títulos podrán emitirse en series, en diferentes fechas y monedas, dentro del programa existente. Tencent señala que la oferta se dirige a inversores profesionales y que no constituye una venta pública general en Hong Kong, Estados Unidos u otras jurisdicciones. También identifica a JPMorgan, ICBC Asia, Agricultural Bank of China, Bank of China, Bank of Communications, China Construction Bank, CITIC Securities, Goldman Sachs, HSBC y Morgan Stanley como coordinadores globales conjuntos. Su presencia refleja la preparación financiera de la transacción, no una garantía de que se cierre.",
+        "Según una hoja de términos revisada por Reuters, la estructura que se estudia incluye bonos en dólares con vencimientos a diez y veinte años y bonos en yuanes offshore a diez y treinta años. El medio indica que serían títulos sénior no garantizados. Tencent no había fijado aún el tamaño de cada tramo. Tampoco hay cupones, rentabilidades de colocación, precio de emisión ni calendario definitivo anunciados en el comunicado. Los plazos mencionados son una estructura potencial reportada, susceptible de modificarse. No deben confundirse con las condiciones de los bonos que la empresa emitió anteriormente.",
+        "El dato más tangible sobre la expansión de infraestructura procede de los estados financieros adjuntos al anuncio. Tencent declara 96.300 millones de yuanes de gasto de capital en el primer semestre de 2026, frente a 45.900 millones en el mismo periodo de 2025. El desembolso más que se duplicó. La definición contable que ofrece la empresa comprende equipos y programas informáticos, centros de datos, derechos de uso de suelo, complejos de oficinas y propiedad intelectual distinta de contenidos audiovisuales. Por tanto, llamar a los 96.300 millones «gasto exclusivo en inteligencia artificial» sería una atribución incorrecta.",
+        "El mismo informe describe la IA generativa y los agentes como prioridades de innovación aplicadas a juegos, marketing y servicios empresariales, además de soluciones ofrecidas a clientes externos. Tencent afirma que seguirá invirtiendo en infraestructura de IA y en la integración de estas capacidades en sus productos. Esa declaración explica por qué la financiación resulta relevante para observar la competencia tecnológica, pero no especifica qué porcentaje de la emisión propuesta se destinará a GPU, servidores, centros de datos, modelos Hunyuan u otros proyectos. No existe una asignación de fondos verificable por producto en el anuncio de octubre.",
+        "El antecedente inmediato es una emisión de junio de 2026. Reuters recuerda que Tencent captó aproximadamente 4.660 millones de dólares en bonos entonces; la web de inversores de la compañía registra la fijación de precio de tramos en dólares y yuanes el 10 de junio. Esa operación anterior sí alcanzó una etapa más avanzada que la propuesta actual. Compararlas ayuda a dimensionar el posible regreso de Tencent al mercado de deuda, pero no permite inferir que las tasas, vencimientos, demanda o condiciones del nuevo lote serán idénticos.",
+        "Para evaluar el tamaño del esfuerzo inversor hay que separar gasto de capital, financiación y retorno económico. El gasto de capital registra desembolsos en activos e infraestructura; una emisión de deuda, si se completa, proporciona recursos financieros a cambio de obligaciones futuras. Una misma empresa puede financiar inversiones con caja, flujos operativos, depósitos o endeudamiento. El anuncio no demuestra una relación uno a uno entre el dinero de los bonos y cada centro de datos. Tampoco revela cuánta capacidad de entrenamiento o inferencia adicional resultará disponible para desarrolladores, ni una fecha de entrega de nuevos servicios.",
+        "Reuters sitúa la propuesta en una oleada de financiación de compañías tecnológicas y cita emisiones recientes de SoftBank y Z.ai. También señala que los compradores de deuda son más selectivos cuando suben los rendimientos y los tipos de interés. El coste de financiar centros de datos puede importar tanto como el precio de los chips: proyectos de varios años deben sostener pagos, mantenimiento, energía y renovación de equipos. Sin embargo, el reportaje no prueba que Tencent enfrente una dificultad de liquidez. De hecho, el propio documento corporativo sostiene que sus recursos actuales deberían cubrir las necesidades previstas de operación y capital durante al menos doce meses.",
+        "Análisis Gazette: la novedad muestra cómo la carrera de IA se extiende desde los modelos hacia el balance de las empresas. La competencia por infraestructura exige capital a largo plazo y expone a los participantes a los ciclos del crédito. Tencent combina una base amplia de servicios digitales con nuevas apuestas de IA, lo que puede distribuir costes entre negocios, aunque no garantiza rentabilidad de cada iniciativa. La lectura prudente es que existe una propuesta de financiación material junto con un gasto tecnológico creciente; todavía no se ha anunciado una asignación concreta de deuda a IA ni un resultado de productividad atribuible a ella.",
+        "Para desarrolladores y empresas usuarias no cambia hoy el acceso a APIs, regiones, licencias, precios por token o disponibilidad de modelos. Quien utilice servicios de Tencent Cloud o herramientas basadas en Hunyuan debe consultar anuncios de producto independientes antes de asumir más capacidad o nuevas tarifas. Para analistas e inversores, los hitos verificables serán la fijación de los cupones y montos, el cierre de la colocación y posteriores desgloses de inversión. Conviene vigilar el coste de capital y los flujos de caja sin presentar esta cobertura como recomendación de inversión.",
+        "La pregunta abierta principal es si la operación llegará a completarse y con qué condiciones. También falta conocer el destino concreto de los fondos, el reparto por divisas y vencimientos y la proporción del gasto de capital que corresponde estrictamente a IA. El próximo documento de colocación podría aclarar algunos puntos, pero no debe suponerse que lo hará. En la cronología del Gazette, el hecho confirmado del 12 de octubre es una propuesta de emisión de notas y la divulgación de cifras financieras; la cifra de al menos 4.500 millones de dólares y los cuatro tramos siguen atribuidos al reporte de Reuters."
+      ],
+      "keyPoints": [
+        "La emisión está propuesta, no cerrada; Reuters atribuye a una fuente el objetivo de al menos US$4.500 millones.",
+        "El gasto de capital semestral fue de 96.300 millones de yuanes, pero abarca más que IA.",
+        "No hay cupones ni tramos definitivos, y no se anunció un nuevo servicio de IA."
+      ],
+      "quickTakeaways": [
+        "Tencent anunció el 12 de octubre una oferta potencial de notas a inversores profesionales.",
+        "Reuters reporta un objetivo de al menos US$4.500 millones, sin confirmación de monto final.",
+        "El gasto de capital creció de 45.900 a 96.300 millones de yuanes interanuales en el primer semestre.",
+        "No existe un destino exclusivo a IA documentado para los bonos propuestos.",
+        "Vencimientos y monedas citados por Reuters siguen sujetos a cambios."
+      ],
+      "executiveSummary": "Tencent confirmó una propuesta de emisión de deuda internacional dentro de su programa de notas, pero aclaró que no existe acuerdo vinculante y que la operación puede no realizarse. Reuters reporta que la compañía busca al menos US$4.500 millones mediante títulos en dólares y yuanes offshore, con condiciones aún no definitivas.\n\nEl documento corporativo adjunto registra 96.300 millones de yuanes de gasto de capital en el primer semestre de 2026, más del doble que un año antes. Esa partida incluye infraestructura informática y otros activos, por lo que no debe presentarse íntegramente como inversión en IA.",
+      "finalSummary": "La propuesta de bonos de Tencent es un acontecimiento financiero material en la expansión de infraestructura tecnológica, pero todavía no una colocación cerrada ni una financiación exclusivamente asignada a IA. El monto reportado, las condiciones definitivas y la distribución de los fondos requieren nuevas confirmaciones.",
+      "analysis": "Análisis Gazette: la competencia por IA se está convirtiendo también en una competencia de acceso a capital de largo plazo. La capacidad de financiar infraestructura no demuestra por sí sola la rentabilidad de modelos o aplicaciones.",
+      "watch": "Fijación de precio y monto final de la deuda, cierre de la colocación, distribución de fondos, coste de financiación y desgloses futuros del gasto de capital ligado específicamente a IA.",
+      "technicalDetails": [
+        {
+          "label": "Gasto de capital, primer semestre 2026",
+          "value": "96.300 millones de yuanes",
+          "note": "Incluye informática, centros de datos y otros activos; no solo IA."
+        },
+        {
+          "label": "Gasto de capital, primer semestre 2025",
+          "value": "45.900 millones de yuanes",
+          "note": "Comparativo de Tencent."
+        },
+        {
+          "label": "Tamaño potencial",
+          "value": "Al menos US$4.500 millones",
+          "note": "Reporte de Reuters atribuido a una fuente, sin monto final oficial."
+        },
+        {
+          "label": "Tramos considerados",
+          "value": "USD a 10 y 20 años; CNH a 10 y 30 años",
+          "note": "Según hoja de términos revisada por Reuters; no son condiciones definitivas."
+        }
+      ],
+      "availability": {
+        "status": "Emisión propuesta, no completada; sin acuerdo vinculante.",
+        "platforms": [],
+        "regions": [
+          "Mercados internacionales para inversores profesionales"
+        ],
+        "requirements": [
+          "Sujeta a leyes aplicables y demanda de inversores."
+        ],
+        "notes": [
+          "No se trata de un producto comercial ni de una oferta pública general.",
+          "No cambia la disponibilidad de APIs o modelos."
+        ]
+      },
+      "timeline": [
+        {
+          "date": "2026-06-10",
+          "label": "Tencent anuncia la fijación de precio de una emisión previa de bonos."
+        },
+        {
+          "date": "2026-10-12",
+          "label": "Tencent presenta propuesta de nueva emisión y resumen financiero a HKEX."
+        }
+      ],
+      "limitations": [
+        "No hay acuerdo vinculante ni garantía de ejecución.",
+        "Importe de US$4.500 millones y vencimientos atribuidos a fuentes de Reuters, no a condiciones finales oficiales.",
+        "No se anunciaron cupón, rendimiento, tamaño de tramos o fecha de colocación.",
+        "No existe desglose que asigne la totalidad de 96.300 millones de yuanes a IA.",
+        "No hay distribución verificada del eventual producto de la emisión entre proyectos de IA."
+      ],
+      "practicalAdvice": [
+        "Separar emisión propuesta, precio fijado y colocación completada al evaluar el anuncio.",
+        "No convertir el gasto de capital total en gasto de IA sin desglose.",
+        "Para usuarios de Tencent Cloud, comprobar novedades de servicios y tarifas en documentación de producto independiente."
+      ],
+      "usefulFacts": [
+        "Tencent registró 96.300 millones de yuanes de gasto de capital en enero–junio de 2026.",
+        "El comunicado oficial del 12 de octubre se dirige a inversores profesionales y no confirma un acuerdo vinculante.",
+        "Reuters compara la propuesta con una emisión de aproximadamente US$4.660 millones realizada en junio."
+      ],
+      "sections": [
+        {
+          "heading": "Una emisión propuesta, no una colocación completada",
+          "kind": "report",
+          "paragraphs": [
+            "El 12 de octubre de 2026, Tencent anunció a la Bolsa de Hong Kong una propuesta para emitir nuevos bonos internacionales bajo su programa global de notas a medio plazo. El aviso corporativo confirma la intención de ofrecer deuda a determinados inversores profesionales, pero advierte que todavía no se ha firmado ningún acuerdo vinculante. La operación puede no materializarse. Su interés para la carrera de la inteligencia artificial reside en el contexto: Tencent está ampliando con rapidez su gasto en infraestructura tecnológica y compite por capacidad de cómputo, pero la emisión no constituye por sí sola un lanzamiento de modelo ni una inversión en IA con destino exclusivo ya demostrado.",
+            "Reuters informó el mismo día, citando a una persona con conocimiento directo de los planes, que la empresa pretende obtener al menos 4.500 millones de dólares. Esa cifra procede del reporte periodístico, no de un importe definitivo publicado por Tencent. La fuente añadió que el tamaño final dependerá de las condiciones del mercado y del interés de los compradores. La diferencia es sustancial: una propuesta de financiación y una colocación cerrada son etapas distintas. Hasta conocer un anuncio de fijación de precio, no debe registrarse el monto como capital ya captado, ni proyectarse como presupuesto de entrenamiento de modelos.",
+            "El documento oficial establece que los títulos podrán emitirse en series, en diferentes fechas y monedas, dentro del programa existente. Tencent señala que la oferta se dirige a inversores profesionales y que no constituye una venta pública general en Hong Kong, Estados Unidos u otras jurisdicciones. También identifica a JPMorgan, ICBC Asia, Agricultural Bank of China, Bank of China, Bank of Communications, China Construction Bank, CITIC Securities, Goldman Sachs, HSBC y Morgan Stanley como coordinadores globales conjuntos. Su presencia refleja la preparación financiera de la transacción, no una garantía de que se cierre."
+          ]
+        },
+        {
+          "heading": "Estructura de bonos y gasto tecnológico",
+          "kind": "technical",
+          "paragraphs": [
+            "Según una hoja de términos revisada por Reuters, la estructura que se estudia incluye bonos en dólares con vencimientos a diez y veinte años y bonos en yuanes offshore a diez y treinta años. El medio indica que serían títulos sénior no garantizados. Tencent no había fijado aún el tamaño de cada tramo. Tampoco hay cupones, rentabilidades de colocación, precio de emisión ni calendario definitivo anunciados en el comunicado. Los plazos mencionados son una estructura potencial reportada, susceptible de modificarse. No deben confundirse con las condiciones de los bonos que la empresa emitió anteriormente.",
+            "El dato más tangible sobre la expansión de infraestructura procede de los estados financieros adjuntos al anuncio. Tencent declara 96.300 millones de yuanes de gasto de capital en el primer semestre de 2026, frente a 45.900 millones en el mismo periodo de 2025. El desembolso más que se duplicó. La definición contable que ofrece la empresa comprende equipos y programas informáticos, centros de datos, derechos de uso de suelo, complejos de oficinas y propiedad intelectual distinta de contenidos audiovisuales. Por tanto, llamar a los 96.300 millones «gasto exclusivo en inteligencia artificial» sería una atribución incorrecta.",
+            "El mismo informe describe la IA generativa y los agentes como prioridades de innovación aplicadas a juegos, marketing y servicios empresariales, además de soluciones ofrecidas a clientes externos. Tencent afirma que seguirá invirtiendo en infraestructura de IA y en la integración de estas capacidades en sus productos. Esa declaración explica por qué la financiación resulta relevante para observar la competencia tecnológica, pero no especifica qué porcentaje de la emisión propuesta se destinará a GPU, servidores, centros de datos, modelos Hunyuan u otros proyectos. No existe una asignación de fondos verificable por producto en el anuncio de octubre."
+          ]
+        },
+        {
+          "heading": "Antecedentes y financiación de infraestructura",
+          "kind": "context",
+          "paragraphs": [
+            "El antecedente inmediato es una emisión de junio de 2026. Reuters recuerda que Tencent captó aproximadamente 4.660 millones de dólares en bonos entonces; la web de inversores de la compañía registra la fijación de precio de tramos en dólares y yuanes el 10 de junio. Esa operación anterior sí alcanzó una etapa más avanzada que la propuesta actual. Compararlas ayuda a dimensionar el posible regreso de Tencent al mercado de deuda, pero no permite inferir que las tasas, vencimientos, demanda o condiciones del nuevo lote serán idénticos.",
+            "Para evaluar el tamaño del esfuerzo inversor hay que separar gasto de capital, financiación y retorno económico. El gasto de capital registra desembolsos en activos e infraestructura; una emisión de deuda, si se completa, proporciona recursos financieros a cambio de obligaciones futuras. Una misma empresa puede financiar inversiones con caja, flujos operativos, depósitos o endeudamiento. El anuncio no demuestra una relación uno a uno entre el dinero de los bonos y cada centro de datos. Tampoco revela cuánta capacidad de entrenamiento o inferencia adicional resultará disponible para desarrolladores, ni una fecha de entrega de nuevos servicios.",
+            "Reuters sitúa la propuesta en una oleada de financiación de compañías tecnológicas y cita emisiones recientes de SoftBank y Z.ai. También señala que los compradores de deuda son más selectivos cuando suben los rendimientos y los tipos de interés. El coste de financiar centros de datos puede importar tanto como el precio de los chips: proyectos de varios años deben sostener pagos, mantenimiento, energía y renovación de equipos. Sin embargo, el reportaje no prueba que Tencent enfrente una dificultad de liquidez. De hecho, el propio documento corporativo sostiene que sus recursos actuales deberían cubrir las necesidades previstas de operación y capital durante al menos doce meses."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette, utilidad y preguntas abiertas",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la novedad muestra cómo la carrera de IA se extiende desde los modelos hacia el balance de las empresas. La competencia por infraestructura exige capital a largo plazo y expone a los participantes a los ciclos del crédito. Tencent combina una base amplia de servicios digitales con nuevas apuestas de IA, lo que puede distribuir costes entre negocios, aunque no garantiza rentabilidad de cada iniciativa. La lectura prudente es que existe una propuesta de financiación material junto con un gasto tecnológico creciente; todavía no se ha anunciado una asignación concreta de deuda a IA ni un resultado de productividad atribuible a ella.",
+            "Para desarrolladores y empresas usuarias no cambia hoy el acceso a APIs, regiones, licencias, precios por token o disponibilidad de modelos. Quien utilice servicios de Tencent Cloud o herramientas basadas en Hunyuan debe consultar anuncios de producto independientes antes de asumir más capacidad o nuevas tarifas. Para analistas e inversores, los hitos verificables serán la fijación de los cupones y montos, el cierre de la colocación y posteriores desgloses de inversión. Conviene vigilar el coste de capital y los flujos de caja sin presentar esta cobertura como recomendación de inversión.",
+            "La pregunta abierta principal es si la operación llegará a completarse y con qué condiciones. También falta conocer el destino concreto de los fondos, el reparto por divisas y vencimientos y la proporción del gasto de capital que corresponde estrictamente a IA. El próximo documento de colocación podría aclarar algunos puntos, pero no debe suponerse que lo hará. En la cronología del Gazette, el hecho confirmado del 12 de octubre es una propuesta de emisión de notas y la divulgación de cifras financieras; la cifra de al menos 4.500 millones de dólares y los cuatro tramos siguen atribuidos al reporte de Reuters."
+          ]
+        }
+      ]
+    },
     {
       "id": "imf-ai-investment-global-growth-asia-bangkok-2026",
       "eventKey": "imf-georgieva-bangkok-ai-investment-global-growth-asia-2026-10-12",
@@ -27107,7 +27286,7 @@
     {
       "date": "2026-10-12",
       "status": "partial",
-      "verifiedArticles": 1
+      "verifiedArticles": 2
     }
   ]
 }
