@@ -1,8 +1,173 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-12T04:23:49.000Z",
+  "updatedAt": "2026-10-12T07:43:33.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "imf-ai-investment-global-growth-asia-bangkok-2026",
+      "eventKey": "imf-georgieva-bangkok-ai-investment-global-growth-asia-2026-10-12",
+      "articleVersion": 2,
+      "date": "2026-10-12",
+      "announcedAt": "2026-10-12",
+      "coveredAt": "2026-10-12",
+      "verifiedAt": "2026-10-12",
+      "company": "Fondo Monetario Internacional",
+      "product": "Perspectivas de inversión en IA y crecimiento · Bangkok 2026",
+      "title": "El FMI vincula el auge inversor de la IA con el crecimiento mundial y anticipa beneficios desiguales en Asia",
+      "summary": "Kristalina Georgieva atribuye a la inversión en infraestructura de IA parte de la resistencia del crecimiento mundial cercano al 3% y plantea impulsos potenciales de 0,5–1 punto en Asia avanzada y 0,2–0,8 en Asia emergente.",
+      "tags": [
+        "FMI",
+        "Economía",
+        "Infraestructura",
+        "Inversión",
+        "Asia",
+        "Empleo",
+        "Análisis"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado conceptual de redes mundiales de infraestructura; no representa una sesión real del FMI.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial horizontal 3:2 de un globo con rutas de semiconductores asiáticos, centros de datos y una balanza económica. Estética tinta sepia de periódico antiguo. Evitar logotipos falsos, porcentajes inventados sobre mapas, interfaces ficticias o apariencia de fotografía de la conferencia.",
+      "source": {
+        "name": "Reuters · IMF says AI investment keeps global growth around 3%, with major Asia benefits",
+        "url": "https://www.reuters.com/world/china/imf-says-ai-investment-keeps-global-growth-around-3-with-major-asia-benefits-2026-10-12/",
+        "publishedAt": "2026-10-12"
+      },
+      "relatedSources": [
+        {
+          "name": "FMI · Shaping Asia’s Future (marzo de 2026)",
+          "url": "https://www.imf.org/en/news/articles/2026/03/05/sp030526-shaping-asias-future",
+          "publishedAt": "2026-03-05"
+        },
+        {
+          "name": "FMI · AI: Deployment and Disruption (informe anual 2026)",
+          "url": "https://www.imf.org/annual-report/2026/in-focus/ai-deployment-and-disruption/"
+        },
+        {
+          "name": "Reuters · Singapore's President warns of AI's risk to employment for fresh graduates",
+          "url": "https://www.reuters.com/world/asia-pacific/singapores-president-warns-ais-risk-employment-fresh-graduates-2026-10-12/",
+          "publishedAt": "2026-10-12"
+        }
+      ],
+      "body": [
+        "El 12 de octubre de 2026, durante las reuniones anuales del Fondo Monetario Internacional (FMI) y el Banco Mundial en Bangkok, Kristalina Georgieva sostuvo que la fuerte inversión en infraestructura de inteligencia artificial ayuda a mantener el crecimiento económico mundial cerca del 3%. Reuters recogió sus declaraciones, realizadas en un contexto de presiones sobre el suministro de energía. La novedad es una evaluación macroeconómica del papel del sector, no el lanzamiento de un modelo, producto, chip o servicio comercial.",
+        "El porcentaje exige precisión: Reuters recordó que el FMI ya había previsto en julio un crecimiento global del 3% para 2026. Georgieva no dijo que la inteligencia artificial agregara tres puntos porcentuales al producto mundial. Su afirmación fue que la inversión tecnológica es uno de los factores que sostienen esa tasa en medio de otras perturbaciones. Tampoco publicó durante esa intervención una descomposición que permita atribuir exactamente a la IA una fracción del crecimiento. Una revisión de las perspectivas económicas estaba prevista para los días siguientes.",
+        "Georgieva describió el auge como un choque de demanda y de inversión. Los centros de datos necesitan aceleradores, memoria, redes, refrigeración, electricidad, construcción y personal. El gasto en esas actividades genera actividad económica antes de que los usuarios finales demuestren una mejora de productividad sostenida. Es una distinción crucial: comprar capacidad de cómputo no equivale automáticamente a que las aplicaciones de IA produzcan beneficios financieros o aumenten el bienestar de toda la población.",
+        "En Asia, la directora del FMI planteó impactos potenciales especialmente importantes. Según Reuters, estimó que el impulso podría aportar entre 0,5 y 1 punto porcentual al crecimiento de economías asiáticas avanzadas y entre 0,2 y 0,8 puntos a economías emergentes de la región. Son rangos prospectivos, no resultados ya medidos para países individuales. Tampoco deben sumarse al 3% global: corresponden a universos geográficos y supuestos distintos. Sin tablas metodológicas publicadas junto al discurso, sería incorrecto presentar un ranking de ganadores.",
+        "Bangkok ofrece un contexto revelador. Georgieva destacó que países asiáticos como Tailandia participan en la cadena física de suministro de infraestructura, mientras que Estados Unidos, China e India son actores importantes de la cadena de valor de la IA. Diseñar modelos, fabricar componentes, ensamblar servidores y operar centros de datos son actividades diferentes; los efectos sobre empleo, márgenes y productividad también lo son. Un aumento de demanda mundial no garantiza beneficios equivalentes para cada país ni para todos los trabajadores de un mismo sector.",
+        "El FMI ya había analizado el potencial asiático de la IA. En un discurso oficial de marzo de 2026, Georgieva mencionó un posible impulso al crecimiento anual de la región de hasta 0,8 puntos porcentuales, condicionado por productividad y mercado laboral. Esa referencia permite contextualizar las declaraciones de octubre, pero no prueba que los intervalos nuevos sean una actualización directa del mismo modelo económico. Para comparar correctamente las estimaciones se necesitarían horizontes, supuestos y grupos de países definidos de manera consistente.",
+        "El crecimiento económico agregado convive con riesgos laborales. Georgieva reiteró que la IA podría afectar alrededor del 40% de los empleos del mundo, mediante complementación, transformación o sustitución de determinadas tareas. No significa que el 40% de las personas vaya a perder su trabajo. Reuters también recogió advertencias sobre la reducción de funciones rutinarias y los cambios en las habilidades demandadas. Las consecuencias dependerán de la velocidad de adopción, la formación y las políticas de transición.",
+        "En el mismo encuentro, el presidente de Singapur, Tharman Shanmugaratnam, advirtió que la demanda de empleos iniciales para recién graduados se debilita en sectores expuestos a la IA. Reuters presentó esa observación como una alerta que exige respuestas públicas, no como una tasa mundial demostrada. El presidente del Banco Mundial, Ajay Banga, destacó por su parte la utilidad de aplicaciones de IA más pequeñas para agricultura, salud y educación. Estas intervenciones muestran que infraestructura, productividad y distribución del trabajo deben analizarse juntas.",
+        "Análisis Gazette: el avance de los modelos depende cada vez más de una economía física de semiconductores, energía y capital. La construcción de centros de datos puede impulsar producción y empleo en el corto plazo, aunque el rendimiento final de esas inversiones tarde años en conocerse. El informe anual del FMI también advierte sobre financiación concentrada y posibles correcciones si los beneficios esperados de la IA no se materializan. La evaluación del organismo no debe confundirse con una recomendación de comprar acciones de fabricantes concretos.",
+        "Para empresas que evalúan proyectos de IA, la consecuencia práctica no es extrapolar una cifra macroeconómica a sus presupuestos. Conviene medir coste por tarea, ahorro real, calidad, dependencia de proveedores y preparación de los trabajadores. Para responsables públicos importan infraestructura digital, formación, energía y salvaguardas. No hay nuevos precios, licencias, límites de API o regiones de disponibilidad asociados a estas declaraciones: el asunto es económico y de política pública, no comercial.",
+        "Las señales a seguir son la próxima actualización oficial de las perspectivas del FMI, la metodología detrás de los intervalos asiáticos, los datos de inversión real y la evolución de la productividad fuera del sector tecnológico. También importará observar si la demanda de trabajadores jóvenes cambia y cómo se distribuyen las ganancias. La conclusión verificable por ahora es que Georgieva atribuye a la inversión en infraestructura de IA un papel importante en la resistencia del crecimiento mundial, mientras reconoce beneficios desiguales y desafíos laborales."
+      ],
+      "keyPoints": [
+        "El 3% es crecimiento mundial previsto, no el aporte exclusivo de la IA.",
+        "El FMI plantea impulsos potenciales regionales, no beneficios realizados por país.",
+        "Inversión en infraestructura y productividad futura son conceptos distintos."
+      ],
+      "quickTakeaways": [
+        "Georgieva relacionó el auge de infraestructura de IA con la resistencia del crecimiento mundial.",
+        "El pronóstico global cercano al 3% ya existía antes del discurso.",
+        "Los rangos para Asia son estimaciones potenciales atribuidas al FMI.",
+        "El empleo, la energía y la rentabilidad de las inversiones siguen siendo riesgos abiertos."
+      ],
+      "executiveSummary": "En Bangkok, el 12 de octubre, la directora del FMI afirmó que el gasto en infraestructura de IA ayuda a sostener el crecimiento mundial alrededor del 3% pese al choque energético. Reuters recogió su estimación de impactos potenciales de 0,5–1 punto porcentual en Asia avanzada y 0,2–0,8 en Asia emergente.\n\nEl 3% no es un incremento causado íntegramente por la IA, sino una previsión mundial anterior. Los rangos regionales tampoco son resultados ya materializados: falta conocer los detalles metodológicos y la próxima revisión oficial.",
+      "finalSummary": "El FMI considera que el auge inversor de la IA es un motor económico relevante, especialmente para cadenas asiáticas de infraestructura. Las estimaciones de crecimiento son potenciales y conviven con riesgos laborales, energéticos y financieros. No se anunció un nuevo producto de IA.",
+      "analysis": "Análisis Gazette: la carrera de IA se apoya en una cadena física y financiera cuyo gasto puede elevar la actividad hoy sin garantizar productividad ni retornos sostenidos mañana.",
+      "watch": "Nueva edición de perspectivas del FMI, metodología regional, gasto efectivo en infraestructura, empleo inicial y productividad observada.",
+      "technicalDetails": [
+        {
+          "label": "Crecimiento mundial 2026",
+          "value": "Cerca del 3%, previsión anterior del FMI, no contribución exclusiva de la IA."
+        },
+        {
+          "label": "Asia avanzada",
+          "value": "Posible impulso de 0,5–1 punto porcentual, según Georgieva."
+        },
+        {
+          "label": "Asia emergente",
+          "value": "Posible impulso de 0,2–0,8 puntos porcentuales, según Georgieva."
+        }
+      ],
+      "availability": {
+        "status": "Evaluación macroeconómica pública; no es un producto comercial.",
+        "platforms": [],
+        "regions": [
+          "Global",
+          "Asia"
+        ],
+        "requirements": [],
+        "notes": [
+          "No implica acceso nuevo a modelos o APIs."
+        ]
+      },
+      "limitations": [
+        "Sin desglose causal público del 3% global atribuible a IA.",
+        "Rangos asiáticos potenciales sin metodología detallada junto al despacho.",
+        "Perspectivas económicas actualizadas pendientes al momento de las declaraciones."
+      ],
+      "practicalAdvice": [
+        "Medir costes y productividad de proyectos propios en vez de extrapolar pronósticos mundiales.",
+        "Evaluar energía, dependencia de proveedores y habilidades laborales.",
+        "Esperar las tablas oficiales para comparar estimaciones regionales."
+      ],
+      "usefulFacts": [
+        "El FMI había previsto crecimiento mundial cercano al 3% en julio de 2026.",
+        "El discurso oficial de marzo de 2026 ya discutía un impulso anual de IA en Asia de hasta 0,8 puntos.",
+        "Las reuniones anuales se celebran en Bangkok."
+      ],
+      "timeline": [
+        {
+          "date": "2026-03-05",
+          "label": "Discurso oficial del FMI sobre crecimiento asiático e IA."
+        },
+        {
+          "date": "2026-10-12",
+          "label": "Georgieva evalúa el papel de la inversión en IA durante las reuniones anuales."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Crecimiento mundial e inversión en infraestructura",
+          "kind": "report",
+          "paragraphs": [
+            "El 12 de octubre de 2026, durante las reuniones anuales del Fondo Monetario Internacional (FMI) y el Banco Mundial en Bangkok, Kristalina Georgieva sostuvo que la fuerte inversión en infraestructura de inteligencia artificial ayuda a mantener el crecimiento económico mundial cerca del 3%. Reuters recogió sus declaraciones, realizadas en un contexto de presiones sobre el suministro de energía. La novedad es una evaluación macroeconómica del papel del sector, no el lanzamiento de un modelo, producto, chip o servicio comercial.",
+            "El porcentaje exige precisión: Reuters recordó que el FMI ya había previsto en julio un crecimiento global del 3% para 2026. Georgieva no dijo que la inteligencia artificial agregara tres puntos porcentuales al producto mundial. Su afirmación fue que la inversión tecnológica es uno de los factores que sostienen esa tasa en medio de otras perturbaciones. Tampoco publicó durante esa intervención una descomposición que permita atribuir exactamente a la IA una fracción del crecimiento. Una revisión de las perspectivas económicas estaba prevista para los días siguientes.",
+            "Georgieva describió el auge como un choque de demanda y de inversión. Los centros de datos necesitan aceleradores, memoria, redes, refrigeración, electricidad, construcción y personal. El gasto en esas actividades genera actividad económica antes de que los usuarios finales demuestren una mejora de productividad sostenida. Es una distinción crucial: comprar capacidad de cómputo no equivale automáticamente a que las aplicaciones de IA produzcan beneficios financieros o aumenten el bienestar de toda la población."
+          ]
+        },
+        {
+          "heading": "Asia y estimaciones de impacto",
+          "kind": "technical",
+          "paragraphs": [
+            "En Asia, la directora del FMI planteó impactos potenciales especialmente importantes. Según Reuters, estimó que el impulso podría aportar entre 0,5 y 1 punto porcentual al crecimiento de economías asiáticas avanzadas y entre 0,2 y 0,8 puntos a economías emergentes de la región. Son rangos prospectivos, no resultados ya medidos para países individuales. Tampoco deben sumarse al 3% global: corresponden a universos geográficos y supuestos distintos. Sin tablas metodológicas publicadas junto al discurso, sería incorrecto presentar un ranking de ganadores.",
+            "Bangkok ofrece un contexto revelador. Georgieva destacó que países asiáticos como Tailandia participan en la cadena física de suministro de infraestructura, mientras que Estados Unidos, China e India son actores importantes de la cadena de valor de la IA. Diseñar modelos, fabricar componentes, ensamblar servidores y operar centros de datos son actividades diferentes; los efectos sobre empleo, márgenes y productividad también lo son. Un aumento de demanda mundial no garantiza beneficios equivalentes para cada país ni para todos los trabajadores de un mismo sector.",
+            "El FMI ya había analizado el potencial asiático de la IA. En un discurso oficial de marzo de 2026, Georgieva mencionó un posible impulso al crecimiento anual de la región de hasta 0,8 puntos porcentuales, condicionado por productividad y mercado laboral. Esa referencia permite contextualizar las declaraciones de octubre, pero no prueba que los intervalos nuevos sean una actualización directa del mismo modelo económico. Para comparar correctamente las estimaciones se necesitarían horizontes, supuestos y grupos de países definidos de manera consistente."
+          ]
+        },
+        {
+          "heading": "Empleo y oportunidades de adopción",
+          "kind": "context",
+          "paragraphs": [
+            "El crecimiento económico agregado convive con riesgos laborales. Georgieva reiteró que la IA podría afectar alrededor del 40% de los empleos del mundo, mediante complementación, transformación o sustitución de determinadas tareas. No significa que el 40% de las personas vaya a perder su trabajo. Reuters también recogió advertencias sobre la reducción de funciones rutinarias y los cambios en las habilidades demandadas. Las consecuencias dependerán de la velocidad de adopción, la formación y las políticas de transición.",
+            "En el mismo encuentro, el presidente de Singapur, Tharman Shanmugaratnam, advirtió que la demanda de empleos iniciales para recién graduados se debilita en sectores expuestos a la IA. Reuters presentó esa observación como una alerta que exige respuestas públicas, no como una tasa mundial demostrada. El presidente del Banco Mundial, Ajay Banga, destacó por su parte la utilidad de aplicaciones de IA más pequeñas para agricultura, salud y educación. Estas intervenciones muestran que infraestructura, productividad y distribución del trabajo deben analizarse juntas."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y próximos indicadores",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: el avance de los modelos depende cada vez más de una economía física de semiconductores, energía y capital. La construcción de centros de datos puede impulsar producción y empleo en el corto plazo, aunque el rendimiento final de esas inversiones tarde años en conocerse. El informe anual del FMI también advierte sobre financiación concentrada y posibles correcciones si los beneficios esperados de la IA no se materializan. La evaluación del organismo no debe confundirse con una recomendación de comprar acciones de fabricantes concretos.",
+            "Para empresas que evalúan proyectos de IA, la consecuencia práctica no es extrapolar una cifra macroeconómica a sus presupuestos. Conviene medir coste por tarea, ahorro real, calidad, dependencia de proveedores y preparación de los trabajadores. Para responsables públicos importan infraestructura digital, formación, energía y salvaguardas. No hay nuevos precios, licencias, límites de API o regiones de disponibilidad asociados a estas declaraciones: el asunto es económico y de política pública, no comercial.",
+            "Las señales a seguir son la próxima actualización oficial de las perspectivas del FMI, la metodología detrás de los intervalos asiáticos, los datos de inversión real y la evolución de la productividad fuera del sector tecnológico. También importará observar si la demanda de trabajadores jóvenes cambia y cómo se distribuyen las ganancias. La conclusión verificable por ahora es que Georgieva atribuye a la inversión en infraestructura de IA un papel importante en la resistencia del crecimiento mundial, mientras reconoce beneficios desiguales y desafíos laborales."
+          ]
+        }
+      ]
+    },
     {
       "id": "yandex-vladimir-data-center-drone-shutdown-2026",
       "eventKey": "yandex-vladimir-third-data-center-drone-attack-outage-2026-10-11",
@@ -2941,6 +3106,192 @@
       ]
     },
     {
+      "id": "microsoft-365-family-premium-shared-copilot-2tb-storage-2026",
+      "eventKey": "microsoft-365-family-premium-shared-copilot-ai-usage-onedrive-2tb-2026-10-09",
+      "date": "2026-10-09",
+      "announcedAt": "2026-10-09",
+      "company": "Microsoft",
+      "product": "Microsoft 365 Family / Premium · Copilot y OneDrive",
+      "title": "Microsoft 365 Family compartirá Copilot, pero reduce OneDrive a 2 TB comunes",
+      "summary": "Microsoft anuncia en correos a clientes que permitirá compartir Copilot y una futura cuota de IA entre miembros de Family y Premium. A la vez, OneDrive pasa de hasta 6 TB individuales a 2 TB comunes; las fechas oficiales de transición presentan discrepancias.",
+      "tags": [
+        "Microsoft",
+        "Copilot",
+        "Microsoft 365",
+        "OneDrive",
+        "Suscripciones",
+        "Disponibilidad"
+      ],
+      "source": {
+        "name": "The Verge · Microsoft 365 Family subscribers will finally be able to share AI benefits",
+        "url": "https://www.theverge.com/news/1008581/microsoft-365-family-premium-shared-ai-features-storage-changes",
+        "publishedAt": "2026-10-09"
+      },
+      "relatedSources": [
+        {
+          "name": "Microsoft Support · Changes to Microsoft 365 storage",
+          "url": "https://support.microsoft.com/en-au/onedrive/changes-to-microsoft-365-storage"
+        },
+        {
+          "name": "Microsoft Support · AI credits and limits for Microsoft 365 subscriptions",
+          "url": "https://support.microsoft.com/en-us/microsoft-365-copilot/ai-credits-and-limits-for-microsoft-365-subscriptions."
+        },
+        {
+          "name": "Microsoft Support · Someone invited you to share their Microsoft 365 subscription",
+          "url": "https://support.microsoft.com/en-us/accounts-billing/subscriptions/someone-invited-you-to-share-their-microsoft-365-subscription"
+        }
+      ],
+      "keyPoints": [
+        "Copilot y los beneficios de IA podrán compartirse con hasta cinco miembros adicionales, pero el despliegue y la cuota común aún no están completamente detallados.",
+        "Family y Premium pasan a 2 TB de OneDrive compartidos, frente a un máximo anterior de 6 TB distribuidos por persona.",
+        "Las páginas oficiales discrepan entre abril y mayo de 2027 para la transición de suscripciones existentes; comprobar la renovación individual."
+      ],
+      "quickTakeaways": [
+        "Microsoft comunicó acceso familiar futuro a Copilot; su documentación actual todavía muestra restricciones al titular.",
+        "La nueva bolsa de almacenamiento es de 2 TB en Family/Premium y 5 TB en Pro.",
+        "Los archivos siguen siendo privados por cuenta aunque se comparta la capacidad.",
+        "Microsoft publica fechas de transición contradictorias en distintas páginas de soporte."
+      ],
+      "executiveSummary": "Microsoft está reconfigurando sus planes domésticos: promete compartir Copilot y el consumo de IA con los miembros de Family y Premium, pero el beneficio aún no figura como activado universalmente en la documentación de límites. En paralelo, OneDrive pasa a 2 TB comunes en esos planes, una reducción frente a los hasta 6 TB individuales anteriores. La fecha de transición para clientes existentes difiere entre documentos oficiales; conviene revisar el aviso de cada cuenta.",
+      "finalSummary": "El cambio combina una futura ampliación de acceso a Copilot con menos almacenamiento total incluido para hogares que aprovechan seis cuentas. La cuota compartida de IA, su despliegue y la fecha definitiva de renovación requieren aclaraciones; Microsoft sí describe ya el esquema de 2 TB y la privacidad de archivos por cuenta.",
+      "analysis": "Análisis Gazette: la oferta puede ganar utilidad para familias que comparten Copilot, pero pierde capacidad agregada de OneDrive. Sin cuotas de IA ni cronograma definitivo, no corresponde valorar el cambio como una mejora neta para todos los suscriptores.",
+      "watch": "Fecha de activación de Copilot para miembros, límites de uso compartido, precios de ampliación, regiones y reconciliación oficial de las fechas de renovación de abril/mayo de 2027.",
+      "technicalDetails": [
+        {
+          "label": "Family/Premium",
+          "value": "2 TB de almacenamiento compartido entre hasta seis integrantes, según soporte de Microsoft."
+        },
+        {
+          "label": "Pro",
+          "value": "5 TB de almacenamiento compartido."
+        },
+        {
+          "label": "Copilot compartido",
+          "value": "Comunicado a clientes para los próximos meses; no confirmado como activado globalmente."
+        }
+      ],
+      "availability": {
+        "status": "Almacenamiento compartido vigente para nuevas altas o cambios elegibles; Copilot compartido anunciado, pendiente de despliegue comprobado.",
+        "platforms": [
+          "Microsoft 365",
+          "OneDrive",
+          "Copilot en aplicaciones elegibles"
+        ],
+        "regions": [],
+        "requirements": [
+          "Suscripción Microsoft 365 Family o Premium elegible"
+        ],
+        "notes": [
+          "La documentación de límites de IA aún indica que los beneficios no pueden compartirse.",
+          "Las fechas de transición difieren entre páginas oficiales; consultar la renovación individual."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Microsoft 365 Premium (referencia estadounidense previa)",
+          "value": "US$19,99/mes según The Verge",
+          "note": "No es un precio nuevo ni necesariamente válido en Chile."
+        },
+        {
+          "label": "Ampliación futura de uso de IA",
+          "value": "Precio no anunciado."
+        }
+      ],
+      "limitations": [
+        "No se publicó una fecha global definitiva de activación de Copilot para miembros.",
+        "No hay cuota cuantificada de IA compartida ni tabla pública de costes por función.",
+        "Las páginas oficiales consultadas discrepan entre 1 de abril y 2 de mayo de 2027 para renovaciones existentes.",
+        "No se confirma disponibilidad regional ni bonificación transitoria para todas las cuentas."
+      ],
+      "practicalAdvice": [
+        "Revisar el consumo agregado de OneDrive de todos los miembros antes de renovar o mejorar el plan.",
+        "Consultar el correo de Microsoft y la fecha de renovación de la cuenta: las guías oficiales muestran fechas distintas.",
+        "No contratar ampliaciones de IA hasta conocer la cuota efectiva y sus precios en el país."
+      ],
+      "usefulFacts": [
+        "The Verge publicó la comunicación a suscriptores el 9 de octubre de 2026.",
+        "La guía detallada de almacenamiento indica nuevas altas y mejoras desde el 8 de octubre de 2026.",
+        "El almacenamiento se comparte, pero los archivos de cada integrante siguen privados por defecto."
+      ],
+      "articleVersion": 2,
+      "coveredAt": "2026-10-12",
+      "verifiedAt": "2026-10-12",
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual sobre inteligencia artificial y herramientas digitales; no documenta la interfaz de Microsoft 365.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial horizontal 3:2 de seis escritorios familiares conectados a un asistente abstracto y a un depósito compartido de almacenamiento, con un contraste visual entre acceso de IA ampliado y capacidad de nube limitada. Estilo periódico antiguo, sepia, sin logos falsos ni interfaces de Microsoft inventadas.",
+      "body": [
+        "El 9 de octubre de 2026, The Verge informó que Microsoft estaba avisando por correo a suscriptores de Microsoft 365 Family y Premium de una reorganización de dos beneficios que hasta ahora funcionaban de forma separada: el acceso a funciones de inteligencia artificial y el almacenamiento de OneDrive. La novedad positiva es que la compañía planea permitir que los integrantes de una suscripción compartida utilicen Copilot, no solo quien paga la cuenta. La contrapartida es que Family y Premium pasan de asignaciones individuales de almacenamiento a una bolsa común de 2 TB.",
+        "Conviene separar anuncio y disponibilidad. The Verge revisó una comunicación enviada a clientes que describe cambios previstos para los próximos meses. Al comprobar las páginas de soporte de Microsoft, la documentación sobre límites de IA todavía indica que los beneficios de Copilot solo corresponden al titular y no pueden compartirse. Por tanto, sería prematuro decir que cada integrante de Family ya puede utilizar todas las funciones de IA incluidas en el plan. La activación efectiva, el alcance por región y el calendario de la nueva cuota compartida siguen necesitando confirmación.",
+        "El cambio de Copilot afecta a la propuesta de valor de una suscripción doméstica. Hasta ahora, una familia podía repartir las aplicaciones de Office y el almacenamiento entre seis personas, pero los beneficios de IA de Word, Excel, PowerPoint y otros puntos de acceso se reservaban al titular. La comunicación descrita por The Verge promete compartir Copilot y el uso de IA con hasta cinco miembros adicionales, además de permitir que el administrador controle el acceso de los menores. No se trata de seis suscripciones individuales a Copilot Pro: se trata de beneficios vinculados a un único plan familiar.",
+        "También cambia la manera de medir el consumo. Microsoft comunicó que los límites individuales de determinadas funciones de IA pasarán a una asignación de uso común aplicable a distintas herramientas avanzadas, con posibilidad de adquirir capacidad adicional. No publicó en esa comunicación una cifra universal de créditos, una tabla de equivalencias por función ni precios de las ampliaciones. Tampoco está demostrado que todos los participantes reciban los mismos límites que el titular de un plan Premium. La distinción importa para hogares que usen simultáneamente generación de imágenes, asistencia en documentos y conversaciones extensas.",
+        "La modificación de OneDrive es más concreta y ya aparece en una guía oficial de Microsoft. En Family y Premium, el almacenamiento incluido se convierte en 2 TB compartidos por el titular y hasta cinco personas; Microsoft 365 Pro dispone de una bolsa de 5 TB. El modelo anterior de Family y Premium podía sumar hasta 6 TB, repartidos como 1 TB por cada uno de seis usuarios. Para una familia con varios miembros que ya utilizan mucho espacio, el nuevo máximo agregado supone una reducción importante; para una familia con una sola persona que concentra los archivos, la bolsa flexible puede resultar más cómoda.",
+        "Compartir capacidad no significa compartir documentos. Microsoft aclara que cada cuenta conserva la privacidad de sus archivos, fotos y carpetas, salvo que el propietario decida compartirlos. Las ampliaciones de almacenamiento compradas por integrantes del grupo se agregan a la capacidad común, y la compañía indica que el conjunto puede ampliarse hasta 10 TB. Existen posibles bonificaciones transitorias en mercados y cuentas elegibles, pero no hay base para prometerlas a todos los suscriptores ni para asumir que estarán disponibles en Chile.",
+        "Las fechas requieren especial cuidado. La página específica de Microsoft titulada «Changes to Microsoft 365 storage» sitúa el nuevo sistema en las altas y mejoras de plan desde el 8 de octubre de 2026, y para clientes anteriores en la primera renovación a partir del 2 de mayo de 2027. Sin embargo, otras páginas oficiales de soporte consultadas muestran el 7 de octubre de 2026 y el 1 de abril de 2027, respectivamente. El correo visto por The Verge también menciona mayo de 2027. Esta inconsistencia documental impide dar una única fecha universal sin advertencia: cada suscriptor debería comprobar su aviso de renovación y la guía vigente para su mercado.",
+        "Una actualización de plan puede adelantar la transición. La guía específica explica que quien pase, por ejemplo, de Family a Premium antes de la renovación general puede recibir inmediatamente el nuevo esquema de 2 TB compartidos. En cambio, una reducción de categoría no implica necesariamente el mismo adelanto. La consecuencia práctica es que cambiar de plan solo para conseguir antes las nuevas funciones de IA podría alterar el espacio disponible antes de lo esperado. No es recomendable inferir las condiciones de una cuenta individual a partir de un titular de prensa.",
+        "Los precios deben leerse en su contexto. The Verge recordó que Microsoft 365 Premium se comercializa en Estados Unidos por US$19,99 mensuales, pero esa cifra no es una tarifa nueva anunciada en esta modificación ni un precio válido automáticamente para otros países. No se difundió una lista verificable de precios para comprar más uso de IA bajo la futura cuota compartida. Tampoco se anunció una rebaja de la suscripción que compense el menor almacenamiento agregado. Cualquier cálculo de coste por miembro debe considerar el país, el ciclo de facturación y los complementos necesarios.",
+        "Para desarrolladores y responsables de producto, este cambio ilustra una decisión de empaquetado: Microsoft está pasando de un beneficio de IA concentrado en una sola persona a una experiencia doméstica multiusuario, pero gestionada con una reserva común de recursos. La empresa gana una vía para distribuir Copilot a más personas sin convertir cada miembro en una licencia individual completa. Esa lectura es análisis editorial, no una explicación oficial de la estrategia comercial ni una prueba de cómo se calculará el consumo futuro.",
+        "El efecto sobre los usuarios será desigual. Un hogar con poco uso de OneDrive y varias personas interesadas en Copilot podría ganar utilidad cuando el acceso compartido esté realmente activo. Otro con copias de seguridad, fotografías y archivos de trabajo repartidos entre seis cuentas puede perder margen de almacenamiento. La transición no elimina automáticamente los datos existentes; la guía oficial contempla medidas y plazos de gestión para cuentas que excedan la cuota, pero el usuario debe revisar las condiciones específicas antes de depender de una prórroga.",
+        "Una comprobación práctica consiste en sumar el almacenamiento de todos los integrantes, verificar si el total se aproxima a 2 TB y revisar la fecha de renovación. Después conviene comparar el beneficio esperado de Copilot con el posible coste de almacenamiento adicional. Quien dependa de carpetas compartidas para trabajar debe recordar que una bolsa de capacidad común no cambia por sí misma los permisos de acceso. Quien gestione cuentas de menores debería esperar a conocer el funcionamiento efectivo de los controles anunciados, en lugar de asumir que ya están desplegados.",
+        "Análisis Gazette: la noticia no es simplemente «Copilot gratis para la familia». Es una redistribución de beneficios con una ganancia potencial en acceso a IA y una reducción cuantificable del almacenamiento máximo para familias numerosas. El dato verificable más firme hoy es el nuevo esquema de OneDrive descrito por Microsoft; el acceso multiusuario a Copilot está comunicado, pero sus límites y despliegue todavía no están completamente documentados. Presentar ambas piezas como si ya funcionaran igual en todas las regiones ocultaría la parte más importante para decidir.",
+        "Queda por observar la fecha efectiva de activación de Copilot compartido, el tamaño de la asignación de IA, las reglas de consumo simultáneo, los controles para menores, el precio de las ampliaciones y la aclaración oficial de las fechas contradictorias. Una vez que Microsoft publique límites y calendarios verificables, corresponderá enriquecer este mismo artículo, conservando su identificador y eventKey. No hay motivo para abrir una noticia nueva por cada ajuste menor de una política que todavía está desplegándose."
+      ],
+      "sections": [
+        {
+          "heading": "Qué se anunció y qué todavía no está disponible",
+          "kind": "report",
+          "paragraphs": [
+            "El 9 de octubre de 2026, The Verge informó que Microsoft estaba avisando por correo a suscriptores de Microsoft 365 Family y Premium de una reorganización de dos beneficios que hasta ahora funcionaban de forma separada: el acceso a funciones de inteligencia artificial y el almacenamiento de OneDrive. La novedad positiva es que la compañía planea permitir que los integrantes de una suscripción compartida utilicen Copilot, no solo quien paga la cuenta. La contrapartida es que Family y Premium pasan de asignaciones individuales de almacenamiento a una bolsa común de 2 TB.",
+            "Conviene separar anuncio y disponibilidad. The Verge revisó una comunicación enviada a clientes que describe cambios previstos para los próximos meses. Al comprobar las páginas de soporte de Microsoft, la documentación sobre límites de IA todavía indica que los beneficios de Copilot solo corresponden al titular y no pueden compartirse. Por tanto, sería prematuro decir que cada integrante de Family ya puede utilizar todas las funciones de IA incluidas en el plan. La activación efectiva, el alcance por región y el calendario de la nueva cuota compartida siguen necesitando confirmación."
+          ]
+        },
+        {
+          "heading": "Copilot para varios integrantes y una cuota de IA compartida",
+          "kind": "technical",
+          "paragraphs": [
+            "El cambio de Copilot afecta a la propuesta de valor de una suscripción doméstica. Hasta ahora, una familia podía repartir las aplicaciones de Office y el almacenamiento entre seis personas, pero los beneficios de IA de Word, Excel, PowerPoint y otros puntos de acceso se reservaban al titular. La comunicación descrita por The Verge promete compartir Copilot y el uso de IA con hasta cinco miembros adicionales, además de permitir que el administrador controle el acceso de los menores. No se trata de seis suscripciones individuales a Copilot Pro: se trata de beneficios vinculados a un único plan familiar.",
+            "También cambia la manera de medir el consumo. Microsoft comunicó que los límites individuales de determinadas funciones de IA pasarán a una asignación de uso común aplicable a distintas herramientas avanzadas, con posibilidad de adquirir capacidad adicional. No publicó en esa comunicación una cifra universal de créditos, una tabla de equivalencias por función ni precios de las ampliaciones. Tampoco está demostrado que todos los participantes reciban los mismos límites que el titular de un plan Premium. La distinción importa para hogares que usen simultáneamente generación de imágenes, asistencia en documentos y conversaciones extensas."
+          ]
+        },
+        {
+          "heading": "OneDrive: 2 TB comunes en Family y Premium",
+          "kind": "technical",
+          "paragraphs": [
+            "La modificación de OneDrive es más concreta y ya aparece en una guía oficial de Microsoft. En Family y Premium, el almacenamiento incluido se convierte en 2 TB compartidos por el titular y hasta cinco personas; Microsoft 365 Pro dispone de una bolsa de 5 TB. El modelo anterior de Family y Premium podía sumar hasta 6 TB, repartidos como 1 TB por cada uno de seis usuarios. Para una familia con varios miembros que ya utilizan mucho espacio, el nuevo máximo agregado supone una reducción importante; para una familia con una sola persona que concentra los archivos, la bolsa flexible puede resultar más cómoda.",
+            "Compartir capacidad no significa compartir documentos. Microsoft aclara que cada cuenta conserva la privacidad de sus archivos, fotos y carpetas, salvo que el propietario decida compartirlos. Las ampliaciones de almacenamiento compradas por integrantes del grupo se agregan a la capacidad común, y la compañía indica que el conjunto puede ampliarse hasta 10 TB. Existen posibles bonificaciones transitorias en mercados y cuentas elegibles, pero no hay base para prometerlas a todos los suscriptores ni para asumir que estarán disponibles en Chile."
+          ]
+        },
+        {
+          "heading": "Fechas de transición y discrepancias en soporte",
+          "kind": "context",
+          "paragraphs": [
+            "Las fechas requieren especial cuidado. La página específica de Microsoft titulada «Changes to Microsoft 365 storage» sitúa el nuevo sistema en las altas y mejoras de plan desde el 8 de octubre de 2026, y para clientes anteriores en la primera renovación a partir del 2 de mayo de 2027. Sin embargo, otras páginas oficiales de soporte consultadas muestran el 7 de octubre de 2026 y el 1 de abril de 2027, respectivamente. El correo visto por The Verge también menciona mayo de 2027. Esta inconsistencia documental impide dar una única fecha universal sin advertencia: cada suscriptor debería comprobar su aviso de renovación y la guía vigente para su mercado.",
+            "Una actualización de plan puede adelantar la transición. La guía específica explica que quien pase, por ejemplo, de Family a Premium antes de la renovación general puede recibir inmediatamente el nuevo esquema de 2 TB compartidos. En cambio, una reducción de categoría no implica necesariamente el mismo adelanto. La consecuencia práctica es que cambiar de plan solo para conseguir antes las nuevas funciones de IA podría alterar el espacio disponible antes de lo esperado. No es recomendable inferir las condiciones de una cuenta individual a partir de un titular de prensa."
+          ]
+        },
+        {
+          "heading": "Precio, impacto y consejos para suscriptores",
+          "kind": "practical",
+          "paragraphs": [
+            "Los precios deben leerse en su contexto. The Verge recordó que Microsoft 365 Premium se comercializa en Estados Unidos por US$19,99 mensuales, pero esa cifra no es una tarifa nueva anunciada en esta modificación ni un precio válido automáticamente para otros países. No se difundió una lista verificable de precios para comprar más uso de IA bajo la futura cuota compartida. Tampoco se anunció una rebaja de la suscripción que compense el menor almacenamiento agregado. Cualquier cálculo de coste por miembro debe considerar el país, el ciclo de facturación y los complementos necesarios.",
+            "Para desarrolladores y responsables de producto, este cambio ilustra una decisión de empaquetado: Microsoft está pasando de un beneficio de IA concentrado en una sola persona a una experiencia doméstica multiusuario, pero gestionada con una reserva común de recursos. La empresa gana una vía para distribuir Copilot a más personas sin convertir cada miembro en una licencia individual completa. Esa lectura es análisis editorial, no una explicación oficial de la estrategia comercial ni una prueba de cómo se calculará el consumo futuro.",
+            "El efecto sobre los usuarios será desigual. Un hogar con poco uso de OneDrive y varias personas interesadas en Copilot podría ganar utilidad cuando el acceso compartido esté realmente activo. Otro con copias de seguridad, fotografías y archivos de trabajo repartidos entre seis cuentas puede perder margen de almacenamiento. La transición no elimina automáticamente los datos existentes; la guía oficial contempla medidas y plazos de gestión para cuentas que excedan la cuota, pero el usuario debe revisar las condiciones específicas antes de depender de una prórroga.",
+            "Una comprobación práctica consiste en sumar el almacenamiento de todos los integrantes, verificar si el total se aproxima a 2 TB y revisar la fecha de renovación. Después conviene comparar el beneficio esperado de Copilot con el posible coste de almacenamiento adicional. Quien dependa de carpetas compartidas para trabajar debe recordar que una bolsa de capacidad común no cambia por sí misma los permisos de acceso. Quien gestione cuentas de menores debería esperar a conocer el funcionamiento efectivo de los controles anunciados, en lugar de asumir que ya están desplegados."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y qué observar",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la noticia no es simplemente «Copilot gratis para la familia». Es una redistribución de beneficios con una ganancia potencial en acceso a IA y una reducción cuantificable del almacenamiento máximo para familias numerosas. El dato verificable más firme hoy es el nuevo esquema de OneDrive descrito por Microsoft; el acceso multiusuario a Copilot está comunicado, pero sus límites y despliegue todavía no están completamente documentados. Presentar ambas piezas como si ya funcionaran igual en todas las regiones ocultaría la parte más importante para decidir.",
+            "Queda por observar la fecha efectiva de activación de Copilot compartido, el tamaño de la asignación de IA, las reglas de consumo simultáneo, los controles para menores, el precio de las ampliaciones y la aclaración oficial de las fechas contradictorias. Una vez que Microsoft publique límites y calendarios verificables, corresponderá enriquecer este mismo artículo, conservando su identificador y eventKey. No hay motivo para abrir una noticia nueva por cada ajuste menor de una política que todavía está desplegándose."
+          ]
+        }
+      ]
+    },
+    {
       "id": "micro1-1b-enterprise-data-licensing-2026",
       "eventKey": "micro1-1b-enterprise-operational-data-licensing-commitment-2026-10-09",
       "articleVersion": 2,
@@ -4861,192 +5212,6 @@
         "Ai2 informa que la demanda simultánea alcanza 2–3 veces la capacidad.",
         "La ocupación no asignada formalmente puede aprovechar GPU libres sin protección.",
         "El informe distingue simulaciones de observaciones reales."
-      ]
-    },
-    {
-      "id": "microsoft-365-family-premium-shared-copilot-2tb-storage-2026",
-      "eventKey": "microsoft-365-family-premium-shared-copilot-ai-usage-onedrive-2tb-2026-10-09",
-      "date": "2026-10-09",
-      "announcedAt": "2026-10-09",
-      "company": "Microsoft",
-      "product": "Microsoft 365 Family / Premium · Copilot y OneDrive",
-      "title": "Microsoft 365 Family compartirá Copilot, pero reduce OneDrive a 2 TB comunes",
-      "summary": "Microsoft anuncia en correos a clientes que permitirá compartir Copilot y una futura cuota de IA entre miembros de Family y Premium. A la vez, OneDrive pasa de hasta 6 TB individuales a 2 TB comunes; las fechas oficiales de transición presentan discrepancias.",
-      "tags": [
-        "Microsoft",
-        "Copilot",
-        "Microsoft 365",
-        "OneDrive",
-        "Suscripciones",
-        "Disponibilidad"
-      ],
-      "source": {
-        "name": "The Verge · Microsoft 365 Family subscribers will finally be able to share AI benefits",
-        "url": "https://www.theverge.com/news/1008581/microsoft-365-family-premium-shared-ai-features-storage-changes",
-        "publishedAt": "2026-10-09"
-      },
-      "relatedSources": [
-        {
-          "name": "Microsoft Support · Changes to Microsoft 365 storage",
-          "url": "https://support.microsoft.com/en-au/onedrive/changes-to-microsoft-365-storage"
-        },
-        {
-          "name": "Microsoft Support · AI credits and limits for Microsoft 365 subscriptions",
-          "url": "https://support.microsoft.com/en-us/microsoft-365-copilot/ai-credits-and-limits-for-microsoft-365-subscriptions."
-        },
-        {
-          "name": "Microsoft Support · Someone invited you to share their Microsoft 365 subscription",
-          "url": "https://support.microsoft.com/en-us/accounts-billing/subscriptions/someone-invited-you-to-share-their-microsoft-365-subscription"
-        }
-      ],
-      "keyPoints": [
-        "Copilot y los beneficios de IA podrán compartirse con hasta cinco miembros adicionales, pero el despliegue y la cuota común aún no están completamente detallados.",
-        "Family y Premium pasan a 2 TB de OneDrive compartidos, frente a un máximo anterior de 6 TB distribuidos por persona.",
-        "Las páginas oficiales discrepan entre abril y mayo de 2027 para la transición de suscripciones existentes; comprobar la renovación individual."
-      ],
-      "quickTakeaways": [
-        "Microsoft comunicó acceso familiar futuro a Copilot; su documentación actual todavía muestra restricciones al titular.",
-        "La nueva bolsa de almacenamiento es de 2 TB en Family/Premium y 5 TB en Pro.",
-        "Los archivos siguen siendo privados por cuenta aunque se comparta la capacidad.",
-        "Microsoft publica fechas de transición contradictorias en distintas páginas de soporte."
-      ],
-      "executiveSummary": "Microsoft está reconfigurando sus planes domésticos: promete compartir Copilot y el consumo de IA con los miembros de Family y Premium, pero el beneficio aún no figura como activado universalmente en la documentación de límites. En paralelo, OneDrive pasa a 2 TB comunes en esos planes, una reducción frente a los hasta 6 TB individuales anteriores. La fecha de transición para clientes existentes difiere entre documentos oficiales; conviene revisar el aviso de cada cuenta.",
-      "finalSummary": "El cambio combina una futura ampliación de acceso a Copilot con menos almacenamiento total incluido para hogares que aprovechan seis cuentas. La cuota compartida de IA, su despliegue y la fecha definitiva de renovación requieren aclaraciones; Microsoft sí describe ya el esquema de 2 TB y la privacidad de archivos por cuenta.",
-      "analysis": "Análisis Gazette: la oferta puede ganar utilidad para familias que comparten Copilot, pero pierde capacidad agregada de OneDrive. Sin cuotas de IA ni cronograma definitivo, no corresponde valorar el cambio como una mejora neta para todos los suscriptores.",
-      "watch": "Fecha de activación de Copilot para miembros, límites de uso compartido, precios de ampliación, regiones y reconciliación oficial de las fechas de renovación de abril/mayo de 2027.",
-      "technicalDetails": [
-        {
-          "label": "Family/Premium",
-          "value": "2 TB de almacenamiento compartido entre hasta seis integrantes, según soporte de Microsoft."
-        },
-        {
-          "label": "Pro",
-          "value": "5 TB de almacenamiento compartido."
-        },
-        {
-          "label": "Copilot compartido",
-          "value": "Comunicado a clientes para los próximos meses; no confirmado como activado globalmente."
-        }
-      ],
-      "availability": {
-        "status": "Almacenamiento compartido vigente para nuevas altas o cambios elegibles; Copilot compartido anunciado, pendiente de despliegue comprobado.",
-        "platforms": [
-          "Microsoft 365",
-          "OneDrive",
-          "Copilot en aplicaciones elegibles"
-        ],
-        "regions": [],
-        "requirements": [
-          "Suscripción Microsoft 365 Family o Premium elegible"
-        ],
-        "notes": [
-          "La documentación de límites de IA aún indica que los beneficios no pueden compartirse.",
-          "Las fechas de transición difieren entre páginas oficiales; consultar la renovación individual."
-        ]
-      },
-      "pricing": [
-        {
-          "label": "Microsoft 365 Premium (referencia estadounidense previa)",
-          "value": "US$19,99/mes según The Verge",
-          "note": "No es un precio nuevo ni necesariamente válido en Chile."
-        },
-        {
-          "label": "Ampliación futura de uso de IA",
-          "value": "Precio no anunciado."
-        }
-      ],
-      "limitations": [
-        "No se publicó una fecha global definitiva de activación de Copilot para miembros.",
-        "No hay cuota cuantificada de IA compartida ni tabla pública de costes por función.",
-        "Las páginas oficiales consultadas discrepan entre 1 de abril y 2 de mayo de 2027 para renovaciones existentes.",
-        "No se confirma disponibilidad regional ni bonificación transitoria para todas las cuentas."
-      ],
-      "practicalAdvice": [
-        "Revisar el consumo agregado de OneDrive de todos los miembros antes de renovar o mejorar el plan.",
-        "Consultar el correo de Microsoft y la fecha de renovación de la cuenta: las guías oficiales muestran fechas distintas.",
-        "No contratar ampliaciones de IA hasta conocer la cuota efectiva y sus precios en el país."
-      ],
-      "usefulFacts": [
-        "The Verge publicó la comunicación a suscriptores el 9 de octubre de 2026.",
-        "La guía detallada de almacenamiento indica nuevas altas y mejoras desde el 8 de octubre de 2026.",
-        "El almacenamiento se comparte, pero los archivos de cada integrante siguen privados por defecto."
-      ],
-      "articleVersion": 2,
-      "coveredAt": "2026-10-12",
-      "verifiedAt": "2026-10-12",
-      "image": "assets/hero.webp",
-      "imageAlt": "Grabado editorial conceptual sobre inteligencia artificial y herramientas digitales; no documenta la interfaz de Microsoft 365.",
-      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
-      "visualAssetId": "gazette-generic-ai-hero-v1",
-      "imageStatus": "needs-specific-art",
-      "imageBrief": "Grabado editorial horizontal 3:2 de seis escritorios familiares conectados a un asistente abstracto y a un depósito compartido de almacenamiento, con un contraste visual entre acceso de IA ampliado y capacidad de nube limitada. Estilo periódico antiguo, sepia, sin logos falsos ni interfaces de Microsoft inventadas.",
-      "body": [
-        "El 9 de octubre de 2026, The Verge informó que Microsoft estaba avisando por correo a suscriptores de Microsoft 365 Family y Premium de una reorganización de dos beneficios que hasta ahora funcionaban de forma separada: el acceso a funciones de inteligencia artificial y el almacenamiento de OneDrive. La novedad positiva es que la compañía planea permitir que los integrantes de una suscripción compartida utilicen Copilot, no solo quien paga la cuenta. La contrapartida es que Family y Premium pasan de asignaciones individuales de almacenamiento a una bolsa común de 2 TB.",
-        "Conviene separar anuncio y disponibilidad. The Verge revisó una comunicación enviada a clientes que describe cambios previstos para los próximos meses. Al comprobar las páginas de soporte de Microsoft, la documentación sobre límites de IA todavía indica que los beneficios de Copilot solo corresponden al titular y no pueden compartirse. Por tanto, sería prematuro decir que cada integrante de Family ya puede utilizar todas las funciones de IA incluidas en el plan. La activación efectiva, el alcance por región y el calendario de la nueva cuota compartida siguen necesitando confirmación.",
-        "El cambio de Copilot afecta a la propuesta de valor de una suscripción doméstica. Hasta ahora, una familia podía repartir las aplicaciones de Office y el almacenamiento entre seis personas, pero los beneficios de IA de Word, Excel, PowerPoint y otros puntos de acceso se reservaban al titular. La comunicación descrita por The Verge promete compartir Copilot y el uso de IA con hasta cinco miembros adicionales, además de permitir que el administrador controle el acceso de los menores. No se trata de seis suscripciones individuales a Copilot Pro: se trata de beneficios vinculados a un único plan familiar.",
-        "También cambia la manera de medir el consumo. Microsoft comunicó que los límites individuales de determinadas funciones de IA pasarán a una asignación de uso común aplicable a distintas herramientas avanzadas, con posibilidad de adquirir capacidad adicional. No publicó en esa comunicación una cifra universal de créditos, una tabla de equivalencias por función ni precios de las ampliaciones. Tampoco está demostrado que todos los participantes reciban los mismos límites que el titular de un plan Premium. La distinción importa para hogares que usen simultáneamente generación de imágenes, asistencia en documentos y conversaciones extensas.",
-        "La modificación de OneDrive es más concreta y ya aparece en una guía oficial de Microsoft. En Family y Premium, el almacenamiento incluido se convierte en 2 TB compartidos por el titular y hasta cinco personas; Microsoft 365 Pro dispone de una bolsa de 5 TB. El modelo anterior de Family y Premium podía sumar hasta 6 TB, repartidos como 1 TB por cada uno de seis usuarios. Para una familia con varios miembros que ya utilizan mucho espacio, el nuevo máximo agregado supone una reducción importante; para una familia con una sola persona que concentra los archivos, la bolsa flexible puede resultar más cómoda.",
-        "Compartir capacidad no significa compartir documentos. Microsoft aclara que cada cuenta conserva la privacidad de sus archivos, fotos y carpetas, salvo que el propietario decida compartirlos. Las ampliaciones de almacenamiento compradas por integrantes del grupo se agregan a la capacidad común, y la compañía indica que el conjunto puede ampliarse hasta 10 TB. Existen posibles bonificaciones transitorias en mercados y cuentas elegibles, pero no hay base para prometerlas a todos los suscriptores ni para asumir que estarán disponibles en Chile.",
-        "Las fechas requieren especial cuidado. La página específica de Microsoft titulada «Changes to Microsoft 365 storage» sitúa el nuevo sistema en las altas y mejoras de plan desde el 8 de octubre de 2026, y para clientes anteriores en la primera renovación a partir del 2 de mayo de 2027. Sin embargo, otras páginas oficiales de soporte consultadas muestran el 7 de octubre de 2026 y el 1 de abril de 2027, respectivamente. El correo visto por The Verge también menciona mayo de 2027. Esta inconsistencia documental impide dar una única fecha universal sin advertencia: cada suscriptor debería comprobar su aviso de renovación y la guía vigente para su mercado.",
-        "Una actualización de plan puede adelantar la transición. La guía específica explica que quien pase, por ejemplo, de Family a Premium antes de la renovación general puede recibir inmediatamente el nuevo esquema de 2 TB compartidos. En cambio, una reducción de categoría no implica necesariamente el mismo adelanto. La consecuencia práctica es que cambiar de plan solo para conseguir antes las nuevas funciones de IA podría alterar el espacio disponible antes de lo esperado. No es recomendable inferir las condiciones de una cuenta individual a partir de un titular de prensa.",
-        "Los precios deben leerse en su contexto. The Verge recordó que Microsoft 365 Premium se comercializa en Estados Unidos por US$19,99 mensuales, pero esa cifra no es una tarifa nueva anunciada en esta modificación ni un precio válido automáticamente para otros países. No se difundió una lista verificable de precios para comprar más uso de IA bajo la futura cuota compartida. Tampoco se anunció una rebaja de la suscripción que compense el menor almacenamiento agregado. Cualquier cálculo de coste por miembro debe considerar el país, el ciclo de facturación y los complementos necesarios.",
-        "Para desarrolladores y responsables de producto, este cambio ilustra una decisión de empaquetado: Microsoft está pasando de un beneficio de IA concentrado en una sola persona a una experiencia doméstica multiusuario, pero gestionada con una reserva común de recursos. La empresa gana una vía para distribuir Copilot a más personas sin convertir cada miembro en una licencia individual completa. Esa lectura es análisis editorial, no una explicación oficial de la estrategia comercial ni una prueba de cómo se calculará el consumo futuro.",
-        "El efecto sobre los usuarios será desigual. Un hogar con poco uso de OneDrive y varias personas interesadas en Copilot podría ganar utilidad cuando el acceso compartido esté realmente activo. Otro con copias de seguridad, fotografías y archivos de trabajo repartidos entre seis cuentas puede perder margen de almacenamiento. La transición no elimina automáticamente los datos existentes; la guía oficial contempla medidas y plazos de gestión para cuentas que excedan la cuota, pero el usuario debe revisar las condiciones específicas antes de depender de una prórroga.",
-        "Una comprobación práctica consiste en sumar el almacenamiento de todos los integrantes, verificar si el total se aproxima a 2 TB y revisar la fecha de renovación. Después conviene comparar el beneficio esperado de Copilot con el posible coste de almacenamiento adicional. Quien dependa de carpetas compartidas para trabajar debe recordar que una bolsa de capacidad común no cambia por sí misma los permisos de acceso. Quien gestione cuentas de menores debería esperar a conocer el funcionamiento efectivo de los controles anunciados, en lugar de asumir que ya están desplegados.",
-        "Análisis Gazette: la noticia no es simplemente «Copilot gratis para la familia». Es una redistribución de beneficios con una ganancia potencial en acceso a IA y una reducción cuantificable del almacenamiento máximo para familias numerosas. El dato verificable más firme hoy es el nuevo esquema de OneDrive descrito por Microsoft; el acceso multiusuario a Copilot está comunicado, pero sus límites y despliegue todavía no están completamente documentados. Presentar ambas piezas como si ya funcionaran igual en todas las regiones ocultaría la parte más importante para decidir.",
-        "Queda por observar la fecha efectiva de activación de Copilot compartido, el tamaño de la asignación de IA, las reglas de consumo simultáneo, los controles para menores, el precio de las ampliaciones y la aclaración oficial de las fechas contradictorias. Una vez que Microsoft publique límites y calendarios verificables, corresponderá enriquecer este mismo artículo, conservando su identificador y eventKey. No hay motivo para abrir una noticia nueva por cada ajuste menor de una política que todavía está desplegándose."
-      ],
-      "sections": [
-        {
-          "heading": "Qué se anunció y qué todavía no está disponible",
-          "kind": "report",
-          "paragraphs": [
-            "El 9 de octubre de 2026, The Verge informó que Microsoft estaba avisando por correo a suscriptores de Microsoft 365 Family y Premium de una reorganización de dos beneficios que hasta ahora funcionaban de forma separada: el acceso a funciones de inteligencia artificial y el almacenamiento de OneDrive. La novedad positiva es que la compañía planea permitir que los integrantes de una suscripción compartida utilicen Copilot, no solo quien paga la cuenta. La contrapartida es que Family y Premium pasan de asignaciones individuales de almacenamiento a una bolsa común de 2 TB.",
-            "Conviene separar anuncio y disponibilidad. The Verge revisó una comunicación enviada a clientes que describe cambios previstos para los próximos meses. Al comprobar las páginas de soporte de Microsoft, la documentación sobre límites de IA todavía indica que los beneficios de Copilot solo corresponden al titular y no pueden compartirse. Por tanto, sería prematuro decir que cada integrante de Family ya puede utilizar todas las funciones de IA incluidas en el plan. La activación efectiva, el alcance por región y el calendario de la nueva cuota compartida siguen necesitando confirmación."
-          ]
-        },
-        {
-          "heading": "Copilot para varios integrantes y una cuota de IA compartida",
-          "kind": "technical",
-          "paragraphs": [
-            "El cambio de Copilot afecta a la propuesta de valor de una suscripción doméstica. Hasta ahora, una familia podía repartir las aplicaciones de Office y el almacenamiento entre seis personas, pero los beneficios de IA de Word, Excel, PowerPoint y otros puntos de acceso se reservaban al titular. La comunicación descrita por The Verge promete compartir Copilot y el uso de IA con hasta cinco miembros adicionales, además de permitir que el administrador controle el acceso de los menores. No se trata de seis suscripciones individuales a Copilot Pro: se trata de beneficios vinculados a un único plan familiar.",
-            "También cambia la manera de medir el consumo. Microsoft comunicó que los límites individuales de determinadas funciones de IA pasarán a una asignación de uso común aplicable a distintas herramientas avanzadas, con posibilidad de adquirir capacidad adicional. No publicó en esa comunicación una cifra universal de créditos, una tabla de equivalencias por función ni precios de las ampliaciones. Tampoco está demostrado que todos los participantes reciban los mismos límites que el titular de un plan Premium. La distinción importa para hogares que usen simultáneamente generación de imágenes, asistencia en documentos y conversaciones extensas."
-          ]
-        },
-        {
-          "heading": "OneDrive: 2 TB comunes en Family y Premium",
-          "kind": "technical",
-          "paragraphs": [
-            "La modificación de OneDrive es más concreta y ya aparece en una guía oficial de Microsoft. En Family y Premium, el almacenamiento incluido se convierte en 2 TB compartidos por el titular y hasta cinco personas; Microsoft 365 Pro dispone de una bolsa de 5 TB. El modelo anterior de Family y Premium podía sumar hasta 6 TB, repartidos como 1 TB por cada uno de seis usuarios. Para una familia con varios miembros que ya utilizan mucho espacio, el nuevo máximo agregado supone una reducción importante; para una familia con una sola persona que concentra los archivos, la bolsa flexible puede resultar más cómoda.",
-            "Compartir capacidad no significa compartir documentos. Microsoft aclara que cada cuenta conserva la privacidad de sus archivos, fotos y carpetas, salvo que el propietario decida compartirlos. Las ampliaciones de almacenamiento compradas por integrantes del grupo se agregan a la capacidad común, y la compañía indica que el conjunto puede ampliarse hasta 10 TB. Existen posibles bonificaciones transitorias en mercados y cuentas elegibles, pero no hay base para prometerlas a todos los suscriptores ni para asumir que estarán disponibles en Chile."
-          ]
-        },
-        {
-          "heading": "Fechas de transición y discrepancias en soporte",
-          "kind": "context",
-          "paragraphs": [
-            "Las fechas requieren especial cuidado. La página específica de Microsoft titulada «Changes to Microsoft 365 storage» sitúa el nuevo sistema en las altas y mejoras de plan desde el 8 de octubre de 2026, y para clientes anteriores en la primera renovación a partir del 2 de mayo de 2027. Sin embargo, otras páginas oficiales de soporte consultadas muestran el 7 de octubre de 2026 y el 1 de abril de 2027, respectivamente. El correo visto por The Verge también menciona mayo de 2027. Esta inconsistencia documental impide dar una única fecha universal sin advertencia: cada suscriptor debería comprobar su aviso de renovación y la guía vigente para su mercado.",
-            "Una actualización de plan puede adelantar la transición. La guía específica explica que quien pase, por ejemplo, de Family a Premium antes de la renovación general puede recibir inmediatamente el nuevo esquema de 2 TB compartidos. En cambio, una reducción de categoría no implica necesariamente el mismo adelanto. La consecuencia práctica es que cambiar de plan solo para conseguir antes las nuevas funciones de IA podría alterar el espacio disponible antes de lo esperado. No es recomendable inferir las condiciones de una cuenta individual a partir de un titular de prensa."
-          ]
-        },
-        {
-          "heading": "Precio, impacto y consejos para suscriptores",
-          "kind": "practical",
-          "paragraphs": [
-            "Los precios deben leerse en su contexto. The Verge recordó que Microsoft 365 Premium se comercializa en Estados Unidos por US$19,99 mensuales, pero esa cifra no es una tarifa nueva anunciada en esta modificación ni un precio válido automáticamente para otros países. No se difundió una lista verificable de precios para comprar más uso de IA bajo la futura cuota compartida. Tampoco se anunció una rebaja de la suscripción que compense el menor almacenamiento agregado. Cualquier cálculo de coste por miembro debe considerar el país, el ciclo de facturación y los complementos necesarios.",
-            "Para desarrolladores y responsables de producto, este cambio ilustra una decisión de empaquetado: Microsoft está pasando de un beneficio de IA concentrado en una sola persona a una experiencia doméstica multiusuario, pero gestionada con una reserva común de recursos. La empresa gana una vía para distribuir Copilot a más personas sin convertir cada miembro en una licencia individual completa. Esa lectura es análisis editorial, no una explicación oficial de la estrategia comercial ni una prueba de cómo se calculará el consumo futuro.",
-            "El efecto sobre los usuarios será desigual. Un hogar con poco uso de OneDrive y varias personas interesadas en Copilot podría ganar utilidad cuando el acceso compartido esté realmente activo. Otro con copias de seguridad, fotografías y archivos de trabajo repartidos entre seis cuentas puede perder margen de almacenamiento. La transición no elimina automáticamente los datos existentes; la guía oficial contempla medidas y plazos de gestión para cuentas que excedan la cuota, pero el usuario debe revisar las condiciones específicas antes de depender de una prórroga.",
-            "Una comprobación práctica consiste en sumar el almacenamiento de todos los integrantes, verificar si el total se aproxima a 2 TB y revisar la fecha de renovación. Después conviene comparar el beneficio esperado de Copilot con el posible coste de almacenamiento adicional. Quien dependa de carpetas compartidas para trabajar debe recordar que una bolsa de capacidad común no cambia por sí misma los permisos de acceso. Quien gestione cuentas de menores debería esperar a conocer el funcionamiento efectivo de los controles anunciados, en lugar de asumir que ya están desplegados."
-          ]
-        },
-        {
-          "heading": "Análisis Gazette y qué observar",
-          "kind": "analysis",
-          "paragraphs": [
-            "Análisis Gazette: la noticia no es simplemente «Copilot gratis para la familia». Es una redistribución de beneficios con una ganancia potencial en acceso a IA y una reducción cuantificable del almacenamiento máximo para familias numerosas. El dato verificable más firme hoy es el nuevo esquema de OneDrive descrito por Microsoft; el acceso multiusuario a Copilot está comunicado, pero sus límites y despliegue todavía no están completamente documentados. Presentar ambas piezas como si ya funcionaran igual en todas las regiones ocultaría la parte más importante para decidir.",
-            "Queda por observar la fecha efectiva de activación de Copilot compartido, el tamaño de la asignación de IA, las reglas de consumo simultáneo, los controles para menores, el precio de las ampliaciones y la aclaración oficial de las fechas contradictorias. Una vez que Microsoft publique límites y calendarios verificables, corresponderá enriquecer este mismo artículo, conservando su identificador y eventKey. No hay motivo para abrir una noticia nueva por cada ajuste menor de una política que todavía está desplegándose."
-          ]
-        }
       ]
     },
     {
@@ -26938,6 +27103,11 @@
       "date": "2026-10-11",
       "status": "partial",
       "verifiedArticles": 4
+    },
+    {
+      "date": "2026-10-12",
+      "status": "partial",
+      "verifiedArticles": 1
     }
   ]
 }
