@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-12T11:17:34.000Z",
+  "updatedAt": "2026-10-12T19:24:51.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -183,6 +183,395 @@
       ]
     },
     {
+      "id": "microsoft-azure-maia-300-inference-system-2026",
+      "eventKey": "microsoft-azure-maia-300-architecture-2027-deployment-announcement-2026-10-12",
+      "articleVersion": 2,
+      "date": "2026-10-12",
+      "announcedAt": "2026-10-12",
+      "coveredAt": "2026-10-12",
+      "verifiedAt": "2026-10-12",
+      "company": "Microsoft",
+      "product": "Azure Maia 300",
+      "title": "Microsoft presenta Maia 300 con HBM4, 96 aceleradores por rack y despliegue previsto en 2027",
+      "summary": "Microsoft anunció Maia 300, un sistema de inferencia con 288 GB HBM4 y 18 TB/s por acelerador, 96 unidades por rack y producción prevista para 2027. Las comparaciones de rendimiento son claims del fabricante; no hay tarifas ni acceso comercial confirmados.",
+      "tags": [
+        "Microsoft",
+        "Azure",
+        "Maia 300",
+        "Chips",
+        "Inferencia",
+        "HBM4"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Ilustración conceptual de infraestructura de centros de datos; no representa una fotografía de Maia 300.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial 3:2 de un chip abstracto conectado a racks y tuberías de refrigeración, tinta sepia y papel envejecido. Sin fingir fotografía documental, planos reales, cifras impresas ni logotipos inventados.",
+      "source": {
+        "name": "Microsoft · Azure Maia to multi-gigawatt deployments",
+        "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+        "publishedAt": "2026-10-12"
+      },
+      "relatedSources": [
+        {
+          "name": "Microsoft Azure · Deep dive into Azure Maia 300 architecture",
+          "url": "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/",
+          "publishedAt": "2026-10-12"
+        }
+      ],
+      "body": [
+        "Microsoft presentó el 12 de octubre de 2026 Azure Maia 300, tercera generación de su familia de aceleradores de inferencia para inteligencia artificial. La compañía anunció una arquitectura de chip, memoria, red, rack y centro de datos concebida como un sistema único, con despliegues productivos previstos para 2027. No es un servicio de nube disponible de inmediato para cualquier cliente. Microsoft quiere escalar Maia a instalaciones de varios gigavatios y convertirlo en su sistema principal de inferencia para servicios propios.",
+        "La cronología distingue dos generaciones. Maia 200 ya ejecuta cargas productivas, incluido Microsoft Copilot, y ayuda al equipo MAI con sus modelos. Microsoft menciona una ampliación de usos hacia GitHub Copilot y Foundry. Maia 300, en cambio, se encuentra en fase de anuncio y preparación para producción en 2027. Atribuir a Maia 300 el funcionamiento actual de Copilot confundiría la disponibilidad real. Tampoco se comunicaron regiones, tarifas o un catálogo de instancias Maia 300 para desarrolladores externos.",
+        "El sistema se diseña para razonamiento de contexto largo, generación de tokens y agentes que encadenan pasos y herramientas. En estas cargas, mover datos entre memoria, procesadores y aceleradores puede consumir tanta atención de ingeniería como aumentar la potencia aritmética. Microsoft describe una arquitectura de flujo de datos definida por software, SDLA, que coordina dónde se colocan y transforman los datos. La hipótesis del fabricante es que reducir movimientos innecesarios mejora la utilización del hardware y los tokens útiles por vatio.",
+        "Cada acelerador Maia 300 incorpora ocho pilas HBM4, con 288 GB de capacidad total y 18 TB/s de ancho de banda máximo, según Microsoft. El TDP anunciado es de 950 W por unidad. La compañía compara esas especificaciones con Maia 200 y afirma 2,5 veces más ancho de banda de memoria, 33% más capacidad y aproximadamente el doble de ancho de banda HBM por vatio. Estas cifras describen el hardware y los claims del proveedor; no son benchmarks independientes de calidad de modelos o costes de servicio.",
+        "Maia 300 usa chiplets para separar cálculo, control de memoria y entrada/salida. Los chiplets de cómputo utilizan el proceso TSMC N2P, mientras otros componentes se optimizan para funciones distintas. Microsoft describe un paso desde memoria uniforme a organización NUMA, que permite ubicar datos cerca del cálculo correspondiente. También incorpora formatos de precisión reducida como MXFP4 mejorado y representaciones de almacenamiento inferiores a tres bits. Esas técnicas pueden reducir uso de memoria, pero su impacto en exactitud depende de cada modelo y configuración.",
+        "El rack reúne 96 aceleradores distribuidos en 24 bandejas de cuatro unidades, con un presupuesto de potencia de 167 kW. Microsoft declara 27,6 TB de HBM y 1,7 PB/s de ancho de banda agregado en esa configuración. Son magnitudes del rack completo, no de un chip individual. La densidad duplica el número de aceleradores por rack frente a Maia 200. No sería correcto sumar el TDP de cada chip y presentarlo como consumo total del edificio, porque intervienen servidores, redes, refrigeración y otras instalaciones.",
+        "En la red, enlaces eléctricos conectan aceleradores dentro del rack y una segunda capa óptica une hasta 128 racks. Microsoft describe un superpod máximo de 12.288 aceleradores con transporte especializado basado en Ethernet. El sistema busca que el software utilice una semántica común de comunicación entre dispositivos. También contempla separar trabajadores que procesan el contexto inicial de los que generan tokens, transfiriendo el estado KV por la red. La latencia real dependerá del tamaño y la distribución de las cargas.",
+        "La arquitectura considera tolerancia a fallos mediante capacidad de reserva entre racks, además de telemetría de potencia y planificación dinámica de trabajos. Para disipar calor, Microsoft afirma que la refrigeración líquida retira más del 80% de la carga térmica del rack, con aire para componentes auxiliares. El diseño incluye alimentación redundante y una barra eléctrica de 50 V. Estas decisiones revelan que la eficiencia anunciada no depende solo del silicio: agua, energía, mantenimiento y programación de cargas forman parte del sistema.",
+        "Microsoft afirma que Maia 300 entrega hasta siete veces más tokens por rack y más de 2,5 veces el rendimiento por vatio frente a Maia 200 en su configuración completa. También proyecta un 40% más de tokens por megavatio frente a sistemas líderes basados en GPU. Son comparaciones del fabricante y no equivalen entre sí: tokens por rack, tokens por vatio y tokens por megavatio tienen denominadores y condiciones diferentes. El anuncio no proporciona una batería neutral completa y reproducible para todos los modelos.",
+        "Para la competencia de infraestructura, el desarrollo muestra la apuesta de Microsoft por reducir ciertas dependencias y adaptar hardware a cargas de sus propios servicios. Eso no demuestra que Maia 300 sea más rápido o barato que cualquier GPU de NVIDIA o AMD en todas las tareas. Microsoft mantiene además un discurso de plataforma heterogénea, con variedad de modelos y silicio. El coste real de inferencia depende de utilización, energía, contratos, fiabilidad, software y modelos, no solo de una cifra de rendimiento máximo.",
+        "Análisis Gazette: la carrera por IA se está desplazando hacia sistemas integrados que conviertan energía y memoria disponibles en inferencias útiles. Maia 300 reúne chiplets, HBM4, red de gran escala y refrigeración para esa meta. La principal incógnita es cuánto de la mejora anunciada se traducirá en servicios más económicos o accesibles cuando llegue la producción. Para desarrolladores no cambia hoy una tarifa ni una API. Conviene seguir las fichas de Azure y Foundry antes de planificar migraciones o presupuestos.",
+        "Los próximos hitos verificables son el comienzo de despliegues en 2027, los modelos admitidos, las regiones, el precio de instancias y las herramientas de compilación disponibles para clientes. También harán falta pruebas independientes de latencia, rendimiento sostenido, utilización y coste por token. El anuncio del 12 de octubre es importante como hoja de ruta técnica y empresarial, pero no debe confundirse con un lanzamiento comercial ya ejecutado."
+      ],
+      "keyPoints": [
+        "Cada acelerador anuncia 288 GB HBM4, 18 TB/s y TDP de 950 W.",
+        "Cada rack incluye 96 aceleradores dentro de 167 kW; superpod de hasta 12.288 unidades.",
+        "Microsoft prevé producción en 2027 y no ha publicado precios comerciales."
+      ],
+      "quickTakeaways": [
+        "Maia 300 se anunció el 12 de octubre, con producción prevista para 2027.",
+        "288 GB HBM4 y 18 TB/s por acelerador.",
+        "96 aceleradores por rack en 167 kW.",
+        "Microsoft afirma hasta siete veces más tokens por rack frente a Maia 200.",
+        "Sin SKUs, tarifas ni regiones comerciales anunciadas."
+      ],
+      "executiveSummary": "Microsoft presentó Maia 300 como sistema de inferencia que integra chiplets, HBM4, redes, racks y refrigeración. La empresa declara 288 GB HBM4 por acelerador y racks de 96 unidades. Los despliegues productivos comenzarían en 2027; los benchmarks son afirmaciones del fabricante y no existen precios públicos para clientes.",
+      "sections": [
+        {
+          "heading": "Anuncio y disponibilidad",
+          "kind": "report",
+          "paragraphs": [
+            "Microsoft presentó el 12 de octubre de 2026 Azure Maia 300, tercera generación de su familia de aceleradores de inferencia para inteligencia artificial. La compañía anunció una arquitectura de chip, memoria, red, rack y centro de datos concebida como un sistema único, con despliegues productivos previstos para 2027. No es un servicio de nube disponible de inmediato para cualquier cliente. Microsoft quiere escalar Maia a instalaciones de varios gigavatios y convertirlo en su sistema principal de inferencia para servicios propios.",
+            "La cronología distingue dos generaciones. Maia 200 ya ejecuta cargas productivas, incluido Microsoft Copilot, y ayuda al equipo MAI con sus modelos. Microsoft menciona una ampliación de usos hacia GitHub Copilot y Foundry. Maia 300, en cambio, se encuentra en fase de anuncio y preparación para producción en 2027. Atribuir a Maia 300 el funcionamiento actual de Copilot confundiría la disponibilidad real. Tampoco se comunicaron regiones, tarifas o un catálogo de instancias Maia 300 para desarrolladores externos.",
+            "El sistema se diseña para razonamiento de contexto largo, generación de tokens y agentes que encadenan pasos y herramientas. En estas cargas, mover datos entre memoria, procesadores y aceleradores puede consumir tanta atención de ingeniería como aumentar la potencia aritmética. Microsoft describe una arquitectura de flujo de datos definida por software, SDLA, que coordina dónde se colocan y transforman los datos. La hipótesis del fabricante es que reducir movimientos innecesarios mejora la utilización del hardware y los tokens útiles por vatio."
+          ]
+        },
+        {
+          "heading": "Memoria, chiplets y precisión",
+          "kind": "technical",
+          "paragraphs": [
+            "Cada acelerador Maia 300 incorpora ocho pilas HBM4, con 288 GB de capacidad total y 18 TB/s de ancho de banda máximo, según Microsoft. El TDP anunciado es de 950 W por unidad. La compañía compara esas especificaciones con Maia 200 y afirma 2,5 veces más ancho de banda de memoria, 33% más capacidad y aproximadamente el doble de ancho de banda HBM por vatio. Estas cifras describen el hardware y los claims del proveedor; no son benchmarks independientes de calidad de modelos o costes de servicio.",
+            "Maia 300 usa chiplets para separar cálculo, control de memoria y entrada/salida. Los chiplets de cómputo utilizan el proceso TSMC N2P, mientras otros componentes se optimizan para funciones distintas. Microsoft describe un paso desde memoria uniforme a organización NUMA, que permite ubicar datos cerca del cálculo correspondiente. También incorpora formatos de precisión reducida como MXFP4 mejorado y representaciones de almacenamiento inferiores a tres bits. Esas técnicas pueden reducir uso de memoria, pero su impacto en exactitud depende de cada modelo y configuración."
+          ]
+        },
+        {
+          "heading": "Rack, red y refrigeración",
+          "kind": "technical",
+          "paragraphs": [
+            "El rack reúne 96 aceleradores distribuidos en 24 bandejas de cuatro unidades, con un presupuesto de potencia de 167 kW. Microsoft declara 27,6 TB de HBM y 1,7 PB/s de ancho de banda agregado en esa configuración. Son magnitudes del rack completo, no de un chip individual. La densidad duplica el número de aceleradores por rack frente a Maia 200. No sería correcto sumar el TDP de cada chip y presentarlo como consumo total del edificio, porque intervienen servidores, redes, refrigeración y otras instalaciones.",
+            "En la red, enlaces eléctricos conectan aceleradores dentro del rack y una segunda capa óptica une hasta 128 racks. Microsoft describe un superpod máximo de 12.288 aceleradores con transporte especializado basado en Ethernet. El sistema busca que el software utilice una semántica común de comunicación entre dispositivos. También contempla separar trabajadores que procesan el contexto inicial de los que generan tokens, transfiriendo el estado KV por la red. La latencia real dependerá del tamaño y la distribución de las cargas.",
+            "La arquitectura considera tolerancia a fallos mediante capacidad de reserva entre racks, además de telemetría de potencia y planificación dinámica de trabajos. Para disipar calor, Microsoft afirma que la refrigeración líquida retira más del 80% de la carga térmica del rack, con aire para componentes auxiliares. El diseño incluye alimentación redundante y una barra eléctrica de 50 V. Estas decisiones revelan que la eficiencia anunciada no depende solo del silicio: agua, energía, mantenimiento y programación de cargas forman parte del sistema."
+          ]
+        },
+        {
+          "heading": "Rendimiento y competencia",
+          "kind": "competition",
+          "paragraphs": [
+            "Microsoft afirma que Maia 300 entrega hasta siete veces más tokens por rack y más de 2,5 veces el rendimiento por vatio frente a Maia 200 en su configuración completa. También proyecta un 40% más de tokens por megavatio frente a sistemas líderes basados en GPU. Son comparaciones del fabricante y no equivalen entre sí: tokens por rack, tokens por vatio y tokens por megavatio tienen denominadores y condiciones diferentes. El anuncio no proporciona una batería neutral completa y reproducible para todos los modelos.",
+            "Para la competencia de infraestructura, el desarrollo muestra la apuesta de Microsoft por reducir ciertas dependencias y adaptar hardware a cargas de sus propios servicios. Eso no demuestra que Maia 300 sea más rápido o barato que cualquier GPU de NVIDIA o AMD en todas las tareas. Microsoft mantiene además un discurso de plataforma heterogénea, con variedad de modelos y silicio. El coste real de inferencia depende de utilización, energía, contratos, fiabilidad, software y modelos, no solo de una cifra de rendimiento máximo."
+          ]
+        },
+        {
+          "heading": "Análisis y próximos pasos",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la carrera por IA se está desplazando hacia sistemas integrados que conviertan energía y memoria disponibles en inferencias útiles. Maia 300 reúne chiplets, HBM4, red de gran escala y refrigeración para esa meta. La principal incógnita es cuánto de la mejora anunciada se traducirá en servicios más económicos o accesibles cuando llegue la producción. Para desarrolladores no cambia hoy una tarifa ni una API. Conviene seguir las fichas de Azure y Foundry antes de planificar migraciones o presupuestos.",
+            "Los próximos hitos verificables son el comienzo de despliegues en 2027, los modelos admitidos, las regiones, el precio de instancias y las herramientas de compilación disponibles para clientes. También harán falta pruebas independientes de latencia, rendimiento sostenido, utilización y coste por token. El anuncio del 12 de octubre es importante como hoja de ruta técnica y empresarial, pero no debe confundirse con un lanzamiento comercial ya ejecutado."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Memoria por acelerador",
+          "value": "288 GB HBM4",
+          "note": "Ocho pilas."
+        },
+        {
+          "label": "Ancho de banda",
+          "value": "18 TB/s",
+          "note": "Pico anunciado por acelerador."
+        },
+        {
+          "label": "TDP",
+          "value": "950 W",
+          "note": "Por acelerador."
+        },
+        {
+          "label": "Rack",
+          "value": "96 aceleradores; 167 kW",
+          "note": "24 bandejas de cuatro unidades."
+        },
+        {
+          "label": "Superpod",
+          "value": "Hasta 12.288 aceleradores",
+          "note": "128 racks."
+        }
+      ],
+      "availability": {
+        "status": "Anunciado; producción prevista desde 2027.",
+        "platforms": [
+          "Azure Maia"
+        ],
+        "regions": [],
+        "requirements": [],
+        "notes": [
+          "No hay regiones ni SKUs para clientes externos."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio comercial",
+          "value": "No anunciado"
+        }
+      ],
+      "comparisons": [
+        {
+          "subject": "Maia 300 frente a Maia 200",
+          "comparison": "Hasta 7× tokens por rack y más de 2,5× rendimiento por vatio",
+          "basis": "Claim de Microsoft",
+          "caveat": "Sin evaluación neutral para todas las cargas."
+        },
+        {
+          "subject": "Sistemas GPU",
+          "comparison": "40% más tokens por megavatio previstos",
+          "basis": "Proyección corporativa",
+          "caveat": "Metodología independiente no publicada."
+        }
+      ],
+      "limitations": [
+        "Producción prevista en 2027, no disponibilidad general actual.",
+        "Sin tarifas, regiones ni condiciones de acceso.",
+        "Comparaciones de rendimiento atribuidas al fabricante."
+      ],
+      "practicalAdvice": [
+        "Esperar tarifas oficiales antes de presupuestar Maia 300.",
+        "Comparar tokens por rack, por vatio y por megavatio por separado."
+      ],
+      "usefulFacts": [
+        "Maia 200 ya sirve cargas de producción.",
+        "Refrigeración líquida elimina más del 80% de la carga térmica del rack, según Microsoft."
+      ],
+      "finalSummary": "Maia 300 profundiza la estrategia de Microsoft de diseñar inferencia como sistema completo; disponibilidad, costes y rendimiento independiente están pendientes.",
+      "analysis": "Análisis Gazette: la eficiencia real de inferencia depende del conjunto chip, memoria, red, refrigeración y software.",
+      "watch": "Despliegues de 2027, SKUs, precios, regiones y benchmarks independientes."
+    },
+    {
+      "id": "meta-muse-wonder-full-frontier-agents-2026",
+      "eventKey": "meta-muse-wonder-full-frontier-agent-models-2026-10-12",
+      "articleVersion": 2,
+      "date": "2026-10-12",
+      "announcedAt": "2026-10-12",
+      "coveredAt": "2026-10-12",
+      "verifiedAt": "2026-10-12",
+      "company": "Meta",
+      "product": "Muse Wonder y Muse Wonder Full",
+      "title": "Meta lanza Muse Wonder y Wonder Full: agentes con memoria persistente, foco prolongado y acceso diferenciado",
+      "summary": "Meta presentó Muse Wonder y Wonder Full para tareas agentivas prolongadas. Wonder está disponible en Meta Model API desde US$4 por millón de tokens de entrada y US$20 de salida; Full requiere Muse Code. Las mejoras de memoria, foco y benchmarks son afirmaciones del proveedor que necesitan evaluación independiente.",
+      "tags": [
+        "Meta",
+        "Muse Wonder",
+        "Muse Wonder Full",
+        "modelos",
+        "agentes",
+        "memoria",
+        "API"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado conceptual de agentes de inteligencia artificial y trabajo prolongado; no representa una escena documental de Meta.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Ilustración editorial en formato 3:2, tinta sepia sobre papel antiguo: dos sistemas abstractos coordinan documentos, calendarios y herramientas a través de una mesa de trabajo, con hilos visuales de memoria y seguimiento de tareas. Sin textos incrustados, interfaces simuladas, logotipos inventados ni apariencia de fotografía documental.",
+      "source": {
+        "name": "Meta · Introducing Muse Wonder and Muse Wonder Full",
+        "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
+        "publishedAt": "2026-10-12"
+      },
+      "relatedSources": [
+        {
+          "name": "Meta AI Research · Muse Wonder",
+          "url": "https://research.meta.ai/blog/muse-wonder",
+          "publishedAt": "2026-10-12"
+        },
+        {
+          "name": "Meta · Muse Wonder Model Card",
+          "url": "https://research.meta.ai/static/muse-wonder-model-card",
+          "publishedAt": "2026-10-12"
+        },
+        {
+          "name": "Meta Model API · modelos y precios",
+          "url": "https://dev.meta.ai/products/meta-model-api",
+          "publishedAt": "2026-10-12"
+        },
+        {
+          "name": "Reuters · Meta releases Muse Wonder AI models",
+          "url": "https://www.reuters.com/technology/meta-releases-muse-wonder-ai-models-challenge-anthropic-openai-2026-10-12/",
+          "publishedAt": "2026-10-12"
+        }
+      ],
+      "body": [
+        "Meta presentó el 12 de octubre de 2026 Muse Wonder y Muse Wonder Full, una nueva familia de modelos dirigida a agentes personales y profesionales que deben completar tareas de varios pasos. El anuncio es material por dos razones: Meta afirma que ha alcanzado capacidades de frontera en trabajos prolongados y, al mismo tiempo, ofrece dos canales de acceso claramente diferentes. Muse Wonder se puede utilizar mediante Meta Model API y Muse Code; Muse Wonder Full está reservado a suscriptores de Muse Code. La empresa también prevé integrar Wonder en su asistente Muse, primero para suscriptores. Esa integración futura no debe confundirse con una disponibilidad general inmediata en todas sus aplicaciones.",
+        "El núcleo de la propuesta es que un asistente deje de limitarse a contestar preguntas aisladas y pueda sostener un objetivo a lo largo de distintas interacciones. Meta denomina Active Memory a la capacidad de conservar información relevante entre conversaciones y recuperarla cuando una tarea posterior la necesita. Llama Active Focus a la capacidad de seguir intentando una tarea difícil, reconsiderar pasos, recuperarse de errores y consultar al usuario antes de acciones importantes. Estas son descripciones de diseño y capacidades anunciadas por el fabricante; no constituyen una garantía de que un agente recordará todo correctamente o completará cada operación sin supervisión.",
+        "La ficha técnica oficial atribuye a la familia una ventana de contexto de un millón de tokens durante inferencia. Indica entrada de texto, imágenes, video y audio, con salida de texto. Esa amplitud puede servir para revisar documentación, pantallas, gráficos y conversaciones en un mismo flujo, pero el tamaño máximo anunciado no significa que todas las tareas largas mantengan la misma precisión. Los equipos que construyan aplicaciones deben comprobar la calidad del recuerdo, el uso de herramientas y el comportamiento en sus propios datos. Meta tampoco publica pesos descargables de esta familia en el anuncio, por lo que no debe describirse como un lanzamiento abierto de pesos.",
+        "En la práctica, la distinción entre los dos modelos condiciona cualquier evaluación comercial. El identificador muse-wonder-1.0 aparece en la tabla oficial de Meta Model API, donde el servicio se presenta como vista previa pública. Wonder Full figura como muse-wonder-full-1.0, pero sin tarifa por tokens y con acceso asociado a una suscripción de Muse Code. Un equipo que necesite integrar un modelo en su propia aplicación tiene, por ahora, un camino documentado para Wonder; no debe asumir que puede llamar a Wonder Full mediante el mismo endpoint. Las condiciones concretas por país, nivel de suscripción y límites operativos deben verificarse en la cuenta de cada cliente.",
+        "El precio público de Muse Wonder en Meta Model API es de cuatro dólares por millón de tokens de entrada, veinte centavos por millón de tokens de entrada almacenados en caché y veinte dólares por millón de tokens de salida. Son precios anunciados para el modelo, no un presupuesto completo para un agente. Una aplicación que haga muchas llamadas, reintente tareas, utilice búsqueda o procese contextos extensos puede tener costes adicionales. Meta no muestra una tarifa API equivalente para Wonder Full. Por eso, comparar el coste de ambos como si fueran dos opciones idénticas de consumo por tokens produciría una conclusión equivocada.",
+        "Meta sitúa a la familia en escenarios como interpretar un contrato de arriendo, organizar una reclamación de seguros, investigar documentos financieros o desarrollar una aplicación funcional. Su publicación de investigación presenta demostraciones de planificación, navegación y programación, mientras que la ficha del modelo contempla usos en conocimiento profesional, razonamiento, software y trabajo multimodal. Son ejemplos de capacidades y evaluaciones, no certificaciones para ejercer derecho, medicina o asesoría financiera. En procesos regulados o con datos personales, el diseño del producto debe incluir revisión humana, permisos acotados y comprobaciones de resultados antes de ejecutar cambios irreversibles.",
+        "El material técnico del proveedor compara Muse Wonder y Wonder Full con sistemas de otros laboratorios en pruebas de agentes, codificación y conocimiento profesional. La ficha explica que combina resultados propios, resultados reportados por terceros y algunas ejecuciones bajo herramientas distintas. Eso impide transformar toda la tabla en un ranking independiente homogéneo. Meta presenta a Wonder Full como su variante más capaz y sostiene que obtiene resultados especialmente fuertes en tareas largas; la magnitud real de esa ventaja dependerá de pruebas reproducibles, configuraciones de razonamiento, herramientas y métricas. El lector debe distinguir entre una afirmación del fabricante y una medición externa con metodología comparable.",
+        "La arquitectura de evaluación también importa. En programación, una puntuación puede reflejar tanto el modelo como el agente que navega archivos, ejecuta pruebas y decide qué editar. En tareas personales, una demostración que conserva contexto puede funcionar muy bien con permisos preparados y fallar al enfrentar datos contradictorios o cambios inesperados. Meta reconoce que el rendimiento varía según prompts, herramientas, configuración de servicio y sistema de agentes. Por ello, antes de sustituir una solución existente conviene reproducir tareas propias con criterios de éxito verificables, registrar errores y medir coste, latencia y necesidad de intervención humana.",
+        "La seguridad merece un examen independiente del entusiasmo por las nuevas capacidades. Meta afirma haber entrenado a la familia para proteger información privada y resistir usos indebidos, y describe un marco interno de evaluación de riesgos. Sin embargo, la propia ficha reconoce respuestas incorrectas o sesgadas, fallos en razonamiento multietapa y límites en razonamiento visual o espacial. También recomienda salvaguardas adicionales para agentes con capacidad de actuar sobre sistemas reales. El anuncio anticipa más información sobre evaluaciones de seguridad; esa documentación futura y las pruebas externas serán decisivas para valorar la solidez de los controles anunciados.",
+        "El contexto competitivo es relevante: Muse Wonder sigue a Muse Spark y se integra en una estrategia más amplia de Meta para construir asistentes capaces de trabajar a través de productos y aplicaciones. El equipo de investigación atribuye parte de su avance al entrenamiento en el centro de datos Prometheus. Aun así, la inversión en infraestructura o el tamaño del entrenamiento no bastan para demostrar utilidad cotidiana. Lo que cambiaría la experiencia del usuario es que un agente pueda recordar preferencias correctamente, solicitar permiso en momentos sensibles y terminar tareas reales con errores y costes razonables. Esas propiedades requieren medición más allá de una presentación.",
+        "Para desarrolladores, la recomendación editorial es comenzar con un piloto pequeño y reversible: una tarea representativa, permisos mínimos, datos de prueba, métricas de finalización y un presupuesto de tokens. Comparar Wonder con el modelo ya utilizado debe hacerse con el mismo conjunto de casos, no mezclando puntuaciones promocionales. Para empresas, conviene revisar las condiciones de retención y tratamiento de datos, la región efectiva de disponibilidad y la capacidad de auditar acciones. Para usuarios finales, la llegada anunciada a Muse es una señal de dirección del producto, pero no equivale a que cada función esté habilitada hoy en su cuenta.",
+        "Análisis Gazette: este lanzamiento pone el foco en la continuidad del trabajo y no solo en respuestas más inteligentes. Active Memory y Active Focus describen problemas genuinos de los agentes actuales: pérdida de contexto, interrupciones y necesidad de supervisión. La oportunidad es significativa si la tecnología reduce esas fricciones sin sacrificar control del usuario. La incógnita central es si la ventaja anunciada se mantiene en tareas independientes y despliegues reales. En los próximos meses habrá que observar la ampliación del acceso, las condiciones regionales, las evaluaciones externas, el precio efectivo de los flujos largos y la disponibilidad de Wonder Full fuera de Muse Code."
+      ],
+      "keyPoints": [
+        "Muse Wonder ya figura en Meta Model API y Muse Code; Wonder Full requiere suscripción a Muse Code.",
+        "Meta anuncia Active Memory y Active Focus para trabajo de agentes a largo plazo.",
+        "El precio API de Wonder es US$4 entrada, US$0,20 entrada cacheada y US$20 salida por millón de tokens."
+      ],
+      "quickTakeaways": [
+        "Dos modelos de frontera anunciados el 12 de octubre; no son la misma modalidad de acceso.",
+        "Muse Wonder tiene acceso API; Wonder Full está limitado a suscripciones de Muse Code.",
+        "Ambos modelos admiten hasta un millón de tokens de contexto y entrada multimodal.",
+        "Active Memory y Active Focus son capacidades descritas por Meta, no garantías de fiabilidad.",
+        "La documentación pública de seguridad reconoce límites y recomienda controles externos."
+      ],
+      "executiveSummary": "Meta presentó Muse Wonder y Wonder Full como modelos de frontera para agentes personales y profesionales. La versión Wonder ya se ofrece en la API de Meta con precios por tokens; Wonder Full está vinculada a Muse Code. El anuncio destaca memoria entre conversaciones y persistencia en tareas largas, pero sus ventajas competitivas y salvaguardas deben contrastarse con pruebas independientes.",
+      "sections": [
+        {
+          "heading": "Qué se lanzó y para quién",
+          "kind": "report",
+          "paragraphs": [
+            "La familia separa el acceso de desarrolladores al modelo Wonder del acceso por suscripción a Wonder Full. La futura integración en el asistente Muse comenzará por suscriptores; no se anunció disponibilidad universal inmediata."
+          ]
+        },
+        {
+          "heading": "Memoria, foco y contexto",
+          "kind": "technical",
+          "paragraphs": [
+            "Meta describe Active Memory como selección y recuperación de información relevante entre conversaciones, y Active Focus como persistencia ante obstáculos y replanificación. La ficha oficial declara un millón de tokens y entradas de texto, imagen, audio y video, con salida textual."
+          ]
+        },
+        {
+          "heading": "Precios y acceso",
+          "kind": "report",
+          "paragraphs": [
+            "La tabla de Meta Model API indica US$4 por millón de tokens de entrada, US$0,20 por entrada cacheada y US$20 por salida para muse-wonder-1.0. Wonder Full figura sin tarifa API y con acceso mediante Muse Code."
+          ]
+        },
+        {
+          "heading": "Claims y evaluación",
+          "kind": "competition",
+          "paragraphs": [
+            "Meta publica comparaciones propias y de terceros bajo distintas configuraciones y herramientas. No constituyen por sí solas una clasificación independiente uniforme; los despliegues deben comprobarse con pruebas representativas y presupuestos medidos."
+          ]
+        },
+        {
+          "heading": "Lectura editorial y próximos hitos",
+          "kind": "analysis",
+          "paragraphs": [
+            "La diferencia potencial reside en completar trabajo prolongado sin perder contexto ni control humano. Habrá que seguir los resultados externos, los límites regionales, el tratamiento de datos y la expansión de Muse Wonder a productos para consumidores."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Contexto",
+          "value": "1 millón de tokens",
+          "note": "Ficha oficial de modelos de Meta."
+        },
+        {
+          "label": "Entradas",
+          "value": "Texto, imagen, video y audio",
+          "note": "Salida: texto."
+        },
+        {
+          "label": "ID API Wonder",
+          "value": "muse-wonder-1.0",
+          "note": "Vista previa pública según catálogo Meta Model API."
+        },
+        {
+          "label": "ID Wonder Full",
+          "value": "muse-wonder-full-1.0",
+          "note": "Acceso por suscripción a Muse Code; no tarifa API publicada."
+        },
+        {
+          "label": "Memoria",
+          "value": "Active Memory",
+          "note": "Capacidad anunciada por Meta; requiere evaluación práctica."
+        },
+        {
+          "label": "Persistencia",
+          "value": "Active Focus",
+          "note": "Capacidad anunciada por Meta; no garantiza éxito en todas las tareas."
+        }
+      ],
+      "availability": {
+        "status": "Muse Wonder disponible en Meta Model API y Muse Code; Muse Wonder Full para suscriptores de Muse Code.",
+        "platforms": [
+          "Meta Model API",
+          "Muse Code"
+        ],
+        "regions": [],
+        "requirements": [
+          "Cuenta y condiciones de acceso del proveedor",
+          "Suscripción de Muse Code para Wonder Full"
+        ],
+        "notes": [
+          "Integración futura en Muse, inicialmente para suscriptores.",
+          "Disponibilidad regional específica no confirmada en el anuncio."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Wonder API entrada",
+          "value": "US$4 / millón de tokens"
+        },
+        {
+          "label": "Wonder API entrada cacheada",
+          "value": "US$0,20 / millón de tokens"
+        },
+        {
+          "label": "Wonder API salida",
+          "value": "US$20 / millón de tokens"
+        },
+        {
+          "label": "Wonder Full",
+          "value": "Sin tarifa API pública; requiere suscripción Muse Code"
+        }
+      ],
+      "limitations": [
+        "Sin verificación independiente exhaustiva de todas las comparaciones del fabricante.",
+        "Sin calendario ni regiones detalladas para la integración futura en Muse.",
+        "Meta reconoce errores multietapa, respuestas inexactas y límites de razonamiento visual/espacial.",
+        "Los costes de herramientas, llamadas repetidas y operación completa pueden superar los precios base por token.",
+        "No se anunciaron pesos descargables para estos modelos."
+      ],
+      "practicalAdvice": [
+        "Evaluar en tareas reales con permisos mínimos y confirmación humana antes de acciones irreversibles.",
+        "Medir coste total de cada flujo, incluyendo reintentos y herramientas, no solo tarifa por millón de tokens.",
+        "Comprobar región, plan, privacidad y límites de la cuenta antes de una integración productiva."
+      ],
+      "usefulFacts": [
+        "El documento de Meta describe entrada multimodal y salida textual.",
+        "La tarjeta técnica atribuye a la familia una ventana de contexto de 1M tokens.",
+        "Wonder Full no aparece con precio por token en la tabla oficial."
+      ],
+      "analysis": "Análisis Gazette: la ventaja competitiva relevante será la continuidad confiable de tareas y la capacidad de conservar el control humano, no solo el resultado de una tabla de benchmarks.",
+      "watch": "Acceso por región, despliegue de Muse, pruebas independientes, precio efectivo de tareas largas y condiciones de Wonder Full.",
+      "finalSummary": "Muse Wonder abre una nueva apuesta de Meta por agentes de trabajo prolongado. El modelo API tiene precio publicado y Full exige suscripción; memoria y persistencia son promesas técnicas que deberán demostrar fiabilidad fuera de las demos."
+    },
+    {
       "id": "imf-ai-investment-global-growth-asia-bangkok-2026",
       "eventKey": "imf-georgieva-bangkok-ai-investment-global-growth-asia-2026-10-12",
       "articleVersion": 2,
@@ -346,6 +735,146 @@
           ]
         }
       ]
+    },
+    {
+      "id": "hcltech-anthropic-claude-enterprise-partnership-2026",
+      "eventKey": "hcltech-anthropic-global-premier-partnership-claude-enterprise-2026-10-12",
+      "articleVersion": 2,
+      "date": "2026-10-12",
+      "announcedAt": "2026-10-12",
+      "coveredAt": "2026-10-12",
+      "verifiedAt": "2026-10-12",
+      "company": "HCLTech",
+      "product": "Global Premier Partnership con Anthropic",
+      "title": "HCLTech y Anthropic pactan integrar Claude en software empresarial con controles de seguridad",
+      "summary": "HCLTech y Anthropic anunciaron una alianza para integrar Claude y Claude Code en servicios y productos empresariales. Contempla una unidad especializada y planes para BigFix, AppScan, Actian AI Analyst y AI Force; no se comunicaron precios ni fechas por producto.",
+      "tags": [
+        "HCLTech",
+        "Anthropic",
+        "Claude",
+        "Agentes",
+        "Seguridad",
+        "Alianzas"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Ilustración conceptual de inteligencia artificial; no muestra instalaciones reales de HCLTech o Anthropic.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia 3:2 de agentes abstractos y operadores humanos supervisando un centro empresarial con controles de autorización. Papel antiguo; no logotipos inventados, pantallas falsas ni fotografías simuladas.",
+      "source": {
+        "name": "HCLTech · Global Premier Partnership with Anthropic",
+        "url": "https://www.hcltech.com/en-us/press-releases/hcltech-and-anthropic-sign-global-premier-partnership-scale-governed-agentic-ai",
+        "publishedAt": "2026-10-12"
+      },
+      "relatedSources": [
+        {
+          "name": "Reuters · HCLTech signs a pact with Anthropic",
+          "url": "https://www.reuters.com/world/india/indias-hcltech-signs-pact-with-anthropic-set-up-business-unit-2026-10-12/",
+          "publishedAt": "2026-10-12"
+        }
+      ],
+      "body": [
+        "El 12 de octubre de 2026, HCLTech y Anthropic anunciaron una Global Premier Partnership para extender la inteligencia artificial agéntica a entornos corporativos. El acuerdo combina los modelos y herramientas Claude, Claude Code y Cowork con servicios de integración y productos de HCLTech. Es un pacto anunciado y una hoja de ruta de adopción, no la confirmación de que todas las funciones estén disponibles comercialmente desde hoy. Su relevancia radica en llevar agentes a procesos donde la seguridad, la supervisión y el mantenimiento importan tanto como la capacidad del modelo.",
+        "HCLTech establecerá una unidad de negocio dedicada a Anthropic y un Center of Excellence. Según su comunicado, estos equipos crearán soluciones por industria, formarán a profesionales y ayudarán a implantar Claude en entornos empresariales controlados. La compañía menciona espacios de prueba seguros y especialistas de despliegue. No divulgó el presupuesto, el número de ingenieros asignados, una lista de clientes iniciales ni fechas de apertura por país. Por tanto, la estructura organizativa está anunciada, pero su escala operativa todavía no puede cuantificarse.",
+        "El pacto tiene dos carriles. La división de servicios de HCLTech desarrollará soluciones y proyectos para clientes, mientras HCLSoftware actuará como socio independiente de software de Anthropic e incorporará capacidades en productos seleccionados. Esta distinción es importante: una consultoría de implantación, una licencia de software y el acceso directo a una API pueden tener precios, contratos, obligaciones y calendarios diferentes. No existe una tarifa conjunta anunciada ni un catálogo completo de versiones que permita comparar costes reales.",
+        "Entre los productos citados figuran HCL BigFix, dedicado a la gestión de dispositivos y operaciones, y HCL AppScan, orientado a seguridad de aplicaciones. También se menciona Actian AI Analyst, vinculado al análisis de datos. HCLTech integrará Claude y Claude Code en AI Force, su plataforma de ingeniería de software agéntica, con casos previstos de soporte de TI, remediación de código y servicios digitales para empleados. No se detallaron versiones concretas, regiones, fechas de activación ni el alcance exacto de cada integración.",
+        "Un agente que analiza una incidencia no plantea el mismo riesgo que uno autorizado a modificar un repositorio o desplegar parches en miles de equipos. HCLTech describe controles de políticas, tratamiento de excepciones y supervisión humana para cambios de alto impacto. Esos mecanismos forman parte del diseño anunciado, pero el comunicado no publica resultados independientes de auditorías, tasas de errores, pruebas de resistencia frente a instrucciones maliciosas ni tiempos de recuperación. Los responsables técnicos deberán comprobar cómo se implementan realmente las autorizaciones y los registros de acciones.",
+        "La seguridad empresarial también exige decisiones sobre residencia de datos, credenciales, permisos mínimos, conservación de registros y reversión de operaciones. El anuncio no especifica un modelo universal aplicable a bancos, hospitales, telecomunicaciones o fabricantes. Que Anthropic y HCLTech trabajen juntas no constituye por sí mismo una certificación regulatoria ni una garantía de que un agente pueda actuar sin fallos. Una evaluación seria tendrá que comparar los controles prometidos con los configurados y probados en cada despliegue concreto.",
+        "Reuters confirmó el acuerdo, la creación de una unidad especializada y el foco declarado en seguridad, ciberseguridad y gobernanza. No informó de inversiones cuantificadas, ahorros comprobados o resultados de productividad medidos independientemente. Tampoco se anunciaron benchmarks que permitan afirmar que esta alianza supera a proveedores rivales. Lo confirmado es una nueva vía comercial y tecnológica para Claude dentro de productos y servicios empresariales, con integraciones que requieren documentación adicional antes de considerarse listas para producción.",
+        "Análisis Gazette: la carrera por los agentes corporativos ya no depende únicamente de quién desarrolla el modelo más capaz. Importan los integradores que conocen sistemas heredados, las autorizaciones, la trazabilidad, la respuesta ante incidentes y el soporte continuo. La asociación podría facilitar la adopción a organizaciones que ya utilizan software HCL, aunque también introduce dependencias técnicas y contractuales. El anuncio es material por su alcance potencial, pero no demuestra aún reducción de costes ni mejoras verificadas de seguridad.",
+        "Para equipos de TI conviene solicitar una matriz por producto que indique versiones compatibles, permisos de agentes, aprobación humana, auditoría, tratamiento de datos, regiones, precios y soporte. Antes de automatizar remediaciones, resulta prudente probar tareas reversibles en un entorno aislado y medir intervenciones manuales y errores. Para desarrolladores, queda por conocer si las integraciones ofrecerán APIs, conectores o extensiones y quién mantendrá sus actualizaciones. El comunicado no sustituye esa documentación técnica.",
+        "El seguimiento debe centrarse en lanzamientos comprobables de BigFix, AppScan, Actian AI Analyst y AI Force, condiciones comerciales, disponibilidad geográfica y resultados medibles. La noticia del 12 de octubre es la alianza formalizada, no una prueba de que todos los productos estén ya desplegados. Si aparecen nuevas fases de acceso o documentación, deberán incorporarse a este mismo evento mientras no constituyan productos independientes con implicaciones materialmente distintas."
+      ],
+      "keyPoints": [
+        "HCLTech creará una unidad dedicada a Anthropic y un centro de excelencia.",
+        "HCLSoftware planea integraciones de Claude en BigFix, AppScan y Actian AI Analyst.",
+        "AI Force incluirá Claude y Claude Code; no se publicaron tarifas ni fechas de despliegue."
+      ],
+      "quickTakeaways": [
+        "Alianza empresarial anunciada el 12 de octubre de 2026.",
+        "Unidad y centro de excelencia para implantar Claude.",
+        "Integraciones previstas en productos de seguridad, datos y software.",
+        "Controles humanos anunciados, sin auditoría independiente publicada.",
+        "Sin precios conjuntos ni calendario por región."
+      ],
+      "executiveSummary": "HCLTech y Anthropic formalizaron una alianza para llevar Claude, Claude Code y Cowork a proyectos y productos empresariales. HCLTech creará una unidad especializada y un centro de excelencia; HCLSoftware integrará capacidades en productos seleccionados. La gobernanza y supervisión humana están descritas como compromisos, no como resultados independientes de eficacia.",
+      "sections": [
+        {
+          "heading": "Acuerdo y estructura empresarial",
+          "kind": "report",
+          "paragraphs": [
+            "El 12 de octubre de 2026, HCLTech y Anthropic anunciaron una Global Premier Partnership para extender la inteligencia artificial agéntica a entornos corporativos. El acuerdo combina los modelos y herramientas Claude, Claude Code y Cowork con servicios de integración y productos de HCLTech. Es un pacto anunciado y una hoja de ruta de adopción, no la confirmación de que todas las funciones estén disponibles comercialmente desde hoy. Su relevancia radica en llevar agentes a procesos donde la seguridad, la supervisión y el mantenimiento importan tanto como la capacidad del modelo.",
+            "HCLTech establecerá una unidad de negocio dedicada a Anthropic y un Center of Excellence. Según su comunicado, estos equipos crearán soluciones por industria, formarán a profesionales y ayudarán a implantar Claude en entornos empresariales controlados. La compañía menciona espacios de prueba seguros y especialistas de despliegue. No divulgó el presupuesto, el número de ingenieros asignados, una lista de clientes iniciales ni fechas de apertura por país. Por tanto, la estructura organizativa está anunciada, pero su escala operativa todavía no puede cuantificarse.",
+            "El pacto tiene dos carriles. La división de servicios de HCLTech desarrollará soluciones y proyectos para clientes, mientras HCLSoftware actuará como socio independiente de software de Anthropic e incorporará capacidades en productos seleccionados. Esta distinción es importante: una consultoría de implantación, una licencia de software y el acceso directo a una API pueden tener precios, contratos, obligaciones y calendarios diferentes. No existe una tarifa conjunta anunciada ni un catálogo completo de versiones que permita comparar costes reales."
+          ]
+        },
+        {
+          "heading": "Productos y seguridad",
+          "kind": "technical",
+          "paragraphs": [
+            "Entre los productos citados figuran HCL BigFix, dedicado a la gestión de dispositivos y operaciones, y HCL AppScan, orientado a seguridad de aplicaciones. También se menciona Actian AI Analyst, vinculado al análisis de datos. HCLTech integrará Claude y Claude Code en AI Force, su plataforma de ingeniería de software agéntica, con casos previstos de soporte de TI, remediación de código y servicios digitales para empleados. No se detallaron versiones concretas, regiones, fechas de activación ni el alcance exacto de cada integración.",
+            "Un agente que analiza una incidencia no plantea el mismo riesgo que uno autorizado a modificar un repositorio o desplegar parches en miles de equipos. HCLTech describe controles de políticas, tratamiento de excepciones y supervisión humana para cambios de alto impacto. Esos mecanismos forman parte del diseño anunciado, pero el comunicado no publica resultados independientes de auditorías, tasas de errores, pruebas de resistencia frente a instrucciones maliciosas ni tiempos de recuperación. Los responsables técnicos deberán comprobar cómo se implementan realmente las autorizaciones y los registros de acciones.",
+            "La seguridad empresarial también exige decisiones sobre residencia de datos, credenciales, permisos mínimos, conservación de registros y reversión de operaciones. El anuncio no especifica un modelo universal aplicable a bancos, hospitales, telecomunicaciones o fabricantes. Que Anthropic y HCLTech trabajen juntas no constituye por sí mismo una certificación regulatoria ni una garantía de que un agente pueda actuar sin fallos. Una evaluación seria tendrá que comparar los controles prometidos con los configurados y probados en cada despliegue concreto.",
+            "Reuters confirmó el acuerdo, la creación de una unidad especializada y el foco declarado en seguridad, ciberseguridad y gobernanza. No informó de inversiones cuantificadas, ahorros comprobados o resultados de productividad medidos independientemente. Tampoco se anunciaron benchmarks que permitan afirmar que esta alianza supera a proveedores rivales. Lo confirmado es una nueva vía comercial y tecnológica para Claude dentro de productos y servicios empresariales, con integraciones que requieren documentación adicional antes de considerarse listas para producción."
+          ]
+        },
+        {
+          "heading": "Impacto y análisis",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la carrera por los agentes corporativos ya no depende únicamente de quién desarrolla el modelo más capaz. Importan los integradores que conocen sistemas heredados, las autorizaciones, la trazabilidad, la respuesta ante incidentes y el soporte continuo. La asociación podría facilitar la adopción a organizaciones que ya utilizan software HCL, aunque también introduce dependencias técnicas y contractuales. El anuncio es material por su alcance potencial, pero no demuestra aún reducción de costes ni mejoras verificadas de seguridad.",
+            "Para equipos de TI conviene solicitar una matriz por producto que indique versiones compatibles, permisos de agentes, aprobación humana, auditoría, tratamiento de datos, regiones, precios y soporte. Antes de automatizar remediaciones, resulta prudente probar tareas reversibles en un entorno aislado y medir intervenciones manuales y errores. Para desarrolladores, queda por conocer si las integraciones ofrecerán APIs, conectores o extensiones y quién mantendrá sus actualizaciones. El comunicado no sustituye esa documentación técnica.",
+            "El seguimiento debe centrarse en lanzamientos comprobables de BigFix, AppScan, Actian AI Analyst y AI Force, condiciones comerciales, disponibilidad geográfica y resultados medibles. La noticia del 12 de octubre es la alianza formalizada, no una prueba de que todos los productos estén ya desplegados. Si aparecen nuevas fases de acceso o documentación, deberán incorporarse a este mismo evento mientras no constituyan productos independientes con implicaciones materialmente distintas."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Productos citados",
+          "value": "BigFix, AppScan, Actian AI Analyst, AI Force",
+          "note": "Integraciones previstas o seleccionadas."
+        },
+        {
+          "label": "Herramientas",
+          "value": "Claude, Claude Code y Cowork",
+          "note": "Según HCLTech."
+        }
+      ],
+      "availability": {
+        "status": "Alianza anunciada; integraciones sin fechas de disponibilidad por producto.",
+        "platforms": [
+          "HCLSoftware",
+          "AI Force"
+        ],
+        "regions": [],
+        "requirements": [],
+        "notes": [
+          "Sin calendario público por región."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Tarifa conjunta",
+          "value": "No anunciada"
+        }
+      ],
+      "limitations": [
+        "No se publicaron versiones, regiones ni precios conjuntos.",
+        "No se divulgaron métricas independientes de seguridad o productividad.",
+        "No se detallaron permisos y registros para cada producto."
+      ],
+      "practicalAdvice": [
+        "Pedir documentación sobre autorizaciones, auditoría, residencia de datos y reversión.",
+        "Probar automatizaciones en sandbox antes de aplicarlas en producción."
+      ],
+      "usefulFacts": [
+        "HCLSoftware actuará como socio ISV de Anthropic.",
+        "La alianza separa servicios de integración y productos de software."
+      ],
+      "finalSummary": "El acuerdo amplía las vías empresariales de Claude, pero las integraciones, precios y resultados de seguridad requieren verificación posterior.",
+      "analysis": "Análisis Gazette: los agentes empresariales requieren integración y responsabilidad operativa, no solo modelos capaces.",
+      "watch": "Lanzamientos concretos, regiones, contratos, seguridad evaluada y resultados de pilotos."
     },
     {
       "id": "yandex-vladimir-data-center-drone-shutdown-2026",
@@ -547,11 +1076,11 @@
       "date": "2026-10-11",
       "announcedAt": "2026-10-11",
       "coveredAt": "2026-10-11",
-      "verifiedAt": "2026-10-11",
+      "verifiedAt": "2026-10-12",
       "company": "Casa Blanca",
       "product": "Cooperación con el AI Security Institute del Reino Unido",
       "title": "Reporte: EE. UU. revierte restricciones a las pruebas británicas de modelos de IA antes de su lanzamiento",
-      "summary": "Reuters, citando a The Telegraph, informó el 11 de octubre que Washington dejó de desaconsejar a laboratorios estadounidenses compartir modelos antes de su lanzamiento con el instituto británico de seguridad. No hay confirmación gubernamental pública ni obligación de evaluación anunciada.",
+      "summary": "Reuters reportó el 11 de octubre una supuesta reversión de restricciones estadounidenses a evaluaciones británicas. El 12, el ministro Kanishka Narayan confirmó que el AISI evalúa Gemini 4 Argon, sin presentar una reversión formal general.",
       "tags": [
         "Reporte",
         "Gobernanza",
@@ -580,6 +1109,11 @@
           "name": "UK Government · AI Safety Institute approach to evaluations",
           "url": "https://www.gov.uk/government/publications/ai-safety-institute-approach-to-evaluations",
           "publishedAt": "2024-02-09"
+        },
+        {
+          "name": "Reuters · UK given access to safety-test latest AI models",
+          "url": "https://www.reuters.com/legal/litigation/uk-given-access-safety-test-latest-ai-models-minister-says-2026-10-12/",
+          "publishedAt": "2026-10-12"
         }
       ],
       "keyPoints": [
@@ -593,10 +1127,10 @@
         "El instituto británico evalúa riesgos y capacidades de sistemas avanzados.",
         "No se anunciaron precios, planes de API ni disponibilidad comercial nuevos."
       ],
-      "executiveSummary": "Reuters informó el 11 de octubre, atribuyendo la primicia a The Telegraph, que la Administración estadounidense dejó de oponerse a que laboratorios como OpenAI y Anthropic compartan modelos no publicados con el AI Security Institute británico para evaluaciones. La información no viene acompañada de una confirmación oficial pública ni permite afirmar que exista una obligación legal o un acuerdo bilateral cerrado.",
-      "finalSummary": "La noticia material es una reversión de postura reportada que podría facilitar evaluaciones independientes previas al despliegue. Su impacto real dependerá de confirmaciones oficiales y de colaboraciones verificables, todavía no anunciadas.",
+      "executiveSummary": "Reuters informó el 11 de octubre, atribuyendo la primicia a The Telegraph, que la Administración estadounidense dejó de oponerse a que laboratorios como OpenAI y Anthropic compartan modelos no publicados con el AI Security Institute británico para evaluaciones. La información no viene acompañada de una confirmación oficial pública ni permite afirmar que exista una obligación legal o un acuerdo bilateral cerrado.\n\nActualización del 12 de octubre: el ministro británico confirmó que el AISI evalúa Gemini 4 Argon, pero no publicó una orden general estadounidense de reversión.",
+      "finalSummary": "La reversión estadounidense continúa siendo un reporte atribuido sin instrumento público. El acceso del AISI a Gemini 4 Argon fue confirmado por el ministro británico el 12 de octubre, pero no acredita un cambio universal de política.",
       "analysis": "Análisis Gazette: la cooperación predespliegue podría ampliar el escrutinio independiente, pero una autorización política reportada no equivale a resultados de pruebas ni a certificación.",
-      "watch": "Confirmación oficial de Washington o Londres; acuerdos de acceso predespliegue; modelos efectivamente evaluados; metodología y resultados divulgados.",
+      "watch": "Documento oficial estadounidense, lista de modelos efectivamente evaluados, metodología y resultados de pruebas.",
       "availability": {
         "status": "Cambio de política reportado; no es un producto ni un servicio comercial.",
         "platforms": [],
@@ -612,7 +1146,7 @@
       "limitations": [
         "The Telegraph es la fuente original citada; Reuters no obtuvo respuesta inmediata de las partes.",
         "No se conoce instrumento legal ni documento oficial de reversión.",
-        "No se han identificado modelos concretos entregados bajo esta postura."
+        "Se confirmó la evaluación de Gemini 4 Argon, pero no se publicó lista completa ni instrumento de reversión general."
       ],
       "practicalAdvice": [
         "No asumir que una evaluación gubernamental cubre todas las versiones y herramientas de un modelo.",
@@ -632,7 +1166,8 @@
         "El contexto es un debate más amplio sobre supervisión de agentes que pueden actuar en sistemas reales. El 9 de octubre se difundieron declaraciones de una nueva fuerza federal estadounidense sobre notificación de incidentes, después de investigaciones sobre acciones no previstas de modelos. El cambio reportado respecto de las pruebas británicas sería una medida distinta: permitir cooperación de evaluación internacional antes de poner modelos a disposición general.",
         "Análisis Gazette: el punto relevante no es un supuesto sello de aprobación británico, sino la posibilidad de que equipos públicos independientes examinen sistemas antes de su distribución. Si la colaboración se concreta, podría ampliar el contraste entre afirmaciones del proveedor y resultados de terceros. Aún falta evidencia para medir si esa apertura se traducirá en evaluaciones nuevas, informes públicos o cambios verificables en seguridad.",
         "Para desarrolladores y empresas que integran modelos, esta noticia no modifica precios, límites de API ni términos de servicio. Conviene seguir consultando las fichas técnicas y las políticas de cada proveedor, exigir claridad sobre qué versión fue evaluada y no confundir un examen gubernamental con garantía de funcionamiento. Los resultados solo serán comparables si se conoce la metodología y el sistema exacto probado.",
-        "Queda por observar si Washington o Londres publican una confirmación formal, qué acuerdos se firman con laboratorios concretos y si el AISI anuncia nuevas evaluaciones predespliegue. Hasta entonces, el titular debe mantenerse como reporte atribuido y no como una norma promulgada."
+        "Queda por observar si Washington o Londres publican una confirmación formal, qué acuerdos se firman con laboratorios concretos y si el AISI anuncia nuevas evaluaciones predespliegue. Hasta entonces, el titular debe mantenerse como reporte atribuido y no como una norma promulgada.",
+        "Actualización del 12 de octubre de 2026: el ministro británico Kanishka Narayan confirmó, según Reuters, que el AI Security Institute evalúa modelos avanzados recientes, incluido Gemini 4 Argon, y coopera con el Gobierno estadounidense y desarrolladores como Google. Esto verifica un caso de acceso efectivo a un modelo, pero no demuestra una reversión jurídica general de las instrucciones estadounidenses reportadas el día anterior. Tampoco confirma acceso a Mythos 5.1. No se divulgó una lista completa de modelos, un instrumento formal de política ni resultados de evaluación. El artículo mantiene su identidad y el carácter atribuido del reporte inicial."
       ],
       "sections": [
         {
@@ -668,8 +1203,16 @@
             "Para desarrolladores y empresas que integran modelos, esta noticia no modifica precios, límites de API ni términos de servicio. Conviene seguir consultando las fichas técnicas y las políticas de cada proveedor, exigir claridad sobre qué versión fue evaluada y no confundir un examen gubernamental con garantía de funcionamiento. Los resultados solo serán comparables si se conoce la metodología y el sistema exacto probado.",
             "Queda por observar si Washington o Londres publican una confirmación formal, qué acuerdos se firman con laboratorios concretos y si el AISI anuncia nuevas evaluaciones predespliegue. Hasta entonces, el titular debe mantenerse como reporte atribuido y no como una norma promulgada."
           ]
+        },
+        {
+          "heading": "Actualización del 12 de octubre",
+          "kind": "report",
+          "paragraphs": [
+            "Actualización del 12 de octubre de 2026: el ministro británico Kanishka Narayan confirmó, según Reuters, que el AI Security Institute evalúa modelos avanzados recientes, incluido Gemini 4 Argon, y coopera con el Gobierno estadounidense y desarrolladores como Google. Esto verifica un caso de acceso efectivo a un modelo, pero no demuestra una reversión jurídica general de las instrucciones estadounidenses reportadas el día anterior. Tampoco confirma acceso a Mythos 5.1. No se divulgó una lista completa de modelos, un instrumento formal de política ni resultados de evaluación. El artículo mantiene su identidad y el carácter atribuido del reporte inicial."
+          ]
         }
-      ]
+      ],
+      "correctionNote": "12 oct 2026: confirmación ministerial de evaluación de Gemini 4 Argon; la reversión general sigue sin documento público."
     },
     {
       "id": "moonshot-recurrent-shareholder-settlement-talks-ipo-report-2026",
@@ -27286,7 +27829,7 @@
     {
       "date": "2026-10-12",
       "status": "partial",
-      "verifiedArticles": 2
+      "verifiedArticles": 5
     }
   ]
 }
