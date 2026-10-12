@@ -128,10 +128,7 @@
           ]
         }
       ],
-      "executiveSummary": [
-        "El 11 de octubre Yandex añadió a su comunicado oficial el cierre completo de su centro de Vladímir tras un ataque con drones. Es el tercer centro afectado en la misma secuencia de incidentes. La compañía no informó de heridos ni entregó un calendario definitivo de restauración.",
-        "La dimensión de IA exige cautela: Reuters sitúa en Sasovo dos supercomputadores vinculados al desarrollo de modelos, pero ninguna de las fuentes examinadas prueba que hayan sido destruidos. Las interrupciones de servicios y la recuperación parcial no permiten cuantificar por sí solas la capacidad de entrenamiento perdida."
-      ],
+      "executiveSummary": "El 11 de octubre Yandex añadió a su comunicado oficial el cierre completo de su centro de Vladímir tras un ataque con drones. Es el tercer centro afectado en la misma secuencia de incidentes. La compañía no informó de heridos ni entregó un calendario definitivo de restauración.\n\nLa dimensión de IA exige cautela: Reuters sitúa en Sasovo dos supercomputadores vinculados al desarrollo de modelos, pero ninguna de las fuentes examinadas prueba que hayan sido destruidos. Las interrupciones de servicios y la recuperación parcial no permiten cuantificar por sí solas la capacidad de entrenamiento perdida.",
       "finalSummary": "Tres incidentes en pocos días han afectado centros de datos de Yandex, culminando con el cierre total de Vladímir el 11 de octubre. El daño operativo está confirmado; el impacto definitivo sobre supercomputadores, datos, clientes y costes sigue abierto. La prioridad es seguir partes oficiales y separar la disponibilidad de aplicaciones del estado real de la infraestructura de IA.",
       "analysis": "Análisis Gazette: los cortes físicos recuerdan que los servicios y modelos de IA dependen de instalaciones, electricidad y redundancia verificable. No hay base pública suficiente para cuantificar una pérdida permanente de capacidad de entrenamiento.",
       "watch": "Seguir comunicados oficiales de Yandex, estado de Yandex Cloud, restauración de Sasovo/Kaluga/Vladímir y evidencia independiente del estado de los supercomputadores.",
