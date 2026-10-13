@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T22:21:00.000Z",
+  "updatedAt": "2026-10-13T23:19:00.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -1298,6 +1298,308 @@
         "Contrastar afirmaciones del fabricante con evaluaciones independientes."
       ],
       "finalSummary": "Análisis Gazette: HomeView convierte a Siri AI en una interfaz ambiental que podría reducir la fricción de tareas domésticas compartidas, pero concentra información sensible en un aparato visible y audible para varias personas. Su utilidad real dependerá de reconocimiento fiable, permisos familiares, idiomas, conectividad y compatibilidad con accesorios existentes. Para lectores y desarrolladores, lo más prudente es esperar pruebas independientes de reconocimiento de perfiles, latencia, controles parentales y privacidad antes de considerarlo un sustituto de las interfaces actuales. Lo siguiente que habrá que observar es la entrega efectiva en noviembre y la expansión de idiomas y mercados."
+    },
+    {
+      "id": "apple-homepod-mini-2-siri-ai-2026",
+      "eventKey": "apple-homepod-mini-2-siri-ai-s10-surround-launch-2026-10-13",
+      "date": "2026-10-13",
+      "announcedAt": "2026-10-13",
+      "coveredAt": "2026-10-13",
+      "verifiedAt": "2026-10-13",
+      "articleVersion": 2,
+      "company": "Apple",
+      "product": "HomePod mini 2",
+      "title": "Apple presenta HomePod mini 2 con chip S10 y Siri AI futura: reservas desde US$149",
+      "summary": "El HomePod mini 2 suma audio computacional, cine en casa con cuatro altavoces y compatibilidad futura con Siri AI. Las reservas empiezan el 13 de octubre, pero el asistente avanzado llegará después y solo inicialmente en determinados países e idiomas.",
+      "tags": [
+        "Apple",
+        "IA",
+        "Hogar inteligente",
+        "Siri AI"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de tecnología para el hogar; no representa un producto ni una fotografía real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial 3:2 de altavoz doméstico abstracto con ondas de sonido y nodos de conversación; tinta sepia; sin logotipos ni reproducciones falsas de productos.",
+      "source": {
+        "name": "Apple Newsroom · HomePod mini 2",
+        "url": "https://www.apple.com/newsroom/2026/10/apple-announces-the-next-generation-of-homepod-mini/",
+        "publishedAt": "2026-10-13"
+      },
+      "body": [
+        "Apple anunció el 13 de octubre de 2026 el HomePod mini 2, una nueva generación de su altavoz compacto que combina el chip S10, audio computacional y compatibilidad futura con Siri AI. El lanzamiento no debe confundirse con la llegada inmediata de todas sus funciones inteligentes: el hardware se puede reservar desde el anuncio en determinados países, pero Siri AI llegará al altavoz mediante una actualización de software posterior. Esta distinción es esencial para quien lo compre pensando en conversaciones avanzadas desde el primer día.",
+        "El cambio de mayor alcance es la extensión del asistente conversacional al espacio doméstico. Según Apple, Siri AI podrá mantener diálogos naturales, responder preguntas con conocimiento actualizado de la web y descubrir música mediante solicitudes más complejas. Si se vincula con un iPhone o iPad compatible con Apple Intelligence, también podrá recurrir al contexto personal para buscar una canción mencionada en mensajes, localizar una receta recibida por correo o crear recordatorios relacionados con el calendario. Esas capacidades dependen de dispositivos y permisos concretos, no únicamente del altavoz.",
+        "Apple afirma que el HomePod mini 2 puede reconocer hasta seis personas por su voz y asociar las solicitudes con el dispositivo correspondiente. El objetivo es que una misma habitación permita consultas personales sin convertir a todos los residentes en una identidad compartida. La empresa indica además que, una vez activada Siri AI en un altavoz compatible, quienes no tengan un iPhone o iPad apto para Apple Intelligence podrán aprovechar las conversaciones generales y la búsqueda musical, aunque no necesariamente las funciones basadas en su contexto privado. Esa diferencia debe probarse en la práctica.",
+        "En sonido, el chip Apple S10 procesa la música para ajustar rango dinámico, volumen y rendimiento acústico. El altavoz conserva la reproducción de 360 grados, los pares estéreo y el audio multiroom, pero incorpora una configuración de cine en casa de cuatro altavoces junto con Apple TV 4K de cuarta generación. Apple dice que el sistema reconoce la posición de los parlantes y calibra tiempos y niveles automáticamente. Se necesitan cuatro altavoces compatibles organizados en pares equivalentes y el Apple TV indicado; no es una función universal de cualquier televisor.",
+        "Otra novedad es Sound Glow, una iluminación superior que reacciona a graves y agudos y puede utilizar colores asociados a la carátula del álbum. También se anuncia su uso como altavoz predeterminado para determinados Mac con Wi-Fi 6E o posterior, para llamadas y contenidos multimedia. Estas funciones amplían la utilidad del producto más allá de Siri, pero no constituyen por sí mismas una prueba de mejor calidad de audio: Apple no publicó una evaluación acústica independiente que permita cuantificar la mejora respecto de la generación anterior.",
+        "El altavoz actúa como centro de hogar conectado: permite gestionar accesorios desde la app Casa, activar escenas y controlar cerraduras, persianas o termostatos compatibles. Apple destaca la integración con cámaras y timbres de Apple Home Collection, incluido el anuncio de visitantes mediante reconocimiento facial cuando HomeKit Secure Video está configurado. La detección del sonido de alarmas de humo o monóxido de carbono puede enviar avisos a dispositivos personales, pero la propia compañía advierte que no sustituye un sistema de emergencia ni debe ser la única medida de seguridad.",
+        "El precio anunciado es de 149 dólares en Estados Unidos. Las reservas comenzaron el 13 de octubre y la venta en tiendas está prevista para el 30 de octubre en Estados Unidos y más de 23 países y regiones. Hay cinco colores: rosa, verde, azul, blanco y medianoche. Siri AI llegará en inglés mediante una actualización posterior en Estados Unidos, Australia, Canadá, India, Nueva Zelanda, Singapur, Sudáfrica y Reino Unido. Apple no confirma aquí una fecha concreta para esa actualización ni disponibilidad inicial en español o Chile.",
+        "En privacidad, Apple sostiene que las solicitudes pueden procesarse en el dispositivo o mediante Private Cloud Compute, donde afirma que los datos no se almacenan ni son accesibles para la compañía. Son garantías descritas por el proveedor, no una auditoría realizada por Gazette. La activación de Siri AI exige que el propietario del hogar tenga un iPhone o iPad compatible con Apple Intelligence, actualizado y configurado en un idioma admitido; el contexto personal requiere además un dispositivo vinculado. Algunas funciones de servidor tienen límites diarios y podrían incorporar acceso ampliado de pago en el futuro.",
+        "Análisis Gazette: HomePod mini 2 representa la llegada de asistentes conversacionales más capaces a un entorno compartido y persistente. Su valor dependerá tanto de la precisión al distinguir usuarios como de la gestión de permisos para acciones sobre puertas y cámaras. Antes de comprarlo por Siri AI, conviene verificar idioma, región, dispositivo asociado y calendario de despliegue; para cine en casa, revisar el coste real de cuatro altavoces y Apple TV. Lo que habrá que observar es la actualización efectiva, la estabilidad de la personalización y pruebas independientes de voz y sonido."
+      ],
+      "keyPoints": [
+        "Reservas desde el 13 de octubre; venta prevista para el 30 de octubre desde US$149.",
+        "Siri AI llegará mediante una actualización posterior y en inglés en ocho mercados iniciales.",
+        "El chip S10 y Apple TV 4K de cuarta generación habilitan audio envolvente con cuatro altavoces."
+      ],
+      "quickTakeaways": [
+        "Reservas desde el 13 de octubre; venta prevista para el 30 de octubre desde US$149.",
+        "Siri AI llegará mediante una actualización posterior y en inglés en ocho mercados iniciales.",
+        "El chip S10 y Apple TV 4K de cuarta generación habilitan audio envolvente con cuatro altavoces.",
+        "El contexto personal de Siri AI requiere dispositivos Apple Intelligence compatibles."
+      ],
+      "executiveSummary": "Apple anunció el 13 de octubre de 2026 el HomePod mini 2, una nueva generación de su altavoz compacto que combina el chip S10, audio computacional y compatibilidad futura con Siri AI. El lanzamiento no debe confundirse con la llegada inmediata de todas sus funciones inteligentes: el hardware se puede reservar desde el anuncio en determinados países, pero Siri AI llegará al altavoz mediante una actualización de software posterior. Esta distinción es esencial para quien lo compre pensando en conversaciones avanzadas desde el primer día.",
+      "sections": [
+        {
+          "heading": "Qué se anunció y qué cambia",
+          "kind": "report",
+          "paragraphs": [
+            "Apple anunció el 13 de octubre de 2026 el HomePod mini 2, una nueva generación de su altavoz compacto que combina el chip S10, audio computacional y compatibilidad futura con Siri AI. El lanzamiento no debe confundirse con la llegada inmediata de todas sus funciones inteligentes: el hardware se puede reservar desde el anuncio en determinados países, pero Siri AI llegará al altavoz mediante una actualización de software posterior. Esta distinción es esencial para quien lo compre pensando en conversaciones avanzadas desde el primer día.",
+            "El cambio de mayor alcance es la extensión del asistente conversacional al espacio doméstico. Según Apple, Siri AI podrá mantener diálogos naturales, responder preguntas con conocimiento actualizado de la web y descubrir música mediante solicitudes más complejas. Si se vincula con un iPhone o iPad compatible con Apple Intelligence, también podrá recurrir al contexto personal para buscar una canción mencionada en mensajes, localizar una receta recibida por correo o crear recordatorios relacionados con el calendario. Esas capacidades dependen de dispositivos y permisos concretos, no únicamente del altavoz.",
+            "Apple afirma que el HomePod mini 2 puede reconocer hasta seis personas por su voz y asociar las solicitudes con el dispositivo correspondiente. El objetivo es que una misma habitación permita consultas personales sin convertir a todos los residentes en una identidad compartida. La empresa indica además que, una vez activada Siri AI en un altavoz compatible, quienes no tengan un iPhone o iPad apto para Apple Intelligence podrán aprovechar las conversaciones generales y la búsqueda musical, aunque no necesariamente las funciones basadas en su contexto privado. Esa diferencia debe probarse en la práctica."
+          ]
+        },
+        {
+          "heading": "Arquitectura y funciones",
+          "kind": "technical",
+          "paragraphs": [
+            "En sonido, el chip Apple S10 procesa la música para ajustar rango dinámico, volumen y rendimiento acústico. El altavoz conserva la reproducción de 360 grados, los pares estéreo y el audio multiroom, pero incorpora una configuración de cine en casa de cuatro altavoces junto con Apple TV 4K de cuarta generación. Apple dice que el sistema reconoce la posición de los parlantes y calibra tiempos y niveles automáticamente. Se necesitan cuatro altavoces compatibles organizados en pares equivalentes y el Apple TV indicado; no es una función universal de cualquier televisor.",
+            "Otra novedad es Sound Glow, una iluminación superior que reacciona a graves y agudos y puede utilizar colores asociados a la carátula del álbum. También se anuncia su uso como altavoz predeterminado para determinados Mac con Wi-Fi 6E o posterior, para llamadas y contenidos multimedia. Estas funciones amplían la utilidad del producto más allá de Siri, pero no constituyen por sí mismas una prueba de mejor calidad de audio: Apple no publicó una evaluación acústica independiente que permita cuantificar la mejora respecto de la generación anterior.",
+            "El altavoz actúa como centro de hogar conectado: permite gestionar accesorios desde la app Casa, activar escenas y controlar cerraduras, persianas o termostatos compatibles. Apple destaca la integración con cámaras y timbres de Apple Home Collection, incluido el anuncio de visitantes mediante reconocimiento facial cuando HomeKit Secure Video está configurado. La detección del sonido de alarmas de humo o monóxido de carbono puede enviar avisos a dispositivos personales, pero la propia compañía advierte que no sustituye un sistema de emergencia ni debe ser la única medida de seguridad."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, límites e impacto",
+          "kind": "context",
+          "paragraphs": [
+            "El precio anunciado es de 149 dólares en Estados Unidos. Las reservas comenzaron el 13 de octubre y la venta en tiendas está prevista para el 30 de octubre en Estados Unidos y más de 23 países y regiones. Hay cinco colores: rosa, verde, azul, blanco y medianoche. Siri AI llegará en inglés mediante una actualización posterior en Estados Unidos, Australia, Canadá, India, Nueva Zelanda, Singapur, Sudáfrica y Reino Unido. Apple no confirma aquí una fecha concreta para esa actualización ni disponibilidad inicial en español o Chile.",
+            "En privacidad, Apple sostiene que las solicitudes pueden procesarse en el dispositivo o mediante Private Cloud Compute, donde afirma que los datos no se almacenan ni son accesibles para la compañía. Son garantías descritas por el proveedor, no una auditoría realizada por Gazette. La activación de Siri AI exige que el propietario del hogar tenga un iPhone o iPad compatible con Apple Intelligence, actualizado y configurado en un idioma admitido; el contexto personal requiere además un dispositivo vinculado. Algunas funciones de servidor tienen límites diarios y podrían incorporar acceso ampliado de pago en el futuro."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y qué observar",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: HomePod mini 2 representa la llegada de asistentes conversacionales más capaces a un entorno compartido y persistente. Su valor dependerá tanto de la precisión al distinguir usuarios como de la gestión de permisos para acciones sobre puertas y cámaras. Antes de comprarlo por Siri AI, conviene verificar idioma, región, dispositivo asociado y calendario de despliegue; para cine en casa, revisar el coste real de cuatro altavoces y Apple TV. Lo que habrá que observar es la actualización efectiva, la estabilidad de la personalización y pruebas independientes de voz y sonido."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Procesador",
+          "value": "Apple S10"
+        },
+        {
+          "label": "Audio",
+          "value": "360 grados, multiroom y envolvente de cuatro altavoces con Apple TV 4K (4.ª generación)"
+        }
+      ],
+      "availability": {
+        "status": "Preventa; Siri AI pendiente de actualización",
+        "platforms": [
+          "HomePod mini 2",
+          "Apple TV 4K (4.ª generación) para audio envolvente"
+        ],
+        "regions": [
+          "Estados Unidos y más de 23 países y regiones para el hardware",
+          "Siri AI en inglés: Estados Unidos, Australia, Canadá, India, Nueva Zelanda, Singapur, Sudáfrica y Reino Unido"
+        ],
+        "requirements": [
+          "HomePod software 27.2",
+          "iPhone o iPad compatible con Apple Intelligence para habilitar Siri AI"
+        ],
+        "notes": [
+          "No hay fecha específica para Siri AI en HomePod mini 2.",
+          "No se confirmó lanzamiento en Chile."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "HomePod mini 2 en Estados Unidos",
+          "value": "US$149",
+          "note": "Precio oficial estadounidense; no equivalente a precio chileno."
+        }
+      ],
+      "limitations": [
+        "Siri AI no viene disponible con todas sus funciones desde la primera venta.",
+        "Personalización exige dispositivo compatible y permisos adecuados.",
+        "No se aportaron pruebas acústicas independientes."
+      ],
+      "analysis": "Análisis Gazette: HomePod mini 2 representa la llegada de asistentes conversacionales más capaces a un entorno compartido y persistente. Su valor dependerá tanto de la precisión al distinguir usuarios como de la gestión de permisos para acciones sobre puertas y cámaras. Antes de comprarlo por Siri AI, conviene verificar idioma, región, dispositivo asociado y calendario de despliegue; para cine en casa, revisar el coste real de cuatro altavoces y Apple TV. Lo que habrá que observar es la actualización efectiva, la estabilidad de la personalización y pruebas independientes de voz y sonido.",
+      "watch": "Confirmar despliegue por región, idiomas, precios locales y pruebas independientes de las funciones anunciadas.",
+      "practicalAdvice": [
+        "Comprobar idioma y región antes de comprar por Siri AI.",
+        "Verificar requisitos de cuatro altavoces y Apple TV para cine en casa."
+      ],
+      "finalSummary": "Análisis Gazette: HomePod mini 2 representa la llegada de asistentes conversacionales más capaces a un entorno compartido y persistente. Su valor dependerá tanto de la precisión al distinguir usuarios como de la gestión de permisos para acciones sobre puertas y cámaras. Antes de comprarlo por Siri AI, conviene verificar idioma, región, dispositivo asociado y calendario de despliegue; para cine en casa, revisar el coste real de cuatro altavoces y Apple TV. Lo que habrá que observar es la actualización efectiva, la estabilidad de la personalización y pruebas independientes de voz y sonido."
+    },
+    {
+      "id": "apple-home-collection-lg-schneider-ai-2026",
+      "eventKey": "apple-home-collection-lg-schneider-smart-cameras-lock-thermostats-ai-2026-10-13",
+      "date": "2026-10-13",
+      "announcedAt": "2026-10-13",
+      "coveredAt": "2026-10-13",
+      "verifiedAt": "2026-10-13",
+      "articleVersion": 2,
+      "company": "Apple",
+      "product": "Apple Home Collection",
+      "title": "Apple Home Collection une cámaras con IA, cerradura y termostatos de LG y Schneider",
+      "summary": "Apple anuncia accesorios para el hogar diseñados con LG y Schneider Electric: cámaras con búsqueda inteligente de vídeo, cerradura UWB y termostatos. Llegarán desde diciembre de 2026, con precios y regiones que dependen de cada producto.",
+      "tags": [
+        "Apple",
+        "IA",
+        "Hogar inteligente",
+        "Siri AI"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual de tecnología para el hogar; no representa un producto ni una fotografía real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial horizontal 3:2 de casa seccionada con cámara, termostato y cerradura conectados por líneas de datos, estética de periódico antiguo, sin interfaces ni productos ficticios.",
+      "source": {
+        "name": "Apple Newsroom · Apple Home Collection",
+        "url": "https://www.apple.com/newsroom/2026/10/introducing-apple-home-collection-a-new-lineup-of-smart-home-accessories/",
+        "publishedAt": "2026-10-13"
+      },
+      "body": [
+        "Apple presentó el 13 de octubre de 2026 Apple Home Collection, una línea de accesorios para el hogar conectados desarrollada con LG Electronics y Schneider Electric. Incluye cámaras, timbre con vídeo, cerradura, termostatos y sensores ambientales. El acontecimiento no consiste en una nueva versión de Siri ni en el lanzamiento del HomeView: se trata de una familia de productos con funciones y precios propios, diseñada para trabajar desde la app Casa. La disponibilidad comienza en diciembre de 2026 y algunos accesorios llegarán a comienzos de 2027.",
+        "El elemento común es una configuración mediante un toque desde el iPhone, sin exigir una aplicación separada o una nueva cuenta para cada accesorio. Apple afirma que los dispositivos funcionan con Thread y que pueden actualizar sus credenciales si cambia la red Wi-Fi doméstica. Matter aparece en componentes como termostatos y cerradura; no debe suponerse que todas las funciones avanzadas de cada accesorio sean idénticas en plataformas de terceros. La promesa de sencillez y continuidad de conexión procede del anuncio de Apple y requiere comprobación en instalaciones reales.",
+        "Las cuatro cámaras de LG incluyen timbre con doble vista, cámara exterior, cámara con foco y cámara interior orientable. La cámara frontal del timbre captura vídeo de hasta 2,5K, mientras la inferior utiliza Full HD para vigilar paquetes. Según Apple, la cámara interior puede inclinarse hacia abajo cuando alguien vuelve a casa, una señal física de que deja de observar la estancia. El historial de eventos se almacena durante diez días con un plan iCloud+ compatible, y determinadas funciones de Apple Intelligence añaden descripciones automáticas y búsqueda en lenguaje natural.",
+        "Las funciones inteligentes de vídeo requieren más que adquirir la cámara. Apple especifica un plan iCloud+ elegible, un iPhone o iPad con Apple Intelligence para la configuración y un centro doméstico compatible con software actualizado. Los planes de 50 GB, 200 GB y 2 TB contemplan límites distintos de cámaras para el historial HomeKit Secure Video; las funciones de resúmenes pueden imponer límites adicionales. Por tanto, decir que no existe una suscripción independiente para la cámara no equivale a afirmar que todas las prestaciones son gratuitas.",
+        "La cerradura LG Smart Deadbolt Lock usa banda ultraancha para detectar la proximidad de un usuario con llave doméstica compatible en iPhone o Apple Watch. También ofrece apertura por contacto, teclado PIN y llave de respaldo. La cerradura informa sobre apertura, cierre o manipulación, permite accesos para invitados y, según el fabricante, mantiene funciones esenciales de acceso de manera local sin conexión a internet. Es una promesa importante para un dispositivo que controla la entrada física a una vivienda, pero no reemplaza pruebas de resistencia y recuperación.",
+        "En climatización, LG y Schneider Electric presentan termostatos que pueden aprovechar sensores de temperatura y humedad repartidos por habitaciones. La función Adaptive Temperature utiliza señales del iPhone para adaptar el ambiente según presencia o rutinas, sin depender únicamente de horarios manuales. Apple describe además Clean Energy Guidance para desplazar consumo hacia franjas potencialmente más limpias o económicas, pero esa prestación se limita a Estados Unidos continental y requiere una tarifa eléctrica compatible. Ni la compatibilidad con sistemas HVAC ni el ahorro económico son universales.",
+        "En Estados Unidos, Apple anuncia precios iniciales de 249,95 dólares para el timbre LG, 399,95 para la cámara con foco, 299,95 para la cámara exterior y 199,95 para la cámara interior. La cerradura parte de 349,95 dólares; los termostatos LG y Schneider Electric, de 199,95 cada uno; y los sensores de temperatura, de 39,95 dólares. Son precios estadounidenses de referencia, no tarifas de Chile. Los accesorios se distribuirán de forma escalonada desde diciembre; la lista concreta de regiones varía por producto y debe consultarse antes de comprar.",
+        "Apple sostiene que los datos de Casa y las grabaciones están cifrados de extremo a extremo y que ni ella ni sus socios pueden leerlos. También afirma que el procesamiento de vídeo se realiza localmente en el centro doméstico o mediante Private Cloud Compute. Es necesario atribuir esas garantías a la compañía y no confundirlas con una certificación independiente de toda la cadena. Las cámaras disponen de almacenamiento integrado para mantener grabaciones cuando cae Wi-Fi, aunque la disponibilidad y sincronización posterior de cada evento dependerán de la configuración y las condiciones del sistema.",
+        "Análisis Gazette: Apple Home Collection intenta convertir un ecosistema fragmentado de accesorios en una experiencia integrada, y utiliza IA para resumir vídeo y automatizar decisiones sobre presencia y clima. La utilidad real estará en la interoperabilidad, la claridad de los permisos y la ausencia de fallos al gestionar puertas o cámaras. Para evaluar una instalación conviene presupuestar dispositivos, centro doméstico, iCloud+ e instalación; comprobar normas eléctricas locales y revisar los permisos de invitados. Queda por observar la llegada efectiva de cada accesorio, la cobertura regional y pruebas externas de seguridad."
+      ],
+      "keyPoints": [
+        "La nueva línea se desarrolló con LG Electronics y Schneider Electric y comienza a distribuirse en diciembre.",
+        "Las cámaras integran resúmenes y búsqueda de vídeo con Apple Intelligence bajo requisitos de iCloud+.",
+        "La cerradura LG admite apertura por proximidad UWB y funciones locales de acceso."
+      ],
+      "quickTakeaways": [
+        "La nueva línea se desarrolló con LG Electronics y Schneider Electric y comienza a distribuirse en diciembre.",
+        "Las cámaras integran resúmenes y búsqueda de vídeo con Apple Intelligence bajo requisitos de iCloud+.",
+        "La cerradura LG admite apertura por proximidad UWB y funciones locales de acceso.",
+        "Los precios iniciales estadounidenses van desde US$39,95 en sensores hasta US$399,95 en cámaras con foco."
+      ],
+      "executiveSummary": "Apple presentó el 13 de octubre de 2026 Apple Home Collection, una línea de accesorios para el hogar conectados desarrollada con LG Electronics y Schneider Electric. Incluye cámaras, timbre con vídeo, cerradura, termostatos y sensores ambientales. El acontecimiento no consiste en una nueva versión de Siri ni en el lanzamiento del HomeView: se trata de una familia de productos con funciones y precios propios, diseñada para trabajar desde la app Casa. La disponibilidad comienza en diciembre de 2026 y algunos accesorios llegarán a comienzos de 2027.",
+      "sections": [
+        {
+          "heading": "Qué se anunció y qué cambia",
+          "kind": "report",
+          "paragraphs": [
+            "Apple presentó el 13 de octubre de 2026 Apple Home Collection, una línea de accesorios para el hogar conectados desarrollada con LG Electronics y Schneider Electric. Incluye cámaras, timbre con vídeo, cerradura, termostatos y sensores ambientales. El acontecimiento no consiste en una nueva versión de Siri ni en el lanzamiento del HomeView: se trata de una familia de productos con funciones y precios propios, diseñada para trabajar desde la app Casa. La disponibilidad comienza en diciembre de 2026 y algunos accesorios llegarán a comienzos de 2027.",
+            "El elemento común es una configuración mediante un toque desde el iPhone, sin exigir una aplicación separada o una nueva cuenta para cada accesorio. Apple afirma que los dispositivos funcionan con Thread y que pueden actualizar sus credenciales si cambia la red Wi-Fi doméstica. Matter aparece en componentes como termostatos y cerradura; no debe suponerse que todas las funciones avanzadas de cada accesorio sean idénticas en plataformas de terceros. La promesa de sencillez y continuidad de conexión procede del anuncio de Apple y requiere comprobación en instalaciones reales.",
+            "Las cuatro cámaras de LG incluyen timbre con doble vista, cámara exterior, cámara con foco y cámara interior orientable. La cámara frontal del timbre captura vídeo de hasta 2,5K, mientras la inferior utiliza Full HD para vigilar paquetes. Según Apple, la cámara interior puede inclinarse hacia abajo cuando alguien vuelve a casa, una señal física de que deja de observar la estancia. El historial de eventos se almacena durante diez días con un plan iCloud+ compatible, y determinadas funciones de Apple Intelligence añaden descripciones automáticas y búsqueda en lenguaje natural."
+          ]
+        },
+        {
+          "heading": "Arquitectura y funciones",
+          "kind": "technical",
+          "paragraphs": [
+            "Las funciones inteligentes de vídeo requieren más que adquirir la cámara. Apple especifica un plan iCloud+ elegible, un iPhone o iPad con Apple Intelligence para la configuración y un centro doméstico compatible con software actualizado. Los planes de 50 GB, 200 GB y 2 TB contemplan límites distintos de cámaras para el historial HomeKit Secure Video; las funciones de resúmenes pueden imponer límites adicionales. Por tanto, decir que no existe una suscripción independiente para la cámara no equivale a afirmar que todas las prestaciones son gratuitas.",
+            "La cerradura LG Smart Deadbolt Lock usa banda ultraancha para detectar la proximidad de un usuario con llave doméstica compatible en iPhone o Apple Watch. También ofrece apertura por contacto, teclado PIN y llave de respaldo. La cerradura informa sobre apertura, cierre o manipulación, permite accesos para invitados y, según el fabricante, mantiene funciones esenciales de acceso de manera local sin conexión a internet. Es una promesa importante para un dispositivo que controla la entrada física a una vivienda, pero no reemplaza pruebas de resistencia y recuperación.",
+            "En climatización, LG y Schneider Electric presentan termostatos que pueden aprovechar sensores de temperatura y humedad repartidos por habitaciones. La función Adaptive Temperature utiliza señales del iPhone para adaptar el ambiente según presencia o rutinas, sin depender únicamente de horarios manuales. Apple describe además Clean Energy Guidance para desplazar consumo hacia franjas potencialmente más limpias o económicas, pero esa prestación se limita a Estados Unidos continental y requiere una tarifa eléctrica compatible. Ni la compatibilidad con sistemas HVAC ni el ahorro económico son universales."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, límites e impacto",
+          "kind": "context",
+          "paragraphs": [
+            "En Estados Unidos, Apple anuncia precios iniciales de 249,95 dólares para el timbre LG, 399,95 para la cámara con foco, 299,95 para la cámara exterior y 199,95 para la cámara interior. La cerradura parte de 349,95 dólares; los termostatos LG y Schneider Electric, de 199,95 cada uno; y los sensores de temperatura, de 39,95 dólares. Son precios estadounidenses de referencia, no tarifas de Chile. Los accesorios se distribuirán de forma escalonada desde diciembre; la lista concreta de regiones varía por producto y debe consultarse antes de comprar.",
+            "Apple sostiene que los datos de Casa y las grabaciones están cifrados de extremo a extremo y que ni ella ni sus socios pueden leerlos. También afirma que el procesamiento de vídeo se realiza localmente en el centro doméstico o mediante Private Cloud Compute. Es necesario atribuir esas garantías a la compañía y no confundirlas con una certificación independiente de toda la cadena. Las cámaras disponen de almacenamiento integrado para mantener grabaciones cuando cae Wi-Fi, aunque la disponibilidad y sincronización posterior de cada evento dependerán de la configuración y las condiciones del sistema."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y qué observar",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: Apple Home Collection intenta convertir un ecosistema fragmentado de accesorios en una experiencia integrada, y utiliza IA para resumir vídeo y automatizar decisiones sobre presencia y clima. La utilidad real estará en la interoperabilidad, la claridad de los permisos y la ausencia de fallos al gestionar puertas o cámaras. Para evaluar una instalación conviene presupuestar dispositivos, centro doméstico, iCloud+ e instalación; comprobar normas eléctricas locales y revisar los permisos de invitados. Queda por observar la llegada efectiva de cada accesorio, la cobertura regional y pruebas externas de seguridad."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Conectividad",
+          "value": "Thread; Matter en accesorios seleccionados"
+        },
+        {
+          "label": "Cámaras",
+          "value": "Hasta 2,5K; funciones de resumen y búsqueda de vídeo con Apple Intelligence e iCloud+"
+        },
+        {
+          "label": "Cerradura",
+          "value": "Ultra Wideband, PIN, llave física y funciones locales"
+        }
+      ],
+      "availability": {
+        "status": "Anunciado; distribución desde diciembre de 2026 y parte en 2027",
+        "platforms": [
+          "Apple Home",
+          "iPhone",
+          "Apple HomeView, HomePod o Apple TV como centros compatibles"
+        ],
+        "regions": [
+          "Estados Unidos y Canadá para varias cerraduras y termostatos",
+          "Estados Unidos, Canadá y Reino Unido para cámaras LG seleccionadas"
+        ],
+        "requirements": [
+          "iPhone actualizado para vinculación NFC",
+          "Plan iCloud+ compatible para historial y funciones de vídeo",
+          "Dispositivo Apple Intelligence compatible para configurar funciones inteligentes"
+        ],
+        "notes": [
+          "La disponibilidad y la fecha exacta varían por accesorio.",
+          "No se confirmó disponibilidad en Chile."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "LG Video Doorbell Wired",
+          "value": "US$249,95 desde"
+        },
+        {
+          "label": "LG Floodlight Cam",
+          "value": "US$399,95 desde"
+        },
+        {
+          "label": "LG Outdoor Cam Plug-In",
+          "value": "US$299,95 desde"
+        },
+        {
+          "label": "LG Indoor Cam Plug-In",
+          "value": "US$199,95 desde"
+        },
+        {
+          "label": "LG Smart Deadbolt Lock",
+          "value": "US$349,95 desde"
+        },
+        {
+          "label": "Termostatos LG y Schneider",
+          "value": "US$199,95 desde cada uno"
+        },
+        {
+          "label": "Sensores de temperatura",
+          "value": "US$39,95 desde"
+        }
+      ],
+      "limitations": [
+        "No todos los accesorios se venden en los mismos mercados ni en la misma fecha.",
+        "Funciones de IA para cámaras requieren iCloud+ elegible y configuración compatible.",
+        "Los controles de acceso físicos exigen evaluación de seguridad y contingencia."
+      ],
+      "analysis": "Análisis Gazette: Apple Home Collection intenta convertir un ecosistema fragmentado de accesorios en una experiencia integrada, y utiliza IA para resumir vídeo y automatizar decisiones sobre presencia y clima. La utilidad real estará en la interoperabilidad, la claridad de los permisos y la ausencia de fallos al gestionar puertas o cámaras. Para evaluar una instalación conviene presupuestar dispositivos, centro doméstico, iCloud+ e instalación; comprobar normas eléctricas locales y revisar los permisos de invitados. Queda por observar la llegada efectiva de cada accesorio, la cobertura regional y pruebas externas de seguridad.",
+      "watch": "Confirmar despliegue por región, idiomas, precios locales y pruebas independientes de las funciones anunciadas.",
+      "practicalAdvice": [
+        "Calcular el costo total con hub, iCloud+ e instalación.",
+        "Verificar compatibilidad eléctrica, de red y de cerraduras con la vivienda.",
+        "Probar el acceso local ante una caída de internet."
+      ],
+      "finalSummary": "Análisis Gazette: Apple Home Collection intenta convertir un ecosistema fragmentado de accesorios en una experiencia integrada, y utiliza IA para resumir vídeo y automatizar decisiones sobre presencia y clima. La utilidad real estará en la interoperabilidad, la claridad de los permisos y la ausencia de fallos al gestionar puertas o cámaras. Para evaluar una instalación conviene presupuestar dispositivos, centro doméstico, iCloud+ e instalación; comprobar normas eléctricas locales y revisar los permisos de invitados. Queda por observar la llegada efectiva de cada accesorio, la cobertura regional y pruebas externas de seguridad."
     },
     {
       "id": "anthropic-scion-agent-scale-source-control-2026",
@@ -29956,7 +30258,7 @@
     {
       "date": "2026-10-13",
       "status": "partial",
-      "verifiedArticles": 11
+      "verifiedArticles": 13
     }
   ]
 }
