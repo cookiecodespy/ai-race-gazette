@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T11:20:39.966Z",
+  "updatedAt": "2026-10-13T13:21:26.580Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -163,6 +163,154 @@
             "La disponibilidad comercial sigue pendiente de precisión. El anuncio no establece una fecha concreta de apertura a clientes, un catálogo de instancias, regiones de acceso, tarifas por hora de GPU, reservas, descuentos, acuerdos de nivel de servicio ni requisitos de contratación. Tampoco publica benchmarks independientes del sistema terminado. Las especificaciones de AMD ayudan a entender el hardware seleccionado, pero no sustituyen mediciones de latencia, entrenamiento distribuido o tokens por segundo bajo cargas reales. Hasta que Scaleway publique un servicio concreto, no corresponde presentarlo como capacidad alquilable hoy.",
             "El contexto competitivo es la búsqueda europea de alternativas de cómputo avanzado. NVIDIA domina una parte importante de los despliegues de IA, mientras AMD y los operadores regionales intentan ampliar la oferta de hardware y software. Para clientes que valoran residencia de datos, una instalación en Suecia puede abrir opciones, pero ubicación física y cumplimiento normativo no son equivalentes: contratos, subprocesadores, jurisdicción, seguridad y rutas de datos deben evaluarse por separado. Tampoco se ha demostrado que este proyecto resulte más barato o rápido que sus alternativas.",
             "Análisis Gazette: el anuncio importa porque conecta una nube europea, un fabricante alternativo de aceleradores y una cadena diversa de proveedores para competir en infraestructura de IA. Su efecto dependerá menos de la etiqueta de «primer supercomputador» que de cuántos recursos se ofrezcan, cuándo y con qué calidad de servicio. Para equipos técnicos, la acción razonable es preparar pruebas de compatibilidad ROCm y una matriz de requisitos, no migrar producción sobre una promesa. Los próximos hitos verificables serán la fecha de puesta en servicio, el tamaño del clúster, los precios, las regiones de acceso y benchmarks reproducibles."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scaleway-copenhagen-nvidia-hgx-b300-2026",
+      "eventKey": "scaleway-copenhagen-nvidia-hgx-b300-ai-compute-site-announcement-2026-10-13",
+      "date": "2026-10-13",
+      "announcedAt": "2026-10-13",
+      "company": "Scaleway",
+      "product": "Nuevo emplazamiento de IA en Copenhague · NVIDIA HGX B300",
+      "title": "Scaleway anuncia un nuevo centro de cómputo de IA con NVIDIA HGX B300 en Copenhague",
+      "summary": "Scaleway planea abrir en Copenhague infraestructura de IA basada en NVIDIA HGX B300. Es un proyecto distinto de su supercomputador AMD en Suecia, sin fecha comercial, capacidad ni tarifas específicas confirmadas.",
+      "tags": [
+        "Scaleway",
+        "NVIDIA",
+        "HGX B300",
+        "Dinamarca",
+        "Infraestructura",
+        "Centros de datos",
+        "Europa"
+      ],
+      "imageAlt": "Grabado conceptual de un centro de cómputo europeo; no es fotografía de una instalación de Scaleway en Copenhague.",
+      "imageBrief": "Ilustración editorial 3:2 de un centro de datos imaginario en una ciudad nórdica junto a canales y arquitectura escandinava abstracta; racks y circuitos estilizados, sin representar un edificio existente. Grabado sepia en papel envejecido, sin marcas falsas, textos técnicos inventados ni apariencia documental.",
+      "source": {
+        "name": "Reuters · Scaleway to open Nvidia-powered computing site in Copenhagen",
+        "url": "https://www.reuters.com/business/media-telecom/scaleway-open-nvidia-powered-computing-site-copenhagen-2026-10-13/",
+        "publishedAt": "2026-10-13"
+      },
+      "relatedSources": [
+        {
+          "name": "Scaleway · Catálogo general de GPU",
+          "url": "https://www.scaleway.com/en/choose-the-right-gpu/"
+        },
+        {
+          "name": "Reuters · Proyecto de supercomputador AMD en Suecia",
+          "url": "https://www.reuters.com/business/media-telecom/scaleway-build-amd-powered-ai-supercomputer-sweden-2026-10-13/"
+        }
+      ],
+      "keyPoints": [
+        "Scaleway anunció un futuro emplazamiento en Copenhague basado en NVIDIA HGX B300.",
+        "El proyecto danés es independiente del supercomputador AMD anunciado en Suecia.",
+        "Aún no hay fecha de apertura, capacidad total ni precios del nuevo sitio."
+      ],
+      "quickTakeaways": [
+        "El proyecto de Copenhague está anunciado, no operativo.",
+        "La plataforma elegida es NVIDIA HGX B300.",
+        "Scaleway también anunció por separado un supercomputador AMD en Suecia.",
+        "La ubicación danesa responde a factores tecnológicos, energéticos y climáticos declarados por Scaleway.",
+        "Faltan calendario comercial, capacidad, tarifas y mediciones independientes."
+      ],
+      "executiveSummary": "Scaleway anunció el 13 de octubre que abrirá un nuevo emplazamiento de cómputo de IA en Copenhague con sistemas NVIDIA HGX B300. Reuters lo identifica como una expansión distinta del proyecto AMD de Suecia comunicado ese mismo día.\n\nLa empresa argumenta que Dinamarca ofrece energía relativamente baja en carbono y ventajas de refrigeración, pero no publica todavía capacidad, fecha de servicio ni precios específicos.",
+      "finalSummary": "El anuncio amplía la cartera prevista de infraestructura europea de Scaleway, pero el nuevo sitio danés sigue siendo un proyecto. Su impacto real dependerá de la disponibilidad, condiciones comerciales, cumplimiento y resultados medidos.",
+      "analysis": "Análisis Gazette: dos anuncios simultáneos con hardware diferente muestran diversificación, no dos servicios ya operativos. El valor se determinará al abrirse y publicar tarifas y capacidades.",
+      "watch": "Calendario de puesta en servicio, número de GPU, capacidad eléctrica, condiciones de residencia, SLA, tarifas y benchmarks de clientes.",
+      "technicalDetails": [
+        {
+          "label": "Hardware anunciado",
+          "value": "NVIDIA HGX B300"
+        },
+        {
+          "label": "Ubicación prevista",
+          "value": "Copenhague, Dinamarca"
+        },
+        {
+          "label": "Estado",
+          "value": "Proyecto anunciado; sin fecha comercial confirmada"
+        }
+      ],
+      "availability": {
+        "status": "Anuncio de apertura futura; no disponibilidad general confirmada.",
+        "platforms": [
+          "Scaleway AI Compute (previsto)"
+        ],
+        "regions": [
+          "Copenhague, Dinamarca (prevista)"
+        ],
+        "requirements": [],
+        "notes": [
+          "Sin inventario de GPU, fecha ni SLA publicados.",
+          "El precio de instancias B300 existentes en el catálogo no es tarifa del nuevo centro."
+        ]
+      },
+      "timeline": [
+        {
+          "date": "2026-10-13",
+          "label": "Scaleway anuncia proyectos distintos con AMD en Suecia y NVIDIA en Dinamarca."
+        }
+      ],
+      "limitations": [
+        "No se anunció fecha de apertura ni cantidad de aceleradores.",
+        "No hay tarifa comercial específica de Copenhague.",
+        "No se publicaron métricas ambientales ni benchmarks independientes.",
+        "Residencia física no garantiza cumplimiento integral."
+      ],
+      "practicalAdvice": [
+        "Solicitar ubicación contractual y política de datos antes de contratar.",
+        "Comparar SLA, interconexión y costes reales al publicarse la oferta.",
+        "No extrapolar benchmarks de un sistema HGX al futuro emplazamiento."
+      ],
+      "usefulFacts": [
+        "Scaleway ya servía clientes daneses, incluidos el Ayuntamiento de Copenhague y Corti, según Reuters.",
+        "El mismo día anunció un supercomputador AMD en Suecia, un proyecto separado."
+      ],
+      "articleVersion": 2,
+      "coveredAt": "2026-10-13",
+      "verifiedAt": "2026-10-13",
+      "image": "assets/globe.webp",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "body": [
+        "El 13 de octubre de 2026, Scaleway anunció que planea abrir en Copenhague un nuevo emplazamiento de cómputo para inteligencia artificial basado en sistemas NVIDIA HGX B300. Reuters informó del proyecto como la segunda expansión anunciada por la empresa francesa durante la misma jornada. La primera fue un supercomputador con aceleradores AMD Instinct MI355X en Suecia. Aunque comparten la estrategia de aumentar capacidad europea, se trata de iniciativas distintas, con tecnologías, ubicaciones y decisiones de contratación diferentes. Ninguno de los anuncios equivale a la puesta en servicio inmediata de recursos nuevos.",
+        "La infraestructura de Copenhague utilizará NVIDIA HGX B300, una plataforma para servidores de IA basada en aceleradores Blackwell Ultra. Esa elección indica la familia de hardware prevista, pero no establece por sí sola cuántas GPU habrá, qué interconexión exacta empleará la instalación o cuántos clientes podrán usarla simultáneamente. Tampoco permite inferir un rendimiento global del centro de datos a partir de fichas comerciales de un sistema individual. La capacidad operativa dependerá de la configuración final de servidores, redes, almacenamiento, refrigeración y software de orquestación.",
+        "Reuters atribuye a Scaleway tres motivos para escoger Copenhague: un ecosistema tecnológico desarrollado, acceso a electricidad relativamente baja en carbono y un clima frío que puede reducir las necesidades de refrigeración. Son razones estratégicas de la compañía, no resultados de una auditoría energética de la futura instalación. No se publicaron en el anuncio métricas de consumo anual, eficiencia PUE, emisiones verificadas, fuentes contractuales de energía o límites de uso de agua. Una promesa de operación más eficiente solo podrá evaluarse con datos de funcionamiento y metodología pública.",
+        "La ubicación danesa encaja con el interés de empresas europeas por contratar infraestructura que opere dentro de la Unión Europea. Scaleway afirma que quiere atender organizaciones que prefieren alojar sus trabajos de IA bajo el marco jurídico europeo. Sin embargo, el lugar del servidor no resuelve por sí mismo todos los requisitos de cumplimiento. Los clientes deben conocer subprocesadores, acuerdos de tratamiento, acceso administrativo, copias de seguridad, rutas de datos y mecanismos de transferencia internacional. Tampoco hay información suficiente para afirmar que todo el procesamiento asociado al futuro servicio permanecerá exclusivamente en Dinamarca.",
+        "El anuncio llega cuando la disponibilidad de cómputo especializado condiciona tanto el entrenamiento como la inferencia de modelos. Los aceleradores NVIDIA tienen un ecosistema amplio de herramientas y bibliotecas, pero elegir un proveedor europeo puede responder también a contratos, soporte y cercanía regional. Scaleway ya atendía clientes daneses, según el reporte de Reuters, entre ellos el Ayuntamiento de Copenhague y la empresa de IA Corti. Esa cartera comercial previa es un antecedente, no evidencia de que esos clientes vayan a utilizar el nuevo emplazamiento o de que hayan firmado compromisos de capacidad B300.",
+        "La otra noticia del día, el proyecto sueco basado en AMD MI355X, ofrece una comparación útil sin confundir eventos. En Suecia se anuncia un supercomputador comercial con AMD y su ecosistema ROCm; en Dinamarca se proyecta un emplazamiento con sistemas NVIDIA HGX B300. La coexistencia de ambas apuestas podría ampliar opciones de hardware para clientes europeos, pero todavía no hay un cuadro público de precios, capacidad, fechas o resultados de benchmarks que permita declarar un ganador. Las diferencias de CUDA y ROCm, las redes y el soporte de cada nube tendrán que medirse por carga de trabajo.",
+        "En cuanto a disponibilidad, Reuters no comunica una fecha concreta de apertura de Copenhague, número de aceleradores, capacidad eléctrica contratada, modalidades de reserva, SLA, regiones API ni tarifas específicas del nuevo sitio. Scaleway comercializa otras instancias B300 en su catálogo general, pero esos precios existentes no prueban cuál será el coste de una GPU en Copenhague. Tampoco se han publicado mediciones independientes de latencia desde clientes daneses, rendimiento en entrenamiento distribuido o eficiencia de inferencia en la instalación futura. El estado correcto es proyecto anunciado, no servicio regional disponible.",
+        "Para empresas interesadas, el paso razonable es definir un conjunto de pruebas y preguntas antes de comprometer presupuesto. Conviene solicitar la fecha de acceso, condiciones de residencia, red entre GPU, capacidad de almacenamiento, compatibilidad de contenedores, políticas de datos, niveles de soporte y precio efectivo por carga completa. Los equipos con aplicaciones ya optimizadas para NVIDIA pueden preparar pruebas de reproducibilidad y escalado, pero no deben planificar una migración de producción con base exclusiva en el anuncio. La misma prudencia aplica a comparaciones ambientales: exigir metodología, no solo una descripción favorable del clima.",
+        "Análisis Gazette: Copenhague y Suecia ilustran una estrategia de diversificación de infraestructura europea que combina NVIDIA y AMD en proyectos distintos. El valor competitivo potencial está en ampliar el acceso regional a cómputo de IA y ofrecer alternativas de contratación, no en el número de anuncios de una conferencia. Para que el proyecto danés pase de intención a infraestructura relevante harán falta fecha de servicio, inventario verificable, precios, garantías contractuales y resultados medidos por clientes. La siguiente revisión editorial deberá actualizar este mismo artículo cuando Scaleway publique esos datos, conservando su identificador y evitando duplicar el evento."
+      ],
+      "sections": [
+        {
+          "heading": "Anuncio, alcance y tecnología",
+          "kind": "report",
+          "paragraphs": [
+            "El 13 de octubre de 2026, Scaleway anunció que planea abrir en Copenhague un nuevo emplazamiento de cómputo para inteligencia artificial basado en sistemas NVIDIA HGX B300. Reuters informó del proyecto como la segunda expansión anunciada por la empresa francesa durante la misma jornada. La primera fue un supercomputador con aceleradores AMD Instinct MI355X en Suecia. Aunque comparten la estrategia de aumentar capacidad europea, se trata de iniciativas distintas, con tecnologías, ubicaciones y decisiones de contratación diferentes. Ninguno de los anuncios equivale a la puesta en servicio inmediata de recursos nuevos.",
+            "La infraestructura de Copenhague utilizará NVIDIA HGX B300, una plataforma para servidores de IA basada en aceleradores Blackwell Ultra. Esa elección indica la familia de hardware prevista, pero no establece por sí sola cuántas GPU habrá, qué interconexión exacta empleará la instalación o cuántos clientes podrán usarla simultáneamente. Tampoco permite inferir un rendimiento global del centro de datos a partir de fichas comerciales de un sistema individual. La capacidad operativa dependerá de la configuración final de servidores, redes, almacenamiento, refrigeración y software de orquestación.",
+            "Reuters atribuye a Scaleway tres motivos para escoger Copenhague: un ecosistema tecnológico desarrollado, acceso a electricidad relativamente baja en carbono y un clima frío que puede reducir las necesidades de refrigeración. Son razones estratégicas de la compañía, no resultados de una auditoría energética de la futura instalación. No se publicaron en el anuncio métricas de consumo anual, eficiencia PUE, emisiones verificadas, fuentes contractuales de energía o límites de uso de agua. Una promesa de operación más eficiente solo podrá evaluarse con datos de funcionamiento y metodología pública."
+          ]
+        },
+        {
+          "heading": "Acceso, costes y límites",
+          "kind": "technical",
+          "paragraphs": [
+            "La ubicación danesa encaja con el interés de empresas europeas por contratar infraestructura que opere dentro de la Unión Europea. Scaleway afirma que quiere atender organizaciones que prefieren alojar sus trabajos de IA bajo el marco jurídico europeo. Sin embargo, el lugar del servidor no resuelve por sí mismo todos los requisitos de cumplimiento. Los clientes deben conocer subprocesadores, acuerdos de tratamiento, acceso administrativo, copias de seguridad, rutas de datos y mecanismos de transferencia internacional. Tampoco hay información suficiente para afirmar que todo el procesamiento asociado al futuro servicio permanecerá exclusivamente en Dinamarca.",
+            "El anuncio llega cuando la disponibilidad de cómputo especializado condiciona tanto el entrenamiento como la inferencia de modelos. Los aceleradores NVIDIA tienen un ecosistema amplio de herramientas y bibliotecas, pero elegir un proveedor europeo puede responder también a contratos, soporte y cercanía regional. Scaleway ya atendía clientes daneses, según el reporte de Reuters, entre ellos el Ayuntamiento de Copenhague y la empresa de IA Corti. Esa cartera comercial previa es un antecedente, no evidencia de que esos clientes vayan a utilizar el nuevo emplazamiento o de que hayan firmado compromisos de capacidad B300.",
+            "La otra noticia del día, el proyecto sueco basado en AMD MI355X, ofrece una comparación útil sin confundir eventos. En Suecia se anuncia un supercomputador comercial con AMD y su ecosistema ROCm; en Dinamarca se proyecta un emplazamiento con sistemas NVIDIA HGX B300. La coexistencia de ambas apuestas podría ampliar opciones de hardware para clientes europeos, pero todavía no hay un cuadro público de precios, capacidad, fechas o resultados de benchmarks que permita declarar un ganador. Las diferencias de CUDA y ROCm, las redes y el soporte de cada nube tendrán que medirse por carga de trabajo.",
+            "En cuanto a disponibilidad, Reuters no comunica una fecha concreta de apertura de Copenhague, número de aceleradores, capacidad eléctrica contratada, modalidades de reserva, SLA, regiones API ni tarifas específicas del nuevo sitio. Scaleway comercializa otras instancias B300 en su catálogo general, pero esos precios existentes no prueban cuál será el coste de una GPU en Copenhague. Tampoco se han publicado mediciones independientes de latencia desde clientes daneses, rendimiento en entrenamiento distribuido o eficiencia de inferencia en la instalación futura. El estado correcto es proyecto anunciado, no servicio regional disponible."
+          ]
+        },
+        {
+          "heading": "Impacto y análisis Gazette",
+          "kind": "analysis",
+          "paragraphs": [
+            "Para empresas interesadas, el paso razonable es definir un conjunto de pruebas y preguntas antes de comprometer presupuesto. Conviene solicitar la fecha de acceso, condiciones de residencia, red entre GPU, capacidad de almacenamiento, compatibilidad de contenedores, políticas de datos, niveles de soporte y precio efectivo por carga completa. Los equipos con aplicaciones ya optimizadas para NVIDIA pueden preparar pruebas de reproducibilidad y escalado, pero no deben planificar una migración de producción con base exclusiva en el anuncio. La misma prudencia aplica a comparaciones ambientales: exigir metodología, no solo una descripción favorable del clima.",
+            "Análisis Gazette: Copenhague y Suecia ilustran una estrategia de diversificación de infraestructura europea que combina NVIDIA y AMD en proyectos distintos. El valor competitivo potencial está en ampliar el acceso regional a cómputo de IA y ofrecer alternativas de contratación, no en el número de anuncios de una conferencia. Para que el proyecto danés pase de intención a infraestructura relevante harán falta fecha de servicio, inventario verificable, precios, garantías contractuales y resultados medidos por clientes. La siguiente revisión editorial deberá actualizar este mismo artículo cuando Scaleway publique esos datos, conservando su identificador y evitando duplicar el evento."
           ]
         }
       ]
@@ -1372,6 +1520,196 @@
       "finalSummary": "El acuerdo amplía las vías empresariales de Claude, pero las integraciones, precios y resultados de seguridad requieren verificación posterior.",
       "analysis": "Análisis Gazette: los agentes empresariales requieren integración y responsabilidad operativa, no solo modelos capaces.",
       "watch": "Lanzamientos concretos, regiones, contratos, seguridad evaluada y resultados de pilotos."
+    },
+    {
+      "id": "aws-bedrock-gpt-6-apac-global-inference-2026",
+      "eventKey": "aws-bedrock-gpt-6-sol-luna-astra-global-inference-apac-2026-10-12",
+      "date": "2026-10-12",
+      "announcedAt": "2026-10-12",
+      "company": "AWS",
+      "product": "Amazon Bedrock · GPT-6 Sol, Luna y Astra · inferencia global Asia-Pacífico",
+      "title": "AWS documenta el acceso a GPT-6 desde cinco regiones de Asia-Pacífico mediante Bedrock",
+      "summary": "AWS explica cómo invocar GPT-6 Sol y Luna desde cinco regiones asiáticas y Astra desde Singapur con perfiles globales de Bedrock. La solicitud puede procesarse fuera de la región de origen; la guía no anuncia un nuevo lanzamiento del modelo ni tarifas nuevas.",
+      "tags": [
+        "AWS",
+        "Amazon Bedrock",
+        "OpenAI",
+        "GPT-6",
+        "Asia-Pacífico",
+        "Inferencia",
+        "Cloud",
+        "Disponibilidad"
+      ],
+      "imageAlt": "Grabado conceptual de redes internacionales de cómputo; no representa la ubicación real de los servidores de Bedrock.",
+      "imageBrief": "Grabado editorial horizontal 3:2: mapa abstracto de Asia-Pacífico conectado a una red de centros de cómputo, cinco nodos de origen y rutas globales simbólicas, sin afirmar localización física real. Tinta sepia y papel envejecido; sin logos falsos, mapas con fronteras incorrectas ni interfaces ficticias.",
+      "source": {
+        "name": "AWS Machine Learning Blog · Global cross-Region inference for OpenAI GPT-6 in Asia-Pacific",
+        "url": "https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-models-on-amazon-bedrock-with-global-cross-region-inference-in-thailand-malaysia-singapore-indonesia-and-taiwan/",
+        "publishedAt": "2026-10-12"
+      },
+      "relatedSources": [
+        {
+          "name": "AWS · GPT-6 Sol model card",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-sol.html"
+        },
+        {
+          "name": "AWS · GPT-6 Luna model card",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-luna.html"
+        },
+        {
+          "name": "AWS · GPT-6 Astra model card",
+          "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-astra.html"
+        }
+      ],
+      "keyPoints": [
+        "Sol y Luna: cinco regiones de origen asiáticas; Astra: Singapur en la guía del 12 de octubre.",
+        "El procesamiento global puede ocurrir fuera de la región de origen.",
+        "AWS documenta permisos, cuotas, auditoría y tarifas existentes; no anuncia nuevos precios."
+      ],
+      "quickTakeaways": [
+        "AWS publica una guía regional para perfiles globales GPT-6 en Bedrock.",
+        "Sol y Luna se invocan desde Singapur, Yakarta, Malasia, Tailandia y Taipéi.",
+        "Astra aparece en la guía desde Singapur.",
+        "La región de origen no garantiza residencia del procesamiento.",
+        "Los costes por tokens ya constan en las fichas oficiales y varían con contexto y caché."
+      ],
+      "executiveSummary": "AWS documentó el 12 de octubre el uso de GPT-6 Sol y Luna desde cinco regiones de Asia-Pacífico y de Astra desde Singapur mediante inferencia global de Bedrock. Es una guía de acceso y operación, no un lanzamiento nuevo de los modelos.\n\nLa ventaja es usar capacidad global desde un endpoint regional; la contrapartida es que los datos pueden procesarse en otra región. Antes de producción se deben revisar IAM, políticas SCP, cuotas, trazabilidad y cumplimiento.",
+      "finalSummary": "La guía facilita operar GPT-6 desde varias regiones asiáticas, pero la capacidad se enruta globalmente. Para empresas, el requisito decisivo es comprobar destino efectivo, costes, límites y políticas de datos antes de escalar.",
+      "analysis": "Análisis Gazette: la distribución cloud convierte en ventaja competitiva el acceso regional y la operación verificable, más allá de las capacidades del modelo.",
+      "watch": "Nuevas regiones de origen para Astra, cambios de perfiles y tarifas, límites de cuota, alternativas de residencia y métricas de latencia reales.",
+      "technicalDetails": [
+        {
+          "label": "Perfiles Sol y Luna",
+          "value": "global.openai.gpt-6-sol / global.openai.gpt-6-luna"
+        },
+        {
+          "label": "Perfil Astra",
+          "value": "global.openai.gpt-6-astra"
+        },
+        {
+          "label": "Endpoint",
+          "value": "bedrock-runtime"
+        },
+        {
+          "label": "Regiones Sol/Luna",
+          "value": "ap-southeast-1, ap-southeast-3, ap-southeast-5, ap-southeast-7, ap-east-2"
+        },
+        {
+          "label": "Cuota de salida",
+          "value": "10 unidades TPM por token de salida",
+          "note": "Regla publicada por AWS para bedrock-runtime."
+        }
+      ],
+      "availability": {
+        "status": "Perfiles de inferencia global documentados por AWS; verificar cuenta y modelo antes de desplegar.",
+        "platforms": [
+          "Amazon Bedrock bedrock-runtime"
+        ],
+        "regions": [
+          "Singapur",
+          "Yakarta (Indonesia)",
+          "Malasia",
+          "Tailandia",
+          "Taipéi (Taiwán)"
+        ],
+        "requirements": [
+          "IAM para perfiles globales",
+          "Activación de regiones opt-in",
+          "SCP compatible con inferencia global"
+        ],
+        "notes": [
+          "Sol y Luna: cinco regiones de origen enumeradas.",
+          "Astra: Singapur en el tutorial.",
+          "La región de procesamiento puede ser otra región comercial."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Sol · Global CRIS · contexto corto",
+          "value": "US$2 entrada / US$10 salida por millón de tokens",
+          "note": "Tarifa existente en ficha AWS; no precio nuevo del anuncio."
+        },
+        {
+          "label": "Luna · Global CRIS · contexto corto",
+          "value": "US$0,10 entrada / US$0,50 salida por millón de tokens",
+          "note": "Tarifa existente en ficha AWS."
+        },
+        {
+          "label": "Astra · Global CRIS · contexto corto",
+          "value": "US$10 entrada / US$50 salida por millón de tokens",
+          "note": "Tarifa existente en ficha AWS."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-12",
+          "label": "AWS publica guía de inferencia global GPT-6 desde Asia-Pacífico."
+        }
+      ],
+      "limitations": [
+        "No garantiza residencia de datos en la región de origen.",
+        "Los perfiles y regiones admitidos pueden cambiar.",
+        "Los precios dependen de contexto, caché y condiciones vigentes.",
+        "Sin benchmarks regionales independientes en el anuncio."
+      ],
+      "practicalAdvice": [
+        "Verificar región y perfil desde la cuenta AWS antes de implementar.",
+        "Revisar SCP e IAM de forma restrictiva.",
+        "Consultar CloudTrail additionalEventData.inferenceRegion y límites TPM.",
+        "Estimar costes con tarifas por millón de tokens y contexto real."
+      ],
+      "usefulFacts": [
+        "Singapur está habilitada por defecto; las otras cuatro regiones de la guía son opt-in.",
+        "AWS señala retención de hasta 30 días para tráfico señalado por clasificadores de abuso bajo condiciones descritas.",
+        "El registro de facturación y cuotas permanece en la región de origen."
+      ],
+      "articleVersion": 2,
+      "coveredAt": "2026-10-13",
+      "verifiedAt": "2026-10-13",
+      "image": "assets/globe.webp",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "body": [
+        "El 12 de octubre de 2026, Amazon Web Services publicó una guía técnica para utilizar GPT-6 Sol y GPT-6 Luna desde cinco regiones de Asia-Pacífico mediante inferencia global entre regiones de Amazon Bedrock. Las regiones de origen enumeradas son Singapur, Yakarta, Malasia, Tailandia y Taipéi. La misma documentación explica el acceso a GPT-6 Astra desde Singapur. La noticia describe una ruta de acceso regional y su configuración operativa; no supone que OpenAI haya lanzado por primera vez estos modelos ese día ni que AWS haya instalado capacidad de ejecución dedicada en cada uno de los cinco países.",
+        "La distinción entre región de origen y región de procesamiento es central. Un desarrollador envía su solicitud al endpoint bedrock-runtime de una región admitida, pero Amazon Bedrock puede ejecutar el modelo en otra región comercial compatible. El perfil global permite recurrir a capacidad distribuida cuando una región concreta está saturada. La facturación, los registros operativos y las cuotas se mantienen asociados a la región desde la que se invoca la API. Por tanto, «acceso desde Tailandia» no significa «procesamiento necesariamente en Tailandia», y el diseño no debe confundirse con residencia local garantizada.",
+        "Los identificadores documentados son global.openai.gpt-6-sol, global.openai.gpt-6-luna y global.openai.gpt-6-astra. Sol y Luna figuran en las cinco regiones citadas; la guía de octubre presenta Astra desde ap-southeast-1, Singapur. AWS muestra ejemplos tanto con Converse como con interfaces compatibles con OpenAI, además de clientes de programación. Los tres modelos aceptan texto e imágenes como entrada y devuelven texto; permiten uso de herramientas desde el cliente y caché de prompts. Estas capacidades proceden de la documentación del proveedor y no constituyen una evaluación comparativa independiente.",
+        "Para empezar no basta con cambiar un nombre de modelo. El equipo necesita activar su región de origen, configurar permisos IAM para el perfil de inferencia y verificar las restricciones de la organización. AWS señala que Singapur está habilitada de forma predeterminada, mientras que Yakarta, Malasia, Tailandia y Taipéi requieren activación explícita en la cuenta. También documenta una causa frecuente de fallos: las políticas de control de servicios que solo permiten nombres de regiones pueden rechazar solicitudes globales, porque la condición aws:RequestedRegion aparece como unspecified. La recomendación es limitar una excepción al perfil autorizado, no desactivar indiscriminadamente los controles regionales.",
+        "La seguridad y el cumplimiento merecen una revisión separada. El perfil global puede dirigir datos a cualquier región comercial compatible donde el modelo esté desplegado. AWS advierte que determinados datos señalados por sus clasificadores de abuso pueden conservarse hasta treinta días para análisis automatizado en la región de destino, salvo condiciones especiales que correspondan a clientes elegibles. CloudTrail permite consultar additionalEventData.inferenceRegion para conocer el destino efectivo de una llamada. Esto es especialmente importante para instituciones con contratos de residencia, información personal o reglas sectoriales: disponer de un endpoint asiático no sustituye una evaluación jurídica y técnica del recorrido de los datos.",
+        "En costes, la publicación del 12 de octubre no anunció una nueva tarifa. Las fichas de producto vigentes sí muestran precios de referencia para inferencia global estándar con contexto corto, expresados por millón de tokens: GPT-6 Sol, US$2 de entrada y US$10 de salida; GPT-6 Luna, US$0,10 de entrada y US$0,50 de salida; GPT-6 Astra, US$10 de entrada y US$50 de salida. Los precios cambian con contexto largo, caché y modalidades de servicio, por lo que no son un presupuesto completo. En los tres casos debe verificarse el tarifario aplicable antes de contratar y distinguir el coste por tokens de otros cargos operativos.",
+        "El dimensionamiento de cuota introduce otra particularidad: AWS contabiliza diez unidades de cuota por cada token de salida frente a una por token de entrada. Según su ejemplo, una solicitud con 2.000 tokens de entrada y 1.000 de salida consume 12.000 tokens de la cuota de tokens por minuto. La plataforma reserva inicialmente el máximo de salida configurado, así que un max_tokens excesivo puede afectar la concurrencia. Para producción, AWS aconseja observar EstimatedTPMQuotaUsage en CloudWatch y preparar incrementos de cuota antes de escalar tráfico real.",
+        "Esta guía afecta de manera diferente a los equipos. Una startup de Singapur puede probar el mismo servicio de Bedrock con tres perfiles y comparar coste, latencia y precisión en tareas propias. Una empresa con datos sensibles debe verificar si el enrutamiento global es aceptable antes de integrar documentos internos. Un equipo que migra desde APIs compatibles con OpenAI debe probar autenticación, parámetros admitidos, límites, tratamiento de errores y registros de auditoría, no asumir equivalencia total porque el formato de las solicitudes sea familiar. Los perfiles regionales también pueden cambiar con el tiempo; AWS recomienda consultar las fichas de modelo antes del despliegue.",
+        "Análisis Gazette: el avance relevante es que la distribución de modelos de frontera depende cada vez más de las políticas de enrutamiento, capacidad y cumplimiento de los proveedores cloud, no solo de la calidad del modelo. El acceso anunciado puede simplificar pruebas en Asia-Pacífico, pero el valor práctico se mide en latencia, estabilidad de cuota, trazabilidad y coste final. Lo que debe observarse ahora es si AWS amplía los perfiles de Astra a más regiones de origen, si aparecen opciones de residencia más restringidas y si los equipos publican evaluaciones reproducibles de rendimiento y coste bajo cargas comparables."
+      ],
+      "sections": [
+        {
+          "heading": "Anuncio, alcance y tecnología",
+          "kind": "report",
+          "paragraphs": [
+            "El 12 de octubre de 2026, Amazon Web Services publicó una guía técnica para utilizar GPT-6 Sol y GPT-6 Luna desde cinco regiones de Asia-Pacífico mediante inferencia global entre regiones de Amazon Bedrock. Las regiones de origen enumeradas son Singapur, Yakarta, Malasia, Tailandia y Taipéi. La misma documentación explica el acceso a GPT-6 Astra desde Singapur. La noticia describe una ruta de acceso regional y su configuración operativa; no supone que OpenAI haya lanzado por primera vez estos modelos ese día ni que AWS haya instalado capacidad de ejecución dedicada en cada uno de los cinco países.",
+            "La distinción entre región de origen y región de procesamiento es central. Un desarrollador envía su solicitud al endpoint bedrock-runtime de una región admitida, pero Amazon Bedrock puede ejecutar el modelo en otra región comercial compatible. El perfil global permite recurrir a capacidad distribuida cuando una región concreta está saturada. La facturación, los registros operativos y las cuotas se mantienen asociados a la región desde la que se invoca la API. Por tanto, «acceso desde Tailandia» no significa «procesamiento necesariamente en Tailandia», y el diseño no debe confundirse con residencia local garantizada.",
+            "Los identificadores documentados son global.openai.gpt-6-sol, global.openai.gpt-6-luna y global.openai.gpt-6-astra. Sol y Luna figuran en las cinco regiones citadas; la guía de octubre presenta Astra desde ap-southeast-1, Singapur. AWS muestra ejemplos tanto con Converse como con interfaces compatibles con OpenAI, además de clientes de programación. Los tres modelos aceptan texto e imágenes como entrada y devuelven texto; permiten uso de herramientas desde el cliente y caché de prompts. Estas capacidades proceden de la documentación del proveedor y no constituyen una evaluación comparativa independiente."
+          ]
+        },
+        {
+          "heading": "Acceso, costes y límites",
+          "kind": "technical",
+          "paragraphs": [
+            "Para empezar no basta con cambiar un nombre de modelo. El equipo necesita activar su región de origen, configurar permisos IAM para el perfil de inferencia y verificar las restricciones de la organización. AWS señala que Singapur está habilitada de forma predeterminada, mientras que Yakarta, Malasia, Tailandia y Taipéi requieren activación explícita en la cuenta. También documenta una causa frecuente de fallos: las políticas de control de servicios que solo permiten nombres de regiones pueden rechazar solicitudes globales, porque la condición aws:RequestedRegion aparece como unspecified. La recomendación es limitar una excepción al perfil autorizado, no desactivar indiscriminadamente los controles regionales.",
+            "La seguridad y el cumplimiento merecen una revisión separada. El perfil global puede dirigir datos a cualquier región comercial compatible donde el modelo esté desplegado. AWS advierte que determinados datos señalados por sus clasificadores de abuso pueden conservarse hasta treinta días para análisis automatizado en la región de destino, salvo condiciones especiales que correspondan a clientes elegibles. CloudTrail permite consultar additionalEventData.inferenceRegion para conocer el destino efectivo de una llamada. Esto es especialmente importante para instituciones con contratos de residencia, información personal o reglas sectoriales: disponer de un endpoint asiático no sustituye una evaluación jurídica y técnica del recorrido de los datos.",
+            "En costes, la publicación del 12 de octubre no anunció una nueva tarifa. Las fichas de producto vigentes sí muestran precios de referencia para inferencia global estándar con contexto corto, expresados por millón de tokens: GPT-6 Sol, US$2 de entrada y US$10 de salida; GPT-6 Luna, US$0,10 de entrada y US$0,50 de salida; GPT-6 Astra, US$10 de entrada y US$50 de salida. Los precios cambian con contexto largo, caché y modalidades de servicio, por lo que no son un presupuesto completo. En los tres casos debe verificarse el tarifario aplicable antes de contratar y distinguir el coste por tokens de otros cargos operativos.",
+            "El dimensionamiento de cuota introduce otra particularidad: AWS contabiliza diez unidades de cuota por cada token de salida frente a una por token de entrada. Según su ejemplo, una solicitud con 2.000 tokens de entrada y 1.000 de salida consume 12.000 tokens de la cuota de tokens por minuto. La plataforma reserva inicialmente el máximo de salida configurado, así que un max_tokens excesivo puede afectar la concurrencia. Para producción, AWS aconseja observar EstimatedTPMQuotaUsage en CloudWatch y preparar incrementos de cuota antes de escalar tráfico real."
+          ]
+        },
+        {
+          "heading": "Impacto y análisis Gazette",
+          "kind": "analysis",
+          "paragraphs": [
+            "Esta guía afecta de manera diferente a los equipos. Una startup de Singapur puede probar el mismo servicio de Bedrock con tres perfiles y comparar coste, latencia y precisión en tareas propias. Una empresa con datos sensibles debe verificar si el enrutamiento global es aceptable antes de integrar documentos internos. Un equipo que migra desde APIs compatibles con OpenAI debe probar autenticación, parámetros admitidos, límites, tratamiento de errores y registros de auditoría, no asumir equivalencia total porque el formato de las solicitudes sea familiar. Los perfiles regionales también pueden cambiar con el tiempo; AWS recomienda consultar las fichas de modelo antes del despliegue.",
+            "Análisis Gazette: el avance relevante es que la distribución de modelos de frontera depende cada vez más de las políticas de enrutamiento, capacidad y cumplimiento de los proveedores cloud, no solo de la calidad del modelo. El acceso anunciado puede simplificar pruebas en Asia-Pacífico, pero el valor práctico se mide en latencia, estabilidad de cuota, trazabilidad y coste final. Lo que debe observarse ahora es si AWS amplía los perfiles de Astra a más regiones de origen, si aparecen opciones de residencia más restringidas y si los equipos publican evaluaciones reproducibles de rendimiento y coste bajo cargas comparables."
+          ]
+        }
+      ]
     },
     {
       "articleVersion": 2,
@@ -28620,12 +28958,12 @@
     {
       "date": "2026-10-12",
       "status": "partial",
-      "verifiedArticles": 10
+      "verifiedArticles": 11
     },
     {
       "date": "2026-10-13",
       "status": "partial",
-      "verifiedArticles": 2
+      "verifiedArticles": 3
     }
   ]
 }
