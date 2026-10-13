@@ -1,8 +1,312 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T09:26:57.455Z",
+  "updatedAt": "2026-10-13T11:20:39.966Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "scaleway-sweden-amd-mi355x-supercomputer-2026",
+      "eventKey": "scaleway-sweden-amd-mi355x-commercial-ai-supercomputer-plan-2026-10-13",
+      "articleVersion": 2,
+      "date": "2026-10-13",
+      "announcedAt": "2026-10-13",
+      "coveredAt": "2026-10-13",
+      "verifiedAt": "2026-10-13",
+      "company": "Scaleway",
+      "product": "Supercomputador comercial de IA en Suecia · AMD Instinct MI355X",
+      "title": "Scaleway anuncia un supercomputador de IA con AMD MI355X en Suecia, todavía sin fecha de servicio",
+      "summary": "Scaleway anunció planes para instalar en Suecia su primer supercomputador de IA fuera de Francia, basado en aceleradores AMD MI355X. El proyecto ampliaría la oferta comercial europea, pero aún no tiene fecha de apertura, precio ni capacidad de GPU publicada.",
+      "tags": [
+        "Scaleway",
+        "AMD",
+        "Infraestructura",
+        "Supercomputación",
+        "Suecia",
+        "Centros de datos",
+        "ROCm"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado conceptual de conexiones e infraestructura informática internacional; no es una fotografía del futuro supercomputador sueco.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial 3:2 de un centro de cómputo conceptual en un paisaje sueco con cables y circuitos estilizados, sin representar un edificio real. Papel envejecido, tinta sepia, composición segura para portada. Evitar logotipos falsos, capturas de interfaces, cifras impresas o aspecto fotográfico documental.",
+      "source": {
+        "name": "Reuters · Scaleway to build AMD-powered AI supercomputer in Sweden",
+        "url": "https://www.reuters.com/business/media-telecom/scaleway-build-amd-powered-ai-supercomputer-sweden-2026-10-13/",
+        "publishedAt": "2026-10-13"
+      },
+      "relatedSources": [
+        {
+          "name": "AMD · Instinct MI355X GPU: especificaciones",
+          "url": "https://www.amd.com/en/products/accelerators/instinct/mi350/mi355x.html"
+        },
+        {
+          "name": "Tele2 · Alianza de nube e IA con Scaleway en Suecia, 28 de mayo de 2026",
+          "url": "https://www.tele2.com/media/news/2026/tele2-partners-with-scaleway-to-launch-a-sovereign-european-cloud-and-ai-offering-in-sweden/",
+          "publishedAt": "2026-05-28"
+        },
+        {
+          "name": "AMD · ROCm Software",
+          "url": "https://www.amd.com/en/products/software/rocm.html"
+        }
+      ],
+      "body": [
+        "El 13 de octubre de 2026, durante una conferencia de inteligencia artificial en París, Scaleway anunció planes para construir en Suecia un supercomputador de IA equipado con aceleradores AMD Instinct MI355X. Reuters informó que sería el primer supercomputador de IA de la compañía fuera de Francia. La noticia es un proyecto de infraestructura, no la inauguración de una instalación ya operativa. Scaleway lo presenta como una nueva opción comercial europea para startups, desarrolladores de modelos y empresas que necesitan capacidad de entrenamiento o inferencia a gran escala.",
+        "La empresa afirma, según Reuters, que el sistema será el primer supercomputador comercial europeo basado en AMD. Esa descripción requiere contexto: ya existen máquinas de investigación europeas que utilizan procesadores AMD, como LUMI en Finlandia, y proveedores de nube que alquilan GPU AMD a clientes europeos. La singularidad alegada se refiere a la propuesta comercial y al tipo de sistema de Scaleway, no a la llegada por primera vez de silicio AMD al continente. No hay todavía una comparación pública de capacidad real frente a otros servicios comerciales.",
+        "El componente técnico confirmado en el anuncio reportado es la familia Instinct MI355X. La ficha oficial de AMD describe para cada acelerador 288 GB de memoria HBM3E, hasta 8 TB/s de ancho de banda de memoria y arquitectura CDNA de cuarta generación. Estas son especificaciones del chip, no medidas del futuro centro sueco. No se publicó el número de GPU, el diseño final de los nodos, la topología de interconexión, la capacidad eléctrica total ni el rendimiento agregado. Multiplicar cifras de catálogo para estimar un clúster sin conocer su tamaño produciría una precisión ficticia.",
+        "El software es una parte relevante del anuncio. AMD promociona ROCm, una plataforma abierta de compiladores, bibliotecas y herramientas para cargas de IA y computación de alto rendimiento. Es compatible con marcos conocidos y dispone de herramientas para adaptar aplicaciones desarrolladas en el ecosistema CUDA. Sin embargo, ROCm y CUDA no son intercambiables de forma automática: los equipos deben comprobar versiones, dependencias, kernels especializados y rendimiento de sus modelos. La apertura del software amplía opciones, pero no elimina el trabajo de migración ni garantiza paridad de rendimiento.",
+        "Scaleway eligió Suecia por su suministro eléctrico relativamente bajo en carbono y por el desarrollo de su sector tecnológico, según el reporte. Esa motivación no equivale a una certificación independiente de huella ambiental para la futura instalación: todavía faltan cifras de consumo, eficiencia energética, refrigeración y mezcla eléctrica concreta. Existe un antecedente verificable: el 28 de mayo de 2026 Tele2 anunció una alianza con Scaleway para ofrecer servicios de nube e IA en Suecia. El supercomputador anunciado en octubre representa una expansión de esa presencia, no el inicio de toda actividad comercial de Scaleway en el país.",
+        "Reuters identifica una cadena de proveedores: Bull ensamblará y mantendrá la máquina; Giga Computing aportará servidores; HPE participará en redes; VAST Data en almacenamiento y Motul en líquidos de refrigeración. La presencia de varios especialistas muestra que una fábrica de IA no se reduce a la GPU. Redes, almacenamiento, refrigeración, operación y mantenimiento determinan si el hardware puede servir cargas sostenidas. No se informaron contratos individuales, capacidades garantizadas o condiciones de servicio para cada componente, por lo que estos nombres no permiten inferir una fecha de entrega.",
+        "La disponibilidad comercial sigue pendiente de precisión. El anuncio no establece una fecha concreta de apertura a clientes, un catálogo de instancias, regiones de acceso, tarifas por hora de GPU, reservas, descuentos, acuerdos de nivel de servicio ni requisitos de contratación. Tampoco publica benchmarks independientes del sistema terminado. Las especificaciones de AMD ayudan a entender el hardware seleccionado, pero no sustituyen mediciones de latencia, entrenamiento distribuido o tokens por segundo bajo cargas reales. Hasta que Scaleway publique un servicio concreto, no corresponde presentarlo como capacidad alquilable hoy.",
+        "El contexto competitivo es la búsqueda europea de alternativas de cómputo avanzado. NVIDIA domina una parte importante de los despliegues de IA, mientras AMD y los operadores regionales intentan ampliar la oferta de hardware y software. Para clientes que valoran residencia de datos, una instalación en Suecia puede abrir opciones, pero ubicación física y cumplimiento normativo no son equivalentes: contratos, subprocesadores, jurisdicción, seguridad y rutas de datos deben evaluarse por separado. Tampoco se ha demostrado que este proyecto resulte más barato o rápido que sus alternativas.",
+        "Análisis Gazette: el anuncio importa porque conecta una nube europea, un fabricante alternativo de aceleradores y una cadena diversa de proveedores para competir en infraestructura de IA. Su efecto dependerá menos de la etiqueta de «primer supercomputador» que de cuántos recursos se ofrezcan, cuándo y con qué calidad de servicio. Para equipos técnicos, la acción razonable es preparar pruebas de compatibilidad ROCm y una matriz de requisitos, no migrar producción sobre una promesa. Los próximos hitos verificables serán la fecha de puesta en servicio, el tamaño del clúster, los precios, las regiones de acceso y benchmarks reproducibles."
+      ],
+      "keyPoints": [
+        "Scaleway anunció un proyecto de supercomputación con AMD MI355X en Suecia; todavía no está operativo.",
+        "La descripción de «primer sistema comercial» es una afirmación de Scaleway reportada por Reuters.",
+        "No se publicaron fecha de apertura, número de GPU, tarifas ni benchmarks del sistema."
+      ],
+      "quickTakeaways": [
+        "Anuncio de construcción, no lanzamiento de servicio disponible.",
+        "El chip seleccionado es AMD Instinct MI355X, con 288 GB HBM3E por GPU según AMD.",
+        "ROCm ofrece una alternativa abierta, pero migrar desde CUDA puede requerir trabajo.",
+        "El proyecto continúa la expansión sueca anunciada con Tele2 en mayo.",
+        "Precios, capacidad y fecha comercial siguen sin confirmar."
+      ],
+      "executiveSummary": "Scaleway anunció el 13 de octubre un proyecto de supercomputador de IA en Suecia basado en AMD Instinct MI355X, su primero fuera de Francia. Reuters reporta que la compañía pretende ofrecerlo comercialmente a empresas y desarrolladores europeos.\n\nTodavía no se conocen fecha de apertura, número de aceleradores, tarifas ni benchmarks del sistema. Las especificaciones publicadas por AMD describen el chip, no el rendimiento del futuro clúster.",
+      "finalSummary": "El proyecto amplía la diversidad prevista de infraestructura europea de IA, pero sigue siendo una construcción anunciada. La evaluación real dependerá de disponibilidad, capacidad, precios y resultados medidos una vez operativo.",
+      "analysis": "Análisis Gazette: la competencia por IA requiere alternativas creíbles de hardware, software y operación. El valor para clientes solo podrá medirse cuando Scaleway publique condiciones y capacidad utilizables.",
+      "watch": "Confirmación de calendario, ubicación operativa, número de GPU, contratos, tarifas, regiones, métricas de rendimiento y condiciones de acceso.",
+      "technicalDetails": [
+        {
+          "label": "GPU anunciada",
+          "value": "AMD Instinct MI355X"
+        },
+        {
+          "label": "Memoria por GPU",
+          "value": "288 GB HBM3E",
+          "note": "Ficha oficial AMD; no es capacidad total del futuro sistema."
+        },
+        {
+          "label": "Ancho de banda por GPU",
+          "value": "Hasta 8 TB/s",
+          "note": "Especificación AMD, no benchmark del clúster."
+        },
+        {
+          "label": "Software",
+          "value": "AMD ROCm",
+          "note": "Compatibilidad sujeta a frameworks, versiones y aplicaciones."
+        }
+      ],
+      "availability": {
+        "status": "Proyecto anunciado; sin servicio comercial confirmado.",
+        "platforms": [
+          "Infraestructura Scaleway (prevista)"
+        ],
+        "regions": [
+          "Suecia (prevista)"
+        ],
+        "requirements": [],
+        "notes": [
+          "Sin fecha de apertura ni tarifas anunciadas.",
+          "No se conoce número de GPU ni capacidad contratada."
+        ]
+      },
+      "timeline": [
+        {
+          "date": "2026-05-28",
+          "label": "Tele2 anuncia alianza con Scaleway para servicios cloud e IA en Suecia."
+        },
+        {
+          "date": "2026-10-13",
+          "label": "Scaleway anuncia planes de supercomputador con AMD MI355X."
+        }
+      ],
+      "limitations": [
+        "Sin fecha de operación o precio publicado.",
+        "Sin recuento de GPU, potencia total ni benchmarks del sistema.",
+        "La afirmación de primacía comercial procede de Scaleway, reportada por Reuters.",
+        "La residencia física no prueba por sí sola cumplimiento normativo."
+      ],
+      "practicalAdvice": [
+        "Evaluar compatibilidad ROCm antes de planificar migraciones.",
+        "No confundir especificaciones de GPU con resultados del futuro clúster.",
+        "Solicitar tarifas, SLA y condiciones regionales cuando se publique la oferta."
+      ],
+      "usefulFacts": [
+        "AMD declara 288 GB HBM3E y 8 TB/s de ancho de banda para MI355X.",
+        "Tele2 y Scaleway anunciaron colaboración comercial en Suecia en mayo de 2026."
+      ],
+      "sections": [
+        {
+          "heading": "El proyecto y su alcance real",
+          "kind": "report",
+          "paragraphs": [
+            "El 13 de octubre de 2026, durante una conferencia de inteligencia artificial en París, Scaleway anunció planes para construir en Suecia un supercomputador de IA equipado con aceleradores AMD Instinct MI355X. Reuters informó que sería el primer supercomputador de IA de la compañía fuera de Francia. La noticia es un proyecto de infraestructura, no la inauguración de una instalación ya operativa. Scaleway lo presenta como una nueva opción comercial europea para startups, desarrolladores de modelos y empresas que necesitan capacidad de entrenamiento o inferencia a gran escala.",
+            "La empresa afirma, según Reuters, que el sistema será el primer supercomputador comercial europeo basado en AMD. Esa descripción requiere contexto: ya existen máquinas de investigación europeas que utilizan procesadores AMD, como LUMI en Finlandia, y proveedores de nube que alquilan GPU AMD a clientes europeos. La singularidad alegada se refiere a la propuesta comercial y al tipo de sistema de Scaleway, no a la llegada por primera vez de silicio AMD al continente. No hay todavía una comparación pública de capacidad real frente a otros servicios comerciales.",
+            "El componente técnico confirmado en el anuncio reportado es la familia Instinct MI355X. La ficha oficial de AMD describe para cada acelerador 288 GB de memoria HBM3E, hasta 8 TB/s de ancho de banda de memoria y arquitectura CDNA de cuarta generación. Estas son especificaciones del chip, no medidas del futuro centro sueco. No se publicó el número de GPU, el diseño final de los nodos, la topología de interconexión, la capacidad eléctrica total ni el rendimiento agregado. Multiplicar cifras de catálogo para estimar un clúster sin conocer su tamaño produciría una precisión ficticia."
+          ]
+        },
+        {
+          "heading": "Hardware, software y socios",
+          "kind": "technical",
+          "paragraphs": [
+            "El software es una parte relevante del anuncio. AMD promociona ROCm, una plataforma abierta de compiladores, bibliotecas y herramientas para cargas de IA y computación de alto rendimiento. Es compatible con marcos conocidos y dispone de herramientas para adaptar aplicaciones desarrolladas en el ecosistema CUDA. Sin embargo, ROCm y CUDA no son intercambiables de forma automática: los equipos deben comprobar versiones, dependencias, kernels especializados y rendimiento de sus modelos. La apertura del software amplía opciones, pero no elimina el trabajo de migración ni garantiza paridad de rendimiento.",
+            "Scaleway eligió Suecia por su suministro eléctrico relativamente bajo en carbono y por el desarrollo de su sector tecnológico, según el reporte. Esa motivación no equivale a una certificación independiente de huella ambiental para la futura instalación: todavía faltan cifras de consumo, eficiencia energética, refrigeración y mezcla eléctrica concreta. Existe un antecedente verificable: el 28 de mayo de 2026 Tele2 anunció una alianza con Scaleway para ofrecer servicios de nube e IA en Suecia. El supercomputador anunciado en octubre representa una expansión de esa presencia, no el inicio de toda actividad comercial de Scaleway en el país.",
+            "Reuters identifica una cadena de proveedores: Bull ensamblará y mantendrá la máquina; Giga Computing aportará servidores; HPE participará en redes; VAST Data en almacenamiento y Motul en líquidos de refrigeración. La presencia de varios especialistas muestra que una fábrica de IA no se reduce a la GPU. Redes, almacenamiento, refrigeración, operación y mantenimiento determinan si el hardware puede servir cargas sostenidas. No se informaron contratos individuales, capacidades garantizadas o condiciones de servicio para cada componente, por lo que estos nombres no permiten inferir una fecha de entrega."
+          ]
+        },
+        {
+          "heading": "Disponibilidad e impacto",
+          "kind": "analysis",
+          "paragraphs": [
+            "La disponibilidad comercial sigue pendiente de precisión. El anuncio no establece una fecha concreta de apertura a clientes, un catálogo de instancias, regiones de acceso, tarifas por hora de GPU, reservas, descuentos, acuerdos de nivel de servicio ni requisitos de contratación. Tampoco publica benchmarks independientes del sistema terminado. Las especificaciones de AMD ayudan a entender el hardware seleccionado, pero no sustituyen mediciones de latencia, entrenamiento distribuido o tokens por segundo bajo cargas reales. Hasta que Scaleway publique un servicio concreto, no corresponde presentarlo como capacidad alquilable hoy.",
+            "El contexto competitivo es la búsqueda europea de alternativas de cómputo avanzado. NVIDIA domina una parte importante de los despliegues de IA, mientras AMD y los operadores regionales intentan ampliar la oferta de hardware y software. Para clientes que valoran residencia de datos, una instalación en Suecia puede abrir opciones, pero ubicación física y cumplimiento normativo no son equivalentes: contratos, subprocesadores, jurisdicción, seguridad y rutas de datos deben evaluarse por separado. Tampoco se ha demostrado que este proyecto resulte más barato o rápido que sus alternativas.",
+            "Análisis Gazette: el anuncio importa porque conecta una nube europea, un fabricante alternativo de aceleradores y una cadena diversa de proveedores para competir en infraestructura de IA. Su efecto dependerá menos de la etiqueta de «primer supercomputador» que de cuántos recursos se ofrezcan, cuándo y con qué calidad de servicio. Para equipos técnicos, la acción razonable es preparar pruebas de compatibilidad ROCm y una matriz de requisitos, no migrar producción sobre una promesa. Los próximos hitos verificables serán la fecha de puesta en servicio, el tamaño del clúster, los precios, las regiones de acceso y benchmarks reproducibles."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ntt-data-anthropic-osaka-datacenter-talks-2026",
+      "eventKey": "ntt-data-anthropic-osaka-datacenter-talks-nikkei-report-2026-10-13",
+      "articleVersion": 2,
+      "date": "2026-10-13",
+      "announcedAt": "2026-10-13",
+      "coveredAt": "2026-10-13",
+      "verifiedAt": "2026-10-13",
+      "company": "NTT DATA",
+      "product": "Conversaciones sobre centro de datos para Anthropic en Osaka",
+      "title": "Reporte: NTT Data negocia construir para Anthropic un centro de datos en Osaka de hasta 500 MW",
+      "summary": "Reuters, citando a Nikkei, informa de conversaciones avanzadas para un centro de datos dedicado a Anthropic en Osaka. El proyecto podría costar hasta un billón de yenes y operar parcialmente desde 2028, pero no existe contrato confirmado.",
+      "tags": [
+        "NTT DATA",
+        "Anthropic",
+        "Reporte",
+        "Centros de datos",
+        "Japón",
+        "Infraestructura",
+        "Energía"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado conceptual de infraestructura y redes globales; no representa una instalación real de Anthropic o NTT Data en Osaka.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial panorámico 3:2 de un centro de datos hipotético en un paisaje urbano japonés genérico, con torres de refrigeración estilizadas y redes abstractas. Estilo periódico antiguo sepia, sin edificio real, logotipos falsos, cifras impresas ni apariencia de fotografía documental.",
+      "source": {
+        "name": "Reuters · NTT Data in final talks to build Anthropic's first data centre in Japan, Nikkei reports",
+        "url": "https://www.reuters.com/business/media-telecom/ntt-data-final-talks-build-anthropics-first-data-centre-japan-nikkei-reports-2026-10-13/",
+        "publishedAt": "2026-10-13"
+      },
+      "relatedSources": [],
+      "body": [
+        "Reuters informó el 13 de octubre de 2026, citando al diario económico japonés Nikkei, que NTT Data Group se encuentra en la fase final de conversaciones para construir en Osaka un centro de datos destinado a Anthropic. La información procede de varias fuentes consultadas por Nikkei, no de un contrato anunciado conjuntamente por las empresas. El estado correcto es negociación avanzada reportada, no adjudicación cerrada, obra iniciada ni servicio operativo. Esta distinción importa porque un proyecto de infraestructura de semejante escala puede cambiar de alcance, socios, calendario o financiación antes de una firma.",
+        "Según los datos atribuidos a Nikkei por Reuters, la construcción podría costar hasta un billón de yenes, unos 6.300 millones de dólares al tipo de cambio citado en el reporte. La capacidad de recepción eléctrica podría alcanzar 500 megavatios y una parte de las operaciones comenzaría, como pronto, en 2028. Todas esas cifras son escenarios potenciales del proyecto, no compromisos contractuales verificados. En particular, el importe estimado no demuestra que Anthropic haya aprobado o desembolsado una inversión de ese monto ni que NTT haya contratado ya equipos.",
+        "Las partes aspirarían a firmar un acuerdo antes del final del ejercicio fiscal japonés de 2026, que termina el 31 de marzo de 2027. Reuters señala que NTT Data declinó comentar y que el grupo NTT no estuvo inmediatamente disponible para responder. No aparece en el reporte una confirmación oficial de Anthropic. Por ello, la noticia debe seguir etiquetada como reporte hasta que exista documentación empresarial, permisos, acuerdos de suministro o anuncios verificables de construcción. La negociación, por sí misma, no cambia las condiciones de uso de Claude.",
+        "El medio describe la instalación como el primer centro dedicado a Anthropic en Japón. «Dedicado» no significa necesariamente que Anthropic vaya a ser propietaria del inmueble o de toda la infraestructura. Un operador puede construir y gestionar un centro de datos para un cliente bajo distintos modelos contractuales. Tampoco hay detalles sobre quién comprará los aceleradores, cómo se financiará la obra, si se compartirán instalaciones con otros clientes o qué servicios concretos utilizarían la capacidad. Son cuestiones abiertas que podrían alterar la lectura económica del proyecto.",
+        "La cifra de hasta 500 MW es capacidad de entrada eléctrica potencial, no potencia computacional efectiva ni consumo continuo garantizado. La energía disponible para chips depende de pérdidas, redes, refrigeración, redundancia y diseño final. Sin un desglose de equipos no puede calcularse cuántas GPU, racks, modelos o tokens por segundo representaría. La construcción por fases anunciada en el reporte implica, además, que una apertura parcial en 2028 no equivaldría a tener desplegada toda la capacidad desde el primer día.",
+        "Osaka es un emplazamiento relevante para atender operaciones en Japón y la región, pero no se anunció una nueva región pública de Claude, una modalidad de residencia de datos ni una reducción de latencia. Una instalación física dedicada puede servir entrenamiento, inferencia, almacenamiento u otras necesidades internas. No se especificó la mezcla. Tampoco se informaron requisitos regulatorios, planes de continuidad o contratos de suministro eléctrico. Cualquier afirmación sobre disponibilidad de API local o tratamiento de datos japoneses tendría que esperar documentación de producto y cumplimiento.",
+        "El proyecto reportado se inscribe en la expansión de centros de datos que acompaña la competencia entre grandes modelos de IA. La capacidad de entrenar y servir modelos depende de chips, redes, energía, refrigeración y acceso a instalaciones. Pero el gasto anunciado o estimado en un edificio no es un benchmark de calidad de modelo ni garantiza menores precios para usuarios. Además, una instalación con horizonte 2028 puede enfrentar cambios tecnológicos importantes antes de ponerse en marcha. Compararla hoy con infraestructura existente requiere separar capacidad proyectada de capacidad disponible.",
+        "Para desarrolladores y empresas que usan Claude no hay una acción de migración inmediata. Los planes, límites de uso, precios por token, regiones y acuerdos de procesamiento vigentes deben comprobarse en la documentación oficial de Anthropic, no inferirse de un reporte sobre bienes raíces e infraestructura. Los clientes con exigencias de residencia de datos pueden registrar el anuncio como posible señal de expansión regional, pero no deben considerarlo una garantía contractual. Para equipos de planificación, conviene distinguir el calendario de firma, el de construcción y el de servicio.",
+        "Análisis Gazette: la noticia muestra cómo los laboratorios de modelos buscan asegurar infraestructura de largo plazo en distintas geografías, pero el nivel de certeza todavía es limitado. Una cifra de hasta un billón de yenes atrae titulares, aunque el verdadero punto de inflexión será un contrato verificable con capacidad, responsabilidades y plazos definidos. Hay que observar si NTT Data y Anthropic confirman la negociación, qué permisos y energía se obtienen, cuándo empiezan las obras y si se anuncia algún servicio regional concreto. Hasta entonces, es una oportunidad en negociación, no una nueva capacidad disponible."
+      ],
+      "keyPoints": [
+        "La negociación es un reporte de Nikkei difundido por Reuters; no hay contrato confirmado.",
+        "Hasta ¥1 billón, 500 MW y operación parcial desde 2028 son estimaciones y objetivos reportados.",
+        "No se anunció una región nueva de Claude ni cambios de tarifas o acceso."
+      ],
+      "quickTakeaways": [
+        "NTT Data y Anthropic estarían en conversaciones avanzadas, según Nikkei citado por Reuters.",
+        "El costo podría alcanzar ¥1 billón (aproximadamente US$6.300 millones según el reporte).",
+        "La capacidad de entrada eléctrica potencial sería de hasta 500 MW.",
+        "Las operaciones parciales podrían empezar en 2028, no antes.",
+        "No existe anuncio contractual ni disponibilidad de producto confirmada."
+      ],
+      "executiveSummary": "Un reporte de Nikkei recogido por Reuters señala que NTT Data negocia construir en Osaka una instalación dedicada a Anthropic, con costo potencial de hasta un billón de yenes y entrada eléctrica de hasta 500 MW.\n\nLas partes no han anunciado un contrato definitivo. El inicio parcial en 2028 es una proyección del reporte, no una fecha de servicio garantizada ni una nueva región de Claude.",
+      "finalSummary": "La posible instalación japonesa sería un proyecto importante de infraestructura de IA, pero todavía no está acordada ni construida. La confirmación empresarial, las condiciones del contrato y la capacidad efectivamente desplegada determinarán su relevancia real.",
+      "analysis": "Análisis Gazette: asegurar energía y centros de datos a largo plazo es tan decisivo como diseñar modelos. Las cifras de una negociación no deben confundirse con inversión ejecutada o capacidad operativa.",
+      "watch": "Firma del acuerdo antes del cierre fiscal japonés, permisos, financiación, suministro eléctrico, obras, hardware, calendario real y cualquier anuncio de región de servicio.",
+      "technicalDetails": [
+        {
+          "label": "Costo potencial",
+          "value": "Hasta ¥1 billón",
+          "note": "Estimación atribuida por Reuters a Nikkei; sin contrato confirmado."
+        },
+        {
+          "label": "Capacidad de entrada eléctrica",
+          "value": "Hasta 500 MW",
+          "note": "Potencial; no equivale a consumo continuo ni potencia computacional."
+        },
+        {
+          "label": "Operación parcial",
+          "value": "Desde 2028, como pronto",
+          "note": "Proyección reportada."
+        },
+        {
+          "label": "Fecha objetivo de acuerdo",
+          "value": "Antes del 31 de marzo de 2027",
+          "note": "Cierre del ejercicio fiscal japonés 2026."
+        }
+      ],
+      "availability": {
+        "status": "Negociaciones reportadas; sin contrato ni servicio disponible.",
+        "platforms": [],
+        "regions": [
+          "Osaka, Japón (propuesta)"
+        ],
+        "requirements": [],
+        "notes": [
+          "No hay región Claude API anunciada en relación con el proyecto.",
+          "No se conocen precios de producto ni hardware contratado."
+        ]
+      },
+      "limitations": [
+        "Información de Nikkei atribuida por Reuters, sin confirmación conjunta.",
+        "NTT Data declinó comentar, según Reuters.",
+        "Coste, potencia y calendario son cifras potenciales.",
+        "No se sabe quién será propietario, operador o comprador de equipos.",
+        "No existe anuncio de nueva región o tarifas de Claude."
+      ],
+      "practicalAdvice": [
+        "No planificar despliegues de Claude sobre una región no anunciada.",
+        "Separar capacidad eléctrica de cómputo y cifras previstas de instalaciones operativas.",
+        "Vigilar confirmaciones contractuales y documentación de residencia de datos."
+      ],
+      "usefulFacts": [
+        "El ejercicio fiscal japonés 2026 termina el 31 de marzo de 2027.",
+        "La cifra de 500 MW se refiere a entrada eléctrica potencial, no a GPUs."
+      ],
+      "sections": [
+        {
+          "heading": "Conversaciones y cifras todavía no vinculantes",
+          "kind": "report",
+          "paragraphs": [
+            "Reuters informó el 13 de octubre de 2026, citando al diario económico japonés Nikkei, que NTT Data Group se encuentra en la fase final de conversaciones para construir en Osaka un centro de datos destinado a Anthropic. La información procede de varias fuentes consultadas por Nikkei, no de un contrato anunciado conjuntamente por las empresas. El estado correcto es negociación avanzada reportada, no adjudicación cerrada, obra iniciada ni servicio operativo. Esta distinción importa porque un proyecto de infraestructura de semejante escala puede cambiar de alcance, socios, calendario o financiación antes de una firma.",
+            "Según los datos atribuidos a Nikkei por Reuters, la construcción podría costar hasta un billón de yenes, unos 6.300 millones de dólares al tipo de cambio citado en el reporte. La capacidad de recepción eléctrica podría alcanzar 500 megavatios y una parte de las operaciones comenzaría, como pronto, en 2028. Todas esas cifras son escenarios potenciales del proyecto, no compromisos contractuales verificados. En particular, el importe estimado no demuestra que Anthropic haya aprobado o desembolsado una inversión de ese monto ni que NTT haya contratado ya equipos.",
+            "Las partes aspirarían a firmar un acuerdo antes del final del ejercicio fiscal japonés de 2026, que termina el 31 de marzo de 2027. Reuters señala que NTT Data declinó comentar y que el grupo NTT no estuvo inmediatamente disponible para responder. No aparece en el reporte una confirmación oficial de Anthropic. Por ello, la noticia debe seguir etiquetada como reporte hasta que exista documentación empresarial, permisos, acuerdos de suministro o anuncios verificables de construcción. La negociación, por sí misma, no cambia las condiciones de uso de Claude."
+          ]
+        },
+        {
+          "heading": "Escala técnica y condiciones desconocidas",
+          "kind": "technical",
+          "paragraphs": [
+            "El medio describe la instalación como el primer centro dedicado a Anthropic en Japón. «Dedicado» no significa necesariamente que Anthropic vaya a ser propietaria del inmueble o de toda la infraestructura. Un operador puede construir y gestionar un centro de datos para un cliente bajo distintos modelos contractuales. Tampoco hay detalles sobre quién comprará los aceleradores, cómo se financiará la obra, si se compartirán instalaciones con otros clientes o qué servicios concretos utilizarían la capacidad. Son cuestiones abiertas que podrían alterar la lectura económica del proyecto.",
+            "La cifra de hasta 500 MW es capacidad de entrada eléctrica potencial, no potencia computacional efectiva ni consumo continuo garantizado. La energía disponible para chips depende de pérdidas, redes, refrigeración, redundancia y diseño final. Sin un desglose de equipos no puede calcularse cuántas GPU, racks, modelos o tokens por segundo representaría. La construcción por fases anunciada en el reporte implica, además, que una apertura parcial en 2028 no equivaldría a tener desplegada toda la capacidad desde el primer día.",
+            "Osaka es un emplazamiento relevante para atender operaciones en Japón y la región, pero no se anunció una nueva región pública de Claude, una modalidad de residencia de datos ni una reducción de latencia. Una instalación física dedicada puede servir entrenamiento, inferencia, almacenamiento u otras necesidades internas. No se especificó la mezcla. Tampoco se informaron requisitos regulatorios, planes de continuidad o contratos de suministro eléctrico. Cualquier afirmación sobre disponibilidad de API local o tratamiento de datos japoneses tendría que esperar documentación de producto y cumplimiento."
+          ]
+        },
+        {
+          "heading": "Qué cambia y qué falta confirmar",
+          "kind": "analysis",
+          "paragraphs": [
+            "El proyecto reportado se inscribe en la expansión de centros de datos que acompaña la competencia entre grandes modelos de IA. La capacidad de entrenar y servir modelos depende de chips, redes, energía, refrigeración y acceso a instalaciones. Pero el gasto anunciado o estimado en un edificio no es un benchmark de calidad de modelo ni garantiza menores precios para usuarios. Además, una instalación con horizonte 2028 puede enfrentar cambios tecnológicos importantes antes de ponerse en marcha. Compararla hoy con infraestructura existente requiere separar capacidad proyectada de capacidad disponible.",
+            "Para desarrolladores y empresas que usan Claude no hay una acción de migración inmediata. Los planes, límites de uso, precios por token, regiones y acuerdos de procesamiento vigentes deben comprobarse en la documentación oficial de Anthropic, no inferirse de un reporte sobre bienes raíces e infraestructura. Los clientes con exigencias de residencia de datos pueden registrar el anuncio como posible señal de expansión regional, pero no deben considerarlo una garantía contractual. Para equipos de planificación, conviene distinguir el calendario de firma, el de construcción y el de servicio.",
+            "Análisis Gazette: la noticia muestra cómo los laboratorios de modelos buscan asegurar infraestructura de largo plazo en distintas geografías, pero el nivel de certeza todavía es limitado. Una cifra de hasta un billón de yenes atrae titulares, aunque el verdadero punto de inflexión será un contrato verificable con capacidad, responsabilidades y plazos definidos. Hay que observar si NTT Data y Anthropic confirman la negociación, qué permisos y energía se obtienen, cuándo empiezan las obras y si se anuncia algún servicio regional concreto. Hasta entonces, es una oportunidad en negociación, no una nueva capacidad disponible."
+          ]
+        }
+      ]
+    },
     {
       "id": "tencent-proposed-usd-cny-bonds-ai-capex-2026",
       "eventKey": "tencent-proposed-usd-cny-bonds-ai-capex-2026-10-12",
@@ -28317,6 +28621,11 @@
       "date": "2026-10-12",
       "status": "partial",
       "verifiedArticles": 10
+    },
+    {
+      "date": "2026-10-13",
+      "status": "partial",
+      "verifiedArticles": 2
     }
   ]
 }
