@@ -1,8 +1,231 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T13:21:26.580Z",
+  "updatedAt": "2026-10-13T19:18:44.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "workday-trusted-agent-platform-headless-2026",
+      "eventKey": "workday-trusted-agent-platform-headless-agent-harness-mcp-general-availability-2026-10-13",
+      "date": "2026-10-13",
+      "announcedAt": "2026-10-13",
+      "coveredAt": "2026-10-13",
+      "verifiedAt": "2026-10-13",
+      "articleVersion": 2,
+      "company": "Workday",
+      "product": "Trusted Agent Platform",
+      "title": "Workday habilita agentes empresariales headless con herramientas MCP y permisos de recursos humanos y finanzas",
+      "summary": "Workday anunció disponibilidad general de Agent Harness, Agent-Ready Tools, Developer Agent, Custom Agents y Data Cloud. La plataforma promete controles de acceso y auditoría; dos mecanismos de razonamiento contextual continúan en desarrollo.",
+      "tags": [
+        "Agentes",
+        "MCP",
+        "Seguridad",
+        "Empresas",
+        "Workday"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Ilustración conceptual de agentes y sistemas empresariales, no fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado conceptual horizontal 3:2 de una oficina de agentes con libro de autorizaciones y auditoría, tinta sepia, sin interfaces ni logotipos ficticios.",
+      "source": {
+        "name": "Workday · anuncio oficial",
+        "url": "https://newsroom.workday.com/2026-10-13-Workdays-Trusted-Agent-Platform-Now-Delivers-Headless-Access-to-HR-and-Finance,-Letting-Customers-Build-and-Run-Lawful-AI-Agents",
+        "publishedAt": "2026-10-13"
+      },
+      "body": [
+        "Workday anunció el 13 de octubre de 2026, durante Workday Rising, una ampliación de Trusted Agent Platform que permite ejecutar agentes sobre procesos de recursos humanos y finanzas sin depender de la interfaz tradicional. La compañía denomina headless a ese acceso: un agente autorizado puede consultar información y solicitar acciones desde otros entornos. La novedad es relevante porque una decisión sobre nóminas, puestos o presupuestos tiene consecuencias reales y requiere más que una respuesta lingüísticamente convincente. El anuncio describe una arquitectura de gobierno, no una prueba independiente de seguridad.",
+        "La oferta incluye cinco componentes que Workday identifica como generalmente disponibles: Agent Harness, Agent-Ready Tools, Developer Agent, Custom Agents y Workday Data Cloud. Agent-Ready Tools utiliza Model Context Protocol para exponer herramientas que leen datos o ejecutan acciones; Developer Agent ayuda a construir soluciones; Custom Agents permite desplegar agentes propios; Data Cloud ofrece datos contextualizados; Agent Harness proporciona el entorno de ejecución y controles. Son piezas complementarias y no nombres diferentes del mismo producto. La disponibilidad general anunciada debe distinguirse de la configuración contractual de cada cliente.",
+        "Live Data Query permite, según Workday, realizar consultas SQL sobre datos activos de su sistema mediante Data Cloud, sin mantener copias desactualizadas en integraciones externas. El proveedor afirma que se preservan las reglas de negocio y los permisos del usuario en cada solicitud. Este diseño podría evitar accesos indiscriminados a información salarial, pero su eficacia depende de la identidad utilizada, la granularidad de autorización y la revisión de registros. MCP estandariza la conexión con herramientas; por sí solo no garantiza que una consulta o una acción sea segura.",
+        "Agent Harness incorpora contexto sobre el empleado, su función, su línea de reporte y las políticas aplicables. Workday sostiene que también registra acciones y puede seleccionar modelos según coste y rendimiento. Tales beneficios son afirmaciones del fabricante: no se aportaron auditorías independientes de tasa de errores, trazabilidad completa o resultados en operaciones sensibles. Los equipos técnicos deberían comprobar que las acciones denegadas se registren, que las aprobaciones humanas no puedan saltarse y que las credenciales de los agentes tengan permisos mínimos, incluso cuando el modelo razona correctamente.",
+        "El comunicado diferencia funciones actuales de otras previstas. Agent Context Service está programado para acceso anticipado a finales de 2026, y Grounded Reasoning para acceso anticipado a comienzos de 2027. El segundo mecanismo promete cotejar solicitudes con políticas y datos antes de ejecutar acciones, pero no está disponible en general hoy. También hay diferencias entre soporte ya disponible para marcos LangChain y modelos NVIDIA Nemotron y el programa de socios de diseño de Google ADK. Mezclar estas etapas produciría una descripción engañosa del producto comercial.",
+        "Workday afirma que Agent-Ready Tools, Custom Agents y Developer Agent están disponibles mediante Workday Extend AI, mientras Data Cloud incluye Live Data Query y Agent Lake. No divulgó una tarifa universal, lista exhaustiva de regiones ni coste agregado de los modelos conectados. Una organización debe verificar licencias, límites de uso, residencia de datos, registro de auditoría y responsabilidad sobre acciones automáticas. Tampoco existen benchmarks independientes publicados en el anuncio para tareas de contratación, remuneraciones o aprobaciones; las demostraciones no sustituyen un piloto con datos y roles reales.",
+        "Análisis Gazette: el avance importante consiste en conectar razonamiento probabilístico con permisos deterministas del sistema empresarial. Puede reducir la necesidad de construir conectores aislados, pero aumenta la importancia de las políticas centrales y de la observabilidad. Antes de autorizar acciones sensibles, conviene probar usuarios con roles distintos, intentos de acceso indebido, reversión de cambios y aprobación humana. La próxima evidencia relevante será la disponibilidad efectiva de las funciones prometidas, documentación de precios y evaluaciones independientes de precisión y seguridad."
+      ],
+      "keyPoints": [
+        "Cinco componentes principales están anunciados en disponibilidad general.",
+        "MCP conecta agentes con datos y acciones sujetos a permisos de Workday.",
+        "Agent Context Service y Grounded Reasoning siguen pendientes."
+      ],
+      "quickTakeaways": [
+        "Cinco componentes principales están anunciados en disponibilidad general.",
+        "MCP conecta agentes con datos y acciones sujetos a permisos de Workday.",
+        "Agent Context Service y Grounded Reasoning siguen pendientes.",
+        "No hay tarifa universal ni regiones completas anunciadas."
+      ],
+      "executiveSummary": "Workday anunció el 13 de octubre de 2026, durante Workday Rising, una ampliación de Trusted Agent Platform que permite ejecutar agentes sobre procesos de recursos humanos y finanzas sin depender de la interfaz tradicional. La compañía denomina headless a ese acceso: un agente autorizado puede consultar información y solicitar acciones desde otros entornos. La novedad es relevante porque una decisión sobre nóminas, puestos o presupuestos tiene consecuencias reales y requiere más que una respuesta lingüísticamente convincente. El anuncio describe una arquitectura de gobierno, no una prueba independiente de seguridad.",
+      "sections": [
+        {
+          "heading": "Qué ocurrió y cómo funciona",
+          "kind": "report",
+          "paragraphs": [
+            "La oferta incluye cinco componentes que Workday identifica como generalmente disponibles: Agent Harness, Agent-Ready Tools, Developer Agent, Custom Agents y Workday Data Cloud. Agent-Ready Tools utiliza Model Context Protocol para exponer herramientas que leen datos o ejecutan acciones; Developer Agent ayuda a construir soluciones; Custom Agents permite desplegar agentes propios; Data Cloud ofrece datos contextualizados; Agent Harness proporciona el entorno de ejecución y controles. Son piezas complementarias y no nombres diferentes del mismo producto. La disponibilidad general anunciada debe distinguirse de la configuración contractual de cada cliente.",
+            "Live Data Query permite, según Workday, realizar consultas SQL sobre datos activos de su sistema mediante Data Cloud, sin mantener copias desactualizadas en integraciones externas. El proveedor afirma que se preservan las reglas de negocio y los permisos del usuario en cada solicitud. Este diseño podría evitar accesos indiscriminados a información salarial, pero su eficacia depende de la identidad utilizada, la granularidad de autorización y la revisión de registros. MCP estandariza la conexión con herramientas; por sí solo no garantiza que una consulta o una acción sea segura."
+          ]
+        },
+        {
+          "heading": "Controles y límites",
+          "kind": "technical",
+          "paragraphs": [
+            "Agent Harness incorpora contexto sobre el empleado, su función, su línea de reporte y las políticas aplicables. Workday sostiene que también registra acciones y puede seleccionar modelos según coste y rendimiento. Tales beneficios son afirmaciones del fabricante: no se aportaron auditorías independientes de tasa de errores, trazabilidad completa o resultados en operaciones sensibles. Los equipos técnicos deberían comprobar que las acciones denegadas se registren, que las aprobaciones humanas no puedan saltarse y que las credenciales de los agentes tengan permisos mínimos, incluso cuando el modelo razona correctamente.",
+            "El comunicado diferencia funciones actuales de otras previstas. Agent Context Service está programado para acceso anticipado a finales de 2026, y Grounded Reasoning para acceso anticipado a comienzos de 2027. El segundo mecanismo promete cotejar solicitudes con políticas y datos antes de ejecutar acciones, pero no está disponible en general hoy. También hay diferencias entre soporte ya disponible para marcos LangChain y modelos NVIDIA Nemotron y el programa de socios de diseño de Google ADK. Mezclar estas etapas produciría una descripción engañosa del producto comercial."
+          ]
+        },
+        {
+          "heading": "Disponibilidad e impacto",
+          "kind": "analysis",
+          "paragraphs": [
+            "Workday afirma que Agent-Ready Tools, Custom Agents y Developer Agent están disponibles mediante Workday Extend AI, mientras Data Cloud incluye Live Data Query y Agent Lake. No divulgó una tarifa universal, lista exhaustiva de regiones ni coste agregado de los modelos conectados. Una organización debe verificar licencias, límites de uso, residencia de datos, registro de auditoría y responsabilidad sobre acciones automáticas. Tampoco existen benchmarks independientes publicados en el anuncio para tareas de contratación, remuneraciones o aprobaciones; las demostraciones no sustituyen un piloto con datos y roles reales.",
+            "Análisis Gazette: el avance importante consiste en conectar razonamiento probabilístico con permisos deterministas del sistema empresarial. Puede reducir la necesidad de construir conectores aislados, pero aumenta la importancia de las políticas centrales y de la observabilidad. Antes de autorizar acciones sensibles, conviene probar usuarios con roles distintos, intentos de acceso indebido, reversión de cambios y aprobación humana. La próxima evidencia relevante será la disponibilidad efectiva de las funciones prometidas, documentación de precios y evaluaciones independientes de precisión y seguridad."
+          ]
+        }
+      ],
+      "analysis": "Análisis Gazette: el avance importante consiste en conectar razonamiento probabilístico con permisos deterministas del sistema empresarial. Puede reducir la necesidad de construir conectores aislados, pero aumenta la importancia de las políticas centrales y de la observabilidad. Antes de autorizar acciones sensibles, conviene probar usuarios con roles distintos, intentos de acceso indebido, reversión de cambios y aprobación humana. La próxima evidencia relevante será la disponibilidad efectiva de las funciones prometidas, documentación de precios y evaluaciones independientes de precisión y seguridad.",
+      "watch": "Llegada de funciones futuras, licencias, regiones y auditorías de permisos.",
+      "availability": {
+        "status": "Componentes principales generalmente disponibles; servicios adicionales en acceso anticipado futuro.",
+        "platforms": [
+          "Workday Extend AI",
+          "Workday Data Cloud",
+          "Agentes MCP"
+        ],
+        "regions": [],
+        "requirements": [
+          "Contrato y permisos Workday"
+        ],
+        "notes": [
+          "Agent Context Service: acceso anticipado previsto a finales de 2026.",
+          "Grounded Reasoning: acceso anticipado previsto a comienzos de 2027."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio comercial",
+          "value": "No se anunció tarifa universal"
+        }
+      ],
+      "limitations": [
+        "Sin tarifa universal ni detalle exhaustivo de regiones.",
+        "No hay auditoría independiente de la eficacia de los controles.",
+        "Las funciones de acceso anticipado no están generalmente disponibles."
+      ],
+      "practicalAdvice": [
+        "Verificar condiciones contractuales y permisos antes de desplegar.",
+        "Solicitar trazas y pruebas de revocación o aprobación en procesos sensibles."
+      ],
+      "finalSummary": "Análisis Gazette: el avance importante consiste en conectar razonamiento probabilístico con permisos deterministas del sistema empresarial. Puede reducir la necesidad de construir conectores aislados, pero aumenta la importancia de las políticas centrales y de la observabilidad. Antes de autorizar acciones sensibles, conviene probar usuarios con roles distintos, intentos de acceso indebido, reversión de cambios y aprobación humana. La próxima evidencia relevante será la disponibilidad efectiva de las funciones prometidas, documentación de precios y evaluaciones independientes de precisión y seguridad."
+    },
+    {
+      "id": "workday-c1-ai-acquisition-agreement-2026",
+      "eventKey": "workday-definitive-agreement-acquire-c1-ai-agent-identity-governance-2026-10-13",
+      "date": "2026-10-13",
+      "announcedAt": "2026-10-13",
+      "coveredAt": "2026-10-13",
+      "verifiedAt": "2026-10-13",
+      "articleVersion": 2,
+      "company": "Workday",
+      "product": "Adquisición propuesta de C1.ai",
+      "title": "Workday firma un acuerdo para adquirir C1.ai y gobernar identidades de empleados y agentes",
+      "summary": "Workday acordó adquirir C1.ai para ampliar la gestión de identidades y accesos de agentes en sistemas empresariales. La operación aún no ha cerrado, carece de precio divulgado y depende de condiciones antes del cierre previsto para enero de 2027.",
+      "tags": [
+        "Workday",
+        "C1.ai",
+        "Adquisiciones",
+        "Seguridad",
+        "Identidad",
+        "Agentes"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Ilustración conceptual de agentes y sistemas empresariales, no fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado conceptual 3:2 de identidades humanas y agentes representadas por llaves controladas en un registro empresarial, sin logos ni escenas reales.",
+      "source": {
+        "name": "Workday · anuncio oficial",
+        "url": "https://newsroom.workday.com/2026-10-13-Workday-to-Acquire-C1-ai,-a-Leading-Agentic-Identity-Platform-for-People-and-Agents",
+        "publishedAt": "2026-10-13"
+      },
+      "body": [
+        "Workday comunicó el 13 de octubre de 2026 que firmó un acuerdo definitivo para adquirir C1.ai, una plataforma de gobierno de identidades y accesos para personas y agentes de inteligencia artificial. La propuesta conecta los cambios de empleo y funciones con permisos en sistemas externos, desde correo y CRM hasta repositorios de código e infraestructura en la nube. Es importante distinguir la firma del contrato de la finalización de la compra: C1.ai no pasa a ser automáticamente una función disponible para todos los clientes de Workday por el solo anuncio.",
+        "El problema de fondo es el ciclo de vida de los permisos. Una persona necesita ciertos accesos cuando entra a una empresa, otros cuando cambia de puesto y ninguno cuando deja la organización. En muchas compañías, la asignación y revocación todavía requiere tickets y revisiones periódicas. Los agentes añaden identidades no humanas que pueden conservar tokens, ejecutar acciones o recibir autorizaciones delegadas. Workday plantea usar los eventos de su sistema de personal como señales para conceder y retirar permisos de manera más coordinada.",
+        "Workday ya comercializa Agent System of Record, un registro para identificar y supervisar agentes. La empresa describe a C1.ai como una extensión hacia el control de qué recursos pueden utilizar esos agentes fuera de Workday. Registrar un agente y gobernar su acceso no son tareas equivalentes: un inventario puede estar actualizado mientras una clave antigua sigue activa en un repositorio o aplicación externa. El valor de la integración dependerá de la cobertura de conectores, la rapidez de revocación y la capacidad para demostrar quién autorizó cada operación.",
+        "El comunicado diferencia agentes que trabajan en nombre de un empleado de agentes autónomos con tareas propias. Los primeros deberían limitarse al alcance autorizado por la persona; los segundos necesitan una identidad administrada, permisos definidos y caducidad. Workday y C1.ai presentan una visión de gobierno de ambas clases de identidades, pero todavía no existe una oferta conjunta completamente integrada. Las empresas que evalúen la adquisición no deberían suspender sus controles actuales de privilegio mínimo, rotación de credenciales y revisión de accesos esperando una solución futura.",
+        "Workday cita una investigación de C1.ai según la cual el 95 % de grandes compañías estadounidenses ya ejecutaría agentes autónomos y otra de Deloitte en la que solo el 21 % declara un gobierno maduro. Esas cifras son referencias atribuidas, no un censo universal verificado por Gazette. Sin conocer muestra, definiciones y metodología no se deben extrapolar a todos los mercados. El problema de seguridad existe independientemente de esos porcentajes: identidades no humanas mal gestionadas pueden mantener permisos que ya no corresponden.",
+        "El cierre está previsto para el cuarto trimestre del ejercicio fiscal 2027 de Workday, que termina el 31 de enero de 2027. La compañía advierte que depende de condiciones habituales y posibles autorizaciones, por lo que la operación podría retrasarse o no concluir. No se anunció el precio de adquisición, la estructura de pago ni un calendario vinculante para lanzar funciones combinadas. Tampoco se detallaron regiones, licencias o nuevas tarifas para clientes; presentar cualquiera de esas cifras como confirmada sería especulativo.",
+        "Análisis Gazette: la operación ilustra cómo la identidad de agentes se está convirtiendo en infraestructura empresarial, no solo en un ajuste de seguridad de los chatbots. Una integración útil debe demostrar revocación efectiva en herramientas externas, auditoría de accesos delegados y recuperación ante fallos de conectores. Para responsables de TI, la acción inmediata es inventariar agentes, credenciales y sistemas conectados; para compradores, esperar el cierre y revisar contratos. Los hitos verificables serán la confirmación de la adquisición, la integración real y los precios comerciales."
+      ],
+      "keyPoints": [
+        "Existe un acuerdo definitivo, no una adquisición completada.",
+        "C1.ai se especializa en acceso de personas y agentes a aplicaciones empresariales.",
+        "El cierre se espera en el cuarto trimestre fiscal de Workday 2027."
+      ],
+      "quickTakeaways": [
+        "Existe un acuerdo definitivo, no una adquisición completada.",
+        "C1.ai se especializa en acceso de personas y agentes a aplicaciones empresariales.",
+        "El cierre se espera en el cuarto trimestre fiscal de Workday 2027.",
+        "El precio de compra no fue divulgado."
+      ],
+      "executiveSummary": "Workday comunicó el 13 de octubre de 2026 que firmó un acuerdo definitivo para adquirir C1.ai, una plataforma de gobierno de identidades y accesos para personas y agentes de inteligencia artificial. La propuesta conecta los cambios de empleo y funciones con permisos en sistemas externos, desde correo y CRM hasta repositorios de código e infraestructura en la nube. Es importante distinguir la firma del contrato de la finalización de la compra: C1.ai no pasa a ser automáticamente una función disponible para todos los clientes de Workday por el solo anuncio.",
+      "sections": [
+        {
+          "heading": "Qué ocurrió y cómo funciona",
+          "kind": "report",
+          "paragraphs": [
+            "El problema de fondo es el ciclo de vida de los permisos. Una persona necesita ciertos accesos cuando entra a una empresa, otros cuando cambia de puesto y ninguno cuando deja la organización. En muchas compañías, la asignación y revocación todavía requiere tickets y revisiones periódicas. Los agentes añaden identidades no humanas que pueden conservar tokens, ejecutar acciones o recibir autorizaciones delegadas. Workday plantea usar los eventos de su sistema de personal como señales para conceder y retirar permisos de manera más coordinada.",
+            "Workday ya comercializa Agent System of Record, un registro para identificar y supervisar agentes. La empresa describe a C1.ai como una extensión hacia el control de qué recursos pueden utilizar esos agentes fuera de Workday. Registrar un agente y gobernar su acceso no son tareas equivalentes: un inventario puede estar actualizado mientras una clave antigua sigue activa en un repositorio o aplicación externa. El valor de la integración dependerá de la cobertura de conectores, la rapidez de revocación y la capacidad para demostrar quién autorizó cada operación."
+          ]
+        },
+        {
+          "heading": "Controles y límites",
+          "kind": "technical",
+          "paragraphs": [
+            "El comunicado diferencia agentes que trabajan en nombre de un empleado de agentes autónomos con tareas propias. Los primeros deberían limitarse al alcance autorizado por la persona; los segundos necesitan una identidad administrada, permisos definidos y caducidad. Workday y C1.ai presentan una visión de gobierno de ambas clases de identidades, pero todavía no existe una oferta conjunta completamente integrada. Las empresas que evalúen la adquisición no deberían suspender sus controles actuales de privilegio mínimo, rotación de credenciales y revisión de accesos esperando una solución futura.",
+            "Workday cita una investigación de C1.ai según la cual el 95 % de grandes compañías estadounidenses ya ejecutaría agentes autónomos y otra de Deloitte en la que solo el 21 % declara un gobierno maduro. Esas cifras son referencias atribuidas, no un censo universal verificado por Gazette. Sin conocer muestra, definiciones y metodología no se deben extrapolar a todos los mercados. El problema de seguridad existe independientemente de esos porcentajes: identidades no humanas mal gestionadas pueden mantener permisos que ya no corresponden."
+          ]
+        },
+        {
+          "heading": "Disponibilidad e impacto",
+          "kind": "analysis",
+          "paragraphs": [
+            "El cierre está previsto para el cuarto trimestre del ejercicio fiscal 2027 de Workday, que termina el 31 de enero de 2027. La compañía advierte que depende de condiciones habituales y posibles autorizaciones, por lo que la operación podría retrasarse o no concluir. No se anunció el precio de adquisición, la estructura de pago ni un calendario vinculante para lanzar funciones combinadas. Tampoco se detallaron regiones, licencias o nuevas tarifas para clientes; presentar cualquiera de esas cifras como confirmada sería especulativo.",
+            "Análisis Gazette: la operación ilustra cómo la identidad de agentes se está convirtiendo en infraestructura empresarial, no solo en un ajuste de seguridad de los chatbots. Una integración útil debe demostrar revocación efectiva en herramientas externas, auditoría de accesos delegados y recuperación ante fallos de conectores. Para responsables de TI, la acción inmediata es inventariar agentes, credenciales y sistemas conectados; para compradores, esperar el cierre y revisar contratos. Los hitos verificables serán la confirmación de la adquisición, la integración real y los precios comerciales."
+          ]
+        }
+      ],
+      "analysis": "Análisis Gazette: la operación ilustra cómo la identidad de agentes se está convirtiendo en infraestructura empresarial, no solo en un ajuste de seguridad de los chatbots. Una integración útil debe demostrar revocación efectiva en herramientas externas, auditoría de accesos delegados y recuperación ante fallos de conectores. Para responsables de TI, la acción inmediata es inventariar agentes, credenciales y sistemas conectados; para compradores, esperar el cierre y revisar contratos. Los hitos verificables serán la confirmación de la adquisición, la integración real y los precios comerciales.",
+      "watch": "Cierre efectivo, precio si se divulga, conectores y cronograma de integración.",
+      "availability": {
+        "status": "Acuerdo definitivo firmado; operación pendiente de cierre.",
+        "platforms": [
+          "Workday Agent System of Record",
+          "C1.ai"
+        ],
+        "regions": [],
+        "requirements": [
+          "Cierre de la adquisición para integración conjunta"
+        ],
+        "notes": [
+          "Cierre previsto para trimestre fiscal que termina el 31 de enero de 2027."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio comercial",
+          "value": "No se anunció tarifa universal"
+        }
+      ],
+      "limitations": [
+        "Precio de compra no divulgado.",
+        "Operación sujeta a condiciones; no está completada.",
+        "Funciones conjuntas y calendario de integración no confirmados."
+      ],
+      "practicalAdvice": [
+        "Verificar condiciones contractuales y permisos antes de desplegar.",
+        "Solicitar trazas y pruebas de revocación o aprobación en procesos sensibles."
+      ],
+      "finalSummary": "Análisis Gazette: la operación ilustra cómo la identidad de agentes se está convirtiendo en infraestructura empresarial, no solo en un ajuste de seguridad de los chatbots. Una integración útil debe demostrar revocación efectiva en herramientas externas, auditoría de accesos delegados y recuperación ante fallos de conectores. Para responsables de TI, la acción inmediata es inventariar agentes, credenciales y sistemas conectados; para compradores, esperar el cierre y revisar contratos. Los hitos verificables serán la confirmación de la adquisición, la integración real y los precios comerciales."
+    },
     {
       "id": "scaleway-sweden-amd-mi355x-supercomputer-2026",
       "eventKey": "scaleway-sweden-amd-mi355x-commercial-ai-supercomputer-plan-2026-10-13",
@@ -15749,8 +15972,8 @@
       "coveredAt": "2026-10-07",
       "company": "Google",
       "product": "Gemini 4 Argon",
-      "title": "Gemini 4 Argon se estrena con acceso gradual para defensores",
-      "summary": "Google anuncia su nuevo modelo y comienza con un grupo de usuarios de confianza.",
+      "title": "Gemini 4 Argon amplía su acceso comercial tras su anuncio inicial para defensores",
+      "summary": "Anunciado el 30 de septiembre con acceso restringido, Gemini 4 Argon se amplió el 13 de octubre a la API de pago y a suscriptores elegibles de Google AI Pro y Ultra. Google fija el fin del precio introductorio de la API para el 30 de noviembre.",
       "tags": [
         "Modelos",
         "Seguridad"
@@ -15763,18 +15986,20 @@
         "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
         "publishedAt": "2026-09-30"
       },
-      "verifiedAt": "2026-10-11",
+      "verifiedAt": "2026-10-13",
       "body": [
         "Google anunció Gemini 4 Argon el 30 de septiembre. La primera fase de acceso se dirige a defensores de ciberseguridad de confianza mediante Fairwind.",
         "La empresa lo orienta a razonamiento y flujos profesionales largos, incluyendo programación y defensa. El anuncio no equivale a disponibilidad general para cualquier usuario.",
-        "Al evaluar una herramienta de acceso limitado, es útil separar capacidades anunciadas de acceso efectivo. Los equipos necesitan comprobar requisitos, condiciones y fechas de ampliación."
+        "Al evaluar una herramienta de acceso limitado, es útil separar capacidades anunciadas de acceso efectivo. Los equipos necesitan comprobar requisitos, condiciones y fechas de ampliación.",
+        "Actualización del 13 de octubre de 2026: Google amplió Gemini 4 Argon a desarrolladores mediante el nivel de pago de la Gemini API, a usuarios elegibles de Google AI Pro y Ultra en la app Gemini y a herramientas como AI Studio y Antigravity según el plan. Es una fase comercial posterior al anuncio del 30 de septiembre, cuya fecha original se conserva. El anuncio global actualizado indica tarifas introductorias de US$2 por millón de tokens de entrada y US$10 por millón de salida hasta el 30 de noviembre de 2026, tras lo cual se anuncian US$4 y US$20 respectivamente. Páginas regionales anteriores muestran calendarios distintos; conviene verificar las condiciones contractuales de cada cuenta y país. No se anunció acceso gratuito general."
       ],
       "keyPoints": [
-        "Anuncio del 30 de septiembre.",
-        "Primera fase mediante Fairwind."
+        "Presentación original: 30 de septiembre; ampliación comercial: 13 de octubre.",
+        "API de pago y acceso para suscriptores elegibles de Google AI Pro y Ultra.",
+        "El anuncio global actualizado fija el 30 de noviembre como fin de las tarifas introductorias."
       ],
       "analysis": "La carrera de modelos incluye tanto capacidad como distribución. Un producto restringido tiene un impacto distinto de una herramienta abierta a todos.",
-      "watch": "Ampliación del acceso y evaluaciones independientes.",
+      "watch": "Disponibilidad por plan y país, fecha contractual de precios, rendimiento y evaluaciones independientes.",
       "announcedAt": "2026-09-30",
       "articleVersion": 2,
       "executiveSummary": "Google presentó Gemini 4 Argon el 30 de septiembre de 2026 para razonamiento prolongado, ingeniería de software, trabajo empresarial y defensa de ciberseguridad. El acceso comenzó con defensores seleccionados mediante Fairwind, no con un lanzamiento general. La compañía publicó precios introductorios previstos y numerosos resultados de evaluaciones, que deben citarse como afirmaciones del proveedor.",
@@ -15815,40 +16040,53 @@
             "Google indica un precio introductorio previsto de dos dólares por millón de tokens de entrada y diez dólares por millón de tokens de salida, con un descuento del 95 % respecto del precio de entrada para tokens de caché. Esta es una política anunciada y no una factura observada durante una contratación general. La evaluación económica tiene que considerar el acceso efectivo, las condiciones del plan, la frecuencia de llamadas y la cantidad de salida generada. Un límite enorme de salida puede representar un coste apreciable si los equipos lo usan sin presupuestos, abortos y revisión.",
             "Un piloto empresarial responsable debería comparar Argon con alternativas accesibles bajo la misma tarea, conjunto de datos, controles de herramientas y tiempo de revisión humana. En programación habría que contar defectos tras ejecutar pruebas; en análisis jurídico y financiero, comprobar citas y procedencia; en ciberseguridad, usar entornos autorizados y protocolos de divulgación. Más capacidad anunciada no equivale automáticamente a una solución lista para integrarse con datos sensibles. La decisión depende también de residencia de datos, trazabilidad y operación segura."
           ]
+        },
+        {
+          "heading": "Ampliación comercial del 13 de octubre",
+          "kind": "report",
+          "paragraphs": [
+            "Actualización del 13 de octubre de 2026: Google amplió Gemini 4 Argon a desarrolladores mediante el nivel de pago de la Gemini API, a usuarios elegibles de Google AI Pro y Ultra en la app Gemini y a herramientas como AI Studio y Antigravity según el plan. Es una fase comercial posterior al anuncio del 30 de septiembre, cuya fecha original se conserva. El anuncio global actualizado indica tarifas introductorias de US$2 por millón de tokens de entrada y US$10 por millón de salida hasta el 30 de noviembre de 2026, tras lo cual se anuncian US$4 y US$20 respectivamente. Páginas regionales anteriores muestran calendarios distintos; conviene verificar las condiciones contractuales de cada cuenta y país. No se anunció acceso gratuito general."
+          ]
         }
       ],
       "pricing": [
         {
-          "label": "Entrada introductoria anunciada",
-          "value": "US$2 por millón de tokens"
+          "label": "API entrada introductoria",
+          "value": "US$2 / millón de tokens"
         },
         {
-          "label": "Salida introductoria anunciada",
-          "value": "US$10 por millón de tokens"
+          "label": "API salida introductoria",
+          "value": "US$10 / millón de tokens"
         },
         {
-          "label": "Tokens de caché",
-          "value": "Google anuncia un descuento del 95 % respecto de entrada",
-          "note": "Sujeto a disponibilidad y condiciones de acceso del proveedor"
+          "label": "API entrada después de noviembre",
+          "value": "US$4 / millón de tokens"
+        },
+        {
+          "label": "API salida después de noviembre",
+          "value": "US$20 / millón de tokens"
         }
       ],
       "availability": {
-        "status": "Despliegue inicial restringido; no disponibilidad general confirmada en el anuncio del 30 de septiembre.",
+        "status": "Acceso comercial ampliado el 13 de octubre, sujeto a cuenta, región y plan.",
         "platforms": [
-          "Programa Fairwind para defensores de ciberseguridad de confianza"
+          "Gemini API de pago",
+          "Gemini app Google AI Pro y Ultra",
+          "AI Studio y Antigravity para clientes elegibles"
         ],
         "regions": [],
         "requirements": [
-          "Acceso autorizado al programa inicial"
+          "Cuenta y plan elegibles"
         ],
         "notes": [
-          "Google plantea ampliar acceso a desarrolladores, empresas y consumidores cuando avance su evaluación de seguridad."
+          "La presentación inicial de Fairwind ocurrió el 30 de septiembre."
         ]
       },
       "limitations": [
         "El rendimiento de benchmarks publicado por Google requiere reproducción independiente con metodología comparable.",
         "El despliegue inicial restringido impide asumir disponibilidad inmediata para toda organización.",
-        "Migraciones de código y parches de seguridad generados por agentes siguen requiriendo auditoría técnica y humana."
+        "Migraciones de código y parches de seguridad generados por agentes siguen requiriendo auditoría técnica y humana.",
+        "Confirmar fecha de cambio de precio por contrato y región; páginas regionales antiguas muestran calendarios diferentes."
       ],
       "practicalAdvice": [
         "Separar precio anunciado de servicio efectivamente contratable.",
@@ -15860,9 +16098,26 @@
         "El anuncio describe migraciones de C/C++ a Rust y optimizaciones de memoria sujetas a revisión.",
         "El acceso inicial se encuadra en Fairwind, no en un lanzamiento público general."
       ],
-      "finalSummary": "Gemini 4 Argon representa la apuesta de Google por agentes capaces de sostener tareas profesionales complejas y por un despliegue que prioriza inicialmente a defensores cibernéticos. Sus especificaciones y ejemplos justifican seguimiento técnico, pero el impacto competitivo dependerá de apertura real, evaluación independiente y rendimiento seguro en entornos productivos.",
+      "finalSummary": "Gemini 4 Argon representa la apuesta de Google por agentes capaces de sostener tareas profesionales complejas y por un despliegue que prioriza inicialmente a defensores cibernéticos. Sus especificaciones y ejemplos justifican seguimiento técnico, pero el impacto competitivo dependerá de apertura real, evaluación independiente y rendimiento seguro en entornos productivos. La apertura comercial del 13 de octubre amplía el acceso, sin cambiar la fecha del anuncio original.",
       "imageStatus": "needs-specific-art",
-      "imageBrief": "Grabado editorial original de prensa antigua: una biblioteca de ingeniería y un laboratorio defensivo de ciberseguridad conectados por una máquina simbólica de razonamiento, con revisores humanos examinando planos y código abstracto; representar investigación y control responsable, no un hackeo real. Tinta negra y sepia, papel envejecido, formato horizontal 3:2; sin texto, logos inventados ni falsa fotografía documental."
+      "imageBrief": "Grabado editorial original de prensa antigua: una biblioteca de ingeniería y un laboratorio defensivo de ciberseguridad conectados por una máquina simbólica de razonamiento, con revisores humanos examinando planos y código abstracto; representar investigación y control responsable, no un hackeo real. Tinta negra y sepia, papel envejecido, formato horizontal 3:2; sin texto, logos inventados ni falsa fotografía documental.",
+      "relatedSources": [
+        {
+          "name": "Google · disponibilidad global 13 octubre",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+          "publishedAt": "2026-10-13"
+        },
+        {
+          "name": "Google · app Gemini",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
+          "publishedAt": "2026-10-13"
+        },
+        {
+          "name": "Google · API para desarrolladores",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/",
+          "publishedAt": "2026-10-13"
+        }
+      ]
     },
     {
       "id": "gpt-6-1-sol-devday",
@@ -28963,7 +29218,7 @@
     {
       "date": "2026-10-13",
       "status": "partial",
-      "verifiedArticles": 3
+      "verifiedArticles": 5
     }
   ]
 }
