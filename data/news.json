@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T19:18:44.000Z",
+  "updatedAt": "2026-10-13T21:18:32.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -116,6 +116,244 @@
       "finalSummary": "Análisis Gazette: el avance importante consiste en conectar razonamiento probabilístico con permisos deterministas del sistema empresarial. Puede reducir la necesidad de construir conectores aislados, pero aumenta la importancia de las políticas centrales y de la observabilidad. Antes de autorizar acciones sensibles, conviene probar usuarios con roles distintos, intentos de acceso indebido, reversión de cambios y aprobación humana. La próxima evidencia relevante será la disponibilidad efectiva de las funciones prometidas, documentación de precios y evaluaciones independientes de precisión y seguridad."
     },
     {
+      "id": "workday-sana-home-concierge-2026",
+      "eventKey": "workday-sana-new-home-dynamic-agentic-ui-concierge-2026-10-13",
+      "date": "2026-10-13",
+      "announcedAt": "2026-10-13",
+      "coveredAt": "2026-10-13",
+      "verifiedAt": "2026-10-13",
+      "articleVersion": 2,
+      "company": "Workday",
+      "product": "Sana Home y Sana Concierge",
+      "title": "Sana se convierte en la nueva portada de Workday y presenta Concierge para solicitudes de RR. HH. y TI",
+      "summary": "Workday presentó Sana como nueva experiencia Home, con interfaces generadas según la tarea y coordinación de agentes. Home está disponible; Sana Concierge permanece en acceso anticipado con lanzamiento general previsto para el primer trimestre de 2027.",
+      "tags": [
+        "Agentes",
+        "Interfaces",
+        "Recursos humanos",
+        "TI",
+        "Workday"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado conceptual de trabajo y agentes empresariales; ilustración, no fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial horizontal 3:2 de una oficina histórica con un tablero de tareas, calendario y autorizaciones conectados a un asistente mecánico abstracto; tinta negra y sepia, sin interfaces reales inventadas, texto ilegible ni falsa fotografía.",
+      "source": {
+        "name": "Workday · anuncio oficial de Sana Home",
+        "url": "https://newsroom.workday.com/2026-10-13-Sana-Is-the-New-Workday-Home-A-Dynamic-Agentic-Experience-Built-to-Finish-the-Work,-Not-Just-Answer-Questions",
+        "publishedAt": "2026-10-13"
+      },
+      "relatedSources": [
+        {
+          "name": "Workday · distribución de Sana en otras plataformas",
+          "url": "https://newsroom.workday.com/2026-10-13-Workday-to-Bring-Sana-Everywhere-Employees-Work,-Including-Claude,-Gemini-Enterprise,-Microsoft-Copilot,-Microsoft-Teams,-and-Slack",
+          "publishedAt": "2026-10-13"
+        }
+      ],
+      "body": [
+        "Workday anunció el 13 de octubre de 2026 que Sana pasa a ser la nueva experiencia Home de su plataforma empresarial. La propuesta sustituye una navegación centrada en módulos y pantallas por un punto de entrada que combina tareas, decisiones, reuniones y actividad de agentes. El empleado puede pedir algo en lenguaje natural y recibir una interfaz orientada a completar el trabajo, no solo una respuesta textual. Workday afirma que la nueva experiencia Home ya está disponible, aunque los administradores deciden cuándo habilitarla y si será la opción predeterminada. Esa decisión organizacional impide equiparar disponibilidad del producto con activación inmediata para cada usuario.",
+        "El cambio visible es una interfaz adaptable. En lugar de ofrecer el mismo formulario para todas las consultas, Sana puede presentar tarjetas de aprobación, calendarios, visualizaciones o selectores de fecha según la solicitud. Workday atribuye esta capacidad a Jev, un modelo de inteligencia de TypeSafe AI, y describe ejemplos como revisar el próximo pago, organizar una reunión o solicitar vacaciones. Se trata de una afirmación del proveedor sobre su producto, no de una evaluación independiente de usabilidad. No se publicaron mediciones controladas de tiempo ahorrado, tasas de finalización ni accesibilidad de cada interfaz generada.",
+        "La experiencia también pretende conservar el contexto de procesos que duran días o semanas. Una revisión de desempeño, un cierre financiero o un plan de plantilla pueden involucrar múltiples personas, aprobaciones y agentes. Sana presenta una vista persistente para que el equipo retome lo pendiente sin reconstruir la conversación desde cero. Este enfoque puede reducir la fragmentación entre herramientas, pero plantea exigencias de trazabilidad: los responsables necesitan saber qué acción está pendiente, qué agente la inició, qué datos utilizó y quién debe autorizarla. Una interfaz agradable no garantiza que ese estado sea comprensible ni que la recuperación de errores sea sencilla.",
+        "El anuncio incluye un producto distinto que merece seguimiento dentro de la misma estrategia: Sana Concierge. Está diseñado para solicitudes de recursos humanos y soporte informático, desde incorporación y bajas hasta preguntas sobre nómina, permisos de ausencia, contraseñas y acceso a aplicaciones. Workday propone resolver algunos casos antes de crear tickets, aplicando las políticas del empleador y derivando los asuntos que requieren juicio humano. La empresa pone como ejemplo una consulta compleja sobre permiso parental, en la que deben coordinarse reglas laborales, saldo de ausencias, nómina y aprobaciones. No es una promesa de que cualquier solicitud quedará resuelta automáticamente.",
+        "La disponibilidad de ambos componentes es diferente. La nueva Home está disponible y los administradores pueden habilitarla. Concierge se encuentra actualmente en acceso anticipado para clientes seleccionados y su disponibilidad general se espera en el primer trimestre natural de 2027. No se anunció un precio universal para Concierge, una lista completa de regiones ni requisitos de licencia aplicables a todos los clientes. Tampoco hay evidencia publicada de que los flujos de restablecimiento de contraseñas funcionen igual con cualquier sistema externo o de que todos los procesos de recursos humanos puedan automatizarse sin intervención.",
+        "El gobierno de acciones es una parte central de la propuesta. Workday sostiene que Sana combina razonamiento de IA con reglas empresariales y agentes que heredan permisos, procesos y aprobaciones. En una tarea sensible, la diferencia entre mostrar información y efectuar una modificación es crucial. Una aprobación de gasto o una actualización de datos laborales requiere verificar identidad, alcance y registro de auditoría. Las organizaciones deberían exigir pruebas de permisos negativos, recuperación de tareas interrumpidas, accesibilidad para usuarios con distintas necesidades y claridad sobre cuándo una respuesta es recomendación frente a una acción ya ejecutada.",
+        "Análisis Gazette: el movimiento hacia interfaces dinámicas es importante porque cambia la relación cotidiana entre trabajadores y software empresarial. La medida de éxito no será cuántas pantallas desaparezcan, sino si una persona entiende qué está ocurriendo y puede corregirlo. Una empresa que evalúe Home debería realizar pilotos con procesos reales, comparar pasos y errores con el sistema anterior y revisar quién controla la activación. Para Concierge, conviene esperar evidencias de resolución efectiva, condiciones comerciales y despliegue general antes de planificar una sustitución de la mesa de ayuda."
+      ],
+      "keyPoints": [
+        "La nueva experiencia Workday Home con Sana está anunciada como disponible ahora, con activación controlada por administradores.",
+        "Sana adapta formularios, calendarios y aprobaciones a cada tarea; Workday atribuye esa función al modelo Jev de TypeSafe AI.",
+        "Sana Concierge está en acceso anticipado y su disponibilidad general se espera para el primer trimestre de 2027."
+      ],
+      "quickTakeaways": [
+        "La nueva experiencia Workday Home con Sana está anunciada como disponible ahora, con activación controlada por administradores.",
+        "Sana adapta formularios, calendarios y aprobaciones a cada tarea; Workday atribuye esa función al modelo Jev de TypeSafe AI.",
+        "Sana Concierge está en acceso anticipado y su disponibilidad general se espera para el primer trimestre de 2027."
+      ],
+      "executiveSummary": "Workday anunció el 13 de octubre de 2026 que Sana pasa a ser la nueva experiencia Home de su plataforma empresarial. La propuesta sustituye una navegación centrada en módulos y pantallas por un punto de entrada que combina tareas, decisiones, reuniones y actividad de agentes. El empleado puede pedir algo en lenguaje natural y recibir una interfaz orientada a completar el trabajo, no solo una respuesta textual. Workday afirma que la nueva experiencia Home ya está disponible, aunque los administradores deciden cuándo habilitarla y si será la opción predeterminada. Esa decisión organizacional impide equiparar disponibilidad del producto con activación inmediata para cada usuario.",
+      "sections": [
+        {
+          "heading": "Qué ocurrió y cómo funciona",
+          "kind": "report",
+          "paragraphs": [
+            "El cambio visible es una interfaz adaptable. En lugar de ofrecer el mismo formulario para todas las consultas, Sana puede presentar tarjetas de aprobación, calendarios, visualizaciones o selectores de fecha según la solicitud. Workday atribuye esta capacidad a Jev, un modelo de inteligencia de TypeSafe AI, y describe ejemplos como revisar el próximo pago, organizar una reunión o solicitar vacaciones. Se trata de una afirmación del proveedor sobre su producto, no de una evaluación independiente de usabilidad. No se publicaron mediciones controladas de tiempo ahorrado, tasas de finalización ni accesibilidad de cada interfaz generada.",
+            "La experiencia también pretende conservar el contexto de procesos que duran días o semanas. Una revisión de desempeño, un cierre financiero o un plan de plantilla pueden involucrar múltiples personas, aprobaciones y agentes. Sana presenta una vista persistente para que el equipo retome lo pendiente sin reconstruir la conversación desde cero. Este enfoque puede reducir la fragmentación entre herramientas, pero plantea exigencias de trazabilidad: los responsables necesitan saber qué acción está pendiente, qué agente la inició, qué datos utilizó y quién debe autorizarla. Una interfaz agradable no garantiza que ese estado sea comprensible ni que la recuperación de errores sea sencilla."
+          ]
+        },
+        {
+          "heading": "Casos de uso y controles",
+          "kind": "technical",
+          "paragraphs": [
+            "El anuncio incluye un producto distinto que merece seguimiento dentro de la misma estrategia: Sana Concierge. Está diseñado para solicitudes de recursos humanos y soporte informático, desde incorporación y bajas hasta preguntas sobre nómina, permisos de ausencia, contraseñas y acceso a aplicaciones. Workday propone resolver algunos casos antes de crear tickets, aplicando las políticas del empleador y derivando los asuntos que requieren juicio humano. La empresa pone como ejemplo una consulta compleja sobre permiso parental, en la que deben coordinarse reglas laborales, saldo de ausencias, nómina y aprobaciones. No es una promesa de que cualquier solicitud quedará resuelta automáticamente.",
+            "La disponibilidad de ambos componentes es diferente. La nueva Home está disponible y los administradores pueden habilitarla. Concierge se encuentra actualmente en acceso anticipado para clientes seleccionados y su disponibilidad general se espera en el primer trimestre natural de 2027. No se anunció un precio universal para Concierge, una lista completa de regiones ni requisitos de licencia aplicables a todos los clientes. Tampoco hay evidencia publicada de que los flujos de restablecimiento de contraseñas funcionen igual con cualquier sistema externo o de que todos los procesos de recursos humanos puedan automatizarse sin intervención."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, límites y análisis",
+          "kind": "analysis",
+          "paragraphs": [
+            "El gobierno de acciones es una parte central de la propuesta. Workday sostiene que Sana combina razonamiento de IA con reglas empresariales y agentes que heredan permisos, procesos y aprobaciones. En una tarea sensible, la diferencia entre mostrar información y efectuar una modificación es crucial. Una aprobación de gasto o una actualización de datos laborales requiere verificar identidad, alcance y registro de auditoría. Las organizaciones deberían exigir pruebas de permisos negativos, recuperación de tareas interrumpidas, accesibilidad para usuarios con distintas necesidades y claridad sobre cuándo una respuesta es recomendación frente a una acción ya ejecutada.",
+            "Análisis Gazette: el movimiento hacia interfaces dinámicas es importante porque cambia la relación cotidiana entre trabajadores y software empresarial. La medida de éxito no será cuántas pantallas desaparezcan, sino si una persona entiende qué está ocurriendo y puede corregirlo. Una empresa que evalúe Home debería realizar pilotos con procesos reales, comparar pasos y errores con el sistema anterior y revisar quién controla la activación. Para Concierge, conviene esperar evidencias de resolución efectiva, condiciones comerciales y despliegue general antes de planificar una sustitución de la mesa de ayuda."
+          ]
+        }
+      ],
+      "analysis": "Análisis Gazette: una interfaz agentiva útil debe mostrar estado, permisos y posibilidades de corrección; automatizar tareas sin claridad sobre lo ejecutado trasladaría el problema de la navegación a la supervisión.",
+      "watch": "Adopción de Home, disponibilidad general de Concierge, precios, integraciones y métricas independientes.",
+      "availability": {
+        "status": "Sana Home disponible; Sana Concierge en acceso anticipado con GA prevista en el primer trimestre de 2027.",
+        "platforms": [
+          "Workday Home",
+          "Sana"
+        ],
+        "regions": [],
+        "requirements": [
+          "Habilitación por administradores de Workday"
+        ],
+        "notes": [
+          "Las funciones y el soporte de Home seguirán ampliándose.",
+          "Concierge no es todavía un servicio generalmente disponible."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Sana Home y Concierge",
+          "value": "No se anunció tarifa universal"
+        }
+      ],
+      "limitations": [
+        "No se publicaron resultados independientes de usabilidad ni resolución de tickets.",
+        "Disponibilidad y habilitación de Home dependen del entorno empresarial.",
+        "Concierge sigue en acceso anticipado; precio y regiones no detallados."
+      ],
+      "practicalAdvice": [
+        "Probar interfaces y aprobaciones con empleados de roles distintos.",
+        "Medir tareas completadas, errores y accesibilidad, no solo tiempo de respuesta.",
+        "No retirar la mesa de ayuda antes de validar escalamiento y recuperación."
+      ],
+      "finalSummary": "Sana Home lleva a Workday hacia una experiencia de trabajo orientada a tareas y agentes. Concierge amplía la ambición al soporte interno, pero continúa limitado a acceso anticipado. El valor dependerá de controles verificables y experiencia de usuario medible."
+    },
+    {
+      "id": "workday-sana-claude-anthropic-2026",
+      "eventKey": "workday-anthropic-sana-in-claude-mcp-early-access-partnership-2026-10-13",
+      "date": "2026-10-13",
+      "announcedAt": "2026-10-13",
+      "coveredAt": "2026-10-13",
+      "verifiedAt": "2026-10-13",
+      "articleVersion": 2,
+      "company": "Workday",
+      "product": "Sana in Claude",
+      "title": "Workday y Anthropic conectan Sana con Claude: agentes de RR. HH. y finanzas bajo permisos empresariales",
+      "summary": "Workday y Anthropic anunciaron Sana in Claude, una integración MCP para consultar datos y coordinar acciones empresariales sin abandonar Claude. El plugin está en acceso anticipado; la disponibilidad general se espera a finales de 2026.",
+      "tags": [
+        "Agentes",
+        "MCP",
+        "Anthropic",
+        "Empresas",
+        "Workday"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado conceptual de trabajo y agentes empresariales; ilustración, no fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial horizontal 3:2 en tinta sepia: dos salas de trabajo conectadas por un puente de protocolos, con un libro de autorizaciones visible y documentos abstractos de recursos humanos; sin logotipos inventados, pantallas ficticias ni apariencia fotográfica.",
+      "source": {
+        "name": "Workday y Anthropic · anuncio oficial",
+        "url": "https://newsroom.workday.com/2026-10-13-Workday-and-Anthropic-Announce-New-Partnership-to-Connect-Reasoning-to-the-Rules-That-Run-the-Business,-Wherever-People-Choose-to-Work",
+        "publishedAt": "2026-10-13"
+      },
+      "relatedSources": [
+        {
+          "name": "Workday · integración con otras plataformas",
+          "url": "https://newsroom.workday.com/2026-10-13-Workday-to-Bring-Sana-Everywhere-Employees-Work,-Including-Claude,-Gemini-Enterprise,-Microsoft-Copilot,-Microsoft-Teams,-and-Slack",
+          "publishedAt": "2026-10-13"
+        }
+      ],
+      "body": [
+        "Workday y Anthropic anunciaron el 13 de octubre de 2026 una integración entre los agentes Sana y Claude para ejecutar tareas de recursos humanos y finanzas desde el asistente de Anthropic. La novedad no consiste en permitir que un chatbot lea cualquier dato corporativo: la propuesta declara que las consultas y acciones siguen sometidas a las políticas, permisos y aprobaciones ya definidos en Workday. El plugin Sana in Claude está disponible para clientes de acceso anticipado y se espera su disponibilidad general hacia finales de 2026. Esa etapa limitada importa para distinguir una demostración de una herramienta contratable por cualquier empresa.",
+        "La arquitectura anunciada utiliza Model Context Protocol, o MCP, para comunicar las experiencias de Sana y Claude. Un empleado podría iniciar una tarea en Claude, solicitar información de puestos vacantes o presupuestos y pedir que Sana coordine los agentes adecuados. Workday sostiene que Claude solo recibe la información permitida para ese usuario y que las acciones respetan el registro de auditoría de la plataforma empresarial. MCP es un mecanismo de interoperabilidad; no sustituye por sí mismo a la autenticación, la autorización granular ni las revisiones humanas. El comunicado describe esos controles como características del producto, sin aportar una auditoría independiente.",
+        "Los ejemplos oficiales incluyen a un responsable de contratación que compara vacantes, dotación y presupuesto antes de preparar un plan de movilidad interna. En finanzas, un líder puede revisar excepciones de facturas frente a órdenes de compra y decidir si aprueba o deriva el caso a Sana. Son flujos plausibles porque requieren tanto razonamiento como información estructurada, pero los resultados de una demostración no equivalen a métricas generales de precisión o ahorro. No se comunicaron tasas verificadas de errores, duración de tareas, porcentaje de aprobaciones correctas ni comparaciones controladas con procesos tradicionales.",
+        "El recorrido también funciona en sentido inverso: Sana puede orquestar un proceso prolongado y llamar al razonamiento de Claude para un paso concreto, por ejemplo preparar una explicación sobre un ajuste salarial. Workday afirma que solo comparte el contexto necesario para ese paso y mantiene los datos sensibles en su entorno de gobierno. Esta distinción es relevante: trasladar una instrucción a otro modelo no debería implicar replicar todo el historial de nómina o conceder permisos administrativos permanentes. La política de minimización de datos debe comprobarse en la configuración real del cliente, no deducirse del protocolo.",
+        "La alianza se conecta con Agent-Ready Tools, las herramientas de Workday compatibles con MCP. Estas ya están anunciadas en disponibilidad general mediante Workday Extend AI, mientras su exposición a través del plugin de Claude llegará más adelante durante 2026. No son la misma etapa de despliegue. En otro comunicado del mismo día, Workday detalló planes para llevar Sana a Gemini Enterprise, Microsoft Copilot, Teams y Slack: el autoservicio existente en varias plataformas ya es general, pero la nueva orquestación Sana se espera hacia finales de año. El acceso anticipado a Sana en Claude Cowork tampoco equivale a disponibilidad universal.",
+        "No se publicaron tarifas universales para Sana in Claude, desglose de costes por agente ni lista exhaustiva de regiones y requisitos de residencia de datos. Tampoco se especificó si todos los clientes de Claude y Workday tendrán idénticas condiciones de licencia. Para evaluar el producto, un responsable técnico debería confirmar la identidad del usuario que solicita cada acción, las capacidades delegadas, el tiempo de retención del registro y los mecanismos de revocación. En nóminas y finanzas, un error puede afectar dinero, datos personales o decisiones laborales, de modo que conviene ensayar solicitudes no autorizadas y rutas de aprobación antes de producción.",
+        "Análisis Gazette: esta alianza representa un cambio de interfaz, desde abrir una aplicación empresarial hacia iniciar trabajo en el asistente que ya utiliza el empleado. La oportunidad es reducir cambios de contexto y conectar agentes especializados con un modelo generalista. El riesgo es confundir fluidez conversacional con autoridad para actuar. Un piloto debería medir errores, pasos humanos, reversibilidad y trazabilidad, además de productividad. Los próximos hitos comprobables serán el acceso general real, los términos de licencia, el alcance regional y evaluaciones externas sobre seguridad y resultados operativos."
+      ],
+      "keyPoints": [
+        "Sana in Claude se ofrece ahora a clientes de acceso anticipado, no como lanzamiento general.",
+        "La conexión usa MCP y las autorizaciones, aprobaciones y registros permanecen anclados en Workday.",
+        "La disponibilidad general del plugin está prevista para finales de 2026, sin tarifa universal anunciada."
+      ],
+      "quickTakeaways": [
+        "Sana in Claude se ofrece ahora a clientes de acceso anticipado, no como lanzamiento general.",
+        "La conexión usa MCP y las autorizaciones, aprobaciones y registros permanecen anclados en Workday.",
+        "La disponibilidad general del plugin está prevista para finales de 2026, sin tarifa universal anunciada."
+      ],
+      "executiveSummary": "Workday y Anthropic anunciaron el 13 de octubre de 2026 una integración entre los agentes Sana y Claude para ejecutar tareas de recursos humanos y finanzas desde el asistente de Anthropic. La novedad no consiste en permitir que un chatbot lea cualquier dato corporativo: la propuesta declara que las consultas y acciones siguen sometidas a las políticas, permisos y aprobaciones ya definidos en Workday. El plugin Sana in Claude está disponible para clientes de acceso anticipado y se espera su disponibilidad general hacia finales de 2026. Esa etapa limitada importa para distinguir una demostración de una herramienta contratable por cualquier empresa.",
+      "sections": [
+        {
+          "heading": "Qué ocurrió y cómo funciona",
+          "kind": "report",
+          "paragraphs": [
+            "La arquitectura anunciada utiliza Model Context Protocol, o MCP, para comunicar las experiencias de Sana y Claude. Un empleado podría iniciar una tarea en Claude, solicitar información de puestos vacantes o presupuestos y pedir que Sana coordine los agentes adecuados. Workday sostiene que Claude solo recibe la información permitida para ese usuario y que las acciones respetan el registro de auditoría de la plataforma empresarial. MCP es un mecanismo de interoperabilidad; no sustituye por sí mismo a la autenticación, la autorización granular ni las revisiones humanas. El comunicado describe esos controles como características del producto, sin aportar una auditoría independiente.",
+            "Los ejemplos oficiales incluyen a un responsable de contratación que compara vacantes, dotación y presupuesto antes de preparar un plan de movilidad interna. En finanzas, un líder puede revisar excepciones de facturas frente a órdenes de compra y decidir si aprueba o deriva el caso a Sana. Son flujos plausibles porque requieren tanto razonamiento como información estructurada, pero los resultados de una demostración no equivalen a métricas generales de precisión o ahorro. No se comunicaron tasas verificadas de errores, duración de tareas, porcentaje de aprobaciones correctas ni comparaciones controladas con procesos tradicionales."
+          ]
+        },
+        {
+          "heading": "Casos de uso y controles",
+          "kind": "technical",
+          "paragraphs": [
+            "El recorrido también funciona en sentido inverso: Sana puede orquestar un proceso prolongado y llamar al razonamiento de Claude para un paso concreto, por ejemplo preparar una explicación sobre un ajuste salarial. Workday afirma que solo comparte el contexto necesario para ese paso y mantiene los datos sensibles en su entorno de gobierno. Esta distinción es relevante: trasladar una instrucción a otro modelo no debería implicar replicar todo el historial de nómina o conceder permisos administrativos permanentes. La política de minimización de datos debe comprobarse en la configuración real del cliente, no deducirse del protocolo.",
+            "La alianza se conecta con Agent-Ready Tools, las herramientas de Workday compatibles con MCP. Estas ya están anunciadas en disponibilidad general mediante Workday Extend AI, mientras su exposición a través del plugin de Claude llegará más adelante durante 2026. No son la misma etapa de despliegue. En otro comunicado del mismo día, Workday detalló planes para llevar Sana a Gemini Enterprise, Microsoft Copilot, Teams y Slack: el autoservicio existente en varias plataformas ya es general, pero la nueva orquestación Sana se espera hacia finales de año. El acceso anticipado a Sana en Claude Cowork tampoco equivale a disponibilidad universal."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, límites y análisis",
+          "kind": "analysis",
+          "paragraphs": [
+            "No se publicaron tarifas universales para Sana in Claude, desglose de costes por agente ni lista exhaustiva de regiones y requisitos de residencia de datos. Tampoco se especificó si todos los clientes de Claude y Workday tendrán idénticas condiciones de licencia. Para evaluar el producto, un responsable técnico debería confirmar la identidad del usuario que solicita cada acción, las capacidades delegadas, el tiempo de retención del registro y los mecanismos de revocación. En nóminas y finanzas, un error puede afectar dinero, datos personales o decisiones laborales, de modo que conviene ensayar solicitudes no autorizadas y rutas de aprobación antes de producción.",
+            "Análisis Gazette: esta alianza representa un cambio de interfaz, desde abrir una aplicación empresarial hacia iniciar trabajo en el asistente que ya utiliza el empleado. La oportunidad es reducir cambios de contexto y conectar agentes especializados con un modelo generalista. El riesgo es confundir fluidez conversacional con autoridad para actuar. Un piloto debería medir errores, pasos humanos, reversibilidad y trazabilidad, además de productividad. Los próximos hitos comprobables serán el acceso general real, los términos de licencia, el alcance regional y evaluaciones externas sobre seguridad y resultados operativos."
+          ]
+        }
+      ],
+      "analysis": "Análisis Gazette: la integración convierte a Claude en punto de entrada a tareas empresariales sin reemplazar el gobierno de Workday. El valor dependerá de que permisos y auditorías funcionen realmente bajo cargas de trabajo sensibles.",
+      "watch": "Disponibilidad general del plugin, licencias, regiones, pruebas independientes y cobertura de herramientas.",
+      "availability": {
+        "status": "Plugin Sana in Claude en acceso anticipado; disponibilidad general prevista para finales de 2026.",
+        "platforms": [
+          "Claude",
+          "Sana",
+          "Workday Extend AI"
+        ],
+        "regions": [],
+        "requirements": [
+          "Cliente elegible de acceso anticipado",
+          "Permisos y contrato empresarial Workday"
+        ],
+        "notes": [
+          "Agent-Ready Tools ya es GA en Workday Extend AI, pero su integración en el plugin llegará más adelante.",
+          "Las integraciones Sana en otras plataformas tienen cronogramas distintos."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Sana in Claude",
+          "value": "No se publicó tarifa universal"
+        }
+      ],
+      "limitations": [
+        "Sin desglose de precios, países ni licencias para todos los clientes.",
+        "Las garantías de aislamiento y permisos son afirmaciones del proveedor; no se publicó auditoría independiente.",
+        "El plugin está en acceso anticipado, no disponible universalmente."
+      ],
+      "practicalAdvice": [
+        "Probar solicitudes con distintos roles y denegaciones antes de permitir acciones sensibles.",
+        "Revisar permisos, registro de aprobaciones, revocación y minimización de datos en un piloto.",
+        "Confirmar requisitos de contrato y costes de ambas plataformas."
+      ],
+      "finalSummary": "La asociación abre una vía para que los empleados gestionen trabajo de RR. HH. y finanzas desde Claude, con Sana como capa de ejecución y reglas de Workday. Hoy es acceso anticipado; su impacto real dependerá de la disponibilidad, los costes y las verificaciones de seguridad."
+    },
+    {
       "id": "workday-c1-ai-acquisition-agreement-2026",
       "eventKey": "workday-definitive-agreement-acquire-c1-ai-agent-identity-governance-2026-10-13",
       "date": "2026-10-13",
@@ -225,6 +463,127 @@
         "Solicitar trazas y pruebas de revocación o aprobación en procesos sensibles."
       ],
       "finalSummary": "Análisis Gazette: la operación ilustra cómo la identidad de agentes se está convirtiendo en infraestructura empresarial, no solo en un ajuste de seguridad de los chatbots. Una integración útil debe demostrar revocación efectiva en herramientas externas, auditoría de accesos delegados y recuperación ante fallos de conectores. Para responsables de TI, la acción inmediata es inventariar agentes, credenciales y sistemas conectados; para compradores, esperar el cierre y revisar contratos. Los hitos verificables serán la confirmación de la adquisición, la integración real y los precios comerciales."
+    },
+    {
+      "id": "workday-autopilot-agents-2026",
+      "eventKey": "workday-autopilot-agents-talent-acquisition-payroll-accounting-deployment-2026-10-13",
+      "date": "2026-10-13",
+      "announcedAt": "2026-10-13",
+      "coveredAt": "2026-10-13",
+      "verifiedAt": "2026-10-13",
+      "articleVersion": 2,
+      "company": "Workday",
+      "product": "Autopilot Agents",
+      "title": "Workday presenta agentes Autopilot para contratación, nóminas, contabilidad y despliegues",
+      "summary": "Workday anunció agentes que anticipan tareas de contratación y, más adelante, de nómina, contabilidad y despliegue. Talent Acquisition Autopilot entra en acceso anticipado; el resto de capacidades está previsto para 2027.",
+      "tags": [
+        "Agentes",
+        "Automatización",
+        "Empresas",
+        "Nómina",
+        "Workday"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado conceptual de trabajo y agentes empresariales; ilustración, no fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial 3:2 de cuatro mesas de trabajo simbólicas (reclutamiento, nómina, contabilidad y configuración) coordinadas por un mecanismo central de reloj, con supervisores humanos; estilo prensa antigua tinta sepia, sin cifras, logos ni pantallas ficticias.",
+      "source": {
+        "name": "Workday · anuncio oficial Autopilot Agents",
+        "url": "https://newsroom.workday.com/2026-10-13-Workday-Launches-Autopilot-Agents-That-Get-Real-Work-Done-Across-HR,-Finance,-and-IT",
+        "publishedAt": "2026-10-13"
+      },
+      "relatedSources": [
+        {
+          "name": "Workday · Sana Home y coordinación",
+          "url": "https://newsroom.workday.com/2026-10-13-Sana-Is-the-New-Workday-Home-A-Dynamic-Agentic-Experience-Built-to-Finish-the-Work,-Not-Just-Answer-Questions",
+          "publishedAt": "2026-10-13"
+        }
+      ],
+      "body": [
+        "Workday anunció el 13 de octubre de 2026 una ampliación de sus agentes empresariales hacia el funcionamiento Autopilot: sistemas que observan procesos, detectan pendientes y preparan acciones sin esperar siempre una pregunta explícita. La compañía presentó aplicaciones para selección de personal, nómina, contabilidad y despliegue de software. La primera capacidad Autopilot del Talent Acquisition Agent está disponible para clientes de acceso anticipado; las otras tres están previstas para acceso anticipado a comienzos de 2027. La distinción importa: anunciar cuatro áreas no significa que los cuatro agentes autónomos puedan contratarse hoy con las mismas funciones.",
+        "En contratación, Workday describe un agente que revisa continuamente vacantes y advierte cuándo falta una cantidad suficiente de candidatos. Puede ayudar a analizar perfiles, preparar propuestas de búsqueda, coordinar entrevistas y ofrecer a reclutadores contexto sobre posibles coincidencias con los requisitos. El anuncio menciona integración con Workday Recruiting, HiredScore, Paradox y proveedores conectados. La empresa especifica que el contacto con candidatos sigue requiriendo aprobación del reclutador antes del envío. Esa frontera entre preparar y ejecutar debe mantenerse visible: un borrador automático no equivale a una decisión de contratación autorizada.",
+        "Workday también plantea un Payroll Agent que detecte datos salariales faltantes antes de ejecutar la nómina. En una operación así, el error no se mide solo por la calidad de una respuesta: un pago incorrecto afecta directamente a trabajadores y puede generar obligaciones legales. El anuncio describe auditorías de ajustes retroactivos, alertas y borradores de comunicaciones para revisión. Sin embargo, las nuevas capacidades Autopilot de nómina no están anunciadas como disponibles de forma general. Un equipo no debería asumir que puede delegar validación de remuneraciones sin conocer límites, controles de aprobación y cobertura por jurisdicción.",
+        "Para contabilidad, la empresa propone que el agente prepare asientos, sugiera calendarios de reconocimiento de ingresos y compruebe transacciones de manera continua, de modo que las auditorías no dependan solo de revisiones periódicas. El Accounting Agent dejaría a los profesionales las decisiones y revisiones finales. Workday no proporcionó tasas auditadas de errores contables, cumplimiento normativo o ahorro de horas. Los ejemplos son escenarios presentados por el proveedor; no una garantía de que el agente entienda cada contrato o política. Los controles financieros deben seguir contemplando segregación de funciones, evidencia de soporte y trazabilidad de cada ajuste.",
+        "El Deployment Agent, ya utilizado para otras funciones, incorporaría capacidades de detección proactiva de mejoras disponibles en nuevas versiones de Workday. La empresa afirma que casi cinco mil clientes han activado el agente existente, pero esa cifra no debe confundirse con adopción de las nuevas funciones Autopilot. El futuro sistema identificaría opciones útiles según la configuración de cada organización y prepararía planes de prueba y activación. La aplicación real requerirá revisar dependencias, compatibilidad y riesgos de cambios en producción; una recomendación de despliegue no debería convertirse en modificación automática sin una autorización definida.",
+        "La orquestación anunciada depende de Sana y de las reglas de negocio de Workday. Según el proveedor, las organizaciones pueden decidir qué acciones son automáticas, cuáles requieren revisión y con qué frecuencia se ejecutan los agentes, manteniendo registros de actividad. No se publicaron tarifas universales, precios por ejecución, regiones cubiertas ni comparativas independientes de precisión. Una mayor frecuencia de ejecución podría incrementar el coste o el volumen de alertas; por eso, los compradores deben preguntar por límites, presupuestos, reversión de acciones y mecanismos de suspensión. En contratación también corresponde revisar sesgos y tratamiento de datos personales.",
+        "Análisis Gazette: el paso de copilotos reactivos a agentes proactivos tiene potencial para reducir trabajo repetitivo, pero traslada el riesgo hacia acciones iniciadas sin intervención inmediata. Un despliegue responsable comienza con lectura y sugerencias, sigue con aprobaciones explícitas y solo después contempla automatización acotada. La prueba clave no es que el agente encuentre tareas, sino que distinga las que puede ejecutar, las que debe escalar y las que no debería tocar. Los hitos verificables serán el acceso general de Talent Acquisition, las primeras pruebas de 2027 en las otras áreas y métricas independientes de seguridad y productividad."
+      ],
+      "keyPoints": [
+        "Autopilot en Talent Acquisition está disponible para primeros clientes, con GA prevista a comienzos de 2027.",
+        "Payroll, Accounting y Deployment recibirían estas capacidades en acceso anticipado a comienzos de 2027.",
+        "Workday promete aprobaciones, permisos y registro de acciones, pero no publica una evaluación independiente de eficacia."
+      ],
+      "quickTakeaways": [
+        "Autopilot en Talent Acquisition está disponible para primeros clientes, con GA prevista a comienzos de 2027.",
+        "Payroll, Accounting y Deployment recibirían estas capacidades en acceso anticipado a comienzos de 2027.",
+        "Workday promete aprobaciones, permisos y registro de acciones, pero no publica una evaluación independiente de eficacia."
+      ],
+      "executiveSummary": "Workday anunció el 13 de octubre de 2026 una ampliación de sus agentes empresariales hacia el funcionamiento Autopilot: sistemas que observan procesos, detectan pendientes y preparan acciones sin esperar siempre una pregunta explícita. La compañía presentó aplicaciones para selección de personal, nómina, contabilidad y despliegue de software. La primera capacidad Autopilot del Talent Acquisition Agent está disponible para clientes de acceso anticipado; las otras tres están previstas para acceso anticipado a comienzos de 2027. La distinción importa: anunciar cuatro áreas no significa que los cuatro agentes autónomos puedan contratarse hoy con las mismas funciones.",
+      "sections": [
+        {
+          "heading": "Qué ocurrió y cómo funciona",
+          "kind": "report",
+          "paragraphs": [
+            "En contratación, Workday describe un agente que revisa continuamente vacantes y advierte cuándo falta una cantidad suficiente de candidatos. Puede ayudar a analizar perfiles, preparar propuestas de búsqueda, coordinar entrevistas y ofrecer a reclutadores contexto sobre posibles coincidencias con los requisitos. El anuncio menciona integración con Workday Recruiting, HiredScore, Paradox y proveedores conectados. La empresa especifica que el contacto con candidatos sigue requiriendo aprobación del reclutador antes del envío. Esa frontera entre preparar y ejecutar debe mantenerse visible: un borrador automático no equivale a una decisión de contratación autorizada.",
+            "Workday también plantea un Payroll Agent que detecte datos salariales faltantes antes de ejecutar la nómina. En una operación así, el error no se mide solo por la calidad de una respuesta: un pago incorrecto afecta directamente a trabajadores y puede generar obligaciones legales. El anuncio describe auditorías de ajustes retroactivos, alertas y borradores de comunicaciones para revisión. Sin embargo, las nuevas capacidades Autopilot de nómina no están anunciadas como disponibles de forma general. Un equipo no debería asumir que puede delegar validación de remuneraciones sin conocer límites, controles de aprobación y cobertura por jurisdicción."
+          ]
+        },
+        {
+          "heading": "Casos de uso y controles",
+          "kind": "technical",
+          "paragraphs": [
+            "Para contabilidad, la empresa propone que el agente prepare asientos, sugiera calendarios de reconocimiento de ingresos y compruebe transacciones de manera continua, de modo que las auditorías no dependan solo de revisiones periódicas. El Accounting Agent dejaría a los profesionales las decisiones y revisiones finales. Workday no proporcionó tasas auditadas de errores contables, cumplimiento normativo o ahorro de horas. Los ejemplos son escenarios presentados por el proveedor; no una garantía de que el agente entienda cada contrato o política. Los controles financieros deben seguir contemplando segregación de funciones, evidencia de soporte y trazabilidad de cada ajuste.",
+            "El Deployment Agent, ya utilizado para otras funciones, incorporaría capacidades de detección proactiva de mejoras disponibles en nuevas versiones de Workday. La empresa afirma que casi cinco mil clientes han activado el agente existente, pero esa cifra no debe confundirse con adopción de las nuevas funciones Autopilot. El futuro sistema identificaría opciones útiles según la configuración de cada organización y prepararía planes de prueba y activación. La aplicación real requerirá revisar dependencias, compatibilidad y riesgos de cambios en producción; una recomendación de despliegue no debería convertirse en modificación automática sin una autorización definida."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, límites y análisis",
+          "kind": "analysis",
+          "paragraphs": [
+            "La orquestación anunciada depende de Sana y de las reglas de negocio de Workday. Según el proveedor, las organizaciones pueden decidir qué acciones son automáticas, cuáles requieren revisión y con qué frecuencia se ejecutan los agentes, manteniendo registros de actividad. No se publicaron tarifas universales, precios por ejecución, regiones cubiertas ni comparativas independientes de precisión. Una mayor frecuencia de ejecución podría incrementar el coste o el volumen de alertas; por eso, los compradores deben preguntar por límites, presupuestos, reversión de acciones y mecanismos de suspensión. En contratación también corresponde revisar sesgos y tratamiento de datos personales.",
+            "Análisis Gazette: el paso de copilotos reactivos a agentes proactivos tiene potencial para reducir trabajo repetitivo, pero traslada el riesgo hacia acciones iniciadas sin intervención inmediata. Un despliegue responsable comienza con lectura y sugerencias, sigue con aprobaciones explícitas y solo después contempla automatización acotada. La prueba clave no es que el agente encuentre tareas, sino que distinga las que puede ejecutar, las que debe escalar y las que no debería tocar. Los hitos verificables serán el acceso general de Talent Acquisition, las primeras pruebas de 2027 en las otras áreas y métricas independientes de seguridad y productividad."
+          ]
+        }
+      ],
+      "analysis": "Análisis Gazette: los agentes que actúan por iniciativa propia requieren controles de autorización y observabilidad más estrictos que los asistentes que solo responden. El valor debe medirse contra errores y esfuerzo de supervisión.",
+      "watch": "GA de Talent Acquisition, acceso anticipado de los otros agentes, licencias y resultados operativos independientes.",
+      "availability": {
+        "status": "Autopilot de Talent Acquisition en acceso anticipado; GA prevista a comienzos de 2027. Otras capacidades Autopilot en acceso anticipado previsto a comienzos de 2027.",
+        "platforms": [
+          "Workday Recruiting",
+          "Workday Payroll",
+          "Workday Accounting",
+          "Workday Deployment Agent",
+          "Sana"
+        ],
+        "regions": [],
+        "requirements": [
+          "Clientes elegibles y configuración de permisos Workday"
+        ],
+        "notes": [
+          "El Deployment Agent existente no implica disponibilidad de su futura función Autopilot.",
+          "Las comunicaciones con candidatos requieren aprobación humana."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Autopilot Agents",
+          "value": "No se anunció tarifa universal"
+        }
+      ],
+      "limitations": [
+        "No hay benchmarks independientes de reducción de errores ni tiempos.",
+        "Nuevas capacidades de nómina, contabilidad y despliegue aún no están disponibles.",
+        "Regiones, condiciones comerciales y límites por ejecución no detallados."
+      ],
+      "practicalAdvice": [
+        "Iniciar con tareas de lectura y preparación antes de habilitar acciones automáticas.",
+        "Exigir trazas, aprobaciones, controles de sesgo y posibilidad de revertir cambios.",
+        "Diferenciar agentes existentes de funciones Autopilot futuras en los contratos."
+      ],
+      "finalSummary": "Workday presenta una hoja de ruta de automatización proactiva en áreas empresariales sensibles. Por ahora, solo Talent Acquisition Autopilot tiene acceso anticipado; el resto depende de hitos futuros y de pruebas rigurosas de permisos, precisión y supervisión."
     },
     {
       "id": "scaleway-sweden-amd-mi355x-supercomputer-2026",
@@ -29218,7 +29577,7 @@
     {
       "date": "2026-10-13",
       "status": "partial",
-      "verifiedArticles": 5
+      "verifiedArticles": 8
     }
   ]
 }
