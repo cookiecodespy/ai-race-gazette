@@ -1,8 +1,137 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T14:22:20.716Z",
+  "updatedAt": "2026-10-14T17:28:21.452Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "openai-rockefeller-cities-deliver-ai-public-services-2026",
+      "eventKey": "openai-rockefeller-foundations-cities-deliver-50m-ai-public-services-grants-2026-10-14",
+      "date": "2026-10-14",
+      "announcedAt": "2026-10-14",
+      "coveredAt": "2026-10-14",
+      "verifiedAt": "2026-10-14",
+      "articleVersion": 2,
+      "company": "OpenAI",
+      "product": "Cities Deliver: AI Solutions for Public Services",
+      "title": "OpenAI Foundation y Rockefeller comprometen US$50 millones para proyectos de IA en servicios públicos urbanos",
+      "summary": "Las fundaciones abren Cities Deliver, un programa de US$50 millones con subvenciones de US$500.000 a US$2 millones para organizaciones asociadas a gobiernos municipales. La convocatoria cierra su primera fase el 29 de noviembre.",
+      "tags": [
+        "OpenAI",
+        "Financiación",
+        "Sector público",
+        "Ciudades",
+        "Impacto social"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado conceptual de servicios municipales conectados por sistemas de IA; no representa una ciudad o proyecto beneficiario concreto.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial 3:2 de biblioteca municipal, centro de salud y transporte urbano conectados por una red tecnológica discreta, estilo periódico sepia, sin logos ni ciudadanos identificables.",
+      "source": {
+        "name": "Rockefeller Foundation · convocatoria oficial Cities Deliver",
+        "url": "https://www.rockefellerfoundation.org/cities-deliver-ai-solutions-for-public-services/",
+        "publishedAt": "2026-10-14"
+      },
+      "body": [
+        "OpenAI Foundation y Rockefeller Foundation abrieron el 14 de octubre de 2026 Cities Deliver: AI Solutions for Public Services, una iniciativa de financiación por 50 millones de dólares destinada a proyectos de inteligencia artificial para mejorar servicios municipales. El programa busca soluciones que respondan a problemas concretos de ciudades y comunidades desatendidas, no una compra centralizada de ChatGPT ni una distribución indiscriminada de licencias. La convocatoria ya acepta propuestas y establece condiciones de elegibilidad, montos y etapas de selección. El compromiso anunciado no equivale a dinero adjudicado a beneficiarios específicos en esta fecha.",
+        "Cada proyecto podrá optar a una subvención de entre 500.000 y dos millones de dólares durante 24 meses. La modalidad Seed cubre desde 500.000 hasta menos de un millón para conceptos preparados para un primer piloto municipal; Scale contempla de uno a dos millones para soluciones ya ensayadas con resultados iniciales. La organización administradora prevé desembolsar la mitad al inicio y la otra mitad tras un hito intermedio documentado. No promete financiación posterior automática. Los postulantes deben demostrar que pueden alcanzar sus objetivos con el presupuesto del propio proyecto.",
+        "La convocatoria prioriza cuatro campos: salud pública, movilidad económica, resiliencia ambiental y participación cívica. Entre los ejemplos se incluyen acceso a prestaciones, navegación laboral, prevención sanitaria, respuesta a emergencias y mejora de trámites municipales. La categoría cívica excluye expresamente proyectos relacionados con votaciones o elecciones. Los organizadores quieren iniciativas que partan de una necesidad identificada por autoridades y residentes, con una justificación de por qué las capacidades de IA son esenciales. No basta con añadir un chatbot a un servicio sin medir su utilidad real.",
+        "Pueden liderar postulaciones organizaciones sin fines de lucro, laboratorios universitarios y entidades patrocinadas fiscalmente, además de ciertas corporaciones de beneficio público. Empresas con fines de lucro solo podrían encajar en casos limitados y con un propósito caritativo que no genere más que beneficios incidentales para su negocio. Todo proyecto necesita un socio municipal comprometido; los gobiernos no presentan solicitudes directamente. Las condiciones y preguntas frecuentes son relevantes porque la página promocional no sustituye el texto contractual. El programa es una oportunidad para equipos elegibles, no un subsidio abierto a cualquier desarrollador individual.",
+        "El calendario fija el cierre de la primera fase para el 29 de noviembre de 2026 a las 23:59, hora del este de Estados Unidos. Los seleccionados para avanzar serían informados en diciembre, con entrevistas en enero de 2027, invitaciones a segunda ronda en febrero y plazo de propuestas finales el 1 de marzo. La selección se anunciaría en abril de 2027. Los organizadores también mencionan mentoría, aprendizaje entre pares y apoyo técnico ocasional sujeto a capacidad, no ingeniería personalizada garantizada para cada ganador. Las fechas futuras son el plan publicado, susceptible de cambios.",
+        "Análisis Gazette: esta iniciativa ilustra un desplazamiento de la carrera de la IA hacia resultados verificables en servicios públicos. El objetivo anunciado de alcanzar hasta cien millones de residentes es una aspiración del programa, no una cifra de beneficiarios atendidos. La adopción municipal enfrenta barreras de privacidad, accesibilidad, sesgos, contratación, seguridad y mantenimiento a largo plazo. Una solución técnicamente atractiva puede fracasar si no se integra en sistemas administrativos o no mejora los tiempos de atención. La evidencia relevante será la calidad de los pilotos y su evaluación independiente, no únicamente el volumen comprometido.",
+        "Para equipos interesados, el primer paso es asegurar un socio municipal real y definir un problema medible con indicadores previos y posteriores. Después conviene revisar tratamiento de datos, supervisión humana, continuidad financiera y mecanismos de queja para ciudadanos. El programa no anuncia precios nuevos de modelos OpenAI ni obliga públicamente a usar un modelo específico en todos los proyectos; los términos de la convocatoria deben revisarse antes de asumir compatibilidad. Lo siguiente a observar son postulaciones admitidas, criterios de evaluación y proyectos elegidos en 2027. Por ahora hay una convocatoria abierta y financiación comprometida, no impactos sociales demostrados."
+      ],
+      "keyPoints": [
+        "OpenAI Foundation y Rockefeller Foundation comprometen conjuntamente US$50 millones para Cities Deliver.",
+        "Las subvenciones previstas oscilan entre US$500.000 y US$2 millones y duran 24 meses.",
+        "Se exige una organización solicitante elegible y un socio municipal; los gobiernos no solicitan directamente."
+      ],
+      "quickTakeaways": [
+        "OpenAI Foundation y Rockefeller Foundation comprometen conjuntamente US$50 millones para Cities Deliver.",
+        "Las subvenciones previstas oscilan entre US$500.000 y US$2 millones y duran 24 meses.",
+        "Se exige una organización solicitante elegible y un socio municipal; los gobiernos no solicitan directamente.",
+        "La primera ronda cierra el 29 de noviembre de 2026 a las 23:59, hora del este de EE. UU."
+      ],
+      "executiveSummary": "OpenAI Foundation y Rockefeller Foundation abrieron el 14 de octubre de 2026 Cities Deliver: AI Solutions for Public Services, una iniciativa de financiación por 50 millones de dólares destinada a proyectos de inteligencia artificial para mejorar servicios municipales. El programa busca soluciones que respondan a problemas concretos de ciudades y comunidades desatendidas, no una compra centralizada de ChatGPT ni una distribución indiscriminada de licencias. La convocatoria ya acepta propuestas y establece condiciones de elegibilidad, montos y etapas de selección. El compromiso anunciado no equivale a dinero adjudicado a beneficiarios específicos en esta fecha.",
+      "sections": [
+        {
+          "heading": "Qué ocurrió y por qué importa",
+          "kind": "report",
+          "paragraphs": [
+            "OpenAI Foundation y Rockefeller Foundation abrieron el 14 de octubre de 2026 Cities Deliver: AI Solutions for Public Services, una iniciativa de financiación por 50 millones de dólares destinada a proyectos de inteligencia artificial para mejorar servicios municipales. El programa busca soluciones que respondan a problemas concretos de ciudades y comunidades desatendidas, no una compra centralizada de ChatGPT ni una distribución indiscriminada de licencias. La convocatoria ya acepta propuestas y establece condiciones de elegibilidad, montos y etapas de selección. El compromiso anunciado no equivale a dinero adjudicado a beneficiarios específicos en esta fecha.",
+            "Cada proyecto podrá optar a una subvención de entre 500.000 y dos millones de dólares durante 24 meses. La modalidad Seed cubre desde 500.000 hasta menos de un millón para conceptos preparados para un primer piloto municipal; Scale contempla de uno a dos millones para soluciones ya ensayadas con resultados iniciales. La organización administradora prevé desembolsar la mitad al inicio y la otra mitad tras un hito intermedio documentado. No promete financiación posterior automática. Los postulantes deben demostrar que pueden alcanzar sus objetivos con el presupuesto del propio proyecto."
+          ]
+        },
+        {
+          "heading": "Detalles y contexto",
+          "kind": "technical",
+          "paragraphs": [
+            "La convocatoria prioriza cuatro campos: salud pública, movilidad económica, resiliencia ambiental y participación cívica. Entre los ejemplos se incluyen acceso a prestaciones, navegación laboral, prevención sanitaria, respuesta a emergencias y mejora de trámites municipales. La categoría cívica excluye expresamente proyectos relacionados con votaciones o elecciones. Los organizadores quieren iniciativas que partan de una necesidad identificada por autoridades y residentes, con una justificación de por qué las capacidades de IA son esenciales. No basta con añadir un chatbot a un servicio sin medir su utilidad real.",
+            "Pueden liderar postulaciones organizaciones sin fines de lucro, laboratorios universitarios y entidades patrocinadas fiscalmente, además de ciertas corporaciones de beneficio público. Empresas con fines de lucro solo podrían encajar en casos limitados y con un propósito caritativo que no genere más que beneficios incidentales para su negocio. Todo proyecto necesita un socio municipal comprometido; los gobiernos no presentan solicitudes directamente. Las condiciones y preguntas frecuentes son relevantes porque la página promocional no sustituye el texto contractual. El programa es una oportunidad para equipos elegibles, no un subsidio abierto a cualquier desarrollador individual."
+          ]
+        },
+        {
+          "heading": "Impacto, límites y análisis Gazette",
+          "kind": "analysis",
+          "paragraphs": [
+            "El calendario fija el cierre de la primera fase para el 29 de noviembre de 2026 a las 23:59, hora del este de Estados Unidos. Los seleccionados para avanzar serían informados en diciembre, con entrevistas en enero de 2027, invitaciones a segunda ronda en febrero y plazo de propuestas finales el 1 de marzo. La selección se anunciaría en abril de 2027. Los organizadores también mencionan mentoría, aprendizaje entre pares y apoyo técnico ocasional sujeto a capacidad, no ingeniería personalizada garantizada para cada ganador. Las fechas futuras son el plan publicado, susceptible de cambios.",
+            "Análisis Gazette: esta iniciativa ilustra un desplazamiento de la carrera de la IA hacia resultados verificables en servicios públicos. El objetivo anunciado de alcanzar hasta cien millones de residentes es una aspiración del programa, no una cifra de beneficiarios atendidos. La adopción municipal enfrenta barreras de privacidad, accesibilidad, sesgos, contratación, seguridad y mantenimiento a largo plazo. Una solución técnicamente atractiva puede fracasar si no se integra en sistemas administrativos o no mejora los tiempos de atención. La evidencia relevante será la calidad de los pilotos y su evaluación independiente, no únicamente el volumen comprometido."
+          ]
+        },
+        {
+          "heading": "Qué conviene observar",
+          "kind": "practical",
+          "paragraphs": [
+            "Para equipos interesados, el primer paso es asegurar un socio municipal real y definir un problema medible con indicadores previos y posteriores. Después conviene revisar tratamiento de datos, supervisión humana, continuidad financiera y mecanismos de queja para ciudadanos. El programa no anuncia precios nuevos de modelos OpenAI ni obliga públicamente a usar un modelo específico en todos los proyectos; los términos de la convocatoria deben revisarse antes de asumir compatibilidad. Lo siguiente a observar son postulaciones admitidas, criterios de evaluación y proyectos elegidos en 2027. Por ahora hay una convocatoria abierta y financiación comprometida, no impactos sociales demostrados."
+          ]
+        }
+      ],
+      "analysis": "La financiación crea una vía concreta para pilotos públicos, pero el éxito dependerá de evaluación, gobernanza y sostenibilidad de servicios, no del monto anunciado.",
+      "watch": "Cierre del 29 de noviembre, selección de abril de 2027, condiciones finales y métricas de impacto público.",
+      "availability": {
+        "status": "Convocatoria abierta desde el 14 de octubre de 2026",
+        "platforms": [
+          "Programa de subvenciones Cities Deliver"
+        ],
+        "regions": [
+          "Convocatoria internacional sujeta a criterios de elegibilidad"
+        ],
+        "requirements": [
+          "Organización elegible",
+          "Socio municipal comprometido",
+          "Finalidad caritativa y evaluación"
+        ],
+        "notes": [
+          "Los gobiernos municipales no pueden postular directamente."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Fondo comprometido",
+          "value": "US$50 millones"
+        },
+        {
+          "label": "Subvención Seed",
+          "value": "US$500.000 a menos de US$1 millón"
+        },
+        {
+          "label": "Subvención Scale",
+          "value": "US$1 millón a US$2 millones"
+        }
+      ],
+      "limitations": [
+        "El objetivo de cien millones de residentes es aspiracional.",
+        "Los fondos aún no están adjudicados a proyectos específicos.",
+        "Apoyo técnico individual no está garantizado.",
+        "Elegibilidad final regida por términos y condiciones de la convocatoria."
+      ],
+      "practicalAdvice": [
+        "Confirmar socio municipal antes de invertir tiempo en la propuesta.",
+        "Definir indicadores de impacto, privacidad y mantenimiento desde el diseño."
+      ],
+      "finalSummary": "Cities Deliver abre una convocatoria financiada para IA municipal; los resultados y beneficiarios reales se conocerán después de la selección y ejecución."
+    },
     {
       "id": "openai-gpt4-api-snapshots-shutdown-2027",
       "eventKey": "openai-gpt4o-gpt41-api-snapshots-deprecation-2026-10-14",
@@ -237,6 +366,248 @@
       "finalSummary": "Las métricas apuntan a una transición hacia flujos agénticos entre clientes europeos de OpenAI, pero no prueban resultados económicos generales."
     },
     {
+      "id": "nvidia-cupotential-ai-defined-semiconductor-fabs-2026",
+      "eventKey": "nvidia-cupotential-cuda-x-ai-defined-fabs-semiconductor-simulation-2026-10-14",
+      "date": "2026-10-14",
+      "announcedAt": "2026-10-14",
+      "coveredAt": "2026-10-14",
+      "verifiedAt": "2026-10-14",
+      "articleVersion": 2,
+      "company": "NVIDIA",
+      "product": "cuPotential y fábricas de semiconductores definidas por IA",
+      "title": "NVIDIA presenta cuPotential y amplía CUDA-X para simular materiales y automatizar fábricas de chips",
+      "summary": "NVIDIA introduce cuPotential para simulación atómica acelerada y reúne resultados de socios que usan CUDA-X, NanoVDB, NPP y agentes de ingeniería en diseño, inspección y fabricación de semiconductores. Los aumentos de velocidad son pruebas atribuidas.",
+      "tags": [
+        "NVIDIA",
+        "Semiconductores",
+        "CUDA-X",
+        "Agentes",
+        "Investigación"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado conceptual de obleas de silicio, átomos y simulaciones sobre una fábrica de chips; no fotografía industrial.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial 3:2 de oblea de silicio y estructura molecular superpuestas a maquinaria de fabricación y nodos de cómputo, sepia, sin marcas comerciales falsas ni diagramas que simulen datos reales.",
+      "source": {
+        "name": "NVIDIA Newsroom · anuncio oficial",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-semiconductor-leaders-advance-ai-across-chip-design-and-manufacturing-for-ai-defined-labs",
+        "publishedAt": "2026-10-14"
+      },
+      "body": [
+        "NVIDIA presentó el 14 de octubre de 2026 una ampliación de su ecosistema CUDA-X para diseño y fabricación de semiconductores, encabezada por cuPotential, una biblioteca orientada a simulaciones de interacciones entre átomos y moléculas. El anuncio agrupa herramientas para modelar materiales, analizar imágenes de inspección y acelerar cálculos de ingeniería. La empresa denomina AI-defined fabs a las plantas donde modelos y agentes ayudan a estudiar procesos antes de trasladar cambios a equipos reales. Se trata de infraestructura de ingeniería, no de un nuevo chip comercial ni de una fábrica que funcione sin supervisión humana.",
+        "La función específica de cuPotential es acelerar cálculos especializados de fuerzas e interacciones a escala atómica dentro de software de simulación. NVIDIA sostiene que, en pruebas de acceso temprano, consiguió entre dos y tres veces más velocidad incluso frente a flujos que ya usaban GPU. La base de comparación importa: no significa que todo un proceso de fabricación se vuelva tres veces más rápido, ni que cada simulación tenga la misma ganancia. Synopsys aparece entre los primeros usuarios. La documentación pública no detalla una matriz completa de hardware, cargas, precisión y coste que permita extrapolar ese resultado universalmente.",
+        "El comunicado sitúa cuPotential junto a cuEST para modelado electrónico, cuDSS para resolución de sistemas de ingeniería, cuLitho para cálculos de litografía, NanoVDB para datos tridimensionales y NPP para procesamiento de imágenes. Son bibliotecas con funciones diferentes que pueden incorporarse a aplicaciones existentes. Un agente de IA podría solicitar simulaciones, comparar resultados y proponer nuevos parámetros, pero el resultado de una herramienta numérica sigue sujeto a supuestos físicos, validación experimental y restricciones de seguridad industrial. Automatizar iteraciones no convierte una hipótesis de materiales en una prueba de producción.",
+        "Los socios aportan ejemplos que NVIDIA atribuye a sus pruebas y productos. Synopsys menciona hasta treinta veces de aceleración potencial en determinados resultados de QuantumATK con cuEST y doce veces en S-Device con cuDSS. Cadence describe optimizaciones térmicas y mecánicas de empaquetado; COMSOL habla de hasta diez veces en simulaciones multifísicas. Lam Research prevé integrar NanoVDB en SEMulator3D para acelerar modelos seleccionados de grabado de obleas hasta treinta veces. Esas cifras corresponden a tareas, configuraciones y fases de integración diferentes, no a un ranking homogéneo entre empresas.",
+        "La inspección es otro frente. KLA reporta un kernel de correlación normalizada en NPP con rendimiento cincuenta veces superior a versiones anteriores de CPU, comparable a implementaciones manualmente optimizadas de la propia firma. Teradyne informa de aproximadamente ochenta y cinco veces de mejora en una inferencia vinculada al mantenimiento de sondas. NVIDIA también menciona a Applied Materials, Siemens, imec y otros participantes. Una mejora de latencia en una etapa no implica que aumente en igual proporción el rendimiento total de una planta, porque persisten cuellos de botella físicos, metrología, turnos y validación.",
+        "Análisis Gazette: el movimiento amplía la competencia de la IA desde los modelos que se ejecutan sobre chips hacia las herramientas usadas para fabricar los siguientes chips. Es una relación circular: la demanda de cómputo impulsa inversión en semiconductores, y las GPU se utilizan para mejorar simulaciones que podrían acelerar su producción. El beneficio económico dependerá de cuánto tiempo de ingeniería y de máquina se ahorre realmente, no del máximo de una gráfica promocional. También aumenta la importancia de reproducibilidad numérica, compatibilidad entre versiones y trazabilidad de decisiones de agentes.",
+        "Para desarrolladores industriales, conviene seleccionar un caso de simulación bien medido, comparar resultados físicos y precisión antes y después de incorporar CUDA-X y registrar versiones de hardware y bibliotecas. Las áreas de compras deben separar acceso temprano, disponibilidad comercial, soporte y licencias de cada componente; el anuncio no fija una tarifa universal para cuPotential. Lo siguiente a observar son documentación pública de acceso, benchmarks replicables, integraciones que lleguen a producción y evidencia de mejoras de rendimiento de fabricación, no solo de kernels. El hecho confirmado es el anuncio y la participación de socios; las aceleraciones concretas son afirmaciones de los participantes."
+      ],
+      "keyPoints": [
+        "cuPotential es una nueva biblioteca CUDA-X para acelerar simulaciones de interacciones atómicas.",
+        "NVIDIA afirma una aceleración adicional de 2 a 3 veces sobre flujos ya optimizados con GPU en pruebas de acceso temprano.",
+        "Socios como Synopsys, Lam Research y KLA describen aceleraciones en tareas distintas; no son un benchmark único."
+      ],
+      "quickTakeaways": [
+        "cuPotential es una nueva biblioteca CUDA-X para acelerar simulaciones de interacciones atómicas.",
+        "NVIDIA afirma una aceleración adicional de 2 a 3 veces sobre flujos ya optimizados con GPU en pruebas de acceso temprano.",
+        "Socios como Synopsys, Lam Research y KLA describen aceleraciones en tareas distintas; no son un benchmark único.",
+        "No se divulgó una tarifa universal ni disponibilidad general completa de cuPotential."
+      ],
+      "executiveSummary": "NVIDIA presentó el 14 de octubre de 2026 una ampliación de su ecosistema CUDA-X para diseño y fabricación de semiconductores, encabezada por cuPotential, una biblioteca orientada a simulaciones de interacciones entre átomos y moléculas. El anuncio agrupa herramientas para modelar materiales, analizar imágenes de inspección y acelerar cálculos de ingeniería. La empresa denomina AI-defined fabs a las plantas donde modelos y agentes ayudan a estudiar procesos antes de trasladar cambios a equipos reales. Se trata de infraestructura de ingeniería, no de un nuevo chip comercial ni de una fábrica que funcione sin supervisión humana.",
+      "sections": [
+        {
+          "heading": "Qué ocurrió y por qué importa",
+          "kind": "report",
+          "paragraphs": [
+            "NVIDIA presentó el 14 de octubre de 2026 una ampliación de su ecosistema CUDA-X para diseño y fabricación de semiconductores, encabezada por cuPotential, una biblioteca orientada a simulaciones de interacciones entre átomos y moléculas. El anuncio agrupa herramientas para modelar materiales, analizar imágenes de inspección y acelerar cálculos de ingeniería. La empresa denomina AI-defined fabs a las plantas donde modelos y agentes ayudan a estudiar procesos antes de trasladar cambios a equipos reales. Se trata de infraestructura de ingeniería, no de un nuevo chip comercial ni de una fábrica que funcione sin supervisión humana.",
+            "La función específica de cuPotential es acelerar cálculos especializados de fuerzas e interacciones a escala atómica dentro de software de simulación. NVIDIA sostiene que, en pruebas de acceso temprano, consiguió entre dos y tres veces más velocidad incluso frente a flujos que ya usaban GPU. La base de comparación importa: no significa que todo un proceso de fabricación se vuelva tres veces más rápido, ni que cada simulación tenga la misma ganancia. Synopsys aparece entre los primeros usuarios. La documentación pública no detalla una matriz completa de hardware, cargas, precisión y coste que permita extrapolar ese resultado universalmente."
+          ]
+        },
+        {
+          "heading": "Detalles y contexto",
+          "kind": "technical",
+          "paragraphs": [
+            "El comunicado sitúa cuPotential junto a cuEST para modelado electrónico, cuDSS para resolución de sistemas de ingeniería, cuLitho para cálculos de litografía, NanoVDB para datos tridimensionales y NPP para procesamiento de imágenes. Son bibliotecas con funciones diferentes que pueden incorporarse a aplicaciones existentes. Un agente de IA podría solicitar simulaciones, comparar resultados y proponer nuevos parámetros, pero el resultado de una herramienta numérica sigue sujeto a supuestos físicos, validación experimental y restricciones de seguridad industrial. Automatizar iteraciones no convierte una hipótesis de materiales en una prueba de producción.",
+            "Los socios aportan ejemplos que NVIDIA atribuye a sus pruebas y productos. Synopsys menciona hasta treinta veces de aceleración potencial en determinados resultados de QuantumATK con cuEST y doce veces en S-Device con cuDSS. Cadence describe optimizaciones térmicas y mecánicas de empaquetado; COMSOL habla de hasta diez veces en simulaciones multifísicas. Lam Research prevé integrar NanoVDB en SEMulator3D para acelerar modelos seleccionados de grabado de obleas hasta treinta veces. Esas cifras corresponden a tareas, configuraciones y fases de integración diferentes, no a un ranking homogéneo entre empresas."
+          ]
+        },
+        {
+          "heading": "Impacto, límites y análisis Gazette",
+          "kind": "analysis",
+          "paragraphs": [
+            "La inspección es otro frente. KLA reporta un kernel de correlación normalizada en NPP con rendimiento cincuenta veces superior a versiones anteriores de CPU, comparable a implementaciones manualmente optimizadas de la propia firma. Teradyne informa de aproximadamente ochenta y cinco veces de mejora en una inferencia vinculada al mantenimiento de sondas. NVIDIA también menciona a Applied Materials, Siemens, imec y otros participantes. Una mejora de latencia en una etapa no implica que aumente en igual proporción el rendimiento total de una planta, porque persisten cuellos de botella físicos, metrología, turnos y validación.",
+            "Análisis Gazette: el movimiento amplía la competencia de la IA desde los modelos que se ejecutan sobre chips hacia las herramientas usadas para fabricar los siguientes chips. Es una relación circular: la demanda de cómputo impulsa inversión en semiconductores, y las GPU se utilizan para mejorar simulaciones que podrían acelerar su producción. El beneficio económico dependerá de cuánto tiempo de ingeniería y de máquina se ahorre realmente, no del máximo de una gráfica promocional. También aumenta la importancia de reproducibilidad numérica, compatibilidad entre versiones y trazabilidad de decisiones de agentes."
+          ]
+        },
+        {
+          "heading": "Qué conviene observar",
+          "kind": "practical",
+          "paragraphs": [
+            "Para desarrolladores industriales, conviene seleccionar un caso de simulación bien medido, comparar resultados físicos y precisión antes y después de incorporar CUDA-X y registrar versiones de hardware y bibliotecas. Las áreas de compras deben separar acceso temprano, disponibilidad comercial, soporte y licencias de cada componente; el anuncio no fija una tarifa universal para cuPotential. Lo siguiente a observar son documentación pública de acceso, benchmarks replicables, integraciones que lleguen a producción y evidencia de mejoras de rendimiento de fabricación, no solo de kernels. El hecho confirmado es el anuncio y la participación de socios; las aceleraciones concretas son afirmaciones de los participantes."
+          ]
+        }
+      ],
+      "analysis": "La IA está penetrando la propia cadena de fabricación de semiconductores; los beneficios prometidos requieren separar rendimiento de kernels, precisión científica y rendimiento total de planta.",
+      "watch": "Acceso comercial a cuPotential, licencias, comparativas independientes y resultados industriales en producción.",
+      "availability": {
+        "status": "cuPotential anunciado con resultados de acceso temprano; otros componentes CUDA-X ya tienen distintos niveles de distribución",
+        "platforms": [
+          "NVIDIA CUDA-X",
+          "GPU NVIDIA",
+          "Software de socios industriales"
+        ],
+        "regions": [],
+        "notes": [
+          "Consultar documentación de cada biblioteca y soporte por separado."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Tarifas y licencias",
+          "value": "Sin precio universal de cuPotential publicado en el comunicado"
+        }
+      ],
+      "limitations": [
+        "Ganancias de velocidad medidas en tareas heterogéneas y atribuidas a proveedores.",
+        "No se garantiza mejora proporcional del rendimiento de fábrica.",
+        "Acceso general, licencias y soporte de cuPotential no detallados completamente."
+      ],
+      "practicalAdvice": [
+        "Probar cargas propias y comparar precisión, tiempo y coste energético.",
+        "No sumar aceleraciones de componentes como si fueran una mejora global."
+      ],
+      "finalSummary": "cuPotential y CUDA-X amplían la automatización de ingeniería de chips; la relevancia real dependerá de validación científica y despliegues industriales."
+    },
+    {
+      "id": "hesai-kosmo-one-world-spatial-ai-launch-2026",
+      "eventKey": "hesai-kosmo-one-kosmo-world-3d-spatial-data-engine-launch-2026-10-14",
+      "date": "2026-10-14",
+      "announcedAt": "2026-10-14",
+      "coveredAt": "2026-10-14",
+      "verifiedAt": "2026-10-14",
+      "articleVersion": 2,
+      "company": "Hesai",
+      "product": "Kosmo One y Kosmo World",
+      "title": "Hesai lanza Kosmo: cámara espacial y nube 3D para entrenar robots con entornos del mundo real",
+      "summary": "Hesai formaliza el lanzamiento de Kosmo One y Kosmo World para capturar escenas 3D y convertirlas en datos de entrenamiento para robótica, modelos del mundo y producción audiovisual. La firma atribuye mejoras de velocidad a pruebas propias; no publica precio general.",
+      "tags": [
+        "Robótica",
+        "IA física",
+        "Hesai",
+        "3D",
+        "Modelos del mundo"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado conceptual de un escáner espacial que reconstruye una habitación para entrenamiento robótico; no imagen del producto.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial 3:2 con una cámara de escaneo tridimensional imaginaria frente a un taller y un robot, malla espacial transparente estilizada sin fingir interfaz ni apariencia exacta de Kosmo One.",
+      "source": {
+        "name": "Hesai · comunicado oficial del lanzamiento",
+        "url": "https://www.hesaitech.com/9974-2/",
+        "publishedAt": "2026-10-14"
+      },
+      "relatedSources": [
+        {
+          "name": "Reuters · cobertura del lanzamiento",
+          "url": "https://www.reuters.com/technology/chinas-hesai-launches-spatial-camera-boost-ai-powered-robotics-adoption-2026-10-14/",
+          "publishedAt": "2026-10-14"
+        },
+        {
+          "name": "Hesai · demostración previa WAIC 2026",
+          "url": "https://www.hesaitech.com/hesai-showcases-kosmo-spatial-intelligence-platform-and-robotic-lidar-at-waic-2026-underscoring-its-physical-ai-vision/",
+          "publishedAt": "2026-07-20"
+        }
+      ],
+      "body": [
+        "Hesai anunció el 14 de octubre de 2026 el lanzamiento de Kosmo, un sistema para transformar espacios reales en datos tridimensionales reutilizables. La oferta combina Kosmo One, una cámara espacial con lidar y captura visual, con Kosmo World, plataforma que procesa y administra escenas digitales. La noticia debe fecharse como lanzamiento comercial presentado en octubre, no como primera aparición de la idea: la empresa había mostrado Kosmo durante 2026 y anticipado su llegada en la segunda mitad del año. El comunicado actual aporta detalles técnicos, socios y demostraciones adicionales.",
+        "Kosmo One integra lidar de alta resolución, un sensor de imagen de una pulgada y una unidad de medición inercial para relacionar geometría, color, textura y posición. Hesai describe sincronización de nivel de microsegundos y reconstrucción mediante 3D Gaussian Splatting, técnica que representa escenas a partir de múltiples muestras visuales. El proveedor utiliza la expresión cámara espacial de 8K, pero sus notas aclaran que 8K es la resolución máxima de captura y que los archivos exportados alcanzan como máximo 6K. Confundir ambos límites exageraría lo que recibe un desarrollador.",
+        "La empresa afirma que un operador puede escanear una habitación interior típica de cien metros cuadrados en aproximadamente quince minutos. Después, Kosmo World produce representaciones 3DGS, mallas y mapas de profundidad a partir de una reconstrucción. El sistema incorpora segmentación semántica para reconocer objetos y técnicas generativas para completar zonas que no fueron capturadas. Esa última capacidad es útil para crear escenarios, pero obliga a distinguir datos realmente observados de contenido inferido o sintetizado. Un entorno visualmente convincente puede seguir teniendo errores geométricos relevantes para un robot.",
+        "Hesai comunica una velocidad de generación de modelos de hasta cinco veces frente a productos comparables bajo determinadas condiciones, y una eficiencia de adquisición de datos superior a cien veces para ciertos conjuntos de trayectorias. Son comparaciones formuladas por el fabricante con notas metodológicas y variación según escena, volumen y parámetros. La compañía también afirma que, en una instalación de heladería con un robot Sharpa, la preparación del entorno pasó de unas trescientas horas de modelado manual a quince minutos de captura y reconstrucción, y que el robot alcanzó un 99 % de éxito en tareas. No debe generalizarse esa demostración a cualquier local o robot.",
+        "Kosmo apunta a un problema importante de la IA física: entrenar agentes requiere información sobre profundidad, superficies, objetos y acciones en espacios que cambian. Hesai propone reutilizar escenas capturadas para simulación, generación de trayectorias y desarrollo de modelos del mundo. Menciona integración con NVIDIA Isaac Sim, Isaac Lab, Unreal Engine, RenderMan y Houdini, además de acuerdos con Galbot y Dexmal. También mostró usos en producción audiovisual y mapas inmersivos con Amap. Esas aplicaciones no equivalen a una única API universal ni aseguran que todas las integraciones estén disponibles para cualquier cliente desde hoy.",
+        "Análisis Gazette: Kosmo intenta convertir la captura del entorno físico en una capa de infraestructura para robótica, semejante a la función de los conjuntos de datos en modelos de lenguaje. El potencial es real, pero el valor depende de calibración, cobertura, iluminación, objetos móviles, licencias y validación de la transferencia desde simulación a ejecución física. Para lugares con personas, los datos espaciales pueden revelar rutinas, interiores privados y elementos sensibles; no basta con que la reconstrucción sea rápida. También hay que separar el mercado de hardware del servicio de producción de datos que la compañía plantea.",
+        "Antes de adoptarlo, un laboratorio debería solicitar especificaciones de precisión en escenas difíciles, formatos exportables, términos de uso y políticas de almacenamiento. Conviene medir resultados en su propia tarea y comparar contra captura convencional, especialmente cuando una escena sintetizada pueda inducir errores. Hesai no publicó en el anuncio un precio general verificable, calendario exhaustivo de distribución por países ni garantía de compatibilidad para todas las herramientas. Lo siguiente a observar será la disponibilidad comercial efectiva, precios de cámara y nube, evaluaciones independientes y resultados de robots fuera de demostraciones controladas."
+      ],
+      "keyPoints": [
+        "Kosmo reúne la cámara Kosmo One y la plataforma de reconstrucción Kosmo World.",
+        "La captura admite 8K, pero Hesai aclara que la exportación máxima de archivos es 6K.",
+        "La firma declara escanear una sala típica de 100 m² en unos 15 minutos; el tiempo depende del entorno."
+      ],
+      "quickTakeaways": [
+        "Kosmo reúne la cámara Kosmo One y la plataforma de reconstrucción Kosmo World.",
+        "La captura admite 8K, pero Hesai aclara que la exportación máxima de archivos es 6K.",
+        "La firma declara escanear una sala típica de 100 m² en unos 15 minutos; el tiempo depende del entorno.",
+        "Los resultados de rapidez, eficiencia y éxito robótico son casos divulgados por Hesai, no benchmarks independientes."
+      ],
+      "executiveSummary": "Hesai anunció el 14 de octubre de 2026 el lanzamiento de Kosmo, un sistema para transformar espacios reales en datos tridimensionales reutilizables. La oferta combina Kosmo One, una cámara espacial con lidar y captura visual, con Kosmo World, plataforma que procesa y administra escenas digitales. La noticia debe fecharse como lanzamiento comercial presentado en octubre, no como primera aparición de la idea: la empresa había mostrado Kosmo durante 2026 y anticipado su llegada en la segunda mitad del año. El comunicado actual aporta detalles técnicos, socios y demostraciones adicionales.",
+      "sections": [
+        {
+          "heading": "Qué ocurrió y por qué importa",
+          "kind": "report",
+          "paragraphs": [
+            "Hesai anunció el 14 de octubre de 2026 el lanzamiento de Kosmo, un sistema para transformar espacios reales en datos tridimensionales reutilizables. La oferta combina Kosmo One, una cámara espacial con lidar y captura visual, con Kosmo World, plataforma que procesa y administra escenas digitales. La noticia debe fecharse como lanzamiento comercial presentado en octubre, no como primera aparición de la idea: la empresa había mostrado Kosmo durante 2026 y anticipado su llegada en la segunda mitad del año. El comunicado actual aporta detalles técnicos, socios y demostraciones adicionales.",
+            "Kosmo One integra lidar de alta resolución, un sensor de imagen de una pulgada y una unidad de medición inercial para relacionar geometría, color, textura y posición. Hesai describe sincronización de nivel de microsegundos y reconstrucción mediante 3D Gaussian Splatting, técnica que representa escenas a partir de múltiples muestras visuales. El proveedor utiliza la expresión cámara espacial de 8K, pero sus notas aclaran que 8K es la resolución máxima de captura y que los archivos exportados alcanzan como máximo 6K. Confundir ambos límites exageraría lo que recibe un desarrollador."
+          ]
+        },
+        {
+          "heading": "Detalles y contexto",
+          "kind": "technical",
+          "paragraphs": [
+            "La empresa afirma que un operador puede escanear una habitación interior típica de cien metros cuadrados en aproximadamente quince minutos. Después, Kosmo World produce representaciones 3DGS, mallas y mapas de profundidad a partir de una reconstrucción. El sistema incorpora segmentación semántica para reconocer objetos y técnicas generativas para completar zonas que no fueron capturadas. Esa última capacidad es útil para crear escenarios, pero obliga a distinguir datos realmente observados de contenido inferido o sintetizado. Un entorno visualmente convincente puede seguir teniendo errores geométricos relevantes para un robot.",
+            "Hesai comunica una velocidad de generación de modelos de hasta cinco veces frente a productos comparables bajo determinadas condiciones, y una eficiencia de adquisición de datos superior a cien veces para ciertos conjuntos de trayectorias. Son comparaciones formuladas por el fabricante con notas metodológicas y variación según escena, volumen y parámetros. La compañía también afirma que, en una instalación de heladería con un robot Sharpa, la preparación del entorno pasó de unas trescientas horas de modelado manual a quince minutos de captura y reconstrucción, y que el robot alcanzó un 99 % de éxito en tareas. No debe generalizarse esa demostración a cualquier local o robot."
+          ]
+        },
+        {
+          "heading": "Impacto, límites y análisis Gazette",
+          "kind": "analysis",
+          "paragraphs": [
+            "Kosmo apunta a un problema importante de la IA física: entrenar agentes requiere información sobre profundidad, superficies, objetos y acciones en espacios que cambian. Hesai propone reutilizar escenas capturadas para simulación, generación de trayectorias y desarrollo de modelos del mundo. Menciona integración con NVIDIA Isaac Sim, Isaac Lab, Unreal Engine, RenderMan y Houdini, además de acuerdos con Galbot y Dexmal. También mostró usos en producción audiovisual y mapas inmersivos con Amap. Esas aplicaciones no equivalen a una única API universal ni aseguran que todas las integraciones estén disponibles para cualquier cliente desde hoy.",
+            "Análisis Gazette: Kosmo intenta convertir la captura del entorno físico en una capa de infraestructura para robótica, semejante a la función de los conjuntos de datos en modelos de lenguaje. El potencial es real, pero el valor depende de calibración, cobertura, iluminación, objetos móviles, licencias y validación de la transferencia desde simulación a ejecución física. Para lugares con personas, los datos espaciales pueden revelar rutinas, interiores privados y elementos sensibles; no basta con que la reconstrucción sea rápida. También hay que separar el mercado de hardware del servicio de producción de datos que la compañía plantea."
+          ]
+        },
+        {
+          "heading": "Qué conviene observar",
+          "kind": "practical",
+          "paragraphs": [
+            "Antes de adoptarlo, un laboratorio debería solicitar especificaciones de precisión en escenas difíciles, formatos exportables, términos de uso y políticas de almacenamiento. Conviene medir resultados en su propia tarea y comparar contra captura convencional, especialmente cuando una escena sintetizada pueda inducir errores. Hesai no publicó en el anuncio un precio general verificable, calendario exhaustivo de distribución por países ni garantía de compatibilidad para todas las herramientas. Lo siguiente a observar será la disponibilidad comercial efectiva, precios de cámara y nube, evaluaciones independientes y resultados de robots fuera de demostraciones controladas."
+          ]
+        }
+      ],
+      "analysis": "Kosmo podría reducir la fricción de recopilar datos espaciales para IA física, pero el cuello de botella pasa a ser la calidad, procedencia y validación de esos datos.",
+      "watch": "Precios, distribución internacional, formatos de exportación, privacidad y evaluaciones independientes de transferencia simulación-realidad.",
+      "availability": {
+        "status": "Lanzamiento presentado el 14 de octubre; condiciones comerciales completas no publicadas",
+        "platforms": [
+          "Kosmo One",
+          "Kosmo World",
+          "Integraciones de simulación y creación 3D anunciadas"
+        ],
+        "regions": [],
+        "notes": [
+          "Anunciado previamente en demostraciones de 2026; el lanzamiento actual añade producto y socios."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Hardware y nube",
+          "value": "Sin tarifa pública general confirmada en el comunicado"
+        }
+      ],
+      "limitations": [
+        "8K es captura máxima; exportación de archivos hasta 6K.",
+        "Benchmarks y demostraciones divulgados por Hesai, no auditados independientemente.",
+        "No se especifican todas las regiones ni condiciones de distribución."
+      ],
+      "practicalAdvice": [
+        "Diferenciar píxeles medidos de zonas reconstruidas mediante IA generativa.",
+        "Exigir prueba de precisión y formatos con escenas propias antes de adquirir."
+      ],
+      "finalSummary": "Kosmo conecta captura 3D y entrenamiento robótico, con promesas técnicas relevantes aún pendientes de validación externa y detalles comerciales."
+    },
+    {
       "id": "chainguard-harness-mythos-security-beta-2026",
       "eventKey": "chainguard-harness-claude-mythos-vulnerability-hunting-2026-10-14",
       "date": "2026-10-14",
@@ -359,6 +730,250 @@
         "Probar hallazgos y regresiones en un entorno controlado antes de adoptar."
       ],
       "finalSummary": "Harness combina búsqueda asistida por IA con ejecución aislada y revisión humana, pero su eficacia real y acceso comercial aún requieren validación."
+    },
+    {
+      "id": "asml-q3-2026-ai-chip-lithography-demand-capacity-2028",
+      "eventKey": "asml-q3-2026-results-ai-chip-demand-capacity-shortage-2027-2028-2026-10-14",
+      "date": "2026-10-14",
+      "announcedAt": "2026-10-14",
+      "coveredAt": "2026-10-14",
+      "verifiedAt": "2026-10-14",
+      "articleVersion": 2,
+      "company": "ASML",
+      "product": "Resultados Q3 2026 y capacidad de litografía",
+      "title": "ASML vende €11.700 millones en el trimestre y advierte que su capacidad no cubrirá la demanda de chips hasta 2028",
+      "summary": "ASML reporta ventas netas trimestrales de €11.662 millones, beneficio neto de €4.960 millones y previsión anual de €44.000–45.000 millones. La empresa vincula la demanda a inversión en IA y evalúa ampliar capacidad para 2028.",
+      "tags": [
+        "ASML",
+        "Semiconductores",
+        "Litografía",
+        "Infraestructura",
+        "Resultados"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado conceptual de maquinaria de litografía y obleas bajo presión de demanda; no fotografía de una planta ASML.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial 3:2 de equipo industrial de litografía y obleas avanzando por una línea con horizonte de fábricas, sepia; sin números sobreimpresos ni recrear maquinaria exacta.",
+      "source": {
+        "name": "ASML Investor Relations · resultados Q3 2026",
+        "url": "https://www.investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026",
+        "publishedAt": "2026-10-14"
+      },
+      "relatedSources": [
+        {
+          "name": "Reuters · demanda de equipos de litografía",
+          "url": "https://www.reuters.com/business/asml-forecasts-q4-sales-above-expectations-ai-chip-demand-2026-10-14/",
+          "publishedAt": "2026-10-14"
+        }
+      ],
+      "body": [
+        "ASML publicó el 14 de octubre de 2026 sus resultados del tercer trimestre: ventas netas por 11.662 millones de euros, beneficio neto de 4.960 millones y margen bruto del 57,5 %. La fabricante neerlandesa de equipos de litografía elevó su previsión de ventas anuales a un rango de 44.000 a 45.000 millones de euros, con margen bruto cercano al 56 %. Más allá de la cifra financiera, la novedad para la carrera de la IA es su advertencia de que la capacidad de fabricación de equipos prevista para 2027 y 2028 no bastará para la demanda estimada de sus clientes.",
+        "La empresa suministra sistemas de litografía que permiten producir patrones microscópicos en chips avanzados. Los fabricantes de procesadores y memoria dependen de esa maquinaria, además de muchos otros pasos, para ampliar su producción. ASML atribuye el aumento de previsiones de sus clientes principalmente a expectativas sobre la escala y duración de las inversiones relacionadas con IA. La relación es indirecta: vender más equipos no significa que ya existan más GPU terminadas, porque hay tiempos de instalación, rendimiento de obleas, empaquetado, memoria y energía que también condicionan el suministro final.",
+        "El comunicado detalla 113 sistemas de litografía nuevos y ocho usados vendidos durante el trimestre, frente a 86 nuevos y cinco usados en el período anterior. Las ventas de gestión de base instalada, que incluyen servicios y mejoras, ascendieron a 3.289 millones de euros. ASML prevé para el cuarto trimestre ingresos entre 14.200 y 15.200 millones de euros y un margen bruto de alrededor del 57 %. Estas son proyecciones del fabricante, no ingresos ya realizados; están sujetas a calendarios de entrega, demanda y riesgos regulatorios.",
+        "Su director ejecutivo, Christophe Fouquet, señaló que algunos clientes manifiestan interés en colocar pedidos para 2029 e incluso 2030. Esa expresión describe visibilidad y conversaciones comerciales, no un libro de pedidos irrevocable para esos años. ASML había comunicado planes para elevar un 30 % la capacidad de equipos EUV de baja apertura numérica y DUV de inmersión en 2027 y estudiar otro incremento para 2028. Ahora investiga vías para aumentar todavía más la capacidad de 2028. No presentó un calendario definitivo ni un volumen adicional ya aprobado para esa expansión.",
+        "El cuello de botella importa porque el sector compite por acelerar producción de lógica avanzada y memorias usadas en sistemas de IA. Una restricción de maquinaria puede extender plazos de nuevas plantas y elevar costes, incluso cuando los diseñadores de chips tengan productos listos. ASML menciona mejoras de productividad de equipos instalados como otra vía para ampliar obleas procesadas sin esperar nuevas máquinas. Reuters añade contexto sobre interés de fabricantes de chips y la posibilidad de aumentos de precios a partir de 2027. No debe confundirse una expectativa de demanda sostenida con la certeza de que todas las inversiones producirán retornos.",
+        "Análisis Gazette: los resultados son un indicador relevante de inversión física aguas arriba de los modelos de IA. Muestran pedidos y capacidad industrial, una señal diferente de las métricas de usuarios o de benchmarks de software. Sin embargo, el crecimiento de ingresos de ASML no mide por sí mismo adopción productiva de IA, ni elimina riesgos de ciclos de capital, restricciones de exportación y cambios tecnológicos. También conviene distinguir el beneficio contable, que puede incluir partidas no recurrentes, del flujo de caja y la rentabilidad futura. La lectura debe ser industrial, no una recomendación bursátil.",
+        "Para empresas que planifican centros de datos, conviene seguir capacidad de foundries, memoria, empaquetado avanzado y energía junto con los anuncios de ASML. Para lectores que comparan cifras, la base correcta es euros y trimestres específicos, no convertir automáticamente los importes en inversión nueva en IA. No existe un precio público uniforme de una máquina de litografía deducible de este comunicado. Lo siguiente a observar son decisiones concretas sobre capacidad en 2028, evolución de pedidos, restricciones comerciales y si la demanda anunciada para 2029 y 2030 termina convirtiéndose en contratos y entregas."
+      ],
+      "keyPoints": [
+        "ASML informa €11.662 millones de ventas netas y €4.960 millones de beneficio neto en Q3 2026.",
+        "Su margen bruto trimestral fue 57,5 % y prevé €44.000–45.000 millones de ventas para todo 2026.",
+        "La compañía cree que su capacidad planificada para 2027 y 2028 será insuficiente ante la demanda prevista."
+      ],
+      "quickTakeaways": [
+        "ASML informa €11.662 millones de ventas netas y €4.960 millones de beneficio neto en Q3 2026.",
+        "Su margen bruto trimestral fue 57,5 % y prevé €44.000–45.000 millones de ventas para todo 2026.",
+        "La compañía cree que su capacidad planificada para 2027 y 2028 será insuficiente ante la demanda prevista.",
+        "El interés de clientes en pedidos para 2029 y 2030 no equivale a órdenes ya contratadas."
+      ],
+      "executiveSummary": "ASML publicó el 14 de octubre de 2026 sus resultados del tercer trimestre: ventas netas por 11.662 millones de euros, beneficio neto de 4.960 millones y margen bruto del 57,5 %. La fabricante neerlandesa de equipos de litografía elevó su previsión de ventas anuales a un rango de 44.000 a 45.000 millones de euros, con margen bruto cercano al 56 %. Más allá de la cifra financiera, la novedad para la carrera de la IA es su advertencia de que la capacidad de fabricación de equipos prevista para 2027 y 2028 no bastará para la demanda estimada de sus clientes.",
+      "sections": [
+        {
+          "heading": "Qué ocurrió y por qué importa",
+          "kind": "report",
+          "paragraphs": [
+            "ASML publicó el 14 de octubre de 2026 sus resultados del tercer trimestre: ventas netas por 11.662 millones de euros, beneficio neto de 4.960 millones y margen bruto del 57,5 %. La fabricante neerlandesa de equipos de litografía elevó su previsión de ventas anuales a un rango de 44.000 a 45.000 millones de euros, con margen bruto cercano al 56 %. Más allá de la cifra financiera, la novedad para la carrera de la IA es su advertencia de que la capacidad de fabricación de equipos prevista para 2027 y 2028 no bastará para la demanda estimada de sus clientes.",
+            "La empresa suministra sistemas de litografía que permiten producir patrones microscópicos en chips avanzados. Los fabricantes de procesadores y memoria dependen de esa maquinaria, además de muchos otros pasos, para ampliar su producción. ASML atribuye el aumento de previsiones de sus clientes principalmente a expectativas sobre la escala y duración de las inversiones relacionadas con IA. La relación es indirecta: vender más equipos no significa que ya existan más GPU terminadas, porque hay tiempos de instalación, rendimiento de obleas, empaquetado, memoria y energía que también condicionan el suministro final."
+          ]
+        },
+        {
+          "heading": "Detalles y contexto",
+          "kind": "technical",
+          "paragraphs": [
+            "El comunicado detalla 113 sistemas de litografía nuevos y ocho usados vendidos durante el trimestre, frente a 86 nuevos y cinco usados en el período anterior. Las ventas de gestión de base instalada, que incluyen servicios y mejoras, ascendieron a 3.289 millones de euros. ASML prevé para el cuarto trimestre ingresos entre 14.200 y 15.200 millones de euros y un margen bruto de alrededor del 57 %. Estas son proyecciones del fabricante, no ingresos ya realizados; están sujetas a calendarios de entrega, demanda y riesgos regulatorios.",
+            "Su director ejecutivo, Christophe Fouquet, señaló que algunos clientes manifiestan interés en colocar pedidos para 2029 e incluso 2030. Esa expresión describe visibilidad y conversaciones comerciales, no un libro de pedidos irrevocable para esos años. ASML había comunicado planes para elevar un 30 % la capacidad de equipos EUV de baja apertura numérica y DUV de inmersión en 2027 y estudiar otro incremento para 2028. Ahora investiga vías para aumentar todavía más la capacidad de 2028. No presentó un calendario definitivo ni un volumen adicional ya aprobado para esa expansión."
+          ]
+        },
+        {
+          "heading": "Impacto, límites y análisis Gazette",
+          "kind": "analysis",
+          "paragraphs": [
+            "El cuello de botella importa porque el sector compite por acelerar producción de lógica avanzada y memorias usadas en sistemas de IA. Una restricción de maquinaria puede extender plazos de nuevas plantas y elevar costes, incluso cuando los diseñadores de chips tengan productos listos. ASML menciona mejoras de productividad de equipos instalados como otra vía para ampliar obleas procesadas sin esperar nuevas máquinas. Reuters añade contexto sobre interés de fabricantes de chips y la posibilidad de aumentos de precios a partir de 2027. No debe confundirse una expectativa de demanda sostenida con la certeza de que todas las inversiones producirán retornos.",
+            "Análisis Gazette: los resultados son un indicador relevante de inversión física aguas arriba de los modelos de IA. Muestran pedidos y capacidad industrial, una señal diferente de las métricas de usuarios o de benchmarks de software. Sin embargo, el crecimiento de ingresos de ASML no mide por sí mismo adopción productiva de IA, ni elimina riesgos de ciclos de capital, restricciones de exportación y cambios tecnológicos. También conviene distinguir el beneficio contable, que puede incluir partidas no recurrentes, del flujo de caja y la rentabilidad futura. La lectura debe ser industrial, no una recomendación bursátil."
+          ]
+        },
+        {
+          "heading": "Qué conviene observar",
+          "kind": "practical",
+          "paragraphs": [
+            "Para empresas que planifican centros de datos, conviene seguir capacidad de foundries, memoria, empaquetado avanzado y energía junto con los anuncios de ASML. Para lectores que comparan cifras, la base correcta es euros y trimestres específicos, no convertir automáticamente los importes en inversión nueva en IA. No existe un precio público uniforme de una máquina de litografía deducible de este comunicado. Lo siguiente a observar son decisiones concretas sobre capacidad en 2028, evolución de pedidos, restricciones comerciales y si la demanda anunciada para 2029 y 2030 termina convirtiéndose en contratos y entregas."
+          ]
+        }
+      ],
+      "analysis": "El ciclo de IA está tensionando también el suministro de maquinaria de fabricación; los resultados de ASML son evidencia industrial, no una medida directa de retorno de las inversiones en modelos.",
+      "watch": "Expansión real de capacidad 2028, pedidos firmes, exportaciones, instalación de equipos y demanda de memoria.",
+      "availability": {
+        "status": "Resultados financieros Q3 2026 publicados; expansión de capacidad futura en evaluación",
+        "platforms": [
+          "Sistemas de litografía EUV y DUV"
+        ],
+        "regions": [
+          "Mercado global sujeto a controles de exportación"
+        ],
+        "notes": [
+          "Interés comercial para 2029/2030 no equivale a pedidos confirmados."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precios de equipos",
+          "value": "No se anuncia una tarifa universal por máquina"
+        },
+        {
+          "label": "Previsión de ventas 2026",
+          "value": "€44.000–45.000 millones; previsión, no resultado final"
+        }
+      ],
+      "limitations": [
+        "Las cifras de 2027–2030 son previsiones o interés comercial, no entregas garantizadas.",
+        "Riesgos de exportación, demanda y capacidad de proveedores.",
+        "El beneficio trimestral no es una medida directa de inversión en IA."
+      ],
+      "practicalAdvice": [
+        "Comparar demanda de litografía con otros cuellos de botella del hardware.",
+        "Separar resultados reportados de pronósticos y pedidos potenciales."
+      ],
+      "finalSummary": "ASML reporta crecimiento y advierte una brecha entre capacidad y demanda futura; es una señal material de presión sobre la cadena de chips para IA."
+    },
+    {
+      "id": "anthropic-singapore-office-ai-safety-mou-2026",
+      "eventKey": "anthropic-singapore-fifth-apac-office-government-ai-safety-mou-2026-10-14",
+      "date": "2026-10-14",
+      "announcedAt": "2026-10-14",
+      "coveredAt": "2026-10-14",
+      "verifiedAt": "2026-10-14",
+      "articleVersion": 2,
+      "company": "Anthropic",
+      "product": "Oficina de Singapur y acuerdo de evaluación de IA",
+      "title": "Anthropic abre oficina en Singapur y pacta cooperación en seguridad y evaluación de IA con el Gobierno",
+      "summary": "Anthropic inaugura su quinta oficina en Asia-Pacífico y firma un memorando con el ministerio digital de Singapur para colaborar en evaluación de modelos, respuesta a incidentes y adopción responsable. No es una nueva ley ni un lanzamiento de modelo.",
+      "tags": [
+        "Anthropic",
+        "Singapur",
+        "Seguridad",
+        "Gobernanza",
+        "Adopción empresarial"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado conceptual de infraestructura digital y cooperación institucional en Asia; no representa la firma real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial 3:2 en tinta sepia: ciudad portuaria asiática, edificio institucional y servidores conectados por rutas de evaluación; sin banderas o logotipos inventados, sin recrear la firma como fotografía.",
+      "source": {
+        "name": "Anthropic · anuncio oficial",
+        "url": "https://www.anthropic.com/news/singapore-office-opening",
+        "publishedAt": "2026-10-14"
+      },
+      "body": [
+        "Anthropic anunció el 14 de octubre de 2026 la apertura de una oficina en Singapur, su quinta sede en Asia-Pacífico, y la firma de un memorando de entendimiento con el Ministerio de Desarrollo Digital e Información del país. La noticia reúne dos dimensiones distintas: presencia comercial local y cooperación institucional en seguridad de inteligencia artificial. La oficina ya está abierta y contratando; el memorando describe líneas de trabajo futuras. No equivale a un tratado, una norma obligatoria, una certificación de Claude ni el lanzamiento de un nuevo modelo para usuarios.",
+        "La firma tuvo lugar durante Singapore International Cyber Week. Según Anthropic, participaron Kai Fong Chng, secretario permanente del ministerio, y Ben Mann, cofundador del laboratorio; otras autoridades presenciaron el acto. El texto público enumera cooperación en evaluación de modelos, seguridad, investigación sobre adopción e impacto y despliegue responsable en organizaciones públicas y privadas. No publica presupuesto conjunto, calendario detallado de hitos, auditorías exigibles ni un mecanismo sancionador. Por eso conviene describirlo como un marco de colaboración y no como un régimen de supervisión ya operativo.",
+        "El trabajo anunciado contempla intercambios técnicos con instituciones singapurenses sobre pruebas de modelos, estándares de evaluación y respuesta a incidentes. Anthropic también prevé compartir investigación y datos, incluido su Economic Index, y ofrecer conocimientos técnicos y de políticas públicas mientras Singapur desarrolla sus reglas para IA. La compañía recuerda su participación desde 2023 en el Generative AI Evaluation Sandbox y en ejercicios de red teaming multilingües en inglés, mandarín, malayo y tamil. Estos antecedentes dan continuidad al acuerdo, pero no prueban por sí mismos la eficacia de controles futuros.",
+        "La expansión responde a una base de usuarios empresariales que Anthropic presenta como especialmente activa. Su Economic Index sitúa a Singapur en segundo lugar entre 121 países por uso de Claude.ai ajustado por población, casi seis veces lo esperable según su tamaño. Son mediciones del proveedor, no una encuesta censal independiente ni una comparación de productividad nacional. Anthropic señala que más de 1.500 ingenieros y especialistas técnicos de GovTech Singapore utilizan Claude Code. Cita además a DBS, GIC, Grab y Sea entre organizaciones con casos de uso locales.",
+        "Un detalle operativo relevante es la posibilidad de ejecutar inferencia de Claude dentro de la región mediante Amazon Bedrock, presentada como opción para sectores regulados. La ubicación del procesamiento puede ayudar a cumplir requisitos de residencia de datos, pero no sustituye una revisión de contratos, retención, registros, permisos y transferencias posteriores. La compañía atribuye al asistente comercial BriX de Grab un ahorro aproximado de 40.000 horas por trimestre; esa cifra corresponde al caso divulgado por el proveedor y no constituye una garantía para otros clientes.",
+        "Análisis Gazette: Singapur está funcionando como punto de encuentro entre demanda empresarial, instituciones de seguridad y proveedores de modelos. La novedad material no es únicamente abrir otra oficina, sino institucionalizar conversaciones técnicas sobre evaluación y respuesta a incidentes mientras la IA entra en servicios sensibles. Sin embargo, la existencia de un memorando no demuestra que las pruebas sean independientes ni que los resultados se publiquen. Las decisiones de compra y de política pública deberían exigir evidencia de evaluación, gestión de incidentes y responsabilidades contractuales antes de confiar en promesas generales.",
+        "Para equipos técnicos, el siguiente paso razonable es pedir a sus proveedores documentación sobre región de inferencia, aislamiento de datos, control de accesos y trazabilidad. Para responsables públicos, interesa comprobar si los intercambios anunciados generan procedimientos reproducibles, estándares publicados y resultados auditables. La noticia tampoco introduce precios nuevos ni acceso gratuito generalizado a Claude. Habrá que observar proyectos concretos surgidos del memorando, eventuales evaluaciones públicas y la contratación de la nueva oficina. Por ahora el hecho confirmado es la apertura y el compromiso de colaborar, no sus efectos finales."
+      ],
+      "keyPoints": [
+        "La quinta oficina regional de Anthropic en Asia-Pacífico abre en Singapur.",
+        "El memorando con el ministerio digital abarca seguridad, pruebas de modelos, respuesta a incidentes y adopción responsable.",
+        "No se anunciaron nuevos precios, modelos ni obligaciones regulatorias vinculantes."
+      ],
+      "quickTakeaways": [
+        "La quinta oficina regional de Anthropic en Asia-Pacífico abre en Singapur.",
+        "El memorando con el ministerio digital abarca seguridad, pruebas de modelos, respuesta a incidentes y adopción responsable.",
+        "No se anunciaron nuevos precios, modelos ni obligaciones regulatorias vinculantes.",
+        "Las métricas de uso y productividad proceden del comunicado de Anthropic y sus clientes."
+      ],
+      "executiveSummary": "Anthropic anunció el 14 de octubre de 2026 la apertura de una oficina en Singapur, su quinta sede en Asia-Pacífico, y la firma de un memorando de entendimiento con el Ministerio de Desarrollo Digital e Información del país. La noticia reúne dos dimensiones distintas: presencia comercial local y cooperación institucional en seguridad de inteligencia artificial. La oficina ya está abierta y contratando; el memorando describe líneas de trabajo futuras. No equivale a un tratado, una norma obligatoria, una certificación de Claude ni el lanzamiento de un nuevo modelo para usuarios.",
+      "sections": [
+        {
+          "heading": "Qué ocurrió y por qué importa",
+          "kind": "report",
+          "paragraphs": [
+            "Anthropic anunció el 14 de octubre de 2026 la apertura de una oficina en Singapur, su quinta sede en Asia-Pacífico, y la firma de un memorando de entendimiento con el Ministerio de Desarrollo Digital e Información del país. La noticia reúne dos dimensiones distintas: presencia comercial local y cooperación institucional en seguridad de inteligencia artificial. La oficina ya está abierta y contratando; el memorando describe líneas de trabajo futuras. No equivale a un tratado, una norma obligatoria, una certificación de Claude ni el lanzamiento de un nuevo modelo para usuarios.",
+            "La firma tuvo lugar durante Singapore International Cyber Week. Según Anthropic, participaron Kai Fong Chng, secretario permanente del ministerio, y Ben Mann, cofundador del laboratorio; otras autoridades presenciaron el acto. El texto público enumera cooperación en evaluación de modelos, seguridad, investigación sobre adopción e impacto y despliegue responsable en organizaciones públicas y privadas. No publica presupuesto conjunto, calendario detallado de hitos, auditorías exigibles ni un mecanismo sancionador. Por eso conviene describirlo como un marco de colaboración y no como un régimen de supervisión ya operativo."
+          ]
+        },
+        {
+          "heading": "Detalles y contexto",
+          "kind": "technical",
+          "paragraphs": [
+            "El trabajo anunciado contempla intercambios técnicos con instituciones singapurenses sobre pruebas de modelos, estándares de evaluación y respuesta a incidentes. Anthropic también prevé compartir investigación y datos, incluido su Economic Index, y ofrecer conocimientos técnicos y de políticas públicas mientras Singapur desarrolla sus reglas para IA. La compañía recuerda su participación desde 2023 en el Generative AI Evaluation Sandbox y en ejercicios de red teaming multilingües en inglés, mandarín, malayo y tamil. Estos antecedentes dan continuidad al acuerdo, pero no prueban por sí mismos la eficacia de controles futuros.",
+            "La expansión responde a una base de usuarios empresariales que Anthropic presenta como especialmente activa. Su Economic Index sitúa a Singapur en segundo lugar entre 121 países por uso de Claude.ai ajustado por población, casi seis veces lo esperable según su tamaño. Son mediciones del proveedor, no una encuesta censal independiente ni una comparación de productividad nacional. Anthropic señala que más de 1.500 ingenieros y especialistas técnicos de GovTech Singapore utilizan Claude Code. Cita además a DBS, GIC, Grab y Sea entre organizaciones con casos de uso locales."
+          ]
+        },
+        {
+          "heading": "Impacto, límites y análisis Gazette",
+          "kind": "analysis",
+          "paragraphs": [
+            "Un detalle operativo relevante es la posibilidad de ejecutar inferencia de Claude dentro de la región mediante Amazon Bedrock, presentada como opción para sectores regulados. La ubicación del procesamiento puede ayudar a cumplir requisitos de residencia de datos, pero no sustituye una revisión de contratos, retención, registros, permisos y transferencias posteriores. La compañía atribuye al asistente comercial BriX de Grab un ahorro aproximado de 40.000 horas por trimestre; esa cifra corresponde al caso divulgado por el proveedor y no constituye una garantía para otros clientes.",
+            "Análisis Gazette: Singapur está funcionando como punto de encuentro entre demanda empresarial, instituciones de seguridad y proveedores de modelos. La novedad material no es únicamente abrir otra oficina, sino institucionalizar conversaciones técnicas sobre evaluación y respuesta a incidentes mientras la IA entra en servicios sensibles. Sin embargo, la existencia de un memorando no demuestra que las pruebas sean independientes ni que los resultados se publiquen. Las decisiones de compra y de política pública deberían exigir evidencia de evaluación, gestión de incidentes y responsabilidades contractuales antes de confiar en promesas generales."
+          ]
+        },
+        {
+          "heading": "Qué conviene observar",
+          "kind": "practical",
+          "paragraphs": [
+            "Para equipos técnicos, el siguiente paso razonable es pedir a sus proveedores documentación sobre región de inferencia, aislamiento de datos, control de accesos y trazabilidad. Para responsables públicos, interesa comprobar si los intercambios anunciados generan procedimientos reproducibles, estándares publicados y resultados auditables. La noticia tampoco introduce precios nuevos ni acceso gratuito generalizado a Claude. Habrá que observar proyectos concretos surgidos del memorando, eventuales evaluaciones públicas y la contratación de la nueva oficina. Por ahora el hecho confirmado es la apertura y el compromiso de colaborar, no sus efectos finales."
+          ]
+        }
+      ],
+      "analysis": "El acuerdo institucional puede mejorar la evaluación de modelos en una plaza empresarial importante, pero el anuncio no establece obligaciones técnicas verificables ni acredita resultados futuros.",
+      "watch": "Publicación de protocolos de evaluación, respuesta a incidentes, proyectos públicos y condiciones de inferencia regional.",
+      "availability": {
+        "status": "Oficina de Singapur abierta; memorando firmado, cooperación técnica por desarrollar",
+        "platforms": [
+          "Claude",
+          "Claude Code",
+          "Amazon Bedrock (inferencia regional mencionada)"
+        ],
+        "regions": [
+          "Singapur",
+          "Asia-Pacífico"
+        ],
+        "notes": [
+          "Sin lanzamiento nuevo de modelo ni programa de acceso universal."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precios",
+          "value": "No se anunciaron nuevas tarifas o subvenciones comerciales"
+        }
+      ],
+      "limitations": [
+        "Memorando no vinculante según el alcance público descrito; sin mecanismos de cumplimiento divulgados.",
+        "Métricas de uso y ahorro atribuidas a Anthropic y clientes.",
+        "Sin presupuesto ni cronograma de entregables públicos."
+      ],
+      "practicalAdvice": [
+        "Solicitar acuerdos de procesamiento de datos y documentación de residencia regional.",
+        "Exigir métricas auditables antes de adoptar afirmaciones de ahorro."
+      ],
+      "finalSummary": "Anthropic refuerza su presencia regional y abre cooperación en seguridad con Singapur; su impacto dependerá de evaluaciones y resultados posteriores."
     },
     {
       "id": "workday-trusted-agent-platform-headless-2026",
@@ -31872,7 +32487,7 @@
     {
       "date": "2026-10-14",
       "status": "partial",
-      "verifiedArticles": 3
+      "verifiedArticles": 8
     }
   ]
 }
