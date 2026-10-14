@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T03:17:08.000Z",
+  "updatedAt": "2026-10-14T06:28:09.121Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -898,6 +898,126 @@
       ]
     },
     {
+      "id": "nvidia-runai-open-source-dsx-ai-factory-2026",
+      "eventKey": "nvidia-runai-full-platform-open-source-dsx-2026-10-13",
+      "date": "2026-10-13",
+      "announcedAt": "2026-10-13",
+      "coveredAt": "2026-10-14",
+      "verifiedAt": "2026-10-14",
+      "articleVersion": 2,
+      "company": "NVIDIA",
+      "product": "Run:ai / DSX AI Factory",
+      "title": "NVIDIA libera Run:ai como plataforma de código abierto para gestionar GPU y cargas de IA en Kubernetes",
+      "summary": "NVIDIA publica el código de la plataforma Run:ai y sus componentes de planificación, fraccionamiento de GPU, cuotas y representación de cargas. El producto comunitario no requiere suscripción pagada, pero carece de soporte empresarial incluido.",
+      "tags": [
+        "NVIDIA",
+        "Open source",
+        "GPU",
+        "Kubernetes",
+        "Infraestructura"
+      ],
+      "image": "assets/hero.webp",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageAlt": "Grabado editorial de una fábrica de computación con servidores GPU conectados por un sistema de planificación; representación conceptual.",
+      "imageBrief": "Grabado horizontal 3:2 en sepia de una fábrica de computación con múltiples bastidores GPU conectados a una mesa de planificación, líneas de distribución de recursos; sin logos inventados, sin interfaz ficticia ni personas reales.",
+      "source": {
+        "name": "NVIDIA · blog técnico oficial",
+        "url": "https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform/",
+        "publishedAt": "2026-10-13"
+      },
+      "body": [
+        "NVIDIA anunció el 13 de octubre de 2026 que pone a disposición como código abierto la plataforma completa Run:ai, su sistema de orquestación de cargas de inteligencia artificial y recursos GPU sobre Kubernetes. La decisión forma parte de la estrategia DSX AI Factory, orientada a operar infraestructuras compartidas de entrenamiento e inferencia. Hasta ahora varias capacidades de Run:ai se distribuían mediante ofertas comerciales o componentes publicados por separado. La novedad material es la apertura del conjunto integrado y de sus piezas modulares, no el lanzamiento de un nuevo chip ni una mejora demostrada automáticamente en cualquier centro de datos.",
+        "La plataforma reúne cuatro elementos principales. KAI Scheduler se ocupa de colocar trabajos de IA en un clúster con conciencia de GPU, topología, cuotas y ejecución coordinada de varios pods. GPU Fractioning Operator expone fracciones de GPU mediante mecanismos nativos de CUDA en Kubernetes. KAI Resource Management añade una capa organizativa para asignar capacidad a proyectos, departamentos y grupos de nodos. Workload Map define una representación común de cargas de trabajo, de modo que herramientas de gestión puedan entender tipos diversos de recursos Kubernetes sin programar una integración específica para cada uno.",
+        "KAI Scheduler ya había sido publicado con licencia Apache 2.0 y contribuido al entorno CNCF Sandbox. NVIDIA describe funciones como gang scheduling, reparto equitativo, empaquetado de cargas y asignación basada en topología. El nuevo operador de fraccionamiento utiliza capacidades nativas de CUDA 13.4 para establecer límites de memoria GPU por carga y publicar métricas de utilización por pod. No debe confundirse compartir una GPU con obtener el rendimiento de una GPU exclusiva: la concurrencia, la memoria y la competencia por cómputo pueden alterar las prestaciones. El objetivo declarado es aprovechar recursos que de otro modo permanecerían infrautilizados.",
+        "La capa de administración de recursos permite representar jerarquías y cuotas por equipos, mientras que Workload Map busca ofrecer un contrato común para trabajos como PyTorchJob, RayCluster, JobSet o servicios de inferencia. NVIDIA aclara que Workload Map por sí mismo no planifica, no escala y no distribuye cargas entre clústeres; describe su estructura para que otros componentes actúen sobre ella. Esa distinción importa al evaluar el alcance real de cada repositorio. El anuncio también menciona Model Streamer, orientado a acelerar la carga de pesos, y Grove, que coordina arquitecturas de inferencia con varios componentes, como proyectos complementarios.",
+        "El código de Run:ai está disponible en repositorios de la organización NVIDIA DSX AI Factory y la plataforma integrada se ofrece en NVIDIA NGC como Community Product con un Helm chart. NVIDIA especifica que no se requiere una suscripción pagada a Run:ai ni un contrato de soporte para utilizar ese producto comunitario, pero la descarga de NGC exige aceptar acuerdos y términos específicos. Las licencias aplicables al código deben revisarse en cada proyecto. Las versiones comerciales continúan disponibles con soporte mediante ofertas empresariales y socios, bajo condiciones distintas. Por tanto, código abierto no significa que toda forma de distribución y soporte sea idéntica.",
+        "NVIDIA identifica a Crusoe, Mirantis, Nebius, OpenNebula Systems, Rafay, Saturn Cloud, Spectro Cloud y vCluster entre los socios que están integrando las capacidades en sus productos. Es una lista de adopciones o integraciones declaradas por el proveedor, no una medición independiente de rendimiento. El anuncio no establece un ahorro universal de costos ni garantiza que un clúster existente pueda instalar el stack sin cambios. Las necesidades de compatibilidad, observabilidad, permisos, seguridad entre inquilinos y mantenimiento siguen dependiendo del operador y de la combinación de versiones de Kubernetes, controladores y CUDA.",
+        "Análisis Gazette: abrir una plataforma de orquestación completa puede reducir barreras para proveedores de nube de IA y equipos que necesitan asignar GPU entre múltiples proyectos. La importancia estratégica no se limita a permitir inspeccionar código: facilita que otras compañías integren componentes sin reconstruir desde cero políticas de planificación, cuotas y representación de trabajos. Al mismo tiempo, una plataforma más abierta puede seguir vinculada a un ecosistema técnico específico, por ejemplo cuando una capacidad depende de CUDA. La interoperabilidad debe evaluarse por componente y no inferirse solo de la etiqueta de código abierto.",
+        "Para un equipo de infraestructura, el camino prudente es estudiar primero las licencias, reproducir una instalación en un clúster de prueba y medir resultados bajo cargas representativas. Conviene comprobar el aislamiento de memoria al fraccionar GPU, la equidad de cuotas bajo saturación, los tiempos de espera de trabajos multipod y el comportamiento ante fallos. Una decisión de adopción debe distinguir costo de licencia, costo de operación y costo de soporte. En conclusión, NVIDIA abrió Run:ai y sus módulos como una base disponible para construir fábricas de IA; falta observar adopción sostenida, mantenimiento comunitario y resultados comparables en producción."
+      ],
+      "keyPoints": [
+        "La plataforma completa Run:ai se publica como código abierto dentro del ecosistema NVIDIA DSX.",
+        "Incluye KAI Scheduler, GPU Fractioning Operator, KAI Resource Management y Workload Map.",
+        "El producto comunitario de NGC no exige suscripción Run:ai pagada, pero no incluye soporte empresarial."
+      ],
+      "quickTakeaways": [
+        "La plataforma completa Run:ai se publica como código abierto dentro del ecosistema NVIDIA DSX.",
+        "Incluye KAI Scheduler, GPU Fractioning Operator, KAI Resource Management y Workload Map.",
+        "El producto comunitario de NGC no exige suscripción Run:ai pagada, pero no incluye soporte empresarial.",
+        "Las licencias del código y los términos de descarga del producto NGC deben revisarse por separado."
+      ],
+      "executiveSummary": "NVIDIA anunció el 13 de octubre de 2026 que pone a disposición como código abierto la plataforma completa Run:ai, su sistema de orquestación de cargas de inteligencia artificial y recursos GPU sobre Kubernetes. La decisión forma parte de la estrategia DSX AI Factory, orientada a operar infraestructuras compartidas de entrenamiento e inferencia. Hasta ahora varias capacidades de Run:ai se distribuían mediante ofertas comerciales o componentes publicados por separado. La novedad material es la apertura del conjunto integrado y de sus piezas modulares, no el lanzamiento de un nuevo chip ni una mejora demostrada automáticamente en cualquier centro de datos.",
+      "sections": [
+        {
+          "heading": "Qué se anunció y cómo funciona",
+          "kind": "report",
+          "paragraphs": [
+            "La plataforma reúne cuatro elementos principales. KAI Scheduler se ocupa de colocar trabajos de IA en un clúster con conciencia de GPU, topología, cuotas y ejecución coordinada de varios pods. GPU Fractioning Operator expone fracciones de GPU mediante mecanismos nativos de CUDA en Kubernetes. KAI Resource Management añade una capa organizativa para asignar capacidad a proyectos, departamentos y grupos de nodos. Workload Map define una representación común de cargas de trabajo, de modo que herramientas de gestión puedan entender tipos diversos de recursos Kubernetes sin programar una integración específica para cada uno.",
+            "KAI Scheduler ya había sido publicado con licencia Apache 2.0 y contribuido al entorno CNCF Sandbox. NVIDIA describe funciones como gang scheduling, reparto equitativo, empaquetado de cargas y asignación basada en topología. El nuevo operador de fraccionamiento utiliza capacidades nativas de CUDA 13.4 para establecer límites de memoria GPU por carga y publicar métricas de utilización por pod. No debe confundirse compartir una GPU con obtener el rendimiento de una GPU exclusiva: la concurrencia, la memoria y la competencia por cómputo pueden alterar las prestaciones. El objetivo declarado es aprovechar recursos que de otro modo permanecerían infrautilizados."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, condiciones y riesgos",
+          "kind": "technical",
+          "paragraphs": [
+            "La capa de administración de recursos permite representar jerarquías y cuotas por equipos, mientras que Workload Map busca ofrecer un contrato común para trabajos como PyTorchJob, RayCluster, JobSet o servicios de inferencia. NVIDIA aclara que Workload Map por sí mismo no planifica, no escala y no distribuye cargas entre clústeres; describe su estructura para que otros componentes actúen sobre ella. Esa distinción importa al evaluar el alcance real de cada repositorio. El anuncio también menciona Model Streamer, orientado a acelerar la carga de pesos, y Grove, que coordina arquitecturas de inferencia con varios componentes, como proyectos complementarios.",
+            "El código de Run:ai está disponible en repositorios de la organización NVIDIA DSX AI Factory y la plataforma integrada se ofrece en NVIDIA NGC como Community Product con un Helm chart. NVIDIA especifica que no se requiere una suscripción pagada a Run:ai ni un contrato de soporte para utilizar ese producto comunitario, pero la descarga de NGC exige aceptar acuerdos y términos específicos. Las licencias aplicables al código deben revisarse en cada proyecto. Las versiones comerciales continúan disponibles con soporte mediante ofertas empresariales y socios, bajo condiciones distintas. Por tanto, código abierto no significa que toda forma de distribución y soporte sea idéntica."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y próximos pasos",
+          "kind": "analysis",
+          "paragraphs": [
+            "NVIDIA identifica a Crusoe, Mirantis, Nebius, OpenNebula Systems, Rafay, Saturn Cloud, Spectro Cloud y vCluster entre los socios que están integrando las capacidades en sus productos. Es una lista de adopciones o integraciones declaradas por el proveedor, no una medición independiente de rendimiento. El anuncio no establece un ahorro universal de costos ni garantiza que un clúster existente pueda instalar el stack sin cambios. Las necesidades de compatibilidad, observabilidad, permisos, seguridad entre inquilinos y mantenimiento siguen dependiendo del operador y de la combinación de versiones de Kubernetes, controladores y CUDA.",
+            "Análisis Gazette: abrir una plataforma de orquestación completa puede reducir barreras para proveedores de nube de IA y equipos que necesitan asignar GPU entre múltiples proyectos. La importancia estratégica no se limita a permitir inspeccionar código: facilita que otras compañías integren componentes sin reconstruir desde cero políticas de planificación, cuotas y representación de trabajos. Al mismo tiempo, una plataforma más abierta puede seguir vinculada a un ecosistema técnico específico, por ejemplo cuando una capacidad depende de CUDA. La interoperabilidad debe evaluarse por componente y no inferirse solo de la etiqueta de código abierto."
+          ]
+        }
+      ],
+      "analysis": "Análisis Gazette: abrir una plataforma de orquestación completa puede reducir barreras para proveedores de nube de IA y equipos que necesitan asignar GPU entre múltiples proyectos. La importancia estratégica no se limita a permitir inspeccionar código: facilita que otras compañías integren componentes sin reconstruir desde cero políticas de planificación, cuotas y representación de trabajos. Al mismo tiempo, una plataforma más abierta puede seguir vinculada a un ecosistema técnico específico, por ejemplo cuando una capacidad depende de CUDA. La interoperabilidad debe evaluarse por componente y no inferirse solo de la etiqueta de código abierto.",
+      "watch": "Madurez de los repositorios, adopción de componentes, compatibilidad CUDA y diferencias con el soporte comercial.",
+      "availability": {
+        "status": "Código fuente disponible y producto comunitario publicado",
+        "platforms": [
+          "Kubernetes",
+          "NVIDIA NGC Community Product",
+          "Repositorios de NVIDIA DSX"
+        ],
+        "regions": [
+          "Acceso sujeto a condiciones de distribución de GitHub y NGC"
+        ],
+        "requirements": [
+          "Infraestructura Kubernetes compatible",
+          "Compatibilidad de GPU y CUDA según componente"
+        ],
+        "notes": [
+          "NVIDIA ofrece un Helm chart para el stack integrado; componentes adoptables por separado."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Código abierto / producto comunitario",
+          "value": "Sin suscripción Run:ai pagada ni derecho de soporte NVIDIA"
+        },
+        {
+          "label": "Soporte empresarial",
+          "value": "Comercial, condiciones según oferta"
+        }
+      ],
+      "limitations": [
+        "La publicación del código no garantiza compatibilidad inmediata con todos los clústeres.",
+        "La licencia aplicable puede variar entre repositorios y distribución NGC.",
+        "Las mejoras de utilización y rendimiento descritas no equivalen a benchmarks universales independientes."
+      ],
+      "practicalAdvice": [
+        "Auditar licencias y requisitos antes de desplegar en producción.",
+        "Probar primero un componente en un clúster no crítico y medir cuotas, aislamiento y latencia.",
+        "Distinguir la edición comunitaria de las opciones empresariales con soporte."
+      ],
+      "finalSummary": "Para un equipo de infraestructura, el camino prudente es estudiar primero las licencias, reproducir una instalación en un clúster de prueba y medir resultados bajo cargas representativas. Conviene comprobar el aislamiento de memoria al fraccionar GPU, la equidad de cuotas bajo saturación, los tiempos de espera de trabajos multipod y el comportamiento ante fallos. Una decisión de adopción debe distinguir costo de licencia, costo de operación y costo de soporte. En conclusión, NVIDIA abrió Run:ai y sus módulos como una base disponible para construir fábricas de IA; falta observar adopción sostenida, mantenimiento comunitario y resultados comparables en producción."
+    },
+    {
       "id": "nvidia-doctolib-european-medical-ai-investment-2026",
       "eventKey": "nvidia-doctolib-health-ai-minority-investment-2026-10-13",
       "date": "2026-10-13",
@@ -1162,6 +1282,120 @@
       ]
     },
     {
+      "id": "meta-facebook-your-algorithm-natural-language-2026",
+      "eventKey": "meta-facebook-your-algorithm-natural-language-controls-2026-10-13",
+      "date": "2026-10-13",
+      "announcedAt": "2026-10-13",
+      "coveredAt": "2026-10-14",
+      "verifiedAt": "2026-10-14",
+      "articleVersion": 2,
+      "company": "Meta",
+      "product": "Facebook Your Algorithm",
+      "title": "Meta introduce controles en lenguaje natural para ajustar el Feed y los Reels de Facebook",
+      "summary": "Facebook comienza a desplegar Your Algorithm, una herramienta para expresar intereses y afinar recomendaciones con texto libre. Meta afirma que sus sistemas ajustan la selección durante la misma sesión; el alcance por región e idioma no está detallado.",
+      "tags": [
+        "Meta",
+        "Facebook",
+        "Recomendaciones",
+        "IA generativa",
+        "Personalización"
+      ],
+      "image": "assets/hero.webp",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageAlt": "Grabado editorial conceptual de una persona ajustando un mecanismo de selección de contenidos; no interfaz real de Facebook.",
+      "imageBrief": "Grabado editorial horizontal 3:2 sepia de un lector que mueve controles de una imprenta de noticias y videos, representando recomendaciones personalizadas; no logotipos falsos ni capturas de interfaz.",
+      "source": {
+        "name": "Meta · anuncio oficial",
+        "url": "https://about.fb.com/news/2026/10/introducing-your-algorithm-facebook/",
+        "publishedAt": "2026-10-13"
+      },
+      "body": [
+        "Meta anunció el 13 de octubre de 2026 nuevas herramientas para que los usuarios de Facebook describan con palabras qué contenidos desean ver con mayor o menor frecuencia. La función principal se llama Your Algorithm y está orientada a Feed y Reels. Según el comunicado oficial, el usuario puede administrar temas de interés desde un espacio accesible mediante el menú de tres puntos. La compañía presenta la novedad como una forma más directa de intervenir en la clasificación de recomendaciones. Se trata de una actualización del sistema de personalización, no de un nuevo modelo de lenguaje comercial ni de una promesa de control absoluto sobre cada publicación.",
+        "Hasta ahora, una parte importante de las señales que alimentan los sistemas de recomendación procedía de comportamientos como mirar videos, comentar, dar me gusta o detenerse ante una publicación. Meta explica que seguirá utilizando esas señales, pero añade texto libre para expresar intereses, contexto e intención. Los modelos de lenguaje ayudan a interpretar lo que escribe la persona y a traducirlo en ajustes del ranking. La diferencia práctica es que una preferencia puede formularse de manera explícita en lugar de esperar a que el sistema la infiera a partir de una secuencia de interacciones.",
+        "El anuncio también amplía las opciones de retroalimentación directamente sobre publicaciones. Después de pulsar Interested o Not interested, Facebook puede pedir detalles adicionales sobre qué resultó relevante o molesto. Esas respuestas pueden escribirse con lenguaje natural. Meta afirma que las recomendaciones responden en tiempo real y pueden adaptarse durante la misma sesión. Esta afirmación describe el comportamiento previsto por el proveedor; el comunicado no incluye un ensayo independiente que cuantifique cuánto cambia el contenido, durante cuánto tiempo persiste el efecto o si la respuesta funciona igual para todos los idiomas.",
+        "Your Algorithm se encuentra en despliegue, según Meta. El anuncio describe su presencia en Feed y Reels, pero no entrega un calendario completo por país, sistema operativo, idioma o tipo de cuenta. Por ello, que una persona no encuentre todavía la opción no demuestra necesariamente un error de su dispositivo. La empresa tampoco anunció una tarifa separada para estos controles. La noticia no debe confundirse con una función de suscripción de pago ni con una garantía de que cada preferencia escrita se aplicará inmediatamente a todas las superficies de Facebook.",
+        "La arquitectura exacta de clasificación permanece parcialmente cerrada. Meta explica que los modelos de lenguaje incorporan intereses e intención expresados en texto a señales que ya utiliza el sistema de ranking, pero no publica pesos de variables, parámetros del modelo, métricas comparativas ni una política detallada de retención de cada instrucción. Tampoco queda establecido si las preferencias se exportan entre Feed y Reels, si se comparten con otras aplicaciones de Meta o si una indicación de desinterés actúa como exclusión estricta. Estas preguntas son relevantes para evaluar la diferencia entre personalización percibida y control verificable.",
+        "Análisis Gazette: la novedad refleja un cambio más amplio en el diseño de productos con IA. En lugar de presentar un chatbot separado, la empresa incorpora comprensión de lenguaje natural en un sistema de recomendación que ya utilizan millones de personas. La interfaz conversacional puede disminuir la fricción para expresar gustos complejos, pero su utilidad real dependerá de la claridad de los controles, la capacidad de corregirlos y la transparencia sobre las otras señales que siguen influyendo. Dar más opciones no equivale necesariamente a transferir toda la decisión al usuario.",
+        "Para evaluar la herramienta, conviene escoger dos o tres temas concretos y comprobar cómo cambian las recomendaciones durante varias sesiones. También sirve comparar las respuestas al botón de interés con una instrucción textual y revisar si Facebook permite consultar o modificar preferencias guardadas. No es recomendable asumir que escribir una preferencia elimina por completo categorías sensibles o anuncios. Quienes administran páginas y marcas deberían observar cómo evolucionan las interacciones orgánicas antes de atribuir cualquier variación de alcance a este anuncio, pues intervienen muchos factores simultáneos.",
+        "En síntesis, Meta confirma un nuevo mecanismo de entrada en lenguaje natural para orientar recomendaciones de Facebook y sostiene que la adaptación puede ocurrir durante la misma sesión. Falta verificar su alcance geográfico, la persistencia de las instrucciones y el efecto medible sobre la experiencia. El hecho material es que el lenguaje natural deja de ser solo una forma de conversar con un asistente y pasa a funcionar como un control de producto sobre un sistema de clasificación de contenidos existente."
+      ],
+      "keyPoints": [
+        "Your Algorithm permite añadir o administrar temas de interés en Feed y Reels.",
+        "Meta integra preguntas de seguimiento después de indicar interés o desinterés.",
+        "La empresa afirma que los cambios pueden reflejarse en recomendaciones durante la misma sesión."
+      ],
+      "quickTakeaways": [
+        "Your Algorithm permite añadir o administrar temas de interés en Feed y Reels.",
+        "Meta integra preguntas de seguimiento después de indicar interés o desinterés.",
+        "La empresa afirma que los cambios pueden reflejarse en recomendaciones durante la misma sesión.",
+        "El comunicado no especifica una lista completa de países, idiomas ni fechas de despliegue."
+      ],
+      "executiveSummary": "Meta anunció el 13 de octubre de 2026 nuevas herramientas para que los usuarios de Facebook describan con palabras qué contenidos desean ver con mayor o menor frecuencia. La función principal se llama Your Algorithm y está orientada a Feed y Reels. Según el comunicado oficial, el usuario puede administrar temas de interés desde un espacio accesible mediante el menú de tres puntos. La compañía presenta la novedad como una forma más directa de intervenir en la clasificación de recomendaciones. Se trata de una actualización del sistema de personalización, no de un nuevo modelo de lenguaje comercial ni de una promesa de control absoluto sobre cada publicación.",
+      "sections": [
+        {
+          "heading": "Qué se anunció y cómo funciona",
+          "kind": "report",
+          "paragraphs": [
+            "Hasta ahora, una parte importante de las señales que alimentan los sistemas de recomendación procedía de comportamientos como mirar videos, comentar, dar me gusta o detenerse ante una publicación. Meta explica que seguirá utilizando esas señales, pero añade texto libre para expresar intereses, contexto e intención. Los modelos de lenguaje ayudan a interpretar lo que escribe la persona y a traducirlo en ajustes del ranking. La diferencia práctica es que una preferencia puede formularse de manera explícita en lugar de esperar a que el sistema la infiera a partir de una secuencia de interacciones.",
+            "El anuncio también amplía las opciones de retroalimentación directamente sobre publicaciones. Después de pulsar Interested o Not interested, Facebook puede pedir detalles adicionales sobre qué resultó relevante o molesto. Esas respuestas pueden escribirse con lenguaje natural. Meta afirma que las recomendaciones responden en tiempo real y pueden adaptarse durante la misma sesión. Esta afirmación describe el comportamiento previsto por el proveedor; el comunicado no incluye un ensayo independiente que cuantifique cuánto cambia el contenido, durante cuánto tiempo persiste el efecto o si la respuesta funciona igual para todos los idiomas."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, condiciones y riesgos",
+          "kind": "technical",
+          "paragraphs": [
+            "Your Algorithm se encuentra en despliegue, según Meta. El anuncio describe su presencia en Feed y Reels, pero no entrega un calendario completo por país, sistema operativo, idioma o tipo de cuenta. Por ello, que una persona no encuentre todavía la opción no demuestra necesariamente un error de su dispositivo. La empresa tampoco anunció una tarifa separada para estos controles. La noticia no debe confundirse con una función de suscripción de pago ni con una garantía de que cada preferencia escrita se aplicará inmediatamente a todas las superficies de Facebook.",
+            "La arquitectura exacta de clasificación permanece parcialmente cerrada. Meta explica que los modelos de lenguaje incorporan intereses e intención expresados en texto a señales que ya utiliza el sistema de ranking, pero no publica pesos de variables, parámetros del modelo, métricas comparativas ni una política detallada de retención de cada instrucción. Tampoco queda establecido si las preferencias se exportan entre Feed y Reels, si se comparten con otras aplicaciones de Meta o si una indicación de desinterés actúa como exclusión estricta. Estas preguntas son relevantes para evaluar la diferencia entre personalización percibida y control verificable."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y próximos pasos",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: la novedad refleja un cambio más amplio en el diseño de productos con IA. En lugar de presentar un chatbot separado, la empresa incorpora comprensión de lenguaje natural en un sistema de recomendación que ya utilizan millones de personas. La interfaz conversacional puede disminuir la fricción para expresar gustos complejos, pero su utilidad real dependerá de la claridad de los controles, la capacidad de corregirlos y la transparencia sobre las otras señales que siguen influyendo. Dar más opciones no equivale necesariamente a transferir toda la decisión al usuario.",
+            "Para evaluar la herramienta, conviene escoger dos o tres temas concretos y comprobar cómo cambian las recomendaciones durante varias sesiones. También sirve comparar las respuestas al botón de interés con una instrucción textual y revisar si Facebook permite consultar o modificar preferencias guardadas. No es recomendable asumir que escribir una preferencia elimina por completo categorías sensibles o anuncios. Quienes administran páginas y marcas deberían observar cómo evolucionan las interacciones orgánicas antes de atribuir cualquier variación de alcance a este anuncio, pues intervienen muchos factores simultáneos."
+          ]
+        }
+      ],
+      "analysis": "Para evaluar la herramienta, conviene escoger dos o tres temas concretos y comprobar cómo cambian las recomendaciones durante varias sesiones. También sirve comparar las respuestas al botón de interés con una instrucción textual y revisar si Facebook permite consultar o modificar preferencias guardadas. No es recomendable asumir que escribir una preferencia elimina por completo categorías sensibles o anuncios. Quienes administran páginas y marcas deberían observar cómo evolucionan las interacciones orgánicas antes de atribuir cualquier variación de alcance a este anuncio, pues intervienen muchos factores simultáneos.",
+      "watch": "Alcance por región, idiomas, persistencia de preferencias y evidencia independiente de control efectivo.",
+      "availability": {
+        "status": "Despliegue progresivo anunciado el 13 de octubre de 2026",
+        "platforms": [
+          "Facebook Feed",
+          "Facebook Reels"
+        ],
+        "regions": [
+          "No se publicó un listado completo de regiones"
+        ],
+        "requirements": [
+          "Cuenta de Facebook y acceso a la función según despliegue"
+        ],
+        "notes": [
+          "Acceso mediante menú de tres puntos en publicaciones elegibles."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Cargo adicional",
+          "value": "No anunciado"
+        }
+      ],
+      "limitations": [
+        "Meta no aportó métricas independientes de mejora de satisfacción o reducción de contenido no deseado.",
+        "No se detallaron todos los idiomas, regiones ni la persistencia de preferencias.",
+        "Los controles expresados por el usuario conviven con otras señales de clasificación."
+      ],
+      "practicalAdvice": [
+        "Probar instrucciones concretas sobre temas y observar cambios reales en Feed y Reels.",
+        "Usar las opciones de interés o desinterés y revisar qué preferencias se conservan.",
+        "No asumir que una instrucción equivale a bloquear por completo una categoría."
+      ],
+      "finalSummary": "En síntesis, Meta confirma un nuevo mecanismo de entrada en lenguaje natural para orientar recomendaciones de Facebook y sostiene que la adaptación puede ocurrir durante la misma sesión. Falta verificar su alcance geográfico, la persistencia de las instrucciones y el efecto medible sobre la experiencia. El hecho material es que el lenguaje natural deja de ser solo una forma de conversar con un asistente y pasa a funcionar como un control de producto sobre un sistema de clasificación de contenidos existente."
+    },
+    {
       "id": "liquid-ai-lfm25-24b-a2b-agent-model-2026",
       "eventKey": "liquid-ai-lfm2-5-24b-a2b-on-device-agents-2026-10-13",
       "date": "2026-10-13",
@@ -1294,6 +1528,125 @@
         "Comprobar la licencia antes de desplegar comercialmente."
       ],
       "finalSummary": "LFM2.5-24B-A2B amplía las opciones de agentes locales de pesos descargables; su valor práctico dependerá de pruebas independientes, controles de herramientas y licencia."
+    },
+    {
+      "id": "huggingface-llama-windows-local-models-2026",
+      "eventKey": "huggingface-llama-windows-local-ai-2026-10-13",
+      "date": "2026-10-13",
+      "announcedAt": "2026-10-13",
+      "coveredAt": "2026-10-14",
+      "verifiedAt": "2026-10-14",
+      "articleVersion": 2,
+      "company": "Hugging Face",
+      "product": "Llama Windows / llama.cpp",
+      "title": "Hugging Face presenta Llama Windows para ejecutar modelos locales desde la bandeja de Windows 11",
+      "summary": "Llama Windows simplifica la descarga y ejecución local de modelos GGUF con llama.cpp, una interfaz WinUI 3 y un servidor compatible con clientes OpenAI. La aplicación es gratuita y abierta; el rendimiento depende del equipo y del modelo.",
+      "tags": [
+        "Open source",
+        "IA local",
+        "Windows",
+        "Modelos",
+        "Desarrolladores"
+      ],
+      "image": "assets/hero.webp",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageAlt": "Grabado editorial conceptual de un computador Windows con circuitos y modelos de IA locales, sin captura real.",
+      "imageBrief": "Grabado editorial horizontal 3:2 en sepia: ordenador de escritorio con un pequeño motor de IA contenido dentro, biblioteca de modelos como libros, cables y circuitos; sin interfaz fingida, sin logotipos falsos ni texto.",
+      "source": {
+        "name": "Hugging Face · anuncio oficial",
+        "url": "https://huggingface.co/blog/huggingface/llama-windows",
+        "publishedAt": "2026-10-13"
+      },
+      "body": [
+        "Hugging Face anunció el 13 de octubre de 2026 Llama Windows, una aplicación gratuita y de código abierto que permite utilizar llama.cpp desde el área de notificación de Windows 11. El lanzamiento busca reducir la barrera de entrada de la inferencia local: elegir un modelo del Hub, descargarlo y ejecutarlo sin compilar el motor ni escribir comandos de inicio. Es la contraparte para Windows de llama.app en macOS. La novedad material no es un modelo de inteligencia artificial nuevo, sino una capa de experiencia y administración para modelos existentes. La empresa publicó tanto una explicación técnica como el código de la aplicación.",
+        "La interfaz utiliza WinUI 3 y permanece en la bandeja del sistema, en lugar de requerir una ventana principal permanente. Un panel muestra modelos recomendados con su tamaño en disco, número de parámetros y compatibilidad de visión; otro permite cargar y descargar modelos instalados. El programa ofrece acceso a la interfaz web de llama.cpp para conversar con el modelo elegido. Hugging Face también describe un acceso rápido mediante Alt+Espacio. Estas funciones simplifican una secuencia que antes exigía localizar binarios, seleccionar cuantizaciones, configurar rutas y arrancar manualmente un servidor.",
+        "El funcionamiento depende de llama.cpp, motor de inferencia que admite modelos distribuidos en formato GGUF. Cuando Llama Windows se inicia, intenta conectarse a un servidor llama.cpp ya existente o arrancar uno administrado por la propia aplicación. Si el motor no está instalado, el software declara que puede instalarlo mediante el instalador oficial sin exigir privilegios de administrador. El anuncio sitúa el servicio local en el puerto 9931 y documenta una API compatible con OpenAI bajo la ruta /v1. Eso permite conectar scripts, aplicaciones y agentes locales a los modelos cargados, siempre que el cliente conozca el identificador correcto.",
+        "La empresa destaca un caché compartido con el ecosistema Hugging Face, ubicado por defecto en el perfil del usuario, y la posibilidad de moverlo a otra unidad. El usuario puede añadir un token de acceso para repositorios privados o con acceso condicionado. El programa conserva registros diarios durante siete días en una carpeta local de la aplicación. La promesa de privacidad se refiere a la inferencia ejecutada en el dispositivo: descargar modelos, obtener actualizaciones o acceder a repositorios restringidos sí puede requerir conexión de red. Tampoco debe confundirse la privacidad local con una auditoría de seguridad de cualquier modelo descargado.",
+        "Llama Windows se anuncia para Windows 11 e incluye soporte nativo para Windows on Arm y NVIDIA RTX Spark. La descarga de la aplicación es gratuita, pero el anuncio no garantiza que todos los modelos del catálogo funcionen con cualquier configuración. El tamaño del archivo cuantizado, la memoria disponible, el contexto solicitado y el tipo de aceleración condicionan tanto la posibilidad de cargar el modelo como la velocidad de respuesta. No se comunicó un precio de suscripción para la aplicación, ni una tabla universal de rendimiento. Las licencias de los pesos de cada modelo deben revisarse por separado.",
+        "Análisis Gazette: el valor de este lanzamiento reside en acercar una infraestructura de inferencia que ya era potente a usuarios que no desean administrar comandos y procesos. Para desarrolladores, el servidor compatible con OpenAI puede facilitar pruebas de asistentes y herramientas sin depender de una API remota para cada consulta. Para equipos pequeños, ofrece una ruta de prototipado controlada por el usuario, aunque no sustituye automáticamente un servicio empresarial con disponibilidad garantizada, administración centralizada y soporte. La experiencia sencilla de instalación no elimina los límites físicos del equipo ni las obligaciones de licencia de los modelos.",
+        "Una prueba responsable debería comenzar con un modelo pequeño y cuantizado, registrar uso de memoria y tiempos de respuesta, y después aumentar tamaño o contexto solo si el equipo lo soporta. Conviene comprobar que el servicio escuche únicamente donde se pretende utilizarlo y evitar publicar un endpoint local sin autenticación ni controles de red. Para tareas sensibles, también corresponde revisar de dónde proceden los pesos, qué datos se envían al modelo y si existen registros adicionales de otras aplicaciones conectadas. El proyecto de código abierto permite inspección y contribuciones, pero esa apertura no equivale por sí sola a una evaluación independiente de seguridad.",
+        "En conclusión, Llama Windows convierte la instalación y operación de modelos locales en una experiencia de pocos clics y añade una vía directa para integrarlos con software propio. Lo confirmado es la publicación de la aplicación y su arquitectura basada en llama.cpp; lo que debe observarse ahora es su estabilidad, la compatibilidad real con distintos aceleradores, la evolución del catálogo y las mediciones comparables de rendimiento. La noticia importa porque reduce fricción para la IA local, no porque demuestre que la ejecución en un PC iguala automáticamente a los modelos más avanzados alojados en la nube."
+      ],
+      "keyPoints": [
+        "Aplicación gratuita y de código abierto para Windows 11, basada en llama.cpp.",
+        "Descarga modelos del Hub y ofrece un servidor local compatible con API OpenAI.",
+        "El soporte anunciado incluye x64, Windows on Arm y NVIDIA RTX Spark."
+      ],
+      "quickTakeaways": [
+        "Aplicación gratuita y de código abierto para Windows 11, basada en llama.cpp.",
+        "Descarga modelos del Hub y ofrece un servidor local compatible con API OpenAI.",
+        "El soporte anunciado incluye x64, Windows on Arm y NVIDIA RTX Spark.",
+        "Los modelos y sus licencias son independientes de la licencia de la aplicación."
+      ],
+      "executiveSummary": "Hugging Face anunció el 13 de octubre de 2026 Llama Windows, una aplicación gratuita y de código abierto que permite utilizar llama.cpp desde el área de notificación de Windows 11. El lanzamiento busca reducir la barrera de entrada de la inferencia local: elegir un modelo del Hub, descargarlo y ejecutarlo sin compilar el motor ni escribir comandos de inicio. Es la contraparte para Windows de llama.app en macOS. La novedad material no es un modelo de inteligencia artificial nuevo, sino una capa de experiencia y administración para modelos existentes. La empresa publicó tanto una explicación técnica como el código de la aplicación.",
+      "sections": [
+        {
+          "heading": "Qué se anunció y cómo funciona",
+          "kind": "report",
+          "paragraphs": [
+            "La interfaz utiliza WinUI 3 y permanece en la bandeja del sistema, en lugar de requerir una ventana principal permanente. Un panel muestra modelos recomendados con su tamaño en disco, número de parámetros y compatibilidad de visión; otro permite cargar y descargar modelos instalados. El programa ofrece acceso a la interfaz web de llama.cpp para conversar con el modelo elegido. Hugging Face también describe un acceso rápido mediante Alt+Espacio. Estas funciones simplifican una secuencia que antes exigía localizar binarios, seleccionar cuantizaciones, configurar rutas y arrancar manualmente un servidor.",
+            "El funcionamiento depende de llama.cpp, motor de inferencia que admite modelos distribuidos en formato GGUF. Cuando Llama Windows se inicia, intenta conectarse a un servidor llama.cpp ya existente o arrancar uno administrado por la propia aplicación. Si el motor no está instalado, el software declara que puede instalarlo mediante el instalador oficial sin exigir privilegios de administrador. El anuncio sitúa el servicio local en el puerto 9931 y documenta una API compatible con OpenAI bajo la ruta /v1. Eso permite conectar scripts, aplicaciones y agentes locales a los modelos cargados, siempre que el cliente conozca el identificador correcto."
+          ]
+        },
+        {
+          "heading": "Disponibilidad, condiciones y riesgos",
+          "kind": "technical",
+          "paragraphs": [
+            "La empresa destaca un caché compartido con el ecosistema Hugging Face, ubicado por defecto en el perfil del usuario, y la posibilidad de moverlo a otra unidad. El usuario puede añadir un token de acceso para repositorios privados o con acceso condicionado. El programa conserva registros diarios durante siete días en una carpeta local de la aplicación. La promesa de privacidad se refiere a la inferencia ejecutada en el dispositivo: descargar modelos, obtener actualizaciones o acceder a repositorios restringidos sí puede requerir conexión de red. Tampoco debe confundirse la privacidad local con una auditoría de seguridad de cualquier modelo descargado.",
+            "Llama Windows se anuncia para Windows 11 e incluye soporte nativo para Windows on Arm y NVIDIA RTX Spark. La descarga de la aplicación es gratuita, pero el anuncio no garantiza que todos los modelos del catálogo funcionen con cualquier configuración. El tamaño del archivo cuantizado, la memoria disponible, el contexto solicitado y el tipo de aceleración condicionan tanto la posibilidad de cargar el modelo como la velocidad de respuesta. No se comunicó un precio de suscripción para la aplicación, ni una tabla universal de rendimiento. Las licencias de los pesos de cada modelo deben revisarse por separado."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y próximos pasos",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: el valor de este lanzamiento reside en acercar una infraestructura de inferencia que ya era potente a usuarios que no desean administrar comandos y procesos. Para desarrolladores, el servidor compatible con OpenAI puede facilitar pruebas de asistentes y herramientas sin depender de una API remota para cada consulta. Para equipos pequeños, ofrece una ruta de prototipado controlada por el usuario, aunque no sustituye automáticamente un servicio empresarial con disponibilidad garantizada, administración centralizada y soporte. La experiencia sencilla de instalación no elimina los límites físicos del equipo ni las obligaciones de licencia de los modelos.",
+            "Una prueba responsable debería comenzar con un modelo pequeño y cuantizado, registrar uso de memoria y tiempos de respuesta, y después aumentar tamaño o contexto solo si el equipo lo soporta. Conviene comprobar que el servicio escuche únicamente donde se pretende utilizarlo y evitar publicar un endpoint local sin autenticación ni controles de red. Para tareas sensibles, también corresponde revisar de dónde proceden los pesos, qué datos se envían al modelo y si existen registros adicionales de otras aplicaciones conectadas. El proyecto de código abierto permite inspección y contribuciones, pero esa apertura no equivale por sí sola a una evaluación independiente de seguridad."
+          ]
+        }
+      ],
+      "analysis": "Una prueba responsable debería comenzar con un modelo pequeño y cuantizado, registrar uso de memoria y tiempos de respuesta, y después aumentar tamaño o contexto solo si el equipo lo soporta. Conviene comprobar que el servicio escuche únicamente donde se pretende utilizarlo y evitar publicar un endpoint local sin autenticación ni controles de red. Para tareas sensibles, también corresponde revisar de dónde proceden los pesos, qué datos se envían al modelo y si existen registros adicionales de otras aplicaciones conectadas. El proyecto de código abierto permite inspección y contribuciones, pero esa apertura no equivale por sí sola a una evaluación independiente de seguridad.",
+      "watch": "Versiones estables, compatibilidad real por GPU, requisitos de memoria y cambios en el catálogo de modelos.",
+      "availability": {
+        "status": "Anunciado y descargable el 13 de octubre de 2026",
+        "platforms": [
+          "Windows 11 x64",
+          "Windows on Arm"
+        ],
+        "regions": [
+          "Sin restricción regional anunciada para el software"
+        ],
+        "requirements": [
+          "Windows 11",
+          "Recursos de memoria, disco y GPU según modelo"
+        ],
+        "notes": [
+          "Soporte declarado para NVIDIA RTX Spark; el comportamiento depende de la combinación de hardware y modelo."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Aplicación",
+          "value": "Gratuita y de código abierto"
+        },
+        {
+          "label": "Modelos y hardware",
+          "value": "Según licencia del modelo y recursos del equipo; no hay tarifa única"
+        }
+      ],
+      "limitations": [
+        "No se publicaron benchmarks independientes por modelo y hardware.",
+        "Un servidor local no implica que todos los modelos puedan funcionar en cualquier equipo.",
+        "Los modelos privados o restringidos pueden exigir credenciales y aceptar condiciones específicas."
+      ],
+      "practicalAdvice": [
+        "Comprobar el tamaño GGUF y memoria disponible antes de descargar un modelo.",
+        "Verificar la licencia de cada modelo y limitar la exposición del servidor local.",
+        "Comparar latencia, calidad y consumo con el uso actual antes de sustituir un servicio remoto."
+      ],
+      "finalSummary": "En conclusión, Llama Windows convierte la instalación y operación de modelos locales en una experiencia de pocos clics y añade una vía directa para integrarlos con software propio. Lo confirmado es la publicación de la aplicación y su arquitectura basada en llama.cpp; lo que debe observarse ahora es su estabilidad, la compatibilidad real con distintos aceleradores, la evolución del catálogo y las mediciones comparables de rendimiento. La noticia importa porque reduce fricción para la IA local, no porque demuestre que la ejecución en un PC iguala automáticamente a los modelos más avanzados alojados en la nube."
     },
     {
       "id": "apple-tv-4k-2026-siri-ai-a19",
@@ -30764,7 +31117,7 @@
     {
       "date": "2026-10-13",
       "status": "partial",
-      "verifiedArticles": 16
+      "verifiedArticles": 19
     }
   ]
 }
