@@ -1,8 +1,176 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T19:24:24.449Z",
+  "updatedAt": "2026-10-15T22:28:40.877Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "servicenow-ai-passport-agent-governance-2026",
+      "eventKey": "servicenow-ai-passport-cryptographic-agent-permissions-q4-2026-2026-10-15",
+      "date": "2026-10-15",
+      "announcedAt": "2026-10-15",
+      "coveredAt": "2026-10-15",
+      "verifiedAt": "2026-10-15",
+      "articleVersion": 2,
+      "company": "ServiceNow",
+      "product": "AI Passport",
+      "title": "ServiceNow anuncia AI Passport: credenciales criptográficas para limitar permisos de agentes y servidores MCP",
+      "summary": "ServiceNow presentó AI Passport como una capa de autorización verificable para agentes propios y de terceros, junto con mejoras de gobierno y observabilidad. La disponibilidad de AI Passport, detección de agentes no autorizados y gestión de costes está prevista para el cuarto trimestre de 2026; no es un lanzamiento general inmediato.",
+      "tags": [
+        "ServiceNow",
+        "Seguridad de IA",
+        "Agentes",
+        "MCP",
+        "Gobernanza",
+        "Identidad"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual sobre infraestructura tecnológica; no fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia 3:2 de un agente mecánico que presenta un pasaporte criptográfico ante puertas de acceso a herramientas y datos, con un supervisor y registros; sin interfaces ficticias ni candados que impliquen seguridad garantizada.",
+      "source": {
+        "name": "ServiceNow Newsroom · AI Passport y gobierno de agentes",
+        "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-advances-its-operational-harness-for-enterprise-AI-with-AI-Passport-and-expanded-governance-capabilities/default.aspx",
+        "publishedAt": "2026-10-15"
+      },
+      "relatedSources": [
+        {
+          "name": "ServiceNow · anuncio de colaboración con NVIDIA",
+          "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-advances-its-operational-harness-for-enterprise-AI-with-AI-Passport-and-expanded-governance-capabilities/default.aspx"
+        }
+      ],
+      "body": [
+        "ServiceNow anunció el 15 de octubre de 2026 AI Passport, una propuesta para verificar en tiempo de ejecución qué acciones puede realizar un agente de inteligencia artificial. La compañía lo presenta como una capa de autoridad para agentes propios, de terceros y servidores Model Context Protocol. El objetivo es que los permisos no dependan únicamente de instrucciones de texto o de la declaración del propio agente sobre lo que está autorizado a hacer.",
+        "La novedad responde a un problema concreto: los agentes conectan sistemas, recuperan datos y ejecutan herramientas, pero una instrucción maliciosa o una delegación demasiado amplia puede hacer que actúen fuera de su función. La autorización debe ser comprobable por el entorno que ejecuta la acción. AI Passport fue anunciado como solución próxima, no como una garantía de protección ya desplegada universalmente.",
+        "Según ServiceNow, cada agente puede recibir una credencial firmada criptográficamente con un alcance definido. La información de autoridad se vincula al contexto empresarial mediante inventarios de configuración, políticas de riesgo y aprobaciones de flujo de trabajo. Un punto de control verifica ese alcance durante una operación y puede permitir, restringir, redirigir o detener al agente si intenta salirse de él.",
+        "El fabricante propone delegación con permisos progresivamente más estrechos, revocación precisa y registros de auditoría. En principio, ese enfoque es distinto de revisar una bitácora después del incidente: busca aplicar límites antes o durante la ejecución. Sin embargo, el anuncio no publica una prueba independiente de que todos los conectores, servidores MCP y herramientas respeten correctamente las credenciales en cualquier situación.",
+        "NVIDIA figura como socio de diseño y lanzamiento para una implementación de cumplimiento de permisos en su Open Agent Safety Platform, que incluye OpenShell y Sentry. ServiceNow afirma que la especificación es abierta y que distintos emisores, proveedores de identidad y puntos de control podrán emitir o verificar credenciales. Esto plantea una ruta de interoperabilidad, pero su alcance real dependerá de implementaciones concretas.",
+        "El control de un agente no reside solo en el modelo que razona. También importa el proceso que le entrega tokens, la red que puede alcanzar y el servicio que ejecuta una operación irreversible. Una credencial firmada puede ayudar a transportar permisos verificables, siempre que los sistemas receptores validen firmas, caducidad, revocación y el contexto de cada acción.",
+        "El anuncio amplía Super Intelligence Control Tower con detección de agentes no autorizados, mapeo de accesos, trazas de comportamiento y medición de gasto frente a resultados. ServiceNow menciona más de 400 conectores listos para usar en su propuesta de descubrimiento, además de una futura integración de AI Cost Management con IT Asset Management. Esas cifras y capacidades pertenecen al comunicado del proveedor.",
+        "ServiceNow también cita su índice de madurez bancaria de 2026, según el cual todos los bancos de la muestra utilizan IA, pero solo el 24% tendría un nivel comparable de gobernanza. No debe interpretarse esa estadística como una medición independiente de todos los bancos del mundo. Sirve para entender el argumento comercial de la compañía, no para cuantificar por sí sola el riesgo real de una organización.",
+        "ServiceNow indica que AI Passport, la detección de shadow AI y AI Cost Management deberían estar disponibles en el cuarto trimestre de 2026. En cambio, Operational Resilience para servicios financieros se anunció como disponible en el momento del comunicado. Son productos y estados distintos; agruparlos como si todo estuviera listo hoy produciría una expectativa incorrecta para compradores y equipos técnicos.",
+        "No se divulgó una tarifa única de AI Passport ni condiciones públicas completas de contratación en el anuncio. Antes de presupuestar, los interesados deben pedir detalles de licencia, regiones, soporte para agentes de terceros, puntos de enforcement y requisitos de infraestructura. La compatibilidad con una especificación abierta tampoco implica necesariamente que toda la plataforma sea gratuita o de código abierto.",
+        "AI Passport muestra un cambio de enfoque: la seguridad de agentes empieza a parecerse al control de identidades y permisos de servicios tradicionales, con la dificultad adicional de que los agentes pueden decidir secuencias de acciones no previstas. La pieza importante será demostrar que una delegación revocada realmente impide usar una herramienta y que los registros permiten reconstruir quién autorizó cada operación.",
+        "Para evaluar la solución conviene diseñar pruebas con agentes que intenten exceder permisos, recibir instrucciones inyectadas y utilizar servidores MCP externos. Hay que comprobar tiempos de revocación, tratamiento de credenciales robadas, auditoría y funcionamiento sin conexión. Hasta disponer de producto y evaluaciones públicas, las promesas de prevención deben atribuirse a ServiceNow. El siguiente hito será la entrega real de Q4 y la evidencia de interoperabilidad."
+      ],
+      "keyPoints": [
+        "AI Passport propone credenciales firmadas para verificar el alcance autorizado de agentes y servidores MCP.",
+        "Incluye delegación limitada, revocación y respuestas graduadas, según el diseño anunciado.",
+        "NVIDIA participa como socio de diseño y lanzamiento para enforcement en OpenShell."
+      ],
+      "quickTakeaways": [
+        "AI Passport propone credenciales firmadas para verificar el alcance autorizado de agentes y servidores MCP.",
+        "Incluye delegación limitada, revocación y respuestas graduadas, según el diseño anunciado.",
+        "NVIDIA participa como socio de diseño y lanzamiento para enforcement en OpenShell.",
+        "AI Passport y otras funciones están previstas para Q4 de 2026; precio no divulgado."
+      ],
+      "executiveSummary": "ServiceNow anunció el 15 de octubre de 2026 AI Passport, una propuesta para verificar en tiempo de ejecución qué acciones puede realizar un agente de inteligencia artificial. La compañía lo presenta como una capa de autoridad para agentes propios, de terceros y servidores Model Context Protocol. El objetivo es que los permisos no dependan únicamente de instrucciones de texto o de la declaración del propio agente sobre lo que está autorizado a hacer.",
+      "sections": [
+        {
+          "heading": "Anuncio y problema",
+          "kind": "report",
+          "paragraphs": [
+            "ServiceNow anunció el 15 de octubre de 2026 AI Passport, una propuesta para verificar en tiempo de ejecución qué acciones puede realizar un agente de inteligencia artificial. La compañía lo presenta como una capa de autoridad para agentes propios, de terceros y servidores Model Context Protocol. El objetivo es que los permisos no dependan únicamente de instrucciones de texto o de la declaración del propio agente sobre lo que está autorizado a hacer.",
+            "La novedad responde a un problema concreto: los agentes conectan sistemas, recuperan datos y ejecutan herramientas, pero una instrucción maliciosa o una delegación demasiado amplia puede hacer que actúen fuera de su función. La autorización debe ser comprobable por el entorno que ejecuta la acción. AI Passport fue anunciado como solución próxima, no como una garantía de protección ya desplegada universalmente."
+          ]
+        },
+        {
+          "heading": "Credenciales y control en ejecución",
+          "kind": "report",
+          "paragraphs": [
+            "Según ServiceNow, cada agente puede recibir una credencial firmada criptográficamente con un alcance definido. La información de autoridad se vincula al contexto empresarial mediante inventarios de configuración, políticas de riesgo y aprobaciones de flujo de trabajo. Un punto de control verifica ese alcance durante una operación y puede permitir, restringir, redirigir o detener al agente si intenta salirse de él.",
+            "El fabricante propone delegación con permisos progresivamente más estrechos, revocación precisa y registros de auditoría. En principio, ese enfoque es distinto de revisar una bitácora después del incidente: busca aplicar límites antes o durante la ejecución. Sin embargo, el anuncio no publica una prueba independiente de que todos los conectores, servidores MCP y herramientas respeten correctamente las credenciales en cualquier situación."
+          ]
+        },
+        {
+          "heading": "Relación con NVIDIA y estándares",
+          "kind": "report",
+          "paragraphs": [
+            "NVIDIA figura como socio de diseño y lanzamiento para una implementación de cumplimiento de permisos en su Open Agent Safety Platform, que incluye OpenShell y Sentry. ServiceNow afirma que la especificación es abierta y que distintos emisores, proveedores de identidad y puntos de control podrán emitir o verificar credenciales. Esto plantea una ruta de interoperabilidad, pero su alcance real dependerá de implementaciones concretas.",
+            "El control de un agente no reside solo en el modelo que razona. También importa el proceso que le entrega tokens, la red que puede alcanzar y el servicio que ejecuta una operación irreversible. Una credencial firmada puede ayudar a transportar permisos verificables, siempre que los sistemas receptores validen firmas, caducidad, revocación y el contexto de cada acción."
+          ]
+        },
+        {
+          "heading": "Más observabilidad y gestión de costes",
+          "kind": "report",
+          "paragraphs": [
+            "El anuncio amplía Super Intelligence Control Tower con detección de agentes no autorizados, mapeo de accesos, trazas de comportamiento y medición de gasto frente a resultados. ServiceNow menciona más de 400 conectores listos para usar en su propuesta de descubrimiento, además de una futura integración de AI Cost Management con IT Asset Management. Esas cifras y capacidades pertenecen al comunicado del proveedor.",
+            "ServiceNow también cita su índice de madurez bancaria de 2026, según el cual todos los bancos de la muestra utilizan IA, pero solo el 24% tendría un nivel comparable de gobernanza. No debe interpretarse esa estadística como una medición independiente de todos los bancos del mundo. Sirve para entender el argumento comercial de la compañía, no para cuantificar por sí sola el riesgo real de una organización."
+          ]
+        },
+        {
+          "heading": "Disponibilidad y precio",
+          "kind": "report",
+          "paragraphs": [
+            "ServiceNow indica que AI Passport, la detección de shadow AI y AI Cost Management deberían estar disponibles en el cuarto trimestre de 2026. En cambio, Operational Resilience para servicios financieros se anunció como disponible en el momento del comunicado. Son productos y estados distintos; agruparlos como si todo estuviera listo hoy produciría una expectativa incorrecta para compradores y equipos técnicos.",
+            "No se divulgó una tarifa única de AI Passport ni condiciones públicas completas de contratación en el anuncio. Antes de presupuestar, los interesados deben pedir detalles de licencia, regiones, soporte para agentes de terceros, puntos de enforcement y requisitos de infraestructura. La compatibilidad con una especificación abierta tampoco implica necesariamente que toda la plataforma sea gratuita o de código abierto."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y pruebas pendientes",
+          "kind": "analysis",
+          "paragraphs": [
+            "AI Passport muestra un cambio de enfoque: la seguridad de agentes empieza a parecerse al control de identidades y permisos de servicios tradicionales, con la dificultad adicional de que los agentes pueden decidir secuencias de acciones no previstas. La pieza importante será demostrar que una delegación revocada realmente impide usar una herramienta y que los registros permiten reconstruir quién autorizó cada operación.",
+            "Para evaluar la solución conviene diseñar pruebas con agentes que intenten exceder permisos, recibir instrucciones inyectadas y utilizar servidores MCP externos. Hay que comprobar tiempos de revocación, tratamiento de credenciales robadas, auditoría y funcionamiento sin conexión. Hasta disponer de producto y evaluaciones públicas, las promesas de prevención deben atribuirse a ServiceNow. El siguiente hito será la entrega real de Q4 y la evidencia de interoperabilidad."
+          ]
+        }
+      ],
+      "analysis": "La identidad verificable de agentes puede cerrar una brecha real de gobernanza, pero el resultado dependerá del cumplimiento en cada punto de ejecución, no solo de emitir credenciales.",
+      "watch": "Lanzamiento efectivo en Q4, especificaciones públicas, pruebas de interoperabilidad y precios.",
+      "availability": {
+        "status": "AI Passport, shadow AI detection y AI Cost Management previstos para Q4 2026; Operational Resilience disponible el 15 de octubre",
+        "platforms": [
+          "ServiceNow AI Platform",
+          "NVIDIA Open Agent Safety Platform (implementación anunciada)"
+        ],
+        "regions": [],
+        "requirements": [
+          "Consultar licencias y compatibilidad de agentes, IdP y puntos de enforcement"
+        ],
+        "notes": [
+          "Fecha de disponibilidad es una previsión, no confirmación de lanzamiento general."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "AI Passport",
+          "value": "Precio no divulgado en el anuncio"
+        },
+        {
+          "label": "Licencias empresariales",
+          "value": "Condiciones de contratación por confirmar"
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Mecanismo",
+          "value": "Credenciales criptográficamente firmadas y verificación de alcance"
+        },
+        {
+          "label": "Integraciones",
+          "value": "Agentes propios y de terceros; servidores MCP"
+        },
+        {
+          "label": "Enforcement",
+          "value": "Respuestas graduadas y revocación según diseño anunciado"
+        },
+        {
+          "label": "Plazo",
+          "value": "Q4 de 2026 (previsto)"
+        }
+      ],
+      "limitations": [
+        "No se publicaron resultados independientes de seguridad.",
+        "El despliegue Q4 aún no equivale a disponibilidad general.",
+        "Los precios y el soporte de cada integración no están detallados."
+      ],
+      "practicalAdvice": [
+        "Exigir demostración de revocación y alcance de permisos en una herramienta real.",
+        "Probar inyección de instrucciones y errores de delegación antes de confiar acciones irreversibles."
+      ],
+      "finalSummary": "AI Passport propone autorización verificable de agentes y MCP, pero su efectividad y disponibilidad deberán demostrarse cuando se despliegue."
+    },
     {
       "date": "2026-10-15",
       "announcedAt": "2026-10-15",
@@ -171,6 +339,518 @@
       ],
       "analysis": "Análisis Gazette: el crecimiento de plataformas de gobierno agéntico indica que el mercado empresarial empieza a distinguir entre comprar asistentes y operar trabajadores de software con capacidad de acción. Una herramienta de seguridad puede resultar valiosa si reduce la distancia entre la intención de un usuario y las operaciones efectivamente realizadas por el agente. Pero la confianza no se compra únicamente con una consola: necesita políticas, pruebas y responsabilidad organizacional. Los próximos hitos verificables serán documentación de conectores, resultados medidos con clientes, controles de respuesta y condiciones comerciales. La ronda de US$21 millones demuestra respaldo de inversores a la empresa, no superioridad técnica sobre alternativas ni adopción generalizada. Hasta contar con pruebas externas, sus capacidades y cifras deben mantenerse atribuidas a Opsin.",
       "watch": "Los próximos hitos verificables serán documentación de conectores, resultados medidos con clientes, controles de respuesta y condiciones comerciales. La ronda de US$21 millones demuestra respaldo de inversores a la empresa, no superioridad técnica sobre alternativas ni adopción generalizada. Hasta contar con pruebas externas, sus capacidades y cifras deben mantenerse atribuidas a Opsin."
+    },
+    {
+      "id": "nvidia-nemotron-3-5-super-vl-120b-a12b-2026",
+      "eventKey": "nvidia-nemotron-3-5-super-vl-120b-a12b-open-multimodal-agents-2026-10-15",
+      "date": "2026-10-15",
+      "announcedAt": "2026-10-15",
+      "coveredAt": "2026-10-15",
+      "verifiedAt": "2026-10-15",
+      "articleVersion": 2,
+      "company": "NVIDIA",
+      "product": "Nemotron 3.5 Super VL",
+      "title": "NVIDIA libera Nemotron 3.5 Super VL: 120B parámetros, visión y contexto de hasta un millón de tokens",
+      "summary": "NVIDIA publicó pesos BF16 y NVFP4 de Nemotron 3.5 Super VL, un modelo multimodal MoE con 120.000 millones de parámetros totales y 12.000 millones activos. La compañía promociona mejoras en agentes, documentos y rendimiento; sus benchmarks y condiciones de despliegue requieren lectura contextual.",
+      "tags": [
+        "NVIDIA",
+        "Nemotron",
+        "Modelos abiertos",
+        "Multimodal",
+        "Agentes",
+        "Hugging Face"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual sobre modelos de IA y agentes; no fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia 3:2 de un sistema de agentes que interpreta páginas, diagramas y secuencias de vídeo en una sala de cómputo, sin logotipos falsos, textos incrustados ni métricas inventadas.",
+      "source": {
+        "name": "NVIDIA Blog · anuncio de Nemotron 3.5 Super VL",
+        "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "publishedAt": "2026-10-15"
+      },
+      "relatedSources": [
+        {
+          "name": "NVIDIA · ficha oficial de pesos BF16",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16"
+        },
+        {
+          "name": "NVIDIA · ficha oficial NVFP4",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4"
+        }
+      ],
+      "body": [
+        "NVIDIA presentó el 15 de octubre de 2026 Nemotron 3.5 Super VL como un modelo de pesos descargables dirigido a agentes que necesitan leer documentos, interpretar imágenes y actuar sobre herramientas. La empresa lo ubica entre su familia de modelos abiertos y propone usos empresariales con ejecución en infraestructura propia. El anuncio es una publicación de modelo y recursos técnicos, no la promesa de que un agente autónomo resolverá cualquier flujo de trabajo sin supervisión.",
+        "La principal diferencia frente a un chatbot exclusivamente textual es la integración de percepción visual con razonamiento y llamadas a herramientas. El fabricante destaca páginas web, tablas, gráficos y PDF como entradas frecuentes en automatización. Para un equipo de ingeniería, el interés no está solo en responder preguntas sobre una imagen, sino en conservar contexto mientras un flujo pasa de documento a dato y luego a decisión.",
+        "La ficha oficial describe 120.000 millones de parámetros totales y 12.000 millones activos por token en una arquitectura híbrida de Mamba-2, Transformer y mezcla de expertos. Un codificador visual C-RADIO alimenta el componente lingüístico. El contexto máximo anunciado llega a un millón de tokens, aunque entradas visuales, resultados de herramientas y salida comparten esa capacidad. La configuración efectiva depende de memoria, motor de inferencia y concurrencia.",
+        "La publicación incluye una referencia BF16 y otra cuantizada NVFP4, pensadas para necesidades distintas: adaptación y evaluación a precisión completa frente a reducción del coste de memoria y servicio. El modelo incorpora predicción de múltiples tokens para decodificación especulativa. Ninguna de estas propiedades equivale por sí sola a latencia baja en cualquier equipo; el rendimiento cambia con tamaño de entrada, lotes, hardware y configuración.",
+        "NVIDIA promociona un rendimiento de hasta cinco veces el de ciertos modelos abiertos comparados en su categoría y resultados competitivos en tareas multimodales y de agentes. Esas cifras son afirmaciones del proveedor y dependen de qué rivales, pruebas y configuraciones se hayan elegido. Las fichas publican tablas de evaluación, pero una clasificación de un benchmark no reemplaza ensayos independientes sobre los documentos y herramientas de cada organización.",
+        "También afirma que el modelo se entrenó con aproximadamente 26 billones de tokens a lo largo de sus etapas y que recibió posentrenamiento con unos 3,8 millones de ejemplos. Esas cantidades describen el proceso declarado, no el volumen de conocimiento utilizable en una consulta. Un sistema que trabaja con contratos o datos sensibles necesita evaluar precisión, citación, fuga de información, inyección de instrucciones y recuperación tras fallos.",
+        "Los pesos BF16 y NVFP4 están publicados en Hugging Face. NVIDIA menciona además ModelScope, OpenRouter y su oferta NIM para servir el modelo. La licencia OpenMDW 1.1 permite usos comerciales y no comerciales según sus condiciones; llamarlo modelo de pesos abiertos no significa automáticamente licencia sin restricciones ni equivalencia con software de código abierto tradicional.",
+        "El anuncio cita infraestructura DGX, RTX PRO, centros de datos y opciones locales, pero ejecutar una configuración BF16 de 120B parámetros no equivale a instalar una aplicación ligera en un portátil. La variante cuantizada reduce memoria y puede requerir kernels compatibles. No se identificó una tarifa universal de API o infraestructura aplicable a todos los proveedores; el coste depende de alojamiento, GPU, soporte y volumen.",
+        "Para equipos que diseñan asistentes internos, disponer de pesos y recetas de adaptación abre una alternativa a enviar todos los documentos a servicios externos. Puede ayudar en requisitos de residencia de datos y especialización, siempre que la empresa controle el entorno completo, las credenciales y los registros. La privacidad no queda garantizada solo por ejecutar un modelo local: conectores, telemetría y almacenamiento también deben auditarse.",
+        "Los resultados de tareas largas y documentos complejos pueden deteriorarse cuando aumenta la longitud de contexto o la ambigüedad de las instrucciones. La compatibilidad de motores y versiones de drivers importa tanto como el tamaño nominal del modelo. Los usos de alto riesgo exigen revisión humana, pruebas de regresión y una política clara para acciones irreversibles.",
+        "El movimiento amplía la competencia entre modelos cerrados y modelos personalizables: la capacidad visual ya no es un añadido decorativo, sino una parte del trabajo agéntico sobre información empresarial. La pregunta decisiva será cuánto rendimiento conserva el modelo cuando se adapta a documentos reales y se sirve a varios usuarios simultáneamente, no solo qué posición alcanza en una tabla de laboratorio.",
+        "Antes de adoptarlo conviene descargar la ficha de licencia, reproducir una muestra representativa, medir coste por tarea completada y separar respuestas correctas de ejecuciones de herramientas seguras. Habrá que observar evaluaciones independientes, recetas estables para distintos equipos, soporte de la versión NVFP4 y precios efectivos de alojamiento. El lanzamiento es material, pero sus beneficios operativos siguen siendo hipótesis que cada usuario debe validar."
+      ],
+      "keyPoints": [
+        "120B parámetros totales, 12B activos por token y contexto anunciado de hasta 1M tokens.",
+        "Pesos BF16 y NVFP4 disponibles; el acceso a pesos no elimina requisitos de hardware y licencia.",
+        "NVIDIA afirma hasta cinco veces más velocidad en determinadas comparaciones; no es una garantía universal."
+      ],
+      "quickTakeaways": [
+        "120B parámetros totales, 12B activos por token y contexto anunciado de hasta 1M tokens.",
+        "Pesos BF16 y NVFP4 disponibles; el acceso a pesos no elimina requisitos de hardware y licencia.",
+        "NVIDIA afirma hasta cinco veces más velocidad en determinadas comparaciones; no es una garantía universal.",
+        "La licencia de pesos es OpenMDW 1.1 y debe revisarse antes de integrar el modelo."
+      ],
+      "executiveSummary": "NVIDIA presentó el 15 de octubre de 2026 Nemotron 3.5 Super VL como un modelo de pesos descargables dirigido a agentes que necesitan leer documentos, interpretar imágenes y actuar sobre herramientas. La empresa lo ubica entre su familia de modelos abiertos y propone usos empresariales con ejecución en infraestructura propia. El anuncio es una publicación de modelo y recursos técnicos, no la promesa de que un agente autónomo resolverá cualquier flujo de trabajo sin supervisión.",
+      "sections": [
+        {
+          "heading": "Qué se anunció",
+          "kind": "report",
+          "paragraphs": [
+            "NVIDIA presentó el 15 de octubre de 2026 Nemotron 3.5 Super VL como un modelo de pesos descargables dirigido a agentes que necesitan leer documentos, interpretar imágenes y actuar sobre herramientas. La empresa lo ubica entre su familia de modelos abiertos y propone usos empresariales con ejecución en infraestructura propia. El anuncio es una publicación de modelo y recursos técnicos, no la promesa de que un agente autónomo resolverá cualquier flujo de trabajo sin supervisión.",
+            "La principal diferencia frente a un chatbot exclusivamente textual es la integración de percepción visual con razonamiento y llamadas a herramientas. El fabricante destaca páginas web, tablas, gráficos y PDF como entradas frecuentes en automatización. Para un equipo de ingeniería, el interés no está solo en responder preguntas sobre una imagen, sino en conservar contexto mientras un flujo pasa de documento a dato y luego a decisión."
+          ]
+        },
+        {
+          "heading": "Arquitectura y escala",
+          "kind": "technical",
+          "paragraphs": [
+            "La ficha oficial describe 120.000 millones de parámetros totales y 12.000 millones activos por token en una arquitectura híbrida de Mamba-2, Transformer y mezcla de expertos. Un codificador visual C-RADIO alimenta el componente lingüístico. El contexto máximo anunciado llega a un millón de tokens, aunque entradas visuales, resultados de herramientas y salida comparten esa capacidad. La configuración efectiva depende de memoria, motor de inferencia y concurrencia.",
+            "La publicación incluye una referencia BF16 y otra cuantizada NVFP4, pensadas para necesidades distintas: adaptación y evaluación a precisión completa frente a reducción del coste de memoria y servicio. El modelo incorpora predicción de múltiples tokens para decodificación especulativa. Ninguna de estas propiedades equivale por sí sola a latencia baja en cualquier equipo; el rendimiento cambia con tamaño de entrada, lotes, hardware y configuración."
+          ]
+        },
+        {
+          "heading": "Rendimiento y evidencia",
+          "kind": "report",
+          "paragraphs": [
+            "NVIDIA promociona un rendimiento de hasta cinco veces el de ciertos modelos abiertos comparados en su categoría y resultados competitivos en tareas multimodales y de agentes. Esas cifras son afirmaciones del proveedor y dependen de qué rivales, pruebas y configuraciones se hayan elegido. Las fichas publican tablas de evaluación, pero una clasificación de un benchmark no reemplaza ensayos independientes sobre los documentos y herramientas de cada organización.",
+            "También afirma que el modelo se entrenó con aproximadamente 26 billones de tokens a lo largo de sus etapas y que recibió posentrenamiento con unos 3,8 millones de ejemplos. Esas cantidades describen el proceso declarado, no el volumen de conocimiento utilizable en una consulta. Un sistema que trabaja con contratos o datos sensibles necesita evaluar precisión, citación, fuga de información, inyección de instrucciones y recuperación tras fallos."
+          ]
+        },
+        {
+          "heading": "Disponibilidad y condiciones",
+          "kind": "report",
+          "paragraphs": [
+            "Los pesos BF16 y NVFP4 están publicados en Hugging Face. NVIDIA menciona además ModelScope, OpenRouter y su oferta NIM para servir el modelo. La licencia OpenMDW 1.1 permite usos comerciales y no comerciales según sus condiciones; llamarlo modelo de pesos abiertos no significa automáticamente licencia sin restricciones ni equivalencia con software de código abierto tradicional.",
+            "El anuncio cita infraestructura DGX, RTX PRO, centros de datos y opciones locales, pero ejecutar una configuración BF16 de 120B parámetros no equivale a instalar una aplicación ligera en un portátil. La variante cuantizada reduce memoria y puede requerir kernels compatibles. No se identificó una tarifa universal de API o infraestructura aplicable a todos los proveedores; el coste depende de alojamiento, GPU, soporte y volumen."
+          ]
+        },
+        {
+          "heading": "Impacto y límites",
+          "kind": "report",
+          "paragraphs": [
+            "Para equipos que diseñan asistentes internos, disponer de pesos y recetas de adaptación abre una alternativa a enviar todos los documentos a servicios externos. Puede ayudar en requisitos de residencia de datos y especialización, siempre que la empresa controle el entorno completo, las credenciales y los registros. La privacidad no queda garantizada solo por ejecutar un modelo local: conectores, telemetría y almacenamiento también deben auditarse.",
+            "Los resultados de tareas largas y documentos complejos pueden deteriorarse cuando aumenta la longitud de contexto o la ambigüedad de las instrucciones. La compatibilidad de motores y versiones de drivers importa tanto como el tamaño nominal del modelo. Los usos de alto riesgo exigen revisión humana, pruebas de regresión y una política clara para acciones irreversibles."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y qué observar",
+          "kind": "analysis",
+          "paragraphs": [
+            "El movimiento amplía la competencia entre modelos cerrados y modelos personalizables: la capacidad visual ya no es un añadido decorativo, sino una parte del trabajo agéntico sobre información empresarial. La pregunta decisiva será cuánto rendimiento conserva el modelo cuando se adapta a documentos reales y se sirve a varios usuarios simultáneamente, no solo qué posición alcanza en una tabla de laboratorio.",
+            "Antes de adoptarlo conviene descargar la ficha de licencia, reproducir una muestra representativa, medir coste por tarea completada y separar respuestas correctas de ejecuciones de herramientas seguras. Habrá que observar evaluaciones independientes, recetas estables para distintos equipos, soporte de la versión NVFP4 y precios efectivos de alojamiento. El lanzamiento es material, pero sus beneficios operativos siguen siendo hipótesis que cada usuario debe validar."
+          ]
+        }
+      ],
+      "analysis": "La apertura de pesos desplaza parte de la competencia hacia adaptación, coste real de servir agentes y control de datos; los resultados del fabricante son un punto de partida, no una certificación independiente.",
+      "watch": "Evaluaciones externas, estabilidad de runtimes, costes de NIM y despliegues con documentos y herramientas reales.",
+      "availability": {
+        "status": "Pesos BF16 y NVFP4 publicados el 15 de octubre de 2026",
+        "platforms": [
+          "Hugging Face",
+          "NVIDIA NIM",
+          "ModelScope",
+          "OpenRouter"
+        ],
+        "regions": [],
+        "requirements": [
+          "Revisar licencia OpenMDW 1.1",
+          "GPU y runtime compatibles; dimensionar memoria según variante"
+        ],
+        "notes": [
+          "Un millón de tokens es el máximo documentado, no una garantía para toda configuración."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Pesos",
+          "value": "Descargables bajo licencia OpenMDW 1.1"
+        },
+        {
+          "label": "Servicio e infraestructura",
+          "value": "Sin precio universal anunciado; depende del proveedor y hardware"
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Parámetros",
+          "value": "120B totales / 12B activos"
+        },
+        {
+          "label": "Contexto máximo",
+          "value": "Hasta 1M tokens"
+        },
+        {
+          "label": "Arquitectura",
+          "value": "Mamba-2 + Transformer MoE + C-RADIO"
+        },
+        {
+          "label": "Formatos",
+          "value": "BF16 y NVFP4"
+        }
+      ],
+      "limitations": [
+        "Benchmarks y mejoras de velocidad atribuidos a NVIDIA; requieren reproducción independiente.",
+        "La ventana máxima depende de despliegue y memoria.",
+        "La licencia OpenMDW 1.1 exige revisar condiciones concretas."
+      ],
+      "practicalAdvice": [
+        "Comparar BF16 y NVFP4 con el mismo conjunto de documentos y tareas.",
+        "Medir exactitud, latencia, consumo de memoria y seguridad de herramientas por separado."
+      ],
+      "finalSummary": "Nemotron 3.5 Super VL añade una opción multimodal personalizable de gran escala. Su valor dependerá de pruebas de precisión, coste y seguridad en cargas reales."
+    },
+    {
+      "id": "nvidia-nemotron-3-5-bolt-74b-a9b-24gb-2026",
+      "eventKey": "nvidia-nemotron-3-5-bolt-74b-a9b-24gb-local-agent-model-2026-10-15",
+      "date": "2026-10-15",
+      "announcedAt": "2026-10-15",
+      "coveredAt": "2026-10-15",
+      "verifiedAt": "2026-10-15",
+      "articleVersion": 2,
+      "company": "NVIDIA",
+      "product": "Nemotron 3.5 Bolt 74B-A9B 24GB",
+      "title": "NVIDIA publica Nemotron 3.5 Bolt: 74B parámetros comprimidos en 24 GB para agentes locales",
+      "summary": "NVIDIA lanzó Nemotron 3.5 Bolt 74B-A9B, un modelo multimodal con 74.000 millones de parámetros totales, 9.000 millones activos y cuantización nativa de dos bits para una huella de 24 GB. El modelo ya tiene ficha y pesos; la variante E4B de 4 GB está anunciada para el 23 de octubre.",
+      "tags": [
+        "NVIDIA",
+        "Nemotron",
+        "Modelos locales",
+        "RTX",
+        "Agentes",
+        "Multimodal"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual sobre modelos de IA y agentes; no fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia 3:2 de un computador de escritorio ejecutando agentes locales, con módulos de memoria y un pequeño asistente mecánico; evitar mostrar pantallas, resultados de benchmarks o hardware no documentado como fotografías.",
+      "source": {
+        "name": "NVIDIA · ficha oficial Nemotron 3.5 Bolt",
+        "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
+        "publishedAt": "2026-10-15"
+      },
+      "relatedSources": [
+        {
+          "name": "NVIDIA Blog · familia Super VL y Bolt",
+          "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+        }
+      ],
+      "body": [
+        "El 15 de octubre NVIDIA puso a disposición Nemotron 3.5 Bolt 74B-A9B 24GB, un modelo de la familia Nemotron pensado para agentes que trabajan en equipos locales. La compañía propone tareas de investigación, programación y depuración sin enviar necesariamente todo el flujo a un servicio remoto. El hecho relevante es la disponibilidad de pesos y una configuración concreta de memoria, no un anuncio de un nuevo ordenador.",
+        "Bolt complementa a Super VL: mientras este último apunta a cargas multimodales grandes, Bolt prioriza la relación entre capacidad y memoria. NVIDIA anunció además Bolt E4B, una variante de cuatro gigabytes orientada a conversación y dispositivos integrados, con fecha prevista para el 23 de octubre. No debe confundirse una fecha futura de esa variante con la disponibilidad actual del modelo de 74B.",
+        "La ficha describe 74.000 millones de parámetros totales y 9.000 millones activos por token. Su arquitectura híbrida Mamba-2 y Transformer con expertos latentes reduce el trabajo realizado en cada paso. La cuantización nativa de dos bits comprime los pesos hasta una huella declarada de 24 GB, con entrenamiento consciente de cuantización para reducir pérdidas de calidad frente a comprimir después un modelo ya entrenado.",
+        "Esa cifra corresponde al paquete de pesos descrito, no a una promesa de que el proceso completo consuma exactamente 24 GB en cualquier entorno. La caché de atención, los buffers, las entradas visuales y el runtime pueden requerir memoria adicional. Por ello conviene comprobar la capacidad utilizable de la GPU, el soporte del motor y el tamaño del contexto antes de afirmar que un ordenador específico puede ejecutarlo con fluidez.",
+        "Bolt admite entradas de texto, imágenes y vídeo, y genera texto. NVIDIA documenta una ventana de hasta 256.000 tokens, inferior al máximo anunciado para Super VL. El codificador visual C-RADIO permite analizar material gráfico y secuencias, con límites de duración y muestreo para vídeo descritos en la ficha. Esas capacidades son relevantes para agentes que reciben capturas, manuales o clips, pero no sustituyen verificaciones sobre errores perceptivos.",
+        "El modelo admite uso de herramientas y un modo de razonamiento controlable mediante plantilla de conversación. Su valor para un asistente local dependerá de cómo el software gestione permisos, memoria, historial y fallos de herramientas. Un modelo con visión no obtiene automáticamente acceso al escritorio: esa capacidad exige un integrador que controle qué aplicaciones puede abrir y qué acciones requieren autorización.",
+        "NVIDIA presenta Bolt como una opción eficiente y destaca posiciones en PinchBench y BrowseComp para su categoría. Son comparaciones promocionadas por el proveedor y sujetas a las reglas de cada prueba. Una puntuación de navegación o de uso de herramientas no demuestra seguridad ni calidad general en todas las tareas. La evaluación práctica debería incluir intentos fallidos, recuperación y consistencia tras múltiples pasos.",
+        "La ficha enumera hardware de prueba y requisitos de versiones de software. El rendimiento publicado no puede extrapolarse sin más desde un acelerador de centro de datos a un portátil o GPU de consumo. Conviene medir tokens por segundo, tiempo hasta primera respuesta, memoria pico y porcentaje de tareas completadas, porque cada métrica refleja un cuello de botella distinto.",
+        "Los pesos de Bolt 74B-A9B están publicados en Hugging Face con licencia OpenMDW 1.1 para usos comerciales y no comerciales conforme a sus términos. NVIDIA menciona integraciones o rutas de ejecución mediante llama.cpp, Ollama, LM Studio, Unsloth y vLLM. La existencia de soporte anunciado no implica que todas las versiones y sistemas operativos funcionen igual desde el primer día.",
+        "No se anunció una tarifa universal para descargar y usar el modelo. El coste real puede incluir adquisición de hardware, electricidad, mantenimiento, cuantización y almacenamiento. Ejecutarlo localmente reduce dependencia de llamadas a una API, pero también traslada al usuario tareas de actualización, seguridad y monitoreo. No hay que confundir modelo descargable con servicio gestionado gratuito.",
+        "La relevancia de Bolt está en llevar modelos relativamente grandes a entornos con memoria más limitada mediante una combinación de expertos y cuantización. Para pequeñas empresas y desarrolladores, la posibilidad de operar cerca de los datos puede cambiar la economía de ciertos agentes repetitivos. Sin embargo, el ahorro solo existe si la calidad y el coste total de ejecución superan a las alternativas remotas o más pequeñas.",
+        "Una prueba razonable comienza con un flujo concreto, como leer documentación interna y proponer cambios sin ejecutarlos, seguido de mediciones comparables con otro modelo local. Se deben comprobar compatibilidad del runtime, calidad en español, robustez ante instrucciones maliciosas en documentos y funcionamiento con 24 GB disponibles. Habrá que seguir el lanzamiento de E4B y los resultados independientes en equipos reales."
+      ],
+      "keyPoints": [
+        "Bolt 74B-A9B combina 74B parámetros totales con 9B activos y pesos de 24 GB.",
+        "Acepta texto, imágenes y vídeo; produce texto y anuncia contexto de hasta 256K tokens.",
+        "El modelo 74B está disponible; Bolt E4B de 4 GB fue anunciado para el 23 de octubre."
+      ],
+      "quickTakeaways": [
+        "Bolt 74B-A9B combina 74B parámetros totales con 9B activos y pesos de 24 GB.",
+        "Acepta texto, imágenes y vídeo; produce texto y anuncia contexto de hasta 256K tokens.",
+        "El modelo 74B está disponible; Bolt E4B de 4 GB fue anunciado para el 23 de octubre.",
+        "24 GB de pesos no garantizan funcionamiento sin memoria adicional ni latencia específica."
+      ],
+      "executiveSummary": "El 15 de octubre NVIDIA puso a disposición Nemotron 3.5 Bolt 74B-A9B 24GB, un modelo de la familia Nemotron pensado para agentes que trabajan en equipos locales. La compañía propone tareas de investigación, programación y depuración sin enviar necesariamente todo el flujo a un servicio remoto. El hecho relevante es la disponibilidad de pesos y una configuración concreta de memoria, no un anuncio de un nuevo ordenador.",
+      "sections": [
+        {
+          "heading": "Lanzamiento y objetivo",
+          "kind": "report",
+          "paragraphs": [
+            "El 15 de octubre NVIDIA puso a disposición Nemotron 3.5 Bolt 74B-A9B 24GB, un modelo de la familia Nemotron pensado para agentes que trabajan en equipos locales. La compañía propone tareas de investigación, programación y depuración sin enviar necesariamente todo el flujo a un servicio remoto. El hecho relevante es la disponibilidad de pesos y una configuración concreta de memoria, no un anuncio de un nuevo ordenador.",
+            "Bolt complementa a Super VL: mientras este último apunta a cargas multimodales grandes, Bolt prioriza la relación entre capacidad y memoria. NVIDIA anunció además Bolt E4B, una variante de cuatro gigabytes orientada a conversación y dispositivos integrados, con fecha prevista para el 23 de octubre. No debe confundirse una fecha futura de esa variante con la disponibilidad actual del modelo de 74B."
+          ]
+        },
+        {
+          "heading": "Cómo caben 74B parámetros",
+          "kind": "report",
+          "paragraphs": [
+            "La ficha describe 74.000 millones de parámetros totales y 9.000 millones activos por token. Su arquitectura híbrida Mamba-2 y Transformer con expertos latentes reduce el trabajo realizado en cada paso. La cuantización nativa de dos bits comprime los pesos hasta una huella declarada de 24 GB, con entrenamiento consciente de cuantización para reducir pérdidas de calidad frente a comprimir después un modelo ya entrenado.",
+            "Esa cifra corresponde al paquete de pesos descrito, no a una promesa de que el proceso completo consuma exactamente 24 GB en cualquier entorno. La caché de atención, los buffers, las entradas visuales y el runtime pueden requerir memoria adicional. Por ello conviene comprobar la capacidad utilizable de la GPU, el soporte del motor y el tamaño del contexto antes de afirmar que un ordenador específico puede ejecutarlo con fluidez."
+          ]
+        },
+        {
+          "heading": "Modalidades y contexto",
+          "kind": "report",
+          "paragraphs": [
+            "Bolt admite entradas de texto, imágenes y vídeo, y genera texto. NVIDIA documenta una ventana de hasta 256.000 tokens, inferior al máximo anunciado para Super VL. El codificador visual C-RADIO permite analizar material gráfico y secuencias, con límites de duración y muestreo para vídeo descritos en la ficha. Esas capacidades son relevantes para agentes que reciben capturas, manuales o clips, pero no sustituyen verificaciones sobre errores perceptivos.",
+            "El modelo admite uso de herramientas y un modo de razonamiento controlable mediante plantilla de conversación. Su valor para un asistente local dependerá de cómo el software gestione permisos, memoria, historial y fallos de herramientas. Un modelo con visión no obtiene automáticamente acceso al escritorio: esa capacidad exige un integrador que controle qué aplicaciones puede abrir y qué acciones requieren autorización."
+          ]
+        },
+        {
+          "heading": "Pruebas y afirmaciones",
+          "kind": "report",
+          "paragraphs": [
+            "NVIDIA presenta Bolt como una opción eficiente y destaca posiciones en PinchBench y BrowseComp para su categoría. Son comparaciones promocionadas por el proveedor y sujetas a las reglas de cada prueba. Una puntuación de navegación o de uso de herramientas no demuestra seguridad ni calidad general en todas las tareas. La evaluación práctica debería incluir intentos fallidos, recuperación y consistencia tras múltiples pasos.",
+            "La ficha enumera hardware de prueba y requisitos de versiones de software. El rendimiento publicado no puede extrapolarse sin más desde un acelerador de centro de datos a un portátil o GPU de consumo. Conviene medir tokens por segundo, tiempo hasta primera respuesta, memoria pico y porcentaje de tareas completadas, porque cada métrica refleja un cuello de botella distinto."
+          ]
+        },
+        {
+          "heading": "Acceso, licencia y coste",
+          "kind": "report",
+          "paragraphs": [
+            "Los pesos de Bolt 74B-A9B están publicados en Hugging Face con licencia OpenMDW 1.1 para usos comerciales y no comerciales conforme a sus términos. NVIDIA menciona integraciones o rutas de ejecución mediante llama.cpp, Ollama, LM Studio, Unsloth y vLLM. La existencia de soporte anunciado no implica que todas las versiones y sistemas operativos funcionen igual desde el primer día.",
+            "No se anunció una tarifa universal para descargar y usar el modelo. El coste real puede incluir adquisición de hardware, electricidad, mantenimiento, cuantización y almacenamiento. Ejecutarlo localmente reduce dependencia de llamadas a una API, pero también traslada al usuario tareas de actualización, seguridad y monitoreo. No hay que confundir modelo descargable con servicio gestionado gratuito."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y siguientes pruebas",
+          "kind": "analysis",
+          "paragraphs": [
+            "La relevancia de Bolt está en llevar modelos relativamente grandes a entornos con memoria más limitada mediante una combinación de expertos y cuantización. Para pequeñas empresas y desarrolladores, la posibilidad de operar cerca de los datos puede cambiar la economía de ciertos agentes repetitivos. Sin embargo, el ahorro solo existe si la calidad y el coste total de ejecución superan a las alternativas remotas o más pequeñas.",
+            "Una prueba razonable comienza con un flujo concreto, como leer documentación interna y proponer cambios sin ejecutarlos, seguido de mediciones comparables con otro modelo local. Se deben comprobar compatibilidad del runtime, calidad en español, robustez ante instrucciones maliciosas en documentos y funcionamiento con 24 GB disponibles. Habrá que seguir el lanzamiento de E4B y los resultados independientes en equipos reales."
+          ]
+        }
+      ],
+      "analysis": "Bolt acerca los modelos agénticos multimodales a hardware local, pero el coste y la calidad de un flujo completo determinarán si desplaza servicios remotos.",
+      "watch": "Compatibilidad de motores locales, mediciones independientes, licencia aplicada en productos y lanzamiento de Bolt E4B.",
+      "availability": {
+        "status": "Bolt 74B-A9B disponible desde el 15 de octubre; Bolt E4B anunciado para el 23 de octubre de 2026",
+        "platforms": [
+          "Hugging Face",
+          "RTX / DGX Spark y estaciones compatibles",
+          "Runtimes locales anunciados por NVIDIA"
+        ],
+        "regions": [],
+        "requirements": [
+          "24 GB de pesos más memoria adicional según runtime",
+          "Revisar soporte de GPU, drivers y licencia OpenMDW 1.1"
+        ],
+        "notes": [
+          "Contexto máximo documentado de 256K tokens."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Pesos",
+          "value": "Disponibles bajo licencia OpenMDW 1.1"
+        },
+        {
+          "label": "Coste total",
+          "value": "Hardware y operación variables; sin tarifa única"
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Parámetros",
+          "value": "74B totales / 9B activos"
+        },
+        {
+          "label": "Memoria de pesos",
+          "value": "24 GB (IQ2, cuantización de 2 bits)"
+        },
+        {
+          "label": "Contexto máximo",
+          "value": "Hasta 256K tokens"
+        },
+        {
+          "label": "Entrada y salida",
+          "value": "Texto, imagen y vídeo → texto"
+        }
+      ],
+      "limitations": [
+        "24 GB es la huella declarada de pesos, no necesariamente memoria total del proceso.",
+        "Clasificaciones de benchmarks atribuidas al fabricante.",
+        "Bolt E4B no estaba publicado el 15 de octubre."
+      ],
+      "practicalAdvice": [
+        "Verificar memoria real con la longitud de contexto prevista.",
+        "Comparar resultados de un flujo local completo, no solo tokens por segundo."
+      ],
+      "finalSummary": "Bolt 74B-A9B está disponible como modelo local comprimido; su promesa de eficiencia debe comprobarse en hardware y tareas concretas."
+    },
+    {
+      "id": "multiverse-computing-comet-60b-2026",
+      "eventKey": "multiverse-computing-comet-60b-nemotron-compression-multimodal-2026-10-15",
+      "date": "2026-10-15",
+      "announcedAt": "2026-10-15",
+      "coveredAt": "2026-10-15",
+      "verifiedAt": "2026-10-15",
+      "articleVersion": 2,
+      "company": "Multiverse Computing",
+      "product": "Comet 60B",
+      "title": "Multiverse Computing anuncia Comet 60B: reduce a la mitad los parámetros de Nemotron Super VL",
+      "summary": "Multiverse Computing presentó Comet 60B, una adaptación comprimida de NVIDIA Nemotron 3.5 Super VL que conserva 12B parámetros activos y admite texto, imagen y vídeo. La compañía declara resultados próximos al original y disponibilidad en BF16, FP8 y NVFP4; las comparaciones proceden del propio fabricante.",
+      "tags": [
+        "Multiverse Computing",
+        "Comet",
+        "Compresión",
+        "Modelos abiertos",
+        "NVIDIA",
+        "Multimodal"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual sobre infraestructura tecnológica; no fotografía documental.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado sepia 3:2 de una estructura de cálculo densa que se convierte en otra compacta sin perder conexiones esenciales, junto a iconos abstractos de texto, imagen y vídeo; evitar cifras gráficas ficticias.",
+      "source": {
+        "name": "Multiverse Computing · comunicado distribuido por GlobeNewswire",
+        "url": "https://www.globenewswire.com/news-release/2026/10/15/3381915/0/en/multiverse-computing-launches-comet-60b-in-collaboration-with-nvidia-multimodal-capabilities-at-half-the-parameters.html",
+        "publishedAt": "2026-10-15"
+      },
+      "relatedSources": [
+        {
+          "name": "NVIDIA · modelo original Nemotron 3.5 Super VL",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16"
+        }
+      ],
+      "body": [
+        "Multiverse Computing anunció el 15 de octubre de 2026 Comet 60B, una versión comprimida de Nemotron 3.5 Super VL desarrollada en colaboración con NVIDIA. El proyecto parte de un modelo de 120.000 millones de parámetros totales y 12.000 millones activos, y reduce el total a 60.000 millones sin cambiar la cifra de parámetros activos por token. Mantiene las modalidades de texto, imagen y vídeo declaradas por la compañía.",
+        "La noticia es material porque la memoria necesaria para cargar pesos grandes suele limitar dónde puede ejecutarse un modelo. Una versión más pequeña puede ampliar las opciones de infraestructura y reducir costes de almacenamiento o transferencia. No obstante, el ahorro de memoria no equivale automáticamente a ahorro proporcional de latencia, energía o facturación: esos resultados dependen de la implementación, el hardware y el patrón de uso.",
+        "La empresa atribuye Comet a su tecnología CompactifAI. Según el comunicado, comienza con un análisis basado en redes tensoriales para localizar redundancia, continúa con la eliminación selectiva de componentes y aplica una fase de recuperación de capacidades, denominada healing. Después incorpora entrenamiento por refuerzo de estilo GRPO para mejorar determinadas tareas conversacionales y de razonamiento.",
+        "El proceso descrito combina reducción estructural y entrenamiento adicional, no una simple conversión de precisión numérica. Como paso final, Multiverse ofrece formatos BF16, FP8 y NVFP4 para ajustar memoria y rendimiento. Es importante distinguir ambos mecanismos: recortar parámetros altera la estructura y la capacidad del modelo; cuantizar representa sus pesos con menos bits. Cada variante debe evaluarse por separado.",
+        "Multiverse sostiene que Comet conserva una precisión cercana a la del original, dentro de un margen de cinco por ciento en diversas pruebas, y que mejora en algunos benchmarks. Publica, por ejemplo, GPQA Diamond de 88,57 frente a 90,40 para el modelo base, y SWE-bench Pro de 51,48 frente a 52,44. Son cifras comunicadas por el proveedor; la metodología y el conjunto de pruebas importan para interpretarlas.",
+        "La empresa también informa mejoras en telecomunicaciones de τ²-Bench y en ciertas pruebas visuales, mientras reconoce diferencias en otros apartados. No es correcto convertir esos resultados en una afirmación de superioridad general. Los benchmarks combinan tareas, versiones y configuraciones particulares, y no demuestran por sí solos que un agente empresarial vaya a cometer menos errores o terminar trabajos más rápido.",
+        "El comunicado declara disponibilidad en Hugging Face para BF16, FP8 y NVFP4 desde el día del anuncio. Durante esta revisión no se corroboraron de forma independiente todas las fichas de descarga de las tres variantes, por lo que conviene comprobar su existencia, tamaño, licencia y requisitos antes de planificar un despliegue. Tampoco se publicó una tarifa comercial única aplicable a cualquier infraestructura.",
+        "La documentación promocional menciona soporte de texto, imágenes y vídeo, pero los límites operativos pueden variar por variante. No debe extrapolarse sin prueba el contexto máximo del Nemotron original a Comet. Las necesidades reales de memoria incluyen cachés, activaciones y concurrencia; una configuración cuantizada puede ahorrar mucho espacio, pero exigir motores específicos y afectar calidad en algunas tareas.",
+        "Para desarrolladores, Comet ofrece una hipótesis atractiva: conservar gran parte de las capacidades de un modelo multimodal mientras se despliega en menos GPU o con mayor densidad por servidor. Es especialmente relevante en empresas que necesitan procesar documentos sensibles dentro de su red. La reducción de tamaño también puede facilitar experimentar con modelos de visión que antes quedaban fuera del presupuesto.",
+        "Pero el beneficio práctico no se determina por la cifra de parámetros totales. Un modelo de mezcla de expertos activa solo parte de ellos en cada token, y el ancho de banda, el coste de cargar pesos y la ejecución de los expertos influyen en la experiencia. El equipo comprador debe calcular coste por tarea correctamente resuelta, no únicamente coste por token o por gigabyte de modelo.",
+        "La compresión de modelos de frontera se está convirtiendo en una capa competitiva propia. Compañías especializadas pueden añadir valor a pesos publicados por terceros sin entrenar desde cero un modelo del mismo tamaño. En este caso, la relación con NVIDIA y el acceso temprano explican cómo una variante comprimida pudo anunciarse junto con el modelo base. El resultado todavía necesita contraste externo para establecer ventajas reproducibles.",
+        "Antes de migrar una aplicación conviene ejecutar pruebas A/B sobre documentos y vídeos reales, revisar licencias del derivado y del modelo original, y medir al menos exactitud, memoria pico, latencia y coste. Habrá que observar repositorios verificables, fichas técnicas completas, evaluaciones de terceros y compatibilidad de las variantes. La promesa es eficiencia multimodal, no equivalencia garantizada en todos los escenarios."
+      ],
+      "keyPoints": [
+        "Comet 60B reduce parámetros totales de 120B a 60B, manteniendo 12B activos por token.",
+        "El fabricante afirma resultados a menos de 5% del original en varias pruebas, con mejoras puntuales.",
+        "Se anunciaron pesos BF16, FP8 y NVFP4; la disponibilidad declarada requiere verificar archivos y licencia de cada variante."
+      ],
+      "quickTakeaways": [
+        "Comet 60B reduce parámetros totales de 120B a 60B, manteniendo 12B activos por token.",
+        "El fabricante afirma resultados a menos de 5% del original en varias pruebas, con mejoras puntuales.",
+        "Se anunciaron pesos BF16, FP8 y NVFP4; la disponibilidad declarada requiere verificar archivos y licencia de cada variante.",
+        "Menos parámetros reduce memoria de pesos, pero no implica automáticamente la mitad del coste total."
+      ],
+      "executiveSummary": "Multiverse Computing anunció el 15 de octubre de 2026 Comet 60B, una versión comprimida de Nemotron 3.5 Super VL desarrollada en colaboración con NVIDIA. El proyecto parte de un modelo de 120.000 millones de parámetros totales y 12.000 millones activos, y reduce el total a 60.000 millones sin cambiar la cifra de parámetros activos por token. Mantiene las modalidades de texto, imagen y vídeo declaradas por la compañía.",
+      "sections": [
+        {
+          "heading": "Anuncio y procedencia",
+          "kind": "report",
+          "paragraphs": [
+            "Multiverse Computing anunció el 15 de octubre de 2026 Comet 60B, una versión comprimida de Nemotron 3.5 Super VL desarrollada en colaboración con NVIDIA. El proyecto parte de un modelo de 120.000 millones de parámetros totales y 12.000 millones activos, y reduce el total a 60.000 millones sin cambiar la cifra de parámetros activos por token. Mantiene las modalidades de texto, imagen y vídeo declaradas por la compañía.",
+            "La noticia es material porque la memoria necesaria para cargar pesos grandes suele limitar dónde puede ejecutarse un modelo. Una versión más pequeña puede ampliar las opciones de infraestructura y reducir costes de almacenamiento o transferencia. No obstante, el ahorro de memoria no equivale automáticamente a ahorro proporcional de latencia, energía o facturación: esos resultados dependen de la implementación, el hardware y el patrón de uso."
+          ]
+        },
+        {
+          "heading": "Proceso de compresión",
+          "kind": "technical",
+          "paragraphs": [
+            "La empresa atribuye Comet a su tecnología CompactifAI. Según el comunicado, comienza con un análisis basado en redes tensoriales para localizar redundancia, continúa con la eliminación selectiva de componentes y aplica una fase de recuperación de capacidades, denominada healing. Después incorpora entrenamiento por refuerzo de estilo GRPO para mejorar determinadas tareas conversacionales y de razonamiento.",
+            "El proceso descrito combina reducción estructural y entrenamiento adicional, no una simple conversión de precisión numérica. Como paso final, Multiverse ofrece formatos BF16, FP8 y NVFP4 para ajustar memoria y rendimiento. Es importante distinguir ambos mecanismos: recortar parámetros altera la estructura y la capacidad del modelo; cuantizar representa sus pesos con menos bits. Cada variante debe evaluarse por separado."
+          ]
+        },
+        {
+          "heading": "Resultados que afirma la empresa",
+          "kind": "report",
+          "paragraphs": [
+            "Multiverse sostiene que Comet conserva una precisión cercana a la del original, dentro de un margen de cinco por ciento en diversas pruebas, y que mejora en algunos benchmarks. Publica, por ejemplo, GPQA Diamond de 88,57 frente a 90,40 para el modelo base, y SWE-bench Pro de 51,48 frente a 52,44. Son cifras comunicadas por el proveedor; la metodología y el conjunto de pruebas importan para interpretarlas.",
+            "La empresa también informa mejoras en telecomunicaciones de τ²-Bench y en ciertas pruebas visuales, mientras reconoce diferencias en otros apartados. No es correcto convertir esos resultados en una afirmación de superioridad general. Los benchmarks combinan tareas, versiones y configuraciones particulares, y no demuestran por sí solos que un agente empresarial vaya a cometer menos errores o terminar trabajos más rápido."
+          ]
+        },
+        {
+          "heading": "Disponibilidad y límites técnicos",
+          "kind": "report",
+          "paragraphs": [
+            "El comunicado declara disponibilidad en Hugging Face para BF16, FP8 y NVFP4 desde el día del anuncio. Durante esta revisión no se corroboraron de forma independiente todas las fichas de descarga de las tres variantes, por lo que conviene comprobar su existencia, tamaño, licencia y requisitos antes de planificar un despliegue. Tampoco se publicó una tarifa comercial única aplicable a cualquier infraestructura.",
+            "La documentación promocional menciona soporte de texto, imágenes y vídeo, pero los límites operativos pueden variar por variante. No debe extrapolarse sin prueba el contexto máximo del Nemotron original a Comet. Las necesidades reales de memoria incluyen cachés, activaciones y concurrencia; una configuración cuantizada puede ahorrar mucho espacio, pero exigir motores específicos y afectar calidad en algunas tareas."
+          ]
+        },
+        {
+          "heading": "Qué cambia para los usuarios",
+          "kind": "report",
+          "paragraphs": [
+            "Para desarrolladores, Comet ofrece una hipótesis atractiva: conservar gran parte de las capacidades de un modelo multimodal mientras se despliega en menos GPU o con mayor densidad por servidor. Es especialmente relevante en empresas que necesitan procesar documentos sensibles dentro de su red. La reducción de tamaño también puede facilitar experimentar con modelos de visión que antes quedaban fuera del presupuesto.",
+            "Pero el beneficio práctico no se determina por la cifra de parámetros totales. Un modelo de mezcla de expertos activa solo parte de ellos en cada token, y el ancho de banda, el coste de cargar pesos y la ejecución de los expertos influyen en la experiencia. El equipo comprador debe calcular coste por tarea correctamente resuelta, no únicamente coste por token o por gigabyte de modelo."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette y seguimiento",
+          "kind": "analysis",
+          "paragraphs": [
+            "La compresión de modelos de frontera se está convirtiendo en una capa competitiva propia. Compañías especializadas pueden añadir valor a pesos publicados por terceros sin entrenar desde cero un modelo del mismo tamaño. En este caso, la relación con NVIDIA y el acceso temprano explican cómo una variante comprimida pudo anunciarse junto con el modelo base. El resultado todavía necesita contraste externo para establecer ventajas reproducibles.",
+            "Antes de migrar una aplicación conviene ejecutar pruebas A/B sobre documentos y vídeos reales, revisar licencias del derivado y del modelo original, y medir al menos exactitud, memoria pico, latencia y coste. Habrá que observar repositorios verificables, fichas técnicas completas, evaluaciones de terceros y compatibilidad de las variantes. La promesa es eficiencia multimodal, no equivalencia garantizada en todos los escenarios."
+          ]
+        }
+      ],
+      "analysis": "Comet muestra que la optimización posterior de pesos abiertos puede ser un mercado independiente, aunque la eficiencia real depende de la calidad recuperada y del coste de servir cada tarea.",
+      "watch": "Publicación comprobable de cada variante, licencias, evaluación independiente y mediciones de memoria/latencia.",
+      "availability": {
+        "status": "Disponibilidad BF16, FP8 y NVFP4 anunciada por Multiverse el 15 de octubre; revisar repositorios de descarga",
+        "platforms": [
+          "Hugging Face (según comunicado)"
+        ],
+        "regions": [],
+        "requirements": [
+          "Comprobar pesos, licencia, runtime y memoria de cada formato"
+        ],
+        "notes": [
+          "No se verificó independientemente el inventario completo de archivos de las tres variantes."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio",
+          "value": "Sin tarifa universal divulgada"
+        },
+        {
+          "label": "Costes de inferencia",
+          "value": "Ahorros potenciales afirmados por el proveedor; no cuantificados universalmente"
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Parámetros",
+          "value": "60B totales / 12B activos"
+        },
+        {
+          "label": "Modelo de origen",
+          "value": "NVIDIA Nemotron 3.5 Super VL"
+        },
+        {
+          "label": "Modalidades",
+          "value": "Texto, imagen y vídeo"
+        },
+        {
+          "label": "Formatos anunciados",
+          "value": "BF16, FP8 y NVFP4"
+        }
+      ],
+      "limitations": [
+        "Las cifras de benchmarks proceden del fabricante.",
+        "No se corroboró el inventario completo de variantes en Hugging Face.",
+        "La reducción de parámetros no garantiza igual calidad ni coste proporcional."
+      ],
+      "practicalAdvice": [
+        "Comprobar fichas y licencias antes de descargar pesos.",
+        "Comparar con Nemotron original bajo hardware, contexto y evaluación idénticos."
+      ],
+      "finalSummary": "Comet 60B promete aproximarse a Nemotron Super VL con la mitad de parámetros totales; la prueba definitiva será reproducir su calidad y coste."
     },
     {
       "date": "2026-10-15",
@@ -35706,7 +36386,7 @@
     {
       "date": "2026-10-15",
       "status": "partial",
-      "verifiedArticles": 7
+      "verifiedArticles": 11
     }
   ]
 }
