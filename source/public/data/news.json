@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T10:16:19.000Z",
+  "updatedAt": "2026-10-15T14:16:46.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -30572,17 +30572,21 @@
       "announcedAt": "2026-09-03",
       "company": "NVIDIA",
       "product": "Personal AI Router (PAIR)",
-      "title": "NVIDIA presenta PAIR para repartir IA local entre varios equipos",
-      "summary": "NVIDIA presentó Personal AI Router (PAIR) como una beta gratuita y de código abierto que descubre PCs compatibles en una red local y reparte solicitudes de inferencia independientes. No une sus memorias GPU en una sola GPU virtual; ayuda a ejecutar varias tareas de agentes en paralelo.",
+      "title": "NVIDIA PAIR sale de beta: la versión 1.0 añade llama.cpp y conecta agentes locales entre PCs",
+      "summary": "NVIDIA lanzó PAIR en beta el 3 de septiembre y publicó la versión 1.0 el 13 de octubre de 2026. El router gratuito suma llama.cpp, modelos GGUF y RTX Spark; reparte solicitudes independientes entre equipos, pero no fusiona memorias GPU.",
       "tags": [
         "Infraestructura",
         "Modelos",
-        "Código abierto"
+        "Código abierto",
+        "Agentes",
+        "llama.cpp",
+        "Inferencia local",
+        "RTX Spark"
       ],
       "image": "assets/hero.webp",
       "imageAlt": "Grabado editorial de un humanoide mecánico junto a un globo",
       "imageCredit": "Ilustración editorial generada con IA; no es una fotografía del anuncio.",
-      "verifiedAt": "2026-10-11",
+      "verifiedAt": "2026-10-15",
       "coveredAt": "2026-10-11",
       "source": {
         "name": "NVIDIA · anuncio oficial",
@@ -30590,25 +30594,52 @@
         "publishedAt": "2026-09-03"
       },
       "body": [
-        "NVIDIA presentó Personal AI Router, o PAIR, como software gratuito y open source para repartir cargas de inferencia entre varios equipos locales.",
-        "La beta anunciada contempla Windows, macOS y Linux y busca aprovechar memoria y cómputo distribuido sin enviar cada tarea a la nube."
+        "NVIDIA presentó Personal AI Router (PAIR) como beta gratuita y de código abierto el 3 de septiembre de 2026. El 13 de octubre publicó la versión 1.0.0, que incorpora llama.cpp, descarga de modelos GGUF desde Hugging Face, opciones de configuración de motores y soporte validado para RTX Spark N1X.",
+        "PAIR conecta equipos compatibles en una red local y distribuye solicitudes de inferencia independientes. No fusiona memorias GPU ni divide una única petición entre varios dispositivos. La versión 1.0 mejora la observabilidad mediante una consola con vista Jobs, aunque su utilidad y privacidad dependen de la configuración real de motores, agentes y red."
       ],
       "keyPoints": [
-        "Router local de inferencia.",
-        "Beta multiplataforma.",
-        "Diseñado para coordinar varios equipos."
+        "PAIR 1.0 salió de beta el 13 de octubre; se conserva el ID del anuncio original de septiembre.",
+        "Ahora integra llama.cpp, descarga GGUF desde Hugging Face y soporte validado para RTX Spark N1X.",
+        "Cada petición se ejecuta en un solo nodo: PAIR no fusiona VRAM ni reparte una inferencia entre máquinas."
       ],
-      "analysis": "La agregación de recursos locales puede hacer útiles modelos mayores sin comprar una única estación extremadamente cara.",
-      "watch": "Rendimiento sobre redes domésticas y soporte para hardware heterogéneo.",
+      "analysis": "Análisis Gazette: PAIR 1.0 facilita orquestar inferencia local entre máquinas, pero su beneficio depende de solicitudes concurrentes y de la observabilidad, no de sumar memorias GPU.",
+      "watch": "Estabilidad de PAIR 1.0, compatibilidad Windows ARM, políticas CORS, rendimiento independiente y soporte de más motores.",
       "articleVersion": 2,
       "quickTakeaways": [
-        "PAIR distribuye solicitudes de inferencia autónomas entre ordenadores disponibles en una red local.",
-        "La beta anunciada el 3 de septiembre admite Windows, macOS y Linux, pero solo determinados equipos y aceleradores.",
-        "Según NVIDIA, funciona con servidores Ollama y LM Studio; las máquinas pueden incorporarse y retirarse dinámicamente.",
-        "El aumento de velocidad de hasta 1,9 veces de la misma nota corresponde a optimizaciones llama.cpp, no a una prueba de PAIR."
+        "NVIDIA publicó PAIR 1.0.0 el 13 de octubre, tras la beta anunciada el 3 de septiembre.",
+        "El router administra Ollama, LM Studio y llama.cpp; puede descargar modelos GGUF y ajustar parámetros de motor.",
+        "Los trabajos independientes se enrutan entre nodos, pero la memoria GPU de varias máquinas no se suma.",
+        "El software es gratuito y abierto; cada motor/modelo mantiene sus propios requisitos de hardware.",
+        "Los clientes web pueden necesitar ajustes CORS al actualizar y Windows on ARM sigue marcado como experimental."
       ],
-      "executiveSummary": "NVIDIA presentó Personal AI Router (PAIR) como una beta gratuita y de código abierto que descubre PCs compatibles en una red local y reparte solicitudes de inferencia independientes. No une sus memorias GPU en una sola GPU virtual; ayuda a ejecutar varias tareas de agentes en paralelo. La investigación editorial separa disponibilidad, arquitectura, limitaciones y métricas del proveedor de una validación independiente.",
+      "executiveSummary": "PAIR pasó de beta a versión 1.0 el 13 de octubre de 2026. NVIDIA amplió su router de inferencia local con llama.cpp, descargas GGUF, ajustes de motor, compatibilidad validada con RTX Spark N1X y una consola más útil para observar trabajos. La herramienta permite distribuir solicitudes de agentes entre PCs de una misma red, no fusionar VRAM ni acelerar cualquier modelo por defecto. La noticia conserva el identificador y fecha del anuncio inicial de septiembre, documentando la nueva disponibilidad en su cronología.",
       "sections": [
+        {
+          "heading": "Actualización de octubre: de la beta a PAIR 1.0",
+          "kind": "report",
+          "paragraphs": [
+            "El 3 de septiembre de 2026 NVIDIA presentó PAIR como beta de código abierto. El 13 de octubre publicó PAIR 1.0.0, un cambio material de disponibilidad y capacidades confirmado tanto por el comunicado del fabricante como por la versión firmada en GitHub. Esta página conserva la fecha, el ID y el eventKey originales para no fragmentar la cronología del mismo producto. La nueva versión incorpora soporte para llama.cpp, opciones para configurar el arranque de motores, una experiencia de terminal revisada y compatibilidad validada con el chip RTX Spark N1X. Los instaladores ya están disponibles; no se trata de una promesa de acceso futuro.",
+            "El router ahora puede instalar y administrar tres motores conocidos: Ollama, LM Studio y llama.cpp. Con este último permite buscar y descargar modelos GGUF compatibles desde Hugging Face, elegir argumentos de ejecución y distribuir solicitudes a equipos emparejados. Los puntos de acceso locales contemplan formatos Ollama, OpenAI y Anthropic Messages según el motor. Esto facilita usar clientes y agentes diferentes sin tener que decidir manualmente en cada uno qué PC ejecutará el modelo. No significa que todos los motores admitan cualquier modelo o función; la compatibilidad se comprueba por motor, versión y equipo.",
+            "La versión 1.0 también reorganiza la interfaz de terminal para administrar nodos, motores y modelos, e incorpora una vista Jobs que permite comprobar qué máquina atendió cada petición. Esa observabilidad es esencial para un laboratorio de agentes: ver cinco subagentes en pantalla no demuestra que estén usando cinco aceleradores distintos. NVIDIA distribuye instaladores firmados para Windows, paquetes Debian para Linux y DMG para macOS, además del código abierto con licencia Apache 2.0. PAIR es gratuito, pero los costes de hardware, electricidad y mantenimiento continúan. La compañía no publicó un benchmark independiente que garantice aceleración universal."
+          ]
+        },
+        {
+          "heading": "Compatibilidad y advertencias al actualizar",
+          "kind": "technical",
+          "paragraphs": [
+            "La documentación actual cubre Windows 11, Linux y macOS, con arquitecturas x64 y ARM64. Windows on ARM sigue señalado como experimental, aunque NVIDIA validó PAIR 1.0 con llama.cpp y CUDA sobre RTX Spark N1X. La página oficial enumera GeForce RTX serie 20 o posterior, DGX Spark, RTX Spark y equipos Mac M1 o posteriores como configuraciones validadas; especifica 4 GB de RAM mínimos y recomienda 500 MB de almacenamiento sin contar los modelos. La instalación del router no cambia los requisitos de memoria y controladores de cada motor o modelo. Un equipo con PAIR instalado puede no estar en condiciones de atender una petición concreta.",
+            "Las máquinas se conectan en una red local mediante emparejamiento y un código de seis dígitos. El fabricante describe inferencia privada, pero esa condición depende de que el cliente, los modelos y las herramientas del agente permanezcan realmente locales. PAIR no impide por sí mismo que una integración use APIs externas o comparta documentos con otro servicio. Para tareas sensibles conviene verificar destinos de red, permisos, acceso a puertos y registros de las solicitudes antes de habilitar automatizaciones. Tampoco convierte dos GPUs pequeñas en una sola GPU virtual: el repositorio aclara que cada petición independiente se dirige a un nodo.",
+            "La actualización introduce una incompatibilidad práctica: los endpoints locales pasan a respetar las políticas CORS de cada motor, en lugar de aceptar todos los orígenes de navegador. Una aplicación web puede requerir autorización explícita; NVIDIA cita OLLAMA_ORIGINS para Ollama. En macOS, la aplicación pasa a llamarse NVIDIA PAIR y puede instalarse junto a la antigua PAIR.app, por lo que debe seguirse la guía de migración. Los modelos descargados se conservan, aunque instalaciones antiguas de LM Studio pueden necesitar desinstalación manual separada. Revisar estos puntos antes de actualizar evita confundir una restricción de acceso con un fallo del router."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette: cómo comprobar que sirve para agentes",
+          "kind": "analysis",
+          "paragraphs": [
+            "Análisis Gazette: PAIR 1.0 reduce la fricción de reutilizar varios ordenadores para agentes que lanzan solicitudes independientes. La mejora es más clara en concurrencia y control operativo que en el tamaño de un único modelo. La compatibilidad con llama.cpp amplía opciones de formatos y cuantización; la vista Jobs ayuda a identificar saturaciones y nodos ociosos. Para una tarea que exige más memoria que la disponible en cada equipo por separado, PAIR no resuelve el problema mediante suma automática de VRAM.",
+            "La prueba correcta es ejecutar un conjunto fijo de diez o veinte peticiones con un nodo y después con dos o tres, manteniendo iguales el modelo, los prompts y los límites de tokens. Registrar tiempo total, latencia, errores, memoria y consumo permite distinguir el efecto del enrutamiento de la diferencia de hardware. También conviene desconectar un nodo durante una prueba reversible y observar la recuperación. Quedan pendientes benchmarks independientes, estabilidad bajo cargas persistentes y evolución de la compatibilidad con motores y plataformas."
+          ]
+        },
         {
           "heading": "El anuncio de NVIDIA en IFA 2026",
           "kind": "report",
@@ -30626,7 +30657,7 @@
           ]
         },
         {
-          "heading": "Compatibilidad de la beta y requisitos anunciados",
+          "heading": "Compatibilidad anunciada en septiembre: contexto histórico de la beta",
           "kind": "report",
           "paragraphs": [
             "La información oficial identifica interfaces gráficas y de terminal para Windows, macOS y Linux. Entre las plataformas compatibles figuran GPU GeForce RTX serie 20 o posteriores, tarjetas profesionales NVIDIA RTX PRO basadas en Turing o generaciones siguientes, NVIDIA DGX Spark y máquinas Apple con silicio M4 o posterior. Que una beta sea multiplataforma no significa que cualquier equipo antiguo con conexión Wi-Fi resulte elegible. También deben confirmarse versiones de drivers, sistemas de inferencia instalados, visibilidad entre nodos y permisos de acceso al conectar máquinas reales.",
@@ -30660,47 +30691,51 @@
           ]
         }
       ],
-      "finalSummary": "PAIR ofrece un mecanismo de distribución de solicitudes independientes a modelos locales en varios PCs, con compatibilidad declarada con Ollama y LM Studio. Su beta puede mejorar concurrencia, pero no unifica automáticamente VRAM ni garantiza la cifra de aceleración anunciada para otros motores de NVIDIA.",
+      "finalSummary": "PAIR pasó de beta (3 de septiembre) a versión 1.0 (13 de octubre) con llama.cpp, descargas GGUF y una consola más útil. Su función es distribuir peticiones de agentes entre PCs locales, no fusionar VRAM. La adopción exige comprobar compatibilidad, CORS, privacidad y rendimiento real.",
       "limitations": [
-        "PAIR no convierte automáticamente varias memorias GPU en un bloque unificado capaz de cargar cualquier modelo.",
-        "Las plataformas compatibles están restringidas a hardware anunciado y requisitos del software.",
-        "La cifra hasta 1,9× de NVIDIA corresponde a optimizaciones de llama.cpp, no a un benchmark propio de PAIR.",
-        "La beta necesita evaluación de autenticación, seguridad y comportamiento frente a nodos desconectados."
+        "No suma VRAM ni divide una única inferencia entre varios PCs.",
+        "Cada motor/modelo conserva requisitos de memoria, sistema y controladores.",
+        "Windows on ARM permanece experimental.",
+        "Cambios de CORS pueden afectar clientes web existentes.",
+        "La privacidad depende de mantener todas las conexiones locales.",
+        "Sin benchmark independiente que garantice aceleración universal."
       ],
       "practicalAdvice": [
-        "Empezar con dos máquinas compatibles y tareas paralelas de baja sensibilidad.",
-        "Medir tiempo total, throughput, errores y energía frente a un único nodo.",
-        "Comprobar cifrado, autenticación, alcance de red y registros de las solicitudes transferidas.",
-        "No prometer ahorro económico ni acelerar un modelo monolítico sin mediciones de esa configuración."
+        "Consultar las notas de versión y migración antes de instalar 1.0.",
+        "Comprobar CORS y OLLAMA_ORIGINS cuando se utilicen clientes web.",
+        "Probar dos nodos con el mismo modelo y medir Jobs, latencia, errores y tiempo total.",
+        "Verificar que los agentes no envíen datos sensibles a servicios remotos.",
+        "No confundir reparto de peticiones con fusión de memorias GPU."
       ],
       "technicalDetails": [
         {
-          "label": "Fecha",
-          "value": "3 septiembre 2026"
+          "label": "Anuncio original",
+          "value": "3 de septiembre de 2026 · beta"
         },
         {
-          "label": "Producto",
-          "value": "NVIDIA Personal AI Router (PAIR)"
-        },
-        {
-          "label": "Estado",
-          "value": "Beta gratuita y código abierto"
+          "label": "Nueva disponibilidad",
+          "value": "13 de octubre de 2026 · PAIR 1.0.0"
         },
         {
           "label": "Motores",
-          "value": "Ollama y LM Studio"
+          "value": "Ollama, LM Studio y llama.cpp"
         },
         {
-          "label": "Plataformas",
-          "value": "Windows, macOS y Linux; RTX 20+, RTX PRO Turing+, DGX Spark y Apple M4+"
+          "label": "Sistemas",
+          "value": "Windows 11, Linux y macOS; x64 y ARM64 (Windows ARM experimental)"
         },
         {
-          "label": "Ensayo NVIDIA (no benchmark universal)",
-          "value": "18:00 min en un equipo frente a 8:48 min en tres nodos, cinco subagentes Hermes y Ollama"
+          "label": "Hardware validado",
+          "value": "RTX serie 20+, DGX Spark, RTX Spark, Mac M1+",
+          "note": "Los requisitos de cada motor y modelo siguen aplicando."
         },
         {
-          "label": "Emparejamiento y seguridad",
-          "value": "mDNS, confirmación manual y mTLS según NVIDIA"
+          "label": "Enrutamiento",
+          "value": "Cada petición independiente se ejecuta en un nodo; no fusiona VRAM"
+        },
+        {
+          "label": "Precio del software",
+          "value": "Gratuito; licencia Apache 2.0"
         }
       ],
       "imageStatus": "needs-specific-art",
@@ -30710,6 +30745,63 @@
           "name": "NVIDIA Technical Blog · Arquitectura y demostración PAIR",
           "url": "https://developer.nvidia.com/blog/nvidia-pair-virtual-inference-router-expands-available-compute-on-your-local-network",
           "publishedAt": "2026-09-03"
+        },
+        {
+          "name": "NVIDIA · anuncio de PAIR 1.0 en RTX Spark",
+          "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates/",
+          "publishedAt": "2026-10-13"
+        },
+        {
+          "name": "NVIDIA · página oficial PAIR 1.0",
+          "url": "https://www.nvidia.com/en-us/ai-on-rtx/personal-ai-router/",
+          "publishedAt": "2026-10-13"
+        },
+        {
+          "name": "NVIDIA · notas de versión PAIR v1.0.0",
+          "url": "https://github.com/NVIDIA/Personal-AI-Router/releases/tag/v1.0.0",
+          "publishedAt": "2026-10-13"
+        },
+        {
+          "name": "NVIDIA · repositorio y documentación PAIR",
+          "url": "https://github.com/NVIDIA/Personal-AI-Router",
+          "publishedAt": "2026-10-13"
+        }
+      ],
+      "availability": {
+        "status": "PAIR 1.0 disponible desde el 13 de octubre de 2026",
+        "platforms": [
+          "Windows 11",
+          "Linux",
+          "macOS"
+        ],
+        "regions": [
+          "Descarga pública sin restricción regional específica anunciada"
+        ],
+        "requirements": [
+          "Equipos compatibles en una misma red local",
+          "Motor/modelo soportados con suficiente memoria y controladores"
+        ],
+        "notes": [
+          "Windows on ARM experimental; RTX Spark N1X validado con llama.cpp y CUDA.",
+          "Operación local sin internet después de instalar y descargar modelos.",
+          "Los clientes web pueden necesitar cambios CORS."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "PAIR 1.0",
+          "value": "Gratuito y abierto",
+          "note": "No incluye costes de hardware, energía o servicios externos."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-03",
+          "label": "Presentación de PAIR en beta durante IFA."
+        },
+        {
+          "date": "2026-10-13",
+          "label": "Publicación de PAIR 1.0.0, llama.cpp y soporte RTX Spark."
         }
       ]
     },
