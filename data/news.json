@@ -1,8 +1,218 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T14:16:46.000Z",
+  "updatedAt": "2026-10-15T17:19:03.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
+    {
+      "id": "european-commission-raise-ai-science-enablers-2026",
+      "eventKey": "european-commission-raise-ai-science-enablers-pledges-nvidia-mistral-google-2026-10-15",
+      "date": "2026-10-15",
+      "announcedAt": "2026-10-15",
+      "coveredAt": "2026-10-15",
+      "verifiedAt": "2026-10-15",
+      "articleVersion": 2,
+      "company": "Comisión Europea",
+      "product": "RAISE · AI in Science Enablers",
+      "title": "La Comisión Europea lanza RAISE Enablers con aportes de Google, NVIDIA, Mistral y otras entidades para investigación con IA",
+      "summary": "En la cumbre de IA para la ciencia de Dublín, la Comisión Europea lanzó una iniciativa de compromisos voluntarios de recursos, modelos, cómputo y formación para investigadores. Google, NVIDIA, Mistral y otras entidades figuran entre los primeros participantes; el acceso depende de condiciones específicas todavía en desarrollo.",
+      "tags": [
+        "Unión Europea",
+        "Investigación",
+        "RAISE",
+        "Ciencia",
+        "Infraestructura",
+        "Google",
+        "NVIDIA",
+        "Mistral"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual de una red de laboratorios y centros de cómputo europeos; no muestra instalaciones reales.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia 3:2: mesa de laboratorio con microscopio, mapas de datos y circuitos, conectada simbólicamente a centros de cómputo europeos y universidades. Evitar banderas/logotipos inventados, cantidades impresas, fotos simuladas de la cumbre y representación literal de promesas como entregas completadas.",
+      "source": {
+        "name": "Comisión Europea · RAISE Pledging Initiative AI in Science Enablers",
+        "url": "https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/european-ai-science-strategy/raise-resource-ai-science-europe/raise-pledging-initiative-ai-science-enablers_en",
+        "publishedAt": "2026-10-15"
+      },
+      "relatedSources": [
+        {
+          "name": "Comisión Europea · comunicado del lanzamiento",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2175",
+          "publishedAt": "2026-10-15"
+        },
+        {
+          "name": "Google · modelos y créditos para investigadores europeos",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/were-powering-european-scientific-discovery-with-advanced-ai-compute-and-frontier-models/",
+          "publishedAt": "2026-10-14"
+        }
+      ],
+      "body": [
+        "La Comisión Europea lanzó el 15 de octubre de 2026, durante la cumbre AI in Science de Dublín, la iniciativa AI in Science Enablers vinculada a RAISE, Resource for AI Science in Europe. Reúne compromisos voluntarios de empresas y entidades filantrópicas para poner a disposición de investigadores europeos modelos de IA, cómputo, datos, herramientas, formación y colaboración. Es un mecanismo de aportaciones en especie y alianzas, no un producto único ni un cheque automático para cualquier solicitante.",
+        "Entre los primeros participantes figuran Elsevier, Frontiers, Google, Mistral, Novo Nordisk Foundation, NVIDIA y Sanofi. Sus contribuciones son diferentes y deben evaluarse por separado: algunos ofrecen créditos o licencias, otros software abierto, supercomputación, servicios de datos o programas de capacitación. El anuncio de la iniciativa no prueba que todos los recursos ya estén asignados."
+      ],
+      "keyPoints": [
+        "RAISE Enablers se lanzó oficialmente el 15 de octubre en Dublín y coordina compromisos voluntarios de entidades privadas y filantrópicas.",
+        "La Comisión enumera siete primeros participantes con aportes distintos; no existe una tarifa o convocatoria universal.",
+        "Google anunció US$3 millones en créditos y hasta 200 investigadores; Frontiers describe servicios valorados en más de €1,6 millones.",
+        "Las condiciones, cupos, calendarios y disponibilidad efectiva dependen de cada organización."
+      ],
+      "quickTakeaways": [
+        "La Comisión Europea lanzó RAISE AI in Science Enablers el 15 de octubre de 2026.",
+        "Participan inicialmente siete organizaciones, entre ellas Google, Mistral y NVIDIA.",
+        "Las contribuciones incluyen modelos, cómputo, datos, software, formación y acceso a infraestructura.",
+        "Los compromisos son voluntarios y no equivalen a adjudicaciones ya entregadas.",
+        "El acceso y los requisitos no están unificados en una sola convocatoria pública."
+      ],
+      "executiveSummary": "RAISE Enablers busca cerrar una brecha estructural de la ciencia europea: disponer de modelos y capacidad informática no basta si laboratorios pequeños carecen de datos, personal técnico y vías de acceso. La Comisión agrupa compromisos heterogéneos bajo un marco común. El éxito dependerá de transformar las promesas en convocatorias transparentes, recursos utilizables y resultados científicos reproducibles.",
+      "sections": [
+        {
+          "heading": "Qué es RAISE Enablers y qué no es",
+          "kind": "report",
+          "paragraphs": [
+            "El programa fue presentado en la European AI in Science Summit de Dublín el 15 de octubre. Forma parte del entorno de RAISE, el recurso europeo para IA en ciencia, y complementa prioridades de la estrategia europea de IA científica. La página oficial describe contribuciones voluntarias y en especie: cómputo, acceso a modelos, software, datos, conocimientos técnicos y colaboración entre instituciones. No se anunció una nueva API pública común ni una suscripción universal con acceso automático a todos esos servicios.",
+            "El marco busca conectar a investigadores con organizaciones capaces de aportar recursos difíciles de obtener por separado. La Comisión distingue el compromiso colectivo de las promesas concretas de cada participante. Esa diferencia importa: anunciar una colaboración no equivale a confirmar la fecha de entrega, las cuotas por laboratorio o el derecho de todos los investigadores europeos a utilizar cada herramienta."
+          ]
+        },
+        {
+          "heading": "Siete primeros participantes, siete formas de contribuir",
+          "kind": "context",
+          "paragraphs": [
+            "La lista inicial de la Comisión incluye Elsevier, Frontiers, Google, Mistral, Novo Nordisk Foundation, NVIDIA y Sanofi. Elsevier menciona licencias LeapSpace, colaboración con investigadores y acceso a herramientas de salud; Frontiers plantea curación de conjuntos de datos y apoyos para publicaciones de datos FAIR²; Novo Nordisk Foundation pretende facilitar capacidad del supercomputador Gefion; Sanofi cita el ecosistema Future4Care para innovación sanitaria.",
+            "Los compromisos no son intercambiables. Una licencia de herramienta clínica, un crédito de nube, un dataset curado y horas de GPU resuelven problemas diferentes. Tampoco todas las ofertas tienen las mismas reglas de elegibilidad. La Comisión no ofrece en su página un calendario único que garantice apertura simultánea para cada institución, de modo que la disponibilidad debe comprobarse en los canales del proveedor correspondiente."
+          ]
+        },
+        {
+          "heading": "Google: créditos y modelos científicos",
+          "kind": "report",
+          "paragraphs": [
+            "Google DeepMind y Google Cloud anunciaron el 14 de octubre, antes del lanzamiento colectivo, acceso a modelos científicos para hasta 200 investigadores europeos y tres millones de dólares en créditos de cómputo. Citan AlphaFold 3, WeatherNext, AlphaGenome, AlphaEvolve y AlphaEarth Foundations. Es una promesa cuantificada de créditos totales, no un desembolso de tres millones de dólares a cada participante ni una apertura general de todos los modelos sin condiciones.",
+            "Gazette ya cubre ese anuncio específico de Google en su propio artículo del 14 de octubre. La novedad del día 15 es distinta: la presentación del marco multiorganización y el detalle de aportes de otros actores. Mantener ambas piezas separadas evita duplicar la misma subvención como si fueran dos financiaciones independientes y permite seguir la ejecución de cada compromiso."
+          ]
+        },
+        {
+          "heading": "NVIDIA: software abierto, formación y rutas hacia cómputo",
+          "kind": "technical",
+          "paragraphs": [
+            "NVIDIA anunció su participación con herramientas de cómputo acelerado, modelos y software científicos, formación y colaboraciones con infraestructuras europeas. La compañía afirma haber publicado más de 250 modelos abiertos, más de 250 datasets y más de 1.400 proyectos de software abierto; son cifras corporativas acumuladas, no recursos creados todos específicamente para este lanzamiento. Menciona familias como Nemotron, BioNeMo, PhysicsNeMo y Earth-2.",
+            "Su nota también presenta materiales didácticos descargables sin matrícula ni tarifas y rutas de colaboración con fábricas de IA europeas. Cita iniciativas en Francia, España y Suecia, y programas para startups. La existencia de esas vías no significa que cualquier laboratorio obtenga GPU ilimitadas: las condiciones de selección, los socios de infraestructura y la disponibilidad concreta requieren consulta adicional."
+          ]
+        },
+        {
+          "heading": "Mistral, datos científicos y supercomputación",
+          "kind": "report",
+          "paragraphs": [
+            "Mistral se compromete a facilitar acceso a modelos de pesos abiertos, puestos de Vibe y créditos de API, además de prácticas doctorales, puestos de investigación parciales y colaboraciones universitarias. La Comisión no detalla una asignación individual ni un presupuesto agregado para esa promesa. El acceso a pesos abiertos no elimina necesariamente costes de alojamiento, ajuste, seguridad o ejecución.",
+            "Frontiers describe trabajo para preparar 1.000 datasets de Horizon Europe y 100 ayudas de publicación de datos FAIR², con más de 1,6 millones de euros en servicios declarados gratuitos para investigadores elegibles. Novo Nordisk Foundation plantea acceso a Gefion, mientras Elsevier y Sanofi enfocan parte de sus aportes en investigación y salud. Son contribuciones de distinta naturaleza y las cifras anunciadas deben atribuirse a cada entidad, no sumarse indiscriminadamente como dinero líquido."
+          ]
+        },
+        {
+          "heading": "Acceso, regiones, precio y obligaciones",
+          "kind": "practical",
+          "paragraphs": [
+            "La iniciativa se dirige a fortalecer la investigación europea. No consta una tarifa única de RAISE Enablers ni un formulario universal que conceda automáticamente acceso a todos los recursos. Algunos aportes se anuncian como gratuitos o en forma de créditos; otros requieren acuerdos, selección, colaboración institucional o condiciones que todavía deben concretarse. El programa también invita a nuevas organizaciones privadas y filantrópicas a presentar compromisos.",
+            "Antes de planificar un proyecto, un equipo debería identificar el recurso exacto que necesita y comprobar por escrito quién puede solicitarlo, cuándo comienza, cuánto dura, qué uso se permite, dónde se alojan los datos y qué sucede al agotarse créditos o licencias. También conviene revisar políticas de publicación, confidencialidad y propiedad intelectual, especialmente cuando el trabajo usa información sanitaria, genómica o empresarial sensible."
+          ]
+        },
+        {
+          "heading": "Impacto para la ciencia y riesgos de ejecución",
+          "kind": "analysis",
+          "paragraphs": [
+            "El valor potencial no reside solo en más potencia de cálculo. Investigadores de universidades pequeñas pueden necesitar software reproducible, datasets bien documentados y apoyo técnico para convertir capacidad de IA en resultados. Si RAISE logra conectar esos elementos con reglas claras, podría reducir barreras entre grandes centros y equipos con menos infraestructura. La iniciativa no demuestra todavía un aumento medible de descubrimientos ni una distribución equitativa de recursos.",
+            "También hay riesgos: dependencia de proveedores, diferencias entre acceso promocional y sostenibilidad a largo plazo, licencias restrictivas, costes ocultos y falta de trazabilidad de adjudicaciones. El compromiso público es un punto de partida, no un resultado científico. La Comisión y sus socios deberán mostrar convocatorias, beneficiarios, uso real y resultados para que el programa pueda evaluarse más allá de la ceremonia de lanzamiento."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette: una infraestructura de alianzas",
+          "kind": "analysis",
+          "paragraphs": [
+            "La carrera de la IA se mide a menudo por el modelo más potente, pero la investigación depende también de acceso práctico a modelos especializados, datos, cómputo y personas capacitadas. RAISE Enablers apuesta por una infraestructura de cooperación, donde cada proveedor cubre una pieza. Es una vía distinta a publicar un modelo general para consumidores y merece seguimiento por sus efectos potenciales sobre la ciencia aplicada.",
+            "La prueba decisiva será operativa: cuánto tarda un laboratorio en conseguir recursos, qué restricciones encuentra, si puede reproducir resultados y qué ocurre cuando termina el apoyo inicial. Un sistema de compromisos heterogéneos puede ser valioso, pero sin métricas públicas comparables también puede resultar difícil saber si cumple su objetivo. Esa es la pregunta que Gazette seguirá en futuras actualizaciones."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Fecha de lanzamiento",
+          "value": "15 de octubre de 2026, Dublín"
+        },
+        {
+          "label": "Participantes iniciales",
+          "value": "Elsevier, Frontiers, Google, Mistral, Novo Nordisk Foundation, NVIDIA y Sanofi"
+        },
+        {
+          "label": "Google",
+          "value": "US$3 millones en créditos y hasta 200 investigadores",
+          "note": "Compromiso total anunciado por Google el 14 de octubre."
+        },
+        {
+          "label": "Frontiers",
+          "value": "Curación de 1.000 datasets, 100 ayudas FAIR² y más de €1,6 millones en servicios",
+          "note": "Cifras atribuidas al participante."
+        }
+      ],
+      "availability": {
+        "status": "Iniciativa anunciada; condiciones de entrega según cada participante",
+        "platforms": [
+          "RAISE y programas de las entidades participantes"
+        ],
+        "regions": [
+          "Investigadores y ecosistema científico europeo"
+        ],
+        "requirements": [
+          "Criterios y solicitudes específicos por recurso",
+          "Cumplimiento de condiciones de datos, licencias y colaboración"
+        ],
+        "notes": [
+          "No existe una convocatoria única de acceso irrestricto publicada en la página oficial."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio único del programa",
+          "value": "No anunciado"
+        },
+        {
+          "label": "Google",
+          "value": "US$3 millones en créditos de cómputo comprometidos",
+          "note": "No es efectivo distribuido por investigador."
+        },
+        {
+          "label": "Frontiers",
+          "value": "Más de €1,6 millones en servicios gratuitos anunciados",
+          "note": "No es una transferencia en efectivo."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "label": "Google anuncia su compromiso específico de modelos y créditos"
+        },
+        {
+          "date": "2026-10-15",
+          "label": "Lanzamiento oficial de RAISE AI in Science Enablers en Dublín"
+        }
+      ],
+      "limitations": [
+        "No se publican criterios completos y homogéneos de elegibilidad para todos los recursos.",
+        "El valor anunciado de servicios no equivale a fondos líquidos entregados.",
+        "Los compromisos voluntarios todavía deben traducirse en acceso verificable y resultados."
+      ],
+      "practicalAdvice": [
+        "Consultar primero la página oficial de RAISE y después las condiciones del participante relevante.",
+        "Documentar cuotas, duración, licencias, localización de datos y requisitos de reproducibilidad antes de solicitar recursos.",
+        "No contabilizar créditos de cómputo o servicios en especie como subvenciones monetarias ya adjudicadas."
+      ],
+      "usefulFacts": [
+        "La Comisión enumera siete primeros participantes en su página oficial.",
+        "El lanzamiento ocurrió en la cumbre AI in Science Summit de Dublín.",
+        "La iniciativa admite nuevas organizaciones privadas y filantrópicas como contribuyentes."
+      ],
+      "analysis": "Análisis Gazette: RAISE Enablers será relevante si convierte compromisos diversos en acceso transparente, reproducible y medible para laboratorios europeos, no solo en anuncios corporativos.",
+      "watch": "Convocatorias de acceso, cuotas por institución, fechas de entrega, nuevas adhesiones, transparencia de adjudicaciones y resultados científicos publicados.",
+      "finalSummary": "La Comisión Europea puso en marcha un marco de compromisos para IA científica con siete primeros participantes. El anuncio suma herramientas, créditos, datos y formación, pero su impacto dependerá de reglas de acceso y resultados efectivos; no debe confundirse con una oferta única disponible para todos."
+    },
     {
       "id": "cohere-aisle-proposed-acquisition-2026",
       "eventKey": "cohere-aisle-proposed-acquisition-cyber-resilient-sovereign-ai-2026-10-15",
@@ -1100,6 +1310,205 @@
         "Verificar aislamiento, permisos y residencia de datos antes de ejecutar código no confiable."
       ],
       "finalSummary": "Modal confirma una Serie D de US$750 millones; su crecimiento y escala operativa siguen siendo métricas atribuidas al proveedor."
+    },
+    {
+      "id": "microsoft-pbc-subseasonal-weather-nature-2026",
+      "eventKey": "microsoft-pbc-probabilistic-bias-correction-nature-open-source-2026-10-14",
+      "date": "2026-10-14",
+      "announcedAt": "2026-10-14",
+      "coveredAt": "2026-10-15",
+      "verifiedAt": "2026-10-15",
+      "articleVersion": 2,
+      "company": "Microsoft",
+      "product": "Probabilistic Bias Correction (PBC) / MicroDuet",
+      "title": "Nature publica PBC: Microsoft mejora pronósticos meteorológicos de dos a seis semanas con IA y libera el código",
+      "summary": "Un estudio publicado el 14 de octubre en Nature describe Probabilistic Bias Correction, un método que ajusta probabilidades de pronósticos meteorológicos existentes. El equipo reporta mejoras en pruebas globales y competición en tiempo real; el código está disponible bajo licencia MIT.",
+      "tags": [
+        "Microsoft",
+        "Investigación",
+        "Meteorología",
+        "Nature",
+        "Open source",
+        "IA para ciencia"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Grabado editorial conceptual de un globo y redes de observación meteorológica; no muestra un mapa de pronóstico real.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Ilustración editorial 3:2 estilo grabado antiguo en tinta sepia: globo terráqueo, capas de nubes, isobaras y dos relojes que representan semanas tres y cuatro, con un instrumento científico de calibración de probabilidades. No mostrar mapas de riesgo reales, valores meteorológicos inventados, logos ni interfaces simuladas.",
+      "source": {
+        "name": "Nature · Advancing subseasonal forecasting with machine learning",
+        "url": "https://www.nature.com/articles/s41586-026-11126-x",
+        "publishedAt": "2026-10-14"
+      },
+      "relatedSources": [
+        {
+          "name": "Microsoft Research · New AI framework bridges a critical gap in mid-range weather forecasts",
+          "url": "https://www.microsoft.com/en-us/research/story/new-ai-framework-bridges-a-critical-gap-in-mid-range-weather-forecasts/",
+          "publishedAt": "2026-10-15"
+        },
+        {
+          "name": "Repositorio PBC · código y licencia MIT",
+          "url": "https://github.com/mouatadid/pbc",
+          "publishedAt": "2026-10-14"
+        },
+        {
+          "name": "Microsoft Research · publicación de preprint anterior",
+          "url": "https://www.microsoft.com/en-us/research/publication/enhancing-ai-and-dynamical-subseasonal-forecasts-with-probabilistic-bias-correction/"
+        }
+      ],
+      "body": [
+        "El 14 de octubre de 2026 Nature publicó un trabajo sobre Probabilistic Bias Correction (PBC), desarrollado por investigadores de Microsoft Research y colaboradores externos. No se trata de un pronosticador meteorológico universal nuevo: PBC es una capa de aprendizaje automático que aprende sesgos de predicciones anteriores y corrige distribuciones probabilísticas de sistemas existentes. La publicación revisada por pares es el hito editorial; el trabajo ya circulaba como preprint desde abril.",
+        "Los autores comunican mejoras importantes para predicciones a dos a seis semanas y ofrecen código con licencia MIT. Los porcentajes y victorias competitivas pertenecen a evaluaciones descritas en el estudio; no equivalen a prometer que cada pronóstico concreto acertará ni que cualquier usuario disponga ya de un servicio meteorológico comercial."
+      ],
+      "keyPoints": [
+        "PBC corrige probabilidades y sesgos de pronósticos existentes, no sustituye por sí solo los modelos meteorológicos.",
+        "El estudio en Nature está fechado el 14 de octubre de 2026 y documenta evaluaciones retrospectivas y una competición de 2025.",
+        "El código está publicado bajo MIT; el modelo comercial S2S de Microsoft Weather sigue en vista previa privada."
+      ],
+      "quickTakeaways": [
+        "Nature publicó el 14 de octubre una investigación de Microsoft y colaboradores sobre PBC.",
+        "La técnica aprende de errores históricos y ajusta la distribución de probabilidades para semanas tres y cuatro.",
+        "Los autores reportan mejoras para 98% de objetivos de precipitación, 92% de temperatura y 91% de presión frente a una referencia operativa.",
+        "MicroDuet, un sistema basado en PBC, lideró la competición AI Weather Quest descrita en el estudio.",
+        "El código está abierto; eso no significa que todos los datos, recursos o productos comerciales sean gratuitos."
+      ],
+      "executiveSummary": "PBC aborda uno de los problemas más difíciles de la meteorología: transformar pronósticos de varias semanas, inherentemente inciertos, en probabilidades mejor calibradas. El artículo de Nature aporta evaluación cuantitativa y el repositorio público permite reproducir parte del método. El avance está en el posprocesamiento probabilístico; la validez de cada aplicación exige pruebas locales y distinguir claramente investigación, piloto y servicio comercial.",
+      "sections": [
+        {
+          "heading": "El problema: el desierto de predictibilidad",
+          "kind": "context",
+          "paragraphs": [
+            "Los pronósticos para mañana y la próxima semana se apoyan en observaciones, simulaciones físicas y, cada vez más, sistemas de IA. Pero al extender el horizonte hacia las semanas tercera y cuarta, pequeños errores iniciales se amplifican. Las interacciones entre océanos, atmósfera, hielo y superficie terrestre vuelven poco fiable una predicción determinista única. Para agricultura, energía o gestión del agua, importa más conocer riesgos y rangos que una cifra puntual aparentemente exacta.",
+            "Los conjuntos o ensembles generan varios escenarios y permiten estimar probabilidades. Aun así, sus distribuciones pueden estar sesgadas por la estación, la región y el propio modelo. PBC busca corregir esa parte sistemática del error, sin afirmar que elimina la incertidumbre caótica ni que permite predecir todos los fenómenos extremos con semanas de antelación."
+          ]
+        },
+        {
+          "heading": "Cómo funciona PBC",
+          "kind": "technical",
+          "paragraphs": [
+            "El método parte de un conjunto de pronósticos deterministas, observaciones recientes y cuantiles climatológicos. Convierte el ensemble en probabilidades iniciales y aprende cómo esas probabilidades fallaron históricamente. Dos componentes trabajan en paralelo: Debias++ aprende ajustes específicos por ubicación, fecha y cuantiles; Persistence++ incorpora observaciones rezagadas y tendencias recientes. La combinación se proyecta después a distribuciones acumuladas válidas antes de obtener el pronóstico final.",
+            "La diferencia con una corrección simple de temperatura o lluvia es que aquí se modifica la distribución de probabilidades, incluida su forma y dispersión. Esa distinción es relevante cuando la pregunta no es cuánto lloverá exactamente, sino qué probabilidad existe de quedar en el quintil más seco o húmedo. El trabajo emplea ERA5 como referencia histórica y describe un procedimiento de reentrenamiento incremental para simular operación real."
+          ]
+        },
+        {
+          "heading": "Qué resultados publicaron los investigadores",
+          "kind": "report",
+          "paragraphs": [
+            "En las evaluaciones del artículo, aplicar PBC a los sistemas del Centro Europeo de Predicción Meteorológica a Plazo Medio mejoró frente al posprocesamiento operativo para el 98% de los objetivos espaciales de precipitación, el 92% de temperatura y el 91% de presión, según el resumen del estudio. Estos porcentajes se refieren a objetivos evaluados y a una métrica probabilística, no a una tasa del 98% de días con lluvia acertada.",
+            "El estudio también señala que el puntaje probabilístico promedio del sistema de IA AIFS-SUBS se duplicó desde una base modesta de aproximadamente 0,03 RPSS en el conjunto indicado. Duplicar una métrica pequeña no significa duplicar la exactitud cotidiana de cualquier pronóstico. El resultado depende de las variables, horizontes, zonas y referencias de comparación. La revisión independiente de Nature fortalece el respaldo científico, pero la extrapolación a otras operaciones sigue requiriendo pruebas."
+          ]
+        },
+        {
+          "heading": "MicroDuet y la prueba en tiempo real",
+          "kind": "report",
+          "paragraphs": [
+            "El equipo presentó MicroDuet, que combina versiones de PBC aplicadas a un modelo dinámico y a un sistema híbrido, en AI Weather Quest de ECMWF durante 2025. Según el artículo, lideró las variables y horizontes evaluados en la primera temporada y también quedó primero en la evaluación anual descrita. Compitió con pronósticos de seis centros operativos, un ensemble multimodelo y sistemas de 34 equipos. Es una comparación definida por esa competición, no una proclamación de superioridad meteorológica universal.",
+            "Microsoft destaca ejemplos de anticipación de tormentas invernales en Estados Unidos y pilotos de apoyo a predicciones de lluvias en Kenia. Son casos relevantes para investigar utilidad práctica, pero un ejemplo retrospectivo o una evaluación inicial no sustituye una serie prolongada de decisiones operativas medidas. El impacto final depende de comunicar bien la incertidumbre y de que agricultores y autoridades puedan actuar a tiempo."
+          ]
+        },
+        {
+          "heading": "Código abierto y requisitos reales",
+          "kind": "practical",
+          "paragraphs": [
+            "El repositorio público mouatadid/pbc incluye instrucciones de ejecución y licencia MIT. Documenta pruebas en Rocky Linux 8.10 y Python 3.13.3, un entorno con dependencias Conda y scripts para datos ERA5 y ECMWF. La documentación señala procesos de autenticación y aceptación de licencias para determinadas fuentes meteorológicas. Por ello, software abierto no debe confundirse con acceso irrestricto a todos los datasets necesarios para repetir cualquier experimento.",
+            "Un investigador interesado puede comenzar leyendo el paper, revisar las tareas de quintiles y ejecutar una demostración de climatología antes de intentar replicar los experimentos completos. Conviene conservar versiones de datos, periodos de entrenamiento y métricas de referencia. Para una institución que toma decisiones, el paso prudente es comparar calibración y utilidad económica sobre su región y estación, no reemplazar inmediatamente las alertas oficiales."
+          ]
+        },
+        {
+          "heading": "Disponibilidad comercial y coste",
+          "kind": "report",
+          "paragraphs": [
+            "Microsoft Research afirma que PBC ya puede explorarse como software abierto. Separadamente, Microsoft Weather describe un sistema S2S que ofrece orientación probabilística semanal hasta seis semanas y que está en vista previa privada para clientes seleccionados. No es correcto decir que el producto S2S comercial esté disponible de forma general ni que la publicación de PBC implique una API pública universal.",
+            "No se anunció una tarifa comercial única para PBC en las fuentes consultadas. La licencia MIT del código no cubre automáticamente cómputo, almacenamiento, datos meteorológicos de terceros ni soporte empresarial. Quien evalúe un despliegue debería solicitar términos de datos, costes operativos y condiciones de la vista previa comercial antes de presupuestar el servicio."
+          ]
+        },
+        {
+          "heading": "Análisis Gazette: mejorar lo que ya existe",
+          "kind": "analysis",
+          "paragraphs": [
+            "La lectura editorial es que la IA aplicada a ciencia puede crear valor sin reemplazar el modelo base. Una capa de calibración que aprovecha errores históricos puede ser más accesible que entrenar un pronosticador global desde cero. Esa arquitectura también facilita comparar distintas familias de modelos con una misma pregunta práctica: ¿mejora la calidad de las probabilidades que necesita quien decide?",
+            "El límite es igualmente importante: un método de posprocesamiento depende de observaciones fiables, distribuciones iniciales útiles y estabilidad estadística. Cambios climáticos, fenómenos inéditos o datos locales insuficientes pueden alterar su desempeño. El siguiente hito debería ser una evaluación pública continua por región y por riesgo, con decisiones y costes medidos, no solo resultados agregados de benchmark."
+          ]
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Horizonte",
+          "value": "Dos a seis semanas; evaluación detallada en semanas 3 y 4"
+        },
+        {
+          "label": "Método",
+          "value": "Debias++ y Persistence++; corrección de distribuciones probabilísticas"
+        },
+        {
+          "label": "Variables evaluadas",
+          "value": "Precipitación, temperatura a 2 metros y presión media al nivel del mar"
+        },
+        {
+          "label": "Métrica",
+          "value": "Ranked Probability Skill Score (RPSS) frente a climatología"
+        },
+        {
+          "label": "Código",
+          "value": "Repositorio público con licencia MIT"
+        }
+      ],
+      "availability": {
+        "status": "Investigación publicada y código abierto; servicio comercial S2S en vista previa privada",
+        "platforms": [
+          "Repositorio PBC",
+          "Microsoft Weather S2S (acceso selectivo)"
+        ],
+        "regions": [
+          "Evaluación global en el paper",
+          "Pilotos descritos en Kenia"
+        ],
+        "requirements": [
+          "Dependencias Python/Conda y datos meteorológicos adecuados",
+          "Condiciones de acceso propias de datasets de terceros"
+        ],
+        "notes": [
+          "La disponibilidad del código no implica acceso general al servicio comercial."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Código PBC",
+          "value": "Licencia MIT",
+          "note": "No incluye costes de infraestructura ni licencias de datos."
+        },
+        {
+          "label": "Servicio S2S",
+          "value": "Tarifa pública no confirmada",
+          "note": "Vista previa privada anunciada por Microsoft Weather."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-10-14",
+          "label": "Publicación del estudio en Nature"
+        }
+      ],
+      "limitations": [
+        "Las métricas publicadas describen tareas y periodos concretos; no garantizan acierto de pronósticos individuales.",
+        "Reproducir resultados exige datos y configuraciones con sus propias condiciones de acceso.",
+        "Los pilotos de campo no equivalen a disponibilidad comercial general ni a una evaluación universal."
+      ],
+      "practicalAdvice": [
+        "Comparar el RPSS y la calibración con un baseline climatológico local antes de usar resultados para decisiones.",
+        "Leer la licencia de los datasets además de la licencia MIT del código.",
+        "Distinguir un intervalo probabilístico de una predicción determinista al comunicar riesgos."
+      ],
+      "usefulFacts": [
+        "El estudio revisado por pares está fechado el 14 de octubre de 2026.",
+        "El repositorio contiene instrucciones de Conda, ERA5 y ECMWF.",
+        "La prueba AI Weather Quest es un benchmark de predicción probabilística subseasonal."
+      ],
+      "analysis": "Análisis Gazette: PBC muestra que corregir distribuciones probabilísticas de modelos existentes puede ser tan importante como entrenar modelos nuevos, pero su utilidad operacional debe evaluarse por región y riesgo.",
+      "watch": "Reproducciones externas del estudio, desempeño en nuevas temporadas, documentación de los pilotos de Kenia y condiciones de apertura de Microsoft Weather S2S.",
+      "finalSummary": "La publicación de Nature consolida PBC como una contribución verificable a la meteorología con IA: mejoras probabilísticas documentadas, código abierto y una ruta hacia pilotos. No transforma por sí sola la predicción de varias semanas en certeza ni anuncia disponibilidad comercial universal."
     },
     {
       "id": "hesai-kosmo-one-world-spatial-ai-launch-2026",
@@ -34288,12 +34697,12 @@
     {
       "date": "2026-10-14",
       "status": "partial",
-      "verifiedArticles": 15
+      "verifiedArticles": 16
     },
     {
       "date": "2026-10-15",
       "status": "partial",
-      "verifiedArticles": 1
+      "verifiedArticles": 2
     }
   ]
 }
