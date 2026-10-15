@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T18:23:44.562Z",
+  "updatedAt": "2026-10-15T18:24:58.522Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -731,11 +731,6 @@
           "name": "Reuters · Amazon launches two new portable AI listening devices",
           "url": "https://www.reuters.com/technology/amazon-launches-two-new-portable-ai-listening-devices-2026-10-15/",
           "publishedAt": "2026-10-15"
-        },
-        {
-          "name": "Amazon · Building Bee at Amazon",
-          "url": "https://www.aboutamazon.com/news/devices/bee-amazon-wearable-ai-device-new-features",
-          "publishedAt": "2026-01-01"
         }
       ],
       "body": [
