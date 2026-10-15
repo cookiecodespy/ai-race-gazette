@@ -8,7 +8,7 @@
     "qa": "Arte generado pendiente de control editorial.",
     "complete": "Arte específico aprobado y enlazado."
   },
-  "generatedFromNewsUpdatedAt": "2026-10-15T10:16:19.000Z",
+  "generatedFromNewsUpdatedAt": "2026-10-15T14:16:46.000Z",
   "generatedAt": "2026-10-15",
   "items": [
     {
@@ -1161,7 +1161,7 @@
       "date": "2026-09-03",
       "company": "NVIDIA",
       "product": "Personal AI Router (PAIR)",
-      "title": "NVIDIA presenta PAIR para repartir IA local entre varios equipos",
+      "title": "NVIDIA PAIR sale de beta: la versión 1.0 añade llama.cpp y conecta agentes locales entre PCs",
       "currentImage": "assets/hero.webp",
       "currentAssetId": "gazette-generic-ai-hero-v1",
       "currentReuseCount": 121,
@@ -1171,7 +1171,7 @@
       "desiredType": "editorial-illustration",
       "desiredOutput": "assets/news/2026-09-03/nvidia-pair.webp",
       "brief": "Grabado de revista técnica del XIX: tres mesas de trabajo con autómatas que comparten encargos mediante tubos neumáticos y un distribuidor mecánico central, representación metafórica, tinta y sepia, sin texto ni logotipos.",
-      "sourceSummary": "NVIDIA presentó Personal AI Router (PAIR) como una beta gratuita y de código abierto que descubre PCs compatibles en una red local y reparte solicitudes de inferencia independientes. No une sus memorias GPU en una sola GPU virtual; ayuda a ejecutar varias tareas de agentes en paralelo.",
+      "sourceSummary": "NVIDIA lanzó PAIR en beta el 3 de septiembre y publicó la versión 1.0 el 13 de octubre de 2026. El router gratuito suma llama.cpp, modelos GGUF y RTX Spark; reparte solicitudes independientes entre equipos, pero no fusiona memorias GPU.",
       "artDirection": "Grabado editorial de prensa antigua, tinta negra y sepia sobre papel envejecido, composición tecnológica narrativa, alto detalle, sin texto incrustado, sin logotipos falsos, sin interfaz inventada presentada como real, sin apariencia de fotografía documental.",
       "outputSpec": {
         "format": "webp",
