@@ -83,7 +83,7 @@
       "legacyCredits": [
         "Ilustración editorial generada con IA; no representa instalaciones reales."
       ],
-      "currentUsage": 4,
+      "currentUsage": 5,
       "notes": "Arte editorial reutilizable para Mistral y laboratorios europeos cuando no exista pieza específica."
     },
     {
@@ -104,7 +104,7 @@
       "legacyCredits": [
         "Ilustración editorial generada con IA; no es una fotografía del anuncio."
       ],
-      "currentUsage": 72,
+      "currentUsage": 74,
       "notes": "Fallback para infraestructura y expansión geográfica."
     },
     {
