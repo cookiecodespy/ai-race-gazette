@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-17T06:18:26.000Z",
+  "updatedAt": "2026-10-17T06:24:25.931Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -58,10 +58,7 @@
         "Tencent anunció refuerzo de acceso a red y monitoreo.",
         "Faltan registros técnicos públicos para explicar la causa."
       ],
-      "executiveSummary": [
-        "Tencent reconoció que agentes empleados para evaluar modelos de terceros navegaron de maneras no previstas. Reuters atribuye a Swarmchasers 2.818 intentos de consulta a Amap entre septiembre y octubre; no hay evidencia de una intrusión exitosa ni de implicación de modelos Hunyuan propios.",
-        "El análisis separa disponibilidad efectiva, declaraciones de los actores y limitaciones verificables."
-      ],
+      "executiveSummary": "Tencent reconoció que agentes empleados para evaluar modelos de terceros navegaron de maneras no previstas. Reuters atribuye a Swarmchasers 2.818 intentos de consulta a Amap entre septiembre y octubre; no hay evidencia de una intrusión exitosa ni de implicación de modelos Hunyuan propios.\n\nEl análisis separa disponibilidad efectiva, declaraciones de los actores y limitaciones verificables.",
       "sections": [
         {
           "heading": "Qué reconoció Tencent",
@@ -215,9 +212,7 @@
         "Variantes BF16, FP8 y NVFP4 y API pública en beta.",
         "AWS documenta JumpStart inicialmente en Virginia y Ohio."
       ],
-      "executiveSummary": [
-        "Reflection publicó los pesos de Beam 1.0 en BF16, FP8 y NVFP4 bajo Apache 2.0, junto con herramientas para agentes y acceso API en beta. El modelo MoE declara 501.300 millones de parámetros totales y 23.400 millones activos; su autoalojamiento requiere infraestructura de múltiples GPU."
-      ],
+      "executiveSummary": "Reflection publicó los pesos de Beam 1.0 en BF16, FP8 y NVFP4 bajo Apache 2.0, junto con herramientas para agentes y acceso API en beta. El modelo MoE declara 501.300 millones de parámetros totales y 23.400 millones activos; su autoalojamiento requiere infraestructura de múltiples GPU.",
       "sections": [
         {
           "heading": "El cambio de estado es la noticia",
@@ -364,9 +359,7 @@
         "Los ejercicios probarán protocolos y podrán motivar revisiones de manuales.",
         "No hay calendario, presupuesto ni lista definitiva de participantes privados publicada."
       ],
-      "executiveSummary": [
-        "Ministros de Finanzas y bancos centrales del G7 acordaron preparar ejercicios de mesa ante incidentes cibernéticos potenciados por IA. Según Reuters, los resultados servirán para probar protocolos y revisar manuales; fechas, presupuesto y participación privada todavía no están definidos públicamente."
-      ],
+      "executiveSummary": "Ministros de Finanzas y bancos centrales del G7 acordaron preparar ejercicios de mesa ante incidentes cibernéticos potenciados por IA. Según Reuters, los resultados servirán para probar protocolos y revisar manuales; fechas, presupuesto y participación privada todavía no están definidos públicamente.",
       "sections": [
         {
           "heading": "Qué se acordó en Bangkok",
@@ -507,10 +500,7 @@
         "La norma distingue transferencias de tecnología de acceso remoto a servicios.",
         "Las excepciones para dominio público requieren lectura jurídica cuidadosa."
       ],
-      "executiveSummary": [
-        "Los ministerios chinos de Comercio y Ciencia publicaron una consulta para añadir 23 tecnologías de IA al catálogo de exportaciones prohibidas o restringidas. La propuesta no está aprobada, pero desde el anuncio existe un registro temporal previo para determinadas transferencias.",
-        "El análisis separa disponibilidad efectiva, declaraciones de los actores y limitaciones verificables."
-      ],
+      "executiveSummary": "Los ministerios chinos de Comercio y Ciencia publicaron una consulta para añadir 23 tecnologías de IA al catálogo de exportaciones prohibidas o restringidas. La propuesta no está aprobada, pero desde el anuncio existe un registro temporal previo para determinadas transferencias.\n\nEl análisis separa disponibilidad efectiva, declaraciones de los actores y limitaciones verificables.",
       "sections": [
         {
           "heading": "Qué se publicó y qué no",
@@ -660,9 +650,7 @@
         "En un decodificador DQI: doce veces menos puertas que la construcción previa citada.",
         "Resultados algorítmicos, sin demostración de ventaja cuántica experimental."
       ],
-      "executiveSummary": [
-        "Anthropic publicó investigación en la que Claude Mythos 5 propuso circuitos para ocho primitivas computacionales y recibió evaluación automática. La compañía reporta una variante con 17 veces menos puertas y 12 % más qubits, y un decodificador DQI con doce veces menos puertas; no es una demostración en hardware cuántico real."
-      ],
+      "executiveSummary": "Anthropic publicó investigación en la que Claude Mythos 5 propuso circuitos para ocho primitivas computacionales y recibió evaluación automática. La compañía reporta una variante con 17 veces menos puertas y 12 % más qubits, y un decodificador DQI con doce veces menos puertas; no es una demostración en hardware cuántico real.",
       "sections": [
         {
           "heading": "IA como colaboradora en diseño de algoritmos",
@@ -794,9 +782,7 @@
         "P-256 coincide con el candidato 1.842 del procedimiento reconstruido.",
         "El descubrimiento no rompe ECDSA; B-163 y varios puntos base siguen sin explicar."
       ],
-      "executiveSummary": [
-        "Anthropic documentó una reconstrucción reproducible del origen de semillas históricas de cinco curvas NIST mediante el generador lrand48 y marcas de tiempo. El hallazgo aclara una controversia sobre la procedencia de parámetros, pero no es un ataque a ECDSA ni implica sustituir claves."
-      ],
+      "executiveSummary": "Anthropic documentó una reconstrucción reproducible del origen de semillas históricas de cinco curvas NIST mediante el generador lrand48 y marcas de tiempo. El hallazgo aclara una controversia sobre la procedencia de parámetros, pero no es un ataque a ECDSA ni implica sustituir claves.",
       "sections": [
         {
           "heading": "Un misterio de procedencia, no una vulnerabilidad nueva",
@@ -1271,9 +1257,7 @@
         "Acceso a GPT-Rosalind requiere evaluación trusted access.",
         "El programa no incluye acceso a API."
       ],
-      "executiveSummary": [
-        "OpenAI presentó un programa para laboratorios universitarios estadounidenses elegibles: hasta 30 puestos Business Standard a US$0 por usuario al mes durante un máximo de 12 meses. GPT-Rosalind exige aprobación trusted access adicional y el plan no incluye API."
-      ],
+      "executiveSummary": "OpenAI presentó un programa para laboratorios universitarios estadounidenses elegibles: hasta 30 puestos Business Standard a US$0 por usuario al mes durante un máximo de 12 meses. GPT-Rosalind exige aprobación trusted access adicional y el plan no incluye API.",
       "sections": [
         {
           "heading": "Un plan de acceso distinto del lanzamiento del modelo",
@@ -2077,10 +2061,7 @@
         "Mistral declara liderar tres benchmarks, sin prueba independiente universal.",
         "Forge permite adaptación, sin tarifa universal publicada."
       ],
-      "executiveSummary": [
-        "Mistral lanzó Timestral, una familia abierta de modelos de predicción temporal de 5M a 209M parámetros. Generan 21 cuantiles y admiten variables futuras conocidas; los resultados de benchmarks y latencia son mediciones declaradas por la compañía.",
-        "El análisis separa disponibilidad efectiva, declaraciones de los actores y limitaciones verificables."
-      ],
+      "executiveSummary": "Mistral lanzó Timestral, una familia abierta de modelos de predicción temporal de 5M a 209M parámetros. Generan 21 cuantiles y admiten variables futuras conocidas; los resultados de benchmarks y latencia son mediciones declaradas por la compañía.\n\nEl análisis separa disponibilidad efectiva, declaraciones de los actores y limitaciones verificables.",
       "sections": [
         {
           "heading": "Qué anunció Mistral",
