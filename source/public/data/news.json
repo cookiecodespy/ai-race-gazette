@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T19:18:21.000Z",
+  "updatedAt": "2026-10-17T06:18:26.000Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -150,6 +150,298 @@
         "Evaluar agentes con telemetría de acciones y no solo resultados finales."
       ],
       "finalSummary": "Quedan preguntas verificables: qué modelos de terceros estaban bajo evaluación, qué permisos recibieron, qué políticas de navegación estaban configuradas y qué pruebas permitirán demostrar que las nuevas restricciones funcionan. Reuters aporta la declaración de Tencent y el relato de Swarmchasers, pero no una auditoría técnica integral. Hasta contar con ella, el hecho confirmado es el reconocimiento de navegación no prevista; las interpretaciones sobre intención o daños permanecen sin demostrar."
+    },
+    {
+      "id": "reflection-beam-open-weights-501b-oct16-2026",
+      "eventKey": "reflection-beam-501b-a23b-open-weights-apache-2-release-2026-10-16",
+      "date": "2026-10-16",
+      "announcedAt": "2026-10-16",
+      "coveredAt": "2026-10-17",
+      "verifiedAt": "2026-10-17",
+      "articleVersion": 2,
+      "company": "Reflection AI",
+      "product": "Beam 1.0",
+      "title": "Reflection libera Beam 1.0: pesos Apache 2.0, 501B parámetros y herramientas para agentes",
+      "summary": "Reflection publicó los pesos de Beam 1.0 en BF16, FP8 y NVFP4 bajo Apache 2.0, junto con herramientas para agentes y acceso API en beta. El modelo MoE declara 501.300 millones de parámetros totales y 23.400 millones activos; su autoalojamiento requiere infraestructura de múltiples GPU.",
+      "tags": [
+        "Reflection AI",
+        "Beam",
+        "Modelos abiertos",
+        "Agentes",
+        "Programación",
+        "Infraestructura"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Ilustración editorial conceptual sobre Beam 1.0; no representa una fotografía documental del anuncio.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia 3:2: gran centro de cálculo abierto como taller mecánico con agentes de software y tarjetas de circuito, metáfora de un modelo de pesos descargables; sin logos ficticios ni interfaces presentadas como capturas.",
+      "source": {
+        "name": "Reflection · Beam is now available",
+        "url": "https://reflection.ai/blog/beam-is-available",
+        "publishedAt": "2026-10-16"
+      },
+      "relatedSources": [
+        {
+          "name": "Reflection · Beam model card",
+          "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "publishedAt": "2026-10-16"
+        },
+        {
+          "name": "AWS · Introducing Reflection Beam",
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+          "publishedAt": "2026-10-16"
+        }
+      ],
+      "body": [
+        "Reflection AI anunció el 16 de octubre la disponibilidad efectiva de los pesos de Beam 1.0. La diferencia con la presentación inicial del modelo es decisiva: ahora hay repositorios públicos de Hugging Face, licencia Apache 2.0 y archivos que terceros pueden descargar para inspección o despliegue. La empresa acompañó la liberación con documentación, evaluaciones de seguridad y una red de integraciones para inferencia y agentes. Esta noticia corresponde a la liberación, no al anuncio preliminar de octubre.",
+        "El carácter abierto de los pesos permite personalizar y ejecutar el modelo en infraestructura controlada por el usuario, sujeto a recursos técnicos y obligaciones legales. No significa que el entrenamiento, todos los datos ni el proceso interno completo sean reproducibles. La promesa de Reflection es un ecosistema de herramientas abierto alrededor del modelo; cada componente debe evaluarse por separado antes de adoptar la etiqueta de sistema totalmente abierto.",
+        "La ficha del modelo describe una arquitectura dispersa mixture-of-experts con 501.300 millones de parámetros totales y 23.400 millones activos. Incluye 52 capas, de las cuales 49 son MoE, 256 expertos y una ventana de contexto declarada de un millón de tokens. Está diseñado para entrada y salida de texto, especialmente programación, razonamiento y tareas largas con herramientas. Un millón de tokens es una capacidad declarada, no una garantía de precisión uniforme a cualquier longitud.",
+        "Reflection distribuye checkpoints BF16, FP8 y NVFP4, además de un modelo auxiliar de speculative decoding. Son formatos con compromisos distintos entre tamaño, compatibilidad y rendimiento. Aunque solo una fracción de parámetros se active por token, el servidor debe almacenar y distribuir el conjunto de pesos y reservar memoria para caché, activaciones y concurrencia. Por eso el modelo no se vuelve pequeño por tener 23.400 millones de parámetros activos.",
+        "El anuncio enumera compatibilidad con Transformers, vLLM, SGLang y otros sistemas de serving. Reflection también presenta Mirror CLI, un entorno de agentes con sesiones reanudables, worktrees paralelos, herramientas, habilidades y conexiones MCP. La empresa dice que Mirror combina una interfaz Python con un núcleo de agente en Rust. Estas capacidades pueden reducir la fricción para probar flujos de programación, pero no sustituyen la revisión de permisos ni la evaluación con repositorios propios.",
+        "La API de Reflection se encuentra en beta pública y la empresa anuncia que se puede comenzar gratuitamente. No publica en ese anuncio una tarifa universal permanente por millón de tokens; no corresponde extrapolar el coste de un proveedor a todos. AWS documenta SageMaker JumpStart inicialmente en US East (N. Virginia) y US East (Ohio), además de despliegue avanzado mediante HyperPod. El autoalojamiento requiere múltiples GPU y genera gastos de cómputo, almacenamiento y operación.",
+        "Reflection publica resultados de benchmarks en su ficha y afirma una eficiencia favorable en tokens de razonamiento. Son mediciones del proveedor bajo configuraciones específicas, no una clasificación independiente que garantice superioridad sobre todos los modelos. La ficha también describe evaluaciones de seguridad, con tasas de rechazo y cumplimiento que dependen del conjunto de pruebas. Conviene consultar la metodología antes de inferir comportamiento en producción.",
+        "Análisis Gazette: la apertura de pesos convierte a Beam en un competidor más verificable y adaptable para equipos que requieren control de datos o ejecución soberana. La barrera principal no es descargar un archivo, sino servirlo de manera confiable, medir costes y controlar las acciones de sus agentes. Para evaluarlo, fijar una revisión del checkpoint, medir tareas representativas, probar aislamiento de herramientas y registrar latencia, tokens y fallos. Falta observar resultados independientes y precios estables de los servicios alojados."
+      ],
+      "keyPoints": [
+        "Pesos descargables bajo Apache 2.0; no se trata únicamente de una promesa de apertura.",
+        "501,3B parámetros totales y 23,4B activos por token, según ficha oficial.",
+        "Variantes BF16, FP8 y NVFP4 y API pública en beta."
+      ],
+      "quickTakeaways": [
+        "Pesos descargables bajo Apache 2.0; no se trata únicamente de una promesa de apertura.",
+        "501,3B parámetros totales y 23,4B activos por token, según ficha oficial.",
+        "Variantes BF16, FP8 y NVFP4 y API pública en beta.",
+        "AWS documenta JumpStart inicialmente en Virginia y Ohio."
+      ],
+      "executiveSummary": [
+        "Reflection publicó los pesos de Beam 1.0 en BF16, FP8 y NVFP4 bajo Apache 2.0, junto con herramientas para agentes y acceso API en beta. El modelo MoE declara 501.300 millones de parámetros totales y 23.400 millones activos; su autoalojamiento requiere infraestructura de múltiples GPU."
+      ],
+      "sections": [
+        {
+          "heading": "El cambio de estado es la noticia",
+          "paragraphs": [
+            "Reflection AI anunció el 16 de octubre la disponibilidad efectiva de los pesos de Beam 1.0. La diferencia con la presentación inicial del modelo es decisiva: ahora hay repositorios públicos de Hugging Face, licencia Apache 2.0 y archivos que terceros pueden descargar para inspección o despliegue. La empresa acompañó la liberación con documentación, evaluaciones de seguridad y una red de integraciones para inferencia y agentes. Esta noticia corresponde a la liberación, no al anuncio preliminar de octubre.",
+            "El carácter abierto de los pesos permite personalizar y ejecutar el modelo en infraestructura controlada por el usuario, sujeto a recursos técnicos y obligaciones legales. No significa que el entrenamiento, todos los datos ni el proceso interno completo sean reproducibles. La promesa de Reflection es un ecosistema de herramientas abierto alrededor del modelo; cada componente debe evaluarse por separado antes de adoptar la etiqueta de sistema totalmente abierto."
+          ],
+          "kind": "report"
+        },
+        {
+          "heading": "Arquitectura y escala",
+          "paragraphs": [
+            "La ficha del modelo describe una arquitectura dispersa mixture-of-experts con 501.300 millones de parámetros totales y 23.400 millones activos. Incluye 52 capas, de las cuales 49 son MoE, 256 expertos y una ventana de contexto declarada de un millón de tokens. Está diseñado para entrada y salida de texto, especialmente programación, razonamiento y tareas largas con herramientas. Un millón de tokens es una capacidad declarada, no una garantía de precisión uniforme a cualquier longitud.",
+            "Reflection distribuye checkpoints BF16, FP8 y NVFP4, además de un modelo auxiliar de speculative decoding. Son formatos con compromisos distintos entre tamaño, compatibilidad y rendimiento. Aunque solo una fracción de parámetros se active por token, el servidor debe almacenar y distribuir el conjunto de pesos y reservar memoria para caché, activaciones y concurrencia. Por eso el modelo no se vuelve pequeño por tener 23.400 millones de parámetros activos."
+          ],
+          "kind": "technical"
+        },
+        {
+          "heading": "Ecosistema, acceso y costes",
+          "paragraphs": [
+            "El anuncio enumera compatibilidad con Transformers, vLLM, SGLang y otros sistemas de serving. Reflection también presenta Mirror CLI, un entorno de agentes con sesiones reanudables, worktrees paralelos, herramientas, habilidades y conexiones MCP. La empresa dice que Mirror combina una interfaz Python con un núcleo de agente en Rust. Estas capacidades pueden reducir la fricción para probar flujos de programación, pero no sustituyen la revisión de permisos ni la evaluación con repositorios propios.",
+            "La API de Reflection se encuentra en beta pública y la empresa anuncia que se puede comenzar gratuitamente. No publica en ese anuncio una tarifa universal permanente por millón de tokens; no corresponde extrapolar el coste de un proveedor a todos. AWS documenta SageMaker JumpStart inicialmente en US East (N. Virginia) y US East (Ohio), además de despliegue avanzado mediante HyperPod. El autoalojamiento requiere múltiples GPU y genera gastos de cómputo, almacenamiento y operación."
+          ],
+          "kind": "report"
+        },
+        {
+          "heading": "Evidencia, riesgos y lectura Gazette",
+          "paragraphs": [
+            "Reflection publica resultados de benchmarks en su ficha y afirma una eficiencia favorable en tokens de razonamiento. Son mediciones del proveedor bajo configuraciones específicas, no una clasificación independiente que garantice superioridad sobre todos los modelos. La ficha también describe evaluaciones de seguridad, con tasas de rechazo y cumplimiento que dependen del conjunto de pruebas. Conviene consultar la metodología antes de inferir comportamiento en producción.",
+            "Análisis Gazette: la apertura de pesos convierte a Beam en un competidor más verificable y adaptable para equipos que requieren control de datos o ejecución soberana. La barrera principal no es descargar un archivo, sino servirlo de manera confiable, medir costes y controlar las acciones de sus agentes. Para evaluarlo, fijar una revisión del checkpoint, medir tareas representativas, probar aislamiento de herramientas y registrar latencia, tokens y fallos. Falta observar resultados independientes y precios estables de los servicios alojados."
+          ],
+          "kind": "analysis"
+        }
+      ],
+      "analysis": "Análisis Gazette: la liberación real de pesos abre la puerta a auditoría y despliegue controlado, pero no equivale a una instalación local ligera ni garantiza rentabilidad.",
+      "watch": "Seguir evaluaciones independientes, coste real por tarea, nuevas regiones, recetas de ajuste y estabilidad de integraciones.",
+      "availability": {
+        "status": "Pesos públicos y API en beta",
+        "platforms": [
+          "Hugging Face",
+          "Reflection API",
+          "AWS SageMaker JumpStart",
+          "Integraciones de terceros"
+        ],
+        "regions": [
+          "AWS JumpStart: us-east-1 y us-east-2 al lanzamiento"
+        ],
+        "requirements": [
+          "Capacidad multi-GPU para autoalojamiento"
+        ],
+        "notes": [
+          "La disponibilidad de proveedores terceros varía."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Licencia de pesos",
+          "value": "Apache 2.0, sin tarifa de licencia del checkpoint"
+        },
+        {
+          "label": "API propia",
+          "value": "Beta pública; gratuita para comenzar, sin precio permanente verificado"
+        },
+        {
+          "label": "Autoalojamiento",
+          "value": "Infraestructura y operación de pago según configuración"
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Parámetros",
+          "value": "501,3B totales; 23,4B activos"
+        },
+        {
+          "label": "Contexto",
+          "value": "1M tokens declarados"
+        },
+        {
+          "label": "Checkpoints",
+          "value": "BF16, FP8 y NVFP4"
+        }
+      ],
+      "limitations": [
+        "Benchmarks publicados por el proveedor.",
+        "Alto coste de memoria y capacidad multi-GPU.",
+        "Tarifas de API y disponibilidad de socios sujetas a cambios."
+      ],
+      "practicalAdvice": [
+        "Probar primero con endpoint gestionado y tareas propias antes de aprovisionar GPU.",
+        "Fijar revisión y licencia del checkpoint y registrar métricas de coste, latencia y seguridad."
+      ],
+      "finalSummary": "Reflection publicó los pesos de Beam 1.0 en BF16, FP8 y NVFP4 bajo Apache 2.0, junto con herramientas para agentes y acceso API en beta. El modelo MoE declara 501.300 millones de parámetros totales y 23.400 millones activos; su autoalojamiento requiere infraestructura de múltiples GPU."
+    },
+    {
+      "id": "g7-ai-cyber-finance-tabletop-exercises-2026",
+      "eventKey": "g7-finance-ministers-ai-enabled-cyberattack-tabletop-exercises-bangkok-2026-10-16",
+      "date": "2026-10-16",
+      "announcedAt": "2026-10-16",
+      "coveredAt": "2026-10-17",
+      "verifiedAt": "2026-10-17",
+      "articleVersion": 2,
+      "company": "G7",
+      "product": "Ejercicios de ciberresiliencia financiera con IA",
+      "title": "El G7 acuerda simulacros de ciberataques potenciados por IA para reforzar la banca",
+      "summary": "Ministros de Finanzas y bancos centrales del G7 acordaron preparar ejercicios de mesa ante incidentes cibernéticos potenciados por IA. Según Reuters, los resultados servirán para probar protocolos y revisar manuales; fechas, presupuesto y participación privada todavía no están definidos públicamente.",
+      "tags": [
+        "G7",
+        "Ciberseguridad",
+        "Banca",
+        "IA",
+        "Regulación",
+        "Resiliencia"
+      ],
+      "image": "assets/globe.webp",
+      "imageAlt": "Ilustración editorial conceptual sobre Ejercicios de ciberresiliencia financiera con IA; no representa una fotografía documental del anuncio.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-global-infrastructure-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia de una mesa internacional de coordinación financiera, mapas de redes y documentos de simulacro; evitar emblemas falsos y escenas presentadas como fotografía de una reunión real.",
+      "source": {
+        "name": "Reuters · G7 to launch exercises to guard against AI cyber attacks",
+        "url": "https://www.reuters.com/world/asia-pacific/g7-launch-exercises-guard-against-ai-cyber-attacks-2026-10-16/",
+        "publishedAt": "2026-10-16"
+      },
+      "relatedSources": [],
+      "body": [
+        "Reuters informó el 16 de octubre que ministros de Finanzas y gobernadores de bancos centrales del G7 acordaron desarrollar ejercicios de mesa para prepararse frente a ciberataques potenciados por inteligencia artificial. La ministra japonesa de Finanzas, Satsuki Katayama, confirmó que una propuesta discutida por viceministros financieros había recibido aprobación a nivel ministerial. El encuentro se realizó en Bangkok, al margen de reuniones financieras internacionales. No se anunció una operación real ni una respuesta a un ataque concreto.",
+        "Los ejercicios de mesa son simulaciones organizativas: participantes reciben escenarios, toman decisiones y contrastan procedimientos sin necesidad de ejecutar un ataque contra sistemas bancarios en producción. Su utilidad es identificar dependencias, tiempos de escalamiento, responsabilidades y coordinación entre autoridades. Reuters señala que los resultados se usarán para evaluar protocolos existentes y revisar manuales de respuesta. La participación de instituciones financieras privadas podría variar según el escenario.",
+        "El temor regulatorio no se limita a un programa malicioso nuevo. Las herramientas de IA pueden acelerar reconocimiento de superficies de ataque, generación de mensajes engañosos, análisis de código vulnerable y coordinación de tareas. También existen agentes que actúan fuera de lo previsto por sus operadores. Ninguno de estos mecanismos implica que cualquier modelo pueda penetrar automáticamente sistemas protegidos; el riesgo depende de accesos, controles, vulnerabilidades y respuesta defensiva.",
+        "Reuters sitúa la decisión en un contexto de advertencias del Fondo Monetario Internacional sobre la confianza en servicios financieros críticos. Una interrupción en pagos, compensación o acceso a cuentas puede extenderse entre entidades conectadas, incluso cuando el incidente comienza en un proveedor concreto. Por eso la preparación debe contemplar comunicaciones entre bancos centrales, supervisores, bancos y proveedores de tecnología, además de planes técnicos de restauración.",
+        "La información disponible confirma un acuerdo para realizar simulaciones y el propósito de revisar protocolos. No identifica fechas de los ejercicios, duración, presupuesto, escenarios específicos ni bancos participantes. Tampoco demuestra que las autoridades hayan encontrado un fallo concreto en una entidad del G7. Presentar el plan como un despliegue de software o como una prueba completada confundiría intención política con ejecución operativa.",
+        "Un funcionario del Ministerio de Finanzas japonés, citado por Reuters, explicó que los ejercicios serán desarrollados por autoridades financieras del G7 y que podrían incorporar instituciones privadas. Esa posibilidad no equivale a una convocatoria definitiva. Los detalles deberán contrastarse cuando los organismos publiquen agendas, metodologías o resultados. La coordinación transfronteriza añade complejidad porque incidentes financieros pueden cruzar husos horarios, proveedores y jurisdicciones.",
+        "Para bancos y operadores de infraestructura, una respuesta práctica es revisar inventarios de servicios críticos, dependencias externas, límites de autonomía de agentes, permisos de herramientas y mecanismos de reversión. También conviene ensayar comunicaciones entre seguridad, operaciones, atención al cliente y reguladores. Estas son orientaciones editoriales generales y no un listado de requisitos nuevos emitidos por el G7.",
+        "Análisis Gazette: el acuerdo señala que los riesgos de IA están pasando del debate de capacidades de modelos a ejercicios de resiliencia de servicios esenciales. El resultado valioso será medible solo cuando existan simulaciones, hallazgos y mejoras de procedimientos. Para los usuarios de banca, el anuncio no implica cambios inmediatos de producto ni una amenaza específica a sus cuentas. Lo relevante será observar si la cooperación produce estándares de respuesta y pruebas repetibles."
+      ],
+      "keyPoints": [
+        "Las autoridades financieras del G7 aprobaron preparar ejercicios de mesa sobre amenazas cibernéticas con IA.",
+        "La confirmación procede de declaraciones de la ministra japonesa Satsuki Katayama recogidas por Reuters.",
+        "Los ejercicios probarán protocolos y podrán motivar revisiones de manuales."
+      ],
+      "quickTakeaways": [
+        "Las autoridades financieras del G7 aprobaron preparar ejercicios de mesa sobre amenazas cibernéticas con IA.",
+        "La confirmación procede de declaraciones de la ministra japonesa Satsuki Katayama recogidas por Reuters.",
+        "Los ejercicios probarán protocolos y podrán motivar revisiones de manuales.",
+        "No hay calendario, presupuesto ni lista definitiva de participantes privados publicada."
+      ],
+      "executiveSummary": [
+        "Ministros de Finanzas y bancos centrales del G7 acordaron preparar ejercicios de mesa ante incidentes cibernéticos potenciados por IA. Según Reuters, los resultados servirán para probar protocolos y revisar manuales; fechas, presupuesto y participación privada todavía no están definidos públicamente."
+      ],
+      "sections": [
+        {
+          "heading": "Qué se acordó en Bangkok",
+          "paragraphs": [
+            "Reuters informó el 16 de octubre que ministros de Finanzas y gobernadores de bancos centrales del G7 acordaron desarrollar ejercicios de mesa para prepararse frente a ciberataques potenciados por inteligencia artificial. La ministra japonesa de Finanzas, Satsuki Katayama, confirmó que una propuesta discutida por viceministros financieros había recibido aprobación a nivel ministerial. El encuentro se realizó en Bangkok, al margen de reuniones financieras internacionales. No se anunció una operación real ni una respuesta a un ataque concreto.",
+            "Los ejercicios de mesa son simulaciones organizativas: participantes reciben escenarios, toman decisiones y contrastan procedimientos sin necesidad de ejecutar un ataque contra sistemas bancarios en producción. Su utilidad es identificar dependencias, tiempos de escalamiento, responsabilidades y coordinación entre autoridades. Reuters señala que los resultados se usarán para evaluar protocolos existentes y revisar manuales de respuesta. La participación de instituciones financieras privadas podría variar según el escenario."
+          ],
+          "kind": "report"
+        },
+        {
+          "heading": "Por qué la IA cambia la evaluación de riesgos",
+          "paragraphs": [
+            "El temor regulatorio no se limita a un programa malicioso nuevo. Las herramientas de IA pueden acelerar reconocimiento de superficies de ataque, generación de mensajes engañosos, análisis de código vulnerable y coordinación de tareas. También existen agentes que actúan fuera de lo previsto por sus operadores. Ninguno de estos mecanismos implica que cualquier modelo pueda penetrar automáticamente sistemas protegidos; el riesgo depende de accesos, controles, vulnerabilidades y respuesta defensiva.",
+            "Reuters sitúa la decisión en un contexto de advertencias del Fondo Monetario Internacional sobre la confianza en servicios financieros críticos. Una interrupción en pagos, compensación o acceso a cuentas puede extenderse entre entidades conectadas, incluso cuando el incidente comienza en un proveedor concreto. Por eso la preparación debe contemplar comunicaciones entre bancos centrales, supervisores, bancos y proveedores de tecnología, además de planes técnicos de restauración."
+          ],
+          "kind": "technical"
+        },
+        {
+          "heading": "Qué se sabe y qué sigue sin publicarse",
+          "paragraphs": [
+            "La información disponible confirma un acuerdo para realizar simulaciones y el propósito de revisar protocolos. No identifica fechas de los ejercicios, duración, presupuesto, escenarios específicos ni bancos participantes. Tampoco demuestra que las autoridades hayan encontrado un fallo concreto en una entidad del G7. Presentar el plan como un despliegue de software o como una prueba completada confundiría intención política con ejecución operativa.",
+            "Un funcionario del Ministerio de Finanzas japonés, citado por Reuters, explicó que los ejercicios serán desarrollados por autoridades financieras del G7 y que podrían incorporar instituciones privadas. Esa posibilidad no equivale a una convocatoria definitiva. Los detalles deberán contrastarse cuando los organismos publiquen agendas, metodologías o resultados. La coordinación transfronteriza añade complejidad porque incidentes financieros pueden cruzar husos horarios, proveedores y jurisdicciones."
+          ],
+          "kind": "report"
+        },
+        {
+          "heading": "Consecuencias para instituciones y usuarios",
+          "paragraphs": [
+            "Para bancos y operadores de infraestructura, una respuesta práctica es revisar inventarios de servicios críticos, dependencias externas, límites de autonomía de agentes, permisos de herramientas y mecanismos de reversión. También conviene ensayar comunicaciones entre seguridad, operaciones, atención al cliente y reguladores. Estas son orientaciones editoriales generales y no un listado de requisitos nuevos emitidos por el G7.",
+            "Análisis Gazette: el acuerdo señala que los riesgos de IA están pasando del debate de capacidades de modelos a ejercicios de resiliencia de servicios esenciales. El resultado valioso será medible solo cuando existan simulaciones, hallazgos y mejoras de procedimientos. Para los usuarios de banca, el anuncio no implica cambios inmediatos de producto ni una amenaza específica a sus cuentas. Lo relevante será observar si la cooperación produce estándares de respuesta y pruebas repetibles."
+          ],
+          "kind": "analysis"
+        }
+      ],
+      "analysis": "Análisis Gazette: la señal es regulatoria y operativa; el impacto dependerá de ejercicios realizados y protocolos corregidos.",
+      "watch": "Calendario, participación privada, resultados y cambios de manuales.",
+      "availability": {
+        "status": "Acuerdo político; ejercicios pendientes",
+        "platforms": [
+          "Autoridades financieras del G7"
+        ],
+        "regions": [
+          "Países del G7"
+        ],
+        "requirements": [],
+        "notes": [
+          "Participación privada posible, no confirmada."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Presupuesto",
+          "value": "No divulgado"
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Formato",
+          "value": "Ejercicios de mesa (tabletop)"
+        },
+        {
+          "label": "Objetivo",
+          "value": "Probar protocolos y revisar manuales"
+        }
+      ],
+      "limitations": [
+        "No hay calendario ni presupuesto público.",
+        "No se confirmaron bancos participantes ni escenarios.",
+        "La aprobación del plan no prueba su ejecución."
+      ],
+      "practicalAdvice": [
+        "Revisar dependencias y procedimientos de escalamiento antes de una simulación.",
+        "No interpretar el acuerdo como evidencia de un ataque en curso."
+      ],
+      "finalSummary": "Ministros de Finanzas y bancos centrales del G7 acordaron preparar ejercicios de mesa ante incidentes cibernéticos potenciados por IA. Según Reuters, los resultados servirán para probar protocolos y revisar manuales; fechas, presupuesto y participación privada todavía no están definidos públicamente."
     },
     {
       "id": "china-ai-technology-export-controls-draft-2026",
@@ -314,6 +606,274 @@
         "Documentar ubicación del despliegue y entidad que controla la tecnología."
       ],
       "finalSummary": "Los equipos afectados deberían revisar el anuncio original, su anexo, los contratos de licencia y el destino del despliegue antes de modificar operaciones. No corresponde ofrecer aquí asesoría jurídica concluyente sobre casos concretos. Hay que observar las respuestas a la consulta hasta el 15 de noviembre, la versión definitiva, el tratamiento de pesos abiertos y las guías de registro. La noticia es una propuesta regulatoria con una medida provisional vigente, no una prohibición universal consumada."
+    },
+    {
+      "id": "anthropic-claude-quantum-circuit-optimization-2026",
+      "eventKey": "anthropic-claude-mythos-5-eight-quantum-circuit-primitives-divsteps-dqi-arxiv-2026-10-16",
+      "date": "2026-10-16",
+      "announcedAt": "2026-10-16",
+      "coveredAt": "2026-10-17",
+      "verifiedAt": "2026-10-17",
+      "articleVersion": 2,
+      "company": "Anthropic",
+      "product": "Optimización de circuitos cuánticos con Claude",
+      "title": "Anthropic usa Claude para rediseñar ocho circuitos cuánticos y reducir puertas en operaciones clave",
+      "summary": "Anthropic publicó investigación en la que Claude Mythos 5 propuso circuitos para ocho primitivas computacionales y recibió evaluación automática. La compañía reporta una variante con 17 veces menos puertas y 12 % más qubits, y un decodificador DQI con doce veces menos puertas; no es una demostración en hardware cuántico real.",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "Computación cuántica",
+        "Investigación",
+        "Optimización",
+        "Matemáticas"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Ilustración editorial conceptual sobre Optimización de circuitos cuánticos con Claude; no representa una fotografía documental del anuncio.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado sepia de diagramas de puertas cuánticas, retículas matemáticas y cuadernos de laboratorio; metáfora técnica, no fotografía de procesador real.",
+      "source": {
+        "name": "Anthropic · Designing more efficient quantum circuits with Claude",
+        "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+        "publishedAt": "2026-10-16"
+      },
+      "relatedSources": [],
+      "body": [
+        "El 16 de octubre Anthropic publicó un trabajo de investigación sobre optimización de circuitos cuánticos con Claude Mythos 5. Los investigadores formularon ocho tareas en lenguaje natural y conectaron al modelo con un evaluador que comprobaba corrección y coste de los diseños. Claude podía proponer implementaciones en código, recibir una puntuación y revisarlas en un ciclo de búsqueda. El artículo atribuye mejoras frente a construcciones publicadas, pero se refiere a algoritmos y circuitos, no a una nueva computadora cuántica.",
+        "Las tareas cubren primitivas relacionadas con química, optimización, simulación física, teoría de números y cálculo. Una parte importante del enfoque es que ciertos resultados pueden comprobarse mediante programas clásicos: la IA no obtiene crédito simplemente por producir código plausible. La función objetivo aproxima el coste combinando número de qubits y puertas, aunque un dispositivo real también depende de errores, conectividad, velocidad y corrección cuántica.",
+        "Los circuitos cuánticos no pueden borrar información intermedia de la misma forma que un programa convencional. Muchas operaciones deben poder ejecutarse hacia atrás para limpiar resultados auxiliares, lo que puede exigir qubits adicionales o repetir trabajo. Esa tensión entre memoria y número de puertas hace que una implementación clásica eficiente no se traduzca automáticamente en un circuito cuántico barato.",
+        "En una tarea de suma de puntos sobre curvas elípticas, Claude exploró cómo adaptar divsteps, un procedimiento para inversión modular. Anthropic relata un proceso de 53 horas con intervención humana limitada al planteamiento y estímulos ocasionales para explorar alternativas. El modelo buscó reconstruir decisiones intermedias a partir del propio estado numérico, en vez de almacenar todo el historial. La compañía informa comprobaciones numéricas y formalización de afirmaciones en Lean.",
+        "Para la suma de puntos elípticos, una familia de diseños permite distintos compromisos entre espacio y tiempo. Anthropic destaca una variante que usa un 12 % más de qubits, pero 17 veces menos puertas que un diseño anterior seleccionado como referencia. Esto no significa que todos los circuitos cuánticos sean diecisiete veces más rápidos: el resultado corresponde a una operación y una comparación concretas.",
+        "El segundo ejemplo aborda un decodificador Reed–Solomon dentro de decoded quantum interferometry, un enfoque propuesto para problemas de optimización. Claude reemplazó una base algorítmica de Euclides extendido por Berlekamp–Massey y buscó reconstruir información temporal en vez de guardarla. Anthropic afirma que el circuito resultante utiliza doce veces menos puertas que una construcción previa. En sus simulaciones, reservar 19 qubits para una excepción dejaba una tasa aproximada de fallo de uno en diez mil casos, dentro de la tolerancia considerada.",
+        "El trabajo ilustra una metodología prometedora: convertir investigación matemática en un ciclo con verificación externa y medidas cuantitativas. También muestra límites del agente: Anthropic describe una tendencia inicial a preferir soluciones conocidas y revisar excesivamente resultados, por lo que el equipo solicitó enfoques alternativos. La autonomía no fue absoluta ni debe confundirse con ausencia de supervisión científica.",
+        "Análisis Gazette: optimizar circuitos podría reducir recursos necesarios para futuras máquinas tolerantes a fallos, pero todavía faltan pruebas de extremo a extremo, reproducción independiente amplia y validación en hardware. No se anunció un producto comercial ni precio de acceso para estos circuitos. Para investigadores, conviene consultar el paper, contrastar supuestos de puertas y qubits, y verificar que el nuevo circuito conserva las condiciones del problema original. La comparación con hardware clásico depende del caso de uso."
+      ],
+      "keyPoints": [
+        "Ocho primitivas de circuitos rediseñadas en un bucle de propuestas y evaluación.",
+        "En suma de puntos elípticos: una variante con 12 % más qubits y 17 veces menos puertas.",
+        "En un decodificador DQI: doce veces menos puertas que la construcción previa citada."
+      ],
+      "quickTakeaways": [
+        "Ocho primitivas de circuitos rediseñadas en un bucle de propuestas y evaluación.",
+        "En suma de puntos elípticos: una variante con 12 % más qubits y 17 veces menos puertas.",
+        "En un decodificador DQI: doce veces menos puertas que la construcción previa citada.",
+        "Resultados algorítmicos, sin demostración de ventaja cuántica experimental."
+      ],
+      "executiveSummary": [
+        "Anthropic publicó investigación en la que Claude Mythos 5 propuso circuitos para ocho primitivas computacionales y recibió evaluación automática. La compañía reporta una variante con 17 veces menos puertas y 12 % más qubits, y un decodificador DQI con doce veces menos puertas; no es una demostración en hardware cuántico real."
+      ],
+      "sections": [
+        {
+          "heading": "IA como colaboradora en diseño de algoritmos",
+          "paragraphs": [
+            "El 16 de octubre Anthropic publicó un trabajo de investigación sobre optimización de circuitos cuánticos con Claude Mythos 5. Los investigadores formularon ocho tareas en lenguaje natural y conectaron al modelo con un evaluador que comprobaba corrección y coste de los diseños. Claude podía proponer implementaciones en código, recibir una puntuación y revisarlas en un ciclo de búsqueda. El artículo atribuye mejoras frente a construcciones publicadas, pero se refiere a algoritmos y circuitos, no a una nueva computadora cuántica.",
+            "Las tareas cubren primitivas relacionadas con química, optimización, simulación física, teoría de números y cálculo. Una parte importante del enfoque es que ciertos resultados pueden comprobarse mediante programas clásicos: la IA no obtiene crédito simplemente por producir código plausible. La función objetivo aproxima el coste combinando número de qubits y puertas, aunque un dispositivo real también depende de errores, conectividad, velocidad y corrección cuántica."
+          ],
+          "kind": "report"
+        },
+        {
+          "heading": "El problema de reversibilidad",
+          "paragraphs": [
+            "Los circuitos cuánticos no pueden borrar información intermedia de la misma forma que un programa convencional. Muchas operaciones deben poder ejecutarse hacia atrás para limpiar resultados auxiliares, lo que puede exigir qubits adicionales o repetir trabajo. Esa tensión entre memoria y número de puertas hace que una implementación clásica eficiente no se traduzca automáticamente en un circuito cuántico barato.",
+            "En una tarea de suma de puntos sobre curvas elípticas, Claude exploró cómo adaptar divsteps, un procedimiento para inversión modular. Anthropic relata un proceso de 53 horas con intervención humana limitada al planteamiento y estímulos ocasionales para explorar alternativas. El modelo buscó reconstruir decisiones intermedias a partir del propio estado numérico, en vez de almacenar todo el historial. La compañía informa comprobaciones numéricas y formalización de afirmaciones en Lean."
+          ],
+          "kind": "technical"
+        },
+        {
+          "heading": "Dos resultados cuantitativos distintos",
+          "paragraphs": [
+            "Para la suma de puntos elípticos, una familia de diseños permite distintos compromisos entre espacio y tiempo. Anthropic destaca una variante que usa un 12 % más de qubits, pero 17 veces menos puertas que un diseño anterior seleccionado como referencia. Esto no significa que todos los circuitos cuánticos sean diecisiete veces más rápidos: el resultado corresponde a una operación y una comparación concretas.",
+            "El segundo ejemplo aborda un decodificador Reed–Solomon dentro de decoded quantum interferometry, un enfoque propuesto para problemas de optimización. Claude reemplazó una base algorítmica de Euclides extendido por Berlekamp–Massey y buscó reconstruir información temporal en vez de guardarla. Anthropic afirma que el circuito resultante utiliza doce veces menos puertas que una construcción previa. En sus simulaciones, reservar 19 qubits para una excepción dejaba una tasa aproximada de fallo de uno en diez mil casos, dentro de la tolerancia considerada."
+          ],
+          "kind": "report"
+        },
+        {
+          "heading": "Qué significa y qué no significa",
+          "paragraphs": [
+            "El trabajo ilustra una metodología prometedora: convertir investigación matemática en un ciclo con verificación externa y medidas cuantitativas. También muestra límites del agente: Anthropic describe una tendencia inicial a preferir soluciones conocidas y revisar excesivamente resultados, por lo que el equipo solicitó enfoques alternativos. La autonomía no fue absoluta ni debe confundirse con ausencia de supervisión científica.",
+            "Análisis Gazette: optimizar circuitos podría reducir recursos necesarios para futuras máquinas tolerantes a fallos, pero todavía faltan pruebas de extremo a extremo, reproducción independiente amplia y validación en hardware. No se anunció un producto comercial ni precio de acceso para estos circuitos. Para investigadores, conviene consultar el paper, contrastar supuestos de puertas y qubits, y verificar que el nuevo circuito conserva las condiciones del problema original. La comparación con hardware clásico depende del caso de uso."
+          ],
+          "kind": "analysis"
+        }
+      ],
+      "analysis": "Análisis Gazette: el avance es metodológico y algorítmico, no una señal de que ya exista ventaja cuántica práctica.",
+      "watch": "Publicación y reproducción del paper, costes de corrección de errores y pruebas experimentales.",
+      "availability": {
+        "status": "Investigación publicada",
+        "platforms": [
+          "Artículo de Anthropic y paper enlazado"
+        ],
+        "regions": [],
+        "requirements": [],
+        "notes": [
+          "No se anunció un producto comercial de circuitos cuánticos."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio",
+          "value": "No aplica; resultados de investigación"
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Tareas",
+          "value": "8 primitivas computacionales"
+        },
+        {
+          "label": "Suma de puntos",
+          "value": "17x menos puertas, 12 % más qubits en una variante"
+        },
+        {
+          "label": "Decodificador DQI",
+          "value": "12x menos puertas en comparación citada"
+        }
+      ],
+      "limitations": [
+        "Comparaciones realizadas en diseños algorítmicos, no hardware cuántico.",
+        "Resultados del equipo investigador pendientes de reproducción externa amplia.",
+        "El evaluador y las intervenciones humanas delimitan la autonomía reportada."
+      ],
+      "practicalAdvice": [
+        "Separar reducción de puertas de reducción del tiempo real de una computadora.",
+        "Revisar referencias y supuestos de cada benchmark antes de generalizar."
+      ],
+      "finalSummary": "Anthropic publicó investigación en la que Claude Mythos 5 propuso circuitos para ocho primitivas computacionales y recibió evaluación automática. La compañía reporta una variante con 17 veces menos puertas y 12 % más qubits, y un decodificador DQI con doce veces menos puertas; no es una demostración en hardware cuántico real."
+    },
+    {
+      "id": "anthropic-claude-nist-ecdsa-seeds-origin-2026",
+      "eventKey": "anthropic-claude-nist-ecdsa-curve-seeds-lrand48-timestamps-2026-10-16",
+      "date": "2026-10-16",
+      "announcedAt": "2026-10-16",
+      "coveredAt": "2026-10-17",
+      "verifiedAt": "2026-10-17",
+      "articleVersion": 2,
+      "company": "Anthropic",
+      "product": "Investigación sobre semillas de curvas NIST",
+      "title": "Claude reconstruye semillas de curvas NIST con lrand48 y fechas Unix, sin romper ECDSA",
+      "summary": "Anthropic documentó una reconstrucción reproducible del origen de semillas históricas de cinco curvas NIST mediante el generador lrand48 y marcas de tiempo. El hallazgo aclara una controversia sobre la procedencia de parámetros, pero no es un ataque a ECDSA ni implica sustituir claves.",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "Criptografía",
+        "Investigación",
+        "ECDSA",
+        "NIST"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Ilustración editorial conceptual sobre Investigación sobre semillas de curvas NIST; no representa una fotografía documental del anuncio.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado matemático de curvas elípticas, reloj antiguo y código C de los años noventa sobre papel envejecido; ilustración conceptual sin afirmar un ataque informático.",
+      "source": {
+        "name": "Anthropic · Claude reveals ECDSA curve origins",
+        "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+        "publishedAt": "2026-10-16"
+      },
+      "relatedSources": [],
+      "body": [
+        "El 16 de octubre Anthropic publicó una investigación sobre la procedencia de semillas utilizadas en parámetros históricos de curvas elípticas estandarizadas por NIST. La cuestión llevaba décadas generando debate porque las semillas se habían difundido sin un relato completo de cómo fueron elegidas. Un equipo de Anthropic atribuye a un modelo interno de investigación de Claude el hallazgo de un procedimiento reproducible basado en un generador de números seudoaleatorios de bibliotecas C de los años noventa.",
+        "La diferencia entre semilla de generación de parámetros y clave privada de una persona es esencial. La investigación se refiere a la construcción de constantes públicas de ciertas curvas, no a las semillas secretas de billeteras o certificados. Anthropic insiste en que el resultado no representa un ataque nuevo, una debilidad demostrada de ECDSA ni una razón para cambiar claves existentes. La noticia es la explicación histórica verificable y el método de investigación asistida por IA.",
+        "Según el relato técnico, Claude descartó una antigua pista que sugería una frase humorística convertida en hash. En lugar de buscar palabras, estudió qué herramientas de programación eran plausibles en la época de diseño de los parámetros. Analizó fragmentos consecutivos de las semillas y observó patrones compatibles con lrand48, un generador congruencial lineal cuyo estado interno tiene 48 bits. Las salidas parciales permitieron reconstruir estados que reproducen los valores publicados.",
+        "Para las curvas sobre campos primos, el trabajo describe la recuperación de estado de salidas truncadas mediante técnicas matemáticas de reducción de retículas, incluido el algoritmo LLL. Al retroceder el generador hasta estados compatibles con srand48, aparecieron marcas de tiempo entre mayo de 1997 y abril de 1998. El artículo ofrece código para reproducir los valores; en P-256 la semilla estandarizada corresponde al candidato número 1.842 de una secuencia.",
+        "El equipo presenta coincidencias para P-192, P-224, P-256, P-384 y P-521, además de curvas de ejemplo ANSI X9.62. También describe cuatro semillas de curvas binarias relacionadas con fechas interpretables de 1998. Los autores aclaran que B-163 no encaja en el procedimiento encontrado. Es incorrecto afirmar que todas las semillas de todas las curvas quedaron resueltas.",
+        "Claude también identificó una receta histórica para algunos puntos base, utilizando un generador del paquete FreeLIP. Sin embargo, los puntos base de P-224, P-256, P-384 y P-521 no se explican con esa receta. Otra incertidumbre es por qué se saltaron candidatos que parecían matemáticamente viables. El hallazgo reduce el espacio de especulación, pero no reconstruye las decisiones humanas de quienes eligieron cada parámetro.",
+        "Las curvas elípticas están presentes en múltiples protocolos de firma y autenticación. Que una semilla pública provenga de un generador antiguo no implica que las claves privadas de los usuarios se generen con ese algoritmo ni que un atacante pueda falsificar firmas. Anthropic sostiene que el mecanismo simple y reproducible vuelve menos plausible una selección deliberadamente manipulada; esa interpretación es un argumento técnico de los investigadores, no una prueba histórica de intención.",
+        "Análisis Gazette: el valor de Claude aquí no consiste en reemplazar criptógrafos, sino en explorar hipótesis de software histórico, escribir comprobaciones y conectarlas con pruebas matemáticas. Para responsables de seguridad, la acción práctica es leer el material original y distinguir origen de constantes, seguridad del algoritmo y generación de claves propias. No se justifica una migración criptográfica por este anuncio. Conviene seguir la reproducción externa del código y las preguntas abiertas sobre puntos base."
+      ],
+      "keyPoints": [
+        "Anthropic reconstruye las semillas de P-192, P-224, P-256, P-384 y P-521.",
+        "El generador identificado es lrand48 inicializado con marcas de tiempo Unix.",
+        "P-256 coincide con el candidato 1.842 del procedimiento reconstruido."
+      ],
+      "quickTakeaways": [
+        "Anthropic reconstruye las semillas de P-192, P-224, P-256, P-384 y P-521.",
+        "El generador identificado es lrand48 inicializado con marcas de tiempo Unix.",
+        "P-256 coincide con el candidato 1.842 del procedimiento reconstruido.",
+        "El descubrimiento no rompe ECDSA; B-163 y varios puntos base siguen sin explicar."
+      ],
+      "executiveSummary": [
+        "Anthropic documentó una reconstrucción reproducible del origen de semillas históricas de cinco curvas NIST mediante el generador lrand48 y marcas de tiempo. El hallazgo aclara una controversia sobre la procedencia de parámetros, pero no es un ataque a ECDSA ni implica sustituir claves."
+      ],
+      "sections": [
+        {
+          "heading": "Un misterio de procedencia, no una vulnerabilidad nueva",
+          "paragraphs": [
+            "El 16 de octubre Anthropic publicó una investigación sobre la procedencia de semillas utilizadas en parámetros históricos de curvas elípticas estandarizadas por NIST. La cuestión llevaba décadas generando debate porque las semillas se habían difundido sin un relato completo de cómo fueron elegidas. Un equipo de Anthropic atribuye a un modelo interno de investigación de Claude el hallazgo de un procedimiento reproducible basado en un generador de números seudoaleatorios de bibliotecas C de los años noventa.",
+            "La diferencia entre semilla de generación de parámetros y clave privada de una persona es esencial. La investigación se refiere a la construcción de constantes públicas de ciertas curvas, no a las semillas secretas de billeteras o certificados. Anthropic insiste en que el resultado no representa un ataque nuevo, una debilidad demostrada de ECDSA ni una razón para cambiar claves existentes. La noticia es la explicación histórica verificable y el método de investigación asistida por IA."
+          ],
+          "kind": "report"
+        },
+        {
+          "heading": "Cómo se identificó el generador",
+          "paragraphs": [
+            "Según el relato técnico, Claude descartó una antigua pista que sugería una frase humorística convertida en hash. En lugar de buscar palabras, estudió qué herramientas de programación eran plausibles en la época de diseño de los parámetros. Analizó fragmentos consecutivos de las semillas y observó patrones compatibles con lrand48, un generador congruencial lineal cuyo estado interno tiene 48 bits. Las salidas parciales permitieron reconstruir estados que reproducen los valores publicados.",
+            "Para las curvas sobre campos primos, el trabajo describe la recuperación de estado de salidas truncadas mediante técnicas matemáticas de reducción de retículas, incluido el algoritmo LLL. Al retroceder el generador hasta estados compatibles con srand48, aparecieron marcas de tiempo entre mayo de 1997 y abril de 1998. El artículo ofrece código para reproducir los valores; en P-256 la semilla estandarizada corresponde al candidato número 1.842 de una secuencia."
+          ],
+          "kind": "technical"
+        },
+        {
+          "heading": "Qué se pudo reconstruir y qué falta",
+          "paragraphs": [
+            "El equipo presenta coincidencias para P-192, P-224, P-256, P-384 y P-521, además de curvas de ejemplo ANSI X9.62. También describe cuatro semillas de curvas binarias relacionadas con fechas interpretables de 1998. Los autores aclaran que B-163 no encaja en el procedimiento encontrado. Es incorrecto afirmar que todas las semillas de todas las curvas quedaron resueltas.",
+            "Claude también identificó una receta histórica para algunos puntos base, utilizando un generador del paquete FreeLIP. Sin embargo, los puntos base de P-224, P-256, P-384 y P-521 no se explican con esa receta. Otra incertidumbre es por qué se saltaron candidatos que parecían matemáticamente viables. El hallazgo reduce el espacio de especulación, pero no reconstruye las decisiones humanas de quienes eligieron cada parámetro."
+          ],
+          "kind": "report"
+        },
+        {
+          "heading": "Implicaciones para seguridad y evaluación de IA",
+          "paragraphs": [
+            "Las curvas elípticas están presentes en múltiples protocolos de firma y autenticación. Que una semilla pública provenga de un generador antiguo no implica que las claves privadas de los usuarios se generen con ese algoritmo ni que un atacante pueda falsificar firmas. Anthropic sostiene que el mecanismo simple y reproducible vuelve menos plausible una selección deliberadamente manipulada; esa interpretación es un argumento técnico de los investigadores, no una prueba histórica de intención.",
+            "Análisis Gazette: el valor de Claude aquí no consiste en reemplazar criptógrafos, sino en explorar hipótesis de software histórico, escribir comprobaciones y conectarlas con pruebas matemáticas. Para responsables de seguridad, la acción práctica es leer el material original y distinguir origen de constantes, seguridad del algoritmo y generación de claves propias. No se justifica una migración criptográfica por este anuncio. Conviene seguir la reproducción externa del código y las preguntas abiertas sobre puntos base."
+          ],
+          "kind": "analysis"
+        }
+      ],
+      "analysis": "Análisis Gazette: una reconstrucción reproducible de software histórico aporta transparencia, no una ruptura de ECDSA.",
+      "watch": "Reproducciones externas del código y nuevos hallazgos sobre B-163 y puntos base.",
+      "availability": {
+        "status": "Investigación pública",
+        "platforms": [
+          "Artículo técnico de Anthropic"
+        ],
+        "regions": [],
+        "requirements": [],
+        "notes": [
+          "No es un servicio comercial nuevo."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio",
+          "value": "No aplica; publicación de investigación"
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Generador identificado",
+          "value": "lrand48 / srand48"
+        },
+        {
+          "label": "Curvas primarias",
+          "value": "P-192, P-224, P-256, P-384, P-521"
+        },
+        {
+          "label": "P-256",
+          "value": "Candidato 1.842"
+        }
+      ],
+      "limitations": [
+        "B-163 no explicada.",
+        "Selección de algunos puntos base aún desconocida.",
+        "La motivación histórica humana no puede inferirse solo de las coincidencias."
+      ],
+      "practicalAdvice": [
+        "No cambiar claves por este anuncio: no es una ruptura criptográfica.",
+        "Distinguir parámetros públicos de secretos generados en aplicaciones reales."
+      ],
+      "finalSummary": "Anthropic documentó una reconstrucción reproducible del origen de semillas históricas de cinco curvas NIST mediante el generador lrand48 y marcas de tiempo. El hallazgo aclara una controversia sobre la procedencia de parámetros, pero no es un ataque a ECDSA ni implica sustituir claves."
     },
     {
       "id": "servicenow-ai-passport-agent-governance-2026",
@@ -651,6 +1211,153 @@
       ],
       "analysis": "Análisis Gazette: el crecimiento de plataformas de gobierno agéntico indica que el mercado empresarial empieza a distinguir entre comprar asistentes y operar trabajadores de software con capacidad de acción. Una herramienta de seguridad puede resultar valiosa si reduce la distancia entre la intención de un usuario y las operaciones efectivamente realizadas por el agente. Pero la confianza no se compra únicamente con una consola: necesita políticas, pruebas y responsabilidad organizacional. Los próximos hitos verificables serán documentación de conectores, resultados medidos con clientes, controles de respuesta y condiciones comerciales. La ronda de US$21 millones demuestra respaldo de inversores a la empresa, no superioridad técnica sobre alternativas ni adopción generalizada. Hasta contar con pruebas externas, sus capacidades y cifras deben mantenerse atribuidas a Opsin.",
       "watch": "Los próximos hitos verificables serán documentación de conectores, resultados medidos con clientes, controles de respuesta y condiciones comerciales. La ronda de US$21 millones demuestra respaldo de inversores a la empresa, no superioridad técnica sobre alternativas ni adopción generalizada. Hasta contar con pruebas externas, sus capacidades y cifras deben mantenerse atribuidas a Opsin."
+    },
+    {
+      "id": "openai-rosalind-academic-plan-us-labs-2026",
+      "eventKey": "openai-rosalind-academic-plan-30-business-seats-12-months-us-labs-2026-10-15",
+      "date": "2026-10-15",
+      "announcedAt": "2026-10-15",
+      "coveredAt": "2026-10-17",
+      "verifiedAt": "2026-10-17",
+      "articleVersion": 2,
+      "company": "OpenAI",
+      "product": "Rosalind Academic Plan",
+      "title": "OpenAI ofrece Rosalind Academic Plan: hasta 30 puestos gratuitos para laboratorios de EE. UU.",
+      "summary": "OpenAI presentó un programa para laboratorios universitarios estadounidenses elegibles: hasta 30 puestos Business Standard a US$0 por usuario al mes durante un máximo de 12 meses. GPT-Rosalind exige aprobación trusted access adicional y el plan no incluye API.",
+      "tags": [
+        "OpenAI",
+        "GPT-Rosalind",
+        "Investigación",
+        "Universidades",
+        "Biotecnología",
+        "Acceso"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Ilustración editorial conceptual sobre Rosalind Academic Plan; no representa una fotografía documental del anuncio.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia de laboratorio universitario con matraces, proteínas esquemáticas y cuadernos de investigación; ninguna imagen de instalaciones reales ni interfaz inventada.",
+      "source": {
+        "name": "OpenAI · Bringing GPT-Rosalind to academic research labs",
+        "url": "https://openai.com/index/introducing-the-rosalind-academic-plan/",
+        "publishedAt": "2026-10-15"
+      },
+      "relatedSources": [
+        {
+          "name": "OpenAI · GPT-Rosalind",
+          "url": "https://openai.com/index/introducing-gpt-rosalind/",
+          "publishedAt": "2026-04-16"
+        }
+      ],
+      "body": [
+        "El 15 de octubre de 2026 OpenAI anunció Rosalind Academic Plan, un mecanismo de acceso patrocinado para laboratorios universitarios de ciencias de la vida. No se trata del lanzamiento inicial de GPT-Rosalind ni de una nueva generación de parámetros: el modelo especializado ya tenía un historial de presentación y expansión de acceso. La novedad material es económica e institucional: ofrecer herramientas de IA científica a grupos académicos que quizá no podían contratar un despliegue empresarial.",
+        "OpenAI describe GPT-Rosalind como un sistema de razonamiento especializado para biología, descubrimiento de fármacos y medicina traslacional. La propuesta combina el modelo con Rosalind Workbench, un entorno de herramientas para tareas como química medicinal, genómica y apoyo al trabajo de laboratorio. Son capacidades anunciadas por la compañía; no deben interpretarse como validación clínica ni sustitución de experimentos, supervisión científica o procesos regulatorios.",
+        "Los laboratorios elegibles pueden recibir hasta 30 puestos de Business Standard a US$0 por usuario al mes durante un máximo de 12 meses. También obtienen acceso a modelos comerciales de OpenAI incluidos en el plan, sujeto a sus límites de uso. El acceso específico a GPT-Rosalind depende de una aprobación adicional mediante trusted access. Por tanto, la aceptación en el plan no equivale automáticamente a poder ejecutar cualquier tarea sensible del modelo especializado.",
+        "El anuncio no promete que todos los solicitantes obtendrán treinta puestos ni que el beneficio continuará gratuitamente después del año. Tampoco incorpora créditos ni acceso de API. Esa exclusión importa para grupos que desean conectar el modelo con sus propios sistemas de análisis o automatizar grandes lotes de datos. Los términos y límites concretos deberán revisarse en la documentación y el acuerdo aplicable al laboratorio aprobado.",
+        "El programa está disponible inicialmente para laboratorios académicos de universidades estadounidenses. Investigadores principales o responsables de laboratorio de instituciones sin contrato Enterprise existente pueden postular directamente. Si la universidad ya tiene un acuerdo Enterprise, el camino indicado por OpenAI es solicitar acceso a través de ese convenio. La elegibilidad no se extiende automáticamente a laboratorios de otros países, organizaciones comerciales o investigadores individuales sin responsabilidad institucional.",
+        "El proceso contempla verificación de legitimidad de la institución, identidad y antecedentes del responsable, afiliación, actividad científica y finalidad prevista. OpenAI también exige un contacto institucional de seguridad y responsabilidades claras para administrar a los miembros autorizados. Según el anuncio, los datos de investigación compartidos mediante el plan no se utilizan para entrenar modelos por defecto. Eso no elimina la necesidad de revisar políticas de privacidad, contratos y requisitos de protección de datos científicos.",
+        "OpenAI menciona ámbitos de investigación como diseño de proteínas y fármacos, detección de enfermedades, vacunas, terapias genéticas, resistencia antimicrobiana, agricultura y conservación. La amplitud de áreas posibles no implica que el modelo esté autorizado o validado para cada aplicación. Las propuestas científicas requieren contraste con literatura, datos y experimentos; las decisiones médicas y de bioseguridad conservan sus procedimientos independientes.",
+        "Análisis Gazette: la competencia por IA científica no depende solo de benchmarks. La financiación del acceso, las herramientas especializadas y el proceso de aprobación pueden determinar qué instituciones logran experimentar con modelos avanzados. El límite geográfico a Estados Unidos y la exclusión de API son barreras importantes. Para un laboratorio elegible, la recomendación es preparar un caso de uso concreto, definir responsables de datos y revisar desde el inicio qué ocurrirá al terminar los doce meses."
+      ],
+      "keyPoints": [
+        "Hasta 30 licencias Business Standard sin coste durante un máximo de 12 meses.",
+        "Solo laboratorios universitarios de Estados Unidos elegibles.",
+        "Acceso a GPT-Rosalind requiere evaluación trusted access."
+      ],
+      "quickTakeaways": [
+        "Hasta 30 licencias Business Standard sin coste durante un máximo de 12 meses.",
+        "Solo laboratorios universitarios de Estados Unidos elegibles.",
+        "Acceso a GPT-Rosalind requiere evaluación trusted access.",
+        "El programa no incluye acceso a API."
+      ],
+      "executiveSummary": [
+        "OpenAI presentó un programa para laboratorios universitarios estadounidenses elegibles: hasta 30 puestos Business Standard a US$0 por usuario al mes durante un máximo de 12 meses. GPT-Rosalind exige aprobación trusted access adicional y el plan no incluye API."
+      ],
+      "sections": [
+        {
+          "heading": "Un plan de acceso distinto del lanzamiento del modelo",
+          "paragraphs": [
+            "El 15 de octubre de 2026 OpenAI anunció Rosalind Academic Plan, un mecanismo de acceso patrocinado para laboratorios universitarios de ciencias de la vida. No se trata del lanzamiento inicial de GPT-Rosalind ni de una nueva generación de parámetros: el modelo especializado ya tenía un historial de presentación y expansión de acceso. La novedad material es económica e institucional: ofrecer herramientas de IA científica a grupos académicos que quizá no podían contratar un despliegue empresarial.",
+            "OpenAI describe GPT-Rosalind como un sistema de razonamiento especializado para biología, descubrimiento de fármacos y medicina traslacional. La propuesta combina el modelo con Rosalind Workbench, un entorno de herramientas para tareas como química medicinal, genómica y apoyo al trabajo de laboratorio. Son capacidades anunciadas por la compañía; no deben interpretarse como validación clínica ni sustitución de experimentos, supervisión científica o procesos regulatorios."
+          ],
+          "kind": "report"
+        },
+        {
+          "heading": "Beneficio económico y condiciones exactas",
+          "paragraphs": [
+            "Los laboratorios elegibles pueden recibir hasta 30 puestos de Business Standard a US$0 por usuario al mes durante un máximo de 12 meses. También obtienen acceso a modelos comerciales de OpenAI incluidos en el plan, sujeto a sus límites de uso. El acceso específico a GPT-Rosalind depende de una aprobación adicional mediante trusted access. Por tanto, la aceptación en el plan no equivale automáticamente a poder ejecutar cualquier tarea sensible del modelo especializado.",
+            "El anuncio no promete que todos los solicitantes obtendrán treinta puestos ni que el beneficio continuará gratuitamente después del año. Tampoco incorpora créditos ni acceso de API. Esa exclusión importa para grupos que desean conectar el modelo con sus propios sistemas de análisis o automatizar grandes lotes de datos. Los términos y límites concretos deberán revisarse en la documentación y el acuerdo aplicable al laboratorio aprobado."
+          ],
+          "kind": "technical"
+        },
+        {
+          "heading": "Quién puede solicitarlo y cómo funciona",
+          "paragraphs": [
+            "El programa está disponible inicialmente para laboratorios académicos de universidades estadounidenses. Investigadores principales o responsables de laboratorio de instituciones sin contrato Enterprise existente pueden postular directamente. Si la universidad ya tiene un acuerdo Enterprise, el camino indicado por OpenAI es solicitar acceso a través de ese convenio. La elegibilidad no se extiende automáticamente a laboratorios de otros países, organizaciones comerciales o investigadores individuales sin responsabilidad institucional.",
+            "El proceso contempla verificación de legitimidad de la institución, identidad y antecedentes del responsable, afiliación, actividad científica y finalidad prevista. OpenAI también exige un contacto institucional de seguridad y responsabilidades claras para administrar a los miembros autorizados. Según el anuncio, los datos de investigación compartidos mediante el plan no se utilizan para entrenar modelos por defecto. Eso no elimina la necesidad de revisar políticas de privacidad, contratos y requisitos de protección de datos científicos."
+          ],
+          "kind": "report"
+        },
+        {
+          "heading": "Usos, límites y análisis editorial",
+          "paragraphs": [
+            "OpenAI menciona ámbitos de investigación como diseño de proteínas y fármacos, detección de enfermedades, vacunas, terapias genéticas, resistencia antimicrobiana, agricultura y conservación. La amplitud de áreas posibles no implica que el modelo esté autorizado o validado para cada aplicación. Las propuestas científicas requieren contraste con literatura, datos y experimentos; las decisiones médicas y de bioseguridad conservan sus procedimientos independientes.",
+            "Análisis Gazette: la competencia por IA científica no depende solo de benchmarks. La financiación del acceso, las herramientas especializadas y el proceso de aprobación pueden determinar qué instituciones logran experimentar con modelos avanzados. El límite geográfico a Estados Unidos y la exclusión de API son barreras importantes. Para un laboratorio elegible, la recomendación es preparar un caso de uso concreto, definir responsables de datos y revisar desde el inicio qué ocurrirá al terminar los doce meses."
+          ],
+          "kind": "analysis"
+        }
+      ],
+      "analysis": "Análisis Gazette: el acceso patrocinado puede ampliar experimentación científica, pero su alcance depende de elegibilidad y herramientas efectivamente habilitadas.",
+      "watch": "Expansión geográfica, criterios de aprobación, límites de uso y condiciones después del año.",
+      "availability": {
+        "status": "Solicitud institucional con aprobación",
+        "platforms": [
+          "ChatGPT Business Standard",
+          "GPT-Rosalind mediante trusted access"
+        ],
+        "regions": [
+          "Universidades de Estados Unidos"
+        ],
+        "requirements": [
+          "Investigador principal o responsable autorizado",
+          "Verificación institucional y de seguridad"
+        ],
+        "notes": [
+          "Con contrato Enterprise existente se usa el proceso institucional.",
+          "La API no está incluida."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Puestos",
+          "value": "Hasta 30 Business Standard a US$0/usuario/mes por hasta 12 meses"
+        },
+        {
+          "label": "API",
+          "value": "No incluida"
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Entorno",
+          "value": "GPT-Rosalind y Rosalind Workbench, sujeto a aprobación"
+        },
+        {
+          "label": "Protección de datos",
+          "value": "No entrenamiento por defecto con datos del plan, según OpenAI"
+        }
+      ],
+      "limitations": [
+        "Solo laboratorios estadounidenses elegibles.",
+        "Acceso a GPT-Rosalind no automático.",
+        "Sin API ni garantía de continuidad gratuita después del período."
+      ],
+      "practicalAdvice": [
+        "Comprobar si la universidad ya tiene Enterprise antes de postular.",
+        "Definir caso de uso, responsables, datos sensibles y plan de continuidad."
+      ],
+      "finalSummary": "OpenAI presentó un programa para laboratorios universitarios estadounidenses elegibles: hasta 30 puestos Business Standard a US$0 por usuario al mes durante un máximo de 12 meses. GPT-Rosalind exige aprobación trusted access adicional y el plan no incluye API."
     },
     {
       "id": "openai-gpt-live-1-1-chatgpt-voice-2026",
@@ -37814,12 +38521,12 @@
     {
       "date": "2026-10-15",
       "status": "partial",
-      "verifiedArticles": 17
+      "verifiedArticles": 18
     },
     {
       "date": "2026-10-16",
       "status": "partial",
-      "verifiedArticles": 2
+      "verifiedArticles": 6
     }
   ]
 }
