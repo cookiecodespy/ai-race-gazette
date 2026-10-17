@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-17T06:24:25.931Z",
+  "updatedAt": "2026-10-17T13:27:22.217Z",
   "coverageStart": "2026-09-01",
   "articles": [
     {
@@ -305,6 +305,150 @@
         "Fijar revisión y licencia del checkpoint y registrar métricas de coste, latencia y seguridad."
       ],
       "finalSummary": "Reflection publicó los pesos de Beam 1.0 en BF16, FP8 y NVFP4 bajo Apache 2.0, junto con herramientas para agentes y acceso API en beta. El modelo MoE declara 501.300 millones de parámetros totales y 23.400 millones activos; su autoalojamiento requiere infraestructura de múltiples GPU."
+    },
+    {
+      "id": "google-research-verid-autonomous-wet-labs-2026",
+      "eventKey": "google-research-verid-wetlab-aptamer-protein-agent-2026-10-16",
+      "date": "2026-10-16",
+      "announcedAt": "2026-10-16",
+      "coveredAt": "2026-10-17",
+      "verifiedAt": "2026-10-17",
+      "articleVersion": 2,
+      "company": "Google",
+      "product": "VERID y agentes para laboratorios biológicos",
+      "title": "Google Research conecta agentes de IA con laboratorios biológicos mediante VERID y ciclos de descubrimiento",
+      "summary": "Google Research presentó VERID, un gemelo digital para verificar acciones de robots de laboratorio, junto a experimentos con aptámeros y diseño de proteínas asistidos por agentes. Los resultados son investigación supervisada, no un laboratorio autónomo comercial ni una capacidad de uso público anunciada.",
+      "tags": [
+        "Google",
+        "Google Research",
+        "Robótica",
+        "Biología",
+        "Agentes",
+        "Investigación"
+      ],
+      "image": "assets/google.webp",
+      "imageAlt": "Grabado editorial conceptual relacionado con VERID y agentes para laboratorios biológicos; no representa una fotografía documental del anuncio.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-google-architecture-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado sepia 3:2 de un laboratorio de biología conceptual con brazo robot de pipeteo y una representación esquemática superpuesta de gemelo digital, recipientes y trayectorias, sin organismos peligrosos, logotipos falsos ni apariencia de fotografía real.",
+      "source": {
+        "name": "Google Research · Grounding AI agents in biological reality",
+        "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/",
+        "publishedAt": "2026-10-16"
+      },
+      "body": [
+        "Google Research publicó el 16 de octubre de 2026 una actualización sobre agentes de inteligencia artificial conectados a laboratorios de biología. El trabajo agrupa tres proyectos relacionados: el sistema VERID para comprobar acciones de robots físicos, un entorno de descubrimiento de aptámeros y un flujo de diseño de proteínas con colaboración humana. No se trata del lanzamiento de un servicio comercial de laboratorio autónomo. Los resultados corresponden a prototipos y experimentos de investigación, con científicos responsables de autorizar y supervisar los pasos relevantes.",
+        "El problema que plantea Google es que generar una hipótesis o una secuencia molecular no basta para comprobarla. Un laboratorio húmedo exige controlar volúmenes, reactivos, posiciones de pipetas, inventario y condiciones de ensayo. Un agente puede escribir instrucciones sintácticamente correctas pero físicamente imposibles, como mover una pipeta multicanal hacia un recipiente demasiado estrecho. También puede intentar aspirar líquido de un pozo agotado o confundir una señal experimental con un artefacto del procedimiento.",
+        "VERID, sigla de VERified Infrastructure for Discovery Laboratories, se presenta como un gemelo digital semántico y dinámico del puesto de trabajo. Su estructura representa geometría de brazos robóticos, recipientes, volúmenes, reactivos y puntas disponibles. El agente puede consultar ese estado y ejecutar simulaciones rápidas antes de enviar comandos a la máquina. El sistema se construye sobre PyLabRobot, un marco abierto para automatización de laboratorio; eso no implica que todo el sistema VERID se haya distribuido como un producto abierto listo para instalar.",
+        "Google describe cuatro capacidades principales: seguimiento tridimensional del estado, simulación previa de protocolos, bloqueos de seguridad para comandos inválidos y registros sincronizados de vídeo y acciones. Estos mecanismos son más concretos que pedirle a un modelo que sea cuidadoso. Permiten comprobar si una acción respeta restricciones físicas y documentar lo que realmente ocurrió. La trazabilidad también facilita investigar errores cuando un experimento arroja resultados inesperados, algo esencial para que la automatización no confunda fallos de manipulación con descubrimientos biológicos.",
+        "En los ejemplos del equipo, los registros permitieron detectar una distribución irregular de colorante por una posición inadecuada de dispensación. El gemelo digital ayudó a reanudar una operación después de un fallo de lector de placas sin repetir un pipeteo. En otro caso, el simulador rechazó una aspiración de ocho canales incompatible con el recipiente y el agente reformuló el procedimiento. Son demostraciones reportadas por los investigadores, no garantías de que VERID cubra cualquier robot, laboratorio o fuente de error.",
+        "La segunda línea utiliza aptámeros de ADN, moléculas que pueden unirse a proteínas específicas. Los agentes propusieron secuencias, las probaron mediante ensayos y utilizaron mediciones para decidir la siguiente ronda. Google informa tres ciclos sobre dos proteínas de prueba, mioglobina y alfa-trombina. Según sus datos, las tasas confirmadas de candidatos que se unieron al objetivo llegaron a 33,5% y 42,1%, respectivamente, tras resolver problemas distintos en cada ensayo. Las cifras son resultados del experimento descrito y no tasas generales aplicables a cualquier diana biológica.",
+        "En el caso de alfa-trombina, Google explica que el primer ciclo no obtuvo ligandos confirmados porque extensiones fijas de cebadores alteraban el plegamiento de muchas secuencias. Los agentes ajustaron el diseño de los extremos en rondas posteriores y aumentaron el rendimiento. Este detalle importa: la mejora no procede únicamente de una predicción abstracta, sino de interpretar fallos de laboratorio y modificar la siguiente prueba. El enfoque depende de que las mediciones sean fiables y de que el sistema no optimice accidentalmente artefactos del ensayo.",
+        "La tercera línea aborda diseño de proteínas. Google presenta un método para concentrar la predicción estructural en la región de unión relevante, reduciendo trabajo computacional. En sus pruebas, el equipo informa una aceleración de aproximadamente 8,6 veces en esa etapa y un aumento cercano al doble de la tasa de aciertos in silico al combinar estrategia humana con decisiones tácticas del agente. También reporta ligandos experimentales con afinidades en el rango nanomolar de un solo dígito para dianas oncológicas. Son mediciones específicas del laboratorio, no una demostración de eficacia clínica.",
+        "Google describe salvaguardas: sistemas biológicos de prueba no infecciosos, revisión de bioseguridad de secuencias, simulación previa y autorización humana de protocolos y diseños. Esto delimita el alcance del anuncio. Ninguna de las demostraciones implica que un agente pueda diseñar y ejecutar libremente experimentos de alto riesgo ni sustituir la supervisión científica. El equipo reconoce retos de generalización, errores de varios pasos y riesgo de optimizar atajos experimentales en vez de señales biológicas auténticas.",
+        "Análisis Gazette: la noticia relevante no es que la IA escriba un protocolo, sino que su propuesta pase por controles físicos y vuelva a aprender de mediciones verificables. VERID ilustra un requisito de arquitectura para agentes que actúan sobre el mundo: estado observable, simulación, barreras de ejecución y registros reproducibles. Para laboratorios interesados, el paso razonable es evaluar interoperabilidad con sus robots, procedimientos de seguridad y calidad de datos antes de plantear autonomía. Queda por observar reproducibilidad externa, integración entre los tres prototipos y cualquier futura disponibilidad comercial."
+      ],
+      "keyPoints": [
+        "VERID mantiene un gemelo digital del laboratorio y simula protocolos antes de accionar robots.",
+        "Google presenta pruebas de ciclos experimentales con aptámeros y diseño de proteínas.",
+        "Son prototipos supervisados y resultados del equipo, no un producto disponible al público."
+      ],
+      "quickTakeaways": [
+        "VERID mantiene un gemelo digital del laboratorio y simula protocolos antes de accionar robots.",
+        "Google presenta pruebas de ciclos experimentales con aptámeros y diseño de proteínas.",
+        "Son prototipos supervisados y resultados del equipo, no un producto disponible al público."
+      ],
+      "executiveSummary": "Google Research reunió tres líneas de investigación para conectar agentes con experimentos biológicos reales. La pieza central de seguridad es VERID, que verifica el estado físico del laboratorio antes de ejecutar instrucciones; el equipo también presenta resultados de búsqueda molecular con ciclos de medición y rediseño.",
+      "sections": [
+        {
+          "heading": "Del diseño digital al laboratorio real",
+          "paragraphs": [
+            "Google Research publicó el 16 de octubre de 2026 una actualización sobre agentes de inteligencia artificial conectados a laboratorios de biología. El trabajo agrupa tres proyectos relacionados: el sistema VERID para comprobar acciones de robots físicos, un entorno de descubrimiento de aptámeros y un flujo de diseño de proteínas con colaboración humana. No se trata del lanzamiento de un servicio comercial de laboratorio autónomo. Los resultados corresponden a prototipos y experimentos de investigación, con científicos responsables de autorizar y supervisar los pasos relevantes.",
+            "El problema que plantea Google es que generar una hipótesis o una secuencia molecular no basta para comprobarla. Un laboratorio húmedo exige controlar volúmenes, reactivos, posiciones de pipetas, inventario y condiciones de ensayo. Un agente puede escribir instrucciones sintácticamente correctas pero físicamente imposibles, como mover una pipeta multicanal hacia un recipiente demasiado estrecho. También puede intentar aspirar líquido de un pozo agotado o confundir una señal experimental con un artefacto del procedimiento."
+          ],
+          "kind": "report"
+        },
+        {
+          "heading": "VERID: estado físico y seguridad",
+          "paragraphs": [
+            "VERID, sigla de VERified Infrastructure for Discovery Laboratories, se presenta como un gemelo digital semántico y dinámico del puesto de trabajo. Su estructura representa geometría de brazos robóticos, recipientes, volúmenes, reactivos y puntas disponibles. El agente puede consultar ese estado y ejecutar simulaciones rápidas antes de enviar comandos a la máquina. El sistema se construye sobre PyLabRobot, un marco abierto para automatización de laboratorio; eso no implica que todo el sistema VERID se haya distribuido como un producto abierto listo para instalar.",
+            "Google describe cuatro capacidades principales: seguimiento tridimensional del estado, simulación previa de protocolos, bloqueos de seguridad para comandos inválidos y registros sincronizados de vídeo y acciones. Estos mecanismos son más concretos que pedirle a un modelo que sea cuidadoso. Permiten comprobar si una acción respeta restricciones físicas y documentar lo que realmente ocurrió. La trazabilidad también facilita investigar errores cuando un experimento arroja resultados inesperados, algo esencial para que la automatización no confunda fallos de manipulación con descubrimientos biológicos.",
+            "En los ejemplos del equipo, los registros permitieron detectar una distribución irregular de colorante por una posición inadecuada de dispensación. El gemelo digital ayudó a reanudar una operación después de un fallo de lector de placas sin repetir un pipeteo. En otro caso, el simulador rechazó una aspiración de ocho canales incompatible con el recipiente y el agente reformuló el procedimiento. Son demostraciones reportadas por los investigadores, no garantías de que VERID cubra cualquier robot, laboratorio o fuente de error."
+          ],
+          "kind": "technical"
+        },
+        {
+          "heading": "Aptámeros y aprendizaje por experimentación",
+          "paragraphs": [
+            "La segunda línea utiliza aptámeros de ADN, moléculas que pueden unirse a proteínas específicas. Los agentes propusieron secuencias, las probaron mediante ensayos y utilizaron mediciones para decidir la siguiente ronda. Google informa tres ciclos sobre dos proteínas de prueba, mioglobina y alfa-trombina. Según sus datos, las tasas confirmadas de candidatos que se unieron al objetivo llegaron a 33,5% y 42,1%, respectivamente, tras resolver problemas distintos en cada ensayo. Las cifras son resultados del experimento descrito y no tasas generales aplicables a cualquier diana biológica.",
+            "En el caso de alfa-trombina, Google explica que el primer ciclo no obtuvo ligandos confirmados porque extensiones fijas de cebadores alteraban el plegamiento de muchas secuencias. Los agentes ajustaron el diseño de los extremos en rondas posteriores y aumentaron el rendimiento. Este detalle importa: la mejora no procede únicamente de una predicción abstracta, sino de interpretar fallos de laboratorio y modificar la siguiente prueba. El enfoque depende de que las mediciones sean fiables y de que el sistema no optimice accidentalmente artefactos del ensayo."
+          ],
+          "kind": "technical"
+        },
+        {
+          "heading": "Diseño de proteínas y límites",
+          "paragraphs": [
+            "La tercera línea aborda diseño de proteínas. Google presenta un método para concentrar la predicción estructural en la región de unión relevante, reduciendo trabajo computacional. En sus pruebas, el equipo informa una aceleración de aproximadamente 8,6 veces en esa etapa y un aumento cercano al doble de la tasa de aciertos in silico al combinar estrategia humana con decisiones tácticas del agente. También reporta ligandos experimentales con afinidades en el rango nanomolar de un solo dígito para dianas oncológicas. Son mediciones específicas del laboratorio, no una demostración de eficacia clínica.",
+            "Google describe salvaguardas: sistemas biológicos de prueba no infecciosos, revisión de bioseguridad de secuencias, simulación previa y autorización humana de protocolos y diseños. Esto delimita el alcance del anuncio. Ninguna de las demostraciones implica que un agente pueda diseñar y ejecutar libremente experimentos de alto riesgo ni sustituir la supervisión científica. El equipo reconoce retos de generalización, errores de varios pasos y riesgo de optimizar atajos experimentales en vez de señales biológicas auténticas."
+          ],
+          "kind": "context"
+        },
+        {
+          "heading": "Lectura Gazette y próximos pasos",
+          "paragraphs": [
+            "Análisis Gazette: la noticia relevante no es que la IA escriba un protocolo, sino que su propuesta pase por controles físicos y vuelva a aprender de mediciones verificables. VERID ilustra un requisito de arquitectura para agentes que actúan sobre el mundo: estado observable, simulación, barreras de ejecución y registros reproducibles. Para laboratorios interesados, el paso razonable es evaluar interoperabilidad con sus robots, procedimientos de seguridad y calidad de datos antes de plantear autonomía. Queda por observar reproducibilidad externa, integración entre los tres prototipos y cualquier futura disponibilidad comercial."
+          ],
+          "kind": "analysis"
+        }
+      ],
+      "analysis": "Análisis Gazette: los gemelos digitales y la supervisión pueden transformar agentes de laboratorio en sistemas auditables, pero los resultados siguen siendo experimentales.",
+      "watch": "Reproducción independiente, compatibilidad con hardware, integración de prototipos y posibles lanzamientos públicos.",
+      "availability": {
+        "status": "Investigación y prototipos; sin producto comercial anunciado",
+        "platforms": [],
+        "regions": [],
+        "requirements": [
+          "Laboratorio equipado y supervisión científica para reproducir métodos"
+        ],
+        "notes": [
+          "PyLabRobot es un componente abierto, no una licencia pública verificada para todos los prototipos."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Acceso comercial",
+          "value": "No anunciado; no hay tarifa publicada"
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "VERID",
+          "value": "Gemelo digital semántico con simulación y bloqueo de comandos"
+        },
+        {
+          "label": "Aptámeros",
+          "value": "Tres rondas de diseño y ensayo, según Google"
+        },
+        {
+          "label": "Diseño de proteínas",
+          "value": "Aceleración reportada de ~8,6× en una etapa estructural"
+        }
+      ],
+      "limitations": [
+        "Resultados reportados por el equipo de Google, sin generalización automática.",
+        "Sin fecha de producto o acceso público anunciada.",
+        "Los protocolos requieren autorización humana y evaluación de bioseguridad."
+      ],
+      "practicalAdvice": [
+        "Exigir simulación y verificación del estado físico antes de ejecutar comandos de agentes.",
+        "Registrar trazas, condiciones experimentales y decisiones humanas para poder reproducir resultados."
+      ],
+      "usefulFacts": [
+        "VERID utiliza seguimiento de volúmenes y puntas disponibles.",
+        "Los experimentos de aptámeros se realizaron con mioglobina y alfa-trombina."
+      ],
+      "finalSummary": "Google Research presentó VERID y experimentos de descubrimiento molecular guiado por agentes. El avance está en conectar decisiones de IA con mediciones y controles físicos, no en ofrecer todavía un laboratorio autónomo comercial."
     },
     {
       "id": "g7-ai-cyber-finance-tabletop-exercises-2026",
@@ -2183,6 +2327,146 @@
       "finalSummary": "Para probarlo, conviene construir un conjunto de evaluación temporal sin fuga de datos, comparar contra pronósticos estacionales y métodos estadísticos, medir cobertura de cuantiles y registrar coste total de inferencia. Los hitos a observar son el informe técnico completo, reproducciones independientes de benchmarks, detalles comerciales de Forge y casos de producción con datos abiertos. El lanzamiento amplía la oferta de modelos especializados, pero su liderazgo universal todavía no está demostrado."
     },
     {
+      "id": "microsoft-mai-base-2-pretraining-2026",
+      "eventKey": "microsoft-mai-base-2-2-8t-80b-pretraining-complete-2026-10-15",
+      "date": "2026-10-15",
+      "announcedAt": "2026-10-15",
+      "coveredAt": "2026-10-17",
+      "verifiedAt": "2026-10-17",
+      "articleVersion": 2,
+      "company": "Microsoft",
+      "product": "MAI-Base-2",
+      "title": "Microsoft completa el preentrenamiento de MAI-Base-2: 2,8 billones de parámetros y 16.000 GPU GB200",
+      "summary": "Microsoft AI terminó el preentrenamiento de MAI-Base-2, un modelo MoE con 2,8 billones de parámetros totales y 80.000 millones activos. La empresa declara ganancias de eficiencia frente a modelos base abiertos, pero todavía no ofrece API ni pesos públicos: el postentrenamiento continúa.",
+      "tags": [
+        "Microsoft",
+        "MAI-Base-2",
+        "Modelos de frontera",
+        "Entrenamiento",
+        "MoE",
+        "Infraestructura"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual relacionado con MAI-Base-2; no representa una fotografía documental del anuncio.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado de prensa antigua en sepia, 3:2: enorme sala de cómputo con filas de procesadores y diagramas abstractos de expertos distribuidos, una pizarra con estructuras matemáticas sin texto legible; no logotipos falsos, cifras incrustadas ni fotografías simuladas.",
+      "source": {
+        "name": "Microsoft AI · Frontier Pre-training at Microsoft AI",
+        "url": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/",
+        "publishedAt": "2026-10-15"
+      },
+      "body": [
+        "Microsoft AI comunicó el 15 de octubre de 2026 que concluyó el preentrenamiento de MAI-Base-2, su nueva base para futuros modelos de propósito general. No presentó una aplicación lista para descargar ni abrió un endpoint de inferencia. El laboratorio indicó que el modelo está en postentrenamiento y que compartirá más resultados después. Esa distinción separa un hito de investigación e infraestructura de un lanzamiento comercial: los usuarios de Copilot o Foundry no deberían interpretar el anuncio como acceso inmediato a MAI-Base-2.",
+        "La arquitectura es mixture-of-experts, o MoE, con 2,8 billones de parámetros totales y 80.000 millones activos por token, según Microsoft. En un MoE, un mecanismo de enrutamiento elige subconjuntos de expertos para procesar cada entrada. Los parámetros activos ayudan a entender el trabajo computacional por token, pero no equivalen al tamaño completo de los pesos ni determinan por sí solos la memoria requerida. El anuncio no publica un checkpoint descargable, por lo que sus características deben leerse como información técnica del proveedor.",
+        "Microsoft sitúa el entrenamiento en agosto y septiembre de 2026: 16.000 GPU NVIDIA GB200 durante 38 días. Informa una utilización media de FLOPs del modelo del 21% y un goodput del 89%, definido como fracción del tiempo en que el entrenamiento progresó. Estas cifras no son porcentajes intercambiables; el primero usa un máximo teórico de 2,5 PFLOPS BF16 por GB200 y excluye determinadas operaciones, mientras el segundo expresa continuidad operativa. No permiten calcular directamente un coste monetario verificable sin tarifas, consumo eléctrico y contratos de infraestructura.",
+        "Para comparar modelos base, Microsoft utiliza bits por byte en conjuntos de texto reservados. La empresa afirma que MAI-Base-2 obtuvo resultados mejores que los modelos abiertos incluidos en sus pruebas y estima una eficiencia de FLOPs entre 4,2 y 12,3 veces superior a DeepSeek-V4-Pro-Base en la tarea de igualar pérdidas de evaluación. Se trata de estimaciones de leyes de escalado y pruebas internas, no de una demostración de superioridad en todas las tareas finales. La compañía advierte que algunos rivales solo tienen checkpoints postentrenados, lo que dificulta comparaciones homogéneas.",
+        "Una parte de la mejora descrita proviene de sus llamadas scaling ladders: modelos de distintos tamaños que permiten anticipar cómo se comportará el entrenamiento final. Microsoft ajustó estas pruebas para tener en cuenta la repetición de datos en escalas pequeñas, un detalle que puede distorsionar la extrapolación. También optimizó conjuntamente tasa de aprendizaje y decaimiento de pesos, en vez de tratarlos como decisiones independientes. Son decisiones metodológicas concretas, pero el artículo no entrega suficientes elementos para reproducir de extremo a extremo el entrenamiento del modelo.",
+        "El equipo modificó el procesamiento MoE para evitar descartar tokens cuando un experto recibe más carga de la esperada. Su enfoque agrupa expertos y procesa excedentes en rondas con uso de memoria controlado, mientras solapa comunicación y cómputo. Microsoft afirma que el aprovechamiento de FLOPs en las capas MoE subió del 24% al 35%, lo que permitió emplear MoE en todas las capas. Son métricas de implementación del laboratorio, no medidas universales que deban extrapolarse a cualquier servidor de inferencia.",
+        "Otro cambio fue escalar el optimizador Muon mediante redistribución temporal de matrices de momento entre GPU y kernels especializados. La empresa informa que el paso del optimizador ocupó el 2,1% de una iteración media, unos 165 milisegundos. Añadió recorte de gradientes de activación para limitar valores atípicos y detectar problemas de datos: el equipo describe incluso un ejemplo de código mal procesado que permitió encontrar un fallo de preprocesamiento. Esta combinación ilustra que la eficiencia depende tanto de datos y software como de la cantidad de aceleradores.",
+        "En datos, Microsoft dice haber ampliado alrededor de un 36% los tokens únicos respecto de MAI-Base-1 y entrenado con una mezcla de 50 billones de tokens. La arquitectura incorpora visión de forma nativa sin codificador separado, y el corpus visual contiene 4,5 billones de tokens únicos; por repetición, representó el 18% de la mezcla de entrenamiento. El corte de conocimiento declarado para los datos web es marzo de 2026. Microsoft sostiene que no utilizó destilación de otros modelos; esto es una declaración de procedencia del proveedor, no una auditoría externa de todos los datos.",
+        "En disponibilidad, Microsoft anticipa que su infraestructura propia facilitará ofrecer modelos en sus productos y licenciar pesos a socios confiables mediante Foundry. No proporciona fecha de acceso, regiones, requisitos, precio por token ni términos de licencia para MAI-Base-2. Es importante no confundir esa intención con una oferta disponible. Tampoco se han publicado evaluaciones independientes de la versión postentrenada, que puede comportarse de manera diferente del modelo base medido ahora.",
+        "Análisis Gazette: el anuncio muestra a Microsoft fortaleciendo una cadena propia de datos, entrenamiento e infraestructura, pero el impacto competitivo debe juzgarse cuando existan capacidades utilizables y pruebas externas. Para equipos técnicos, el valor inmediato es estudiar las decisiones de eficiencia descritas, no planificar una migración de producción. Conviene esperar un identificador de modelo, precios, política de datos, límites, evaluación de seguridad y resultados reproducibles antes de compararlo con alternativas comerciales. La siguiente señal material será el postentrenamiento y la disponibilidad real en Foundry."
+      ],
+      "keyPoints": [
+        "Preentrenamiento terminado; el modelo sigue en postentrenamiento, sin lanzamiento público.",
+        "Arquitectura MoE con 2,8T parámetros totales y 80B activos, según Microsoft.",
+        "Entrenamiento en 16.000 GPU GB200 durante 38 días; métricas comparativas propias."
+      ],
+      "quickTakeaways": [
+        "Preentrenamiento terminado; el modelo sigue en postentrenamiento, sin lanzamiento público.",
+        "Arquitectura MoE con 2,8T parámetros totales y 80B activos, según Microsoft.",
+        "Entrenamiento en 16.000 GPU GB200 durante 38 días; métricas comparativas propias."
+      ],
+      "executiveSummary": "Microsoft AI anunció el 15 de octubre la finalización del preentrenamiento de MAI-Base-2. La escala es considerable, pero el estado técnico importa: aún no es un modelo comercial lanzado. Sus cifras de eficiencia y calidad proceden de evaluaciones del propio laboratorio.",
+      "sections": [
+        {
+          "heading": "Qué se anunció y qué no está disponible",
+          "paragraphs": [
+            "Microsoft AI comunicó el 15 de octubre de 2026 que concluyó el preentrenamiento de MAI-Base-2, su nueva base para futuros modelos de propósito general. No presentó una aplicación lista para descargar ni abrió un endpoint de inferencia. El laboratorio indicó que el modelo está en postentrenamiento y que compartirá más resultados después. Esa distinción separa un hito de investigación e infraestructura de un lanzamiento comercial: los usuarios de Copilot o Foundry no deberían interpretar el anuncio como acceso inmediato a MAI-Base-2.",
+            "La arquitectura es mixture-of-experts, o MoE, con 2,8 billones de parámetros totales y 80.000 millones activos por token, según Microsoft. En un MoE, un mecanismo de enrutamiento elige subconjuntos de expertos para procesar cada entrada. Los parámetros activos ayudan a entender el trabajo computacional por token, pero no equivalen al tamaño completo de los pesos ni determinan por sí solos la memoria requerida. El anuncio no publica un checkpoint descargable, por lo que sus características deben leerse como información técnica del proveedor."
+          ],
+          "kind": "report"
+        },
+        {
+          "heading": "Escala y evidencia comparativa",
+          "paragraphs": [
+            "Microsoft sitúa el entrenamiento en agosto y septiembre de 2026: 16.000 GPU NVIDIA GB200 durante 38 días. Informa una utilización media de FLOPs del modelo del 21% y un goodput del 89%, definido como fracción del tiempo en que el entrenamiento progresó. Estas cifras no son porcentajes intercambiables; el primero usa un máximo teórico de 2,5 PFLOPS BF16 por GB200 y excluye determinadas operaciones, mientras el segundo expresa continuidad operativa. No permiten calcular directamente un coste monetario verificable sin tarifas, consumo eléctrico y contratos de infraestructura.",
+            "Para comparar modelos base, Microsoft utiliza bits por byte en conjuntos de texto reservados. La empresa afirma que MAI-Base-2 obtuvo resultados mejores que los modelos abiertos incluidos en sus pruebas y estima una eficiencia de FLOPs entre 4,2 y 12,3 veces superior a DeepSeek-V4-Pro-Base en la tarea de igualar pérdidas de evaluación. Se trata de estimaciones de leyes de escalado y pruebas internas, no de una demostración de superioridad en todas las tareas finales. La compañía advierte que algunos rivales solo tienen checkpoints postentrenados, lo que dificulta comparaciones homogéneas."
+          ],
+          "kind": "technical"
+        },
+        {
+          "heading": "Métodos de entrenamiento",
+          "paragraphs": [
+            "Una parte de la mejora descrita proviene de sus llamadas scaling ladders: modelos de distintos tamaños que permiten anticipar cómo se comportará el entrenamiento final. Microsoft ajustó estas pruebas para tener en cuenta la repetición de datos en escalas pequeñas, un detalle que puede distorsionar la extrapolación. También optimizó conjuntamente tasa de aprendizaje y decaimiento de pesos, en vez de tratarlos como decisiones independientes. Son decisiones metodológicas concretas, pero el artículo no entrega suficientes elementos para reproducir de extremo a extremo el entrenamiento del modelo.",
+            "El equipo modificó el procesamiento MoE para evitar descartar tokens cuando un experto recibe más carga de la esperada. Su enfoque agrupa expertos y procesa excedentes en rondas con uso de memoria controlado, mientras solapa comunicación y cómputo. Microsoft afirma que el aprovechamiento de FLOPs en las capas MoE subió del 24% al 35%, lo que permitió emplear MoE en todas las capas. Son métricas de implementación del laboratorio, no medidas universales que deban extrapolarse a cualquier servidor de inferencia.",
+            "Otro cambio fue escalar el optimizador Muon mediante redistribución temporal de matrices de momento entre GPU y kernels especializados. La empresa informa que el paso del optimizador ocupó el 2,1% de una iteración media, unos 165 milisegundos. Añadió recorte de gradientes de activación para limitar valores atípicos y detectar problemas de datos: el equipo describe incluso un ejemplo de código mal procesado que permitió encontrar un fallo de preprocesamiento. Esta combinación ilustra que la eficiencia depende tanto de datos y software como de la cantidad de aceleradores.",
+            "En datos, Microsoft dice haber ampliado alrededor de un 36% los tokens únicos respecto de MAI-Base-1 y entrenado con una mezcla de 50 billones de tokens. La arquitectura incorpora visión de forma nativa sin codificador separado, y el corpus visual contiene 4,5 billones de tokens únicos; por repetición, representó el 18% de la mezcla de entrenamiento. El corte de conocimiento declarado para los datos web es marzo de 2026. Microsoft sostiene que no utilizó destilación de otros modelos; esto es una declaración de procedencia del proveedor, no una auditoría externa de todos los datos."
+          ],
+          "kind": "technical"
+        },
+        {
+          "heading": "Disponibilidad, límites y lectura editorial",
+          "paragraphs": [
+            "En disponibilidad, Microsoft anticipa que su infraestructura propia facilitará ofrecer modelos en sus productos y licenciar pesos a socios confiables mediante Foundry. No proporciona fecha de acceso, regiones, requisitos, precio por token ni términos de licencia para MAI-Base-2. Es importante no confundir esa intención con una oferta disponible. Tampoco se han publicado evaluaciones independientes de la versión postentrenada, que puede comportarse de manera diferente del modelo base medido ahora.",
+            "Análisis Gazette: el anuncio muestra a Microsoft fortaleciendo una cadena propia de datos, entrenamiento e infraestructura, pero el impacto competitivo debe juzgarse cuando existan capacidades utilizables y pruebas externas. Para equipos técnicos, el valor inmediato es estudiar las decisiones de eficiencia descritas, no planificar una migración de producción. Conviene esperar un identificador de modelo, precios, política de datos, límites, evaluación de seguridad y resultados reproducibles antes de compararlo con alternativas comerciales. La siguiente señal material será el postentrenamiento y la disponibilidad real en Foundry."
+          ],
+          "kind": "analysis"
+        }
+      ],
+      "analysis": "Análisis Gazette: la noticia demuestra inversión en infraestructura y ciencia de entrenamiento, pero todavía no acredita superioridad de producto ni disponibilidad para clientes.",
+      "watch": "Fecha de postentrenamiento, acceso por Foundry, condiciones de licencia, precios y pruebas externas.",
+      "availability": {
+        "status": "Preentrenamiento completado; postentrenamiento en curso",
+        "platforms": [],
+        "regions": [],
+        "requirements": [],
+        "notes": [
+          "Sin API pública, pesos descargables ni fecha de lanzamiento confirmados.",
+          "Microsoft menciona licencias futuras mediante Foundry para socios confiables."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Precio de MAI-Base-2",
+          "value": "No anunciado; sin oferta comercial disponible"
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Parámetros",
+          "value": "2,8 billones totales; 80.000 millones activos",
+          "note": "Arquitectura MoE, cifras de Microsoft"
+        },
+        {
+          "label": "Entrenamiento",
+          "value": "16.000 NVIDIA GB200 durante 38 días",
+          "note": "Agosto-septiembre de 2026"
+        },
+        {
+          "label": "Mezcla de entrenamiento",
+          "value": "50 billones de tokens",
+          "note": "Según Microsoft"
+        }
+      ],
+      "limitations": [
+        "Benchmarks y cifras de eficiencia son mediciones del proveedor.",
+        "Sin evaluación independiente de la versión final.",
+        "No hay precio, endpoint ni licencia pública confirmados."
+      ],
+      "practicalAdvice": [
+        "No programar una migración de producción basándose únicamente en métricas de preentrenamiento.",
+        "Comparar futuras versiones postentrenadas con tareas, costes y latencia propios."
+      ],
+      "usefulFacts": [
+        "Microsoft distingue 21% MFU de 89% goodput.",
+        "El corpus visual declarado tiene 4,5 billones de tokens únicos."
+      ],
+      "finalSummary": "MAI-Base-2 es un hito de preentrenamiento de gran escala y eficiencia declarada, no un lanzamiento para usuarios. Su valor comercial y competitivo dependerá de la versión postentrenada, del acceso efectivo y de evaluaciones independientes."
+    },
+    {
       "date": "2026-10-15",
       "announcedAt": "2026-10-15",
       "coveredAt": "2026-10-15",
@@ -2409,6 +2693,149 @@
       ],
       "analysis": "Análisis Gazette: la importancia del lanzamiento reside en combinar pesos descargables, gran contexto, multimodalidad y un ecosistema de inferencia ya anunciado. Un equipo con requisitos estrictos de residencia de datos puede evaluar una implementación propia sin enviar cada petición a un proveedor externo. La contraparte es la complejidad: alojar cientos de gigabytes de pesos, supervisar permisos y evaluar resultados puede resultar mucho más caro que pagar una API para cargas pequeñas. Para un piloto responsable, conviene comenzar con un proveedor de inferencia y una tarea reproducible, medir calidad, latencia y coste real por trabajo completado, y comparar contra un modelo más pequeño. Si la privacidad exige ejecución local, primero hay que dimensionar memoria, precisión, contexto e interconexión. Un agente que trabaja con repositorios debe operar en un entorno aislado, con permisos mínimos y pruebas automáticas. La próxima señal decisiva será la reproducción independiente de los benchmarks y la madurez de implementaciones abiertas.",
       "watch": "Para un piloto responsable, conviene comenzar con un proveedor de inferencia y una tarea reproducible, medir calidad, latencia y coste real por trabajo completado, y comparar contra un modelo más pequeño. Si la privacidad exige ejecución local, primero hay que dimensionar memoria, precisión, contexto e interconexión. Un agente que trabaja con repositorios debe operar en un entorno aislado, con permisos mínimos y pruebas automáticas. La próxima señal decisiva será la reproducción independiente de los benchmarks y la madurez de implementaciones abiertas."
+    },
+    {
+      "id": "liquid-ai-d1-ultra-decision-model-2026",
+      "eventKey": "liquid-ai-d1-ultra-multimodal-decision-api-0-042-2026-10-15",
+      "date": "2026-10-15",
+      "announcedAt": "2026-10-15",
+      "coveredAt": "2026-10-17",
+      "verifiedAt": "2026-10-17",
+      "articleVersion": 2,
+      "company": "Liquid AI",
+      "product": "d1-ultra",
+      "title": "Liquid AI lanza d1-ultra: decisiones multimodales por API a US$0,042 por millón de tokens",
+      "summary": "Liquid AI lanzó d1-ultra, un modelo que evalúa texto e imágenes y devuelve probabilidades para decisiones binarias, categorías o escalas sin generar respuestas largas. Está disponible en Liquid API a US$0,042 por millón de tokens de entrada; sus ventajas en benchmarks son claims del proveedor.",
+      "tags": [
+        "Liquid AI",
+        "d1-ultra",
+        "Modelos de decisión",
+        "Multimodal",
+        "API",
+        "Precios"
+      ],
+      "image": "assets/hero.webp",
+      "imageAlt": "Grabado editorial conceptual relacionado con d1-ultra; no representa una fotografía documental del anuncio.",
+      "imageCredit": "Ilustración editorial generada con IA · AI Race Gazette; no es una fotografía documental.",
+      "visualAssetId": "gazette-generic-ai-hero-v1",
+      "imageStatus": "needs-specific-art",
+      "imageBrief": "Grabado editorial sepia 3:2 de una mesa de inspección industrial con placas de circuito y balanzas probabilísticas abstractas, iconos de clasificación sin cifras ni texto; no mostrar una interfaz real ni inventar certificaciones.",
+      "source": {
+        "name": "Liquid AI · d1-ultra: Introducing the World’s Best Decision Model",
+        "url": "https://www.liquid.ai/blog/d1-ultra",
+        "publishedAt": "2026-10-15"
+      },
+      "body": [
+        "Liquid AI anunció el 15 de octubre de 2026 la disponibilidad de d1-ultra, un modelo multimodal especializado en decisiones estructuradas. En vez de redactar un informe, el sistema recibe una situación, texto, imágenes o ambos y responde con probabilidades para opciones definidas. La compañía propone aplicaciones como inspección de defectos en placas electrónicas o evaluación de daños a partir de fotografías. Es un lanzamiento operativo: la empresa publica una API y un precio concreto, no solo un avance de laboratorio.",
+        "El modelo ofrece tres formatos de pregunta. El tipo noul devuelve una probabilidad para una cuestión de sí o no; Choice permite seleccionar entre etiquetas; Score representa una posición en una escala. Un mismo contexto puede acompañarse de varias preguntas. Esa interfaz es útil cuando un sistema necesita una señal cuantitativa para alimentar reglas de negocio, pero una probabilidad no debe confundirse con una garantía de corrección o con una decisión que pueda ejecutarse sin supervisión.",
+        "Liquid explica que d1-ultra realiza una pasada de procesamiento y no genera tokens de salida de texto. Por eso el modelo tiene un patrón de facturación distinto de los asistentes conversacionales que cobran tanto entrada como salida. El endpoint de ejemplo del proveedor utiliza el identificador de modelo d1-ultra y una solicitud de decisión con imágenes, estado y preguntas. Los desarrolladores deben consultar la documentación actual antes de asumir que el contrato de respuesta o los límites del endpoint permanecerán sin cambios.",
+        "El precio anunciado es US$0,042 por millón de tokens de entrada, sin tokens de salida generados. Las imágenes también se convierten en tokens de entrada: Liquid especifica 1,5 tokens por parche de 32 por 32 píxeles, equivalentes a 1.536 tokens para una imagen de 1024 por 1024. Cada pregunta se factura como un prompt separado, incluyendo de nuevo el texto y las imágenes del contexto. Por ello, el coste total de una solicitud con muchas preguntas puede crecer aunque la tarifa por millón parezca pequeña.",
+        "Como ejemplo meramente ilustrativo de la regla de facturación, una imagen de 1024 por 1024 sin otros tokens y una sola pregunta implicaría alrededor de 1.536 tokens facturables. La factura real debe añadir instrucciones, estado, preguntas, posibles mínimos y condiciones comerciales. No existe evidencia suficiente para prometer un coste fijo por imagen o por inspección. Tampoco se debe inferir que el precio publicado incluya servicios de almacenamiento, revisión humana o integración con sistemas industriales.",
+        "En su anuncio, Liquid dice haber evaluado d1-ultra frente a su modelo d1 y a Jev 1.14 en 112 pruebas diferentes. Afirma mejoras de precisión y calibración, y una ventaja de al menos ocho puntos sobre otros modelos de decisión en el índice de Artificial Analysis. Son afirmaciones del fabricante referidas a conjuntos y metodologías específicos; no equivalen a que el modelo sea el mejor para cualquier organización o caso de uso. La empresa no ofrece en esa página una auditoría externa exhaustiva de cada aplicación propuesta.",
+        "La calibración es importante porque una probabilidad de 0,9 debería corresponder aproximadamente a nueve aciertos de cada diez en un conjunto representativo de situaciones comparables. Un clasificador puede acertar con frecuencia y aun así mostrar confianza exagerada cuando cambia la iluminación, el tipo de defecto o la población evaluada. Liquid sostiene que entrenó d1-ultra para reducir ese problema, pero los equipos deben comprobar la calibración en su propia distribución de datos y observar cómo cambia con el tiempo.",
+        "El anuncio indica disponibilidad inmediata en Liquid API y acceso al entorno de pruebas d1 Playground. Vercel y OpenRouter figuran como integraciones futuras, no como canales ya habilitados en la fecha del anuncio. Liquid menciona un modelo base abierto de mayor tamaño con personalizaciones propias, pero no publica en esta comunicación el conjunto de pesos completos ni una ficha exhaustiva de parámetros para d1-ultra. Tampoco establece una disponibilidad regional detallada o compromisos de nivel de servicio universales.",
+        "Análisis Gazette: la utilidad de d1-ultra depende de que un proceso realmente necesite clasificaciones y probabilidades, no prosa. En un piloto conviene definir clases, medir falsos positivos y negativos, separar conjuntos de validación, revisar imágenes problemáticas y establecer umbrales con intervención humana. Para decisiones sensibles, registrar entradas, versión del modelo y resultado permite investigar errores. La siguiente etapa será comprobar rendimiento independiente, cambios de precio, límites del servicio y la llegada efectiva de las integraciones anunciadas."
+      ],
+      "keyPoints": [
+        "Modelo multimodal que devuelve probabilidades, no texto generado.",
+        "API disponible por US$0,042 por millón de tokens de entrada.",
+        "Benchmarks de precisión y calibración declarados por Liquid AI."
+      ],
+      "quickTakeaways": [
+        "Modelo multimodal que devuelve probabilidades, no texto generado.",
+        "API disponible por US$0,042 por millón de tokens de entrada.",
+        "Benchmarks de precisión y calibración declarados por Liquid AI."
+      ],
+      "executiveSummary": "d1-ultra intenta separar una decisión estructurada de una conversación abierta. Liquid AI ofrece el modelo mediante su API y factura la entrada, incluidas imágenes y preguntas; la calidad declarada requiere contraste en datos reales.",
+      "sections": [
+        {
+          "heading": "Una API de decisiones, no un chatbot",
+          "paragraphs": [
+            "Liquid AI anunció el 15 de octubre de 2026 la disponibilidad de d1-ultra, un modelo multimodal especializado en decisiones estructuradas. En vez de redactar un informe, el sistema recibe una situación, texto, imágenes o ambos y responde con probabilidades para opciones definidas. La compañía propone aplicaciones como inspección de defectos en placas electrónicas o evaluación de daños a partir de fotografías. Es un lanzamiento operativo: la empresa publica una API y un precio concreto, no solo un avance de laboratorio.",
+            "El modelo ofrece tres formatos de pregunta. El tipo noul devuelve una probabilidad para una cuestión de sí o no; Choice permite seleccionar entre etiquetas; Score representa una posición en una escala. Un mismo contexto puede acompañarse de varias preguntas. Esa interfaz es útil cuando un sistema necesita una señal cuantitativa para alimentar reglas de negocio, pero una probabilidad no debe confundirse con una garantía de corrección o con una decisión que pueda ejecutarse sin supervisión.",
+            "Liquid explica que d1-ultra realiza una pasada de procesamiento y no genera tokens de salida de texto. Por eso el modelo tiene un patrón de facturación distinto de los asistentes conversacionales que cobran tanto entrada como salida. El endpoint de ejemplo del proveedor utiliza el identificador de modelo d1-ultra y una solicitud de decisión con imágenes, estado y preguntas. Los desarrolladores deben consultar la documentación actual antes de asumir que el contrato de respuesta o los límites del endpoint permanecerán sin cambios."
+          ],
+          "kind": "report"
+        },
+        {
+          "heading": "Precio y coste efectivo",
+          "paragraphs": [
+            "El precio anunciado es US$0,042 por millón de tokens de entrada, sin tokens de salida generados. Las imágenes también se convierten en tokens de entrada: Liquid especifica 1,5 tokens por parche de 32 por 32 píxeles, equivalentes a 1.536 tokens para una imagen de 1024 por 1024. Cada pregunta se factura como un prompt separado, incluyendo de nuevo el texto y las imágenes del contexto. Por ello, el coste total de una solicitud con muchas preguntas puede crecer aunque la tarifa por millón parezca pequeña.",
+            "Como ejemplo meramente ilustrativo de la regla de facturación, una imagen de 1024 por 1024 sin otros tokens y una sola pregunta implicaría alrededor de 1.536 tokens facturables. La factura real debe añadir instrucciones, estado, preguntas, posibles mínimos y condiciones comerciales. No existe evidencia suficiente para prometer un coste fijo por imagen o por inspección. Tampoco se debe inferir que el precio publicado incluya servicios de almacenamiento, revisión humana o integración con sistemas industriales."
+          ],
+          "kind": "technical"
+        },
+        {
+          "heading": "Evaluaciones y calibración",
+          "paragraphs": [
+            "En su anuncio, Liquid dice haber evaluado d1-ultra frente a su modelo d1 y a Jev 1.14 en 112 pruebas diferentes. Afirma mejoras de precisión y calibración, y una ventaja de al menos ocho puntos sobre otros modelos de decisión en el índice de Artificial Analysis. Son afirmaciones del fabricante referidas a conjuntos y metodologías específicos; no equivalen a que el modelo sea el mejor para cualquier organización o caso de uso. La empresa no ofrece en esa página una auditoría externa exhaustiva de cada aplicación propuesta.",
+            "La calibración es importante porque una probabilidad de 0,9 debería corresponder aproximadamente a nueve aciertos de cada diez en un conjunto representativo de situaciones comparables. Un clasificador puede acertar con frecuencia y aun así mostrar confianza exagerada cuando cambia la iluminación, el tipo de defecto o la población evaluada. Liquid sostiene que entrenó d1-ultra para reducir ese problema, pero los equipos deben comprobar la calibración en su propia distribución de datos y observar cómo cambia con el tiempo."
+          ],
+          "kind": "technical"
+        },
+        {
+          "heading": "Disponibilidad y análisis Gazette",
+          "paragraphs": [
+            "El anuncio indica disponibilidad inmediata en Liquid API y acceso al entorno de pruebas d1 Playground. Vercel y OpenRouter figuran como integraciones futuras, no como canales ya habilitados en la fecha del anuncio. Liquid menciona un modelo base abierto de mayor tamaño con personalizaciones propias, pero no publica en esta comunicación el conjunto de pesos completos ni una ficha exhaustiva de parámetros para d1-ultra. Tampoco establece una disponibilidad regional detallada o compromisos de nivel de servicio universales.",
+            "Análisis Gazette: la utilidad de d1-ultra depende de que un proceso realmente necesite clasificaciones y probabilidades, no prosa. En un piloto conviene definir clases, medir falsos positivos y negativos, separar conjuntos de validación, revisar imágenes problemáticas y establecer umbrales con intervención humana. Para decisiones sensibles, registrar entradas, versión del modelo y resultado permite investigar errores. La siguiente etapa será comprobar rendimiento independiente, cambios de precio, límites del servicio y la llegada efectiva de las integraciones anunciadas."
+          ],
+          "kind": "analysis"
+        }
+      ],
+      "analysis": "Análisis Gazette: d1-ultra es una herramienta de clasificación probabilística; no sustituye controles de calidad, políticas de riesgo ni decisiones humanas sensibles.",
+      "watch": "Pruebas independientes, regiones, límites de API, cambios de precio e integraciones anunciadas.",
+      "availability": {
+        "status": "Disponible en Liquid API",
+        "platforms": [
+          "Liquid API",
+          "d1 Playground"
+        ],
+        "regions": [],
+        "requirements": [
+          "Clave de API para integración"
+        ],
+        "notes": [
+          "Vercel y OpenRouter anunciados para más adelante."
+        ]
+      },
+      "pricing": [
+        {
+          "label": "Entrada",
+          "value": "US$0,042 por millón de tokens"
+        },
+        {
+          "label": "Salida generada",
+          "value": "Sin tokens de salida generados; cada pregunta se factura como prompt propio"
+        }
+      ],
+      "technicalDetails": [
+        {
+          "label": "Entradas",
+          "value": "Texto e imágenes"
+        },
+        {
+          "label": "Salidas",
+          "value": "Probabilidades noul, Choice y Score"
+        },
+        {
+          "label": "Imagen 1024×1024",
+          "value": "1.536 tokens de entrada según Liquid AI"
+        }
+      ],
+      "limitations": [
+        "Benchmarks comparativos atribuidos a Liquid AI.",
+        "Sin parámetros completos o pesos d1-ultra anunciados en esta comunicación.",
+        "La calibración y el coste real dependen de los datos y el número de preguntas."
+      ],
+      "practicalAdvice": [
+        "Evaluar errores y calibración con imágenes representativas antes de automatizar decisiones.",
+        "Registrar costes incluyendo cada pregunta y los tokens visuales."
+      ],
+      "usefulFacts": [
+        "Endpoint de ejemplo: /decisions/v1/systemone.",
+        "El proveedor calcula 1,5 tokens por parche visual de 32×32 píxeles."
+      ],
+      "finalSummary": "d1-ultra está disponible para decisiones probabilísticas multimodales con un precio explícito por entrada. La promesa de precisión y calibración deberá comprobarse sobre datos reales antes de delegarle decisiones de impacto."
     },
     {
       "id": "insitro-astrazeneca-virtual-human-drug-discovery-2026",
@@ -38502,12 +38929,12 @@
     {
       "date": "2026-10-15",
       "status": "partial",
-      "verifiedArticles": 18
+      "verifiedArticles": 20
     },
     {
       "date": "2026-10-16",
       "status": "partial",
-      "verifiedArticles": 6
+      "verifiedArticles": 7
     }
   ]
 }
